@@ -2,16 +2,13 @@
 title: "Animando a molécula"
 ---
 
-
 ## Alguns comandos de animação para os modelos
-
 
 |       Animações permitem a representação de moléculas de modo mais lúdico e representativo. Para agregar valor ainda maior à visualização tridimensional de estruturas moleculares, o *Jmol* conta com alguns comandos para o posicionamento espacial do modelo, bem como para a criação de animações, como:
 
 ## Rotacionar e transladar
 
 |       Essas ações constituem uma forma simples de reposicionar o modelo no espaço. Basta inserir o eixo e o ângulo em que se deseja o movimento (*x,y,z*). Ou apenas o ângulo, com o movimento padrão no eixo das abscissas (*X*). Seguem exemplos:
-
 
 ```{r, eval=FALSE}
 rotate 20 # 20 graus
@@ -30,7 +27,6 @@ spin 10 # rotacional, com velocidade de 10 graus por quadro
 spin z -15 # (eixo z)
 spin off # interrompe a rotação
 ```
-  
 
 ## Ampliação dos modelos (*zoom*)
 
@@ -47,26 +43,22 @@ Restrição a um ligante e ampliação: restrict ligand; zoom 0
 Obs: para retornar ao tamanho original: `zoom 0`
 ```
 
-
 |       Com ampliações, reduções, rotações, translações, é possível que você queira retornar ao modelo na sua configuração de tamanho e coordenadas originais. Para isto:
 
 ```{r, eval=FALSE}
 center; zoom 0 # centraliza e redimensiona o modelo a seu tamanho original
 ```
 
-
 ### Ampliação animada (*zoomTo*)
 
 |       Esse recurso é bem mais *"chique"*, já que permite visualizar de forma ampliada temporalmente algumas partes de interesse do modelo. Isso é particularmente bacana com biomacromoléculas, como para sítios de interação de ligantes ou grupos prostéticos, ou sítios de reação em catálise enzimática. Mas também impacta a visualização de pequenas moléculas, posto que os modelos crescem ou reduzem de forma animada no ecrã; pode-se também focar num átomo específico para chamar a atenção na molécula. A sintaxe da expressão é:
-
 
 ```{r, eval=FALSE}
 zoomto tempo tamanho #...ou, se quiser um grupo de átomos em especial (ligante, por ex)...
 zoomto tempo (expressão do átomo/grupo) tamanho
 ```
 
-
-|       Experimente carregar moléculas pequenas e proteínas, ilustrando o comando `zoomTo` como segue: 
+|       Experimente carregar moléculas pequenas e proteínas, ilustrando o comando `zoomTo` como segue:
 
 ```{r, eval=FALSE}
 Aumentar em 3x, meio segundo por vez: zoomto 0.5 *3 
@@ -74,7 +66,6 @@ Aumentar em 4x, meio segundo por vez: zoomto 0.5 400
 Focar num ligante com ampliação de 2x: zoomto 2(ligand) 0
 Focar num ligante com ampliação de 4x, a meio segundo por vez: zoomto 0.5(ligand)* 4
 ```
-
 
 ## Pausa
 
@@ -90,10 +81,9 @@ wireframe 130 # espesssura do arame
 color translucent # cor translúcida
 ```
 
+## Laço
 
-## Laço 
-
-|       O *Jmol* possui alguns comandos normalmente utilizados em linguagens de programação, embora não seja esse o escopo do presente trabalho. Se quiser *"ir fundo"*, consulte o [manual de referência de comandos do *Jmol*](https://chemapps.stolaf.edu/jmol/docs/) para os comandos de programação: *if, ifelse, for, while, step, break, wait, pause, case, continue, quit, loop*. 
+|       O *Jmol* possui alguns comandos normalmente utilizados em linguagens de programação, embora não seja esse o escopo do presente trabalho. Se quiser *"ir fundo"*, consulte o [manual de referência de comandos do *Jmol*](https://chemapps.stolaf.edu/jmol/docs/) para os comandos de programação: *if, ifelse, for, while, step, break, wait, pause, case, continue, quit, loop*.
 
 |       Mas entre esses comandos variados, o de *laço iterativo* (`loop`) pode ser de valia ao ensino, por exemplo, para quando se desejar chamar à atenção para uma ligação, um átomo ou grupo de átomos. Exemplificando:
 
@@ -109,9 +99,9 @@ loop 1 # realiza o laço (efeito "piscante")
 
 ## Combinando rotações, translações, e ampliações no tempo
 
-|       O *Jmol* oferece dois comandos básicos para isso: `move` e `moveTo`. A diferença é que `move` reorienta o modelo em relação à sua posição atual (*movimento relativo*), e `moveTo` o faz em relação à posição original do modelo (*movimento absoluto*). 
+|       O *Jmol* oferece dois comandos básicos para isso: `move` e `moveTo`. A diferença é que `move` reorienta o modelo em relação à sua posição atual (*movimento relativo*), e `moveTo` o faz em relação à posição original do modelo (*movimento absoluto*).
 
-|       Na prática, contudo, o comando `move` é mais simples de executar, dependendo somente de parâmetros de rotação e translação, ao passo que `moveTo` é bem mais complexo. Esse depende de parâmetros de orientação manualmente obtidos pelo *Jmol*. 
+|       Na prática, contudo, o comando `move` é mais simples de executar, dependendo somente de parâmetros de rotação e translação, ao passo que `moveTo` é bem mais complexo. Esse depende de parâmetros de orientação manualmente obtidos pelo *Jmol*.
 
 ### Move
 
@@ -136,18 +126,17 @@ move 0 0 0 0 0 35 0 0 0.5 # reduz o modelo em 35% de seu tamanho, e com moviment
 move 45 0 90 150 0 30 0 0 5 # rotaciona 45 graus no eixo X e 90 graus no eixo Z, ampliando o modelo em 150% e transladando-o por 30%, tudo ao longo de 5 segundos.
 ```
 
-
 ### MoveTo
 
 |       Resulta em orientação *absoluta* do modelo, não dependendo de suas coordenadas anteriores. Sua inserção não é simples, pois depende dos dados da orientação do modelo quando carregado pela 1a. vez, e que pode ser obtida por:
 
-```{r, eval=FALSE}         
+```{r, eval=FALSE}
 show orientation
 ```
 
 |       Um exemplo de resultado pelo comando é:
 
-```{r, eval=FALSE}         
+```{r, eval=FALSE}
 moveto /* time, axisAngle */ 1.0 { 616 -708 -346 47.68} /* zoom, translation */  400.0 0.0 0.0  /* center, rotationRadius */ {15.174467 28.719118 4.726837} 35.148052 /* navigation center, translation, depth */ {0 0 0} 0 0 0 /* cameraDepth, cameraX, cameraY */  3.0 0.0 0.0;
 #OR
 #Follows Z-Y-Z convention for Euler angles
@@ -162,7 +151,7 @@ reset;center {15.174467 28.719118 4.726837}; rotate z 130.27; rotate y 44.57; ro
 
 |       Compara 2 modelos e reorienta as coordenadas do segundo para justapor-se ao primeiro, por um algoritmo de correlação.
 
-```{r, eval=FALSE}         
+```{r, eval=FALSE}
 load files "$tyrosine" "$epinephrine";
 frame *;
 compare {2.1} {1.1} rotate translate 5.0 
@@ -172,7 +161,7 @@ compare {2.1} {1.1} rotate translate 5.0
 
 |       O comando permite explorar o modelo simulando um passeio panorâmico ao interior da estrutura. Os parâmetros envolvem o tempo de percuro (ou 2s quando omitido). Exemplificando:
 
-```{r, eval=FALSE}         
+```{r, eval=FALSE}
 navigate depth 50 # imersão no modelo em 2s
 navigate 3 rotate y 20 # rotaciona 20o no eixo y
 navigate 4 trace # passeia pelo modelo em 4s
@@ -181,7 +170,4 @@ navigate 5 center {10 20 30} # sonda ao lado do modelo, e nas coordenadas x, y, 
 navigate 2 depth 30 / 5 rotate 180 / depth 20 / translate X 10
 ```
 
-
-
-## Exemplos de animações para moléculas no *Jmol*
-
+<!-- ## Exemplos de animações para moléculas no *Jmol* -->
