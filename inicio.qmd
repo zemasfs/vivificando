@@ -2,7 +2,7 @@
 title: "Moléculas voadoras, animações, gráficos e mapas interativos…ou… Vivificando conteúdos para o Ensino Médio"
 ---
 
-# Como diriam nono telemarketing ... ! {.unnumbered}
+# Como diriam no telemarketing ... ! {.unnumbered}
 
 1.  Você está cansado de buscar fontes diferente de livros e internete pra manter o interesse da Turma ?
 2.  Você acha que as imagens dos livros que ensina poderiam ser *"vivificadas"* pra mostrar moléculas, gráficos e mapas de modo mais interessante ?
