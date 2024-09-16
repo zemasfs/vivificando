@@ -1,0 +1,46 @@
+id_lista,categoria,classe,geometria,nome_geografico,lat,long,uf
+2,AER,pista_ponto_pouso,Linha,Aero Agrícola Gaivota,-22.9805,-51.5425,PR
+3,AER,pista_ponto_pouso,Linha,Aero Agrícola Sapezal,-13.5511,-58.8603,MT
+4,AER,pista_ponto_pouso,Linha,Aeroagrícola Solo,-23.4471,-48.8665,SP
+5,AER,pista_ponto_pouso,Linha,Aeroclube de Atibaia,-23.1281,-46.5747,SP
+6,AER,pista_ponto_pouso,Linha,Aeroclube de Bento Gonçalves,-29.1473,-51.5411,RS
+7,AER,pista_ponto_pouso,Linha,Aeroclube de Eldorado do Sul,-30.0507,-51.4434,RS
+8,AER,pista_ponto_pouso,Linha,Aeroclube de Foz do Iguaçu,-25.3696,-54.4707,PR
+9,AER,pista_ponto_pouso,Linha,Aeroclube de João Pessoa,-7.09217,-34.8417,PB
+10,AER,pista_ponto_pouso,Linha,Aeroclube de Nova Iguaçu,-22.7461,-43.4642,RJ
+11,AER,pista_ponto_pouso,Linha,Aeroclube de Passo Fundo,-28.2509,-52.5168,RS
+12,AER,pista_ponto_pouso,Linha,Aeroclube de Rio Negrinho,-26.3207,-49.5219,SC
+13,AER,pista_ponto_pouso,Linha,Aeroclube de Rondônia,-8.79415,-63.8574,RO
+14,AER,pista_ponto_pouso,Linha,Aeroclube de Santa Catarina,-27.6116,-48.6732,SC
+15,AER,pista_ponto_pouso,Linha,Aeroclube São José do Rio Pardo,-21.6473,-46.9282,SP
+16,AER,pista_ponto_pouso,Linha,Aeródomo Novo Aripuanã,-5.11774,-60.3651,AM
+20,AER,pista_ponto_pouso,Linha,Aeródromo Aerocampo,-13.6365,-57.9038,MT
+22,AER,pista_ponto_pouso,Linha,Aeródromo Aeroporto Regional da Zona da Mata,-21.5131,-43.1735,MG
+23,AER,pista_ponto_pouso,Linha,Aeródromo Aero Rural,-9.92088,-56.0051,MT
+24,AER,pista_ponto_pouso,Linha,Aeródromo Aero Z Ferrus,0.993532,-51.1208,AP
+25,AER,pista_ponto_pouso,Linha,Aeródromo Afonso Pena,-25.5293,-49.1748,PR
+26,AER,pista_ponto_pouso,Linha,Aeródromo Agricenter,-22.6239,-55.5691,MS
+27,AER,pista_ponto_pouso,Linha,Aeródromo Agrícola Rio Galhão,-10.4239,-46.0765,TO
+29,AER,pista_ponto_pouso,Linha,Aeródromo Agropecuária Céu Aberto Ltda,-9.50103,-61.2744,MT
+30,AER,pista_ponto_pouso,Linha,Aeródromo Agropecuária Nova Santana,-10.1417,-60.5479,MT
+31,AER,pista_ponto_pouso,Linha,Aeródromo Agrosan,-11.3977,-58.1215,MT
+32,AER,pista_ponto_pouso,Linha,Aeródromo Agrovale,-9.50436,-40.3698,BA
+34,AER,pista_ponto_pouso,Linha,Aeródromo Aguinaldo Pereira Lima,-23.6746,-49.8155,PR
+38,AER,pista_ponto_pouso,Linha,Aeródromo Alenquer,-1.91731,-54.7218,PA
+39,AER,pista_ponto_pouso,Linha,Aeródromo Almerim,-1.47771,-52.5825,PA
+40,AER,pista_ponto_pouso,Linha,Aeródromo Altamira,-3.25205,-52.2553,PA
+41,AER,pista_ponto_pouso,Linha,Aeródromo Amambaí,-23.1439,-55.2077,MS
+42,AER,pista_ponto_pouso,Linha,Aeródromo Amapá,2.07607,-50.8597,AP
+43,AER,pista_ponto_pouso,Linha,Aeródromo Anamoim,1.78498,-67.4055,AM
+44,AER,pista_ponto_pouso,Linha,Aeródromo André Maggi,-9.89865,-58.5819,MT
+45,AER,pista_ponto_pouso,Linha,Aeródromo Ângelo Ponzoni,-26.9995,-51.1401,SC
+46,AER,pista_ponto_pouso,Linha,Aeródromo Aparecida do Taboado,-20.0891,-51.1478,MS
+47,AER,pista_ponto_pouso,Linha,Aeródromo Aparecido O. Silva,-22.0691,-48.7067,SP
+48,AER,pista_ponto_pouso,Linha,Aeródromo Araguaiana,-15.7092,-51.8377,MT
+49,AER,pista_ponto_pouso,Linha,Aeródromo Araguari,-18.6679,-48.1903,MG
+50,AER,pista_ponto_pouso,Linha,Aerodromo Areia Branca,-7.98825,-61.0506,AM
+51,AER,pista_ponto_pouso,Linha,Aeródromo Ariquemes,-9.88046,-63.0471,RO
+52,AER,pista_ponto_pouso,Linha,Aeródromo Arraias,-13.0259,-46.8838,TO
+53,AER,pista_ponto_pouso,Linha,Aeródromo Arroio Grande,-32.2293,-53.0561,RS
+54,AER,pista_ponto_pouso,Linha,Aeródromo Associação Tocantinense de Aviação,-10.1824,-48.5455,TO
+55,AER,pista_ponto_pouso,Linha,Aeródromo Auaris,4.00087,-64.5043,RR

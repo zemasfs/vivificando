@@ -1,0 +1,70 @@
+---
+title: "Animando a molécula"
+---
+
+
+## Alguns comandos de animação para os modelos
+
+
+|       |       Animações permitem a representação de moléculas de modo mais lúdico e representativo. Para agregar valor ainda maior à visualização tridimensional de estruturas moleculares, o *Jmol* conta com alguns comandos para o posicionamento espacial do modelo, bem como para a criação de animações, como:
+
+* spin
+* rotate
+* translate
+
+
+```{r, eval=FALSE}
+spin 10 # rotacional, com velocidade de 10 graus por quadro
+spin z -15 # (eixo z)
+rotate 20 # 20 graus
+rotate x 90 # eixo x
+translate 50 # valor representa o percentual da janela (100 - fora; 0 - centro)
+```
+  
+  
+* zoom
+* zooTo
+
+
+## Ampliação dos modelos (*zoom*)
+
+
+```{r, eval=FALSE}
+Ampliação 2x: zoom in
+Ampliação em 3x: zoom \*3 
+Redução em 2x: zoom out 
+Redução em 3x: zoom /3 
+Eliminar ampliação: zoom off 
+Restrição a ligante e ampliação: restrict ligand; zoom 0
+```
+
+
+### Ampliação animada (*zoomto*)
+
+|       Esse recurso permite visualizar de forma ampliada temporalmente algumas partes de interesse do modelo, tais como sítios de interação de ligantes ou grupos prostéticos. A sintaxe da expressão é:
+
+
+```{r, eval=FALSE}
+zoomto ou zoomTo (expressão do átomo/grupo) tamanho ou... 
+zoomto tempo (expressão do átomo/grupo) tamanho
+```
+
+
+Exemplos: 
+
+```{r, eval=FALSE}
+Aumentar em 3x, meio segundo por vez: zoomto 0.5 *3 
+Aumentar em 4x, meio segundo por vez: zoomto 0.5 400 
+Focar num ligante com ampliação de 2x: zoomto 2(ligand) 0
+Focar num ligante com ampliação de 4x, a meio segundo por vez: zoomto 0.5(ligand)* 4
+```
+
+    
+
+* moveTo
+* center
+* delay
+* navigate
+
+## Exemplos de animção para moléculas
+

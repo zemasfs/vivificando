@@ -1,0 +1,144 @@
+---
+title: "Cliques de mouse *versus* linhas de comando"
+---
+
+##  Cliques de mouse
+
+|       Qualquer programa de computador que você já tenha usado, ou mesmo de dispositivos móveis, tem sua *usabilidade* centrada na facilidade de uso por cliques e arrastes com *mouse*, *touchpad*, e mesmo os dedos (telas capacitivas). Isso facilita muito as ações rápidas pretendidas. Exemplificando para editores de texto, é comum se clicar num ícone de formatação (itálico, negrio, por ex) ou mesmo digitar seu atalho, para concluir o que se deseja no texto.
+
+|       Simples, prático, e rápido. Dessa mesma forma, pode-se utilizar o *Jmol*, tanto na versão baixada no computador, como na versão *online*. Para a versão baixada basta observar a gama de ítens de menus e submenus. Já para versão de navegador, veja que não há menu !
+
+<!--figura de menus do jmol e do jsmol - FAzer figuras lado a lado-->
+
+|       Não obstante, a versão *online* permite visualizar a mesma informação, embora com outra formatação, bastando-se clicar *com o botão direito do mouse* em qualquer área do ecrã (nome chique pra tela contendo alguma informação, a molécula, no caso).
+
+## Linhas de comando {#sec-linhasComando}
+
+|       Assim como para cliques de mouse, também é possível acessar um campo de texto para digitar comandos do *Jmol*, tanto na versão baixada (*standalone*), como na versão de navegador (*applet JSmol*). Para a primeira, clique em *File-->Console*, e surgirá uma janela para inserção de texto. Na versão *online*, clique com o botão direito do *mouse* em qualquer ponto do ecrã e escolha *Console*.
+
+## Cliques de mouse *versus* linhas de comando
+
+|       Ainda que seja possível utilizar o *Jmol* tanto cliques de mouse como por comandos de texto, qual é o melhor ? 
+
+|       Para auxiliar na resposta, exemplifiquemos com o uso de uma planilha eletrônica, como o *Excel* do pacote MS-Office, ou o *Calc* do pacote *Libreoffice*, ou o *Planilhas* da suite Google. Suponha que você deseje fazer um gráfico simples, pegando duas colunas, cada qual para uma variável (independente ou *x*, e dependente, ou *y*). O usual seria clicar em um ítem de menu para gráficos, selecionar as colunas desejadas em campos específicos da janela que se abre, selecionar o tipo de gráfico, clicar em *avançar* ou algum termo similar, selecionar outras características (etiquetas em *x* e *y*, por ex), e finalmente clicar em *concluir* (ou *OK*, ou termo de significado similar). Simples, rápido, e prático.
+
+|       Mas (sempre tem um "mas")...e se você precisasse, além de construir o gráfico, realizar ações adicionais, como obter o ajuste linear dos dados, apresentar a reta resultante com determinada cor e estilo, inserir a equação de reta em um ponto específico do gráfico, colocar um título, e alterar o símbolo dos pontos, tanto o tipo, quanto o tamanho e a cor. Ufa !!! 
+
+|       Sem problema, também...desde que você tenha um bom tutorial ao lado, claro ! Ou que já esteja familiarizado com o programa da planilha, menus e ações pertinentes aos vários cliques de mouse que serão necessário para se obter um belo gráfico de regressão linear ao final. 
+
+|       Agora...mais uma pequena variável a inserir ao exemplo levantado: suponha que não seja você a construir o gráfico, mas um aluno(a)(a) de sua disciplina, e que não foi treinado nem no uso da planilha, e nem nos cálculos pretendidos !
+
+|       Perceba que agora haverá um certo desconforto, posto que:
+1. O aluno(a) não possui conhecimento prévio no uso da planilha;
+2. O aluno(a) não possui conhecimento prévio nos cálculos pretendidos;
+3. Você terá de treinar o aluno(a), ou oferecer-lhe um *guia* de treinamento correlato;
+4. Caso já tenha ocorrido o treinamento, mas não se esteja com o *guia* em mãos,  tanto você como aluno(a) dependerão da *capacidade de retenção de memória* para efetivar com sucesso a empreita.
+
+|       Agora, e se as orientações para a execução do produto final estivessem, não num *guia* para a repetição de clique de *mouse*, mas sim num pequeno texto contendo tanto os comandos em sequência como os comentários explicativos de cada ação individual, e que quando inserido no programa gerasse o gráfico todo formatado ? 
+
+
+## Vantagens do uso de linhas de comando sobre o uso de cliques
+
+|       Pelo exemplo hipotético acima, perceba que um pequeno texto contendo as linhas de comando em sequência e os comentários referentes a esses permitem:
+
+* que o produto final seja elaborado sem prévio conhecimento do aluno(a); basta executar o código no programa;
+* que o produto final seja elaborado independentemente da memória dos envolvidos (sequência de cliques, por ex);
+* uma quantidade virtualmente infinita de ações sequenciais, sem necessidade de se decorar a ordem dos cliques de *mouse*;
+* o aprendizado de cada comando utilizado em linguagem humana, posto que existem comentários do autor para cada linha;
+* que o produto possa ser modificado para gerar um objeto diferente (alteração de cor, etiquetas de eixos, outro título, por ex)
+* que se reproduza o mesmo gráfico, só que com outros valores para as variáveis (*x* e *y*);
+* que o aprendiz experimente outros comandos para agregar formatações e/ou cálculos distintos ao produto;
+* que você ou o aluno(a) consigam reproduzir o produto sem recorrer à memória e até por séculos depois, se as previsões de extinção em massa não vingarem;
+* que qualquer pessoa consiga reproduzir o objeto, independentemente de seu grau de instrução técnica ou de operabilidade do programa;
+* enfim, que se consiga ensinar determinado conteúdo de modo reprodutível...ou...**Ensino Reprodutível**.
+
+
+|       Dessa forma, pretende-se nesse curso utilizar somente *linhas de comando*, para que se permita materializar-se as vantagens descritas acima, tangentes a uma metodologia voltada, ainda que incipiente, ao *Ensino Reprodutível*, e tanto para a ferramenta *Jmol*, como para a ferramenta *R & RStudio*.
+
+|       Em relação ao *Jmol*, portanto, as ações sequenciais para visualização tridimensional de modelos moleculares será realizada pelo *Console* acessável conforme ítem @sec-linhasComando acima.
+
+## *Scripts*
+
+|       Colocado da forma acima, quando se tem um conjunto qualquer de linhas de comando sequenciais, permitindo atuar sobre o modelo molecular para uma infinidade de coisas, tem-se então um *script*. Tecnicamente falando, um *script* constitui um bloco de instruções sequenciais em texto para compilação em um programa.
+
+|       *Scripts* podem ser elaborados no *Jmol* em *browser* por duas maneiras:
+
+
+```{r, eval=FALSE}
+1. Separando os comandos por ";" - ex: "cpk only; color blue"
+2. Separndo os comandos por linhas - ex:
+                                   "cpk only
+                                    color blue"
+```
+
+
+|       Se você deseja que o modelo realize uns poucos comandos, a melhor opção é separá-los por ponto e vírgula (";"). Mas se desejar algo mais "sofisticado", sugere-se separá-los por linhas. E mais...linhas comentadas e escritas em um bloco de notas ou em qualquer editor de texto !
+
+### Vantagens do uso de bloco de notas ou editor de texto para comandos em série
+
+|       Imaginando-se uma tranformação mais significativa à molécula original carregada, como efeitos de ampliação, coloração, representação e movimento, é fácil perceber que um conjunto de linhas comentadas dispostas em sequência facilita tanto a observação do que se pretende com o modelo, como a identificação de erros e ajustes.
+
+|       Isto também é herdado aos conceitos de *Ensino Reprodutível*, uma vez que facilita a visualização do código (*human readable format*) e sua depuração (*code debug*). Veja o exemplo que segue, reflita sobre sua interpretação, copie e teste-o no *Console* do *Jmol*.
+
+```{r, eval = FALSE}
+load $butene
+background black # cor preta do plano de fundo
+load $cholesterol # carrega a molécula de colesterol
+delay 1 # aguarda 1 segundo
+background white # altera a cor do plano de fundo
+spin 80 # gira a molécula
+delay 3 # ...por 3 segundos
+spin off # interrompe a rotação
+cpk # renderiza como modelo de preenchimento
+color cpk # coloriza no padrão de modelos moleculares
+isosurface molecular # renderiza a superfície
+spin 30 # gira mais um poquinho
+delay 6 # ...também por 3 segundos
+spin off # interrompe novamente a rotação
+zoomTo 0.5 *3  # amplia 300% na tela durante 1 segundo
+isosurface off # retira a superfície molecular
+wireframe only # retorna à representação de varetas
+wireframe 50 # espessura das varetas
+zoomTo 5 * 0.01 # ... e vai sumindo aos poucos
+```
+
+
+|       Uma outra opção para adicionar *scripts* diretamente no *Jmol*, verificar a existência de erros previamente à execução dos comandos, e testar as linhas passo a passo para a depuração, pode realizar-se na opção do programa instalado (somente). Para tanto, siga os passos que seguem.
+
+rode o programa *Jmol* que está no computador ou numa mídia removível a partir de seu arquivo *Jmol.jar* após descompactação do arquivo baixado do próprio [site do *Jmol*](https://jmol.sourceforge.net/), e escolha do *Script Editor*
+```{r, eval=FALSE}
+1. Entre no site do Jmol (https://jmol.sourceforge.net/) ;
+2. Faça o Download do programa compactado no computador ou mídia removível ;
+3. Localize o arquivo compactado que foi baixado ;
+4. Descompacte o arquivo ;
+5. Selecione o arquivo "Jmol.jar", de execução em JAVA (é necessário que o computador tenha a máquina JAVA instalada (JRE), mas isso é comum nos equipamentos com menos de 10 anos !!)
+6. Selecione "File -> Script Editor" 
+```
+
+|       Para testar o *Editor de Scripts*, copie e cole o *script* abaixo para a papaína, uma proteína do mamão:
+
+```{r, eval=FALSE}
+load=9pap  # carregando a estrutura
+delay 2 # aguarda 2 segundos
+cartoon only # representando em desenho
+color structure # coloração por estrutura 2a.
+delay 1 # pausa de 1 segundo
+zoom 200 # ampliação de 2 vezes
+delay 1
+reset # restabelece as coordenadas
+spin 300 # giro rápido da molécula !
+```
+
+
+|       Veja que é possível testar se as linhas de comando estão com a sintaxe correta (*check*), testar os comandos linha a linha (*step*), ou rodar o *script* como um todo (*run*).
+
+![Exemplo do uso do *Script Editor* da versão instalada do *Jmol* em computador ou mídia removível.](scriptEditor.png)
+
+|       Alguns exemplos de *scripts* são ilustrados na @sec-selecao.
+
+
+
+     
+
+
+

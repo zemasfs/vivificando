@@ -1,0 +1,40 @@
+project:
+  type: website
+
+website:
+  google-analytics: "G-S1L73VGCG5"
+  title: "ERRE - Ensino Reprodutível" # omite-se o título pra não duplicar nome na aba
+  favicon: avatar.png # ícone da aba da página
+  navbar:
+    logo: avatar.png # logo ao lado esquerdo da Home
+    background: primary # cor de fundo
+    tools:  # ícones específico
+      # - icon: twitter
+      #   href: https://twitter.com
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://code.com
+          - text: Report a Bug
+            href:  https://bugs.com
+  
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "Materiais"
+        menu:
+          - medio.qmd
+          - anim.plots.qmd
+          - superior.qmd
+      - contato.qmd
+      
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+
+editor: visual
+

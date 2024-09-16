@@ -1,0 +1,9 @@
+---
+title: "bioQuanti - Bioquímica Quantitativa"
+header-includes:
+  - <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+---
+
+## [bioQuanti](https://bioquanti.netlify.app/) <i class="fa-solid fa-dna"></i>
+
+##### Portal para estudos de *Bioquímica* e área correlatas com uso das ferramentas *R & RStudio (cálculos, gráficos, simulações)*, *Jmol (estrutura tridimensional de moléculas)* e *Sisma (metabolismo e dinâmica de reações)*.

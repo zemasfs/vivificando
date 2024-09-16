@@ -1,0 +1,13 @@
+load $cholesterol # carrega um modelo de XXX
+background white # altera a cor do plano de fundo
+spin 80 # gira a molécula
+delay 3 # ...por 3 segundos
+spin off # interrompe a rotação
+cpk # renderiza como modelo de preenchimento
+color cpk # coloriza no padrão de modelos moleculares
+isosurface molecular # renderiza a superfície
+spin 30 # gira mais um poquinho
+delay 3 # ...também por 3 segundos
+spin off # interrompe novamente a rotação
+zoomto 0.5 *3  # amplia 300% na tela durante 1 segundo
+zoom to 0.5 * 0 # ...e desaparece sem deixar vestígio !!!

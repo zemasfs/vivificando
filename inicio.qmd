@@ -1,0 +1,26 @@
+---
+title: "Moléculas voadoras, animações, gráficos e mapas interativos…ou… Vivificando conteúdos para o Ensino Médio"
+---
+
+# Como diriam no telemarketing ... ! {.unnumbered}
+
+1.  Você está cansado de buscar fontes diferente de livros e internete pra manter o interesse da Turma ?
+2.  Você acha que as imagens dos livros que ensina poderiam ser *"vivificadas"* pra mostrar moléculas, gráficos e mapas de modo mais interessante ?
+3.  Você acha que moléculas observadas em 3D poderiam tornar as aulas mais *"amigáveis"* ?
+4.  Você acredita que suas aulas teriam mais combustível se você pudesse também interagir com as moléculas, possibilitando alterações visuais e animações ?
+5.  Você gostaria de aprender como fazer isso usando somente um programa *online* ?
+6.  Você não se sente *"desprotegido"* quando tenta ensinar uma relação gráfica meio abstrata de uma figura de livro pra Turma ?
+7.  Seus alunos não acham meio chato quando precisam estudar alguma informação de cada região de um mapa num livro ?
+8.  Você acharia interessante apresentar aos alunos(as) gráficos dos livros, embora animados, com interatividade e mesmo simulações ?
+9.  Você acredita que um mapa informativo, mas interativo, do Brasil, do mundo ou qualquer região do planeta, poderia contribuir pra atenção de seus *"pimpolhos(as)"* ?
+10. Você acha interessante se puder mostrar essas coisas numa simples página de *browser* (navegador), que pode ser lida num PC ou dispositivo móvel, mas sem precisar de internete ?
+11. Você gostaria de aprender um única ferramenta que possibilitasse tudo isso e mais, como analisar dados dos mais divesos campos de estudo, construir belíssimos gráficos, simular situações de sua área, elaborar textos com qualidade de publicação técnico-científica, construir páginas de internete com imagens, vídeos, hiperlinks, criar livros inteiros, blogs ou mesmo um *website* completo ?
+12. E isso tudo por um único programa instalado em seu computador ou melhor, pela internete, e sem pagar nada ?!?
+
+<p style="font-family: times, serif; font-size:14pt; font-style:italic">
+
+...Então...seus problemas acabaram !!!
+
+</p>
+
+![](telemark.png){width="40%"}

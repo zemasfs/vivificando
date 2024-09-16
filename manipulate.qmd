@@ -1,0 +1,98 @@
+---
+title: "Simulando equações de forma animada - o pacote `manipulate`"
+---
+
+
+## Definição
+
+|       A biblioteca [manipulate](https://cran.r-project.org/web/packages/manipulate/index.html) do `R` pode ser empregada para a visualização gráfica de funções matemáticas personalizada ao usuário a partir de um conjunto opcional de ações. Essas ações são inseridas em um deslizador (*slider)*, selecionador (*picker*), caixa de marcação (*checkbox*) ou botão (*button*), e permitem o redesenho automático do gráfico toda vez que um valor é alterado na expressão.
+
+|       Diferentemente do `anim.plots`, o `manipulate` não gera uma animação, e sim uma *simulação de função gráfica com variação de parâmetro(s)*. E contrariamente ao `anim.plots` e outros pacotes a discutir neste material, o `manipulate` não permite salvamento em imagem animada ou HTML, sendo possível rodar a simulação somente dentro do ambiente do `R`. 
+
+## Sintaxe
+
+|       Por outro lado, o pacote `manipulate` possui uma sintaxe bem mais simples que os demais, envolvendo apenas o(s) argumento(s) alternativo(s) para os controles descritos acima (*slider, picker, checkbox, button*).
+
+```{r, eval=FALSE}
+manipulate(expressão matemáticas, controles)
+```
+
+## Exemplos gerais
+
+|       Para sentir o *"poder"* do `manipulate`, elabore o *plot* que segue.
+
+```{r, eval=FALSE}
+x = seq(from = 1, to = 10, by = 0.5) # uma outra forma de gerar uma sequência numérica no `R`
+plot(x, x^2, type = "l")  # gráfico de linha de uma parábola
+```
+
+
+```{r, echo=FALSE}
+x = seq(from = 1, to = 10, by = 0.5) # uma outra forma de gerar uma sequência numérica no `R`
+plot(x, x^2, type = "l")  # gráfico de linha de uma parábola
+```
+
+
+|       Agora, usando o `manipulate`. Crie um novo *script* no *RSudio*, copie, cole, e rode o trecho de código abaixo:
+
+```{r, eval=FALSE}
+library(manipulate) # carrega a biblioteca
+x = seq(from = 1, to = 10, by = 0.5)
+manipulate(plot(x,x^t, type="l"),  # uso da função plot anterior
+           t=slider(min=0,max=5)) # parâmetro a variar por um deslizador
+```
+
+|       Se você conseguiu rodar o *script* no *Rstudio* deverá ter obtido algo parecido com a imagem abaixo:
+
+![Exemplo de tela gerada na aba `Plots` do *RStudio* apresentando uma simulação de equação com variação do expoente. Observar o ícone de engrenagam, e que possui o controle escolhido para o gráfico.](manipulateSimplesInicio.png)
+
+
+|       Agora a parte legal ! Se você clicar no *ícone de engrenagem* do canto superior esquerdo da aba de `Plots`, logo acima do gráfico, verá a possibilidade de alterar o valor do expoente (*t*, na equação), com consequente e automática atualização do gráfico. A imagem que segue ilustra essa ação.
+
+
+![Mesmo resultado que da figura anterior, mas com o *slider* deslocado para uma função de 3o. grau.](manipulateSimples.png)
+
+
+## Exemplo do MAPA
+
+
+|       Para se observar o potencial do pacote `manipulate` será ilustrada a decomposição de um reagente químico, tal como representado no [MAPA](https://seliga.educacao.mg.gov.br/cardenos-mapa) para o ensino médio (C. da Natureza, 2o. Bimestre, 2o. Ano, p. 52, 2024).
+
+
+![Situação envolvendo cinética química extraída do *MAPA*, e versando sobre decomposição de N$_{2}$O_{5}$.](manipulateDecompos.png)
+
+|       Mas ao invés de simplesmente reproduzir o gráfico da imagem acima, podemos nos aprofundar em seu estudo, por exemplo, pela simulação da curva de decomposição em função da temperatura, e exemplicada para o gás metano. A equação que descreve esse comportamento é dada abaixo.
+
+$$
+exp(-k*exp(-Ea/(R*T))*x
+$$
+
+Fonte: Kudinov, I. V., A. A. Pimenov, and G. V. Mikheeva. "Modeling of the thermal decomposition of methane and the formation of solid carbon particles." Petroleum Chemistry 60 (2020): 1239-1243.
+
+|       E o trecho de código para executar no *RStudio* é dado abaixo:
+
+```{r, eval=FALSE}
+k = 4.5e13 # constante da taxa de reação, 1/s
+Ea = 381000 # energia de ativação, J/mol
+R = 8.314 # constante geral dos gases, J/(mol*K)
+
+#f = Co/(1+ko*exp(-Ea/(R*T))*x
+library(manipulate) # carrega a biblioteca
+manipulate(curve(exp(-k*exp(-Ea/(R*T))*x), # equação de decomposição
+                 xlim=c(0,2), xlab="t(s)", ylab="C(t)"),  # eixo de tempo t
+           T=slider(min=1300,max=1500)) # temperatura variável
+```
+
+
+|       Dessa forma, observa-se que o pacote `manipulate` pode também auxiliar em no estudo mais aprofundado de funções observadas nos livros-texto. A simulação de decomposição do metano pode ser observada no *RStudio* como na imagem abaixo.
+
+\
+
+
+![Simulação de decomposição de metano com a temperatura.](manipulateDecomposSimul.png)
+
+## Referências do pacote:
+
+* [Geral](https://cran.r-project.org/web/packages/manipulate/index.html)
+* [Manual](https://cran.r-project.org/web/packages/manipulate/manipulate.pdf)
+* [Tutorial](https://rpubs.com/jeremyyew/manipulate-pkg)

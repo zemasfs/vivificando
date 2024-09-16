@@ -1,0 +1,1465 @@
+id_lista,categoria,classe,geometria,nome_geografico,lat,long,uf
+2,AER,pista_ponto_pouso,Linha,Aero Agrícola Gaivota,-22.9805,-51.5425,PR
+3,AER,pista_ponto_pouso,Linha,Aero Agrícola Sapezal,-13.5511,-58.8603,MT
+4,AER,pista_ponto_pouso,Linha,Aeroagrícola Solo,-23.4471,-48.8665,SP
+5,AER,pista_ponto_pouso,Linha,Aeroclube de Atibaia,-23.1281,-46.5747,SP
+6,AER,pista_ponto_pouso,Linha,Aeroclube de Bento Gonçalves,-29.1473,-51.5411,RS
+7,AER,pista_ponto_pouso,Linha,Aeroclube de Eldorado do Sul,-30.0507,-51.4434,RS
+8,AER,pista_ponto_pouso,Linha,Aeroclube de Foz do Iguaçu,-25.3696,-54.4707,PR
+9,AER,pista_ponto_pouso,Linha,Aeroclube de João Pessoa,-7.09217,-34.8417,PB
+10,AER,pista_ponto_pouso,Linha,Aeroclube de Nova Iguaçu,-22.7461,-43.4642,RJ
+11,AER,pista_ponto_pouso,Linha,Aeroclube de Passo Fundo,-28.2509,-52.5168,RS
+12,AER,pista_ponto_pouso,Linha,Aeroclube de Rio Negrinho,-26.3207,-49.5219,SC
+13,AER,pista_ponto_pouso,Linha,Aeroclube de Rondônia,-8.79415,-63.8574,RO
+14,AER,pista_ponto_pouso,Linha,Aeroclube de Santa Catarina,-27.6116,-48.6732,SC
+15,AER,pista_ponto_pouso,Linha,Aeroclube São José do Rio Pardo,-21.6473,-46.9282,SP
+16,AER,pista_ponto_pouso,Linha,Aeródomo Novo Aripuanã,-5.11774,-60.3651,AM
+20,AER,pista_ponto_pouso,Linha,Aeródromo Aerocampo,-13.6365,-57.9038,MT
+22,AER,pista_ponto_pouso,Linha,Aeródromo Aeroporto Regional da Zona da Mata,-21.5131,-43.1735,MG
+23,AER,pista_ponto_pouso,Linha,Aeródromo Aero Rural,-9.92088,-56.0051,MT
+24,AER,pista_ponto_pouso,Linha,Aeródromo Aero Z Ferrus,0.993532,-51.1208,AP
+25,AER,pista_ponto_pouso,Linha,Aeródromo Afonso Pena,-25.5293,-49.1748,PR
+26,AER,pista_ponto_pouso,Linha,Aeródromo Agricenter,-22.6239,-55.5691,MS
+27,AER,pista_ponto_pouso,Linha,Aeródromo Agrícola Rio Galhão,-10.4239,-46.0765,TO
+29,AER,pista_ponto_pouso,Linha,Aeródromo Agropecuária Céu Aberto Ltda,-9.50103,-61.2744,MT
+30,AER,pista_ponto_pouso,Linha,Aeródromo Agropecuária Nova Santana,-10.1417,-60.5479,MT
+31,AER,pista_ponto_pouso,Linha,Aeródromo Agrosan,-11.3977,-58.1215,MT
+32,AER,pista_ponto_pouso,Linha,Aeródromo Agrovale,-9.50436,-40.3698,BA
+34,AER,pista_ponto_pouso,Linha,Aeródromo Aguinaldo Pereira Lima,-23.6746,-49.8155,PR
+38,AER,pista_ponto_pouso,Linha,Aeródromo Alenquer,-1.91731,-54.7218,PA
+39,AER,pista_ponto_pouso,Linha,Aeródromo Almerim,-1.47771,-52.5825,PA
+40,AER,pista_ponto_pouso,Linha,Aeródromo Altamira,-3.25205,-52.2553,PA
+41,AER,pista_ponto_pouso,Linha,Aeródromo Amambaí,-23.1439,-55.2077,MS
+42,AER,pista_ponto_pouso,Linha,Aeródromo Amapá,2.07607,-50.8597,AP
+43,AER,pista_ponto_pouso,Linha,Aeródromo Anamoim,1.78498,-67.4055,AM
+44,AER,pista_ponto_pouso,Linha,Aeródromo André Maggi,-9.89865,-58.5819,MT
+45,AER,pista_ponto_pouso,Linha,Aeródromo Ângelo Ponzoni,-26.9995,-51.1401,SC
+46,AER,pista_ponto_pouso,Linha,Aeródromo Aparecida do Taboado,-20.0891,-51.1478,MS
+47,AER,pista_ponto_pouso,Linha,Aeródromo Aparecido O. Silva,-22.0691,-48.7067,SP
+48,AER,pista_ponto_pouso,Linha,Aeródromo Araguaiana,-15.7092,-51.8377,MT
+49,AER,pista_ponto_pouso,Linha,Aeródromo Araguari,-18.6679,-48.1903,MG
+50,AER,pista_ponto_pouso,Linha,Aerodromo Areia Branca,-7.98825,-61.0506,AM
+51,AER,pista_ponto_pouso,Linha,Aeródromo Ariquemes,-9.88046,-63.0471,RO
+52,AER,pista_ponto_pouso,Linha,Aeródromo Arraias,-13.0259,-46.8838,TO
+53,AER,pista_ponto_pouso,Linha,Aeródromo Arroio Grande,-32.2293,-53.0561,RS
+54,AER,pista_ponto_pouso,Linha,Aeródromo Associação Tocantinense de Aviação,-10.1824,-48.5455,TO
+55,AER,pista_ponto_pouso,Linha,Aeródromo Auaris,4.00087,-64.5043,RR
+56,AER,pista_ponto_pouso,Linha,Aeródromo Avelino Vieira,-24.1039,-49789,PR
+57,AER,pista_ponto_pouso,Linha,Aeródromo Bacacheri,-25405,-49.2322,PR
+58,AER,pista_ponto_pouso,Linha,Aeródromo Baião,-2.78848,-49.6511,PA
+59,AER,pista_ponto_pouso,Linha,Aeródromo Bambuí,-20.0367,-45.9732,MG
+60,AER,pista_ponto_pouso,Linha,Aeródromo Barcelos,-0.98682,-62.9216,AM
+61,AER,pista_ponto_pouso,Linha,Aeródromo Barra do Corda,-5.50242,-45.2161,MA
+62,AER,pista_ponto_pouso,Linha,Aeródromo Barra do Garças,-15.8613,-52389,MT
+63,AER,pista_ponto_pouso,Linha,Aeródromo Barra do Vento,2.69557,-60.8092,RR
+64,AER,pista_ponto_pouso,Linha,Aeródromo Barragem Manoel Alves,-11.5571,-46.9851,TO
+65,AER,pista_ponto_pouso,Linha,Aeródromo Barra Grande,-13.9061,-38.9394,BA
+66,AER,pista_ponto_pouso,Linha,Aeródromo Barreirinha,-2.78965,-57.0572,AM
+67,AER,pista_ponto_pouso,Linha,Aeródromo Bartolomeu de Gusmão,-21.8116,-48133,SP
+68,AER,pista_ponto_pouso,Linha,Aeródromo Batatais,-20877,-47586,SP
+69,AER,pista_ponto_pouso,Linha,Aeródromo Bauru,-22.3448,-49.0539,SP
+70,AER,pista_ponto_pouso,Linha,Aeródromo Bauru - Arealva,-22.1614,-49.0701,SP
+71,AER,pista_ponto_pouso,Linha,Aeródromo Bebedouro,-20.9004,-48.4732,SP
+72,AER,pista_ponto_pouso,Linha,Aeródromo Belém,-1.41405,-48.4591,PA
+73,AER,pista_ponto_pouso,Linha,Aeródromo Belém Novo,-30.1889,-51.1816,RS
+74,AER,pista_ponto_pouso,Linha,Aeródromo Blumenau,-26.8315,-49.0937,SC
+75,AER,pista_ponto_pouso,Linha,Aeródromo Boa Safra,-12.7231,-56.5022,MT
+76,AER,pista_ponto_pouso,Linha,Aerodrómo Bom Futuro,-15.5064,-56.0985,MT
+77,AER,pista_ponto_pouso,Linha,Aeródromo Bom Jesus,-28.6055,-50.4516,RS
+78,AER,pista_ponto_pouso,Linha,Aeródromo Borba,-4.40522,-59.6028,AM
+79,AER,pista_ponto_pouso,Linha,Aeródromo Botelho,-15937,-47727,DF
+80,AER,pista_ponto_pouso,Linha,Aeródromo Breves,-1.63744,-50.4448,PA
+81,AER,pista_ponto_pouso,Linha,Aeródromo Brigadeiro Cabral,-20.1808,-44871,MG
+82,AER,pista_ponto_pouso,Linha,Aerodrómo Brigadeiro Eduardo Gomes,-13.8211,-56.0385,MT
+83,AER,pista_ponto_pouso,Linha,Aeródromo Brigadeiro Fábio Pereira da Silveira,-18.6105,-48.7197,MG
+84,AER,pista_ponto_pouso,Linha,Aeródromo Brigadeiro Francisco Pinto de Moura,-22.5573,-42.1148,RJ
+85,AER,pista_ponto_pouso,Linha,Aeródromo Bunge,-7.37096,-44.3948,PI
+86,AER,pista_ponto_pouso,Linha,Aeródromo Buritizal Agropastoril Ltda,-9.28949,-60.6967,MT
+87,AER,pista_ponto_pouso,Linha,Aeródromo Busato Ii,-13.1963,-43.6356,BA
+88,AER,pista_ponto_pouso,Linha,Aeródromo Caçapava do Sul,-30.5496,-53.4585,RS
+89,AER,pista_ponto_pouso,Linha,Aeródromo Cáceres,-16.0435,-57.6299,MT
+90,AER,pista_ponto_pouso,Linha,Aeródromo Cachoeira do Sul,-30.0019,-52.9409,RS
+91,AER,pista_ponto_pouso,Linha,Aeródromo Cacoal,-11.4957,-61.4508,RO
+92,AER,pista_ponto_pouso,Linha,Aeródromo Cadete 56 - 147 Santana,-12.8508,-48.2268,TO
+93,AER,pista_ponto_pouso,Linha,Aeródromo Caiapó,-9.1865,-49.7756,TO
+94,AER,pista_ponto_pouso,Linha,Aeródromo Caima,-4.30542,-56.2197,PA
+95,AER,pista_ponto_pouso,Linha,Aeródromo Calcário Vale do Araguaia,-14.1895,-51.6446,MT
+96,AER,pista_ponto_pouso,Linha,Aeródromo Campina Verde,-19.5514,-49.4986,MG
+97,AER,pista_ponto_pouso,Linha,Aeródromo Campo Belo,-20.8922,-45335,MG
+98,AER,pista_ponto_pouso,Linha,Aeródromo Campo do Meio,-21.1053,-45.8033,MG
+99,AER,pista_ponto_pouso,Linha,Aeródromo Campo Formoso,4.73398,-60.7674,RR
+100,AER,pista_ponto_pouso,Linha,Aeródromo Campo Grande,4.68382,-60.7933,RR
+101,AER,pista_ponto_pouso,Linha,Aeródromo Campo Maior,-4.85387,-42.2555,PI
+102,AER,pista_ponto_pouso,Linha,Aeródromo Campo Novo,-27.6664,-53.8087,RS
+103,AER,pista_ponto_pouso,Linha,Aeródromo Campos Gerais,-8.51836,-46.7515,MA
+104,AER,pista_ponto_pouso,Linha,Aeródromo Canarana,-13.5756,-52.2688,MT
+105,AER,pista_ponto_pouso,Linha,Aeródromo Candote,-20.8391,-52.3015,MS
+106,AER,pista_ponto_pouso,Linha,Aeródromo Canoas,-29.9461,-51.1443,RS
+107,AER,pista_ponto_pouso,Linha,Aeródromo Canutama,-6.52966,-64.3837,AM
+108,AER,pista_ponto_pouso,Linha,Aeródromo Capão Bonito,-24.0341,-48.3558,SP
+109,AER,pista_ponto_pouso,Linha,Aeródromo Carajás,-6.11757,-50.0038,PA
+110,AER,pista_ponto_pouso,Linha,Aeródromo Caratinga,-19.7249,-42.1121,MG
+111,AER,pista_ponto_pouso,Linha,Aeródromo Carauari,-4.8701,-66.8961,AM
+112,AER,pista_ponto_pouso,Linha,Aeródromo Carlos Alberto da Costa Neves,-26788,-50.9397,SC
+113,AER,pista_ponto_pouso,Linha,Aeródromo Carlos Alberto Pinto,-12.6089,-46.7471,TO
+114,AER,pista_ponto_pouso,Linha,Aeródromo Casalvasco,-15.4894,-60.0853,MT
+115,AER,pista_ponto_pouso,Linha,Aeródromo Caxambu,-21.9171,-44.9688,MG
+116,AER,pista_ponto_pouso,Linha,Aeródromo Chácara Mcl,-20.8813,-51.3569,SP
+117,AER,pista_ponto_pouso,Linha,Aeródromo Chácara Veneza,-15247,-59.2829,MT
+118,AER,pista_ponto_pouso,Linha,Aeródromo Chaves,-0.205856,-49.9843,PA
+119,AER,pista_ponto_pouso,Linha,Aeródromo Cia. Agrícola Quatá,-22.2859,-50.6391,SP
+120,AER,pista_ponto_pouso,Linha,Aeródromo Cibrasa,-1.23077,-47.2008,PA
+121,AER,pista_ponto_pouso,Linha,Aeródromo Clemente Verillo,-22.1014,-48.2268,SP
+122,AER,pista_ponto_pouso,Linha,Aeródromo Coari,-4134,-63.1331,AM
+123,AER,pista_ponto_pouso,Linha,Aeródromo Comandante Almir Mendes de Oliveira,-16.0609,-41.17,MG
+124,AER,pista_ponto_pouso,Linha,Aeródromo Comandante Antonio Amilton Beraldo,-25.1844,-50.1438,PR
+125,AER,pista_ponto_pouso,Linha,Aeródromo Comandante Tonho Dondê,-15.2455,-54.4925,MT
+126,AER,pista_ponto_pouso,Linha,Aeródromo Comandante Zequinha / Grand Lake,-16.6716,-48.0106,GO
+127,AER,pista_ponto_pouso,Linha,Aeródromo Conceição do Araguaia,-8.34869,-49.3016,PA
+128,AER,pista_ponto_pouso,Linha,Aeródromo Condomínio Boa Esperança,-8.40638,-45.4414,PI
+129,AER,pista_ponto_pouso,Linha,Aeródromo Confresa,-10.6337,-51.5656,MT
+130,AER,pista_ponto_pouso,Linha,Aeródromo Conquista do Pontal,-22.3849,-52.1104,SP
+131,AER,pista_ponto_pouso,Linha,Aeródromo Coroa do Avião,-7.84243,-34.8926,PE
+132,AER,pista_ponto_pouso,Linha,Aeródromo Coronel Aviador Carlos Orleans Guimarães,-20277,-50.2146,SP
+133,AER,pista_ponto_pouso,Linha,Aeródromo Costa Esmeralda,-27167,-48622,SC
+134,AER,pista_ponto_pouso,Linha,Aeródromo Creputiá,-8.11811,-57.1089,PA
+135,AER,pista_ponto_pouso,Linha,Aeródromo Cristiano Ferreira Varella,-21.1259,-42.3946,MG
+136,AER,pista_ponto_pouso,Linha,Aeródromo Cucuí,1.12492,-66.8438,AM
+137,AER,pista_ponto_pouso,Linha,Aeródromo Curiaú,0.208853,-51.0128,AP
+138,AER,pista_ponto_pouso,Linha,Aeródromo Curvelo,-18.7495,-44.4568,MG
+139,AER,pista_ponto_pouso,Linha,Aeródromo de Barreirinhas,-2.75658,-42803,MA
+140,AER,pista_ponto_pouso,Linha,Aeródromo de Cabo Frio,-22.9213,-42.0724,RJ
+141,AER,pista_ponto_pouso,Linha,Aeródromo de Campos Sales,-7.05231,-40.3575,CE
+142,AER,pista_ponto_pouso,Linha,Aeródromo de Canindé,-4.32501,-39.2505,CE
+143,AER,pista_ponto_pouso,Linha,Aeródromo de Iguatu,-6.3462,-39.2949,CE
+144,AER,pista_ponto_pouso,Linha,Aeródromo de Iturama,-19.7161,-50.2208,MG
+145,AER,pista_ponto_pouso,Linha,Aeródromo de Laguna,-28.3902,-48.7547,SC
+146,AER,pista_ponto_pouso,Linha,Aeródromo de Limoeiro do Norte (Dnocs),-5.12299,-37.9711,CE
+147,AER,pista_ponto_pouso,Linha,Aeródromo de Mombaça,-5.72914,-39.5982,CE
+148,AER,pista_ponto_pouso,Linha,Aeródromo de Morada Nova,-5.09069,-38369,CE
+149,AER,pista_ponto_pouso,Linha,Aeródromo Derso Portilho Vieira,-11.4253,-52.2192,MT
+150,AER,pista_ponto_pouso,Linha,Aeródromo de Russas,-4.94737,-38.0083,CE
+151,AER,pista_ponto_pouso,Linha,Aeródromo Descalvados,-16.7376,-57.7578,MT
+152,AER,pista_ponto_pouso,Linha,Aeródromo Descalvados,-16.7376,-57.7577,MT
+153,AER,pista_ponto_pouso,Linha,Aeródromo de Sertanópolis,-23062,-51.0139,PR
+154,AER,pista_ponto_pouso,Linha,Aeródromo Destilaria Medasa,-17.4914,-40.1565,BA
+155,AER,pista_ponto_pouso,Linha,Aeródromo Destilaria São Luiz,-8.77929,-35.7876,PE
+156,AER,pista_ponto_pouso,Linha,Aeródromo de Tamboril,-4.85752,-40.3748,CE
+157,AER,pista_ponto_pouso,Linha,Aeródromo de Três Barras,-26.1354,-50.3109,SC
+158,AER,pista_ponto_pouso,Linha,Aeródromo Diamantina,-18.2333,-43.6508,MG
+159,AER,pista_ponto_pouso,Linha,Aeródromo Dias Branco (Eusébio),-3.91632,-38.4909,CE
+160,AER,pista_ponto_pouso,Linha,Aeródromo Diomício Freitas,-28.7257,-49.4243,SC
+161,AER,pista_ponto_pouso,Linha,Aeródromo Dionísio Cerqueira,-26.2886,-53.6305,SC
+162,AER,pista_ponto_pouso,Linha,Aeródromo Dom Eliseu,-4.30385,-47587,PA
+163,AER,pista_ponto_pouso,Linha,Aeródromo Domingos Pignatari,-20.4586,-50.0031,SP
+164,AER,pista_ponto_pouso,Linha,Aeródromo Domingos Rego,-5.07959,-42.8738,MA
+165,AER,pista_ponto_pouso,Linha,Aeródromo Dona Iracema,-10.6077,-48.3487,TO
+166,AER,pista_ponto_pouso,Linha,Aeródromo Doutor José Mourão,-19.1559,-45.4949,MG
+167,AER,pista_ponto_pouso,Linha,Aeródromo Dracena,-21.4606,-51.6067,SP
+168,AER,pista_ponto_pouso,Linha,Aeródromo Dr. Emílio Fehr,-21.9068,-47821,SP
+169,AER,pista_ponto_pouso,Linha,Aeródromo Dr. Heráclito da Motta Luiz,-20.4333,-48.2254,SP
+170,AER,pista_ponto_pouso,Linha,Aeródromo Dr. José de Arruda Botelho,-22.1946,-47.8619,SP
+171,AER,pista_ponto_pouso,Linha,Aeródromo Eirunepé,-6.64029,-69879,AM
+172,AER,pista_ponto_pouso,Linha,Aeródromo - Embraer - Unidade Gavião Peixoto,-21.7742,-48.4049,SP
+173,AER,pista_ponto_pouso,Linha,Aeródromo Engenheiro Joaquim Martins,-13.3112,-40.8785,BA
+174,AER,pista_ponto_pouso,Linha,Aeródromo Essência do Rio Cuiabpa,-14.4351,-55.6092,MT
+175,AER,pista_ponto_pouso,Linha,Aeródromo Estância Caimam,-19.9704,-56.3116,MS
+176,AER,pista_ponto_pouso,Linha,Aeródromo Estância Colorado,-20.7615,-47.8625,SP
+177,AER,pista_ponto_pouso,Linha,Aeródromo Estância Esmeralda,-20.1603,-57.1581,MS
+178,AER,pista_ponto_pouso,Linha,Aeródromo Estância Hércules,-25.4603,-54.5986,PR
+179,AER,pista_ponto_pouso,Linha,Aeródromo Estância Itapororó,-29.4368,-56.2961,RS
+180,AER,pista_ponto_pouso,Linha,Aeródromo Estância Miranda,-21.9124,-57.1436,MS
+181,AER,pista_ponto_pouso,Linha,Aeródromo Estância Miranda,-19.8954,-56.4268,MS
+182,AER,pista_ponto_pouso,Linha,Aeródromo Estância Rebog,-12.8018,-50.6284,MT
+183,AER,pista_ponto_pouso,Linha,Aeródromo Estância Turística de Pereira Barreto,-20.6246,-51.0809,SP
+184,AER,pista_ponto_pouso,Linha,Aeródromo Estirão do Equador,-4.52477,-71.5619,AM
+185,AER,pista_ponto_pouso,Linha,Aeródromo Estrela Dalva,-20.6754,-56.6292,MS
+186,AER,pista_ponto_pouso,Linha,Aeródromo Evanderto Almeida,-6.98901,-39.8444,CE
+187,AER,pista_ponto_pouso,Linha,Aeródromo Everaldo Moraes Barreto,-21.6962,-51.0972,SP
+188,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda 20 de Maio,-21.8088,-49.9716,SP
+189,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Acalanto,-12.9591,-45.9729,BA
+190,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Acará,-15.0757,-51.1573,GO
+191,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Acaraja,-23.0025,-54.7005,MS
+192,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Adriana,-16.8328,-53.8342,MT
+193,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Agrocentro,-15.6859,-52.2674,MT
+194,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Agrofel,-14.4508,-58.2943,MT
+195,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Agromar,-13668,-56.4817,MT
+196,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Agronova,-16.1203,-52.4844,MT
+197,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Agropecuária Nossa Senhora Aparecida,-17.1246,-45.6049,MG
+198,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Agropesp,-12.4415,-56.9079,MT
+199,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Agroplan,-11.6658,-52.8596,MT
+200,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Agrovás,-11.5132,-52.4112,MT
+201,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Água Boa,-5.96202,-47.3929,MA
+202,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Água das Pedras,-22.6557,-48.1477,SP
+203,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Água Doce,-14.0509,-45.5936,BA
+204,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Água Fria,-21.0305,-50.9261,SP
+205,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Água Fria,-12.4031,-50.0639,TO
+206,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Água Limpa,-13.4092,-54.7492,MT
+207,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Água Limpa,-9.98048,-67.4914,AC
+208,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Água Preta,-14.1375,-51.4697,MT
+209,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Albatroz Ii,-12.1701,-45.8133,BA
+210,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Aldeia,-18.2131,-55.1569,MS
+211,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Alto do Piquiri,-17.8376,-54.7688,MS
+212,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Alvorada,-10.3921,-48.6788,TO
+213,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Alvorada I,-10.7063,-52.6545,MT
+214,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Amália,-11.8824,-58.6342,MT
+215,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Amália,-21.4439,-47.3708,SP
+216,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Amonguijá,-21.6898,-57475,MS
+217,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Amparo,-17.7826,-53.4558,MT
+218,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Anahí,-21.7016,-57.7404,MS
+219,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Andorinha I,-7.54802,-49.2089,TO
+220,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Anhanguera,-14.6428,-59.4487,MT
+221,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Annalu,-22.0819,-54.2016,MS
+222,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Aparecida,-21.4979,-50094,SP
+223,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Araçatuba,-15.1905,-57.7062,MT
+224,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Araçatuba,-22.0938,-52.6754,MS
+225,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Araguari,-13.3445,-53.9584,MT
+226,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Arapucel,-15.0473,-58.7291,MT
+227,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Araras,-19.6304,-55.2563,MS
+228,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Araras,-13.9078,-60.3208,MT
+229,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Araruna,-17.5833,-54.6414,MS
+230,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Arataú,-4.15071,-50.1637,PA
+231,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Arco-Íris,-16.9346,-53.5735,MT
+232,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Arrossensal,-14.3533,-56.7139,MT
+233,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Aruanã,-13.0813,-51.5889,MT
+234,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Aurora,-12.7104,-46157,BA
+235,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Aurora Iii,-21.4558,-53.3569,MS
+236,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Baessa,-17.9747,-50.3179,GO
+237,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Bahia,-16.9271,-54.0709,MT
+238,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Baía das Conchas,-21.1955,-57.6392,MS
+239,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Baluarte,-17.0148,-44.7929,MG
+240,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Bandeirantes,-13.7059,-50.6499,GO
+241,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Banguaçu - Miragem,-21.4549,-57.1465,MS
+242,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Barra do Agudo,-20.8105,-48.2226,SP
+243,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Barra Dourada,-21.9941,-54.2455,MS
+244,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Barra Mansa,-14.0451,-60.1544,MT
+245,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Barra Nova,-21.3196,-54.7345,MS
+246,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Barro Preto,-19819,-57.2053,MS
+247,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Baunilha,-23.5619,-54.0304,MS
+248,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Beira Rio,-10.9086,-55.8633,MT
+249,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Beira Rio,-18.7212,-53.3424,MS
+250,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Bela Manhã,-20.0175,-50.8934,SP
+251,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Bela Vista,-19.0462,-48973,MG
+252,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Bela Vista,-10.0539,-56.9913,MT
+253,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Bela Vista do Caronal,-18.2061,-55.9715,MS
+254,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Belluno,-27.8245,-49.2367,SC
+255,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Boa Esperança,-21.2514,-52.2849,MS
+256,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Boa Esperança,-12.8924,-56.3634,MT
+257,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Boa Fortuna,-10005,-49.4916,TO
+258,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Boa Sorte,-17.2101,-46615,MG
+259,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Boa Sorte,-11.3036,-48.6794,TO
+260,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Boca da Mata,-9.4317,-49.5914,TO
+261,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Bola Sete,-4.56958,-47.4716,MA
+262,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Bonança,-20.6768,-51.0307,SP
+263,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Bonito,-20.3876,-51.1977,SP
+264,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Borereo,-16.9318,-56.2285,MT
+265,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Bosque,-9.28325,-51.7517,PA
+266,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Brasília do Sul,-22.7005,-54.6079,MS
+267,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Brinquinho,-12.8253,-46.2456,BA
+268,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Brioso,-20.2377,-52.38,MS
+269,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Buriti,-15.4624,-55.6171,MT
+270,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Buritiz,-17.9187,-45.42,MG
+271,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Busato 1,-12.8997,-45.4947,BA
+272,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cachoeira,-20.7584,-55.5714,MS
+273,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cachoeira,-14566,-57.7786,MT
+274,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cachoeira,-12.5924,-49.5332,TO
+275,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cachoeira 2,-17.3897,-45.0939,MG
+276,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cachoeira do Café,-11.2713,-45.6077,BA
+277,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cachoeirão,-21.5985,-53.2273,MS
+278,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cachoeira Preta,-20.0216,-53217,MS
+279,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cachoeirinha,-20.0485,-51.4764,MS
+280,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cacique,-20.7688,-52.7786,MS
+281,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Calambi,-5.81578,-44.1329,MA
+282,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Calcário Tangará,-14.7283,-57.8351,MT
+283,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Califórnia,-9.74071,-51.4972,PA
+284,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Califórnia,-18.0359,-55.7183,MS
+285,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Califórnia,-21.7441,-50.9483,SP
+286,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Camagril Agropecuária,-14.1189,-57.3409,MT
+287,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cambara,-11.6188,-56.5525,MT
+288,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cambará,-17.9253,-55.2228,MS
+289,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cambuhy,-21.6329,-48.4796,SP
+290,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Campana,-21894,-54.2939,MS
+291,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Campanário,-22.7829,-55.0728,MS
+292,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Campo Aberto,-11.7879,-45965,BA
+293,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Campo Alegre Iii,-16.8448,-53.7345,MT
+294,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Campo Alto,-13.0379,-51.7142,MT
+295,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Campo Bom,-18.7347,-52.6052,MS
+296,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Campo Claro,-12.6744,-51.7391,MT
+297,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Campo Grande,-20.2579,-48.7885,SP
+298,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Campo Real,-13.4444,-57.7798,MT
+299,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Campo Triste,-20629,-52.0283,MS
+300,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Canabrava,-5.59679,-43.3198,MA
+301,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Canadá,-15.0241,-44.0386,MG
+302,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Canadá,-18.8617,-48.4229,MG
+303,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Canadá,-17.3601,-50.3385,GO
+304,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Canamari,-18.5496,-50.3812,GO
+305,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Canuanã,-11.9754,-49.9042,TO
+306,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Capão Verde,-20.0739,-56.0733,MS
+307,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Caraíbas,-15.6531,-43.4031,MG
+308,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Caraíbas,-13.3873,-46.7761,GO
+309,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Carandá,-22.1238,-57.2905,MS
+310,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cataco,-21.2551,-49.7948,SP
+311,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cedro,-5.75854,-49.1762,PA
+312,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cedro,-21.8709,-55.7463,MS
+313,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cedro,-16.2048,-55.3979,MT
+314,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Centúria Austrália,-11.3581,-46.1664,BA
+315,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Centúria Santana,-11.2165,-45.84,BA
+316,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Centúria Vitória,-11.2278,-46038,BA
+317,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cerradão,-18.2756,-51.2314,GO
+318,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cerro Azul,-21.1825,-55.7342,MS
+319,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cerro Porã,-22.0327,-57.4683,MS
+320,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cervinho,-19.6598,-55.6253,MS
+321,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Chapadão,-12.0726,-52.8254,MT
+322,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Chapadão,-17.8936,-47244,MG
+323,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cibrapa,-15.0368,-52.0999,MT
+324,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cidade Verde,-15.4135,-54.3724,MT
+325,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cocal Ii,-12.8011,-52.6053,MT
+326,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Colorado,-18.8217,-53.8483,MS
+327,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Colorado,-13.9451,-57.1038,MT
+328,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Colorado,-13.1334,-55.4448,MT
+329,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Concordia,-22.8526,-54.2084,MS
+330,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Conforto,-14.0658,-50.4166,GO
+331,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Congonhas,-19.6627,-50.9504,MG
+332,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Constância,-20.4889,-49.1887,SP
+333,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Continental,-20236,-48.6507,SP
+334,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Copacabana,-17.4163,-47.8252,GO
+335,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Córrego Azul,-21.4411,-52157,MS
+336,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Corrego Limpo,-20.1706,-55.0513,MS
+337,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Correntão,-18.7126,-51.8711,GO
+338,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Corumbi,-12.5142,-61.3011,RO
+339,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Costa Norte Ii,-9.29232,-58.0321,MT
+340,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Coxilha,-28.1336,-52.2999,RS
+341,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cristal 2,-14.3415,-50.4532,GO
+342,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Cristo,-19.8654,-56.9881,MS
+343,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Diamante,-9.05877,-45.5047,PI
+344,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Dimep,-23.1402,-48.4954,SP
+345,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda do Brejo,-19255,-44.4735,MG
+346,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda do Café,-18.8735,-48.7218,MG
+347,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Dois Irmãos,-16.3888,-57.2882,MT
+348,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Dom Arlindo,-22.7956,-54.1572,MS
+349,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Don Felipe,-22559,-55.3812,MS
+350,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda dos Castanhais,-6.7751,-49.3611,PA
+351,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda dos Três Rios,-16.9436,-46.2722,MG
+352,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Douradinho,-21.6433,-53.3107,MS
+353,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Duas Âncoras - Seção Sede,-14.9363,-52.1731,MT
+354,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Eldorado,-15.5767,-52.2197,MT
+355,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Eldorado,-7.75899,-49.1275,TO
+356,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Encantado,-13.3135,-58.7991,MT
+357,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Encontro das Águas,-22.6078,-48388,SP
+358,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Entre Rios,-21.8785,-48.6593,SP
+359,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Entre Rios,-21.3585,-57.1011,MS
+360,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Espinhaço Ii,-15.3982,-52.0758,MT
+361,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Esplanada,-20869,-52866,MS
+362,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Estrela,-13156,-52.5703,MT
+363,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Estrela D'Alva,-13.1917,-52.3122,MT
+364,AER,pista_ponto_pouso,Linha,Aerodrómo Fazenda Estrela Dalva,-12.1117,-52.6223,MT
+365,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Estrela do Aripuana,-10.7483,-59374,MT
+366,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Excalibur,-15.2964,-60.3692,MT
+367,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Experimental,-22.2954,-53.8482,MS
+368,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda F5,-18.3642,-48.8718,MG
+369,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Fazendinha,-19.4828,-56.4851,MS
+370,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Felicidade,-15.8423,-58.6344,MT
+371,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Firme,-19.2595,-57.0129,MS
+372,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Flávia,-18.3472,-53.7518,MS
+373,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Flexas,-16.3692,-45.1233,MG
+374,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Flor,-21.5006,-53755,MS
+375,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Floresta,-17.5977,-50.6947,GO
+376,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Floresta,-12.8066,-51874,MT
+377,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Floresta do Lobo,-19.0781,-48.1292,MG
+378,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Floresta Negra,-23815,-54.6993,MS
+379,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Florida,-17.1869,-58.2192,MT
+380,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Fontana,-15.5024,-55.3813,MT
+381,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Formosa,-20.1987,-53.2236,MS
+382,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Forquilha,-15.2148,-50.8358,GO
+383,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Fortaleza,-20947,-52.7215,MS
+384,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Fortaleza,-15.6792,-53584,MT
+385,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Fortaleza de Santa Terezinha,-17.1866,-44.6494,MG
+386,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Fotaleza do Guaporé,-14.4662,-60.1737,MT
+387,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Frigovale I,-10.4902,-48.3367,TO
+388,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Fundãozinho,-18.9523,-53.1549,MS
+389,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Furna Azul,-6216,-48426,TO
+390,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Futura,-13.1217,-55.0706,MT
+391,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Gaia,-18.7661,-48.7548,MG
+392,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Gairova,-11198,-58.2354,MT
+393,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Galheiro,-15.3131,-54.5976,MT
+394,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Genipapo,-13.4535,-46.6798,GO
+395,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Genipapo,-17.7245,-44.6159,MG
+396,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Giruá,-18.8045,-54.8526,MS
+397,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Gleba da Barra,-17.0147,-46.0747,MG
+398,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Glória,-18.3146,-53.6607,MS
+399,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Goaiba,-19.9253,-52.6173,MS
+400,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Granja Santiago,-17.1622,-46.6603,MG
+401,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Grupal,-10.0427,-51.5925,MT
+402,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Guaíba,-23236,-54.5402,MS
+403,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Guaivira,-20.6635,-52.7684,MS
+404,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Guanabara,-20.8184,-51.2672,SP
+405,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Guanabara,-21344,-51404,SP
+406,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Guanabara,-18.2312,-55.7503,MS
+407,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Guaporé,-13.7232,-60.3142,MT
+408,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Guaporé,-14.6009,-60.1218,MT
+409,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Guaporeí,-15.0063,-60.2208,MT
+410,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Guarani,-22.1642,-53.5682,MS
+411,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Guariba,-10.2497,-60.1425,MT
+412,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Horita,-13011,-46.2386,BA
+413,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Horizonte,-17.6649,-54.8204,MS
+414,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ideal,-18.6566,-40337,ES
+415,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ilha Camargo,-17.0636,-56.5841,MT
+416,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Independência,-14.8638,-53.4958,MT
+417,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Inhumas,-17.0346,-46.2668,MG
+418,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ipanema,-13.6214,-46.1381,BA
+419,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ipanema,-20.8104,-51.3016,SP
+420,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ipiranga,-20.9765,-55.5661,MS
+421,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Irmaos Munaretto,-13.1116,-55.9936,MT
+422,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Itaguassu,-21.3592,-55.6226,MS
+423,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Itakiray,-23.5102,-54.2516,MS
+424,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Itamarati,-22.1883,-55.5776,MS
+425,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Itamarati Norte,-14.2429,-57.9953,MT
+426,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Izaura - Usina Cocal,-22.5076,-50.8596,SP
+427,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jacareúna,-11.4419,-52.1995,MT
+428,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jacarezinho Nova Terra,-11.7567,-44.1334,BA
+429,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jade,-10.9543,-48.9949,TO
+430,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jaguarandy,-22.5891,-55.5854,MS
+431,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jaguatirica,-22.0255,-57.9689,MS
+432,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jaibense,-14.9464,-43.6703,MG
+433,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Janaína,-22.9833,-55.0199,MS
+434,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jangada,-14.7198,-51.9149,MT
+435,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jaó,-14.7688,-51.9857,MT
+436,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jaqueline,-12.8764,-60.1179,RO
+437,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jarinã,-10.3257,-53.5928,MT
+438,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jatobá,-14.1882,-57.5199,MT
+439,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jatobá,-23.9228,-55.3001,MS
+440,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jauru,-18.7295,-54.1064,MS
+441,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jequitibá,-21.8784,-53.8154,MS
+442,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jl,-20.0024,-51.3838,MS
+443,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Juara,-11.8169,-57.5651,MT
+444,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Juba,-14.7449,-58131,MT
+445,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Juliana,-12.6827,-61.0891,RO
+446,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Júlio Martins,-18.8449,-52486,MS
+447,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jumbo,-22.5127,-53.3338,MS
+448,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Jussara,-15.8454,-51.0728,GO
+449,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Kajussol,-11.9582,-61.6848,RO
+450,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Kurupay,-22.0361,-53.7358,MS
+451,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lageado,-20.9954,-52.1669,MS
+452,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lagoa da Mata,-10.1352,-55.5789,MT
+453,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lagoa das Antas,-6.56477,-49.7259,PA
+454,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lagoa do Barro,-13.2345,-49.6993,GO
+455,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lagoa do Morro,-13.1033,-39.8951,BA
+456,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lagoa dos Patos,-16194,-43.0728,MG
+457,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lagoa do Triunfo,-6.5404,-52.7689,PA
+458,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lagoa Encantada,-16.0216,-58895,MT
+459,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lagoa Funda,-15.3407,-55.1407,MT
+460,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lagoa Serena,-4.5981,-42.5926,PI
+461,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lambari,-18.0222,-55.0025,MS
+462,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lapa do Lobo,-19.5329,-50.9752,MS
+463,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Londrina,-13.3609,-57.7584,MT
+464,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Londrina Ii,-21.9718,-57.8546,MS
+465,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Lucero Porã,-21907,-57.65,MS
+466,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mamoneira,-16.5861,-46.5011,MG
+467,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Manchete,-9.74824,-49.9778,TO
+468,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mandassaia,-10.8119,-57.6791,MT
+469,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Marabá,-15.2753,-55.1215,MT
+470,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Marabá,-21.6897,-57.3657,MS
+471,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Maracaí,-23.4133,-54.0136,MS
+472,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Marambaia,-17.4392,-44.9375,MG
+473,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Marazul,-16.5429,-55.9184,MT
+474,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Marca Salto,-21.9826,-53.9039,MS
+475,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Maria do Guaporé,-14.1994,-60.2871,MT
+476,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Maria José,-17.4581,-54.7398,MT
+477,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Marocopa,-17.3235,-46545,MG
+478,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Masutti,-13.5581,-59.1144,MT
+479,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mata Escura,-5.74523,-43.6029,MA
+480,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mato Alto,-23.5055,-54.3094,MS
+481,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mato Grosso,-13.8246,-59.1633,MT
+482,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Menina,-20.6404,-51477,SP
+483,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mequens,-13.0624,-62.2594,RO
+484,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mercedes Estância,-18.3354,-55.4826,MS
+485,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Michelim,-17.3812,-54.7361,MT
+486,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mimoso,-20.7302,-53.5628,MS
+487,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Modelo,-21.3726,-52.2015,MS
+488,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Monte Alegre,-14.7734,-57.3626,MT
+489,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Morada da Lua,-18.2654,-54.3133,MS
+490,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Morro Alto,-10.5052,-55.7105,MT
+491,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Morro Vermelho,-22.2766,-48.6041,SP
+492,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mrv,-14.9137,-43364,MG
+493,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Muiraquitã,-10.4285,-60.5464,MT
+494,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mundo Acabado,-17.9407,-54.9304,MS
+495,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mutum,-22.2797,-52.8442,MS
+496,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Mutum,-15.3983,-54609,MT
+497,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nazaré,-9.35664,-45.5597,PI
+498,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Negrinha,-21.8747,-50.8731,SP
+499,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nhandu,-9.63234,-55.2175,MT
+500,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nossa Senhora Aparecida,-17.5447,-53.8938,MS
+501,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nossa Senhora Aparecida,-19.9483,-48584,MG
+502,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nossa Senhora da Muxima,-19.5873,-52.9524,MS
+503,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nova,-17.1727,-50.2085,GO
+504,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nova,-19.0503,-48.5822,MG
+505,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nova Floresta,-21.8917,-51.1777,SP
+506,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nova Holanda,-8.80688,-46.3591,MA
+507,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nova Jerusalém,-12.5941,-55.6976,MT
+508,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nova Larga,-16.6704,-57.6753,MT
+509,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Nova Viena,-14.8861,-52278,MT
+510,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Novo Horizonte,-18.3184,-54937,MS
+511,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Novo Horizonte,-7.0968,-48.7605,TO
+512,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Novo Horizonte,-15.4319,-43.9119,MG
+513,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Novo Rumo,-22.9854,-53.8773,MS
+514,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Olho D'Água,-5.66358,-43536,MA
+515,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Olho D'Água,-16141,-52.9666,MT
+516,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Olhos Dágua,-12.0094,-40.2744,BA
+517,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ouro Verde,-23978,-55364,MS
+518,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ouro Verde,-18082,-55311,MS
+519,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Pacuruxu,-21.2573,-51.7296,SP
+520,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Paiaguas,-14.0728,-57.4507,MT
+521,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Paiquerê,-19.8844,-50505,SP
+522,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Palma,-31.6543,-52.2077,RS
+523,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Palmeira,-12.0904,-55.9968,MT
+524,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Palmeiras,-22.1566,-47.7193,SP
+525,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Paloma,-20.3217,-48.8331,SP
+526,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Pamplona,-16.2168,-47.6301,GO
+527,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Panorama,-22.0389,-56.2693,MS
+528,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Pantera,-17.9523,-53.2469,MT
+529,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Paquetá,-22.3678,-55.1276,MS
+530,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Paraguá,-14.7765,-60039,MT
+531,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Paraíso,-19.1628,-52.9969,MS
+532,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Paraíso,-12.4305,-54.2507,MT
+533,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Paraíso,-20.5625,-54.8644,MS
+534,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Paraná,-11.7167,-58.2203,MT
+535,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Parnaíba,-8.5099,-46.0746,MA
+536,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Paulista,-25.3917,-54.41,PR
+537,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Pedra Mármore,-21.2705,-56.5131,MS
+538,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Peixe Bravo,-10.0946,-50.3822,MT
+539,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Pequena Holanda I,-9.00905,-46.1361,MA
+540,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Perdizes,-17.5991,-44.6592,MG
+541,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Periquitos,-20.5015,-51.8329,MS
+542,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Pertinho do Céu,-16.4747,-53.9112,MT
+543,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Pica-Pau,-14.7493,-50.6629,GO
+544,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Pingo Dágua,-17.7252,-53.9385,MS
+545,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Piquiri,-22.0256,-57903,MS
+546,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Piraguassu,-10.8598,-51.6888,MT
+547,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Pirapó,-12.2121,-55.8573,MT
+548,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Piratininga,-12.8224,-50.3298,GO
+549,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Plama,-16.1898,-48.0792,GO
+550,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Planalto,-20.4567,-56.0625,MS
+551,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Planeste,-8.55606,-46.8503,MA
+552,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Planorte,-13.9428,-58.8958,MT
+553,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Pontal,-19.9701,-50.9706,MG
+554,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ponte Funda,-21871,-52164,SP
+555,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Porto Seguro,-7.13156,-52728,PA
+556,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Poruína,-18.1198,-52.2172,GO
+557,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Potrich,-12.9161,-55.5351,MT
+558,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Pouso Redondo,-12.9777,-61.0491,RO
+559,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Primavera,-21.3858,-53.5975,MS
+560,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Primavera,-16.2469,-57.6218,MT
+561,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Primavera,-19.5056,-55.9074,MS
+562,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Primavera,-19.4801,-52.7981,MS
+563,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Primavera,-17.6868,-42.2892,MG
+564,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Primeiro de Maio,-17.8771,-54.9422,MS
+565,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Princesa do Sul,-23.7696,-54.6775,MS
+566,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Procomp 2,-22.8498,-55.4101,MS
+567,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Procomp I,-23.6461,-54.7145,MS
+568,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Progresso,-19.7177,-52.8445,MS
+569,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Promissão,-13.8971,-57.1044,MT
+570,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Providência,-10.1144,-61.3914,MT
+571,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Querubim,-12.7429,-45.23,BA
+572,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rancho Belo,-21.7178,-53.1021,MS
+573,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rancho do Planalto,-18.1435,-53.3639,MS
+574,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rancho Esperança,-22872,-55.4949,MS
+575,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Reata,-13.6262,-57.5828,MT
+576,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rebeca,-12.6827,-43.8716,BA
+577,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Redenção,-22.7166,-48.0489,SP
+578,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Renascença,-16.1167,-46.3543,MG
+579,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Requinte,-12812,-46.1408,BA
+580,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Retiro do Bom Fim,-18.6813,-49.9875,MG
+581,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Retiro do Cervo I,-20.3506,-53.9705,MS
+582,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Reunidas Baumgart Iv,-16.8704,-50.9598,GO
+583,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ribeirão,-8.00894,-45333,PI
+584,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ribeirão,-18.7636,-52.9171,MS
+585,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ribeirão,-22.4152,-43.7745,RJ
+586,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rio Bonito,-19.1994,-52.9631,MS
+587,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rio Brilhante,-12.8038,-45.7219,BA
+588,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rio Crixás,-13.7383,-50.0147,GO
+589,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rio Fontoura,-11.5592,-52.2511,MT
+590,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rio Lagoa,-20.8326,-53.0682,MS
+591,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rio Lagoa,-20.8353,-53.2039,MS
+592,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rio Largo,-5.19249,-43.5994,MA
+593,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rio Verde,-17.9843,-52.5752,GO
+594,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rocador I,-12.1551,-52.2789,MT
+595,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rosa dos Ventos,-18.3016,-49.8461,GO
+596,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Rosa - Paralelo 10,-9.97122,-61.2301,MT
+597,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Saco da Tapera,-16.3478,-45.3425,MG
+598,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sagarana,-13.7519,-46.1625,BA
+599,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sagrado Coração de Jesus,-15.0907,-60.1155,MT
+600,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Salto Bello Ii,-14.9648,-53.4922,MT
+601,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda San Jose I,-19.8149,-53.8278,MS
+602,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sansara,-16.6028,-43.7714,MG
+603,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Ada,-22.6625,-53.7295,MS
+604,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Adélia,-10.7203,-52.2774,MT
+605,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Alaide,-22.0211,-54.9362,MS
+606,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Alice,-15584,-58.0456,MT
+607,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Ana,-13.0048,-61.2404,RO
+608,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Ana,-22.0336,-54.1909,MS
+609,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Cecília Ii,-18.1445,-56.1004,MS
+610,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Clara,-10.7029,-48.1948,TO
+611,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Cristina,-20.7002,-56.0187,MS
+612,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Cruz,-14.2184,-46839,GO
+613,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Cruz,-15.1862,-59.9333,MT
+614,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Delfina,-20.0274,-56.3205,MS
+615,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Elisa,-20531,-50636,SP
+616,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Elza,-18684,-53287,MS
+617,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Fé,-21.4739,-55.8779,MS
+618,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Fé,-20.9245,-47.8684,SP
+619,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Fé,-9.58989,-50.3511,PA
+620,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Fé do Guaporé,-14.0144,-59.8821,MT
+621,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Fé do Xingu,-10.3131,-52.2025,MT
+622,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Feliciana,-20.9449,-56676,MS
+623,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Helena,-16.1692,-58.1405,MT
+624,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Helena,-21.9757,-53417,MS
+625,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Helena do Pindó,-22894,-53.8676,MS
+626,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Ilídia,-22324,-53.0955,MS
+627,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Inês,-21.7015,-54.3696,MS
+628,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Izabel,-14.2653,-47.0276,GO
+629,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Josefa,-22.7694,-53.9576,MS
+630,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Júlia,-13.7323,-51.3406,MT
+631,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Julieta,-21.5802,-49.8748,SP
+632,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Laura,-10.8628,-54.9153,MT
+633,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Lúcia,-21.0342,-57.7412,MS
+634,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Luíza,-22.4831,-48.5245,SP
+635,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Luzia,-9.77057,-58063,MT
+636,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Luzia,-13.9948,-55.9408,MT
+637,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Luzia,-6.82692,-45.4066,MA
+638,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria,-15.7401,-57.4834,MT
+639,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria,-18.2102,-55.4653,MS
+640,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria,-20.3461,-52319,MS
+641,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria,-22.0066,-49413,SP
+642,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria,-23.4958,-51.32,PR
+643,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria,-10.9653,-46.2624,BA
+644,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria,-18.5866,-48.8704,MG
+645,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria,-21.5064,-56.4209,MS
+646,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria,-15.3777,-57.6814,MT
+647,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria da Mata,-20.7245,-50.9722,SP
+648,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria do Jauru,-15.8246,-58.5519,MT
+649,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Maria do Porto da Capivara,-17.1447,-56.5979,MT
+650,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Marina,-20.8473,-50788,SP
+651,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Mônica,-6.51466,-48.2676,TO
+652,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Mônica,-15.9988,-43.7385,MG
+653,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Mônica,-15.9357,-48.6466,GO
+654,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santana,-11.6684,-45.7284,BA
+655,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santângelo Agropecuária,-20.1321,-56.3707,MS
+656,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sant'Anna do Apa,-21.9959,-56.24,MS
+657,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Olinda,-20.7584,-55.0338,MS
+658,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Rita,-17.3468,-53.1942,GO
+659,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Rita,-22.9427,-54.1046,MS
+660,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Rita do Araguaia,-15.4371,-51.5996,GO
+661,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Rosa,-14.5413,-50462,GO
+662,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Sílvia,-14.3882,-51.3811,MT
+663,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Teresinha,-13.6715,-55.5334,MT
+664,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Tereza,-18.3029,-57.5071,MS
+665,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Terezinha,-20.4989,-52.3687,MS
+666,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Terezinha,-10.3249,-50.9501,MT
+667,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santa Vergínia,-21.4881,-52.4074,MS
+668,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santiago de Compostela,-13451,-60.2706,MT
+669,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo André,-20.3441,-56.6974,MS
+670,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo André,-13.6864,-55.9875,MT
+671,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo Ângelo,-12793,-46.0942,BA
+672,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo Antônio,-16.7168,-46.5219,MG
+673,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo Antônio,-11.7082,-45.9854,BA
+674,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo Antônio,-15305,-54.9006,MT
+675,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo Antônio,-21.4106,-53.3081,MS
+676,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo Antônio,-17.0692,-45.4476,MG
+677,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo Antônio,-15.6178,-51814,MT
+678,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo Antônio da Serra do Boqueirão,-11.6595,-43.8164,BA
+679,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo Antônio do Guaporé,-16.0087,-59.9208,MT
+680,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santo Antônio do Paraíso,-17.4918,-55223,MT
+681,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santos Reis,-17.5471,-46.9783,MG
+682,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Santri,-17.1576,-56.6148,MT
+683,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Bento,-21.0717,-55.1247,MS
+684,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Diego,-10628,-45.7437,BA
+685,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Francisco,-17.5007,-51.5973,GO
+686,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Francisco,-10.1583,-53.6995,MT
+687,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Francisco,-17.8601,-55.7844,MS
+688,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Francisco,-11.6943,-45.5112,BA
+689,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Francisco do Itaquerê,-21.7638,-48.5824,SP
+690,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Gabriel,-18.9642,-44.2721,MG
+691,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São João,-22.7893,-49.3392,SP
+692,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São João,-19.2615,-52.9,MS
+693,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Joaquim,-20.3521,-51.5456,MS
+694,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Joaquim,-21.4877,-56.4864,MS
+695,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Joaquim I,-19.0089,-50.4316,MG
+696,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Joaquim O.B.,-20.8282,-51.0078,SP
+697,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Jorge,-17.5235,-54.8211,MT
+698,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São José,-21.7451,-49.1653,SP
+699,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São José da Lagoa,-14582,-50.7083,GO
+700,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São José das Reunidas,-11.0166,-52.3679,MT
+701,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São José do Cangalha,-19505,-52.6045,MS
+702,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São José do Paranaíba,-18.3875,-48.8616,MG
+703,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São José O.B.,-21.4251,-46.7548,SP
+704,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Judas,-13.3774,-50.4239,GO
+705,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Lucas,-15.7114,-59.2369,MT
+706,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Luiz,-17.4657,-47.2543,MG
+707,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Luiz do Matão,-19.8701,-50.6529,MG
+708,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Luiz do Oeste,-18.8627,-54.3492,MS
+709,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Marcos,-22.2933,-54.9408,MS
+710,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Marcos,-15.4096,-53.3359,MT
+711,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Mateus,-13.9257,-59.9885,MT
+712,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Matheus,-20.3175,-51.7814,MS
+713,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Miguel,-21.8692,-50.1172,SP
+714,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Miguel,-12608,-46.2394,BA
+715,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Miguel,-15.9728,-46.7098,MG
+716,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Paulo,-18.0996,-53.1539,MS
+717,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Paulo,-20.87,-52.1679,MS
+718,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Paulo,-14.98,-51333,GO
+719,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Paulo dos Palmares,-23.2702,-49.5466,SP
+720,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Pedro,-23.6638,-54079,MS
+721,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Pedro,-21.7947,-53.4744,MS
+722,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Sebastião,-18.1452,-51.2739,GO
+723,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Sebastião,-18.0412,-56004,MS
+724,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Sebastião,-19.9964,-47516,SP
+725,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Sebastião do Jatobazinho,-18.5754,-57.5097,MS
+726,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda São Vicente,-19.3105,-48.3431,MG
+727,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sapucaí,-8.29902,-45.7638,MA
+728,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Saudade,-14.1438,-51.0173,MT
+729,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Savannah,-14699,-45.8304,BA
+730,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Scheffer,-8.34257,-65.7122,AM
+731,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Seis Palmas,-21.0955,-57.7171,MS
+732,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sequóia,-17.6531,-42.2656,MG
+733,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Serra Azul,-14.6676,-54.5684,MT
+734,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Serra Azul,-11936,-40.0499,BA
+735,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Serra do Cabral,-17698,-44348,MG
+736,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Serra Dourada,-13.1052,-48.3826,TO
+737,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Serrana,-13.9306,-46.2322,BA
+738,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Serra Vermelha,-6.87464,-45.3072,MA
+739,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Serrito,-22.4097,-54.9872,MS
+740,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sete de Setembro,-13.8802,-52.4005,MT
+741,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Shangri-Lá,-22.2952,-49212,SP
+742,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Simarelli,-13.6049,-59.3178,MT
+743,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Siriema,-13.5632,-59.2662,MT
+744,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sol Aberto,-12.8957,-58.5739,MT
+745,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sombra da Serra,-18996,-55.1338,MS
+746,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sonho Dourado,-20.4692,-50.1406,SP
+747,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Soya,-12.9222,-45.5697,BA
+748,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sperafico,-23.1905,-55.2899,MS
+749,AER,pista_ponto_pouso,Linha,Aeródromo Fazendas Reunidas,-17.7508,-51.1537,GO
+750,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Sumaré,-21.5423,-53.3448,MS
+751,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Suri,-14.8151,-53.1234,MT
+752,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Tábua,-13.3066,-56.5732,MT
+753,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Tanguru,-12.7224,-52.3762,MT
+754,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Tapayuna,-10.7065,-55.9328,MT
+755,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Tapijara,-23.2197,-49.0763,SP
+756,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Tauá,-16.9837,-39164,BA
+757,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Thália,-25.5201,-49.6832,PR
+758,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Thauá,-17.7148,-54.4116,MS
+759,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Timbaúba,-12.5191,-46.1507,TO
+760,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Timbaúba,-12.5191,-46.1507,BA
+761,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Timbaúba I,-12.5275,-46186,TO
+762,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Toca da Onça,-15.2782,-51.4129,GO
+763,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Topázio Imperial,-14.9677,-43.3156,MG
+764,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Torrão de Ouro,-18.1808,-54502,MS
+765,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Tosana,-22.5969,-42025,RJ
+766,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Touro Branco,-23.0131,-53791,MS
+767,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Travessão,-16144,-60.1205,MT
+768,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Três Companheiros,-16.6828,-52253,GO
+769,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Três Irmãos,-20.2282,-50.9687,SP
+770,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Três Marias,-19503,-53.0486,MS
+771,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Triângulo,-13.5806,-49.8208,GO
+772,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Triflora,-12.4476,-45.6716,BA
+773,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Tropical,-12.8856,-61298,RO
+774,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Tucano,-13.5848,-57.5649,MT
+775,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Tucunaré,-13.4657,-58.8663,MT
+776,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Tuju Puitan,-23.3414,-54.5684,MS
+777,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Turmalina,-21983,-50.9723,SP
+778,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Uberaba,-17275,-57.8971,MT
+779,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Uirapuru,-12.1002,-54.1758,MT
+780,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Uirapuru,-6.85431,-48.4386,TO
+781,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda União,-19.7572,-55.4797,MS
+782,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Uval,-17.3055,-56.4981,MS
+783,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vaca Mocha,-22.2215,-57158,MS
+784,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vale Verde,-19672,-48.9949,MG
+785,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vale Verde,-9.95796,-49.7546,TO
+786,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vanguarda,-14.9116,-51.2786,MT
+787,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vargem das Flores,-17.8492,-49.5827,GO
+788,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Varjadão,-12.3359,-49.6205,TO
+789,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Varnier,-12.9934,-57.4108,MT
+790,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Ventura I,-13.1931,-46.2835,BA
+791,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vera Cruz,-14.8737,-52.1107,MT
+792,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vertente,-15.8965,-55.3179,MT
+793,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Villa Terezinha,-17.4059,-43.9398,MG
+794,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vista Alegre,-22.5985,-53.6917,MS
+795,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vista Alegre,-20.6617,-50.8435,SP
+796,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vista Alegre,-19.9967,-51.5146,MS
+797,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vista Verde,-8.49152,-44.3845,PI
+798,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vitória do Ivinhema,-22.5121,-53.6704,MS
+799,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Volta Grande,-21455,-55.4563,MS
+800,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vô Zeca,-10.3551,-50.6826,MT
+801,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Vr,-10.1146,-52.5081,MT
+802,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda W. Egido Iii,-15.9379,-46.4803,MG
+803,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Xaimite,-14.0917,-52.9045,MT
+804,AER,pista_ponto_pouso,Linha,Aeródromo Fazenda Yara,-21.0656,-54.1143,MS
+805,AER,pista_ponto_pouso,Linha,Aeródromo Filial,-20.0056,-48.9616,MG
+806,AER,pista_ponto_pouso,Linha,Aeródromo Fonte Nova,-2.53265,-66.0832,AM
+807,AER,pista_ponto_pouso,Linha,Aeródromo Formiga,-20.3943,-45.4832,MG
+808,AER,pista_ponto_pouso,Linha,Aeródromo Formoso do Araguaia,-11.4832,-49.9559,TO
+809,AER,pista_ponto_pouso,Linha,Aeródromo Forte Coimbra,-19.9053,-57.78,MS
+810,AER,pista_ponto_pouso,Linha,Aeródromo Foz do Areia,-25.9817,-51.6407,PR
+811,AER,pista_ponto_pouso,Linha,Aeródromo Francisco Correa da Cruz,-7.53472,-63.0713,AM
+812,AER,pista_ponto_pouso,Linha,Aeródromo Francisco de Assis,-21.7916,-43.3861,MG
+813,AER,pista_ponto_pouso,Linha,Aeródromo Francisco Lacerda Júnior,-23153,-50.6029,PR
+814,AER,pista_ponto_pouso,Linha,Aeródromo Frigo Estrela,-20.2946,-50.4102,SP
+815,AER,pista_ponto_pouso,Linha,Aeródromo Fronteira,-12.5269,-58.2353,MT
+816,AER,pista_ponto_pouso,Linha,Aeródromo Fronteira,-20.2785,-49.1874,MG
+817,AER,pista_ponto_pouso,Linha,Aeródromo Furnas,-20703,-46.3352,MG
+818,AER,pista_ponto_pouso,Linha,Aeródromo Garça,-22.1825,-49.6562,SP
+819,AER,pista_ponto_pouso,Linha,Aeródromo Gaudêncio Machado Ramos,-29.8115,-55.8949,RS
+820,AER,pista_ponto_pouso,Linha,Aeródromo Geraldo Moacir Bordon,-21.7753,-52.1435,SP
+821,AER,pista_ponto_pouso,Linha,Aeródromo Grupo Iowa,-13.0702,-45.9376,BA
+822,AER,pista_ponto_pouso,Linha,Aeródromo Guajará-Mirim / Guajará-Mirim,-10787,-65285,RO
+823,AER,pista_ponto_pouso,Linha,Aeródromo Guaporé,-28.8947,-51.8547,RS
+824,AER,pista_ponto_pouso,Linha,Aeródromo Guaxupé,-21.3257,-46.7307,MG
+825,AER,pista_ponto_pouso,Linha,Aeródromo Gurupá,-1.41097,-51.6368,PA
+826,AER,pista_ponto_pouso,Linha,Aeródromo Hélio Wasum,-26.7819,-53.5037,SC
+827,AER,pista_ponto_pouso,Linha,Aeródromo Helmuth Baungartem,-27.1604,-49.5425,SC
+828,AER,pista_ponto_pouso,Linha,Aeródromo Herbert Mata Pires,-12402,-40.4745,BA
+829,AER,pista_ponto_pouso,Linha,Aeródromo Hercilio Luz,-27.6703,-48553,SC
+830,AER,pista_ponto_pouso,Linha,Aeródromo Hercilio Luz,-27.6709,-48.5418,SC
+831,AER,pista_ponto_pouso,Linha,Aeródromo Heringer,-7.37516,-45.9897,MA
+832,AER,pista_ponto_pouso,Linha,Aeródromo Hidrelétrica de Itumbiara,-18.4451,-49.2128,GO
+833,AER,pista_ponto_pouso,Linha,Aeródromo Horizonte Azul,-13.1812,-53.2757,MT
+834,AER,pista_ponto_pouso,Linha,Aeródromo Hotel Baiazinha,-16569,-57.8311,MT
+835,AER,pista_ponto_pouso,Linha,Aeródromo Hotel Transamérica,-15.3542,-38.9986,BA
+836,AER,pista_ponto_pouso,Linha,Aeródromo Hyran Garcete,-22358,-55.7644,MS
+837,AER,pista_ponto_pouso,Linha,Aeródromo Iauaretê,0.610429,-69.1798,AM
+838,AER,pista_ponto_pouso,Linha,Aeródromo Ibimirim,-8.53249,-37.6743,PE
+839,AER,pista_ponto_pouso,Linha,Aeródromo Ibiporanga da Felicidade,-20.4675,-49.5294,SP
+840,AER,pista_ponto_pouso,Linha,Aeródromo Ijuí,-28.3689,-53.8454,RS
+841,AER,pista_ponto_pouso,Linha,Aeródromo Ilhas dos Macacos,-9.22828,-57.0169,MT
+842,AER,pista_ponto_pouso,Linha,Aeródromo Independência,-22.2783,-53.3839,MS
+843,AER,pista_ponto_pouso,Linha,Aeródromo Ingazeira,-10.1315,-56.7175,MT
+844,AER,pista_ponto_pouso,Linha,Aeródromo Ipameri,-17.6861,-48.1614,GO
+845,AER,pista_ponto_pouso,Linha,Aeródromo Ipe,-8.42794,-45.3102,PI
+846,AER,pista_ponto_pouso,Linha,Aeródromo Ipiranga,-17.7464,-53.3453,MT
+847,AER,pista_ponto_pouso,Linha,Aeródromo Ipiranga,-2.93759,-69.6955,AM
+848,AER,pista_ponto_pouso,Linha,Aeródromo Irmãos Ribeiro,-22.1579,-46.7754,SP
+849,AER,pista_ponto_pouso,Linha,Aeródromo Ismael Nunes,-28.2444,-49.8984,SC
+850,AER,pista_ponto_pouso,Linha,Aeródromo Itacoatiara,-3.12642,-58.4826,AM
+851,AER,pista_ponto_pouso,Linha,Aeródromo Itaituba,-4.24241,-56.0001,PA
+852,AER,pista_ponto_pouso,Linha,Aeródromo Itapessoca,-7.65576,-34.8565,PE
+853,AER,pista_ponto_pouso,Linha,Aeródromo Itapirucu,-4.51336,-44.0203,MA
+854,AER,pista_ponto_pouso,Linha,Aeródromo Itaú de Minas,-20.7549,-46.7502,MG
+855,AER,pista_ponto_pouso,Linha,Aeródromo Jacareacanga,-6.23339,-57777,PA
+856,AER,pista_ponto_pouso,Linha,Aeródromo Jacarezinho,-21.1424,-50.9009,SP
+857,AER,pista_ponto_pouso,Linha,Aeródromo Jaguará,-20.0402,-47.4215,MG
+858,AER,pista_ponto_pouso,Linha,Aeródromo Jaguarão,-32.5404,-53.3837,RS
+859,AER,pista_ponto_pouso,Linha,Aeródromo Japurá,-1.40316,-69.4227,AM
+860,AER,pista_ponto_pouso,Linha,Aeródromo Jatapu,-1.71287,-58.5095,AM
+861,AER,pista_ponto_pouso,Linha,Aeródromo Jbs Agropecuária Ltda,-20.7263,-51589,SP
+862,AER,pista_ponto_pouso,Linha,Aeródromo Jequié,-13.8783,-40.0713,BA
+863,AER,pista_ponto_pouso,Linha,Aeródromo Ji-Paraná / Ji-Paraná,-10.8713,-61846,RO
+864,AER,pista_ponto_pouso,Linha,Aeródromo Jmf Campo Formoso,-10.4957,-40.4874,BA
+865,AER,pista_ponto_pouso,Linha,Aeródromo Jn Resort,-19.4305,-44.3049,MG
+866,AER,pista_ponto_pouso,Linha,Aeródromo João Correa da Rocha,-5.36896,-49.1381,PA
+867,AER,pista_ponto_pouso,Linha,Aeródromo João Pinheiro,-17.7874,-46121,MG
+868,AER,pista_ponto_pouso,Linha,Aeródromo José Bernardo,-21.4569,-41.0551,RJ
+869,AER,pista_ponto_pouso,Linha,Aeródromo José Vicente Faria Lima,-21.8892,-50505,SP
+870,AER,pista_ponto_pouso,Linha,Aeródromo Juína,-11.4198,-58.7098,MT
+871,AER,pista_ponto_pouso,Linha,Aeródromo Júlio Bélem,-2.67147,-56.7761,AM
+872,AER,pista_ponto_pouso,Linha,Aeródromo Júlio de Castilhos,-29.1538,-53.7431,RS
+873,AER,pista_ponto_pouso,Linha,Aeródromo Juruena,-10.3135,-58.4952,MT
+874,AER,pista_ponto_pouso,Linha,Aeródromo Juruti,-2.18653,-56.09,PA
+875,AER,pista_ponto_pouso,Linha,Aeródromo Kareli,-6.63981,-36654,RN
+876,AER,pista_ponto_pouso,Linha,Aeródromo Lábrea,-7.27852,-64.7696,AM
+877,AER,pista_ponto_pouso,Linha,Aeródromo Lagoa da Prata,-20.0636,-45.5563,MG
+878,AER,pista_ponto_pouso,Linha,Aeródromo Lagoa do Taboca,-17.17,-45.6465,MG
+879,AER,pista_ponto_pouso,Linha,Aeródromo Lagoa Santa,-19662,-43.8969,MG
+880,AER,pista_ponto_pouso,Linha,Aeródromo Laranjal,-0.792972,-52.4893,AP
+881,AER,pista_ponto_pouso,Linha,Aeródromo Lauro Antônio da Costa,-27287,-50.6044,SC
+882,AER,pista_ponto_pouso,Linha,Aeródromo Lauro Carneiro de Loyola,-26.2245,-48.7974,SC
+883,AER,pista_ponto_pouso,Linha,Aeródromo Lauro Kurtz,-28.2438,-52.3277,RS
+884,AER,pista_ponto_pouso,Linha,Aeródromo Lavras,-21.2403,-44964,MG
+885,AER,pista_ponto_pouso,Linha,Aeródromo Leite Lopes,-21134,-47.7746,SP
+886,AER,pista_ponto_pouso,Linha,Aeródromo Leopoldina,-21.4681,-42727,MG
+887,AER,pista_ponto_pouso,Linha,Aeródromo Lins,-21.6638,-49.7298,SP
+888,AER,pista_ponto_pouso,Linha,Aeródromo Lucélia,-21.7488,-51.0172,SP
+889,AER,pista_ponto_pouso,Linha,Aeródromo Luís Eduardo Magalhães,-12068,-45.7121,BA
+890,AER,pista_ponto_pouso,Linha,Aeródromo Luiz Eduardo Magalhães,-15.5288,-55.1411,MT
+891,AER,pista_ponto_pouso,Linha,Aeródromo Machado,-21678,-45.8408,MG
+892,AER,pista_ponto_pouso,Linha,Aeródromo Maestro Wilson Fonseca,-2.42221,-54.7926,PA
+893,AER,pista_ponto_pouso,Linha,Aeródromo Maggi Agropecuária,-22.6171,-50.0908,SP
+894,AER,pista_ponto_pouso,Linha,Aeródromo Major Brigadeiro Doorgal Borges,-21.2675,-43761,MG
+895,AER,pista_ponto_pouso,Linha,Aeródromo Major José Ignácio,-22.0511,-48.0958,SP
+896,AER,pista_ponto_pouso,Linha,Aeródromo Major Neodo S. Pereira,-24.8075,-49.9601,PR
+897,AER,pista_ponto_pouso,Linha,Aeródromo Manicoré,-5.81117,-61.2785,AM
+898,AER,pista_ponto_pouso,Linha,Aeródromo Manoel Ribas,-24.5297,-51.6516,PR
+899,AER,pista_ponto_pouso,Linha,Aeródromo Maragogipe,-23.4573,-54.3003,MS
+900,AER,pista_ponto_pouso,Linha,Aeródromo Marcelo Pires Halzhausen,-22.6387,-50.4562,SP
+901,AER,pista_ponto_pouso,Linha,Aeródromo Marchesan S.A,-21.6293,-48.3933,SP
+902,AER,pista_ponto_pouso,Linha,Aeródromo Marcos da Cunha,-12.3605,-46.1358,BA
+903,AER,pista_ponto_pouso,Linha,Aeródromo Marechal Thaumaturgo,-8.9595,-72.7795,AC
+904,AER,pista_ponto_pouso,Linha,Aeródromo Mária Spada,-17.5218,-42.3888,MG
+905,AER,pista_ponto_pouso,Linha,Aeródromo Mário de Almeida Franco,-19.7651,-47.9648,MG
+906,AER,pista_ponto_pouso,Linha,Aeródromo Mário Pereira Lopes,-21.8745,-47.9038,SP
+907,AER,pista_ponto_pouso,Linha,Aeródromo Mata Serena,-13.7719,-46775,GO
+908,AER,pista_ponto_pouso,Linha,Aeródromo Mathovi,-9.83906,-55.4662,MT
+909,AER,pista_ponto_pouso,Linha,Aeródromo Maturacá,0.631341,-66.1182,AM
+910,AER,pista_ponto_pouso,Linha,Aeródromo Maués,-3.37158,-57.7257,AM
+911,AER,pista_ponto_pouso,Linha,Aeródromo Mello Viana,-21.7889,-45.2681,MG
+912,AER,pista_ponto_pouso,Linha,Aeródromo Michels Aviação Agrícola Ltda,-13.5326,-58.7652,MT
+913,AER,pista_ponto_pouso,Linha,Aeródromo Mina Caraíba,-9.82917,-39.8876,BA
+914,AER,pista_ponto_pouso,Linha,Aeródromo Ministro Victor Konder,-26.8791,-48.6503,SC
+915,AER,pista_ponto_pouso,Linha,Aeródromo Mirassol,-20.8069,-49485,SP
+916,AER,pista_ponto_pouso,Linha,Aeródromo Mocambinho,-15.0926,-43.9795,MG
+917,AER,pista_ponto_pouso,Linha,Aeródromo Mococa,-21.4872,-47.0338,SP
+918,AER,pista_ponto_pouso,Linha,Aeródromo Modelo Ii,-21.1622,-53.2838,MS
+919,AER,pista_ponto_pouso,Linha,Aeródromo Moisés Lupion,-23.7626,-50.2632,PR
+920,AER,pista_ponto_pouso,Linha,Aeródromo Moji Mirim,-22.4109,-46.9056,SP
+921,AER,pista_ponto_pouso,Linha,Aeródromo Monte Alegre,-1.99549,-54.0801,PA
+922,AER,pista_ponto_pouso,Linha,Aeródromo Monte Dourado,-0.887732,-52.6036,PA
+923,AER,pista_ponto_pouso,Linha,Aeródromo Monte Santo,-21.1758,-46.9572,MG
+924,AER,pista_ponto_pouso,Linha,Aeródromo Monte Verde,-9.94284,-57.4859,MT
+925,AER,pista_ponto_pouso,Linha,Aeródromo Monte Verde,-22.86,-46.0375,MG
+926,AER,pista_ponto_pouso,Linha,Aeródromo Morrinhos,-17762,-49.1217,GO
+927,AER,pista_ponto_pouso,Linha,Aeródromo Morro do Chapéu Ii,-14.9585,-55801,MT
+928,AER,pista_ponto_pouso,Linha,Aeródromo Moura,-1.46183,-61.6328,AM
+929,AER,pista_ponto_pouso,Linha,Aeródromo Mucuri,-18.0486,-39.8644,BA
+930,AER,pista_ponto_pouso,Linha,Aeródromo Municipal de São João da Boa Vista,-22.0183,-46.8408,SP
+931,AER,pista_ponto_pouso,Linha,Aeródromo Municipal José Figueiredo,-20.7316,-46.6622,MG
+932,AER,pista_ponto_pouso,Linha,Aeródromo Nacional de Aviação,-16.6255,-49.3494,GO
+933,AER,pista_ponto_pouso,Linha,Aeródromo Nacional de Grafite Ii,-15.8239,-41.0854,MG
+934,AER,pista_ponto_pouso,Linha,Aeródromo Nazaré da Felicidade,-17.8543,-45.2486,MG
+935,AER,pista_ponto_pouso,Linha,Aeródromo Nelson Garafolo,-22.6959,-48.5766,SP
+936,AER,pista_ponto_pouso,Linha,Aeródromo Nelson Pizzani,-27.2125,-50.9558,SC
+937,AER,pista_ponto_pouso,Linha,Aeródromo Nilo Peçanha,-8.06208,-52.1703,PA
+938,AER,pista_ponto_pouso,Linha,Aeródromo Normândia,3.87976,-59.6237,RR
+939,AER,pista_ponto_pouso,Linha,Aeródromo Nortelândia,-14.4739,-56.7667,MT
+940,AER,pista_ponto_pouso,Linha,Aeródromo Nova Olinda do Norte,-3.88893,-59.0806,AM
+941,AER,pista_ponto_pouso,Linha,Aeródromo Nova Ponte,-19.1983,-47.7285,MG
+942,AER,pista_ponto_pouso,Linha,Aeródromo Nova Prata,-28.8044,-51.6015,RS
+943,AER,pista_ponto_pouso,Linha,Aeródromo Novo Campo,-8.83494,-67.3125,AM
+944,AER,pista_ponto_pouso,Linha,Aeródromo Novo Hamburgo,-29.6966,-51.0817,RS
+945,AER,pista_ponto_pouso,Linha,Aeródromo Novo Horizonte,-21.4975,-49.2344,SP
+946,AER,pista_ponto_pouso,Linha,Aeródromo Novo Progresso,-7.12496,-55.4021,PA
+947,AER,pista_ponto_pouso,Linha,Aeródromo Óbidos,-1.86713,-55.5144,PA
+948,AER,pista_ponto_pouso,Linha,Aeródromo Olavo Cecco Rigon,-27.1801,-52.0517,SC
+949,AER,pista_ponto_pouso,Linha,Aeródromo Oliveira,-20.7146,-44.8653,MG
+950,AER,pista_ponto_pouso,Linha,Aeródromo Oriçanga de Abreu,-14.1183,-46.3454,GO
+951,AER,pista_ponto_pouso,Linha,Aeródromo Oriximiná,-1.71373,-55.8368,PA
+952,AER,pista_ponto_pouso,Linha,Aeródromo Ouricuri,-7.87608,-40.0917,PE
+953,AER,pista_ponto_pouso,Linha,Aeródromo Ourilândia do Norte,-6.7631,-51.0515,PA
+954,AER,pista_ponto_pouso,Linha,Aeródromo Ouro Branco,-16.7111,-47015,MG
+955,AER,pista_ponto_pouso,Linha,Aeródromo Ouro Fino,-22.2972,-46.3925,MG
+956,AER,pista_ponto_pouso,Linha,Aeródromo Palmeira das Missoes,-27.9018,-53.3305,RS
+957,AER,pista_ponto_pouso,Linha,Aeródromo Palmeiras de Goiás,-16.8251,-49.8794,GO
+958,AER,pista_ponto_pouso,Linha,Aeródromo Palmeiras do Javari,-5.12706,-72.8094,AM
+959,AER,pista_ponto_pouso,Linha,Aeródromo Papulha - Carlos Ddrummond de Andrade,-19.8509,-43.95,MG
+960,AER,pista_ponto_pouso,Linha,Aeródromo Paracatu,-17.2425,-46.8829,MG
+961,AER,pista_ponto_pouso,Linha,Aeródromo Pará de Minas,-19.8426,-44.6008,MG
+962,AER,pista_ponto_pouso,Linha,Aeródromo Paragominas,-3.02012,-47.3174,PA
+963,AER,pista_ponto_pouso,Linha,Aeródromo Paraguaçu,-21.5597,-45.7513,MG
+964,AER,pista_ponto_pouso,Linha,Aeródromo Paraguaçu Paulista,-22.4288,-50.6083,SP
+965,AER,pista_ponto_pouso,Linha,Aeródromo Paranã,-12.6279,-47.8461,TO
+966,AER,pista_ponto_pouso,Linha,Aeródromo Pari-Cachoeira,0.265084,-69.7939,AM
+967,AER,pista_ponto_pouso,Linha,Aeródromo Parque Manoelito Argolo,-11.9603,-38.0028,BA
+968,AER,pista_ponto_pouso,Linha,Aeródromo Pauini,-7.71263,-66.9966,AM
+969,AER,pista_ponto_pouso,Linha,Aeródromo Paulino Ribeiro de Andrade,-20.9249,-51.3818,SP
+970,AER,pista_ponto_pouso,Linha,Aeródromo Paulistana,-8.15988,-41.1514,PI
+971,AER,pista_ponto_pouso,Linha,Aeródromo Pch - Buriti,-19.3413,-52.69,MS
+972,AER,pista_ponto_pouso,Linha,Aerodrómo Pch Garganta da Jararaca,-13.3875,-57.6178,MT
+973,AER,pista_ponto_pouso,Linha,Aerodrómo Pch Paranatinga Ii,-13878,-53.2394,MT
+974,AER,pista_ponto_pouso,Linha,Aeródromo Pederneiras,-22.3072,-48.7734,SP
+975,AER,pista_ponto_pouso,Linha,Aeródromo Pedro Afonso,-8.97758,-48.2256,TO
+976,AER,pista_ponto_pouso,Linha,Aeródromo Pedro Morganti,-22.7116,-47.6181,SP
+977,AER,pista_ponto_pouso,Linha,Aeródromo Piatã,-13.1657,-41.7718,BA
+978,AER,pista_ponto_pouso,Linha,Aeródromo Piaus,-8.80355,-49.9759,PA
+979,AER,pista_ponto_pouso,Linha,Aeródromo Poconé,-16.27,-56.6515,MT
+980,AER,pista_ponto_pouso,Linha,Aeródromo Ponte Nova,-20.4028,-42.9157,MG
+981,AER,pista_ponto_pouso,Linha,Aeródromo Pontes e Lacerda,-15.1934,-59.3848,MT
+982,AER,pista_ponto_pouso,Linha,Aeródromo Pontezinha,-15.2598,-46.7623,MG
+983,AER,pista_ponto_pouso,Linha,Aeródromo Porecatu,-22.7761,-51.3633,PR
+984,AER,pista_ponto_pouso,Linha,Aeródromo Porto Bonito,-23.3441,-53.8723,MS
+985,AER,pista_ponto_pouso,Linha,Aeródromo Porto Cajueiro,-14.8827,-45.3407,MG
+986,AER,pista_ponto_pouso,Linha,Aeródromo Porto de Moz,-1.73866,-52239,PA
+987,AER,pista_ponto_pouso,Linha,Aeródromo Porto dos Gaúchos,-11.5401,-57.3783,MT
+988,AER,pista_ponto_pouso,Linha,Aeródromo Porto Jofre,-17.3591,-56.7739,MT
+989,AER,pista_ponto_pouso,Linha,Aeródromo Posto Leonardo Vilas Boas,-12.1996,-53.3838,MT
+990,AER,pista_ponto_pouso,Linha,Aeródromo Pousada das Águas,-23.2898,-52.1297,PR
+991,AER,pista_ponto_pouso,Linha,Aeródromo Pousada Santa Rosa,-8.86296,-57.4206,MT
+992,AER,pista_ponto_pouso,Linha,Aeródromo Prado,-17297,-39.2712,BA
+993,AER,pista_ponto_pouso,Linha,Aerodromo Prainha,-7.17263,-59.8391,AM
+994,AER,pista_ponto_pouso,Linha,Aeródromo Prainha,-1.77911,-53.4919,PA
+995,AER,pista_ponto_pouso,Linha,Aeródromo Presidente Castro Pinto,-7.14823,-34.9509,PB
+996,AER,pista_ponto_pouso,Linha,Aeródromo Presidente João Batista Figueiredo,-11.8852,-55.5865,MT
+997,AER,pista_ponto_pouso,Linha,Aeródromo Presidente Prudente,-22.1749,-51.4245,SP
+998,AER,pista_ponto_pouso,Linha,Aeródromo Primavera,-12.6148,-52.1536,MT
+999,AER,pista_ponto_pouso,Linha,Aeródromo Primavera do Leste,-15.5632,-54.3303,MT
+1000,AER,pista_ponto_pouso,Linha,Aeródromo Primo Bitti,-19.8257,-40.1025,ES
+1001,AER,pista_ponto_pouso,Linha,Aeródromo Professora Francisca Cardoso,-7.24623,-35174,PB
+1002,AER,pista_ponto_pouso,Linha,Aeródromo Professor Maurício Joppert,-17.2956,-43.9589,MG
+1003,AER,pista_ponto_pouso,Linha,Aeródromo Quatro Ventos,-18.9738,-48.1051,MG
+1004,AER,pista_ponto_pouso,Linha,Aeródromo Rachid Saliba,-21.0434,-45.8683,MG
+1005,AER,pista_ponto_pouso,Linha,Aeródromo Rancho Donana,-22.9605,-49.1494,SP
+1006,AER,pista_ponto_pouso,Linha,Aeródromo Rancho Enagri,-16957,-53.5687,MT
+1007,AER,pista_ponto_pouso,Linha,Aeródromo Rancho Maria e Tereza,-10.8271,-65.2299,RO
+1008,AER,pista_ponto_pouso,Linha,Aeródromo Recanto das Águias,-23.2455,-51.8756,PR
+1009,AER,pista_ponto_pouso,Linha,Aeródromo Recreio,-22.6765,-55.5437,MS
+1010,AER,pista_ponto_pouso,Linha,Aeródromo Regional Orlando Villa Boas,-10.17,-54.9539,MT
+1011,AER,pista_ponto_pouso,Linha,Aeródromo Regional Sul,-28.6755,-49.0597,SC
+1012,AER,pista_ponto_pouso,Linha,Aeródromo Resende,-22.4785,-44.4805,RJ
+1013,AER,pista_ponto_pouso,Linha,Aeródromo Rio Alegre,-22.5726,-52.5151,SP
+1014,AER,pista_ponto_pouso,Linha,Aeródromo Rio Claro,-22431,-47.5621,SP
+1015,AER,pista_ponto_pouso,Linha,Aeródromo Rio do Sangue,-11.5217,-58.1725,MT
+1016,AER,pista_ponto_pouso,Linha,Aeródromo Rio Paranaíba,-19.2133,-46.2392,MG
+1017,AER,pista_ponto_pouso,Linha,Aeródromo Rio Vermelho Açúcar e Álcool,-21.3142,-51.3708,SP
+1018,AER,pista_ponto_pouso,Linha,Aeródromo Rolim de Moura,-11.6555,-61.7759,RO
+1019,AER,pista_ponto_pouso,Linha,Aeródromo Romeu Zema,-19.5636,-46.9599,MG
+1020,AER,pista_ponto_pouso,Linha,Aeródromo Rondonópolis,-16.5859,-54.7249,MT
+1021,AER,pista_ponto_pouso,Linha,Aeródromo Rosada,-19.4297,-54.5886,MS
+1022,AER,pista_ponto_pouso,Linha,Aeródromo Rosana Camargo,-21.0917,-50.2437,SP
+1023,AER,pista_ponto_pouso,Linha,Aeródromo Rosário do Sul,-30.2775,-54.9245,RS
+1024,AER,pista_ponto_pouso,Linha,Aeródromo Rural Verde,-12.6385,-43.5771,BA
+1025,AER,pista_ponto_pouso,Linha,Aeródromo Sacramento,-19.8926,-47.4215,MG
+1026,AER,pista_ponto_pouso,Linha,Aeródromo Saicã,-29.9002,-54.9296,RS
+1027,AER,pista_ponto_pouso,Linha,Aeródromo Salgado Filho,-29.9948,-51.1711,RS
+1028,AER,pista_ponto_pouso,Linha,Aeródromo Salinópolis,-0.696228,-47.3371,PA
+1029,AER,pista_ponto_pouso,Linha,Aeródromo Salso,-33.2176,-53.2682,RS
+1030,AER,pista_ponto_pouso,Linha,Aeródromo Salto Augusto,-8.8968,-58.5496,MT
+1031,AER,pista_ponto_pouso,Linha,Aeródromo Salvaterra Ii,-17.1968,-45.7626,MG
+1032,AER,pista_ponto_pouso,Linha,Aeródromo Santa Cruz do Sul,-29684,-52.4122,RS
+1033,AER,pista_ponto_pouso,Linha,Aeródromo Santa Genoveva,-16632,-49221,GO
+1034,AER,pista_ponto_pouso,Linha,Aeródromo Santa Izabel do Rio Negro,-0.37824,-64.9951,AM
+1035,AER,pista_ponto_pouso,Linha,Aeródromo Santa Maria,-11.1652,-52.8244,MT
+1036,AER,pista_ponto_pouso,Linha,Aeródromo Santa Marta I,-8.54149,-50.6516,PA
+1037,AER,pista_ponto_pouso,Linha,Aeródromo Santa Mônica,-12065,-47.7209,TO
+1038,AER,pista_ponto_pouso,Linha,Aeródromo Santana do Araguaia,-9.31957,-50.3287,PA
+1039,AER,pista_ponto_pouso,Linha,Aeródromo Santa Rosa,-27.9065,-54.5207,RS
+1040,AER,pista_ponto_pouso,Linha,Aeródromo Santa Rosa do Purus,-9.44649,-70.4833,AC
+1041,AER,pista_ponto_pouso,Linha,Aeródromo Santa Terezinha,-27.1712,-51.5536,SC
+1042,AER,pista_ponto_pouso,Linha,Aeródromo Santo Aantônio do Amparo,-20.9134,-44.8931,MG
+1043,AER,pista_ponto_pouso,Linha,Aeródromo Santo Ângelo,-28282,-54.1707,RS
+1044,AER,pista_ponto_pouso,Linha,Aeródromo Santo Antônio do Leverger,-15.8532,-56.0874,MT
+1045,AER,pista_ponto_pouso,Linha,Aeródromo Santo Expedito,-21143,-51.5441,SP
+1046,AER,pista_ponto_pouso,Linha,Aeródromo Santos Dumont,-15.6931,-58.1082,MT
+1047,AER,pista_ponto_pouso,Linha,Aeródromo Santos Dumont,-25.5403,-48.5313,PR
+1048,AER,pista_ponto_pouso,Linha,Aeródromo São Borja,-28.6548,-56.0346,RS
+1049,AER,pista_ponto_pouso,Linha,Aeródromo São Félix do Xingu,-6.64162,-51954,PA
+1050,AER,pista_ponto_pouso,Linha,Aeródromo São Gabriel,-30.3459,-54.2677,RS
+1051,AER,pista_ponto_pouso,Linha,Aeródromo São Gotardo,-19.3478,-46.1039,MG
+1052,AER,pista_ponto_pouso,Linha,Aeródromo São João da Barra,-21.6381,-41.0288,RJ
+1053,AER,pista_ponto_pouso,Linha,Aeródromo São João Del Rei,-21085,-44.2252,MG
+1054,AER,pista_ponto_pouso,Linha,Aeródromo São Joaquim,1.71543,-69396,AM
+1055,AER,pista_ponto_pouso,Linha,Aeródromo São Joaquim da Barra,-20594,-47.8414,SP
+1056,AER,pista_ponto_pouso,Linha,Aeródromo São Jose,-15.2338,-54.7522,MT
+1057,AER,pista_ponto_pouso,Linha,Aeródromo São José,-14.1503,-57.7848,MT
+1058,AER,pista_ponto_pouso,Linha,Aeródromo São José,-2.57455,-54.7337,PA
+1059,AER,pista_ponto_pouso,Linha,Aeródromo São Lourenço,-22.0907,-45.0446,MG
+1060,AER,pista_ponto_pouso,Linha,Aeródromo São Lourenço do Sul,-31.3834,-52.0326,RS
+1061,AER,pista_ponto_pouso,Linha,Aeródromo São Luíz,-12.9166,-45.7229,BA
+1062,AER,pista_ponto_pouso,Linha,Aeródromo São Luiz Gonzaga,-28.3766,-55.0367,RS
+1063,AER,pista_ponto_pouso,Linha,Aeródromo São Miguel do Iguaçu,-25.3909,-54.2682,PR
+1064,AER,pista_ponto_pouso,Linha,Aeródromo São Pedro,-20.0758,-44.7289,MG
+1065,AER,pista_ponto_pouso,Linha,Aeródromo São Pedro,-22.5831,-47.8959,SP
+1066,AER,pista_ponto_pouso,Linha,Aeródromo São Sebastião do Paraíso,-20.9482,-46.9831,MG
+1067,AER,pista_ponto_pouso,Linha,Aeródromo São Sepé,-30.1823,-53.5793,RS
+1068,AER,pista_ponto_pouso,Linha,Aeródromo São Simão,-15.9147,-60.1481,MT
+1069,AER,pista_ponto_pouso,Linha,Aeródromo São Vicente,-14.5198,-59.7798,MT
+1070,AER,pista_ponto_pouso,Linha,Aeródromo Satélite Aviação Agrícola Ltda,-13.5416,-52.2081,MT
+1071,AER,pista_ponto_pouso,Linha,Aeródromo Sebastião Gomes de Souza,-20.4389,-45.9925,MG
+1072,AER,pista_ponto_pouso,Linha,Aeródromo Sebastião José Pereira,-14.9239,-41.9579,BA
+1073,AER,pista_ponto_pouso,Linha,Aeródromo Sementes Petrovina,-16.8492,-54.0651,MT
+1074,AER,pista_ponto_pouso,Linha,Aeródromo Serafin Enoss Bertaso,-27.1341,-52.6597,SC
+1075,AER,pista_ponto_pouso,Linha,Aeródromo Serra da Borda,-18957,-55.0831,MS
+1076,AER,pista_ponto_pouso,Linha,Aeródromo Serra da Borda,-14.8331,-59.6849,MT
+1077,AER,pista_ponto_pouso,Linha,Aeródromo Serra da Capivara,-9.08343,-42.6447,PI
+1078,AER,pista_ponto_pouso,Linha,Aeródromo Serra da Pintura,-15.5674,-51211,GO
+1079,AER,pista_ponto_pouso,Linha,Aeródromo Serra do Cipó,-19.3989,-43.7466,MG
+1080,AER,pista_ponto_pouso,Linha,Aeródromo Serra do Sol,4.94846,-60.4576,RR
+1081,AER,pista_ponto_pouso,Linha,Aeródromo Serra Negra,-14.4091,-60.2084,MT
+1082,AER,pista_ponto_pouso,Linha,Aeródromo Sesc Pantanal,-16.4973,-56.4227,MT
+1083,AER,pista_ponto_pouso,Linha,Aeródromo Sesc Serra Azul,-14.4773,-55.7129,MT
+1084,AER,pista_ponto_pouso,Linha,Aeródromo Sete Povos,-12.8639,-46.1632,BA
+1085,AER,pista_ponto_pouso,Linha,Aeródromo Silvestre,0.849713,-51.9073,AP
+1086,AER,pista_ponto_pouso,Linha,Aeródromo Simasa,-4.87107,-47.3908,MA
+1087,AER,pista_ponto_pouso,Linha,Aeródromo Sítio Limoeiro,-23.1458,-48.3094,SP
+1088,AER,pista_ponto_pouso,Linha,Aeródromo Sítio Pouso do Aviador,-20485,-54.4832,MS
+1089,AER,pista_ponto_pouso,Linha,Aeródromo Sobradinho,-9.4623,-40.8243,BA
+1090,AER,pista_ponto_pouso,Linha,Aeródromo Sócrates Mariani Bittencourt,-14.2555,-41.8165,BA
+1091,AER,pista_ponto_pouso,Linha,Aeródromo Solag - Sol e Lua Aviação Agrícola,-13.3249,-56.05,MT
+1092,AER,pista_ponto_pouso,Linha,Aeródromo Soledade,-28.8636,-52.5402,RS
+1093,AER,pista_ponto_pouso,Linha,Aeródromo Sopave Norte,-13.7262,-54.7375,MT
+1094,AER,pista_ponto_pouso,Linha,Aeródromo Sorocaba,-23.4776,-47.49,SP
+1095,AER,pista_ponto_pouso,Linha,Aeródromo Soure,-0.697233,-48517,PA
+1096,AER,pista_ponto_pouso,Linha,Aeródromo Sousa,-6.78509,-38.2346,PB
+1097,AER,pista_ponto_pouso,Linha,Aeródromo Surucucu,2.83993,-63.6476,RR
+1098,AER,pista_ponto_pouso,Linha,Aeródromo Tancredo Neves,-19.6358,-43.9646,MG
+1099,AER,pista_ponto_pouso,Linha,Aeródromo Tangará da Serra,-14662,-57.4438,MT
+1100,AER,pista_ponto_pouso,Linha,Aeródromo Taquará,0.119102,-68.5479,AM
+1101,AER,pista_ponto_pouso,Linha,Aeródromo Tarauacá,-8.15383,-70.7826,AC
+1102,AER,pista_ponto_pouso,Linha,Aeródromo Tefé,-3.38267,-64.7242,AM
+1103,AER,pista_ponto_pouso,Linha,Aeródromo Telêmaco Borba (Sbtl*),-24.3174,-50.6518,PR
+1104,AER,pista_ponto_pouso,Linha,Aeródromo Ten Cel Aaviador César Bombonato,-18.8824,-48.2259,MG
+1105,AER,pista_ponto_pouso,Linha,Aeródromo Tenente Lund Presetto,-20592,-47.3834,SP
+1106,AER,pista_ponto_pouso,Linha,Aeródromo Tenente Xavier,-19201,-45.0204,MG
+1107,AER,pista_ponto_pouso,Linha,Aeródromo Tenoar,-18.7483,-52.6869,MS
+1108,AER,pista_ponto_pouso,Linha,Aeródromo Tenoar,-18.8113,-52637,MS
+1109,AER,pista_ponto_pouso,Linha,Aeródromo Terra Santa,-2.07282,-56489,PA
+1110,AER,pista_ponto_pouso,Linha,Aeródromo Terravista,-16.5416,-39.1081,BA
+1111,AER,pista_ponto_pouso,Linha,Aeródromo Tito Teixeira,-19.0023,-49.4875,MG
+1112,AER,pista_ponto_pouso,Linha,Aeródromo Tomé-Açu,-2.42403,-48.2412,PA
+1113,AER,pista_ponto_pouso,Linha,Aeródromo Torres,-29.4149,-49.8107,RS
+1114,AER,pista_ponto_pouso,Linha,Aeródromo Três Lagoas,-20.7528,-51.6819,MS
+1115,AER,pista_ponto_pouso,Linha,Aeródromo Tres Passos,-27.5127,-53.8984,RS
+1116,AER,pista_ponto_pouso,Linha,Aeródromo Trombetas,-1.48965,-56.3978,PA
+1117,AER,pista_ponto_pouso,Linha,Aeródromo Tucurí,-3.78602,-49.7204,PA
+1118,AER,pista_ponto_pouso,Linha,Aeródromo Turmalina,-17.2673,-42727,MG
+1119,AER,pista_ponto_pouso,Linha,Aeródromo Ubá,-21.1197,-42.8862,MG
+1120,AER,pista_ponto_pouso,Linha,Aeródromo Umberto Modiano,-22.7712,-41.9641,RJ
+1121,AER,pista_ponto_pouso,Linha,Aeródromo Urucará,-2.52785,-57.7566,AM
+1122,AER,pista_ponto_pouso,Linha,Aerodromo Urucu,-4.88719,-65.3572,AM
+1123,AER,pista_ponto_pouso,Linha,Aeródromo Usiminas,-19.4703,-42.4874,MG
+1124,AER,pista_ponto_pouso,Linha,Aeródromo Usina Bonfim,-21.4058,-48.3158,SP
+1125,AER,pista_ponto_pouso,Linha,Aeródromo Usina Colorado,-20.2771,-48.1826,SP
+1126,AER,pista_ponto_pouso,Linha,Aeródromo Usina de Monções,-20.8695,-50.1297,SP
+1127,AER,pista_ponto_pouso,Linha,Aeródromo Usina Dourados,-21.9979,-54.0688,MS
+1128,AER,pista_ponto_pouso,Linha,Aeródromo Usina Eldorado,-21.8617,-54.0165,MS
+1129,AER,pista_ponto_pouso,Linha,Aeródromo Usina Maracaju,-21.3447,-55.4359,MS
+1130,AER,pista_ponto_pouso,Linha,Aeródromo Usina Passa Tempo,-21.5042,-54.7114,MS
+1131,AER,pista_ponto_pouso,Linha,Aeródromo Usina Santa Adélia,-21.3322,-48316,SP
+1132,AER,pista_ponto_pouso,Linha,Aeródromo Usina Santa Cruz,-16.1841,-39.3583,BA
+1133,AER,pista_ponto_pouso,Linha,Aeródromo Usina Santa Luzia,-21.5529,-54.2342,MS
+1134,AER,pista_ponto_pouso,Linha,Aeródromo Usina São Carlos,-21.2846,-48.1634,SP
+1135,AER,pista_ponto_pouso,Linha,Aeródromo Usina São Martinho,-21.34,-48.1147,SP
+1136,AER,pista_ponto_pouso,Linha,Aeródromo Valdir Masutti,-13.6338,-59.7959,MT
+1137,AER,pista_ponto_pouso,Linha,Aeródromo Várzea da Palma,-17651,-44706,MG
+1138,AER,pista_ponto_pouso,Linha,Aeródromo Vera Cruz/Aeroclube da Bahia,-13.0247,-38.6663,BA
+1139,AER,pista_ponto_pouso,Linha,Aeródromo Veranópolis,-28.9355,-51.5678,RS
+1140,AER,pista_ponto_pouso,Linha,Aeródromo Vila de Tocos,-21.8781,-41.2951,RJ
+1141,AER,pista_ponto_pouso,Linha,Aeródromo Vila Pitinga,-0.798235,-60.0839,AM
+1142,AER,pista_ponto_pouso,Linha,Aeródromo Vila Rica,-9.98121,-51.1408,MT
+1143,AER,pista_ponto_pouso,Linha,Aeródromo Virgem da Lapa,-16.7744,-42.3872,MG
+1144,AER,pista_ponto_pouso,Linha,Aeródromo Vista Alegre,-6.87123,-48535,TO
+1145,AER,pista_ponto_pouso,Linha,Aeródromo Warpol,-12.6214,-45.9285,BA
+1146,AER,pista_ponto_pouso,Linha,Aeródromo Xavantina,-14.6976,-52.3472,MT
+1147,AER,pista_ponto_pouso,Linha,Aeródromo Yara,-23.0723,-50.4226,PR
+1148,AER,pista_ponto_pouso,Linha,Aerófromo Presidente João Suassuna,-7.26976,-35896,PB
+1149,AER,pista_ponto_pouso,Linha,Aerop. Aripuanã / Agropecuária Ferreira Penço Ltda,-9.69768,-61.0241,MT
+1150,AER,pista_ponto_pouso,Linha,Aerop. Aripuanã / Agropecuária Paralelo Dez Ltda,-9.99517,-61.0504,MT
+1151,AER,pista_ponto_pouso,Linha,Aerop. Faz. Sto. Antônio do Guaporé-Baia do Pad,-15.8621,-60.04,MT
+1152,AER,pista_ponto_pouso,Linha,Aeroporto Adalberto Mendes da Silva - Cascavel,-25.0015,-53.5,PR
+1153,AER,pista_ponto_pouso,Linha,Aeroporto Agropecuária Floresta São Joaquim Ltda,-10.1426,-60.6575,MT
+1154,AER,pista_ponto_pouso,Linha,Aeroporto Alberto Alcolumbre,0.0503889,-51.0723,AP
+1155,AER,pista_ponto_pouso,Linha,Aeroporto Alto Paraíso,-14.1182,-47.53,GO
+1156,AER,pista_ponto_pouso,Linha,Aeroporto Alto Parnaíba,-9.08547,-45.9561,MA
+1157,AER,pista_ponto_pouso,Linha,Aeroporto Amargoza,-12.9943,-39.6397,BA
+1158,AER,pista_ponto_pouso,Linha,Aeroporto Anápolis,-16362,-48.9273,GO
+1159,AER,pista_ponto_pouso,Linha,Aeroporto Araçuaí - Ida Tonore,-16.8525,-42.0464,MG
+1160,AER,pista_ponto_pouso,Linha,Aeroporto Arapongas,-23.3527,-51.4919,PR
+1161,AER,pista_ponto_pouso,Linha,Aeroporto Araras,-22.3384,-47.3581,SP
+1162,AER,pista_ponto_pouso,Linha,Aeroporto Arcoverde,-8.40752,-37.0886,PE
+1163,AER,pista_ponto_pouso,Linha,Aeroporto Ariosto da Riva,-23.0344,-54.1789,MS
+1164,AER,pista_ponto_pouso,Linha,Aeroporto Aripuanã / Fazenda Mudança,-9.91106,-60.8625,MT
+1165,AER,pista_ponto_pouso,Linha,Aeroporto Aripuanã / Madeirinha,-9.84672,-61.4183,MT
+1166,AER,pista_ponto_pouso,Linha,Aeroporto Armando Reginatto - Nonoai,-27.3688,-52763,RS
+1167,AER,pista_ponto_pouso,Linha,Aeroporto Aruanã,-14.9322,-51.0475,GO
+1168,AER,pista_ponto_pouso,Linha,Aeroporto Atlas Brasil Catanhede,2.8465,-60.6897,RR
+1169,AER,pista_ponto_pouso,Linha,Aeroporto Attillio Accorsi,-22.9168,-53.1489,PR
+1170,AER,pista_ponto_pouso,Linha,Aeroporto Augusto Severo,-5.9111,-35.2444,RN
+1171,AER,pista_ponto_pouso,Linha,Aeroporto Bacabal,-4.22792,-44.8205,MA
+1172,AER,pista_ponto_pouso,Linha,Aeroporto Baixo Guandu - Aimorés,-19.4989,-41.0419,ES
+1173,AER,pista_ponto_pouso,Linha,Aeroporto Balsas,-7.52527,-46.0535,MA
+1174,AER,pista_ponto_pouso,Linha,Aeroporto Barra,-11.0804,-43.1474,BA
+1175,AER,pista_ponto_pouso,Linha,Aeroporto Barreiras,-12.0792,-45.0096,BA
+1176,AER,pista_ponto_pouso,Linha,Aeroporto Bartolomeu Lisandro,-21.6979,-41302,RJ
+1177,AER,pista_ponto_pouso,Linha,Aeroporto Bela Vista,-22.0815,-56.5386,MS
+1178,AER,pista_ponto_pouso,Linha,Aeroporto Belém do São Francisco,-8.77062,-38.9482,PE
+1179,AER,pista_ponto_pouso,Linha,Aeroporto Belmonte,-15.8709,-38.8714,BA
+1180,AER,pista_ponto_pouso,Linha,Aeroporto Bom Jesus da Lapa,-13.2606,-43.4079,BA
+1181,AER,pista_ponto_pouso,Linha,Aeroporto Bonito,-21.2476,-56452,MS
+1182,AER,pista_ponto_pouso,Linha,Aeroporto Brasílio Marques - Palotina,-24.3432,-53.8283,PR
+1183,AER,pista_ponto_pouso,Linha,Aeroporto Brigadeiro Araripe Macedo,-16.2612,-47.9696,GO
+1184,AER,pista_ponto_pouso,Linha,Aeroporto Brigadeiro Camarão,-12.6948,-60.0984,RO
+1185,AER,pista_ponto_pouso,Linha,Aeroporto Brigadeiro Lysias Augusto Rodrigues,-7.32044,-47.4588,MA
+1186,AER,pista_ponto_pouso,Linha,Aeroporto Brigadeiro Lysias Rodrigues,-10.2922,-48.3564,TO
+1187,AER,pista_ponto_pouso,Linha,Aeroporto Brotas de Macaúba,-11.9995,-42.6346,BA
+1188,AER,pista_ponto_pouso,Linha,Aeroporto Buriti Alegre,-18116,-49.0488,GO
+1189,AER,pista_ponto_pouso,Linha,Aeroporto Buritirama,-10.7217,-43.6534,BA
+1190,AER,pista_ponto_pouso,Linha,Aeroporto Cachoeiro de Itapemirim,-20.8343,-41.1854,ES
+1191,AER,pista_ponto_pouso,Linha,Aeroporto Caculé,-14.4806,-42.2647,BA
+1192,AER,pista_ponto_pouso,Linha,Aeroporto Caetité,-14.0125,-42.4941,BA
+1193,AER,pista_ponto_pouso,Linha,Aeroporto Caicó,-6.43919,-37.0784,RN
+1194,AER,pista_ponto_pouso,Linha,Aeroporto Calçoene,2.51256,-50.9526,AP
+1195,AER,pista_ponto_pouso,Linha,Aeroporto Caldas do Jorro,-11042,-38.7839,BA
+1196,AER,pista_ponto_pouso,Linha,Aeroporto Campo Alegre de Lourdes,-9514,-42.9939,BA
+1197,AER,pista_ponto_pouso,Linha,Aeroporto Campo Fontenelle,-21.9847,-47.3427,SP
+1198,AER,pista_ponto_pouso,Linha,Aeroporto Campos Belos,-13.0065,-46.7112,GO
+1199,AER,pista_ponto_pouso,Linha,Aeroporto Canela,-29.3698,-50831,RS
+1200,AER,pista_ponto_pouso,Linha,Aeroporto Cangapara,-6.84723,-43.0771,PI
+1201,AER,pista_ponto_pouso,Linha,Aeroporto Capitão João Busse,-23.6092,-51.3849,PR
+1202,AER,pista_ponto_pouso,Linha,Aeroporto Caracaraí,1.84462,-61.1212,RR
+1203,AER,pista_ponto_pouso,Linha,Aeroporto Cariranha,-14.2982,-43.7989,BA
+1204,AER,pista_ponto_pouso,Linha,Aeroporto Casa Nova,-9.15711,-40.9371,BA
+1205,AER,pista_ponto_pouso,Linha,Aeroporto Castro Alves,-12.7673,-39.4464,BA
+1206,AER,pista_ponto_pouso,Linha,Aeroporto Cataratas,-25.5921,-54491,PR
+1207,AER,pista_ponto_pouso,Linha,Aeroporto Catolé do Rocha,-6.36273,-37.7561,PB
+1208,AER,pista_ponto_pouso,Linha,Aeroporto Cavalcante,-13.7787,-47.4122,GO
+1209,AER,pista_ponto_pouso,Linha,Aeroporto Ceará-Mirim,-5.66072,-35.4144,RN
+1210,AER,pista_ponto_pouso,Linha,Aeroporto Centro de Lançamento de Alcântara,-2.37272,-44.3962,MA
+1211,AER,pista_ponto_pouso,Linha,Aeroporto Chafei Amsei,-20.5848,-48594,SP
+1212,AER,pista_ponto_pouso,Linha,Aeroporto Chapadão do Sul,-18.8391,-52.4883,MS
+1213,AER,pista_ponto_pouso,Linha,Aeroporto Cipó,-11.1253,-38.4869,BA
+1214,AER,pista_ponto_pouso,Linha,Aeroporto Comandante Carlos Inácio,-5.58456,-47.4288,MA
+1215,AER,pista_ponto_pouso,Linha,Aeroporto Comandante Gustavo Kraemer,-31.3903,-54.1125,RS
+1216,AER,pista_ponto_pouso,Linha,Aeroporto Comandante Paschoal Patrocínio Filho,-21.4315,-45.9322,MG
+1217,AER,pista_ponto_pouso,Linha,Aeroporto Comandante Vittório Bonomi,-21.5304,-47.0463,SP
+1218,AER,pista_ponto_pouso,Linha,Aeroporto Comodoro / Fazenda Confap,-13.7378,-60.4753,MT
+1219,AER,pista_ponto_pouso,Linha,Aeroporto Coribe,-13.8294,-44.4699,BA
+1220,AER,pista_ponto_pouso,Linha,Aeroporto Coronel Alexandre Raposo,-2.5209,-44.1213,MA
+1221,AER,pista_ponto_pouso,Linha,Aeroporto Coronel Altino Machado,-18.8961,-41.9835,MG
+1222,AER,pista_ponto_pouso,Linha,Aeroporto Coronel Newton Braga,-22.2426,-43.7137,RJ
+1223,AER,pista_ponto_pouso,Linha,Aeroporto Corrente,-10.4527,-45.1367,PI
+1224,AER,pista_ponto_pouso,Linha,Aeroporto Correntina,-13.38,-44.6221,BA
+1225,AER,pista_ponto_pouso,Linha,Aeroporto Corumbá,-19.0125,-57.6728,MS
+1226,AER,pista_ponto_pouso,Linha,Aeroporto Costa Marques,-12421,-64.2515,RO
+1227,AER,pista_ponto_pouso,Linha,Aeroporto Cristalina,-16791,-47.6451,GO
+1228,AER,pista_ponto_pouso,Linha,Aeroporto Cruzeiro do Sul,-7.60002,-72.7698,AC
+1229,AER,pista_ponto_pouso,Linha,Aeroporto Currais Novos,-6.28098,-36.5408,RN
+1230,AER,pista_ponto_pouso,Linha,Aeroporto de Americanas,-22.7559,-47269,SP
+1231,AER,pista_ponto_pouso,Linha,Aeroporto de Aracati - Dragão do Mar (Polo Turístico de Canoa Quebrada),-4.56888,-37.8053,CE
+1232,AER,pista_ponto_pouso,Linha,Aeroporto de Araguacema,-8.83789,-49.5574,TO
+1233,AER,pista_ponto_pouso,Linha,Aeroporto de Araguaína,-7.22776,-48.2395,TO
+1234,AER,pista_ponto_pouso,Linha,Aeroporto de Araguatins,-5.68575,-48.1145,TO
+1235,AER,pista_ponto_pouso,Linha,Aeroporto de Araripina,-7.58642,-40.5355,PE
+1236,AER,pista_ponto_pouso,Linha,Aeroporto de Assu,-5.59541,-36.9609,RN
+1237,AER,pista_ponto_pouso,Linha,Aeroporto de Boa Viagem - Coronel Virgílio Távora,-5.14542,-39.7252,CE
+1238,AER,pista_ponto_pouso,Linha,Aeroporto de Cajazeiras,-6.88285,-38.6159,PB
+1239,AER,pista_ponto_pouso,Linha,Aeroporto de Camapuã,-19.5986,-54.0217,MS
+1240,AER,pista_ponto_pouso,Linha,Aeroporto de Camocim - Pinto Martins,-2.89541,-40.8594,CE
+1241,AER,pista_ponto_pouso,Linha,Aeroporto de Campo Grande,-20.4699,-54.6745,MS
+1242,AER,pista_ponto_pouso,Linha,Aeroporto de Carazinho,-28.3216,-52.8161,RS
+1243,AER,pista_ponto_pouso,Linha,Aeroporto de Cláudio - Estadual,-20.4459,-44.8134,MG
+1244,AER,pista_ponto_pouso,Linha,Aeroporto de Colatina,-19.4875,-40.5794,ES
+1245,AER,pista_ponto_pouso,Linha,Aeroporto de Conceição,-7.55849,-38.4969,PB
+1246,AER,pista_ponto_pouso,Linha,Aeroporto de Congonhas,-23.6274,-46656,SP
+1247,AER,pista_ponto_pouso,Linha,Aeroporto de Costa Rica,-18.4913,-53.1684,MS
+1248,AER,pista_ponto_pouso,Linha,Aeroporto de Coxim,-18.4793,-54715,MS
+1249,AER,pista_ponto_pouso,Linha,Aeroporto de Crateús - Doutor Lúcio Lima,-5.21094,-40.7047,CE
+1250,AER,pista_ponto_pouso,Linha,Aeroporto de Dianópolis,-11596,-46.8458,TO
+1251,AER,pista_ponto_pouso,Linha,Aeroporto de Erechim,-27.6634,-52.2719,RS
+1252,AER,pista_ponto_pouso,Linha,Aeroporto de Guarapari,-20.6471,-40.4925,ES
+1253,AER,pista_ponto_pouso,Linha,Aeroporto de Gurupi,-11.7396,-49.1322,TO
+1254,AER,pista_ponto_pouso,Linha,Aeroporto de Ibitinga,-21.7471,-48.8559,SP
+1255,AER,pista_ponto_pouso,Linha,Aeroporto de Iporá,-16.4051,-51089,GO
+1256,AER,pista_ponto_pouso,Linha,Aeroporto de Itapeva,-23.9415,-48.8819,SP
+1257,AER,pista_ponto_pouso,Linha,Aeroporto de Itaporanga,-7.31156,-38.1126,PB
+1258,AER,pista_ponto_pouso,Linha,Aeroporto de Jericoacoara,-2.90641,-40.3574,CE
+1259,AER,pista_ponto_pouso,Linha,Aeroporto de Mossoró - Governador Dix-Sept Rosado,-5.2011,-37.3641,RN
+1260,AER,pista_ponto_pouso,Linha,Aeroporto de Novo Santo Antônio,-12.2971,-50.9786,MT
+1261,AER,pista_ponto_pouso,Linha,Aeroporto de Ourinhos,-22.9665,-49.9122,SP
+1262,AER,pista_ponto_pouso,Linha,Aeroporto de Parnaíba,-19.6509,-51.1998,MS
+1263,AER,pista_ponto_pouso,Linha,Aeroporto de Pelotas,-31.7174,-52.3283,RS
+1264,AER,pista_ponto_pouso,Linha,Aeroporto de Penápolis,-21.41,-50.0334,SP
+1265,AER,pista_ponto_pouso,Linha,Aeroporto de Picos,-7.06139,-41.5258,PI
+1266,AER,pista_ponto_pouso,Linha,Aeroporto de Pindamonhangaba,-22.9433,-45.4313,SP
+1267,AER,pista_ponto_pouso,Linha,Aeroporto Deputado Luís Eduardo Magalhães,-12.9088,-38.3229,BA
+1268,AER,pista_ponto_pouso,Linha,Aeroporto de Quixadá,-4.97842,-38.9878,CE
+1269,AER,pista_ponto_pouso,Linha,Aeroporto de Rosário,-14.8413,-56.4467,MT
+1270,AER,pista_ponto_pouso,Linha,Aeroporto de Santa Maria,-29.7114,-53.6902,RS
+1271,AER,pista_ponto_pouso,Linha,Aeroporto de São Benedito - Walfrido Salmito de Almeida,-4.0427,-40894,CE
+1272,AER,pista_ponto_pouso,Linha,Aeroporto de São Mateus,-18.7214,-39.8334,ES
+1273,AER,pista_ponto_pouso,Linha,Aeroporto de Sarandi,-27.9799,-52.8648,RS
+1274,AER,pista_ponto_pouso,Linha,Aeroporto de Sobral - Coronel Virgílio Távora,-3.67901,-40.3373,CE
+1275,AER,pista_ponto_pouso,Linha,Aeroporto de Taguatinga,-12.4344,-46.3992,TO
+1276,AER,pista_ponto_pouso,Linha,Aeroporto de Vacaria,-28.5092,-50919,RS
+1277,AER,pista_ponto_pouso,Linha,Aeroporto de Viracopos,-23.0091,-47135,SP
+1278,AER,pista_ponto_pouso,Linha,Aeroporto Dourados,-22.2021,-54.9272,MS
+1279,AER,pista_ponto_pouso,Linha,Aeroporto Doutor Almir Lopes de Oliveira Melo,-4.2699,-43,MA
+1280,AER,pista_ponto_pouso,Linha,Aeroporto Dr. Jucelino José Ribeiro,-17.6807,-42.5294,MG
+1281,AER,pista_ponto_pouso,Linha,Aeroporto Eduardo Gomes,-3.03863,-60.0504,AM
+1282,AER,pista_ponto_pouso,Linha,Aeroporto Edu Chaves,-23.0902,-52.4885,PR
+1283,AER,pista_ponto_pouso,Linha,Aeroporto Elias Breder,-20.2596,-42.1839,MG
+1284,AER,pista_ponto_pouso,Linha,Aeroporto Embaixador Walther Moreira Salles,-21.8423,-46.5695,MG
+1285,AER,pista_ponto_pouso,Linha,Aeroporto Esplanada,-11.7733,-37.9514,BA
+1286,AER,pista_ponto_pouso,Linha,Aeroporto Estadual Dario Guarita,-21.1414,-50.4244,SP
+1287,AER,pista_ponto_pouso,Linha,Aeroporto Estadual de Campinas - Amarais,-22.8593,-47.1081,SP
+1288,AER,pista_ponto_pouso,Linha,Aeroporto Estadual de Jundiaí,-23.1808,-46.9438,SP
+1289,AER,pista_ponto_pouso,Linha,Aeroporto Estadual de Registro,-24.5316,-47.8401,SP
+1290,AER,pista_ponto_pouso,Linha,Aeroporto Estância Santa Maria,-20.5045,-54.5257,MS
+1291,AER,pista_ponto_pouso,Linha,Aeroporto Euclides da Cunha,-10.5272,-39.0325,BA
+1292,AER,pista_ponto_pouso,Linha,Aeroporto Eurico de Aguiar Salles,-20.2566,-40.2862,ES
+1293,AER,pista_ponto_pouso,Linha,Aeroporto Federal Antônio Correia Pinto de Macedo,-27.7823,-50.2814,SC
+1294,AER,pista_ponto_pouso,Linha,Aeroporto Fernando João Pereira dos Santos Filho,-8.15751,-36.1808,PE
+1295,AER,pista_ponto_pouso,Linha,Aeroporto Formosa,-15.5559,-47.3451,GO
+1296,AER,pista_ponto_pouso,Linha,Aeroporto Formosa do Rio Preto,-11.0211,-45.1873,BA
+1297,AER,pista_ponto_pouso,Linha,Aeroporto Garanhuns,-8.83429,-36.4717,PE
+1298,AER,pista_ponto_pouso,Linha,Aeroporto Garibaldi,-29.2691,-51.5318,RS
+1299,AER,pista_ponto_pouso,Linha,Aeroporto Gastão de Mesquita Filho,-23.6915,-52.6423,PR
+1300,AER,pista_ponto_pouso,Linha,Aeroporto General Canrobert Pereira da Costa,-20.4534,-55757,MS
+1301,AER,pista_ponto_pouso,Linha,Aeroporto General Leite de Castro,-17.8332,-50.9557,GO
+1302,AER,pista_ponto_pouso,Linha,Aeroporto Gentio do Ouro,-11.4416,-42.5183,BA
+1303,AER,pista_ponto_pouso,Linha,Aeroporto Geraldo Guias de Aquino,-24.0093,-52.3568,PR
+1304,AER,pista_ponto_pouso,Linha,Aeroporto Governador Aluizio Alves,-5.77008,-35.3655,RN
+1305,AER,pista_ponto_pouso,Linha,Aeroporto Governador Jorge Teixeira de Oliveira,-8.70856,-63.9014,RO
+1306,AER,pista_ponto_pouso,Linha,Aeroporto Governador José Richa,-23.3336,-51.13,PR
+1307,AER,pista_ponto_pouso,Linha,Aeroporto Guadalupe,-6.78317,-43.5795,PI
+1308,AER,pista_ponto_pouso,Linha,Aeroporto Guaíra,-24.0808,-54.1913,PR
+1309,AER,pista_ponto_pouso,Linha,Aeroporto Guanambi,-14.2087,-42.7456,BA
+1310,AER,pista_ponto_pouso,Linha,Aeroporto Guanhães,-18.7075,-42839,MG
+1311,AER,pista_ponto_pouso,Linha,Aeroporto Guararapes Gilberto Freyre,-8.12646,-34.9229,PE
+1312,AER,pista_ponto_pouso,Linha,Aeroporto Gurguéia,-9.05728,-44.3715,PI
+1313,AER,pista_ponto_pouso,Linha,Aeroporto Horácio de Mattos,-12.4817,-41.2768,BA
+1314,AER,pista_ponto_pouso,Linha,Aeroporto Iaciara,-14.1073,-46.6672,GO
+1315,AER,pista_ponto_pouso,Linha,Aeroporto Ibotirama,-12.1683,-43.2227,BA
+1316,AER,pista_ponto_pouso,Linha,Aeroporto Internacional de Fortaleza - Pinto Martins,-3.77577,-38.5331,CE
+1317,AER,pista_ponto_pouso,Linha,Aeroporto Internacional de Guarulhos - Governador André Franco Montoro,-23.4293,-46.4659,SP
+1318,AER,pista_ponto_pouso,Linha,Aeroporto Internacional de Maceió - Zumbi dos Palmares,-9.51043,-35.7925,AL
+1319,AER,pista_ponto_pouso,Linha,Aeroporto Internacional de Parnaíba - Prefeito Doutor João Silva Filho,-2.89347,-41.7306,PI
+1320,AER,pista_ponto_pouso,Linha,Aeroporto Ipiaú,-14.1736,-39.6841,BA
+1321,AER,pista_ponto_pouso,Linha,Aeroporto Irecê,-11.3398,-41.8473,BA
+1322,AER,pista_ponto_pouso,Linha,Aeroporto Itaberaba,-12.4994,-40.2694,BA
+1323,AER,pista_ponto_pouso,Linha,Aeroporto Itanhaém,-24.1597,-46.7907,SP
+1324,AER,pista_ponto_pouso,Linha,Aeroporto Itaperuna,-21.2197,-41.8767,RJ
+1325,AER,pista_ponto_pouso,Linha,Aeroporto Itapetinga,-15.2448,-40.2782,BA
+1326,AER,pista_ponto_pouso,Linha,Aeroporto Itararé,-24.1355,-49.3284,SP
+1327,AER,pista_ponto_pouso,Linha,Aeroporto Ituaçú,-13.8287,-41.3026,BA
+1328,AER,pista_ponto_pouso,Linha,Aeroporto Ituverava,-20.3744,-47.7691,SP
+1329,AER,pista_ponto_pouso,Linha,Aeroporto Jacobina,-11.1631,-40.5533,BA
+1330,AER,pista_ponto_pouso,Linha,Aeroporto Jales,-20.2926,-50.5455,SP
+1331,AER,pista_ponto_pouso,Linha,Aeroporto Januária,-15.4744,-44.3857,MG
+1332,AER,pista_ponto_pouso,Linha,Aeroporto Jataí,-17.8303,-51.7731,GO
+1333,AER,pista_ponto_pouso,Linha,Aeroporto Jeová Gomes Corrêa,-8.73714,-39.1151,BA
+1334,AER,pista_ponto_pouso,Linha,Aeroporto João Pereira dos Santos Filho,-7.1002,-40.6286,PI
+1335,AER,pista_ponto_pouso,Linha,Aeroporto João Silva,-3.65427,-45.3449,MA
+1336,AER,pista_ponto_pouso,Linha,Aeroporto Jorge Amado,-14.8156,-39.0323,BA
+1337,AER,pista_ponto_pouso,Linha,Aeroporto José Cleto- União da Vitória,-26.2321,-51.0674,PR
+1338,AER,pista_ponto_pouso,Linha,Aeroporto Juazeiro,-9.15572,-40092,BA
+1339,AER,pista_ponto_pouso,Linha,Aeroporto Juscelino Kubitscheck,-17892,-41.5134,MG
+1340,AER,pista_ponto_pouso,Linha,Aeroporto Juvenal Loureiro Cardoso- Pato Branco,-26.2171,-52.6945,PR
+1341,AER,pista_ponto_pouso,Linha,Aeroporto Lêda Mello de Rezende,-21.3719,-45.4947,MG
+1342,AER,pista_ponto_pouso,Linha,Aeroporto Leme,-22.2262,-47.3809,SP
+1343,AER,pista_ponto_pouso,Linha,Aeroporto Livramento do Brumado,-13661,-41.8566,BA
+1344,AER,pista_ponto_pouso,Linha,Aeroporto Luís Dal Canalle Filho,-24.6862,-53.6975,PR
+1345,AER,pista_ponto_pouso,Linha,Aeroporto Luis Eduardo Magalhães,-12.1065,-45.8946,BA
+1346,AER,pista_ponto_pouso,Linha,Aeroporto Luiz Gonzaga Lutti,-23.0928,-48.9868,SP
+1347,AER,pista_ponto_pouso,Linha,Aeroporto Macaé,-22.3428,-41.7655,RJ
+1348,AER,pista_ponto_pouso,Linha,Aeroporto Macaúba,-13.0252,-42.6707,BA
+1349,AER,pista_ponto_pouso,Linha,Aeroporto Major Brigadeiro Trompowsky,-21.5896,-45.4734,MG
+1350,AER,pista_ponto_pouso,Linha,Aeroporto Manoel Ribas,-24.2204,-53.0443,PR
+1351,AER,pista_ponto_pouso,Linha,Aeroporto Maracás,-13.3861,-40.4663,BA
+1352,AER,pista_ponto_pouso,Linha,Aeroporto Marechal Cunha Machado,-2.58888,-44.2371,MA
+1353,AER,pista_ponto_pouso,Linha,Aeroporto Marechal Rondon,-15.6529,-56.1166,MT
+1354,AER,pista_ponto_pouso,Linha,Aeroporto Miguel Adolfo Orth - Medianeira,-25.3108,-54.0711,PR
+1355,AER,pista_ponto_pouso,Linha,Aeroporto Minaçu,-13.5495,-48.1955,GO
+1356,AER,pista_ponto_pouso,Linha,Aeroporto Mineiros,-17.5511,-52557,GO
+1357,AER,pista_ponto_pouso,Linha,Aeroporto Monteiro,-7.87852,-37.14,PB
+1358,AER,pista_ponto_pouso,Linha,Aeroporto Monte Santo,-10.4653,-39.2862,BA
+1359,AER,pista_ponto_pouso,Linha,Aeroporto Morro do Chapéu,-11.5336,-41.1796,BA
+1360,AER,pista_ponto_pouso,Linha,Aeroporto Mozarlândia,-14.7705,-50.5642,GO
+1361,AER,pista_ponto_pouso,Linha,Aeroporto Mucugê,-13.0311,-41.4441,BA
+1362,AER,pista_ponto_pouso,Linha,Aeroporto Mundo Novo,-11.7689,-40.4202,BA
+1363,AER,pista_ponto_pouso,Linha,Aeroporto Municipal Bom Futuro,-13.0374,-55.9497,MT
+1364,AER,pista_ponto_pouso,Linha,Aeroporto Municipal Cirílo de Queirós,-16.1658,-40.6834,MG
+1365,AER,pista_ponto_pouso,Linha,Aeroporto Municipal de Andrelândia/Mg,-21.6931,-44.3116,MG
+1366,AER,pista_ponto_pouso,Linha,Aeroporto Municipal de Centenário do Sul,-22.8307,-51.6034,PR
+1367,AER,pista_ponto_pouso,Linha,Aeroporto Municipal de Linhares,-19.3551,-40.0696,ES
+1368,AER,pista_ponto_pouso,Linha,Aeroporto Municipal José Boso - Lençóis Paulista,-22.5782,-48.7741,SP
+1369,AER,pista_ponto_pouso,Linha,Aeroporto Nanuque,-17.8231,-40.3295,MG
+1370,AER,pista_ponto_pouso,Linha,Aeroporto Nelson Rodrigues Guimarães,-17.7249,-48.6061,GO
+1371,AER,pista_ponto_pouso,Linha,Aeroporto Nioaque,-21184,-55.8311,MS
+1372,AER,pista_ponto_pouso,Linha,Aeroporto Niquelândia,-14435,-48492,GO
+1373,AER,pista_ponto_pouso,Linha,Aeroporto Oeiras,-7.0183,-42.1671,PI
+1374,AER,pista_ponto_pouso,Linha,Aeroporto Oiapoque,3.85544,-51.7976,AP
+1375,AER,pista_ponto_pouso,Linha,Aeroporto Orlando Bezerra de Menezes,-7.21923,-39.2692,CE
+1376,AER,pista_ponto_pouso,Linha,Aeroporto Orlando Chesini Ometto,-20.0996,-56.7937,MS
+1377,AER,pista_ponto_pouso,Linha,Aeroporto Orlando de Carvalho,-23.7984,-53.3138,PR
+1378,AER,pista_ponto_pouso,Linha,Aeroporto Oscar Laranjeiras,-8.28272,-36.0133,PE
+1379,AER,pista_ponto_pouso,Linha,Aeroporto Osório,-29.9025,-50249,RS
+1380,AER,pista_ponto_pouso,Linha,Aeroporto Palmeiras,-12.4577,-41.5913,BA
+1381,AER,pista_ponto_pouso,Linha,Aeroporto Paraíso do Tocantins,-10.1738,-48.9322,TO
+1382,AER,pista_ponto_pouso,Linha,Aeroporto Paramirim,-13.4906,-42.2293,BA
+1383,AER,pista_ponto_pouso,Linha,Aeroporto Pastos Bons,-6.6159,-44.0966,MA
+1384,AER,pista_ponto_pouso,Linha,Aeroporto Pau dos Ferros,-6.15422,-38197,RN
+1385,AER,pista_ponto_pouso,Linha,Aeroporto Paulo Abdala- Francisco Beltrão,-26.0594,-53.0639,PR
+1386,AER,pista_ponto_pouso,Linha,Aeroporto Paulo Afonso,-9.40108,-38.2506,BA
+1387,AER,pista_ponto_pouso,Linha,Aeroporto Pedro Simões Pimenta,-6.48598,-36.1373,PB
+1388,AER,pista_ponto_pouso,Linha,Aeroporto Peregrino Filho,-7.03899,-37.2523,PB
+1389,AER,pista_ponto_pouso,Linha,Aeroporto Pesqueira,-8.37502,-36.6375,PE
+1390,AER,pista_ponto_pouso,Linha,Aeroporto Pilão Arcado,-10.0086,-42.4773,BA
+1391,AER,pista_ponto_pouso,Linha,Aeroporto Piloto Osvaldo Marques Dias,-9.86632,-56.1059,MT
+1392,AER,pista_ponto_pouso,Linha,Aeroporto Pimenta Bueno,-11.6416,-61.1791,RO
+1393,AER,pista_ponto_pouso,Linha,Aeroporto Pinheiro,-2.47848,-45.1057,MA
+1394,AER,pista_ponto_pouso,Linha,Aeroporto Pirenópolis,-15.8485,-48.9828,GO
+1395,AER,pista_ponto_pouso,Linha,Aeroporto Pires do Rio,-17.3188,-48.3348,GO
+1396,AER,pista_ponto_pouso,Linha,Aeroporto Piritiba,-11.7383,-40.57,BA
+1397,AER,pista_ponto_pouso,Linha,Aeroporto Plácido de Castro,-9.86899,-67.8939,AC
+1398,AER,pista_ponto_pouso,Linha,Aeroporto Planaltina,-15.6796,-47.5403,DF
+1399,AER,pista_ponto_pouso,Linha,Aeroporto Poconé,-16.2707,-56.6514,MT
+1400,AER,pista_ponto_pouso,Linha,Aeroporto Ponta Porã,-22.5497,-55.7033,MS
+1401,AER,pista_ponto_pouso,Linha,Aeroporto Porangatu,-13.4041,-49.1589,GO
+1402,AER,pista_ponto_pouso,Linha,Aeroporto Porto Murtinho,-21.7114,-57.8796,MS
+1403,AER,pista_ponto_pouso,Linha,Aeroporto Porto Nacional,-10.7185,-48.3997,TO
+1404,AER,pista_ponto_pouso,Linha,Aeroporto Porto Seguro,-16.4385,-39.0812,BA
+1405,AER,pista_ponto_pouso,Linha,Aeroporto Pouso Alegre,-22.2895,-45.9191,MG
+1406,AER,pista_ponto_pouso,Linha,Aeroporto Prefeito José Raimundo Cijirana,-17314,-44.8585,MG
+1407,AER,pista_ponto_pouso,Linha,Aeroporto Prefeito Renato Moreira,-5.53145,-47.4602,MA
+1408,AER,pista_ponto_pouso,Linha,Aeroporto Presidente José Sarney,-5.30955,-44.4814,MA
+1409,AER,pista_ponto_pouso,Linha,Aeroporto Presidente Juscelino Kubitschek,-15.8626,-47.9126,DF
+1410,AER,pista_ponto_pouso,Linha,Aeroporto Presidente Juscelino Kubitschek,-15.8796,-47.9245,DF
+1411,AER,pista_ponto_pouso,Linha,Aeroporto Presidente Venceslau,-21.8937,-51.8844,SP
+1412,AER,pista_ponto_pouso,Linha,Aeroporto Realeza,-25.8009,-53513,PR
+1413,AER,pista_ponto_pouso,Linha,Aeroporto Regional de Maringá - Silvio Name Júnior,-23.4758,-52.0172,PR
+1414,AER,pista_ponto_pouso,Linha,Aeroporto Regional de Rio Grande,-32.0833,-52.1678,RS
+1415,AER,pista_ponto_pouso,Linha,Aeroporto Regional de Tauá - Pedro Teixeira Castelo,-5.93349,-40.2977,CE
+1416,AER,pista_ponto_pouso,Linha,Aeroporto Regional do Planalto Serrano Correia Pinto,-27.6343,-50.3586,SC
+1417,AER,pista_ponto_pouso,Linha,Aeroporto Regional Hugo Cantergiani,-29.1975,-51.1873,RS
+1418,AER,pista_ponto_pouso,Linha,Aeroporto Remanso,-9.58002,-42.1159,BA
+1419,AER,pista_ponto_pouso,Linha,Aeroporto Riachão,-7.34649,-46.6274,MA
+1420,AER,pista_ponto_pouso,Linha,Aeroporto Rio de Contas,-13.5826,-41.7908,BA
+1421,AER,pista_ponto_pouso,Linha,Aeroporto Rubem Berta,-29782,-57.0382,RS
+1422,AER,pista_ponto_pouso,Linha,Aeroporto Ruben Berta - Mal. Cândido Rondon,-24.5128,-54.0546,PR
+1423,AER,pista_ponto_pouso,Linha,Aeroporto Ruy Barbosa,-12.2713,-40.5304,BA
+1424,AER,pista_ponto_pouso,Linha,Aeroporto Salgueiro,-8.04661,-39.1329,PE
+1425,AER,pista_ponto_pouso,Linha,Aeroporto Salinas - Dr. Cândido José da Costa,-16.2084,-42.3219,MG
+1426,AER,pista_ponto_pouso,Linha,Aeroporto Salviano Inácio Rocha,-10972,-41.0703,BA
+1427,AER,pista_ponto_pouso,Linha,Aeroporto Santa Cecília,-15.3425,-49.1353,GO
+1428,AER,pista_ponto_pouso,Linha,Aeroporto Santa Helena de Goiás,-17.8918,-50.5805,GO
+1429,AER,pista_ponto_pouso,Linha,Aeroporto Santa Isabel do Morro,-11.5724,-50.6652,TO
+1430,AER,pista_ponto_pouso,Linha,Aeroporto Santa Magalhães,-8.06143,-38.3297,PE
+1431,AER,pista_ponto_pouso,Linha,Aeroporto Santa Maria,-10984,-37.07,SE
+1432,AER,pista_ponto_pouso,Linha,Aeroporto Santa Maria da Vitória,-13405,-44.2236,BA
+1433,AER,pista_ponto_pouso,Linha,Aeroporto Santa Rita do Araguaia,-17.3207,-53.1939,GO
+1434,AER,pista_ponto_pouso,Linha,Aeroporto Santos Dumont,-22.9104,-43.1628,RJ
+1435,AER,pista_ponto_pouso,Linha,Aeroporto São Domingos,-5.58981,-44.3695,MA
+1436,AER,pista_ponto_pouso,Linha,Aeroporto São Gabriel da Cachoeira,-0.148064,-66.9854,AM
+1437,AER,pista_ponto_pouso,Linha,Aeroporto São João do Piauí,-8.39042,-42.2484,PI
+1438,AER,pista_ponto_pouso,Linha,Aeroporto São José do Jacuípe,-11.4516,-40.0462,BA
+1439,AER,pista_ponto_pouso,Linha,Aeroporto São Miguel do Araguaia,-13.3316,-50199,GO
+1440,AER,pista_ponto_pouso,Linha,Aeroporto São Raimundo Nonato,-9.02727,-42.6831,PI
+1441,AER,pista_ponto_pouso,Linha,Aeroporto São Sebastião,-26.4721,-51.9752,PR
+1442,AER,pista_ponto_pouso,Linha,Aeroporto Senador Nilo Coelho,-9.36266,-40.5689,PE
+1443,AER,pista_ponto_pouso,Linha,Aeroporto Senador Petrônio Portela,-5.05977,-42.8238,PI
+1444,AER,pista_ponto_pouso,Linha,Aeroporto Sento Sé,-9.7575,-41.8546,BA
+1445,AER,pista_ponto_pouso,Linha,Aeroporto Sócrates Rezende,-15667,-38.9546,BA
+1446,AER,pista_ponto_pouso,Linha,Aeroporto Souto Soares,-12097,-41.6407,BA
+1447,AER,pista_ponto_pouso,Linha,Aeroporto Tabatinga,-4.25578,-69936,AM
+1448,AER,pista_ponto_pouso,Linha,Aeroporto Tancredo de Almeida Neves,-22.9377,-48.4683,SP
+1449,AER,pista_ponto_pouso,Linha,Aeroporto Tancredo Thomas de Faria,-25388,-51.5221,PR
+1450,AER,pista_ponto_pouso,Linha,Aeroporto Tanque Novo,-13.5414,-42.4764,BA
+1451,AER,pista_ponto_pouso,Linha,Aeroporto Tatuí,-23.3316,-47.8782,SP
+1452,AER,pista_ponto_pouso,Linha,Aeroporto Teixeira Freitas,-17.5245,-39.6682,BA
+1453,AER,pista_ponto_pouso,Linha,Aeroporto Teruel Ipanema Estância,-20.6036,-54.5956,MS
+1454,AER,pista_ponto_pouso,Linha,Aeroporto Uauá,-9.83213,-39.4995,BA
+1455,AER,pista_ponto_pouso,Linha,Aeroporto Unaí,-16.3538,-46.9269,MG
+1456,AER,pista_ponto_pouso,Linha,Aeroporto Urbano Santos,-3.19783,-43.3888,MA
+1457,AER,pista_ponto_pouso,Linha,Aeroporto Uruaçu,-14545,-49.0912,GO
+1458,AER,pista_ponto_pouso,Linha,Aeroporto Utinga,-12.1053,-41.0742,BA
+1459,AER,pista_ponto_pouso,Linha,Aeroporto Vacaria Novo,-28.4321,-51.0246,RS
+1460,AER,pista_ponto_pouso,Linha,Aeroporto Val de Cans,-1.38194,-48.4752,PA
+1461,AER,pista_ponto_pouso,Linha,Aeroporto Val de Cans,-1.37839,-48.4746,PA
+1462,AER,pista_ponto_pouso,Linha,Aeroporto Valença,-13297,-38.9925,BA
+1463,AER,pista_ponto_pouso,Linha,Aeroporto Valente,-11.4115,-39.4409,BA
+1464,AER,pista_ponto_pouso,Linha,Aeroporto Vila Bela S.S. Trindade / Faz. Esperança,-15.7549,-60.0955,MT
+1465,AER,pista_ponto_pouso,Linha,Aeroporto Vila Bela S.S. Trindade / Faz. Paredão,-13.6306,-60284,MT
+1466,AER,pista_ponto_pouso,Linha,Aeroporto Vitória da Conquista,-14.8621,-40.8633,BA
+1467,AER,pista_ponto_pouso,Linha,Aeroporto Walter Bündchen,-27.6377,-54.3395,RS
+1468,AER,pista_ponto_pouso,Linha,Aeroporto Xique-Xique,-10.8337,-42.6832,BA
+1469,AER,pista_ponto_pouso,Linha,Aerorancho,-15.6816,-47.7689,DF
+1470,AER,pista_ponto_pouso,Linha,Aeróromo Surumu,4.31078,-60.6621,RR
+1471,AER,pista_ponto_pouso,Linha,Aero Rural,-9.86688,-56.0074,MT
+1472,AER,pista_ponto_pouso,Linha,Aerporto Janaúba,-15.7324,-43.3226,MG
+1473,AER,pista_ponto_pouso,Linha,Aerporto João Durval Carneiro,-12.2005,-38.9063,BA
+1474,AER,pista_ponto_pouso,Linha,Aerporto Mário Ribeiro,-16707,-43819,MG

@@ -1,0 +1,60 @@
+project:
+  type: website
+
+website:
+  google-analytics: "G-S1L73VGCG5"
+  title: "Vivificando Conteúdos ao Ensino Médio" # omite-se o título pra não duplicar nome na aba
+  favicon: avatar.png # ícone da aba da página
+  navbar:
+    logo: avatar.png # logo ao lado esquerdo da Home
+    background: primary # cor de fundo
+    tools:  # ícones específico
+      # - icon: twitter
+      #   href: https://twitter.com
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://code.com
+          - text: Report a Bug
+            href:  https://bugs.com
+  
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "Moléculas Voadoras & Gráficos Interativos"
+        menu:
+          - inicio.qmd
+          - questoes.qmd
+          - ferramentas.qmd
+          - jmolPart.qmd
+          - jmol.qmd
+          - textoXmouse.qmd
+          - comandosJmol.qmd
+          - selecao.qmd
+          - animacao.qmd
+          - RPart.qmd
+          - rstudioCloud.qmd
+          - basicaoR.qmd
+          - basico.qmd
+          - animationPlots.qmd
+          - anim.plots.qmd
+          - manipulate.qmd
+         # - iplots.qmd
+          - ggplot2.qmd
+          - gganimate.qmd
+          - plotly.qmd
+          - cinetica.qmd
+          - leaflet.qmd
+          - references.qmd
+      - contato.qmd
+      
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+
+editor: visual
+

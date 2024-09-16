@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Vivificando Conteúdos ao Ensino Médio - Mapas interativos - o pacote leaflet</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./avatar.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
+</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./avatar.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Vivificando Conteúdos ao Ensino Médio</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-moléculas-voadoras--gráficos-interativos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Moléculas Voadoras &amp; Gráficos Interativos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-moléculas-voadoras--gráficos-interativos">    
+        <li>
+    <a class="dropdown-item" href="./inicio.html">
+ <span class="dropdown-text">Moléculas voadoras, animações, gráficos e mapas interativos…ou… Vivificando conteúdos para o Ensino Médio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./questoes.html">
+ <span class="dropdown-text">Algumas questões prévias</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ferramentas.html">
+ <span class="dropdown-text">Um pouco sobre as ferramentas</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./jmolPart.html">
+ <span class="dropdown-text">PARTE 1 - Jmol</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./jmol.html">
+ <span class="dropdown-text">Usando o Jmol para observar moléculas em 3D</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./textoXmouse.html">
+ <span class="dropdown-text">Cliques de mouse <em>versus</em> linhas de comando</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./comandosJmol.html">
+ <span class="dropdown-text">Alguns comandos pra se aventurar nas moléculas voadoras</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./selecao.html">
+ <span class="dropdown-text">Seleção de partes da molécula</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./animacao.html">
+ <span class="dropdown-text">Animando a molécula</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./RPart.html">
+ <span class="dropdown-text">PARTE 2 - R &amp; RStudio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./rstudioCloud.html">
+ <span class="dropdown-text">Como usar o R &amp; Rstudio - instalação e nuvem</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./basicaoR.html">
+ <span class="dropdown-text">Comandos básicos &amp; Scripts no R</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./basico.html">
+ <span class="dropdown-text">Gráficos básicos e simulações</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./animationPlots.html">
+ <span class="dropdown-text">Animando um gráfico básico - o pacote <code>anim.plots</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./anim.plots.html">
+ <span class="dropdown-text">A Lei dos Gases Ideais e o pacote <code>anim.plots</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./manipulate.html">
+ <span class="dropdown-text">Simulando equações de forma animada - o pacote <code>manipulate</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ggplot2.html">
+ <span class="dropdown-text">Gráficos mais elaborados - pacote <code>ggplot2</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./gganimate.html">
+ <span class="dropdown-text">Animando gráficos do ggplot2 - o pacote <code>gganimate</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./plotly.html">
+ <span class="dropdown-text">Gráficos interativos - o pacote <code>plotly</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cinetica.html">
+ <span class="dropdown-text">Cinética de reações e o pacote <code>plotly</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./leaflet.html">
+ <span class="dropdown-text">Mapas interativos - o pacote <code>leaflet</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./references.html">
+ <span class="dropdown-text">References</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./contato.html"> 
+<span class="menu-text">Contato</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://code.com">
+            Source Code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://bugs.com">
+            Report a Bug
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#usando-o-leaflet-com-uma-planilha-contendo-várias-coordenadas" id="toc-usando-o-leaflet-com-uma-planilha-contendo-várias-coordenadas" class="nav-link active" data-scroll-target="#usando-o-leaflet-com-uma-planilha-contendo-várias-coordenadas">Usando o <code>leaflet</code> com uma planilha contendo várias coordenadas</a></li>
+  <li><a href="#referência-do-pacote" id="toc-referência-do-pacote" class="nav-link" data-scroll-target="#referência-do-pacote">Referência do pacote:</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mapas interativos - o pacote <code>leaflet</code></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Não só de gráficos vive o <code>R</code> (ou o Ensino, de modo geral). O pacote <code>leaflet</code>, por exemplo, permite gerar <em>interatividade cartográfica,</em> ou seja, uma <em>geovisualização</em> de dados retratados em um mapa. Isso pode ser particularmente útil quando se deseja uma rápida visualização de alguma informação diretamente num mapa cartográfico, como distribuição de renda, informações de saúde e moléstias, áreas de desmatamento, de queimadas, etc. Exemplos variados de bancos de dados desse tipo são acessíveis, por exemplo, pelos <em>sites</em> do <em>IBGE</em>, <em>DATA SUS</em>, <em>Portal de Dados Abertos do Governo Brasileiro</em>, entre vários.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para tal <em>geocomputação</em> existem diversos pacotes do <code>R</code> direcionados, como <a href="https://cran.r-project.org/web/packages/ggiraph/index.html"><code>ggiraph</code></a>, <a href="https://cran.r-project.org/web/packages/highcharter/index.html"><code>highcharter</code></a>, e <a href="https://cran.r-project.org/web/packages/leaflet/index.html"><code>leaflet</code></a>, esse último a ser ilustrado neste capítulo.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basicamente, o <code>leaflet</code> atua produzindo <em>mapas interativos</em> com auxílio de <em>JavaScript</em> e da biblioteca <em>htmlwidgets</em>, e que podem renderizar tanto dentro do <em>RStudio</em>, como em páginas <em>HTML</em> separadas. Essa biblioteca foi escolhida por sua facilidade de uso, e por está inserida em diversas fontes de dados na internete, como o <a href="https://brasil.mapbiomas.org/">MapBiomas da Plataforma Brasil</a>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma <strong>observação se faz necessária</strong> para o uso básico do <code>leaflet</code>. Para sobrepor informações em regiões cartográficas, é necessário que o banco de dados possua as informações de <em>latitude e longitude</em> para cada elemento que constará do mapa.</div>
+<p><br>
+## Estabelecendo coordenadas</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma ação inicial para uso do pacote <code>leaflet</code> envolve estabelecer as coordenadas geográficas para uma visão inicial do marcador no gráfico. Para isso é necessário os valores de latitude e longitude, bem como o nível de ampliação desejado. Mas é simples. Veja abaixo um exemplo para o município de Cuiabá, MT.</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span>  <span class="co"># carrega-se o pacote</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># adiciona-se as "peças" (tiles)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setView</span>(<span class="at">lng=</span> <span class="sc">-</span><span class="fl">56.0949</span>, <span class="at">lat=</span> <span class="sc">-</span><span class="fl">15.5989</span>, <span class="at">zoom =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-ecfe939bb8fe67309c55" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-ecfe939bb8fe67309c55">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"setView":[[-15.5989,-56.0949],4,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veja que aparece no canto superior direito os níveis <em>+ e -</em> de ampliação, mas você pode usar também o botão de rolagem do <em>mouse</em>. Note também que, apesar de ter sido gerado um mapa do Brasil, não há menção do município de Cuiabá, como desejado. Isso deve-se ao nível de ampliação (<em>zoom</em>) selecionado, e à ausência de um <em>marcador</em>. Experimente variar para <em>5</em> o nível, e adicione um marcador, como segue:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span>  <span class="co"># carrega-se o pacote</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># adiciona-se as "peças" (tiles)</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setView</span>(<span class="at">lng=</span> <span class="sc">-</span><span class="fl">56.0949</span>, <span class="at">lat=</span> <span class="sc">-</span><span class="fl">15.5989</span>, <span class="at">zoom =</span> <span class="dv">5</span>) <span class="sc">%&gt;%</span> <span class="co"># adiciona-se as coordenadas desejadas e o nível de ampliação</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng=</span><span class="sc">-</span><span class="fl">56.0949</span>, <span class="at">lat=</span><span class="sc">-</span><span class="fl">15.5989</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-331f8df8ad67a36b02df" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-331f8df8ad67a36b02df">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-15.5989,-56.0949,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[-15.5989,-56.0949],5,[]],"limits":{"lat":[-15.5989,-15.5989],"lng":[-56.0949,-56.0949]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Também é possível adicionar outras informações ao marcador, como algum dado específico, e um <em>link</em>, por exemplo:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span>  <span class="co"># carrega-se o pacote</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># adiciona-se as "peças" (tiles)</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setView</span>(<span class="at">lng=</span> <span class="sc">-</span><span class="fl">56.0949</span>, <span class="at">lat=</span> <span class="sc">-</span><span class="fl">15.5989</span>, <span class="at">zoom =</span> <span class="dv">5</span>) <span class="sc">%&gt;%</span> <span class="co"># adiciona-se as coordenadas desejadas e o nível de ampliação</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng=</span><span class="sc">-</span><span class="fl">56.0949</span>, <span class="at">lat=</span><span class="sc">-</span><span class="fl">15.5989</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">popup=</span><span class="st">"&lt;b&gt;650.912 habitantes&lt;/b&gt;&lt;br&gt;&lt;a href='https://www.cuiaba.mt.gov.br/'&gt;Município&lt;/a&gt;"</span>) <span class="co"># adiciona-se informação e link ao marcador </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-77121624bee20c8ae112" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-77121624bee20c8ae112">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-15.5989,-56.0949,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"<b>650.912 habitantes<\/b><br><a href='https://www.cuiaba.mt.gov.br/'>Município<\/a>",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[-15.5989,-56.0949],5,[]],"limits":{"lat":[-15.5989,-15.5989],"lng":[-56.0949,-56.0949]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basta clicar no marcador para acessar a informação e o <em>link</em>.</div>
+<p><br>
+</p>
+<section id="usando-o-leaflet-com-uma-planilha-contendo-várias-coordenadas" class="level2">
+<h2 class="anchored" data-anchor-id="usando-o-leaflet-com-uma-planilha-contendo-várias-coordenadas">Usando o <code>leaflet</code> com uma planilha contendo várias coordenadas</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ainda que seja legal a interatividade cartográfica mencionada acima faz mais sentido quando temos um conjunto de dados associados a cada coordenada geográfica, permitindo ilustrar-se uma quantidade maior de informações num mapa.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para ilustrar isso vamos utilizar um levantamento de alguns aeroportos e aeródromos pelo Brasil. Para isso, carregue os dados que seguem transcrevendo o trecho de código abaixo para um <em>script</em>.</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dados_aero <span class="ot">&lt;-</span><span class="fu">structure</span>(<span class="fu">list</span>(<span class="at">aerodromo =</span> <span class="fu">c</span>(<span class="st">"Aero Agrícola Gaivota"</span>, <span class="st">"Aero Agrícola Sapezal"</span>, </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeroagrícola Solo"</span>, <span class="st">"Aeroclube de Atibaia"</span>, <span class="st">"Aeroclube de Bento Gonçalves"</span>, </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeroclube de Eldorado do Sul"</span>, <span class="st">"Aeroclube de Foz do Iguaçu"</span>, </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeroclube de João Pessoa"</span>, <span class="st">"Aeroclube de Nova Iguaçu"</span>, <span class="st">"Aeroclube de Passo Fundo"</span>, </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeroclube de Rio Negrinho"</span>, <span class="st">"Aeroclube de Rondônia"</span>, <span class="st">"Aeroclube de Santa Catarina"</span>, </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeroclube São José do Rio Pardo"</span>, <span class="st">"Aeródomo Novo Aripuanã"</span>, </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeródromo Aerocampo"</span>, <span class="st">"Aeródromo Aeroporto Regional da Zona da Mata"</span>, </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeródromo Aero Rural"</span>, <span class="st">"Aeródromo Aero Z Ferrus"</span>, <span class="st">"Aeródromo Afonso Pena"</span>, </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeródromo Agricenter"</span>, <span class="st">"Aeródromo Agrícola Rio Galhão"</span>, </span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeródromo Agropecuária Céu Aberto Ltda"</span>, <span class="st">"Aeródromo Agropecuária Nova Santana"</span>, </span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeródromo Agrosan"</span>, <span class="st">"Aeródromo Agrovale"</span>, <span class="st">"Aeródromo Aguinaldo Pereira Lima"</span>, </span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeródromo Alenquer"</span>, <span class="st">"Aeródromo Almerim"</span>, <span class="st">"Aeródromo Altamira"</span>, </span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeródromo Amambaí"</span>, <span class="st">"Aeródromo Amapá"</span>, <span class="st">"Aeródromo Anamoim"</span>, </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeródromo André Maggi"</span>, <span class="st">"Aeródromo Ângelo Ponzoni"</span>, <span class="st">"Aeródromo Aparecida do Taboado"</span>, </span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeródromo Aparecido O. Silva"</span>, <span class="st">"Aeródromo Araguaiana"</span>, <span class="st">"Aeródromo Araguari"</span>, </span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="st">"Aerodromo Areia Branca"</span>, <span class="st">"Aeródromo Ariquemes"</span>, <span class="st">"Aeródromo Arraias"</span>, </span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeródromo Arroio Grande"</span>, <span class="st">"Aeródromo Associação Tocantinense de Aviação"</span>, </span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="st">"Aeródromo Auaris"</span>), <span class="at">lat =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">22.9805</span>, <span class="sc">-</span><span class="fl">13.5511</span>, <span class="sc">-</span><span class="fl">23.4471</span>, <span class="sc">-</span><span class="fl">23.1281</span>, </span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">29.1473</span>, <span class="sc">-</span><span class="fl">30.0507</span>, <span class="sc">-</span><span class="fl">25.3696</span>, <span class="sc">-</span><span class="fl">7.09217</span>, <span class="sc">-</span><span class="fl">22.7461</span>, <span class="sc">-</span><span class="fl">28.2509</span>, <span class="sc">-</span><span class="fl">26.3207</span>, </span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">8.79415</span>, <span class="sc">-</span><span class="fl">27.6116</span>, <span class="sc">-</span><span class="fl">21.6473</span>, <span class="sc">-</span><span class="fl">5.11774</span>, <span class="sc">-</span><span class="fl">13.6365</span>, <span class="sc">-</span><span class="fl">21.5131</span>, <span class="sc">-</span><span class="fl">9.92088</span>, </span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="fl">0.993532</span>, <span class="sc">-</span><span class="fl">25.5293</span>, <span class="sc">-</span><span class="fl">22.6239</span>, <span class="sc">-</span><span class="fl">10.4239</span>, <span class="sc">-</span><span class="fl">9.50103</span>, <span class="sc">-</span><span class="fl">10.1417</span>, <span class="sc">-</span><span class="fl">11.3977</span>, </span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">9.50436</span>, <span class="sc">-</span><span class="fl">23.6746</span>, <span class="sc">-</span><span class="fl">1.91731</span>, <span class="sc">-</span><span class="fl">1.47771</span>, <span class="sc">-</span><span class="fl">3.25205</span>, <span class="sc">-</span><span class="fl">23.1439</span>, <span class="fl">2.07607</span>, </span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="fl">1.78498</span>, <span class="sc">-</span><span class="fl">9.89865</span>, <span class="sc">-</span><span class="fl">26.9995</span>, <span class="sc">-</span><span class="fl">20.0891</span>, <span class="sc">-</span><span class="fl">22.0691</span>, <span class="sc">-</span><span class="fl">15.7092</span>, <span class="sc">-</span><span class="fl">18.6679</span>, </span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">7.98825</span>, <span class="sc">-</span><span class="fl">9.88046</span>, <span class="sc">-</span><span class="fl">13.0259</span>, <span class="sc">-</span><span class="fl">32.2293</span>, <span class="sc">-</span><span class="fl">10.1824</span>, <span class="fl">4.00087</span>), <span class="at">long =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">51.5425</span>, </span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">58.8603</span>, <span class="sc">-</span><span class="fl">48.8665</span>, <span class="sc">-</span><span class="fl">46.5747</span>, <span class="sc">-</span><span class="fl">51.5411</span>, <span class="sc">-</span><span class="fl">51.4434</span>, <span class="sc">-</span><span class="fl">54.4707</span>, <span class="sc">-</span><span class="fl">34.8417</span>, </span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">43.4642</span>, <span class="sc">-</span><span class="fl">52.5168</span>, <span class="sc">-</span><span class="fl">49.5219</span>, <span class="sc">-</span><span class="fl">63.8574</span>, <span class="sc">-</span><span class="fl">48.6732</span>, <span class="sc">-</span><span class="fl">46.9282</span>, <span class="sc">-</span><span class="fl">60.3651</span>, </span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">57.9038</span>, <span class="sc">-</span><span class="fl">43.1735</span>, <span class="sc">-</span><span class="fl">56.0051</span>, <span class="sc">-</span><span class="fl">51.1208</span>, <span class="sc">-</span><span class="fl">49.1748</span>, <span class="sc">-</span><span class="fl">55.5691</span>, <span class="sc">-</span><span class="fl">46.0765</span>, </span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">61.2744</span>, <span class="sc">-</span><span class="fl">60.5479</span>, <span class="sc">-</span><span class="fl">58.1215</span>, <span class="sc">-</span><span class="fl">40.3698</span>, <span class="sc">-</span><span class="fl">49.8155</span>, <span class="sc">-</span><span class="fl">54.7218</span>, <span class="sc">-</span><span class="fl">52.5825</span>, </span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">52.2553</span>, <span class="sc">-</span><span class="fl">55.2077</span>, <span class="sc">-</span><span class="fl">50.8597</span>, <span class="sc">-</span><span class="fl">67.4055</span>, <span class="sc">-</span><span class="fl">58.5819</span>, <span class="sc">-</span><span class="fl">51.1401</span>, <span class="sc">-</span><span class="fl">51.1478</span>, </span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">48.7067</span>, <span class="sc">-</span><span class="fl">51.8377</span>, <span class="sc">-</span><span class="fl">48.1903</span>, <span class="sc">-</span><span class="fl">61.0506</span>, <span class="sc">-</span><span class="fl">63.0471</span>, <span class="sc">-</span><span class="fl">46.8838</span>, <span class="sc">-</span><span class="fl">53.0561</span>, </span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">48.5455</span>, <span class="sc">-</span><span class="fl">64.5043</span>), <span class="at">uf =</span> <span class="fu">c</span>(<span class="st">"PR"</span>, <span class="st">"MT"</span>, <span class="st">"SP"</span>, <span class="st">"SP"</span>, <span class="st">"RS"</span>, <span class="st">"RS"</span>, </span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="st">"PR"</span>, <span class="st">"PB"</span>, <span class="st">"RJ"</span>, <span class="st">"RS"</span>, <span class="st">"SC"</span>, <span class="st">"RO"</span>, <span class="st">"SC"</span>, <span class="st">"SP"</span>, <span class="st">"AM"</span>, <span class="st">"MT"</span>, <span class="st">"MG"</span>, </span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="st">"MT"</span>, <span class="st">"AP"</span>, <span class="st">"PR"</span>, <span class="st">"MS"</span>, <span class="st">"TO"</span>, <span class="st">"MT"</span>, <span class="st">"MT"</span>, <span class="st">"MT"</span>, <span class="st">"BA"</span>, <span class="st">"PR"</span>, <span class="st">"PA"</span>, </span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="st">"PA"</span>, <span class="st">"PA"</span>, <span class="st">"MS"</span>, <span class="st">"AP"</span>, <span class="st">"AM"</span>, <span class="st">"MT"</span>, <span class="st">"SC"</span>, <span class="st">"MS"</span>, <span class="st">"SP"</span>, <span class="st">"MT"</span>, <span class="st">"MG"</span>, </span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="st">"AM"</span>, <span class="st">"RO"</span>, <span class="st">"TO"</span>, <span class="st">"RS"</span>, <span class="st">"TO"</span>, <span class="st">"RR"</span>)), <span class="at">class =</span> <span class="st">"data.frame"</span>, <span class="at">row.names =</span> <span class="fu">c</span>(<span class="cn">NA</span>, </span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="dv">45</span>L))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora observe cada aeródromo e aeroclube no mapa, sem a necessidade de clique de <em>mouse</em>, apenas passando o mesmo sobre o mapa, com auxílio do código abaixo:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(htmltools) <span class="co"># carrega pacote para facilitar a visualização por "mouseover"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>(dados_aero) <span class="sc">%&gt;%</span> <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="sc">~</span>long, <span class="sc">~</span>lat, <span class="at">label =</span> <span class="sc">~</span><span class="fu">htmlEscape</span>(aerodromo)) <span class="co"># adiciona os marcadores e associa aos nomes de cada aeródromo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-c845c3609aa2d500e71b" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-c845c3609aa2d500e71b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[[-22.9805,-13.5511,-23.4471,-23.1281,-29.1473,-30.0507,-25.3696,-7.09217,-22.7461,-28.2509,-26.3207,-8.79415,-27.6116,-21.6473,-5.11774,-13.6365,-21.5131,-9.92088,0.993532,-25.5293,-22.6239,-10.4239,-9.50103,-10.1417,-11.3977,-9.50436,-23.6746,-1.91731,-1.47771,-3.25205,-23.1439,2.07607,1.78498,-9.89865,-26.9995,-20.0891,-22.0691,-15.7092,-18.6679,-7.98825,-9.880459999999999,-13.0259,-32.2293,-10.1824,4.00087],[-51.5425,-58.8603,-48.8665,-46.5747,-51.5411,-51.4434,-54.4707,-34.8417,-43.4642,-52.5168,-49.5219,-63.8574,-48.6732,-46.9282,-60.3651,-57.9038,-43.1735,-56.0051,-51.1208,-49.1748,-55.5691,-46.0765,-61.2744,-60.5479,-58.1215,-40.3698,-49.8155,-54.7218,-52.5825,-52.2553,-55.2077,-50.8597,-67.4055,-58.5819,-51.1401,-51.1478,-48.7067,-51.8377,-48.1903,-61.0506,-63.0471,-46.8838,-53.0561,-48.5455,-64.5043],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,["Aero Agrícola Gaivota","Aero Agrícola Sapezal","Aeroagrícola Solo","Aeroclube de Atibaia","Aeroclube de Bento Gonçalves","Aeroclube de Eldorado do Sul","Aeroclube de Foz do Iguaçu","Aeroclube de João Pessoa","Aeroclube de Nova Iguaçu","Aeroclube de Passo Fundo","Aeroclube de Rio Negrinho","Aeroclube de Rondônia","Aeroclube de Santa Catarina","Aeroclube São José do Rio Pardo","Aeródomo Novo Aripuanã","Aeródromo Aerocampo","Aeródromo Aeroporto Regional da Zona da Mata","Aeródromo Aero Rural","Aeródromo Aero Z Ferrus","Aeródromo Afonso Pena","Aeródromo Agricenter","Aeródromo Agrícola Rio Galhão","Aeródromo Agropecuária Céu Aberto Ltda","Aeródromo Agropecuária Nova Santana","Aeródromo Agrosan","Aeródromo Agrovale","Aeródromo Aguinaldo Pereira Lima","Aeródromo Alenquer","Aeródromo Almerim","Aeródromo Altamira","Aeródromo Amambaí","Aeródromo Amapá","Aeródromo Anamoim","Aeródromo André Maggi","Aeródromo Ângelo Ponzoni","Aeródromo Aparecida do Taboado","Aeródromo Aparecido O. Silva","Aeródromo Araguaiana","Aeródromo Araguari","Aerodromo Areia Branca","Aeródromo Ariquemes","Aeródromo Arraias","Aeródromo Arroio Grande","Aeródromo Associação Tocantinense de Aviação","Aeródromo Auaris"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-32.2293,4.00087],"lng":[-67.4055,-34.8417]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="referência-do-pacote" class="level2">
+<h2 class="anchored" data-anchor-id="referência-do-pacote">Referência do pacote:</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/leaflet/index.html">Geral</a></li>
+<li><a href="https://cran.r-project.org/web/packages/leaflet/leaflet.pdf">Manual</a>:</li>
+<li><a href="https://leafletjs.com/examples.html">Tutorial</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

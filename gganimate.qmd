@@ -1,0 +1,119 @@
+---
+title: "Animando gráficos do ggplot2 - o pacote `gganimate`"
+---
+
+
+|       A biblioteca `gganimate` permite criar diversos efeitos de animação em gráficos construídos com o `ggplot2`. Para ilustrar seu potencial no ensino médio, vamos utilizar o exemplo mencionado no [MAPA](https://seliga.educacao.mg.gov.br/cardenos-mapa), especificamente à página 12 do 1o. Bimestre do 3o. Ano, como segue:
+
+\
+
+![Imagem extraída do MAPA sobre o saneamento básico nas regiões brasileiras, tal como informado pelo Sistema de Informações Hospitalares do SUS](saneamento.png).
+
+|       Inicialmente precisamos criar o gráfico com auxílio do pacote `ggplot2`. Para isso é necessário obter os dados a partir da *fonte original* (Sistema de Informações Hospitalares do SUS, no caso). 
+
+|       Mas há ocasiões em que os dados originai não estão disponíveis, havendo a necessidade de se extrair os dados diretamente do gráfico. Não é o caso da presente situação, mas vamos proceder dessa forma, no intuito de exemplificar tais situações. 
+
+|       Nesse caso podemos estimar os dados do gráfico acima utilizando um extrator de dados de imagens, e para o qual sugerimos o digitalizador *online* [PlotDigitizer](https://plotdigitizer.com/app). A partir dos dados obtidos, pode-se 1) tranferir os dados ao `R` e 2) elaborar um gráfico similar ao de internações por carência visto acima. 
+
+|       Para carregar os dados extraídos do gráfico, copie e rode o trecho de código abaixo. 
+
+```{r}
+dados <- structure(list(ano = c(2009L, 2010L, 2011L, 2012L, 2013L, 2014L, 
+                                2015L, 2016L, 2017L, 2018L, 2009L, 2010L, 2011L, 2012L, 2013L, 
+                                2014L, 2015L, 2016L, 2017L, 2018L, 2009L, 2011L, 2012L, 2013L, 
+                                2014L, 2015L, 2016L, 2017L, 2018L, 2009L, 2010L, 2011L, 2012L, 
+                                2013L, 2014L, 2015L, 2016L, 2017L, 2018L, 2009L, 2010L, 2011L, 
+                                2012L, 2013L, 2014L, 2015L, 2016L, 2017L, 2018L, 2009L, 2010L, 
+                                2011L, 2012L, 2013L, 2014L, 2015L, 2016L, 2017L, 2018L), interna = c(56.5, 
+                                                                                                     74.9, 57.9, 43.8, 45.2, 38.1, 36.7, 48, 22.6, 28.2, 142.7, 152.5, 
+                                                                                                     107.3, 97.5, 91.8, 81.9, 81.9, 76.3, 63.6, 46.6, 183.6, 161, 
+                                                                                                     134.2, 132.8, 110.2, 111.6, 103.1, 63.6, 63.6, 226, 317.8, 161, 
+                                                                                                     148.3, 169.5, 137, 139.8, 115.8, 76.3, 76.3, 311, 343.2, 289.5, 
+                                                                                                     248.6, 233.1, 187.9, 187.9, 187.9, 134.2, 120.1, 450.6, 488.7, 
+                                                                                                     384.2, 305.1, 265.5, 223.2, 226, 170.9, 134.2, 108.8), regiao = c("Sudeste", 
+                                                                                                                                                                       "Sudeste", "Sudeste", "Sudeste", "Sudeste", "Sudeste", "Sudeste", 
+                                                                                                                                                                       "Sudeste", "Sudeste", "Sudeste", "Sul", "Sul", "Sul", "Sul", 
+                                                                                                                                                                       "Sul", "Sul", "Sul", "Sul", "Sul", "Sul", "Brasil", "Brasil", 
+                                                                                                                                                                       "Brasil", "Brasil", "Brasil", "Brasil", "Brasil", "Brasil", "Brasil", 
+                                                                                                                                                                       "Centro-oeste", "Centro-oeste", "Centro-oeste", "Centro-oeste", 
+                                                                                                                                                                       "Centro-oeste", "Centro-oeste", "Centro-oeste", "Centro-oeste", 
+                                                                                                                                                                       "Centro-oeste", "Centro-oeste", "Nordeste", "Nordeste", "Nordeste", 
+                                                                                                                                                                       "Nordeste", "Nordeste", "Nordeste", "Nordeste", "Nordeste", "Nordeste", 
+                                                                                                                                                                       "Nordeste", "Norte", "Norte", "Norte", "Norte", "Norte", "Norte", 
+                                                                                                                                                                       "Norte", "Norte", "Norte", "Norte")), class = "data.frame", row.names = c(NA, 
+                                                                                                                                                                                                                                                 -59L))
+```
+
+|       Não se preocupe com a sintaxe complicada, basta copiar, colar num *script* do *RStudio*, e compilar. Mas se desejar aprender um pouco mais sobre como essa sintaxe foi obtida, procure algo sobre a função `dput` do `R`, como [neste link](https://rdrr.io/r/base/dput.html).
+
+|       Agora a reprodução do gráfico de internações, com auxílio do código abaixo:
+
+```{r, fig.cap="Gráfico de internações por carência no saneamento básico criado pelo `ggplot2`."}
+
+library(ggplot2)  # carrega a biblioteca
+
+ggplot(data=dados, aes(x=ano, y=interna))+ # elabora o gráfico
+  geom_point(aes(size=interna,col=regiao)) +
+  labs(x="",y="internação/100 mil hab")
+```
+
+|       E...finalmente...uma animação pelo pacote `gganimate`. Existem diversas formas de se animar um gráfico de `ggplot2` pela biblioteca. Segue uma simples:
+
+```{r, eval=FALSE}
+library(gganimate) # carrega a biblioteca
+
+interna_anim <- ggplot(data=dados, aes(x=ano, y=interna))+ 
+  geom_point(aes(size=interna,col=regiao)) +
+  labs(y="internação/100 mil hab")   # repete-se a construção do gráfico
+
+# p <- ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) +
+#   geom_point()
+# plot(p)
+
+anim <- interna_anim + transition_states(ano,   # comando para rodar a animação
+                              transition_length = 2,
+                              state_length = 1)
+anim   # a animação 
+```
+
+|       Observe que ao se rodar o trecho de código acima, o programa apresenta abaixo uma linha de compilação de quadros por segundo (*fps*, oui *frames per second*), levando algum tempo para o resultado final ser apresentado como animação na *aba Viewer* do *RStudio*.
+
+|       O pacote `gganimate` não permite a visualização da animação em *HTML*, o que impede de apresentá-lo nesse material. Mas, como dantes, é possível ilustrar a animações pela imagem abaixo, que representa o movimento das internações por região, e pela média brasileira (*regiao*).
+
+![Ilustração do deslocamento dos pontos relativos às regiões do gráfico de internações por carência de saneamento básico pelo SUS](saneamento_anim.png)
+
+|       Mas, por outro lado, é possível *salvar a animação como uma imagem*. Nesse caso, execute a animação, clique com o botão direito nessa, e selecione *Save image as*, fornecendo um nome e o atributo *png*. A animação será visível ao abrir o arquivo salvo. 
+
+|       É possível *renderizar* outra animação com os mesmo dados, mas variando-se o que se deseja transformar, apenas alterando o nome do vetor. Na prática, compare a situação acima, de evolução das internações por região ao longo dos anos, com a de baixo, de evolução individualizando as regiões em um período específico. E veja que a única alteração do código consistiu no nome do vetor. 
+
+```{r, eval=FALSE}
+anim <- interna_anim + transition_states(regiao,
+                              transition_length = 2,
+                              state_length = 1)
+anim
+```
+
+|       A representação da animação obtida pelo código acima é dada a seguir:
+
+![Ilustração da animação sobre internações por carência de saneamento básico, mas apresentando a evolução por região individual, e em período específico.](saneamento_anim2.png)
+
+## Outras animações simples com o pacote `gganimate`
+
+|       O `gganimate` possui diversos comandos, assim como os demais pacotes do `R`. Mas algumas alterações simples podem resultar em efeitos visuais significativos. Tomando-se os dados de internações por carência de saneamento básico anteriores, experimente uma *transição mais fluida* com o trecho abaixo:
+
+```{r, eval=FALSE}
+interna_anim + transition_time(ano) +
+  labs(title = "regiao: {frame_time}")
+```
+
+|       Ou esse...
+
+```{r, eval=FALSE}
+interna_anim + transition_reveal(interna) 
+```
+
+## Referência do pacote:
+
+* [Geral](https://cran.r-project.org/web/packages/gganimate/index.html)
+* [Manual](https://cran.r-project.org/web/packages/gganimate/gganimate.pdf):
+* [Tutorial](https://gganimate.com/) 

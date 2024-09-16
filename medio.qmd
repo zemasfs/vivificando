@@ -1,0 +1,123 @@
+---
+title: "Ensino Médio"
+editor: source
+header-includes:
+ - <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+---
+
+## ...em preparação... <i class="fa-solid fa-wrench"></i>
+
+## Jmol e Moléculas em 3D <i class="fa-solid fa-atom"></i>
+
+
+### ER & moléculas
+
+```         
+- ER.qmd
+- visual.qmd
+- jmol.qmd
+- ERjmol.qmd
+- ERScriptsJmol.qmd
+```
+
+### Uso do Jmol
+
+```         
+- baixar.qmd
+- acessar.qmd
+- carregaOnline.qmd
+- carregaPC.qmd
+- zoom.qmd
+- representa.qmd
+- cor.qmd
+- fundo.qmd
+- distancia.qmd
+- anima.qmd
+```
+
+### Jardim de Moléculas 
+
+```         
+- jardim.qmd
+- classifica.qmd
+- organica.qmd
+- inorganica.qmd
+- biomol.qmd
+- farmac.qmd
+- medicin.qmd
+- toxicol.qmd
+- nutri.qmd
+- supramol.qmd
+```
+
+## R e Relações Matemáticas <i class="fa-solid fa-square-poll-vertical"></i>
+
+### ER e relações matemáticas 
+
+```         
+ - ER.qmd
+- visual.qmd
+- ERvisual.qmd
+```
+
+### ER, R e RStudio
+
+```         
+ - Rstudio.qmd
+- pacotes.qmd
+```
+
+### Visualização e Animação de dados
+
+#### Visualização de gráficos
+
+```         
+- pacotes
+- animSimul.qmd
+- estaticos.qmd
+- basic.qmd
+- ggplot2.qmd
+```
+
+#### Gráficos animados
+
+[O pacote `anim.plots`](anim.plots.html)
+
+```         
+- animation.qmd
+- gganimate.qmd
+```
+
+#### Gráficos interativos
+
+```         
+- manipulate.qmd
+- plotly.qmd
+- rgl.qmd
+- leaflet.qmd
+```
+
+### Paineis interativos
+
+```         
+- paineis
+- flexdashboard.qmd
+- shiny.qmd
+```
+
+### [Fenômenos naturais e processos tecnológicos](fenomenos.html) 
+<!-- <i class="fa-solid fa-atom"></i>  -->
+
+<!---transfomações químicas, leis ponderais, cálculo estequiométrico, princípios de conservação de energia e movimento, ciclo da água, leis da termodinâmica; cinética e equilíbrio químicos; fusão e fissão nucleares; espectro eletromagnético; efeitos biológicos das radiações ionizantes; mutação; poluição; ciclos biogeoquímicos; desmatamento; camada de ozônio e efeito estufa--->
+
+### [Dinâmica da Vida, da Terra e do Cosmos](dinamica.html) 
+<!-- <i class="fa-solid fa-leaf"> -->
+
+
+<!---origem da Vida; evolução biológica; registro fóssil; exobiologia; biodiversidade; origem e extinção de espécies; políticas ambientais; biomoléculas; organização celular; órgãos e sistemas; organismos; populações; ecossistemas; cadeias alimentares; respiração celular; fotossíntese; reprodução e hereditariedade; genética mendeliana; processos epidemiológicos; espectro eletromagnético; modelos cosmológicos; astronomia; gravitação; mecânica newtoniana; previsão do tempo--->
+
+### [Conhecimento científico e tecnológico](conhecimento.html) 
+<!-- <i class="fa-solid fa-microscope"> -->
+
+
+<!---aplicação da tecnologia do DNA recombinante; identificação por DNA; emprego de células-tronco; produção de armamentos nucleares; desenvolvimento e aprimoramento de tecnologias de obtenção de energia elétrica; estrutura e propriedades de compostos orgânicos; agroquímicos; controle biológico de pragas; conservantes alimentícios; mineração; herança biológica; darwinismo social, eugenia e racismo; mecânica newtoniana; equipamentos de segurança--->
