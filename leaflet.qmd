@@ -1,20 +1,17 @@
 ---
-title: "Mapas interativos - o pacote `leaflet`"
+title: "10 - Mapas interativos: o pacote `leaflet`"
 ---
-
 
 |       Não só de gráficos vive o `R` (ou o Ensino, de modo geral). O pacote `leaflet`, por exemplo, permite gerar *interatividade cartográfica,* ou seja, uma *geovisualização* de dados retratados em um mapa. Isso pode ser particularmente útil quando se deseja uma rápida visualização de alguma informação diretamente num mapa cartográfico, como distribuição de renda, informações de saúde e moléstias, áreas de desmatamento, de queimadas, etc. Exemplos variados de bancos de dados desse tipo são acessíveis, por exemplo, pelos *sites* do *IBGE*, *DATA SUS*, *Portal de Dados Abertos do Governo Brasileiro*, entre vários.
 
-
 |       Para tal *geocomputação* existem diversos pacotes do `R` direcionados, como [`ggiraph`](https://cran.r-project.org/web/packages/ggiraph/index.html), [`highcharter`](https://cran.r-project.org/web/packages/highcharter/index.html), e [`leaflet`](https://cran.r-project.org/web/packages/leaflet/index.html), esse último a ser ilustrado neste capítulo.
 
-
-|       Basicamente, o `leaflet` atua produzindo *mapas interativos* com auxílio de *JavaScript* e da biblioteca *htmlwidgets*, e que podem renderizar tanto dentro do *RStudio*, como em páginas *HTML* separadas. Essa biblioteca foi escolhida por sua facilidade de uso, e por está inserida em diversas fontes de dados na internete, como o [MapBiomas da Plataforma Brasil](https://brasil.mapbiomas.org/). 
-
+|       Basicamente, o `leaflet` atua produzindo *mapas interativos* com auxílio de *JavaScript* e da biblioteca *htmlwidgets*, e que podem renderizar tanto dentro do *RStudio*, como em páginas *HTML* separadas. Essa biblioteca foi escolhida por sua facilidade de uso, e por está inserida em diversas fontes de dados na internete, como o [MapBiomas da Plataforma Brasil](https://brasil.mapbiomas.org/).
 
 |       Uma **observação se faz necessária** para o uso básico do `leaflet`. Para sobrepor informações em regiões cartográficas, é necessário que o banco de dados possua as informações de *latitude e longitude* para cada elemento que constará do mapa.
+
 \
-## Estabelecendo coordenadas
+\## Estabelecendo coordenadas
 
 |       Uma ação inicial para uso do pacote `leaflet` envolve estabelecer as coordenadas geográficas para uma visão inicial do marcador no gráfico. Para isso é necessário os valores de latitude e longitude, bem como o nível de ampliação desejado. Mas é simples. Veja abaixo um exemplo para o município de Cuiabá, MT.
 
@@ -25,9 +22,7 @@ leaflet() %>%  # carrega-se o pacote
   setView(lng= -56.0949, lat= -15.5989, zoom = 4)
 ```
 
-
 |       Veja que aparece no canto superior direito os níveis *+ e -* de ampliação, mas você pode usar também o botão de rolagem do *mouse*. Note também que, apesar de ter sido gerado um mapa do Brasil, não há menção do município de Cuiabá, como desejado. Isso deve-se ao nível de ampliação (*zoom*) selecionado, e à ausência de um *marcador*. Experimente variar para *5* o nível, e adicione um marcador, como segue:
-
 
 ```{r}
 library(leaflet)
@@ -39,7 +34,6 @@ leaflet() %>%  # carrega-se o pacote
 
 |       Também é possível adicionar outras informações ao marcador, como algum dado específico, e um *link*, por exemplo:
 
-
 ```{r}
 library(leaflet)
 leaflet() %>%  # carrega-se o pacote
@@ -48,14 +42,16 @@ leaflet() %>%  # carrega-se o pacote
   addMarkers(lng=-56.0949, lat=-15.5989,
              popup="<b>650.912 habitantes</b><br><a href='https://www.cuiaba.mt.gov.br/'>Município</a>") # adiciona-se informação e link ao marcador 
 ```
+
 \
 
 |       Basta clicar no marcador para acessar a informação e o *link*.
+
 \
 
 ## Usando o `leaflet` com uma planilha contendo várias coordenadas
-             
-|       Ainda que seja legal a interatividade cartográfica mencionada acima faz mais sentido quando temos um conjunto de dados associados a cada coordenada geográfica, permitindo ilustrar-se uma quantidade maior de informações num mapa. 
+
+|       Ainda que seja legal a interatividade cartográfica mencionada acima faz mais sentido quando temos um conjunto de dados associados a cada coordenada geográfica, permitindo ilustrar-se uma quantidade maior de informações num mapa.
 
 |       Para ilustrar isso vamos utilizar um levantamento de alguns aeroportos e aeródromos pelo Brasil. Para isso, carregue os dados que seguem transcrevendo o trecho de código abaixo para um *script*.
 
@@ -98,7 +94,6 @@ dados_aero <-structure(list(aerodromo = c("Aero Agrícola Gaivota", "Aero Agríc
 -45L))
 ```
 
-
 |       Agora observe cada aeródromo e aeroclube no mapa, sem a necessidade de clique de *mouse*, apenas passando o mesmo sobre o mapa, com auxílio do código abaixo:
 
 ```{r}
@@ -110,6 +105,6 @@ leaflet(dados_aero) %>% addTiles() %>%
 
 ## Referência do pacote:
 
-* [Geral](https://cran.r-project.org/web/packages/leaflet/index.html)
-* [Manual](https://cran.r-project.org/web/packages/leaflet/leaflet.pdf):
-* [Tutorial](https://leafletjs.com/examples.html) 
+-   [Geral](https://cran.r-project.org/web/packages/leaflet/index.html)
+-   [Manual](https://cran.r-project.org/web/packages/leaflet/leaflet.pdf):
+-   [Tutorial](https://leafletjs.com/examples.html)

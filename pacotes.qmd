@@ -1,15 +1,14 @@
 ---
-title: "Instalando pacotes no `RStudio`"
+title: "4 - Instalando pacotes no `RStudio`"
 ---
-
 
 |       Diferentemente do pacote `basic` para elaboração de gráficos, e que é inerente à instalação original do `R`, os pacotes de animação e interatividade de que trata esta material precisam ser instalados. Para isso, siga as instruções abaixo, exemplificadas para o primeiro pacote de animação que será visto, `anim.plots`.
 
-1. Acesse a aba *Packages* do *RStudio*.
+1.  Acesse a aba *Packages* do *RStudio*.
 
 ![](pacotes.rstudio.png)
 
-2. Digite o nome do pacote no campo (`anim.plots`), e clique em *Install*. 
+2.  Digite o nome do pacote no campo (`anim.plots`), e clique em *Install*.
 
 ![](pacotes.animplots.png)
 
@@ -19,13 +18,10 @@ title: "Instalando pacotes no `RStudio`"
 
 ## Carregando o pacote instalado
 
-
 |       O `R` permite que instale um número gigantesco de pacotes. Mas é claro que você não os utilizará simultaneamente. Dessa forma, o `R` precisa "saber" qual o pacote que se deseja no momento, o que é realizado pelo comando `library`, e ilustrado abaixo para o pacote `anim.plots`, como segue:
 
 ```{r, eval=FALSE}
 library(anim.plots)
 ```
 
-
-
-|       Pronto !! Pacote instalado. **Para usar qualquer pacote instalado do `R`, é necessário carregá-lo
+|       Pronto !! Pacote instalado. \*\*Para usar qualquer pacote instalado do `R`, é necessário carregá-lo

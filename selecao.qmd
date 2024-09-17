@@ -1,7 +1,6 @@
 ---
-title: "Seleção de partes da molécula"
+title: "4 - Seleção de partes da molécula"
 ---
-
 
 ## Seleção de átomos e visualização
 
@@ -73,8 +72,6 @@ cadeia lateral de resíduos de aminoácidos: sidechain
 estruturas secundárias: helix, sheet, turn
 ```
 
-
-
 ## E depois de selecionar átomos, o que é que eu faço ?! {#sec-selecao}
 
 |       Muuiiiitaaa coisa, também ! As instruções sequenciais abaixo (*scripts*) ilustram algumas possibilidades de se observar detalhes de um modelo molecular com o *Jmol*. Você pode copiar e colar no *Console* para observar os resultados.
@@ -96,9 +93,7 @@ label %e
 color shapely # coloração única 
 ```
 
-![](tylenol.png)
-|       Aqui vale uma observação sobre a etiquetagem dos átomos (nomes de cada no ecrã). Veja que não há comentário seguindo a instrução. Isso é necessário para que o comentário não seja a própria etiquetagem, e sim o símbolo do elemento.
-
+![](tylenol.png) \| Aqui vale uma observação sobre a etiquetagem dos átomos (nomes de cada no ecrã). Veja que não há comentário seguindo a instrução. Isso é necessário para que o comentário não seja a própria etiquetagem, e sim o símbolo do elemento.
 
 ```{r, eval=FALSE}
 # Para selecionar e colorir os átomos de H
@@ -132,7 +127,6 @@ isosurface sasurface # apresenta a superfície de interação com água
 
 ![](urea.png)
 
-
 ```{r, eval=FALSE}
 # Para ressaltar os carbonos de um hexadecano
 
@@ -153,6 +147,7 @@ hbonds 0.5 # espessura da ligação de H
 ```
 
 ![](hbondsCRN.png)
+
 ```{r,eval=FALSE}
 # Superfíciel de potencial eletrostático para o fenol
 

@@ -19,18 +19,13 @@ website:
             href: index.qmd
           - questoes.qmd
           - ferramentas.qmd
-      - section: "Moléculas em 3D"
-        contents:
-          - text: "Jmol"
-            href: jmolPart.qmd
+          - jmolPart.qmd
           - jmol.qmd
           - textoXmouse.qmd
           - comandosJmol.qmd
-          
-      - section: "Gráficos Interativos"
-        contents:
-          - text: "R & RStudio"
-            href: RPart.qmd          
+         # - selecao.qmd
+         # - animacao.qmd
+          - RPart.qmd
           - rstudioCloud.qmd
           - basicaoR.qmd
           - graphics.qmd

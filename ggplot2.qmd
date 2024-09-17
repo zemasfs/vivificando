@@ -1,7 +1,6 @@
 ---
-title: "Gráficos mais elaborados - pacote `ggplot2`"
+title: "7 - Gráficos mais elaborados - pacote `ggplot2`"
 ---
-
 
 ## O sistema `ggplot2`
 
@@ -24,18 +23,18 @@ knitr::kable(head(tab.camad), "pipe")
 
 |   De modo mais completo, o mapeamento é efetuado por 5 componentes da tabela acima: *layer* (elementos geométricos - *geom*, e transformações e resumos estatísticos - *stat*),*scales,coord,facet,theme*.
 
-
 |      No `ggplot2` camadas podem ser depositadas como numa sequência lógica pra criação de um gráfico:
-1. Estabelece-se os dados que serão utilizados (*data=*);
-1. Define-se quem é o *x* e quem é o *y* (*x=, y=*); 
-1. Seleciona-se um tipo de gráfico (*geom=*); 
-1. Embeleza-se o gráfico criado (eixos, cores, símbolos, tamanhos).
+
+1.  Estabelece-se os dados que serão utilizados (*data=*);
+2.  Define-se quem é o *x* e quem é o *y* (*x=, y=*);
+3.  Seleciona-se um tipo de gráfico (*geom=*);
+4.  Embeleza-se o gráfico criado (eixos, cores, símbolos, tamanhos).
 
 |       Havendo empolgação, pode-se continuar com o `ggplot2` aprimorando o gráfico criado. Para isso:
 
-1. Observa-se alguma relação entre as variáveis.
-1. Avalia-se um modelo para essa relação (reta, curva).
-1. Insere-se no gráfico o modelo que se ajustou (equação e parâmetros). 
+1.  Observa-se alguma relação entre as variáveis.
+2.  Avalia-se um modelo para essa relação (reta, curva).
+3.  Insere-se no gráfico o modelo que se ajustou (equação e parâmetros).
 
 |       Para uso de dados multivariados, a condição para uso do `ggplot2` é que os mesmos estejam kWhribuidos em formato *Long*, ou seja, os níveis ou subconjuntos de uma variável precisam ser alocados num único vetor. Isso é simples quando se tem poucas linhas, mas complexo, quando tratar-se de vários níveis ou elementos em cada nível. No entanto, para se converter dados em *Wide* (várias colunas pra cada nível, x, y, z, etc) em *Long* (uma coluna única contendo os níveis x, y, z, etc), utiliza-se algumas funções, tais como do pacote `reshape` ou `tydir` (função `gather` pra converter a *longer* ou `spread` pra converter a *wider*).
 
@@ -61,7 +60,6 @@ consumo <- read.table(header = T, text = '
 ') # comando que cria tabela de dados
 ```
 
-
 |       Alternativamente, pode-se criar os vetores *x* e *y* primeiro, como realizado anteriormente, e criar a planilha em seguida:
 
 ```{r}
@@ -70,7 +68,6 @@ custo <- c(10,16,16,43,43,120)   # define os dados
 
 consumo <- data.frame(kWh,custo) # comando que cria a tabela de dados a partir dos vetores x e y
 ```
-
 
 ### Carregando o ggplot2
 
@@ -91,12 +88,13 @@ ggplot(data=consumo)
 ggplot(data=consumo, aes(x=kWh, y=custo))
 ```
 
-|       Agora o gráfico apresenta-se com os eixos, embora sem os dados da tabela. No conjunto de obviedades que se assoma, é claro, também não definimos que tipo de gráfico queremos. Ou seja, se ponto, linha, barra, ou algum pra lá de dúzia que compõe o pacote `ggplot2`. 
-|       Uma observação importantíssima: veja que as variáveis estão dentro de um parêntes iniciado pela função *aes*. Do inglês, uma abreviação de *aesthetics*, ou estética, em tradução livre. Todo gráfico do `ggplot2` tem que conter essa função, que além de definir as variáveis envolvidas, também permite generalizar para as camadas outras características estéticas, como *cor, tamanho, e forma*. 
+|       Agora o gráfico apresenta-se com os eixos, embora sem os dados da tabela. No conjunto de obviedades que se assoma, é claro, também não definimos que tipo de gráfico queremos. Ou seja, se ponto, linha, barra, ou algum pra lá de dúzia que compõe o pacote `ggplot2`.
+|       Uma observação importantíssima: veja que as variáveis estão dentro de um parêntes iniciado pela função *aes*. Do inglês, uma abreviação de *aesthetics*, ou estética, em tradução livre. Todo gráfico do `ggplot2` tem que conter essa função, que além de definir as variáveis envolvidas, também permite generalizar para as camadas outras características estéticas, como *cor, tamanho, e forma*.
 
 ### Escolhendo o tipo de gráfico
 
 |       De volta ao ofício, o tipo de gráfico no pacote `ggplot2` é definido pelo tipo de *geom*, ou geoma, em tradução livre e um pouco óbvia, também. O `ggplot2` tem *geom*s pra tudo que é gráfico. E para inseri-lo na linha de comando de produção desse, basta acrescentar seu tipo como uma camada adicional, usando o sinal *" + "*, mesmo, como segue.
+
 ```{r}
 ggplot(data=consumo, aes(x=kWh, y=custo)) +
   geom_point()
@@ -123,7 +121,6 @@ ggplot(data=consumo, aes(x=kWh, y=custo)) +
   geom_point()
 ```
 
-
 ### Oferecendo elegância ao gráfico
 
 |       Bom, seguindo-se os ítens de construção de um gráfico lá de cima, agora é hora de "botar" elegância no produto ! Pra isso pode-se escolher algumas *"estéticas"* de cor (*color*), tamanho (*size*), translucidez (*alpha*), forma (*shape*), preenchimento do símbolo (*fill*) e sua espessura do tracejado do símbolo (*stroke*), e inseri-las como argumentos do geoma.
@@ -138,15 +135,18 @@ ggplot(data=consumo, aes(x=kWh, y=custo)) +
              stroke = 2) # espessura do tracejado do símbolo
 ```
 
-|       Bonito, não ? Ou doido, mesmo ! 
+|       Bonito, não ? Ou doido, mesmo !
 
 <!-- |       Note que o argumento "forma" (*shape*) foi colocado no *geom*, e não na linha principal de *aes* do `ggplot2`. Isso ocorre porque o *shape* desejado só é válido para um gráfico de pontos. Não dá pra pensar em *shape* na linha de *aes* se o gráfico fosse outro (por exemplo...linha é linha, oras, e em forma de linha !!). -->
 
 <!-- |       Caminhando um pouco mais, veja que surge automaticamente uma legenda no gráfico. Isso é bem válido para quando se tem mais de um grupo de dados, como custoidades de veículos kWhintos, por exemplo. Mas é completamente bizarro manter essa legenda pra  simples relação de que trata nossos dados. Nesse caso, pode-se omitir a legenda: -->
 
 <!-- ```{r} -->
+
 <!-- ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) + -->
+
 <!--   geom_point(shape = 2, show.legend = TRUE) -->
+
 <!-- ``` -->
 
 |       Agora que melhoramos (...ou pioramos) o aspecto visual do gráfico, que tal dar um jeito nas etiquetas dos eixos (*labels*) ? Veja que estão com as abreviações das colunas *x* e *y* dos dados. Quem sabe algo com mais empáfia, então ?
@@ -157,7 +157,6 @@ ggplot(data=consumo, aes(x=kWh, y=custo)) +
   labs(x = "kWh",
        y = "custo")
 ```
-
 
 ### Colocando títulos e subtítulos
 
@@ -174,7 +173,6 @@ ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) +
        caption = "Obs: Linha de tendência")
 ```
 
-
 ### Mudando a aparência de fundo
 
 |       O `ggplot2` apresenta como padrão esse *canvas* acizentado. Mas existem vários outros, bastando-se definir um tema (*theme*) ao gráfico:
@@ -186,7 +184,6 @@ ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) +
        y = "custo") +
   theme_bw()
 ```
-
 
 ```{r}
 ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) +
@@ -203,7 +200,6 @@ ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) +
        y = "custo") +
   theme_linedraw()
 ```
-
 
 ### Alterando o tamanho da fonte
 
@@ -254,7 +250,6 @@ ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) +
   ylim(-1,28)
 ```
 
-
 ### Modelando os dados
 
 #### Ajuste linear
@@ -272,7 +267,6 @@ ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) +
 
 |       Agora ficou chique !! E também indecifrável...ou quase. Indo por partes: o método escolhido foi `lm`, ou modelo linear (*linear model*). O termo poderia ser também substituido por `'y ~x'`, uma notação do `R` que indica a dependência de *y* em relação a *x*. O argumento `linewidth` sinaliza pra espessura do tracejado. E a banda acizentada indica o *intervalo de confiança* do ajuste (*erro padrão*). Pra retirar essa última, bem como a legenda doida, basta fazer:
 
-
 ```{r}
 ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) +
   geom_point(color= "blue", size=5, alpha = 0.5, shape = 21, fill = "green", stroke = 2) +
@@ -282,18 +276,15 @@ ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) +
   geom_smooth(method = 'lm', linewidth = 0.5, se = FALSE, show.legend = FALSE)
 ```
 
-
 |       Existem diversos parâmetros que são obtidos pela função `lm`. Dada a natureza de *programação orientada a objeto* do `R`, esses parâmetros podem ser acessados individualmente em seus objetos. Exemplificando:
 
 ```{r}
 attributes(lm)
 ```
 
-
 #### Ajuste polinomial
 
 |       Apesar de bem incrementado esse gráfico final, observe que a tendência dos pontos não é propriamente linear. Tá parecendo mais uma curva. E dentre as curvas possíveis, quem sabe uma parábola. Pra isso, basta que acrescentemos qual a `formula` a ser empregada:
-
 
 ```{r}
 ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) +
@@ -303,11 +294,12 @@ ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) +
   theme_bw(base_size = 14) +
   geom_smooth(method = 'lm', formula = y ~ poly(x, 2), linewidth = 0.5, color = "orange", se = FALSE, show.legend = FALSE)
 ```
+
 |       Apesar de um pouco confuso, a expressão `formula = y ~ poly(x, 2)` indica tratar-se de um ajuste para um *polinômio de 2a. ordem* em *x*. E, claro, uma "corzinha" adicional no tracejado não faz mal a ninguém !
 
 ### Salvando o gráfico
 
-|       Agora, pra se guardar esse gráfico, um tanto trabalhoso, convenhamos, o `R` permite o salvamento em diversos formatos, como JPG, BMP, TIFF, PDF, PNG, EPS, por exemplo. Dois jeitos de salvar o gráfico: um se dá pelo *menu* de *Plots* do canto inferior esquerdo do *RStudio* (Plots --> Export). Se quisermos o armazenamento por linha de comando, por outro lado, basta utilizar a função `ggsave` logo após a criação do gráfico.
+|       Agora, pra se guardar esse gráfico, um tanto trabalhoso, convenhamos, o `R` permite o salvamento em diversos formatos, como JPG, BMP, TIFF, PDF, PNG, EPS, por exemplo. Dois jeitos de salvar o gráfico: um se dá pelo *menu* de *Plots* do canto inferior esquerdo do *RStudio* (Plots --\> Export). Se quisermos o armazenamento por linha de comando, por outro lado, basta utilizar a função `ggsave` logo após a criação do gráfico.
 
 ```{r}
 ggplot(data=consumo, aes(x=kWh, y=custo, col = "red", size = 5, alpha = 0.5)) +
@@ -357,7 +349,6 @@ ggplot( data = NULL ,
   
 ```
 
-
 ### Simulação & função em `ggplot2`
 
 |       Como o sistema base, o `ggplot2` possui também uma função para a produção de tendências por equações introduzidas, `geom_function`. Exemplificando:
@@ -368,11 +359,9 @@ ggplot(data.frame(x = 1:100), aes(x)) +
   geom_function(fun=function(x) 173*x/(6+x), colour = "red")
 ```
 
-
 ### `ggplot2` para dados multivariados
 
 |       Como explicado acima, o `ggplot2` trabalha *exclusivamente* com dados em formato *Long*, ou seja, uma variável para cada quantidade. Dessa forma, os subconjuntos de uma variável (ou nível) devem situar-se nessa única variável. Ilustrando:
-
 
 ```{r, cache=TRUE}
 tempo <- c(rep(rep(1:4, 4),4))
@@ -390,9 +379,7 @@ ggplot(data=df, aes(x=tempo, y=resposta)) +
 
 ```
 
-
-|       Note que cada elemento estético pode ser configurado para cada *geom*. Alternativamente, pode-se conferir os elementos estéticos combinando-os para o  gráfico geral, bem como para cada camada:
-
+|       Note que cada elemento estético pode ser configurado para cada *geom*. Alternativamente, pode-se conferir os elementos estéticos combinando-os para o gráfico geral, bem como para cada camada:
 
 ```{r, cache=TRUE}
 tempo <- c(rep(rep(1:4, 4),4))
@@ -408,7 +395,6 @@ ggplot(data=df, aes(x=tempo, y=resposta, shape=niveis, color=niveis)) +
 
 ```
 
-
 |       Para um conjunto com visual sobreposição de pontos, pode-se também empregar a função `jitter`, como no `graphics`:
 
 ```{r}
@@ -416,7 +402,6 @@ ggplot(data=df, aes(x=tempo, y=resposta)) +
          geom_point() +
          geom_jitter()
 ```
-
 
 ### Paineis (*faceting*)
 
@@ -447,9 +432,7 @@ ggplot(data=df, aes(x=tempo, y=resposta, shape=niveis, color=niveis)) +
 
 ```
 
-
 ## `ggplot2` sem dor: interfaces gráficas na web
-
 
 |       Se você chegou até aqui é porque teve alguma afinidade com o sistema gráfico em camadas do `ggplot2`, embora o enriquecimento de um gráfico também carregue consigo um conjunto mais extenso de linhas de comando. Para contornar essa dificuldade, alguns desenvolvedores produziram aplicativos de acesso *online* para o `ggplot2`, e que permitem a construção das camadas gráficas *sem a necessidade de digitação de comandos, e sim por uso de cliques de mouse*. Outra característica interessante, é que esses aplicativos fornecem o trecho de código para a reprodução do gráfico criado por *mouse clicks*.
 
@@ -457,12 +440,11 @@ ggplot(data=df, aes(x=tempo, y=resposta, shape=niveis, color=niveis)) +
 
 ### `ggplotgui`
 
-|       O [ggplotgui](https://shiny.gmw.rug.nl/ggplotgui/) envolve um pacote que renderiza uma interface gráfica e interativa para o `ggplot2`. 
+|       O [ggplotgui](https://shiny.gmw.rug.nl/ggplotgui/) envolve um pacote que renderiza uma interface gráfica e interativa para o `ggplot2`.
 
 \
 
 ![Tela do aplicativo *online* `ggplotgui` para elaboração de gráficos pelo `ggplot2` por cliques de *mouse*.](ggplotgui.png)
-
 
 |       Outro sistema interativo e facilitado para o `ggplot2` envolve um *framework* extremamente interativo chamado `shiny`. A interface [ggplot2-shiny](https://cardiomoon.shinyapps.io/ggplot2new/) também permite, como o `ggplotgui`, a construção e customização de gráficos do pacote `ggplot2` sem a necessidade de digitação de comandos.
 
@@ -472,10 +454,8 @@ ggplot(data=df, aes(x=tempo, y=resposta, shape=niveis, color=niveis)) +
 
 ![Interface gráfica do ggplot2-shiny, para renderização de gráficos do pacote `ggplot2` sem o uso de linhas de comando.](ggplot2-shiny.png)
 
-
-
 ## Referência do pacote:
 
-* [Geral](https://cran.r-project.org/web/packages/ggplot2/index.html)
-* [Manual](https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf):
-* [Tutorial](https://cran.r-project.org/web/packages/ggplot2/vignettes/ggplot2.html) 
+-   [Geral](https://cran.r-project.org/web/packages/ggplot2/index.html)
+-   [Manual](https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf):
+-   [Tutorial](https://cran.r-project.org/web/packages/ggplot2/vignettes/ggplot2.html)

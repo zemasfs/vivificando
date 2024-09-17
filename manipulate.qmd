@@ -1,13 +1,12 @@
 ---
-title: "Simulando equações de forma animada - o pacote `manipulate`"
+title: "6 - Simulando equações de forma animada - o pacote `manipulate`"
 ---
-
 
 ## Definição
 
 |       A biblioteca [manipulate](https://cran.r-project.org/web/packages/manipulate/index.html) do `R` pode ser empregada para a visualização gráfica de funções matemáticas personalizada ao usuário a partir de um conjunto opcional de ações. Essas ações são inseridas em um deslizador (*slider)*, selecionador (*picker*), caixa de marcação (*checkbox*) ou botão (*button*), e permitem o redesenho automático do gráfico toda vez que um valor é alterado na expressão.
 
-|       Diferentemente do `anim.plots`, o `manipulate` não gera uma animação, e sim uma *simulação de função gráfica com variação de parâmetro(s)*. E contrariamente ao `anim.plots` e outros pacotes a discutir neste material, o `manipulate` não permite salvamento em imagem animada ou HTML, sendo possível rodar a simulação somente dentro do ambiente do `R`. 
+|       Diferentemente do `anim.plots`, o `manipulate` não gera uma animação, e sim uma *simulação de função gráfica com variação de parâmetro(s)*. E contrariamente ao `anim.plots` e outros pacotes a discutir neste material, o `manipulate` não permite salvamento em imagem animada ou HTML, sendo possível rodar a simulação somente dentro do ambiente do `R`.
 
 ## Sintaxe
 
@@ -26,12 +25,10 @@ x = seq(from = 1, to = 10, by = 0.5) # uma outra forma de gerar uma sequência n
 plot(x, x^2, type = "l")  # gráfico de linha de uma parábola
 ```
 
-
 ```{r, echo=FALSE}
 x = seq(from = 1, to = 10, by = 0.5) # uma outra forma de gerar uma sequência numérica no `R`
 plot(x, x^2, type = "l")  # gráfico de linha de uma parábola
 ```
-
 
 |       Agora, usando o `manipulate`. Crie um novo *script* no *RSudio*, copie, cole, e rode o trecho de código abaixo:
 
@@ -46,20 +43,15 @@ manipulate(plot(x,x^t, type="l"),  # uso da função plot anterior
 
 ![Exemplo de tela gerada na aba `Plots` do *RStudio* apresentando uma simulação de equação com variação do expoente. Observar o ícone de engrenagam, e que possui o controle escolhido para o gráfico.](manipulateSimplesInicio.png)
 
-
 |       Agora a parte legal ! Se você clicar no *ícone de engrenagem* do canto superior esquerdo da aba de `Plots`, logo acima do gráfico, verá a possibilidade de alterar o valor do expoente (*t*, na equação), com consequente e automática atualização do gráfico. A imagem que segue ilustra essa ação.
-
 
 ![Mesmo resultado que da figura anterior, mas com o *slider* deslocado para uma função de 3o. grau.](manipulateSimples.png)
 
-
 ## Exemplo do MAPA
-
 
 |       Para se observar o potencial do pacote `manipulate` será ilustrada a decomposição de um reagente químico, tal como representado no [MAPA](https://seliga.educacao.mg.gov.br/cardenos-mapa) para o ensino médio (C. da Natureza, 2o. Bimestre, 2o. Ano, p. 52, 2024).
 
-
-![Situação envolvendo cinética química extraída do *MAPA*, e versando sobre decomposição de N$_{2}$O_{5}$.](manipulateDecompos.png)
+![Situação envolvendo cinética química extraída do *MAPA*, e versando sobre decomposição de N$_{2}$O\_{5}\$.](manipulateDecompos.png)
 
 |       Mas ao invés de simplesmente reproduzir o gráfico da imagem acima, podemos nos aprofundar em seu estudo, por exemplo, pela simulação da curva de decomposição em função da temperatura, e exemplicada para o gás metano. A equação que descreve esse comportamento é dada abaixo.
 
@@ -83,16 +75,14 @@ manipulate(curve(exp(-k*exp(-Ea/(R*T))*x), # equação de decomposição
            T=slider(min=1300,max=1500)) # temperatura variável
 ```
 
-
 |       Dessa forma, observa-se que o pacote `manipulate` pode também auxiliar em no estudo mais aprofundado de funções observadas nos livros-texto. A simulação de decomposição do metano pode ser observada no *RStudio* como na imagem abaixo.
 
 \
-
 
 ![Simulação de decomposição de metano com a temperatura.](manipulateDecomposSimul.png)
 
 ## Referências do pacote:
 
-* [Geral](https://cran.r-project.org/web/packages/manipulate/index.html)
-* [Manual](https://cran.r-project.org/web/packages/manipulate/manipulate.pdf)
-* [Tutorial](https://rpubs.com/jeremyyew/manipulate-pkg)
+-   [Geral](https://cran.r-project.org/web/packages/manipulate/index.html)
+-   [Manual](https://cran.r-project.org/web/packages/manipulate/manipulate.pdf)
+-   [Tutorial](https://rpubs.com/jeremyyew/manipulate-pkg)

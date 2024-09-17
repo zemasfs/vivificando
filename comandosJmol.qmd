@@ -1,19 +1,19 @@
 ---
-title: "Alguns comandos pra se aventurar nas moléculas voadoras"
+title: "3 - Alguns comandos pra se aventurar nas moléculas voadoras"
 ---
 
-##  Como carregar uma molécula no JSmol
+## Como carregar uma molécula no JSmol
 
 |       Supondo que você já tenha aberto em seu navegador a janela para o *applet* do *JSmol* mas que, contrariamente ao que foi feito antes (nome da molécula ao final do *site* [PubChem](https://pubchem.ncbi.nlm.nih.gov/), você queira:
 
-* carregar uma molécula a partir de outro banco de dados;
-* carregar uma molécula cujo arquivo já esteja em seu computador
+-   carregar uma molécula a partir de outro banco de dados;
+-   carregar uma molécula cujo arquivo já esteja em seu computador
 
-|       Bom, nesse caso você pode usar o *mouse* ou uma *linha de comando*, como preferir. 
+|       Bom, nesse caso você pode usar o *mouse* ou uma *linha de comando*, como preferir.
 
 ### Carregando a molécula com o *mouse*
 
-|       Para isto basta clicar com o botão direito do *mouse* no ecrã, como anteriormente, e selecionar *File-->Load*. As opções que se apresentam são:
+|       Para isto basta clicar com o botão direito do *mouse* no ecrã, como anteriormente, e selecionar *File--\>Load*. As opções que se apresentam são:
 
 ```{r, eval=FALSE}
 * Open local file # abre janela para buscar o arquivo do modelo no computador;
@@ -23,18 +23,17 @@ title: "Alguns comandos pra se aventurar nas moléculas voadoras"
 * Open script # abre janela para buscar um trecho de código no computador
 ```
 
+|       A primeira opção é autoexplicativa (`Open local file`), a segunda opção (`Open URL`) depende do endereço correto para um determinado modelo molecular, a terceira (`Get PDB file`) refere-se ao banco de dados [Protein Data Brookhaven](https://www.rcsb.org) para biopolímeros, a quarta (`Get MOL file`) envolve a busca *online* em banco de dados específico para pequenas moléculas, e a última (`Open script`), a busca de um arquivo que contenha linhas de código do *Jmol* para um conjunto de ações.
 
-|       A primeira opção é autoexplicativa (`Open local file`), a segunda opção (`Open URL`) depende do endereço correto para um determinado modelo molecular, a terceira (`Get PDB file`) refere-se ao banco de dados [Protein Data Brookhaven](https://www.rcsb.org) para biopolímeros, a quarta (`Get MOL file`) envolve a busca *online* em banco de dados específico para pequenas moléculas, e a última (`Open script`), a busca de um arquivo que contenha linhas de código do *Jmol* para um conjunto de ações. 
-
-|       Como os livros didáticos permeiam estruturas moleculares pequenas, normalmente associadas aos grupos funcionais da *Química Inorgânica e Orgânica*, bem como exemplos específicos em áreas como *Saúde, Biotecnologia e Indústria*, incluindo também *alguns modelos de macromoléculas*, pode-se concluir que é mais provável que você utilize a busca remota de pequenas moléculas (*Get MOL file*), moléculas contidas em seu computador (*Open local file*), e/ou biomacromoléculas (*Get PDB file*). 
+|       Como os livros didáticos permeiam estruturas moleculares pequenas, normalmente associadas aos grupos funcionais da *Química Inorgânica e Orgânica*, bem como exemplos específicos em áreas como *Saúde, Biotecnologia e Indústria*, incluindo também *alguns modelos de macromoléculas*, pode-se concluir que é mais provável que você utilize a busca remota de pequenas moléculas (*Get MOL file*), moléculas contidas em seu computador (*Open local file*), e/ou biomacromoléculas (*Get PDB file*).
 
 |       O carregamento de pequenas moléculas é *idêntico* ao que foi experimentado adicionando-se o nome do modelo ao final do endereço do [JSmol](https://chemapps.stolaf.edu/jmol/jmol.php?model=water). O carregamento remoto para modelos de proteínas, enzimas e ácidos nucleicos envolve o conhecimento do *código PDB* desses, ou busca de palavras-chave no sítio [Protein Data Brookhaven](https://www.rcsb.org).
 
 |       Já o carregamento de moléculas guardadas no PC envolve algumas poucas etapas, a saber:
 
-1. Obtém-se o modelo da molécula pela internete, ou o constroi;
-2. Baixa-se o arquivo correspondente ao modelo (geralmente com um atributo \*.mol, \*.cif, \*.cml, *\.sdf, entre mais de 60 formatos);
-3. Carrega-se na página do [JSmol](https://chemapps.stolaf.edu/jmol/jmol.php?model=water) por dois meios alternativos:
+1.  Obtém-se o modelo da molécula pela internete, ou o constroi;
+2.  Baixa-se o arquivo correspondente ao modelo (geralmente com um atributo \*.mol, \*.cif, \*.cml, \*.sdf, entre mais de 60 formatos);
+3.  Carrega-se na página do [JSmol](https://chemapps.stolaf.edu/jmol/jmol.php?model=water) por dois meios alternativos:
 
 ```{r, eval=FALSE}
 1. Por clique de mouse: File --> Load --> Open local file ;
@@ -43,10 +42,7 @@ title: "Alguns comandos pra se aventurar nas moléculas voadoras"
 
 <!---colocar alguns links pra baixar moléculas...tem vários--->
 
-|     Exemplificando, digamos que você queira visualizar a estrutura da *aspirina* baixada em seu computador. 
-
-
-
+|     Exemplificando, digamos que você queira visualizar a estrutura da *aspirina* baixada em seu computador.
 
 ```{r, eval=FALSE}
 1. Baixe o modelo estrutural da aspirina em algum site, como o PubChem ;
@@ -55,7 +51,6 @@ title: "Alguns comandos pra se aventurar nas moléculas voadoras"
   a. Localize o arquivo no PC por "File-->Load-->Open local file", clicando depois em "Load" para o carregamento;
   b. Clique no arquivo baixado ("aspirin.sdf", por ex) e arraste-o diretamente para a janela do JSmol. 
 ```
-
 
 ![Exemplo do modelo da aspirina para *download* no PubChem.](aspirin.png)
 
@@ -67,11 +62,11 @@ title: "Alguns comandos pra se aventurar nas moléculas voadoras"
 load $alkane
 ```
 
-
 |       O *Console* do *Jmol*, ainda que constitua uma linguagem própria de programação de comandos, possui uma vantagem interessante sobre demais linguagens de programação: *é possível efetuar o comando pelo Console tanto com letras maiúsculas como minúculas, e tanto no singular como no plural.*
 
 |       Você pode tentar com outras moléculas, como *aspirin*, *cholesterol*, *phenol* etc (nomes em inglês, por conta do banco de dados). Para recuperar uma linha de comando que foi escrita antes, basta navegar entre os comandos que foram utilizados com as setas para cima e para baixo do teclado.
-Os modelos moleculares são carregados a partir do banco de dados [Cactus - CADD Group Chemoinformatics Tools and User Services](https://cactus.nci.nih.gov/chemical/structure). 
+
+Os modelos moleculares são carregados a partir do banco de dados [Cactus - CADD Group Chemoinformatics Tools and User Services](https://cactus.nci.nih.gov/chemical/structure).
 
 #### Carregando moléculas por notação SMILES
 
@@ -98,14 +93,12 @@ load $CCCCCC # carrega o modelo
 load $CC=C # carrega o modelo
 ```
 
-
-|       Para carregar um modelo com ligação tripla, segue-se a notação *#*:
+|       Para carregar um modelo com ligação tripla, segue-se a notação *\#*:
 
 ```{r, eval=FALSE}
 # Para carregar um metilacetileno (ou ....propina !)
 load $CC#C # carrega o modelo
 ```
-
 
 |       Para carregar uma estrutura aromática, já um pouco mais chatinho:
 
@@ -113,8 +106,6 @@ load $CC#C # carrega o modelo
 # Para carregar um benzeno
 load $C1=CC=CC=C1 
 ```
-
-
 
 ### Carregando biopolímeros (proteínas, enzimas, ácidos nucleicos) por linha de comando
 
@@ -147,8 +138,7 @@ color chain #  coloração por "cadeias" da proteína
 
 |       Proteínas, enzimas, ácidos nucleicos, e associações macromoleculares são mais pertinentes ao estudo da *Bioquímica* estrutural. Nesse sentido lhe convido a visitar uma parte do *website* autoral que possui descrições e representações detalhadas de estruturas bioquímicas com auxílio do *Jmol*, o site [Bioquanti](https://bioquanti.netlify.app/)
 
-[![Bioquanti, um website autoral para estudos quantitativos em Bioquímica, e que inclui diversos modelos moleculares para o *Jmol*.](bioquanti.png)](https://bioquanti.netlify.app/)
-
+[![Bioquanti, um website autoral para estudos quantitativos em Bioquímica, e que inclui diversos modelos moleculares para o Jmol.](bioquanti.png)](https://bioquanti.netlify.app/)
 
 ## Agora que a molécula está na página do navegador, o que posso fazer com ela ?
 
@@ -156,22 +146,20 @@ color chain #  coloração por "cadeias" da proteína
 
 |       O *Jmol* possui um *menu* com diversas operações, e centenas de comandos, e talvez outra centena de tutoriais pela internete. Para observações estruturais mais diretas e imediatas, contudo, pode-se resumir as operações em:
 
-
-* Movimentos com mouse (rotação, translação, *zoom*)
-* Representações do modelo (bola e varetas, espaço preenchido, arame)
-* Cores (modelo e plano de fundo)
-* Medidas (distâncias e ângulos)
-* Características moleculares (ligações de H, nuvem de van der Waals, carga parcial e efetiva)
-* Superfícies (molecular, eletrostática)
-* Seleção de átomos e visualização (água, hidrogênio)
-* Animações (zoom, rotação automática), cortes
+-   Movimentos com mouse (rotação, translação, *zoom*)
+-   Representações do modelo (bola e varetas, espaço preenchido, arame)
+-   Cores (modelo e plano de fundo)
+-   Medidas (distâncias e ângulos)
+-   Características moleculares (ligações de H, nuvem de van der Waals, carga parcial e efetiva)
+-   Superfícies (molecular, eletrostática)
+-   Seleção de átomos e visualização (água, hidrogênio)
+-   Animações (zoom, rotação automática), cortes
 
 |       Uma observação importante é que *todos dos comandos do Jmol possuem ajuda explicativa*. Para tanto, basta digitar:
 
 ```{r, eval=FALSE}
 help nome.do.comando
 ```
-
 
 ## Salvamento do modelo no computador ou dispositivo móvel
 
@@ -196,7 +184,6 @@ rotação - botão esquerdo do mouse
 translação - Ctrl+botão direito
 rotação no eixo - Shift+botão direito
 ```
-
 
 ## Representações do modelo
 
@@ -223,7 +210,6 @@ load=1mcy # carregando a mioglobina
 cartoon only # renderizando em desenho
 ```
 
-
 |       Para se conseguir esse e outros códigos de proteínas e ácidos nucleicos, deve-se entrar no banco de dados do [PDB - Protein Data Bank, RCSB](https://www.rcsb.org/), e digitar o nome no campo de busca (no caso, `myoglobin`). O sistema retorna diversos modelos estruturais e seus códigos, bastando transcrever um desses códigos ao *Console* do *JSmol*.
 
 ## Cores
@@ -240,6 +226,7 @@ background yellow # plano de fundo
 |       O último comando da lista acima permite variar a coloração do plano de fundo.
 
 |       Adicionalmente, também é possível a coloração de ligações entre os átomos, como segue:
+
 ```{r, eval=FALSE}
 color bonds LightSeaGreen
 ```
@@ -260,13 +247,9 @@ color bonds LightSeaGreen
 3. Clique do mouse no 2o. átomo
 ```
 
-
-
-
 |       Experimentando para a distância da ligação O-H, o programa retorna o valor de 0,097 nm, ou 0,97 Angstroms, o valor convencial para esse tipo de ligação covalente.
 
 ![Medindo distância dentro da molécula.](aguaDist.png)
-
 
 ### Para ângulos
 
@@ -291,7 +274,6 @@ color bonds LightSeaGreen
 measure off
 ```
 
-
 ## Características moleculares
 
 |       São diveras as informações tangíveis a um modelo molecular no *Jmol*. Exemplificando as mais básicas para a molécula de um componente do molho *shoyo*, o glutamato:
@@ -311,7 +293,6 @@ label %P # apresentação das cargas (etiquetagem)
 
 |       Da mesma forma pode-se ilutrar a obtenção de *cargas formais* no modelo. Nessa, adicionou-se a coloração transparente, para melhor visualização da carga unitária negativa do ácido carboxílico:
 
-
 ```{r, eval=FALSE}
 calculate formalcharges # cálculo de cargas parciais do modelo
 label %C # apresentação das cargas (etiquetagem)
@@ -323,7 +304,7 @@ label %C # apresentação das cargas (etiquetagem)
 
 #### Scripts & Ensino Reprodutível
 
-|       O exemplo acima apresenta uma maneira simples de concatenar comandos, facilitando a execução automático e sequencial de um conjunto desses. No entanto, a visualização da linha de comando fica um pouco prejudicada com a separação por *";"*, o que pode acarretar uma poluição visual quando houver vários comandos. 
+|       O exemplo acima apresenta uma maneira simples de concatenar comandos, facilitando a execução automático e sequencial de um conjunto desses. No entanto, a visualização da linha de comando fica um pouco prejudicada com a separação por *";"*, o que pode acarretar uma poluição visual quando houver vários comandos.
 
 |       A situação de contorno envolve a disposição dos comandos no formato de um *script*. Esse nada mais é do que um trecho de código contendo um comando por linha, o que melhora a visualização do código como um todo. Além disso, o *script* possui a vantagem adicional de se inserir comentários entre as linhas de comando, permitindo também uma melhor apropriação do código e de seu aprendizado.
 
@@ -347,7 +328,6 @@ label %C
 
 |       Complementarmente, pode-se atuar alterando mais comandos do código, de modo a criar um resultado completamente diferente do original. Isso define outra característica do *Ensino Reprodutível*, qual seja, a de *criação de trecho de código*. Ilustrando, segue um trecho baseado no anterior, mas para minimização de energia e reestruturação dos orbitais da molécula.
 
-```{r, eval=FALSE}
 ```{r, eval=FALSE}
 load $glu # carregamento de micromolécula 
 cpk only # renderização exclusiva por espaço preenchido
@@ -375,9 +355,7 @@ dots ionic # nuvem iônica sobre o modelo
 
 ![Exemplificando a sobreposição de nuvens de van der Waals nos átomos da molécula de água.](vanderwaals.png)
 
-
-![Ilustrando a representação de nuvem iônica para o modelo da água.](ionic.png)
-### Ligações de hidrogênio
+![Ilustrando a representação de nuvem iônica para o modelo da água.](ionic.png) \### Ligações de hidrogênio
 
 ```{r, eval=FALSE}
 load=1djf # carrega um modelo de peptídio
@@ -402,7 +380,6 @@ isosurface mep # superfície de potencial eletrostático molecular
 
 ![Exemplo de superfície de potencial eletrostático para a água.](isosurfMep.png)
 
-
 ```{r, eval=FALSE}
 isosurface resolution 6 molecular map mep # superfície de potencial eletrostático molecular com atributos
 ```
@@ -410,6 +387,3 @@ isosurface resolution 6 molecular map mep # superfície de potencial eletrostát
 ![Exemplo de superfície molecular da água que inclui seu potencial eletrostático.](isosurfFull.png)
 
 |       Várias outras combinações de superfície podem ser obtidas no [*site* de referência do *Jmol*.(https://chemapps.stolaf.edu/jmol/docs/)
-
-
-

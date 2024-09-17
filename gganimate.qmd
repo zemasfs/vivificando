@@ -1,7 +1,6 @@
 ---
-title: "Animando gráficos do ggplot2 - o pacote `gganimate`"
+title: "8 - Animando gráficos do ggplot2 - o pacote `gganimate`"
 ---
-
 
 |       A biblioteca `gganimate` permite criar diversos efeitos de animação em gráficos construídos com o `ggplot2`. Para ilustrar seu potencial no ensino médio, vamos utilizar o exemplo mencionado no [MAPA](https://seliga.educacao.mg.gov.br/cardenos-mapa), especificamente à página 12 do 1o. Bimestre do 3o. Ano, como segue:
 
@@ -9,13 +8,13 @@ title: "Animando gráficos do ggplot2 - o pacote `gganimate`"
 
 ![Imagem extraída do MAPA sobre o saneamento básico nas regiões brasileiras, tal como informado pelo Sistema de Informações Hospitalares do SUS](saneamento.png).
 
-|       Inicialmente precisamos criar o gráfico com auxílio do pacote `ggplot2`. Para isso é necessário obter os dados a partir da *fonte original* (Sistema de Informações Hospitalares do SUS, no caso). 
+|       Inicialmente precisamos criar o gráfico com auxílio do pacote `ggplot2`. Para isso é necessário obter os dados a partir da *fonte original* (Sistema de Informações Hospitalares do SUS, no caso).
 
-|       Mas há ocasiões em que os dados originai não estão disponíveis, havendo a necessidade de se extrair os dados diretamente do gráfico. Não é o caso da presente situação, mas vamos proceder dessa forma, no intuito de exemplificar tais situações. 
+|       Mas há ocasiões em que os dados originai não estão disponíveis, havendo a necessidade de se extrair os dados diretamente do gráfico. Não é o caso da presente situação, mas vamos proceder dessa forma, no intuito de exemplificar tais situações.
 
-|       Nesse caso podemos estimar os dados do gráfico acima utilizando um extrator de dados de imagens, e para o qual sugerimos o digitalizador *online* [PlotDigitizer](https://plotdigitizer.com/app). A partir dos dados obtidos, pode-se 1) tranferir os dados ao `R` e 2) elaborar um gráfico similar ao de internações por carência visto acima. 
+|       Nesse caso podemos estimar os dados do gráfico acima utilizando um extrator de dados de imagens, e para o qual sugerimos o digitalizador *online* [PlotDigitizer](https://plotdigitizer.com/app). A partir dos dados obtidos, pode-se 1) tranferir os dados ao `R` e 2) elaborar um gráfico similar ao de internações por carência visto acima.
 
-|       Para carregar os dados extraídos do gráfico, copie e rode o trecho de código abaixo. 
+|       Para carregar os dados extraídos do gráfico, copie e rode o trecho de código abaixo.
 
 ```{r}
 dados <- structure(list(ano = c(2009L, 2010L, 2011L, 2012L, 2013L, 2014L, 
@@ -82,9 +81,9 @@ anim   # a animação
 
 ![Ilustração do deslocamento dos pontos relativos às regiões do gráfico de internações por carência de saneamento básico pelo SUS](saneamento_anim.png)
 
-|       Mas, por outro lado, é possível *salvar a animação como uma imagem*. Nesse caso, execute a animação, clique com o botão direito nessa, e selecione *Save image as*, fornecendo um nome e o atributo *png*. A animação será visível ao abrir o arquivo salvo. 
+|       Mas, por outro lado, é possível *salvar a animação como uma imagem*. Nesse caso, execute a animação, clique com o botão direito nessa, e selecione *Save image as*, fornecendo um nome e o atributo *png*. A animação será visível ao abrir o arquivo salvo.
 
-|       É possível *renderizar* outra animação com os mesmo dados, mas variando-se o que se deseja transformar, apenas alterando o nome do vetor. Na prática, compare a situação acima, de evolução das internações por região ao longo dos anos, com a de baixo, de evolução individualizando as regiões em um período específico. E veja que a única alteração do código consistiu no nome do vetor. 
+|       É possível *renderizar* outra animação com os mesmo dados, mas variando-se o que se deseja transformar, apenas alterando o nome do vetor. Na prática, compare a situação acima, de evolução das internações por região ao longo dos anos, com a de baixo, de evolução individualizando as regiões em um período específico. E veja que a única alteração do código consistiu no nome do vetor.
 
 ```{r, eval=FALSE}
 anim <- interna_anim + transition_states(regiao,
@@ -114,6 +113,6 @@ interna_anim + transition_reveal(interna)
 
 ## Referência do pacote:
 
-* [Geral](https://cran.r-project.org/web/packages/gganimate/index.html)
-* [Manual](https://cran.r-project.org/web/packages/gganimate/gganimate.pdf):
-* [Tutorial](https://gganimate.com/) 
+-   [Geral](https://cran.r-project.org/web/packages/gganimate/index.html)
+-   [Manual](https://cran.r-project.org/web/packages/gganimate/gganimate.pdf):
+-   [Tutorial](https://gganimate.com/)
