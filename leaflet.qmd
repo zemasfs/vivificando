@@ -11,7 +11,7 @@ title: "10 - Mapas interativos: o pacote `leaflet`"
 |       Uma **observação se faz necessária** para o uso básico do `leaflet`. Para sobrepor informações em regiões cartográficas, é necessário que o banco de dados possua as informações de *latitude e longitude* para cada elemento que constará do mapa.
 
 \
-\## Estabelecendo coordenadas
+## Estabelecendo coordenadas
 
 |       Uma ação inicial para uso do pacote `leaflet` envolve estabelecer as coordenadas geográficas para uma visão inicial do marcador no gráfico. Para isso é necessário os valores de latitude e longitude, bem como o nível de ampliação desejado. Mas é simples. Veja abaixo um exemplo para o município de Cuiabá, MT.
 
