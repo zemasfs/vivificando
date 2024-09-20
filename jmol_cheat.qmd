@@ -1,0 +1,7 @@
+---
+title: "Jmol - folha de dicas"
+---
+
+<!-- [Baixar a folha de dicas](cheatsheets/jmol_cheat.pdf) -->
+
+<iframe src="cheatsheets/jmol_cheat.en.pt.pdf" width="600" height="500"></iframe>

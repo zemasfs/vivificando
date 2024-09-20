@@ -59,30 +59,19 @@ website:
             href:  https://www.unifal-mg.edu.br/dbq/
   
     left:
-      #- href: index.qmd
-       # text: Home
-      - text: "Moléculas Voadoras, Gráficos e Mapas Interativos"
+      - text: "Folhas de Dicas (*cheatsheets*)"
         menu:
-          - index.qmd
-         #  - questoes.qmd
-         #  - ferramentas.qmd
-         #  - jmolPart.qmd
-         #  - jmol.qmd
-         #  - textoXmouse.qmd
-         #  - comandosJmol.qmd
-         #  - selecao.qmd
-         #  - animacao.qmd
-         #  - RPart.qmd
-         #  - rstudioCloud.qmd
-         #  - basicaoR.qmd
-         #  - graphics.qmd
-         #  - pacotes.qmd
-         #  - animationPlots.qmd
-         #  - manipulate.qmd
-         #  - ggplot2.qmd
-         #  - gganimate.qmd
-         #  - plotly.qmd
-         #  - leaflet.qmd
+          - jmol_cheat.qmd
+          - r_cheat.qmd
+          - rstudio_cheat.qmd
+       
+      - text: "Outros Sites"   
+        menu:
+         # - text: "ERRE - Ensino Reprodutível"
+         #   href: https://errre.netlify.app/
+          - text: "Bioquímica Quantitativa"
+            href: https://bioquanti.netlify.app/
+         
       - contato.qmd
       
 format:

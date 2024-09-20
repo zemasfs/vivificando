@@ -51,3 +51,13 @@ https://chemapps.stolaf.edu/jmol/jmol.php?model=tylenol
 3. Se existir, digite esse mesmo termo ao final da linha do *JSmol online*, ou seja:
     https://chemapps.stolaf.edu/jmol/jmol.php?model=ascorbic acid
 ```
+
+
+## Como carregar uma molécula *online*, mas em 2D
+
+|       Por vezes pode ser interessante a visulização estática e bidimensional de um modelo molecular. Para isso, basta acrescentar *"image2d"* à linha de código, como segue:
+
+```{r, eval=FALSE}
+https://chemapps.stolaf.edu/jmol/jmol.php?model=tylenol&image2d
+```
+

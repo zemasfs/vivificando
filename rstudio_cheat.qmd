@@ -1,0 +1,7 @@
+---
+title: "Rstudio - folha de dicas"
+---
+
+<!-- [Baixar a folha de dicas](cheatsheets/rstudio_cheat.pdf) -->
+
+<iframe src="cheatsheets/rstudio_cheat.en.pt.pdf" width="600" height="500"></iframe>

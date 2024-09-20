@@ -1,0 +1,88 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  page-navigation: true # não funciona
+  image: RStudioLogo.png # não funciona
+  reader-mode: true # funciona
+  google-analytics: "G-S1L73VGCG5"
+  title: "Vivificando Conteúdos ao Ensino Médio" # omite-se o título pra não duplicar nome na aba
+  favicon: avatar.png # ícone da aba da página
+
+execute:
+  cache: false  # cria cache de memória pra reuso, sem repetir a execução de chunks
+  
+  sidebar:
+    - contents:
+      - section: "Treinamento"
+        contents:
+          - text: "Saudações"
+            href: index.qmd
+          - questoes.qmd
+          - ferramentas.qmd
+      - section: "Moléculas em 3D"
+        contents:
+          - text: "Jmol"
+            href: jmolPart.qmd
+          - jmol.qmd
+          - textoXmouse.qmd
+          - comandosJmol.qmd
+          
+      - section: "Gráficos Interativos"
+        contents:
+          - text: "R & RStudio"
+            href: RPart.qmd          
+          - rstudioCloud.qmd
+          - basicaoR.qmd
+          - graphics.qmd
+          - pacotes.qmd
+          - animationPlots.qmd
+          - manipulate.qmd
+          - ggplot2.qmd
+          - gganimate.qmd
+          - plotly.qmd
+          - leaflet.qmd
+      - contato.qmd
+            
+            
+  navbar:
+    search: true
+    logo: avatar.png # logo ao lado esquerdo da Home
+    background: primary # cor de fundo
+    tools:  # ícones específico
+      # - icon: twitter
+      #   href: https://twitter.com
+      - icon: bank
+        menu:
+          - text: UNIFAL-MG
+            href:  https://www.unifal-mg.edu.br/portal/index/
+          - text: Depto. Bioquímica
+            href:  https://www.unifal-mg.edu.br/dbq/
+  
+    left:
+      - text: "Folhas de Dicas (*cheatsheets*)"
+        menu:
+          - jmol_cheat.qmd
+          - r_cheat.qmd
+          - rstudio_cheat.qmd
+       
+      - text: "Outros Sites"   
+        menu:
+         # - text: "ERRE - Ensino Reprodutível"
+         #   href: https://errre.netlify.app/
+          - text: "Bioquímica Quantitativa"
+            href: https://bioquanti.netlify.app/
+         
+      - contato.qmd
+      
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+
+editor: source
+

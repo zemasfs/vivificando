@@ -140,13 +140,32 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-moléculas-voadoras-gráficos-e-mapas-interativos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Moléculas Voadoras, Gráficos e Mapas Interativos</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-folhas-de-dicas-(cheatsheets" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Folhas de Dicas (<em>cheatsheets</em>)</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-moléculas-voadoras-gráficos-e-mapas-interativos">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-folhas-de-dicas-(cheatsheets">    
         <li>
-    <a class="dropdown-item" href="./index.html">
- <span class="dropdown-text">Saudações !</span></a>
+    <a class="dropdown-item" href="./jmol_cheat.html">
+ <span class="dropdown-text">Jmol - folha de dicas</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./r_cheat.html">
+ <span class="dropdown-text">R - folha de dicas</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./rstudio_cheat.html">
+ <span class="dropdown-text">Rstudio - folha de dicas</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outros-sites" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Outros Sites</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-outros-sites">    
+        <li>
+    <a class="dropdown-item" href="https://bioquanti.netlify.app/">
+ <span class="dropdown-text">Bioquímica Quantitativa</span></a>
   </li>  
     </ul>
   </li>
@@ -355,29 +374,23 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#o-sistema-ggplot2" id="toc-o-sistema-ggplot2" class="nav-link active" data-scroll-target="#o-sistema-ggplot2">O sistema <code>ggplot2</code></a>
+  <li><a href="#o-pacote-ggplot2" id="toc-o-pacote-ggplot2" class="nav-link active" data-scroll-target="#o-pacote-ggplot2">O pacote <code>ggplot2</code></a>
   <ul class="collapse">
-  <li><a href="#a-gramática-de-gráficos-ggplot2" id="toc-a-gramática-de-gráficos-ggplot2" class="nav-link" data-scroll-target="#a-gramática-de-gráficos-ggplot2">A gramática de gráficos &amp; <code>ggplot2</code></a></li>
   <li><a href="#definindo-o-conjunto-de-dados" id="toc-definindo-o-conjunto-de-dados" class="nav-link" data-scroll-target="#definindo-o-conjunto-de-dados">Definindo o conjunto de dados</a></li>
   <li><a href="#carregando-o-ggplot2" id="toc-carregando-o-ggplot2" class="nav-link" data-scroll-target="#carregando-o-ggplot2">Carregando o ggplot2</a></li>
   <li><a href="#escolhendo-o-tipo-de-gráfico" id="toc-escolhendo-o-tipo-de-gráfico" class="nav-link" data-scroll-target="#escolhendo-o-tipo-de-gráfico">Escolhendo o tipo de gráfico</a></li>
   <li><a href="#oferecendo-elegância-ao-gráfico" id="toc-oferecendo-elegância-ao-gráfico" class="nav-link" data-scroll-target="#oferecendo-elegância-ao-gráfico">Oferecendo elegância ao gráfico</a></li>
   <li><a href="#colocando-títulos-e-subtítulos" id="toc-colocando-títulos-e-subtítulos" class="nav-link" data-scroll-target="#colocando-títulos-e-subtítulos">Colocando títulos e subtítulos</a></li>
   <li><a href="#mudando-a-aparência-de-fundo" id="toc-mudando-a-aparência-de-fundo" class="nav-link" data-scroll-target="#mudando-a-aparência-de-fundo">Mudando a aparência de fundo</a></li>
-  <li><a href="#alterando-o-tamanho-da-fonte" id="toc-alterando-o-tamanho-da-fonte" class="nav-link" data-scroll-target="#alterando-o-tamanho-da-fonte">Alterando o tamanho da fonte</a></li>
-  <li><a href="#mudando-os-limites-dos-eixos" id="toc-mudando-os-limites-dos-eixos" class="nav-link" data-scroll-target="#mudando-os-limites-dos-eixos">Mudando os limites dos eixos</a></li>
-  <li><a href="#modelando-os-dados" id="toc-modelando-os-dados" class="nav-link" data-scroll-target="#modelando-os-dados">Modelando os dados</a></li>
   <li><a href="#salvando-o-gráfico" id="toc-salvando-o-gráfico" class="nav-link" data-scroll-target="#salvando-o-gráfico">Salvando o gráfico</a></li>
   <li><a href="#simplificando-a-construção-de-um-gráfico" id="toc-simplificando-a-construção-de-um-gráfico" class="nav-link" data-scroll-target="#simplificando-a-construção-de-um-gráfico">Simplificando a construção de um gráfico</a></li>
   <li><a href="#elaborando-um-gráfico-apenas-com-vetores" id="toc-elaborando-um-gráfico-apenas-com-vetores" class="nav-link" data-scroll-target="#elaborando-um-gráfico-apenas-com-vetores">Elaborando um gráfico apenas com vetores</a></li>
   <li><a href="#simulação-função-em-ggplot2" id="toc-simulação-função-em-ggplot2" class="nav-link" data-scroll-target="#simulação-função-em-ggplot2">Simulação &amp; função em <code>ggplot2</code></a></li>
-  <li><a href="#ggplot2-para-dados-multivariados" id="toc-ggplot2-para-dados-multivariados" class="nav-link" data-scroll-target="#ggplot2-para-dados-multivariados"><code>ggplot2</code> para dados multivariados</a></li>
-  <li><a href="#paineis-faceting" id="toc-paineis-faceting" class="nav-link" data-scroll-target="#paineis-faceting">Paineis (<em>faceting</em>)</a></li>
   </ul></li>
-  <li><a href="#ggplot2-sem-dor-interfaces-gráficas-na-web" id="toc-ggplot2-sem-dor-interfaces-gráficas-na-web" class="nav-link" data-scroll-target="#ggplot2-sem-dor-interfaces-gráficas-na-web"><code>ggplot2</code> sem dor: interfaces gráficas na web</a>
+  <li><a href="#ggplot2-quase-sem-dor-interfaces-gráficas-na-web" id="toc-ggplot2-quase-sem-dor-interfaces-gráficas-na-web" class="nav-link" data-scroll-target="#ggplot2-quase-sem-dor-interfaces-gráficas-na-web"><code>ggplot2</code> (quase) sem dor: interfaces gráficas na <em>web</em></a>
   <ul class="collapse">
-  <li><a href="#ggplotgui" id="toc-ggplotgui" class="nav-link" data-scroll-target="#ggplotgui"><code>ggplotgui</code></a></li>
-  <li><a href="#ggplot-shiny" id="toc-ggplot-shiny" class="nav-link" data-scroll-target="#ggplot-shiny">ggplot-Shiny</a></li>
+  <li><a href="#o-aplicativo-ggplotgui" id="toc-o-aplicativo-ggplotgui" class="nav-link" data-scroll-target="#o-aplicativo-ggplotgui">O aplicativo <code>ggplotgui</code></a></li>
+  <li><a href="#o-aplicativo-ggplot2-shiny" id="toc-o-aplicativo-ggplot2-shiny" class="nav-link" data-scroll-target="#o-aplicativo-ggplot2-shiny">O aplicativo ggplot2-shiny</a></li>
   </ul></li>
   <li><a href="#referência-do-pacote" id="toc-referência-do-pacote" class="nav-link" data-scroll-target="#referência-do-pacote">Referência do pacote:</a></li>
   </ul>
@@ -405,73 +418,18 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
-<section id="o-sistema-ggplot2" class="level2">
-<h2 class="anchored" data-anchor-id="o-sistema-ggplot2">O sistema <code>ggplot2</code></h2>
+<section id="o-pacote-ggplot2" class="level2">
+<h2 class="anchored" data-anchor-id="o-pacote-ggplot2">O pacote <code>ggplot2</code></h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <code>R</code> possui diversos pacotes pra criação de gráficos, dentre os quais destaca-se o <code>ggplot2</code>. Esse pacote permite a elaboração de um grande número de tipos (pontos, linhas, barras, histograma, etc) e com qualidade de publicação.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basicamente o ambiente funciona tal e qual um editor de imagens, como o <em>Corel Draw</em> ou o <em>Canva</em>, e que permitem a criação dessas por camadas. A única diferença é que em tais editores as camadas são depositadas ao bel prazer de seu criador. Já no <code>ggplot2</code> as camadas tem propriedades fixas. Mas o bacana é que, tanto para a edição de imagens naqueles programas, como para a edição de gráficos no <code>ggplot2</code>, a alteração feita numa camada específica só altera essa, preservando as demais que “já deram certo”.</div>
-<section id="a-gramática-de-gráficos-ggplot2" class="level3">
-<h3 class="anchored" data-anchor-id="a-gramática-de-gráficos-ggplot2">A gramática de gráficos &amp; <code>ggplot2</code></h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A produção de um gráfico pelo pacote <code>ggplot2</code> envolve em síntese a elaboração de camadas sobrepostas. Essa ideia deriva-se dos conceitos de <em>gramática de gráficos</em> concebida por <a href="https://link.springer.com/book/10.1007/0-387-28695-0">Wilkinson</a>, e concretizada no <code>ggplot2</code> por <a href="https://ggplot2-book.org/">Wickham</a>. Podem ser montadas até 7 camadas sobrepostas em kWhintos arranjos, embora apenas 3 sejam indispensáveis (<em>dados, estética, e geoma</em>):</div>
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 13%">
-<col style="width: 86%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">camadas</th>
-<th style="text-align: left;">ideia</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Dados</td>
-<td style="text-align: left;">autoexplicativo</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Estética</td>
-<td style="text-align: left;">variáveis visuais - mapeamento de eixos, cor, preenchimento</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Geomas</td>
-<td style="text-align: left;">tipos de gráficos: pontos, lin has, barras, boxes, etiquetas de eixos (geom)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Estatística</td>
-<td style="text-align: left;">transformação de dados para plotagem</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Paineis</td>
-<td style="text-align: left;">visualização de subconjunto de dados em paineis (facet)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Coordenadas</td>
-<td style="text-align: left;">focalização do canvas (scales) e transformação de eixos (coord)</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;À despeito dessa “aparente complicação”, tudo se resume em apresentar os dados (<em>data</em>) e realizar seu mapeamento (<em>mapping</em>). O mapeamento obriga apenas a alocação das variáveis independente (<em>x</em>) e dependente (<em>y</em>) do gráfico. Mas para se visualizar os dados no gráfico, é necessário acrescentar ao menos um elemento geométrico (<em>geom</em>) - ponto ou linha, por exemplo.</div>
-<div class="line-block">&nbsp;&nbsp;De modo mais completo, o mapeamento é efetuado por 5 componentes da tabela acima: <em>layer</em> (elementos geométricos - <em>geom</em>, e transformações e resumos estatísticos - <em>stat</em>),<em>scales,coord,facet,theme</em>.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No <code>ggplot2</code> camadas podem ser depositadas como numa sequência lógica pra criação de um gráfico:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basicamente o ambiente funciona tal e qual um editor de imagens, como o <em>Corel Draw</em> ou o <em>Canva</em>, e que permitem a criação dessas por camadas. A única diferença é que em tais editores as camadas são depositadas ao bel prazer de seu criador. Já no <code>ggplot2</code> as camadas tem propriedades fixas.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mas o bacana é que, tanto para a edição de imagens naqueles programas, como para a edição de gráficos no <code>ggplot2</code>, a alteração feita numa camada específica só altera essa, preservando as demais que “já deram certo”.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;À despeito dessa “aparente complicação”, segue-se um itinerário no qual cada camada é sobrepostas (com um sinal de “<em>+</em>”):</div>
 <ol type="1">
 <li>Estabelece-se os dados que serão utilizados (<em>data=</em>);</li>
 <li>Define-se quem é o <em>x</em> e quem é o <em>y</em> (<em>x=, y=</em>);</li>
 <li>Seleciona-se um tipo de gráfico (<em>geom=</em>);</li>
 <li>Embeleza-se o gráfico criado (eixos, cores, símbolos, tamanhos).</li>
 </ol>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Havendo empolgação, pode-se continuar com o <code>ggplot2</code> aprimorando o gráfico criado. Para isso:</div>
-<ol type="1">
-<li>Observa-se alguma relação entre as variáveis.</li>
-<li>Avalia-se um modelo para essa relação (reta, curva).</li>
-<li>Insere-se no gráfico o modelo que se ajustou (equação e parâmetros).</li>
-</ol>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para uso de dados multivariados, a condição para uso do <code>ggplot2</code> é que os mesmos estejam kWhribuidos em formato <em>Long</em>, ou seja, os níveis ou subconjuntos de uma variável precisam ser alocados num único vetor. Isso é simples quando se tem poucas linhas, mas complexo, quando tratar-se de vários níveis ou elementos em cada nível. No entanto, para se converter dados em <em>Wide</em> (várias colunas pra cada nível, x, y, z, etc) em <em>Long</em> (uma coluna única contendo os níveis x, y, z, etc), utiliza-se algumas funções, tais como do pacote <code>reshape</code> ou <code>tydir</code> (função <code>gather</code> pra converter a <em>longer</em> ou <code>spread</code> pra converter a <em>wider</em>).</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Segue uma descrição sequencial para a elaboração de um gráfico de dados univariados pelo <code>ggplot2</code>, seguindo-se as camadas descritas acima. Posteriormente será apresentado a confecção gráfica para dados multivariados.</div>
-</section>
 <section id="definindo-o-conjunto-de-dados" class="level3">
 <h3 class="anchored" data-anchor-id="definindo-o-conjunto-de-dados">Definindo o conjunto de dados</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vamos elaborar um gráfico com os dados que relacionam o consumo de energia elétrica com o custo, tal como representado no <a href="https://seliga.educacao.mg.gov.br/cardenos-mapa">MAPA</a> para o ensino médio (Matemática, 1o. Bimestre, 1o. Ano, p.&nbsp;23, 2024), e reproduzido abaixo:</div>
@@ -481,7 +439,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <figcaption>Relação de consumo anotado por concessionária de energia elétrica e custo, tal como extraído do <em>MAPA</em>.</figcaption>
 </figure>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para o <code>ggplot2</code>, diferente do pacote <code>basics</code>, é necessário dispor os dados numa planilha. Há um bom número de formas de se conduzir isso no <code>R</code>, mas uma forma simples é dada abaixo:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para o <code>ggplot2</code>, diferente do pacote <code>basics</code>, é necessário dispor os dados numa planilha. Há um bom número de formas de se conduzir isso no <code>R</code>, mas uma forma simples é dada abaixo (basta copiar e colar num <em>script</em> do <code>R</code> para execução:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>consumo <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="at">header =</span> T, <span class="at">text =</span> <span class="st">'   </span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="st">      kWh custo</span></span>
@@ -503,7 +461,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </section>
 <section id="carregando-o-ggplot2" class="level3">
 <h3 class="anchored" data-anchor-id="carregando-o-ggplot2">Carregando o ggplot2</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora é fazer o gráfico carregando a biblioteca. Nota óbvia: é preciso instalar antes a biblioteca.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora é fazer o gráfico carregando a biblioteca. Nota óbvia: é preciso instalar antes a biblioteca, quer pelo <em>RStudio</em> como já demonstrado, ou por linha de comando. No último caso:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("ggplot", dependencies = TRUE) </span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -513,7 +471,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -524,13 +482,13 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora o gráfico apresenta-se com os eixos, embora sem os dados da tabela. No conjunto de obviedades que se assoma, é claro, também não definimos que tipo de gráfico queremos. Ou seja, se ponto, linha, barra, ou algum pra lá de dúzia que compõe o pacote <code>ggplot2</code>.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma observação importantíssima: veja que as variáveis estão dentro de um parêntes iniciado pela função <em>aes</em>. Do inglês, uma abreviação de <em>aesthetics</em>, ou estética, em tradução livre. Todo gráfico do <code>ggplot2</code> tem que conter essa função, que além de definir as variáveis envolvidas, também permite generalizar para as camadas outras características estéticas, como <em>cor, tamanho, e forma</em>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora o gráfico apresenta-se com os eixos, embora sem os dados da tabela. No conjunto de obviedades que se assoma, é claro, também não definimos que tipo de gráfico queremos. Ou seja, se ponto, linha, barra, ou algum pra lá de dúzia que compõe o pacote <code>ggplot2</code>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma observação importantíssima: veja que as variáveis estão dentro de um parêntes iniciado pela função <em>aes</em>. Do inglês, uma abreviação de <em>aesthetics</em>, ou estética, em tradução livre. Todo gráfico do <code>ggplot2</code> tem que conter essa função, que além de definir as variáveis envolvidas, também permite generalizar para as camadas outras características estéticas, como <em>cor, tamanho, e forma</em>.</div>
 </section>
 <section id="escolhendo-o-tipo-de-gráfico" class="level3">
 <h3 class="anchored" data-anchor-id="escolhendo-o-tipo-de-gráfico">Escolhendo o tipo de gráfico</h3>
@@ -541,7 +499,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -553,7 +511,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -562,7 +520,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-8-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-7-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -614,7 +572,7 @@ singularities as well. 36519</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-8-3.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-7-3.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -670,7 +628,7 @@ singularities as well. 36519</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -678,7 +636,7 @@ singularities as well. 36519</code></pre>
 </section>
 <section id="oferecendo-elegância-ao-gráfico" class="level3">
 <h3 class="anchored" data-anchor-id="oferecendo-elegância-ao-gráfico">Oferecendo elegância ao gráfico</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bom, seguindo-se os ítens de construção de um gráfico lá de cima, agora é hora de “botar” elegância no produto ! Pra isso pode-se escolher algumas <em>“estéticas”</em> de cor (<em>color</em>), tamanho (<em>size</em>), translucidez (<em>alpha</em>), forma (<em>shape</em>), preenchimento do símbolo (<em>fill</em>) e sua espessura do tracejado do símbolo (<em>stroke</em>), e inseri-las como argumentos do geoma.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bom, seguindo-se os ítens de construção do gráfico pelo <code>ggplot2</code>, agora é hora de “botar” elegância no produto ! Pra isso pode-se escolher algumas <em>“estéticas”</em> de cor (<em>color</em>), tamanho (<em>size</em>), translucidez (<em>alpha</em>), forma (<em>shape</em>), preenchimento do símbolo (<em>fill</em>) e sua espessura do tracejado do símbolo (<em>stroke</em>), e inseri-las como argumentos do geoma. Veja um exemplo:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo)) <span class="sc">+</span></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, </span>
@@ -690,7 +648,7 @@ singularities as well. 36519</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -706,12 +664,12 @@ singularities as well. 36519</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo)) <span class="sc">+</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWh"</span>,</span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"consumo energético (kWh)"</span>,</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo operacional (R$)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -719,8 +677,8 @@ singularities as well. 36519</code></pre>
 </section>
 <section id="colocando-títulos-e-subtítulos" class="level3">
 <h3 class="anchored" data-anchor-id="colocando-títulos-e-subtítulos">Colocando títulos e subtítulos</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe que tanto faz colocar as características dos pontos com identação, uma abaixo da outra, ou em linha, mesmo. A única diferença é que colocando uma abaixo da outra visualiza-se melhor o que se pretende fazer. Isso faz parte das <em>“boas práticas de programação”</em>.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essa função <em>labs</em> permite também se colocar título, subtítulo, e uma observação (<em>caption</em>) no gráfico, veja:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe que tanto faz colocar as características dos pontos com identação, uma abaixo da outra, ou em linha, mesmo. A única diferença é que colocando uma abaixo da outra visualiza-se melhor o que se pretende fazer. Isso faz parte das <em>“boas práticas de programação”</em>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essa função <em>labs</em> permite também se colocar título, subtítulo, e uma observação (<em>caption</em>) no gráfico, veja:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
@@ -732,7 +690,7 @@ singularities as well. 36519</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -750,24 +708,18 @@ singularities as well. 36519</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teste outros temas, como segue:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
 <span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWh"</span>,</span>
 <span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo"</span>) <span class="sc">+</span></span>
 <span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
@@ -775,6 +727,22 @@ singularities as well. 36519</code></pre>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWh"</span>,</span>
 <span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo"</span>) <span class="sc">+</span></span>
 <span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_linedraw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="salvando-o-gráfico" class="level3">
+<h3 class="anchored" data-anchor-id="salvando-o-gráfico">Salvando o gráfico</h3>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora, pra se guardar esse gráfico, um tanto trabalhoso, convenhamos, o <code>R</code> permite o salvamento em diversos formatos, como JPG, BMP, TIFF, PDF, PNG, EPS, por exemplo. Dois jeitos de salvar o gráfico: um se dá pelo <em>menu</em> de <em>Plots</em> do canto inferior esquerdo do <em>RStudio</em> (Plots –&gt; Export). Se quisermos o armazenamento por linha de comando, por outro lado, basta utilizar a função <code>ggsave</code> logo após a criação do gráfico.</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWh"</span>,</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo"</span>) <span class="sc">+</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">14</span>) <span class="sc">+</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">'lm'</span>, <span class="at">formula =</span> y <span class="sc">~</span> <span class="fu">poly</span>(x, <span class="dv">2</span>), <span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"orange"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -782,183 +750,14 @@ singularities as well. 36519</code></pre>
 </figure>
 </div>
 </div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Salvando o gráfico...</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span>  <span class="st">"plot.consumo.png"</span>, <span class="at">dpi =</span> <span class="dv">300</span>, <span class="at">width =</span> <span class="dv">4</span>, <span class="at">height =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="alterando-o-tamanho-da-fonte" class="level3">
-<h3 class="anchored" data-anchor-id="alterando-o-tamanho-da-fonte">Alterando o tamanho da fonte</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nessa versão dá pra notar que o tamanho dos valores nos eixos, bem como o tamanho de suas etiquetas, deixam um pouco a desejar à estética do gráfico. Aumentando esses valores um pouquinho dentro da função <em>theme</em> (o padrão ou <em>default</em> é fonte 11)…</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWh"</span>,</span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo"</span>) <span class="sc">+</span></span>
-<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>  <span class="co"># theme(axis.text = element_text(size = 14),</span></span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#       axis.text.x = element_text(size = 14))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se desejar omitir alguma informação do gráfico, basta omiti-la da linha de comando. Por exemplo, se desejarmos retirar título, subtítulo e nota de observação:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWhância percorrida (km)"</span>,</span>
-<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custoidade do foguete (km/min)"</span>) <span class="sc">+</span></span>
-<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="mudando-os-limites-dos-eixos" class="level3">
-<h3 class="anchored" data-anchor-id="mudando-os-limites-dos-eixos">Mudando os limites dos eixos</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dá pra melhorar mais um pouco a visualização ?! Sempre dá, claro. Por exemplo, observe que nosso gráfico não inicia na <em>origem</em>, ou seja, quando <em>x</em> e <em>y</em> tem valor <em>zero</em>. Se quisermos alterar então esses eixos pra iniciarem no zero…bom…lá vai mais uma camada !!</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWh"</span>,</span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo"</span>) <span class="sc">+</span></span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">14</span>)<span class="sc">+</span></span>
-<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">6.5</span>), <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">15</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apesar de mais “pomposo” tanto o nome como as possibilidades dessa camada <code>coord_cartesian</code>, também é possível obter o mesmo efeito apenas com os argumentos <code>xlim</code> e <code>ylim</code>, e de modo um pouquinho diferente. Pra não repetir o gráfico acima, segue um exemplo com limites kWh nos eixos:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
-<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWh"</span>,</span>
-<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo"</span>) <span class="sc">+</span></span>
-<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">14</span>) <span class="sc">+</span></span>
-<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="sc">-</span><span class="dv">1</span>,<span class="dv">8</span>) <span class="sc">+</span></span>
-<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="sc">-</span><span class="dv">1</span>,<span class="dv">28</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 5 rows containing missing values or values outside the scale range
-(`geom_point()`).</code></pre>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="modelando-os-dados" class="level3">
-<h3 class="anchored" data-anchor-id="modelando-os-dados">Modelando os dados</h3>
-<section id="ajuste-linear" class="level4">
-<h4 class="anchored" data-anchor-id="ajuste-linear">Ajuste linear</h4>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora que nosso gráfico tá (…ou deveria estar) mais incrementado, que tal colocar uma linha de ajuste dos pontos ? Modelos pra isso não faltam, mas optemos inicialmente pelo mais simples: um <em>ajuste ou regressão linear</em>. Resumidamente, trata-se de observar se a resposta <em>y</em> segue uma tendência linear com os valores de <em>x</em>. E como o <code>ggplot2</code> trabalha com camadas, adicionemos essa camada, então:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWh"</span>,</span>
-<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo"</span>) <span class="sc">+</span></span>
-<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">14</span>) <span class="sc">+</span></span>
-<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">'lm'</span>, <span class="at">linewidth =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
-ℹ Please use `linewidth` instead.</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora ficou chique !! E também indecifrável…ou quase. Indo por partes: o método escolhido foi <code>lm</code>, ou modelo linear (<em>linear model</em>). O termo poderia ser também substituido por <code>'y ~x'</code>, uma notação do <code>R</code> que indica a dependência de <em>y</em> em relação a <em>x</em>. O argumento <code>linewidth</code> sinaliza pra espessura do tracejado. E a banda acizentada indica o <em>intervalo de confiança</em> do ajuste (<em>erro padrão</em>). Pra retirar essa última, bem como a legenda doida, basta fazer:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWh"</span>,</span>
-<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo"</span>) <span class="sc">+</span></span>
-<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">14</span>) <span class="sc">+</span></span>
-<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">'lm'</span>, <span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem diversos parâmetros que são obtidos pela função <code>lm</code>. Dada a natureza de <em>programação orientada a objeto</em> do <code>R</code>, esses parâmetros podem ser acessados individualmente em seus objetos. Exemplificando:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">attributes</span>(lm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>NULL</code></pre>
-</div>
-</div>
-</section>
-<section id="ajuste-polinomial" class="level4">
-<h4 class="anchored" data-anchor-id="ajuste-polinomial">Ajuste polinomial</h4>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apesar de bem incrementado esse gráfico final, observe que a tendência dos pontos não é propriamente linear. Tá parecendo mais uma curva. E dentre as curvas possíveis, quem sabe uma parábola. Pra isso, basta que acrescentemos qual a <code>formula</code> a ser empregada:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
-<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWh"</span>,</span>
-<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo"</span>) <span class="sc">+</span></span>
-<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">14</span>) <span class="sc">+</span></span>
-<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">'lm'</span>, <span class="at">formula =</span> y <span class="sc">~</span> <span class="fu">poly</span>(x, <span class="dv">2</span>), <span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"orange"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apesar de um pouco confuso, a expressão <code>formula = y ~ poly(x, 2)</code> indica tratar-se de um ajuste para um <em>polinômio de 2a. ordem</em> em <em>x</em>. E, claro, uma “corzinha” adicional no tracejado não faz mal a ninguém !</div>
-</section>
-</section>
-<section id="salvando-o-gráfico" class="level3">
-<h3 class="anchored" data-anchor-id="salvando-o-gráfico">Salvando o gráfico</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora, pra se guardar esse gráfico, um tanto trabalhoso, convenhamos, o <code>R</code> permite o salvamento em diversos formatos, como JPG, BMP, TIFF, PDF, PNG, EPS, por exemplo. Dois jeitos de salvar o gráfico: um se dá pelo <em>menu</em> de <em>Plots</em> do canto inferior esquerdo do <em>RStudio</em> (Plots –&gt; Export). Se quisermos o armazenamento por linha de comando, por outro lado, basta utilizar a função <code>ggsave</code> logo após a criação do gráfico.</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
-<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"blue"</span>, <span class="at">size=</span><span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">stroke =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"kWh"</span>,</span>
-<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"custo"</span>) <span class="sc">+</span></span>
-<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">14</span>) <span class="sc">+</span></span>
-<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">'lm'</span>, <span class="at">formula =</span> y <span class="sc">~</span> <span class="fu">poly</span>(x, <span class="dv">2</span>), <span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"orange"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Salvando o gráfico...</span></span>
-<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span>  <span class="st">"plot.consumo.png"</span>, <span class="at">dpi =</span> <span class="dv">300</span>, <span class="at">width =</span> <span class="dv">4</span>, <span class="at">height =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se você não especificou onde salvar o gráfico, veja no diretório raiz do computador. Explicando brevemente a função, <code>dpi</code> representa a resolução do gráfico, enquanto que <code>width</code> e <code>height</code> especificam o tamanho.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se você não especificou onde salvar o gráfico, veja no diretório raiz do computador. Explicando brevemente a função, <code>dpi</code> representa a resolução do gráfico (<em>dots per inch</em>), enquanto que <code>width</code> e <code>height</code> especificam o tamanho.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mas também dá pra salvar o gráfico sem qualquer especificação. Exemplificando pra um arquivo <em>PDF</em>:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span>  <span class="st">"plot.consumo.pdf"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span>  <span class="st">"plot.consumo.pdf"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Saving 7 x 5 in image</code></pre>
 </div>
@@ -968,13 +767,13 @@ singularities as well. 36519</code></pre>
 <h3 class="anchored" data-anchor-id="simplificando-a-construção-de-um-gráfico">Simplificando a construção de um gráfico</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bom, ainda que o gráfico acima tenha um certo ar de sofisticação, não é sempre que se deseja isso. Na maior parte das vezes, o que se quer é plotar os dados e observar alguma tendência. E, pra isso, não é necessário todas essas camadas, funções e argumentos. Para se plotar algo “parecido” com o gráfico acima, mas sem toda essa pompa, basta fazermos:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo)) <span class="sc">+</span></span>
-<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>consumo, <span class="fu">aes</span>(<span class="at">x=</span>kWh, <span class="at">y=</span>custo)) <span class="sc">+</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -982,21 +781,22 @@ singularities as well. 36519</code></pre>
 </section>
 <section id="elaborando-um-gráfico-apenas-com-vetores" class="level3">
 <h3 class="anchored" data-anchor-id="elaborando-um-gráfico-apenas-com-vetores">Elaborando um gráfico apenas com vetores</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O pacote <code>ggplot2</code> é normalmente empregado para a criação de de gráficos a partir de um <em>dataset</em>. Não obstante, é possível produzir também um gráfico apenas com vetores, tal como segue:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O pacote <code>ggplot2</code> é normalmente empregado para a criação de de gráficos a partir de um <em>dataset</em> (dados tal como apresentados numa planilha). Não obstante, é possível produzir também um gráfico apenas com vetores. Para isso, basta substituir o conjunto de dados com…digamos…nada (data = NULL) !! Tal como segue:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">360</span></span>
-<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">sin</span>(x)</span>
-<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>( <span class="at">data =</span> <span class="cn">NULL</span> ,</span>
-<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">mapping =</span> <span class="fu">aes</span>( <span class="at">x =</span> x , <span class="at">y =</span> y ) ) <span class="sc">+</span></span>
-<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape =</span> <span class="dv">15</span>, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="fl">0.5</span>)<span class="sc">+</span></span>
-<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"eixo x"</span>, <span class="at">y=</span><span class="st">"eixo y"</span>) <span class="sc">+</span></span>
-<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">45</span>,<span class="dv">90</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">360</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">sin</span>(x)</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>( <span class="at">data =</span> <span class="cn">NULL</span> ,</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">mapping =</span> <span class="fu">aes</span>( <span class="at">x =</span> x , <span class="at">y =</span> y ) ) <span class="sc">+</span></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape =</span> <span class="dv">15</span>, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="fl">0.5</span>)<span class="sc">+</span></span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"eixo x"</span>, <span class="at">y=</span><span class="st">"eixo y"</span>) <span class="sc">+</span></span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">45</span>,<span class="dv">90</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1004,194 +804,29 @@ singularities as well. 36519</code></pre>
 </section>
 <section id="simulação-função-em-ggplot2" class="level3">
 <h3 class="anchored" data-anchor-id="simulação-função-em-ggplot2">Simulação &amp; função em <code>ggplot2</code></h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como o sistema base, o <code>ggplot2</code> possui também uma função para a produção de tendências por equações introduzidas, <code>geom_function</code>. Exemplificando:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assim como o pacote <code>graphics</code>, o <code>ggplot2</code> possui também uma função para a produção de tendências por equações introduzidas, <code>geom_function</code>.</div>
+<p>Exemplificando:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(ggplot2)</span>
-<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>), <span class="fu">aes</span>(x)) <span class="sc">+</span></span>
-<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun=</span><span class="cf">function</span>(x) <span class="dv">173</span><span class="sc">*</span>x<span class="sc">/</span>(<span class="dv">6</span><span class="sc">+</span>x), <span class="at">colour =</span> <span class="st">"red"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(ggplot2)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>), <span class="fu">aes</span>(x)) <span class="sc">+</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun=</span><span class="cf">function</span>(x) <span class="dv">173</span><span class="sc">*</span>x<span class="sc">/</span>(<span class="dv">6</span><span class="sc">+</span>x), <span class="at">colour =</span> <span class="st">"red"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-28-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="ggplot2-para-dados-multivariados" class="level3">
-<h3 class="anchored" data-anchor-id="ggplot2-para-dados-multivariados"><code>ggplot2</code> para dados multivariados</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como explicado acima, o <code>ggplot2</code> trabalha <em>exclusivamente</em> com dados em formato <em>Long</em>, ou seja, uma variável para cada quantidade. Dessa forma, os subconjuntos de uma variável (ou nível) devem situar-se nessa única variável. Ilustrando:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>tempo <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">4</span>),<span class="dv">4</span>))</span>
-<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>resposta <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">10</span>,<span class="dv">14</span>,<span class="dv">18</span>,<span class="dv">22</span>,<span class="dv">24</span>,<span class="dv">30</span>,<span class="dv">36</span>,<span class="dv">42</span>)</span>
-<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>niveis <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"A"</span>,<span class="dv">4</span>),<span class="fu">rep</span>(<span class="st">"B"</span>, <span class="dv">4</span>), <span class="fu">rep</span>(<span class="st">"C"</span>, <span class="dv">4</span>), <span class="fu">rep</span>(<span class="st">"D"</span>, <span class="dv">4</span>)) <span class="co"># criação de dataframe com níveis</span></span>
-<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span><span class="fu">data.frame</span>(tempo, resposta, niveis); df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   tempo resposta niveis
-1      1        1      A
-2      2        2      A
-3      3        3      A
-4      4        4      A
-5      1        2      B
-6      2        4      B
-7      3        6      B
-8      4        8      B
-9      1       10      C
-10     2       14      C
-11     3       18      C
-12     4       22      C
-13     1       24      D
-14     2       30      D
-15     3       36      D
-16     4       42      D
-17     1        1      A
-18     2        2      A
-19     3        3      A
-20     4        4      A
-21     1        2      B
-22     2        4      B
-23     3        6      B
-24     4        8      B
-25     1       10      C
-26     2       14      C
-27     3       18      C
-28     4       22      C
-29     1       24      D
-30     2       30      D
-31     3       36      D
-32     4       42      D
-33     1        1      A
-34     2        2      A
-35     3        3      A
-36     4        4      A
-37     1        2      B
-38     2        4      B
-39     3        6      B
-40     4        8      B
-41     1       10      C
-42     2       14      C
-43     3       18      C
-44     4       22      C
-45     1       24      D
-46     2       30      D
-47     3       36      D
-48     4       42      D
-49     1        1      A
-50     2        2      A
-51     3        3      A
-52     4        4      A
-53     1        2      B
-54     2        4      B
-55     3        6      B
-56     4        8      B
-57     1       10      C
-58     2       14      C
-59     3       18      C
-60     4       22      C
-61     1       24      D
-62     2       30      D
-63     3       36      D
-64     4       42      D</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>df, <span class="fu">aes</span>(<span class="at">x=</span>tempo, <span class="at">y=</span>resposta)) <span class="sc">+</span></span>
-<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">shape=</span>niveis, <span class="at">color=</span>niveis)) <span class="sc">+</span></span>
-<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">linetype=</span>niveis))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-29-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note que cada elemento estético pode ser configurado para cada <em>geom</em>. Alternativamente, pode-se conferir os elementos estéticos combinando-os para o gráfico geral, bem como para cada camada:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>tempo <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">4</span>),<span class="dv">4</span>))</span>
-<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>resposta <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">10</span>,<span class="dv">14</span>,<span class="dv">18</span>,<span class="dv">22</span>,<span class="dv">24</span>,<span class="dv">30</span>,<span class="dv">36</span>,<span class="dv">42</span>)</span>
-<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>niveis <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"A"</span>,<span class="dv">4</span>),<span class="fu">rep</span>(<span class="st">"B"</span>, <span class="dv">4</span>), <span class="fu">rep</span>(<span class="st">"C"</span>, <span class="dv">4</span>), <span class="fu">rep</span>(<span class="st">"D"</span>, <span class="dv">4</span>)) <span class="co"># criação de dataframe com níveis</span></span>
-<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span><span class="fu">data.frame</span>(tempo, resposta, niveis)</span>
-<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>df, <span class="fu">aes</span>(<span class="at">x=</span>tempo, <span class="at">y=</span>resposta, <span class="at">shape=</span>niveis, <span class="at">color=</span>niveis)) <span class="sc">+</span></span>
-<span id="cb59-9"><a href="#cb59-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size=</span><span class="dv">5</span>)) <span class="sc">+</span></span>
-<span id="cb59-10"><a href="#cb59-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">linetype=</span>niveis))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para um conjunto com visual sobreposição de pontos, pode-se também empregar a função <code>jitter</code>, como no <code>graphics</code>:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>df, <span class="fu">aes</span>(<span class="at">x=</span>tempo, <span class="at">y=</span>resposta)) <span class="sc">+</span></span>
-<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_jitter</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-31-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="paineis-faceting" class="level3">
-<h3 class="anchored" data-anchor-id="paineis-faceting">Paineis (<em>faceting</em>)</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como um recurso estético e analítico significativo, o <em>faceting</em> permite ao <code>ggplot2</code> a visualização multivariada em paineis. Seguem exemplos para o <em>dataset</em> acima.</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>tempo <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">4</span>),<span class="dv">4</span>))</span>
-<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>resposta <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">10</span>,<span class="dv">14</span>,<span class="dv">18</span>,<span class="dv">22</span>,<span class="dv">24</span>,<span class="dv">30</span>,<span class="dv">36</span>,<span class="dv">42</span>)</span>
-<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>niveis <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"A"</span>,<span class="dv">4</span>),<span class="fu">rep</span>(<span class="st">"B"</span>, <span class="dv">4</span>), <span class="fu">rep</span>(<span class="st">"C"</span>, <span class="dv">4</span>), <span class="fu">rep</span>(<span class="st">"D"</span>, <span class="dv">4</span>)) <span class="co"># criação de dataframe com níveis</span></span>
-<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span><span class="fu">data.frame</span>(tempo, resposta, niveis)</span>
-<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>df, <span class="fu">aes</span>(<span class="at">x=</span>tempo, <span class="at">y=</span>resposta, <span class="at">shape=</span>niveis, <span class="at">color=</span>niveis)) <span class="sc">+</span></span>
-<span id="cb61-7"><a href="#cb61-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size=</span><span class="dv">5</span>)) <span class="sc">+</span></span>
-<span id="cb61-8"><a href="#cb61-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">linetype=</span>niveis))<span class="sc">+</span></span>
-<span id="cb61-9"><a href="#cb61-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols=</span><span class="fu">vars</span>(niveis)) <span class="co"># paineis verticais (útil para visualização da ordenada) </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-32-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>df, <span class="fu">aes</span>(<span class="at">x=</span>tempo, <span class="at">y=</span>resposta, <span class="at">shape=</span>niveis, <span class="at">color=</span>niveis)) <span class="sc">+</span></span>
-<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size=</span><span class="dv">5</span>)) <span class="sc">+</span></span>
-<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">linetype=</span>niveis))<span class="sc">+</span></span>
-<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">rows=</span><span class="fu">vars</span>(niveis)) <span class="co"># paineis horizontais (útil para visualização na abscissa)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-32-2.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>df, <span class="fu">aes</span>(<span class="at">x=</span>tempo, <span class="at">y=</span>resposta, <span class="at">shape=</span>niveis, <span class="at">color=</span>niveis)) <span class="sc">+</span></span>
-<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size=</span><span class="dv">5</span>)) <span class="sc">+</span></span>
-<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">linetype=</span>niveis))<span class="sc">+</span></span>
-<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(niveis)) <span class="co"># paineis divididos (útil na visualização equilibrada de abscissa e ordenada)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="ggplot2_files/figure-html/unnamed-chunk-32-3.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="ggplot2_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
 </section>
-<section id="ggplot2-sem-dor-interfaces-gráficas-na-web" class="level2">
-<h2 class="anchored" data-anchor-id="ggplot2-sem-dor-interfaces-gráficas-na-web"><code>ggplot2</code> sem dor: interfaces gráficas na web</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se você chegou até aqui é porque teve alguma afinidade com o sistema gráfico em camadas do <code>ggplot2</code>, embora o enriquecimento de um gráfico também carregue consigo um conjunto mais extenso de linhas de comando. Para contornar essa dificuldade, alguns desenvolvedores produziram aplicativos de acesso <em>online</em> para o <code>ggplot2</code>, e que permitem a construção das camadas gráficas <em>sem a necessidade de digitação de comandos, e sim por uso de cliques de mouse</em>. Outra característica interessante, é que esses aplicativos fornecem o trecho de código para a reprodução do gráfico criado por <em>mouse clicks</em>.</div>
+<section id="ggplot2-quase-sem-dor-interfaces-gráficas-na-web" class="level2">
+<h2 class="anchored" data-anchor-id="ggplot2-quase-sem-dor-interfaces-gráficas-na-web"><code>ggplot2</code> (quase) sem dor: interfaces gráficas na <em>web</em></h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se você chegou até aqui é porque teve alguma afinidade com o sistema gráfico em camadas do <code>ggplot2</code>, embora o enriquecimento de um gráfico também carregue consigo um conjunto mais extenso de linhas de comando.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para contornar essa dificuldade, alguns desenvolvedores produziram aplicativos de acesso <em>online</em> para o <code>ggplot2</code>, e que permitem a construção das camadas gráficas <em>sem a necessidade de digitação de comandos, e sim por uso de cliques de mouse</em>. Outra característica interessante, é que esses aplicativos fornecem o trecho de código para a reprodução do gráfico criado por <em>mouse clicks</em>.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assim, vale a pena dar uma olhada nos aplicativos que seguem:</div>
-<section id="ggplotgui" class="level3">
-<h3 class="anchored" data-anchor-id="ggplotgui"><code>ggplotgui</code></h3>
+<section id="o-aplicativo-ggplotgui" class="level3">
+<h3 class="anchored" data-anchor-id="o-aplicativo-ggplotgui">O aplicativo <code>ggplotgui</code></h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <a href="https://shiny.gmw.rug.nl/ggplotgui/">ggplotgui</a> envolve um pacote que renderiza uma interface gráfica e interativa para o <code>ggplot2</code>.</div>
 <p><br>
 </p>
@@ -1201,12 +836,12 @@ singularities as well. 36519</code></pre>
 <figcaption>Tela do aplicativo <em>online</em> <code>ggplotgui</code> para elaboração de gráficos pelo <code>ggplot2</code> por cliques de <em>mouse</em>.</figcaption>
 </figure>
 </div>
+</section>
+<section id="o-aplicativo-ggplot2-shiny" class="level3">
+<h3 class="anchored" data-anchor-id="o-aplicativo-ggplot2-shiny">O aplicativo ggplot2-shiny</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outro sistema interativo e facilitado para o <code>ggplot2</code> envolve um <em>framework</em> extremamente interativo chamado <code>shiny</code>. A interface <a href="https://cardiomoon.shinyapps.io/ggplot2new/">ggplot2-shiny</a> também permite, como o <code>ggplotgui</code>, a construção e customização de gráficos do pacote <code>ggplot2</code> sem a necessidade de digitação de comandos.</div>
 <p><br>
 </p>
-</section>
-<section id="ggplot-shiny" class="level3">
-<h3 class="anchored" data-anchor-id="ggplot-shiny">ggplot-Shiny</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="ggplot2-shiny.png" class="img-fluid figure-img"></p>

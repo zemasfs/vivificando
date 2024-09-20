@@ -4,7 +4,7 @@ title: "Algumas questões prévias"
 
 ## De que se trata esse material ?
 
-|       Bom, como diz o título, de *vivificar* imagens e relações numéricas encontrados em livros-texto. Em palavras mais abstratas...da tentativa de se oferecer algumas ferramentas para compor objetos didáticos para o *Ensino Médio*, principalmente para temas de *Física, Química e Biologia* contidos em *Ciências da Natureza e Suas Tecnologias*, também com *aplicações da Matemática* e baseadas em premissas de *Ensino Reprodutível*.
+|       Bom, como diz o título, de *vivificar* imagens e relações numéricas encontrados em livros-texto. Em palavras mais abstratas...da tentativa de se oferecer algumas ferramentas para compor objetos didáticos para o *Ensino Médio*, principalmente para temas de *Física, Química e Biologia* contidos em *Ciências da Natureza e Suas Tecnologias*, *Matemática e Suas Tecnologias*, como também *Ciências Humanas e Suas Tecnologias*, com as ferramentas baseadas em premissas de *Ensino Reprodutível*.
 
 |       Agora, de modo mais claro, de instrumentalizar professores ao uso de dois programas básicos de computador, um para *visualização de moléculas em 3D*, e outro para *vivificar* algumas relações estáticas encontradas em livros-texto por *animações, interatividade, e simulações*.
 
