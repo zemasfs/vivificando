@@ -65,7 +65,7 @@ website:
           - r_cheat.qmd
           - rstudio_cheat.qmd
        
-      - text: "Outros Sites"   
+      - text: "Outros Recursos"   
         menu:
          # - text: "ERRE - Ensino Reprodutível"
          #   href: https://errre.netlify.app/
