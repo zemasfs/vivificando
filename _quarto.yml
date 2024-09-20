@@ -5,11 +5,19 @@ project:
   
 website:
   page-navigation: true # não funciona
+  back-to-top-navigation: true
   image: RStudioLogo.png # não funciona
   reader-mode: true # funciona
   google-analytics: "G-S1L73VGCG5"
   title: "Vivificando Conteúdos ao Ensino Médio" # omite-se o título pra não duplicar nome na aba
   favicon: avatar.png # ícone da aba da página
+  page-footer: 
+        left: |
+          Curso de Formação em Educação Digital
+        center: |
+            UNIFAL-MG
+        right: |
+           Página criada com pacote Quarto
   
   sidebar:
     - contents:
@@ -69,7 +77,7 @@ website:
         menu:
          # - text: "ERRE - Ensino Reprodutível"
          #   href: https://errre.netlify.app/
-          - text: "Bioquímica Quantitativa"
+          - text: "bioQuanti - Bioquímica Quantitativa"
             href: https://bioquanti.netlify.app/
          
       - contato.qmd

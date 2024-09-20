@@ -107,6 +107,18 @@
     ]
   },
   {
+    "objectID": "RPart.html",
+    "href": "RPart.html",
+    "title": "PARTE 2 - R & RStudio",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "R & RStudio"
+    ]
+  },
+  {
     "objectID": "fenomenos.html",
     "href": "fenomenos.html",
     "title": "Fenômenos",
@@ -119,6 +131,20 @@
     "title": "Fenômenos",
     "section": "",
     "text": "O Ambiente do R também permite a construção de objetos didáticos que possam “vivificar” o conteúdo de livros-texto. Como um exemplo, segue um script para a criação de um objeto que pode auxiliar no aprendizado de cinética de reações químicas, tais como o exemplificado à página 34 do volume 2 do livro-texto que segue.\n\n\n\nCinética de Reações, tal como apresentado no livro-texto\n\n\n      Ampliando um pouco a figura de cinética….\n\n\n\nAmpliação da imgem de cinética\n\n\n      Assim sendo, uma sugestão para um objeto que ajude na compreensão do tema poderia envolver a reação de formação de produtos com variação da constante de desligamento do reagente, como segue:\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n\n\n\n\n\n      Se desejar observar como o código foi desenvolvido, e aplicá-lo diretamente no **RStudio Cloud* já visto, segue trecho:\n\n# Instale os pacotes necessários, caso ainda não os tenha\n# install.packages(\"ggplot2\")\n# install.packages(\"plotly\")\n\nlibrary(ggplot2)\nlibrary(plotly)\n\n# Função para gerar os dados e o gráfico com base em taxa.dissociação.produto\ngenerate_plot_data &lt;- function(taxa.dissociação.produto) {\n  y.max &lt;- 1\n  x &lt;- seq(0.1, 10, length.out = 100)\n  y &lt;- y.max * x / (taxa.dissociação.produto + x)\n  data.frame(x, y)\n}\n\n# Inicialize o gráfico com taxa.dissociação.produto = 1\ninitial_taxa.dissociação.produto &lt;- 1\nplot_data &lt;- generate_plot_data(initial_taxa.dissociação.produto)\n\n# Crie o gráfico inicial usando ggplot2\np &lt;- ggplot(plot_data, aes(x = x, y = y)) +\n  geom_line() +\n  labs(title = paste(\"Formação de Produtos com Alteração da Taxa de Desligamento do Reagente:: y = y.max * x / (\", initial_taxa.dissociação.produto, \" + x)\"),\n       x = \"Tempo\",\n       y = \"Produto\") +\n  theme_minimal() +\n  ylim(0, 1)\n\n# Converta para um objeto plotly\nfig &lt;- ggplotly(p)\n\n# Adicione um slider para taxa.dissociação.produto utilizando plotly\nsteps &lt;- lapply(seq(0.1, 10, by = 0.1), function(taxa.dissociação.produto) {\n  list(\n    label = as.character(taxa.dissociação.produto),\n    method = \"restyle\",\n    args = list(\n      list(\n        x = list(generate_plot_data(taxa.dissociação.produto)$x),\n        y = list(generate_plot_data(taxa.dissociação.produto)$y)\n      ),\n      list(title = paste(\"Formação de Produtos com Alteração da Taxa de Desligamento do Reagente: y = y.max * x / (\", taxa.dissociação.produto, \" + x)\"))\n    )\n  )\n})\n\nfig &lt;- fig %&gt;%\n  layout(\n    sliders = list(\n      list(\n        active = 0,\n        currentvalue = list(prefix = \"taxa.dissociação.produto: \"),\n        steps = steps\n      )\n    )\n  )\n\n# Visualize o gráfico\nfig"
+  },
+  {
+    "objectID": "rstudio_cheat.html",
+    "href": "rstudio_cheat.html",
+    "title": "Rstudio - folha de dicas",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "jmol_cheat.html",
+    "href": "jmol_cheat.html",
+    "title": "Jmol - folha de dicas",
+    "section": "",
+    "text": "Back to top"
   },
   {
     "objectID": "dinamica.html",
@@ -317,6 +343,25 @@
       "Treinamento",
       "Um pouco sobre as ferramentas"
     ]
+  },
+  {
+    "objectID": "jmolPart.html",
+    "href": "jmolPart.html",
+    "title": "PARTE 1 - Jmol",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Contato",
+      "Moléculas em 3D",
+      "Jmol"
+    ]
+  },
+  {
+    "objectID": "r_cheat.html",
+    "href": "r_cheat.html",
+    "title": "R - folha de dicas",
+    "section": "",
+    "text": "Back to top"
   },
   {
     "objectID": "animationPlots.html",
@@ -563,7 +608,7 @@
     "href": "contato.html",
     "title": "Contato",
     "section": "",
-    "text": "Prof. Dr. José Maurício Schneedorf Ferreira da Silva\n\nemail: jose.dasilva@unifal-mg.edu.br\nFone: (35) - 3291-1928\nEndereço: Depto. de Bioquímica, Instituto de Ciências Biomédicas, Universidade Federal de Alfenas, UNIFAL-MG. Prédio E, sala 209. Alfenas, MG. CEP: ‘37.130-001’, Brasil",
+    "text": "Prof. Dr. José Maurício Schneedorf Ferreira da Silva\n\nemail: jose.dasilva@unifal-mg.edu.br\nFone: (35) - 3291-1928\nEndereço: Depto. de Bioquímica, Instituto de Ciências Biomédicas, Universidade Federal de Alfenas, UNIFAL-MG. Prédio E, sala 209. Alfenas, MG. CEP: ‘37.130-001’, Brasil\n\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Contato"
     ]
@@ -1058,18 +1103,6 @@
       "Contato",
       "Gráficos Interativos",
       "8 - Animando gráficos do ggplot2 - o pacote `gganimate`"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Vivificando Conteúdos ao Ensino Médio",
-    "section": "",
-    "text": "::: {layout-ncol=2}\n:::",
-    "crumbs": [
-      "Contato",
-      "Treinamento",
-      "Saudações"
     ]
   }
 ]
