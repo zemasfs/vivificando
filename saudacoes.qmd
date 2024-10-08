@@ -10,6 +10,9 @@ title: ""
 |       Essa *interatividade* permitirá que você recrie e altere figuras que se apresentam estáticas em livros-texto do ensino médio para um **objeto didático mais vivo**. Daí a escolha do termo *vivificando*, que etiqueta o próprio *website do Curso*.
 \
 
+ ![](acelera.gif){width=45% fig-align="right"}
+ 
+ 
 ## Por quê "vivificando" ?
 
 |       Por sua vez, tal *vivificação* para moléculas, gráficos e mapas deverá permitir uma visualização 3D e animações para modelos atômicos, bem como diversos graus de interatividade por cliques de mouse à gráficos e mapas - animações, seleção de pontos, *zoom*, simulações, *mouse over* (informações sobre o ponto gráfico por simples passagem do *mouse*), deslizadores, menus, e outros tantos.
@@ -35,9 +38,13 @@ leaflet() %>%  # carrega-se o pacote
 |       E como todo computador, notebook, tablet e smartphone possui um navegador, pode-se utilizar os objetos didáticos em qualquer um desses dispositivos. 
 
 ::: {layout-ncol="2"}
-![](fenol.eletro.png)
+<!-- ![](fenol.eletro.png) -->
 
-![](transition_states.colunas.gganimate3.gif)
+<div>
+<script src="https://chemapps.stolaf.edu/jmol/jmol.php?model=caffeine&inline=1&width=300&height=250"></script>
+</div>
+
+<!-- ![](transition_states.colunas.gganimate3.gif) -->
 :::
 
 ## Políticas públicas
