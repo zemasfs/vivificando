@@ -17,11 +17,11 @@ website:
         center: |
             UNIFAL-MG
         right: |
-           Página criada com pacote Quarto
+           ERRE - Ensino Reprodutível
   
   sidebar:
     - contents:
-      - section: "Treinamento"
+      - section: "O Curso"
         contents:
           - text: "Saudações"
             href: index.qmd

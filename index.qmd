@@ -16,7 +16,7 @@ title: ""
 <!-- ![](acelera.gif){width=45% fig-align="right"} -->
 
 
-|       Olá ! Seja muito bem-vindo a este *Curso de Capacitação em ferramentas digitais para o Ensino Médio*. A ideia central *desta etapa* do *Curso* é lhe oferecer ferramentas que possibilitem agregar valor à imagens de moléculas, gráficos e mapas observados durante o ensino médio, mas com *animação e interatividade*.
+|       Oláaslkdfçasldkfj ! Seja muito bem-vindo a este *Curso de Capacitação em ferramentas digitais para o Ensino Médio*. A ideia central *desta etapa* do *Curso* é lhe oferecer ferramentas que possibilitem agregar valor à imagens de moléculas, gráficos e mapas observados durante o ensino médio, mas com *animação e interatividade*.
 
 |       Essa *interatividade* permitirá que você recrie e altere figuras que se apresentam estáticas em livros-texto do ensino médio para um **objeto didático mais vivo**. Daí a escolha do termo *vivificando*, que etiqueta o próprio *website*.
 \

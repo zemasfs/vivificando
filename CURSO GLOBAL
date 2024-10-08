@@ -1,0 +1,41 @@
+       - text: "Curso de Capacitação ao Ensino Médio"
+            href: index.qmd
+          - text: "Saudações"
+            href: saudacoes.qmd
+          - text: "Algumas questões"
+            href: questoes.qmd
+          - text: "Caixa de Ferramentas"
+            href: ferramentas.qmd
+   
+      - section: "Moléculas em 3D com Jmol"
+        contents:
+          - text: "1 - Jmol"
+            href: jmol.qmd
+          - text: "2 - Mouse *versus* Comandos"
+            href: textoXmouse.qmd
+          - text: "3 - Alguns comandos do Jmol"
+            href: comandosJmol.qmd
+          - text: "4 - Algumas animações com Jmol"
+            href: anima_Jmol.qmd
+          
+      - section: "Gráficos Interativos com R"
+        contents:
+          - text: "1 - R & RStudio"
+            href: rstudioCloud.qmd
+          - text: "2 - Um pouco sobre uso do `R`"
+            href: basicaoR.qmd
+          - text: "3 - Pacotes do R"
+            href: pacotes.qmd
+          - text: "4 - O pacote `plotly`"
+            href: plotly.qmd
+          - text: "5 - Gráficos interativos com `plotly`"
+            href: plotly_interat.qmd
+          - text: "6 - Embelezando o gráfico"
+            href: plotly_embeleza.qmd
+          - text: "7 - Mais interatividade aos gráficos"
+            href: plotly_maisInterat.qmd
+          - text: "8- Animação em gráficos interativos"
+            href: plotly_anima.qmd
+          - text: "9 - Mapas interativos (`plotly` e `leaflet`)"
+            href: plotly_maps.qmd
+            

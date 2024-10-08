@@ -147,81 +147,308 @@
     "text": "Back to top"
   },
   {
-    "objectID": "dinamica.html",
-    "href": "dinamica.html",
-    "title": "Moléculas Voadoras",
+    "objectID": "contato.html",
+    "href": "contato.html",
+    "title": "Contato",
     "section": "",
-    "text": "Moléculas Voadoras é apenas um título engraçadinho pra apresentar moléculas de forma tridimensional. Para isso utilizamos um programa de visualização 3D chamado Jmol. O programa é distribuido livremente (licença GLPL, GNU Lesser General Public License), e permite uma série de visualizações coloridas, como movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, animações, dentre outros."
-  },
-  {
-    "objectID": "dinamica.html#introdução",
-    "href": "dinamica.html#introdução",
-    "title": "Moléculas Voadoras",
-    "section": "",
-    "text": "Moléculas Voadoras é apenas um título engraçadinho pra apresentar moléculas de forma tridimensional. Para isso utilizamos um programa de visualização 3D chamado Jmol. O programa é distribuido livremente (licença GLPL, GNU Lesser General Public License), e permite uma série de visualizações coloridas, como movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, animações, dentre outros."
-  },
-  {
-    "objectID": "dinamica.html#visualização-na-web",
-    "href": "dinamica.html#visualização-na-web",
-    "title": "Moléculas Voadoras",
-    "section": "Visualização na web",
-    "text": "Visualização na web\n      Você pode baixar o programa no website acima, ou utilizá-lo diretamente num navegador de internete, como abaixo. Experimente rotacionar a molécula de água com o mouse….\n\n\n\n\n\n\n\n\n\n      Agora um passo adiante, pra você observar suas próprias moléculas em qualquer navegador. Abra uma janela em seu navegador (Edge, Firefox, Chrome, etc) e digite o seguinte caminho: vá ao link abaixo:\n\nhttps://chemapps.stolaf.edu/jmol/jmol.php?model=water&script=Console\n\n      Ou…se quiser ir direto, basta clicar na logo abaixo, e que representa o applet JSmol que é utilizado para a visualização tridimensional (também chamada de renderização, um provável anglicismo !).\n(https://chemapps.stolaf.edu/jmol/jmol.php?model=water&script=Console)\n      Arraste a janela amarela pra direita, pra você visualizar a molécula, nesse caso, uma molécula de água\n      Agora você pode “brincar” à vontade com a molécula. Primeiro, mexendo em seu mouse pra fazê-la girar. Pode usar também o botão de rolagem do meio do mouse, pra ampliar ou reduzir seu tamanho na tela.\n      E pode fazer um montão de outras coisas legais. Pra isso, há duas opções. A primeira envolve o “montão” de coisas por uso de clique de mouse, bastando você clicar com o botão esquerdo desse em qualquer lugar do campo da molécula, como aparece na figura abaixo.\n\n\n\n\n\n\nFigure 1: Tela de menus do Jmol\n\n\n\n      Mas dentro de uma lógica do Ensino Reprodutível, contudo, é bem mais chique se utilizar linhas de comando digitados como num bloco de notas. Nesse caso, o bloco de anotações é o da janelinha amarela, na parte de baixo. Para utilizá-lo experimente digitar e teclar Enter após o seguinte comando:\n\nspin 50\n\n      Show, não ?! Para fazer a molécula parar de girar, digite:\n\nspin off\n\n      Se quiser testar outros comandos rápidos com a molécula, experimente os comandos abaixo. Você pode executar um a um, ou mais de um por vez, separando-os por um “;”.\n\ncpk # representação de bola e vareta\nwireframe only # representação de arame\nbackground yellow # plano fundo\ndots on # nuvens de van der Waals\ncolor magenta # coloração\ncolor cpk # coloração padrão de modelos atômicos\n\n      Existe uma infinidade de comandos que se pode experimentar com uma molécula, e para isso eu sugiro tutorial dirigido também nos moldes de um Ensino Reprodutível no site bioQuanti, especificamente no capítulo sobre comandos do Jmol."
-  },
-  {
-    "objectID": "dinamica.html#carregando-uma-molécula-armazenada-no-computador",
-    "href": "dinamica.html#carregando-uma-molécula-armazenada-no-computador",
-    "title": "Moléculas Voadoras",
-    "section": "Carregando uma molécula armazenada no computador",
-    "text": "Carregando uma molécula armazenada no computador\n      Sem entrar em muitos detalhes, você tem algumas formas para carregar uma molécula de seu interesse no Jmol online visto acima. A mais “chique” é por clique e arraste de mouse do arquivo salvo no computador. Para isso, baixe o arquivo abaixo (…quase um pleonasmo) numa pasta qualquer em seu computador.\n      ——-&gt; arquivo pra baixar: aspirina\n      Pra certificar-se que o arquivo trata de uma imagem de molécula, localize-o e abra-o no seu explorador de arquivos, como você faria com qualquer imagem.\n      Agora…a mágica !!! Volte ao explorador de arquivos. Agora clique no arquivo baixado e arraste-o para o site do Jmol online em que está a molécula de água.\n      E Voilá !!!!! A molécula de aspirina é carregada “viva” nas nuvens !!!! E pode ser trabalhada de diversas maneiras, como acima.\n      Existe uma infinidade de moléculas que podem ser baixadas da internete pra se observar e estudar, tais como fármacos, biomoléculas, cristais, e mesmo organismos simples, como vírus inteiros. Seguem alguns exemplos se você quiser experimentar:\n\nCafeína, um poderoso estimulante;\nInsulina, a proteína cuja falta está relacionada ao diabetes;\nCelulose, a principal fonte de carbono do planeta;\nUm fago (vírus), dispensa palavras (mas tenha paciência, é grandão e carrega lentamente).\n\n      Para mais moléculas, sites e truques do Jmol, consulte o link correlato, sobre o uso do programa e diversos exemplos no site bioQuanti."
-  },
-  {
-    "objectID": "dinamica.html#exemplos-de-sites-recheados-de-moléculas-renderizáveis-em-3d",
-    "href": "dinamica.html#exemplos-de-sites-recheados-de-moléculas-renderizáveis-em-3d",
-    "title": "Moléculas Voadoras",
-    "section": "Exemplos de sites “recheados” de moléculas renderizáveis em 3D",
-    "text": "Exemplos de sites “recheados” de moléculas renderizáveis em 3D\n\n3dChem - moléculas orgânicas e de interesse clínico, e biomoléculas.\nChemTube3D - banco de moléculas orgânicas e animações interativas.\nProteopedia - site nos moldes do Wikipedia, embora para proteínas. 1.PubChem - site da Biblioteca Nacional de Medicina dos E.U.A., com um vasto campo de busca pra pequenas moléculas.\nVirtual Museum of Minerals and Molecules - como traduzido, um banco de dados de minerais e moléculas."
-  },
-  {
-    "objectID": "dinamica.html#ensino-reprodutível-e-um-script-meio-exagerado-para-observar-moléculas-pelo-jmol",
-    "href": "dinamica.html#ensino-reprodutível-e-um-script-meio-exagerado-para-observar-moléculas-pelo-jmol",
-    "title": "Moléculas Voadoras",
-    "section": "Ensino Reprodutível e um script (meio exagerado) para observar moléculas pelo Jmol",
-    "text": "Ensino Reprodutível e um script (meio exagerado) para observar moléculas pelo Jmol\n      A essência do Ensino Reproduzível é permitir que qualquer pessoa execute, altere, ou crie um trecho de código redigido em um bloco de anotações comentado (um script) para determinado alvo no ensino, compilando-o num programa gratuito.\n      Dessa forma, é possível imaginar que uma combinação de comandos (códigos) do Jmol igualmente produza uma imagem de molécula em 3D em que se deseja, por exemplo, focar em deteminado tema de sua estrutura. Para ilustrar esse potencial execute o trecho de código a seguir diretamente na janela do Console do Jmol (aquela de aba amarelinha).\n      Não se preocupe com a quantidade de comandos; estão aí apenas para ilustrar seu potencial de aplicação. Mas, caso deseje conhecer um pouco mais sobre os comandos do Jmol, faça uma visitinha à página de Comandos do site Bioquanti.\n\nbackground black # cor preta do plano de fundo\nload $cholesterol # carrega a molécula de colesterol\ndelay 1 # aguarda 1 segundo\nbackground white # altera a cor do plano de fundo\nspin 80 # gira a molécula\ndelay 3 # ...por 3 segundos\nspin off # interrompe a rotação\ncpk # renderiza como modelo de preenchimento\ncolor cpk # coloriza no padrão de modelos moleculares\nisosurface molecular # renderiza a superfície\nspin 30 # gira mais um poquinho\ndelay 6 # ...também por 3 segundos\nspin off # interrompe novamente a rotação\nzoomTo 0.5 *3  # amplia 300% na tela durante 1 segundo\nisosurface off # retira a superfície molecular\nwireframe only # retorna à representação de varetas\nwireframe 50 # espessura das varetas\nzoomTo 5 *0.01 # ... e vai sumindo aos poucos\n\n      Se gostou, tente repetir o trecho acima, alterando num primeiro momento alguns dos valores do trecho. Num segundo momento, carregue outra molécula que esteja nas nuvens substituindo a 1a. linha do código (load $outra.molécula)."
-  },
-  {
-    "objectID": "rstudioCloud.html",
-    "href": "rstudioCloud.html",
-    "title": "1 - Como usar o R & Rstudio - instalação e nuvem",
-    "section": "",
-    "text": "Existem dois ambientes alternativos para se utilizar o R (programa) e o Rstudio (interface do usário): instalando no computador, ou pelas nuvens. Há poucas diferenças entre ambas as maneiras de se trabalhar com os programas, mas a fundamental é que a instalação pode ser utilizada offline, sem necessidade de internet, enquanto que pelas nuvens, bom, já sabe.",
+    "text": "Prof. Dr. José Maurício Schneedorf Ferreira da Silva\n\nemail: jose.dasilva@unifal-mg.edu.br\nFone: (35) - 3291-1928\nEndereço: Depto. de Bioquímica, Instituto de Ciências Biomédicas, Universidade Federal de Alfenas, UNIFAL-MG. Prédio E, sala 209. Alfenas, MG. CEP: ‘37.130-001’, Brasil\n\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "1 - Como usar o R & Rstudio  - instalação e nuvem"
+      "Contato"
     ]
   },
   {
-    "objectID": "rstudioCloud.html#instalando-o-r-e-rstudio-no-computador",
-    "href": "rstudioCloud.html#instalando-o-r-e-rstudio-no-computador",
-    "title": "1 - Como usar o R & Rstudio - instalação e nuvem",
-    "section": "Instalando o R e RStudio no computador",
-    "text": "Instalando o R e RStudio no computador\n      Você precisa seguir uns poucos passos para instalar o R & RStudio no computador. Na prática, baixa-se ambos os programas e os instala como se faria com qualquer outro programa, tanto faz se para Windows, Linux, ou Mac. Seguem os passos:\n\nAcesse o site do Rstudio e faça o download do programa R. \nInstale o programa com as opções padrão.\nNo mesmo site do ´RStudio procure um pouco mais abaixo pelo instalador mais apropriado a seu sistema operacional.\n\n\n\nBaixe o arquivo e instale-o como qualquer outro programa.\nAbra o programa RStudio, e cuja interface será parecida com a que segue.\n\n\n\n\n\n\n\nFigure 1",
+    "objectID": "jmol.html",
+    "href": "jmol.html",
+    "title": "1 - Usando o Jmol para observar moléculas em 3D",
+    "section": "",
+    "text": "Objetivos:\n  1. Acessar a versão online do Jmol\n  2. Carregar uma molécula no Jmol",
     "crumbs": [
       "Contato",
-      "Gráficos Interativos",
-      "1 - Como usar o R & Rstudio  - instalação e nuvem"
+      "Moléculas em 3D",
+      "1 - Usando o Jmol para observar moléculas em 3D"
     ]
   },
   {
-    "objectID": "rstudioCloud.html#acessando-o-r-rstudio-pelas-nuvens",
-    "href": "rstudioCloud.html#acessando-o-r-rstudio-pelas-nuvens",
-    "title": "1 - Como usar o R & Rstudio - instalação e nuvem",
-    "section": "Acessando o R & Rstudio pelas nuvens",
-    "text": "Acessando o R & Rstudio pelas nuvens\n      Essa é uma opção simples e que não requer qualquer instalação. A interface acessada é praticamente igual à da instalação em computador. Entre algumas vantagens destaca-se a velocidade normalmente superior pra rodar e instalar pacotes, posto que o servidor para esses já está no provedor em nuvem. Mas por ser acesso online, requer uma inscrição inicial, com login e senha. Seguem os passos:\n\nAcesse o site do RStudio Cloud.\n\n\n\nRealize a inscrição (sign up) ou acesse pelo Google (mais simples).\nA janela deverá parecer-se com a que segue, embora sem os projetos listados.\n\n\n\nAgora a parte interessante. Clique em New Project e selecione New Rstudio Project.\n\n\n\nA imagem final será bem parecida com a apresentada pela versão instalada, como visto na Figure 1, veja:\n\n | Pronto ! Você pode utilizar uma ou outra forma para acessar as atividades e objetos didáticos propostos neste material. A seguir serão fornecidas algumas ações e comandos rápidos para se trabalhar com a interface do Rstudio e com o R. Mas apenas para que se consiga criar, executar, e modificar alguns scripts criados para animações, simulações, interatividade, e geovisualização. Mão na massa, agora !\n      Por uma questão de simplicidade para o uso da versão em servidor, sem necessidade de instalação dos programas, bem como por maior velocidade de execução de scripts e instalação de pacotes, optamos neste trabalho por exemplificar os objetos didáticos em nuvem, ou seja, por uso do RStudio Cloud.",
+    "objectID": "jmol.html#onde-começar",
+    "href": "jmol.html#onde-começar",
+    "title": "1 - Usando o Jmol para observar moléculas em 3D",
+    "section": "Onde começar ?",
+    "text": "Onde começar ?\n      Pode-se começar a usar o Jmol de vários modos. Se for usar em seu computador ou notebook, ou mesmo a partir de uma mídia removível (pendrive), pode acessá-lo baixando, descomprimindo e executando o arquivo Jmol.jar presente na pasta principal no site do Jmol.\n      Agora, se não quiser instalar nada, pode também acessá-lo online a partir de diversos sítios. Nesse curso vamos utilizar um bem famoso, adaptado de um dos próprios desenvolvedores do programa. Basta clicar nesse link, numa nova aba, por exemplo:\n \n\nhttps://chemapps.stolaf.edu/jmol/jmol.php?model=water\n\n      Agora, clique na molécula com o botão esquerdo do mouse ou com o touchpad, e faça movimentos. Ou então gire o botão do meio do mouse ou realize gestos de afastamento e proximidade com dois dedos no touchpad. A Figure 1 que segue ilustra o resultado.\n\n\n\n\n\n\n\nFigure 1: Tela (clicável) referente ao modelo da molécula de água renderizado em navegador pelo site do St. Olaff College.\n\n\n\n      Essa é a essência principal ao referenciarmos no título deste curso a ideia de moléculas voadoras.",
+    "crumbs": [
+      "Contato",
+      "Moléculas em 3D",
+      "1 - Usando o Jmol para observar moléculas em 3D"
+    ]
+  },
+  {
+    "objectID": "jmol.html#como-carregar-uma-molécula-online",
+    "href": "jmol.html#como-carregar-uma-molécula-online",
+    "title": "1 - Usando o Jmol para observar moléculas em 3D",
+    "section": "Como carregar uma molécula online ?",
+    "text": "Como carregar uma molécula online ?\n      Pra brincar um pouco com outra molécula, experimente mudar o modelo na própria página de internete, ao final da linha. Por exemplo, de water para tylenol:\n\nhttps://chemapps.stolaf.edu/jmol/jmol.php?model=tylenol\n\n      Você pode tentar fazer isso com outras moléculas, digitando seu nome em inglês, por tratar-se de um site estrangeiro. Mas é claro que o banco de dados dessa busca não é ilimitado, e por vezes o sistema não encontrará a molécula desejada.\n      Mas há alternativas. Uma delas é buscar o nome da molécula em um site utlizado como banco de dados, o PubChem. Exemplificando para a vitamina C (ácido ascórbico):\n\n\n\n1. Entra no site do [PubChem](https://pubchem.ncbi.nlm.nih.gov/) ;\n2. Procura por \"ascorbic acid\" ;\n3. Se existir, digite esse mesmo termo ao final da linha do *JSmol online*, ou seja:\n    https://chemapps.stolaf.edu/jmol/jmol.php?model=ascorbic acid",
+    "crumbs": [
+      "Contato",
+      "Moléculas em 3D",
+      "1 - Usando o Jmol para observar moléculas em 3D"
+    ]
+  },
+  {
+    "objectID": "jmol.html#como-carregar-uma-molécula-online-mas-em-2d",
+    "href": "jmol.html#como-carregar-uma-molécula-online-mas-em-2d",
+    "title": "1 - Usando o Jmol para observar moléculas em 3D",
+    "section": "Como carregar uma molécula online, mas em 2D",
+    "text": "Como carregar uma molécula online, mas em 2D\n      Por vezes pode ser interessante a visulização estática e bidimensional de um modelo molecular. Para isso, basta acrescentar “image2d” à linha de código, como segue:\n\nhttps://chemapps.stolaf.edu/jmol/jmol.php?model=tylenol&image2d",
+    "crumbs": [
+      "Contato",
+      "Moléculas em 3D",
+      "1 - Usando o Jmol para observar moléculas em 3D"
+    ]
+  },
+  {
+    "objectID": "pacotes.html",
+    "href": "pacotes.html",
+    "title": "4 - Instalando pacotes no RStudio",
+    "section": "",
+    "text": "Diferentemente do pacote basic para elaboração de gráficos, e que é inerente à instalação original do R, os pacotes de animação e interatividade de que trata esta material precisam ser instalados. Para isso, siga as instruções abaixo, exemplificadas para o primeiro pacote de animação que será visto, anim.plots.",
     "crumbs": [
       "Contato",
       "Gráficos Interativos",
-      "1 - Como usar o R & Rstudio  - instalação e nuvem"
+      "4 - Instalando pacotes no `RStudio`"
+    ]
+  },
+  {
+    "objectID": "pacotes.html#carregando-o-pacote-instalado",
+    "href": "pacotes.html#carregando-o-pacote-instalado",
+    "title": "4 - Instalando pacotes no RStudio",
+    "section": "Carregando o pacote instalado",
+    "text": "Carregando o pacote instalado\n      O R permite que instale um número gigantesco de pacotes. Mas é claro que você não os utilizará simultaneamente. Dessa forma, o R precisa “saber” qual o pacote que se deseja no momento, o que é realizado pelo comando library, e ilustrado abaixo para o pacote anim.plots, como segue:\n\nlibrary(anim.plots)\n\n      Pronto !! Pacote instalado. **Para usar qualquer pacote instalado do R, é necessário carregá-lo",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "4 - Instalando pacotes no `RStudio`"
+    ]
+  },
+  {
+    "objectID": "graphics.html",
+    "href": "graphics.html",
+    "title": "3 - Gráficos básicos e simulações",
+    "section": "",
+    "text": "Você não precisa instalar mais nada pra trabalhar com gráficos no R. Isso porque o sistema já possui um conjunto de pacotes na sua instalação, incluindo um pacote para gráficos (graphics).\n      Para fazer seu primeiro gráfico, basta copiar e colar o trecho abaixo num script aberto no Rstudio, tanto faz se instalado ou nas nuvens (RStudio Cloud), executando-o em seguida.\n\ny = c(1,2,4,8,16,32)  # vetor de números\nplot(y) # comando pra \"plotar\" o gráfico\n\n\n\n\n\n\nUm gráfico simples no R.\n\n\n\n\n      Se você obteve como resultado a imagem acima, parabéns !! Você fez o seu primeiro gráfico no R !!! Tá achando pouco ?! Você fez um gráfico numa linguagem orientada a objeto em programa de computação estatística !!!\n      Uma dica importantíssima: como se pode observar do código acima, “para se colocar valores em sequência, como numa coluna de planilha eletrônica, o R precisa”ler” um vetor iniciado por “c” (de “concatenated”), seguido dos valores entre parênteses (()) e separados por vírgula !\n      Agora, se quiser caprichar um pouco mais, pode colocar uma expressão sobre uma sequência de números igualmente espaçados. Exemplificando:\n\n\nx = 1:10 # vetor de valores de 0 a 10,  com intervalo unitário\ny = x^2 # expressão aplicada ao vetor \"x\"\nplot(x,y) # gráfico produzido\n\n\n\n\n\n\nUm gráfico de relação quadrática (x²) entre xe y.\n\n\n\n\n      Também dá pra elaborar o gráfico sem precisar criar a variável independente y, apenas inserindo sua função em x no próprio comando. Experimente:\n\nx= 1:10\nplot(x,x^2)\n\n      Ou….pode também escolher os números que deseja plotar:\n\nx = c(1,2,5,12,31)\ny= c(4,-5,12,47,-2)\nplot(x,y)\n\n\n\n\n\n\nGráfico de valores aleatórios de x e y.",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "3 - Gráficos básicos e simulações"
+    ]
+  },
+  {
+    "objectID": "graphics.html#sec-basico",
+    "href": "graphics.html#sec-basico",
+    "title": "3 - Gráficos básicos e simulações",
+    "section": "",
+    "text": "Você não precisa instalar mais nada pra trabalhar com gráficos no R. Isso porque o sistema já possui um conjunto de pacotes na sua instalação, incluindo um pacote para gráficos (graphics).\n      Para fazer seu primeiro gráfico, basta copiar e colar o trecho abaixo num script aberto no Rstudio, tanto faz se instalado ou nas nuvens (RStudio Cloud), executando-o em seguida.\n\ny = c(1,2,4,8,16,32)  # vetor de números\nplot(y) # comando pra \"plotar\" o gráfico\n\n\n\n\n\n\nUm gráfico simples no R.\n\n\n\n\n      Se você obteve como resultado a imagem acima, parabéns !! Você fez o seu primeiro gráfico no R !!! Tá achando pouco ?! Você fez um gráfico numa linguagem orientada a objeto em programa de computação estatística !!!\n      Uma dica importantíssima: como se pode observar do código acima, “para se colocar valores em sequência, como numa coluna de planilha eletrônica, o R precisa”ler” um vetor iniciado por “c” (de “concatenated”), seguido dos valores entre parênteses (()) e separados por vírgula !\n      Agora, se quiser caprichar um pouco mais, pode colocar uma expressão sobre uma sequência de números igualmente espaçados. Exemplificando:\n\n\nx = 1:10 # vetor de valores de 0 a 10,  com intervalo unitário\ny = x^2 # expressão aplicada ao vetor \"x\"\nplot(x,y) # gráfico produzido\n\n\n\n\n\n\nUm gráfico de relação quadrática (x²) entre xe y.\n\n\n\n\n      Também dá pra elaborar o gráfico sem precisar criar a variável independente y, apenas inserindo sua função em x no próprio comando. Experimente:\n\nx= 1:10\nplot(x,x^2)\n\n      Ou….pode também escolher os números que deseja plotar:\n\nx = c(1,2,5,12,31)\ny= c(4,-5,12,47,-2)\nplot(x,y)\n\n\n\n\n\n\nGráfico de valores aleatórios de x e y.",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "3 - Gráficos básicos e simulações"
+    ]
+  },
+  {
+    "objectID": "graphics.html#incrementando-um-pouquinho-os-gráficos",
+    "href": "graphics.html#incrementando-um-pouquinho-os-gráficos",
+    "title": "3 - Gráficos básicos e simulações",
+    "section": "Incrementando um pouquinho os gráficos",
+    "text": "Incrementando um pouquinho os gráficos\n      Existe uma quantidade imensa de tutoriais na web, além de uma vasta literatura sobre o uso do pacote graphicspara se construir gráficos. Mas a proposta aqui é que você aprenda apenas o fundamental pra elaborar um gráfico, pois o objetivo é animá-lo, e não complicá-lo !!\n      Mesmo assim, alguns argumentos da função plot podem ilustrar o potencial de seu uso. Como explicado anteriormente, ainda que as funções do R possuam diversos argumentos, você pode executá-la com poucos ou apenas um, somente.\n      Os argumentos da função plot são os descritos abaixo:\n\nplot(x, y = NULL, type = \"p\",  xlim = NULL, ylim = NULL,\n     log = \"\", main = NULL, sub = NULL, xlab = NULL, ylab = NULL,\n     ann = par(\"ann\"), axes = TRUE, frame.plot = axes,\n     panel.first = NULL, panel.last = NULL, asp = NA,\n     xgap.axis = NA, ygap.axis = NA,\n     ...)\n\n      Um pouco confuso, é ?! Explicando alguns dos argumentos acima, e outros que funcionam com a função plot:\n\ntype - tipo de plot: pontos \"p\", linhas \"l\", pontos+linhas com cruzamento \"o\", pontos+linhas sem cruzamento \"b\", linhas verticais \"h\", steps \"s\", sem representação \"n\";\n\ncex - tamanho do ponto (ex: 0.5, 20);\n\nlty - \"line type\", tipo da linha; pode se representado por um valor (1,2,...) ou por \"solid\", \"dotted\", \"dashed\", \"dotdash\", \"longdash\", \"twodash\";\n\nlwd - \"line width\", largura da linha (6 níveis)\n\npch - tipo de ponto (1-25)\n\nxlim, ylim - limite dos eixos; ex: ylim=c(-2,10)\n\nxlab, ylab - etiquetas (\"label\") dos gráficos\n\ncol - cor (números ou nomes); ex: \"red\", \"orange\"\n\nmain - título do gráfico\n\nsub - subtítulo do gráfico\n\nlog - eixo logaritmo\n\n      O gráfico de pontos não é o único que se pode fazer com o pacote graphics. Também dá pra fazer tudo isso abaixo, com cada função apresentando os seus próprios argumentos:\n\nplot() - pontos, linhas, pontos e linhas\nbarplot() - plot de barras\nhist() - histograma\nboxplot() - gráfico Box-Whiskers\npersp() - gráfico 3D\npie() - gráfico de torta\ndotplot() - sequência de valores (com *jitter*, espalhameto de pontos)\npairs() - painel múltiplo com todas as variáveis plotadas\nmatplot() - plota vetores de matrizes, como *dataframes*\n\n      Mas chega de enrolação !! Para sentir de perto o “poder” desse pacote básico para gráficos, veja a imagem que segue retirada do MAPA, 1o. Bimestre de Ciências da Natureza e Suas Tecnologias:\n\n\n\n\n\n\nFigure 1\n\n\n\n      Agora experimente reproduzir a imagem do MAPA copiando, colando e executando o trecho abaixo numa janela de script do RStudio:\n\nt &lt;- c(0,1,2,3,4) # introduz os dados \nv &lt;- c(0,5,10,15,20)\nplot(t,v) # faz o gráfico\n\n\n\n\n\n\nUm gráfico simples pra reprodução de figura do MAPA.\n\n\n\n\n      Agora, dá pra incrementar um pouco mais, para aproximar-se da imagem da figura de referência do MAPA. Segue o trecho pra cópia e execução:\n\nt &lt;- c(0,1,2,3,4) # introduz os dados \nv &lt;- c(0,5,10,15,20)\nplot(t,v,main=\"Movimento Uniforme: Aceleração\", # realiza o gráfico com título...\n     xlab=\"t(s)\", ylab=\"v(/s)\", # ... etiquetas nos eixos....\n     type=\"l\", col=\"red\") # ... tipo e cor da linha, e ....\ngrid() # divisão para facilitar a visualização\n\n      Dando tudo certo, segue o que se produz com o código:\n\n\n\n\n\nReprodução de gráfico com pacote graphics do R, tal como apresentado no MAPA - Ciências da Natureza, 1o. Bimestre, pg. 134 (2024).",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "3 - Gráficos básicos e simulações"
+    ]
+  },
+  {
+    "objectID": "graphics.html#simulando-curvas-com-a-função-curve",
+    "href": "graphics.html#simulando-curvas-com-a-função-curve",
+    "title": "3 - Gráficos básicos e simulações",
+    "section": "Simulando curvas com a função curve",
+    "text": "Simulando curvas com a função curve\n      Uma situação bem comum no aprendizado em Matemática e de alguns temas em Ciências da Natureza se dá quando desejamos observar como uma variável se comporta em relação a outra, fornecida uma equação para tal. Nesse caso, pode-se utilizar a função curve do R, mais simples até em seus argumentos que a funçãoplot. Para ilustrar isso, execute separadamente os exemplos abaixo num script:\n\ncurve(x^2) # função quadrática\ncurve(log10(x), xlim=c(1,1e3), col=\"blue\") # função logarítmica e coloração\ncurve(x^2-2*x+7, xlim=c(-10,10)) # função quadrática com limites no eixo X\ncurve(sin(x), from=0, to=90, \n      xlab=\"ângulo(graus)\", ylab=\"seno(ângulo)\", col=\"red\", n=1000) # com etiquetas nos eixos\n\n\n\n\n\n\nAlguns exemplos para a função curve.\n\n\n\n\n      Ilustrando-se mais objetivamente, pode-se reproduzir (como também modificar) o trecho de código que segue logo após a figura abaixo extraída do MAPA:\n\n\n\nFigura extraída de exercício do MAPA, 1o. Bimestre de Matemática e Suas Tecnologias, p.32.\n\n\n\nx =0:70\ncurve(1/10*x + 1,\n      xlab=\"profundidade\", ylab=\"pressão\")\n\n\n\n\nReprodução de figura estraída do exercício acima do MAPA.\n\n\n\n\n      Muito legal também é construir gráficos a partir de relações gráficas a partir de equações, tal como a apresentada na figura abaixo (MAPA):\n\n\n\nTabela extraída do MAPA, 1o. Bim., C. Natureza, p. 137, 2024.\n\n\n      Usando-se a função curve pode-se obter uma simulação da relação apontada na seta, a partir do trecho de código abaixo:\n\ns0 = 5 # distância inicial (m)  # parâmetros iniciais pra equação de distância\nv0= 7 # velocidade inicial (m/s)\na = 3 # aceleração (m/s^2)\ncurve(s0+v0*x+1/2*a*x^2,  # a equação de distância \n      xlim=c(0,100), # limites do eixoi de tempo\n      xlab=\"tempo (s)\", ylab=\"distância(m)\")  # etiquetas dos eixos\n\n\n\n\n\n\nEmprego da função curvedo R para simular uma equação para distância percorrida em movimento horizontal (MAPA, 1o. Bim., C. Natureza, p. 137, 2024).",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "3 - Gráficos básicos e simulações"
+    ]
+  },
+  {
+    "objectID": "leaflet.html",
+    "href": "leaflet.html",
+    "title": "10 - Mapas interativos: o pacote leaflet",
+    "section": "",
+    "text": "Não só de gráficos vive o R (ou o Ensino, de modo geral). O pacote leaflet, por exemplo, permite gerar interatividade cartográfica, ou seja, uma geovisualização de dados retratados em um mapa. Isso pode ser particularmente útil quando se deseja uma rápida visualização de alguma informação diretamente num mapa cartográfico, como distribuição de renda, informações de saúde e moléstias, áreas de desmatamento, de queimadas, etc. Exemplos variados de bancos de dados desse tipo são acessíveis, por exemplo, pelos sites do IBGE, DATA SUS, Portal de Dados Abertos do Governo Brasileiro, entre vários.\n## Estabelecendo coordenadas\nlibrary(leaflet)\nleaflet() %&gt;%  # carrega-se o pacote\n  addTiles() %&gt;%  # adiciona-se as \"peças\" (tiles)\n  setView(lng= -56.0949, lat= -15.5989, zoom = 4)\nlibrary(leaflet)\nleaflet() %&gt;%  # carrega-se o pacote\n  addTiles() %&gt;%  # adiciona-se as \"peças\" (tiles)\n  setView(lng= -56.0949, lat= -15.5989, zoom = 5) %&gt;% # adiciona-se as coordenadas desejadas e o nível de ampliação\n  addMarkers(lng=-56.0949, lat=-15.5989)\nlibrary(leaflet)\nleaflet() %&gt;%  # carrega-se o pacote\n  addTiles() %&gt;%  # adiciona-se as \"peças\" (tiles)\n  setView(lng= -56.0949, lat= -15.5989, zoom = 5) %&gt;% # adiciona-se as coordenadas desejadas e o nível de ampliação\n  addMarkers(lng=-56.0949, lat=-15.5989,\n             popup=\"&lt;b&gt;650.912 habitantes&lt;/b&gt;&lt;br&gt;&lt;a href='https://www.cuiaba.mt.gov.br/'&gt;Município&lt;/a&gt;\") # adiciona-se informação e link ao marcador",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "10 - Mapas interativos: o pacote `leaflet`"
+    ]
+  },
+  {
+    "objectID": "leaflet.html#usando-o-leaflet-com-uma-planilha-contendo-várias-coordenadas",
+    "href": "leaflet.html#usando-o-leaflet-com-uma-planilha-contendo-várias-coordenadas",
+    "title": "10 - Mapas interativos: o pacote leaflet",
+    "section": "Usando o leaflet com uma planilha contendo várias coordenadas",
+    "text": "Usando o leaflet com uma planilha contendo várias coordenadas\n      Ainda que seja legal a interatividade cartográfica mencionada acima faz mais sentido quando temos um conjunto de dados associados a cada coordenada geográfica, permitindo ilustrar-se uma quantidade maior de informações num mapa.\n      Para ilustrar isso vamos utilizar um levantamento de alguns aeroportos e aeródromos pelo Brasil. Para isso, carregue os dados que seguem transcrevendo o trecho de código abaixo para um script.\n\ndados_aero &lt;-structure(list(aerodromo = c(\"Aero Agrícola Gaivota\", \"Aero Agrícola Sapezal\", \n\"Aeroagrícola Solo\", \"Aeroclube de Atibaia\", \"Aeroclube de Bento Gonçalves\", \n\"Aeroclube de Eldorado do Sul\", \"Aeroclube de Foz do Iguaçu\", \n\"Aeroclube de João Pessoa\", \"Aeroclube de Nova Iguaçu\", \"Aeroclube de Passo Fundo\", \n\"Aeroclube de Rio Negrinho\", \"Aeroclube de Rondônia\", \"Aeroclube de Santa Catarina\", \n\"Aeroclube São José do Rio Pardo\", \"Aeródomo Novo Aripuanã\", \n\"Aeródromo Aerocampo\", \"Aeródromo Aeroporto Regional da Zona da Mata\", \n\"Aeródromo Aero Rural\", \"Aeródromo Aero Z Ferrus\", \"Aeródromo Afonso Pena\", \n\"Aeródromo Agricenter\", \"Aeródromo Agrícola Rio Galhão\", \n\"Aeródromo Agropecuária Céu Aberto Ltda\", \"Aeródromo Agropecuária Nova Santana\", \n\"Aeródromo Agrosan\", \"Aeródromo Agrovale\", \"Aeródromo Aguinaldo Pereira Lima\", \n\"Aeródromo Alenquer\", \"Aeródromo Almerim\", \"Aeródromo Altamira\", \n\"Aeródromo Amambaí\", \"Aeródromo Amapá\", \"Aeródromo Anamoim\", \n\"Aeródromo André Maggi\", \"Aeródromo Ângelo Ponzoni\", \"Aeródromo Aparecida do Taboado\", \n\"Aeródromo Aparecido O. Silva\", \"Aeródromo Araguaiana\", \"Aeródromo Araguari\", \n\"Aerodromo Areia Branca\", \"Aeródromo Ariquemes\", \"Aeródromo Arraias\", \n\"Aeródromo Arroio Grande\", \"Aeródromo Associação Tocantinense de Aviação\", \n\"Aeródromo Auaris\"), lat = c(-22.9805, -13.5511, -23.4471, -23.1281, \n-29.1473, -30.0507, -25.3696, -7.09217, -22.7461, -28.2509, -26.3207, \n-8.79415, -27.6116, -21.6473, -5.11774, -13.6365, -21.5131, -9.92088, \n0.993532, -25.5293, -22.6239, -10.4239, -9.50103, -10.1417, -11.3977, \n-9.50436, -23.6746, -1.91731, -1.47771, -3.25205, -23.1439, 2.07607, \n1.78498, -9.89865, -26.9995, -20.0891, -22.0691, -15.7092, -18.6679, \n-7.98825, -9.88046, -13.0259, -32.2293, -10.1824, 4.00087), long = c(-51.5425, \n-58.8603, -48.8665, -46.5747, -51.5411, -51.4434, -54.4707, -34.8417, \n-43.4642, -52.5168, -49.5219, -63.8574, -48.6732, -46.9282, -60.3651, \n-57.9038, -43.1735, -56.0051, -51.1208, -49.1748, -55.5691, -46.0765, \n-61.2744, -60.5479, -58.1215, -40.3698, -49.8155, -54.7218, -52.5825, \n-52.2553, -55.2077, -50.8597, -67.4055, -58.5819, -51.1401, -51.1478, \n-48.7067, -51.8377, -48.1903, -61.0506, -63.0471, -46.8838, -53.0561, \n-48.5455, -64.5043), uf = c(\"PR\", \"MT\", \"SP\", \"SP\", \"RS\", \"RS\", \n\"PR\", \"PB\", \"RJ\", \"RS\", \"SC\", \"RO\", \"SC\", \"SP\", \"AM\", \"MT\", \"MG\", \n\"MT\", \"AP\", \"PR\", \"MS\", \"TO\", \"MT\", \"MT\", \"MT\", \"BA\", \"PR\", \"PA\", \n\"PA\", \"PA\", \"MS\", \"AP\", \"AM\", \"MT\", \"SC\", \"MS\", \"SP\", \"MT\", \"MG\", \n\"AM\", \"RO\", \"TO\", \"RS\", \"TO\", \"RR\")), class = \"data.frame\", row.names = c(NA, \n-45L))\n\n      Agora observe cada aeródromo e aeroclube no mapa, sem a necessidade de clique de mouse, apenas passando o mesmo sobre o mapa, com auxílio do código abaixo:\n\nlibrary(htmltools) # carrega pacote para facilitar a visualização por \"mouseover\"\nlibrary(leaflet)\nleaflet(dados_aero) %&gt;% addTiles() %&gt;%\n  addMarkers(~long, ~lat, label = ~htmlEscape(aerodromo)) # adiciona os marcadores e associa aos nomes de cada aeródromo",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "10 - Mapas interativos: o pacote `leaflet`"
+    ]
+  },
+  {
+    "objectID": "leaflet.html#referência-do-pacote",
+    "href": "leaflet.html#referência-do-pacote",
+    "title": "10 - Mapas interativos: o pacote leaflet",
+    "section": "Referência do pacote:",
+    "text": "Referência do pacote:\n\nGeral\nManual:\nTutorial",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "10 - Mapas interativos: o pacote `leaflet`"
+    ]
+  },
+  {
+    "objectID": "animationPlots.html",
+    "href": "animationPlots.html",
+    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
+    "section": "",
+    "text": "Daqui em diante serão apresentados alguns pacotes do R que permitem animações, interatividade e simulações gráficas e de geovisualização. Cada pacote será brevemente descrito, sucedendo-se sua ilustração com temas contidos no MAPA - Material de Apoio Pedagógico para Aprendizagens da Secretaria de Educação de Minas Gerais.\n      Será fornecida uma breve apresentação de cada pacote, o problema e seu emprego ilustrado junto ao MAPA, o trecho de código para execução/modificação no RStudio, seu resultado, e as vantagens/desvantagens aparentes de cada pacote.\n      Para facilitar o entendimento de cada pacote, optou-se por apresentar uma sequência de definição, sintaxe, exemplos gerais, ilustração do MAPA, sugestões, e referências.",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "5 - Animando um gráfico básico - o pacote `anim.plots`"
+    ]
+  },
+  {
+    "objectID": "animationPlots.html#uma-palavrinha-antes",
+    "href": "animationPlots.html#uma-palavrinha-antes",
+    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
+    "section": "",
+    "text": "Daqui em diante serão apresentados alguns pacotes do R que permitem animações, interatividade e simulações gráficas e de geovisualização. Cada pacote será brevemente descrito, sucedendo-se sua ilustração com temas contidos no MAPA - Material de Apoio Pedagógico para Aprendizagens da Secretaria de Educação de Minas Gerais.\n      Será fornecida uma breve apresentação de cada pacote, o problema e seu emprego ilustrado junto ao MAPA, o trecho de código para execução/modificação no RStudio, seu resultado, e as vantagens/desvantagens aparentes de cada pacote.\n      Para facilitar o entendimento de cada pacote, optou-se por apresentar uma sequência de definição, sintaxe, exemplos gerais, ilustração do MAPA, sugestões, e referências.",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "5 - Animando um gráfico básico - o pacote `anim.plots`"
+    ]
+  },
+  {
+    "objectID": "animationPlots.html#o-pacote-anim.plots",
+    "href": "animationPlots.html#o-pacote-anim.plots",
+    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
+    "section": "O pacote anim.plots",
+    "text": "O pacote anim.plots\n\nDefinição:\n      O pacote anim.plots é uma biblioteca para animação de gráficos elaborados pelo sistema básico desses do R (basic), tal como visto na ?@sec-basico. Ele permite a animação de gráfico de pontos, curvas, linhas, barras, contorno, e histograma, entre outros.\n\n\nSintaxe:\n\nanim.curve(expr, x = NULL, from = 0, to = 1, n = 255, times, ...)\nObs: outras atribuições do plot são iguas às do comando plot (cex, pch, type, etc)\n\nexpr: expressão com 2 argumentos, ou função de x em t;\n\nn: representa o no. de pontos que serão gerados pela função ao longo do eixo x (se type=\"l\", faz a linha, que pode ser meio ríspida se houver poucos pontos);\n\nx: valores de x em que a função será expressada;\n\nfrom=, to= : substitui o \"x\" ; \n\ntimes: vetor de valores de t no qual a função será avaliada. Cada valor cria um frame da animação.",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "5 - Animando um gráfico básico - o pacote `anim.plots`"
+    ]
+  },
+  {
+    "objectID": "animationPlots.html#exemplos-gerais",
+    "href": "animationPlots.html#exemplos-gerais",
+    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
+    "section": "Exemplos gerais:",
+    "text": "Exemplos gerais:\n      Agora sim, animação em gráficos !! Após instalar o pacote, copie o trecho que segue e reproduza-o num script do RStudio.\n\nlibrary(anim.plots)  # carrega o pacote\nanim.curve(x^t, times=1:5, n=5) # anima uma linha com função x^t, com 5 frames variando no expoente da equação de 1 a 5\n\n      O gráfico gerado na aba de Plots do RStudio deverá parecer-se com uma animação na qual uma linha do gráfico torna-se progressivamente côncava durante 5 segundos. Se não der certo de primeira, rode a linha da animação novamente (costuma funcionar!). Como não é possível demonstrar isso numa página estática, segue o resultado do código, embora também estático.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Sequência de apresentação da função “x^t” com variação em “t” (sentido horário). No RStudio essa sequência converge a uma animação.\n\n\n\n      Como mencionado, é possível aplicar vários argumentos do comando plot na animação. Experimente variar o símbolo e a cor, tal como segue:\n\nlibrary(anim.plots)  # carrega o pacote\nanim.curve(x^t, times=1:5, n=5, type=\"p\", col=\"darkgreen\", cex=2, pch=16) # t vai de 1 a 5, com 5 pontos no gráfico, mas com cor, tipo (pch) e tamanho (cex) do símbolo\n\n      Outra forma interessante de animar um gráfico pelo pacote anim.plots consiste em visualizar um ponto apenas no plot, caminhando ao longo da função. O trecho abaixo exemplifica essa situação visualizada na aba Plotsdo RStudio.\n\nlibrary(anim.plots)\nx=1:10 # sequência de 1 a 10, e com intervalo unitário\nanim.plot(x, -x^3-3*x+7, times=1:10, \n          col=\"green\", pch=19, cex=2) # cor, tipo e tamanho do símbolo\n\n      Como não é possível repassar aqui a simulação, segue uma imagem ilustrativa de seu resultado.\n\n\n\nUm gráfico estático mas representativo do trecho de código acima, representando o movimento de um único ponto ao longo de uma expressão.\n\n\n      Outra animação bem legal que ilustra o pacote envolve a formação de uma curva senoide no tempo. Veja o trecho simples abaixo, e reproduza-o no RStudio.\n\nlibrary(anim.plots)\nanim.curve(sin(x*t), times=1:30, n=100, speed=12, col=\"darkgreen\", from=-1, to=1)\n\n\n\n\nImagem estática de uma animação com senoide no tempo.",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "5 - Animando um gráfico básico - o pacote `anim.plots`"
+    ]
+  },
+  {
+    "objectID": "animationPlots.html#salvando-a-animação",
+    "href": "animationPlots.html#salvando-a-animação",
+    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
+    "section": "Salvando a animação",
+    "text": "Salvando a animação\n      O anim.plots apresenta o resultado da animação dentro do ambiente do RStudio. Isso não é muito prático para ilustrar alguma situação gráfica em animação, posto que há necessidade dos programas, abertura de arquivo, compilação, etc. Assim, é desejável que a animação seja armazenada num arquivo simples.\n      Para o anim.plots é possível salvar o arquivo como uma imagem animada em diversos formatos, como GIF (imagem) ou HTML (navegador). Dessa maneira, para ilustrar algum gráfico animado, basta abrir o arquivo em qualquer computador ou dispositivo móvel. O comando com os argumentos opcionais de formato de arquivo é:\n\nanim.save(obj, filename, gif = \"GIF\", mp4 = \"Video\", swf = \"SWF\", html = \"HTML\", tex = \"Latex\")  # os argumentos vão entre parênteses\n\nOnde:\n  obj = o nome temporário da animação\n  filename = nome do arquivo de animação a salvar\n  gif, mp4, swf, html, tex = alternativamente, o atributo do arquvio de animação",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "5 - Animando um gráfico básico - o pacote `anim.plots`"
+    ]
+  },
+  {
+    "objectID": "animationPlots.html#um-exemplo-do-mapa",
+    "href": "animationPlots.html#um-exemplo-do-mapa",
+    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
+    "section": "Um exemplo do MAPA",
+    "text": "Um exemplo do MAPA\n      Para ilustrar o salvamento de uma animação, será retomado o exemplo de movimento acelerado.\n\nSegue o código e uma imagem estática do resultado. A imagem é salva como “acelera.gif” em seu computador, e imediatamente apresentada num editor de imagens de modo animado.\n\nacelera &lt;- anim.curve(x*t, times=1:50/10, from=0, to=10, type=\"l\", col=\"pink\", lwd=5, xlab=\"tempo, s\", ylab=\"velocidade, m/s\")  # lwd é a espessura da linha\nanim.save(acelera, \"acelera.gif\")\n\n\n\n\nRepresentação estática de um quadro de animação gerado pelo anim.plots para exemplificar o efeito da aceleração no tempo, e a partir de relação gráfica constante no MAPA, 1o. Bimestre de C. Natureza e Suas Tecnologias, p.136, 2024.\n\n\n\nSalvando em HTML\n      O armazenamento do arquivo de animação em HTML possui algumas características adicionais interessantes. Primeiramente, um arquivo HTML pode ser lido em qualquer browser, não sendo necessário conexão à internet. Além disso, o formato salvo permite selecionar os quadros (frames) da animação, variar a velocidade de sua apresentação, além da visualização do código empregado para a compilação. Para o exemplo de aceleração acima, o trecho de código e um resultado estático são apresentados a seguir.\n\nacelera &lt;- anim.curve(x*t, times=1:50/10, from=0, to=10, type=\"l\", col=\"pink\", lwd=5, xlab=\"tempo, s\", ylab=\"velocidade, m/s\")  # lwd é a espessura da linha\nanim.save(acelera, \"acelera.html\")\n\n\n\n\nSimulação do movimento de aceleração com armazenamento do arquivo em HTML.\n\n\n      Se desejar outros exemplos e variações para a função anim.plots, experimente também a função anim.curve fornecida individualmente abaixo. Para salvar, contudo, será necessário adaptar o comando de salvamento anterior.\n      Outros exemplos mais complexo são visualizados abaixo. Basta copiar, colar, e rodar os trechos individualmente num script do R para observar seu efeito.\n\n## Alguns exemplos:\n\nlibrary(anim.plots)  # carrega o pacote\n\nanim.curve(x^t, times=1:5, n=5, type=\"p\", col=\"darkgreen\", cex=2, pch=15) # t vai de 1 a 5, com 5 pontos no gráfico\n\nanim.curve(x^t, times=1:5, n=10, type=\"p\") # t vai de 1 a 5, com 10 pontos no gráfico\n\nanim.curve(x^t, times=1:10, n=10, type=\"p\") # t vai de 1 a 10, formando 10 frames, e com 10 pontos no gráfico\n\nanim.curve(x^t, times=1:10, n=10, type=\"p\", speed= 5) # t vai de 1 a 10, com 10 pontos no gráfico, e velocidade 5x maior\n\nanim.curve(x^t, times=1:10/5, n=10, type=\"p\") # t vai de 1 a 10, com 10 pontos no gráfico, com o 5x a velocidade, mas com desenho diferente !\n\nanim.curve(x^t, times=1:10/1, n=10, type=\"p\") # t vai de 1 a 10, com 10 pontos no gráfico\n\nanim.curve(x^t, times=1:10/2, n=10, type=\"p\") # t vai de 1 a 10, com 10 pontos no gráfico, mas com o dobro da velocidade do anterior",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "5 - Animando um gráfico básico - o pacote `anim.plots`"
+    ]
+  },
+  {
+    "objectID": "animationPlots.html#referência-do-pacote",
+    "href": "animationPlots.html#referência-do-pacote",
+    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
+    "section": "Referência do pacote:",
+    "text": "Referência do pacote:\n\nGeral\nManual:\nTutorial:",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "5 - Animando um gráfico básico - o pacote `anim.plots`"
+    ]
+  },
+  {
+    "objectID": "r_cheat.html",
+    "href": "r_cheat.html",
+    "title": "R - folha de dicas",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "jmolPart.html",
+    "href": "jmolPart.html",
+    "title": "PARTE 1 - Jmol",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Contato",
+      "Moléculas em 3D",
+      "Jmol"
+    ]
+  },
+  {
+    "objectID": "ferramentas.html",
+    "href": "ferramentas.html",
+    "title": "Um pouco sobre as ferramentas",
+    "section": "",
+    "text": "São vários os programas disponíveis para observação e estudo tridimensional de modelos atômicos, e que cujo acesso se realiza por computador, dispositivos móveis, e mesmo pela internete. Uns são gratuitos, outros de demonstração gratuita, outros são pagos. Numa lista pequena, pode-se mencionar:\n\nPymol\nMaestro\niMolView\nVMD\nUCSF Chimera\nVesta\nQuteMol\n\n      Alguns programas também permitem a construção de moléculas e sua representação em 3D, como por exemplo:\n\nMolView\nChemSketch\nDIY-molecules\n\n      Por sua vez, o Jmol é um programa multiplataforma (Windows, Mac OS X, Linux, Unix) elaborado em ambiente Java, e pode ser executado tanto em versão fechada (standalone), como integrado a outras aplicações em Java, ou ainda junto a buscadores de internet por auxílio de um applet. Diferente de programas comuns, ela não requer instalação, apenas execução de arquivo Java. Dessa forma, o Jmol pode rodar tanto a partir de uma pasta de diretório contendo seus arquivos, como a partir de um disco rígido ou mídia removível (pendrive). Além disso é um programa de código-fonte e distribuição livres para representação de modelos moleculares tridimensionais, permite uma diversidade de visualizações e cores, movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, e animações, dentre outros. Existe um número muito grande de portais na internet que utilizam o Jmol, a começar pela lista disponível na página da comunidade Wiki.\n      Complementarmente, o acesso ao Jmol pode ser realizado pela internete, sem a necessidade de arquivos no computador. Dentre os diversos sites que possuem o applet JSmol que permite esse acesso, sugerimos clicar na imagem abaixo, que direcionará ao applet do website da St. Olaf College, ilustrando uma molécula de água:",
+    "crumbs": [
+      "Contato",
+      "O Curso",
+      "Um pouco sobre as ferramentas"
+    ]
+  },
+  {
+    "objectID": "ferramentas.html#visualização-de-moléculas-em-3d-e-animações",
+    "href": "ferramentas.html#visualização-de-moléculas-em-3d-e-animações",
+    "title": "Um pouco sobre as ferramentas",
+    "section": "",
+    "text": "São vários os programas disponíveis para observação e estudo tridimensional de modelos atômicos, e que cujo acesso se realiza por computador, dispositivos móveis, e mesmo pela internete. Uns são gratuitos, outros de demonstração gratuita, outros são pagos. Numa lista pequena, pode-se mencionar:\n\nPymol\nMaestro\niMolView\nVMD\nUCSF Chimera\nVesta\nQuteMol\n\n      Alguns programas também permitem a construção de moléculas e sua representação em 3D, como por exemplo:\n\nMolView\nChemSketch\nDIY-molecules\n\n      Por sua vez, o Jmol é um programa multiplataforma (Windows, Mac OS X, Linux, Unix) elaborado em ambiente Java, e pode ser executado tanto em versão fechada (standalone), como integrado a outras aplicações em Java, ou ainda junto a buscadores de internet por auxílio de um applet. Diferente de programas comuns, ela não requer instalação, apenas execução de arquivo Java. Dessa forma, o Jmol pode rodar tanto a partir de uma pasta de diretório contendo seus arquivos, como a partir de um disco rígido ou mídia removível (pendrive). Além disso é um programa de código-fonte e distribuição livres para representação de modelos moleculares tridimensionais, permite uma diversidade de visualizações e cores, movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, e animações, dentre outros. Existe um número muito grande de portais na internet que utilizam o Jmol, a começar pela lista disponível na página da comunidade Wiki.\n      Complementarmente, o acesso ao Jmol pode ser realizado pela internete, sem a necessidade de arquivos no computador. Dentre os diversos sites que possuem o applet JSmol que permite esse acesso, sugerimos clicar na imagem abaixo, que direcionará ao applet do website da St. Olaf College, ilustrando uma molécula de água:",
+    "crumbs": [
+      "Contato",
+      "O Curso",
+      "Um pouco sobre as ferramentas"
+    ]
+  },
+  {
+    "objectID": "ferramentas.html#gráficos-animados-simulações-e-visualização-cartográfica",
+    "href": "ferramentas.html#gráficos-animados-simulações-e-visualização-cartográfica",
+    "title": "Um pouco sobre as ferramentas",
+    "section": "Gráficos animados, simulações, e visualização cartográfica",
+    "text": "Gráficos animados, simulações, e visualização cartográfica\n      R é um software gratuito e de código aberto, originalmente desenvolvido para computação estatística e gráficos. Roda-se o R em diversas interfaces de usuário (GUI, Graphical User Interface), dentre as quais destaca-se o RStudio, um ambiente de desenvolvimento integrado (IDE) também gratuito. O Rstudio possui também uma versão online gratuita, acessível pelo site RStudio Cloud.\n\nPode-se trabalhar com o Rstudio para coisas simples, como texto, gráficos e tabelas, mas também para um largo espectro de atividades, em função de sua expansibilidade por pacotes instaláveis. Esses pacotes são obtidos no site oficial do projeto - R CRAN, bem como desenvolvidos e disponibilizados por iniciativas individuais em sites autorais.\n      Para se ter uma ideia desses espectro, alguns pacotes (library) permitem análise e criação de textos, interface com portadores de deficência visual, animações, gráficos e tabelas de qualidade de publicação técnico-científica, manipulação e anaĺise de dados e de imagens, música, arte, Ciência de Dados, internet das coisas (IoT), linguagem profunda de máquina, e mesmo inteligência artificial.\n      Para a pesquisa científica o R possui diversos pacotes direcionados a temas específicos e bem diversos, como Ecologia, Estatística, Matemática, Física, Biologia, Química, Artes, Geografia, Geologia, e História, dentre muitos.\n\n      Entre os diversos pacotes oficiais (na verdade, mais de 20 mil!), existem alguns que permitem a elaboração de objetos didáticos nos moldes do subtítulo retro. Esses pacotes são os listados abaixo, e serão ilustrados com conteúdos do ensino médio constantes do Material de Apoio Pedagógico para Aprendizagens de Minas Gerais - Mapa, bem como livros didáticos para Matemática, Física, Química e Biologia do nível educacional.\n\nbasic - criação de gráficos básicos\nggplot2 - gráficos mais elaborados e muito bonitos\nanimation.plots - animação de gráficos\nmanipulate - simulação gráfica de equações\ngganimate - animação de gráficos do pacote ggplot2\nplotly- gráficos interativos\nleaflet - interatividade cartográfica (mapas)",
+    "crumbs": [
+      "Contato",
+      "O Curso",
+      "Um pouco sobre as ferramentas"
     ]
   },
   {
@@ -309,357 +536,82 @@
     ]
   },
   {
-    "objectID": "ferramentas.html",
-    "href": "ferramentas.html",
-    "title": "Um pouco sobre as ferramentas",
+    "objectID": "rstudioCloud.html",
+    "href": "rstudioCloud.html",
+    "title": "1 - Como usar o R & Rstudio - instalação e nuvem",
     "section": "",
-    "text": "São vários os programas disponíveis para observação e estudo tridimensional de modelos atômicos, e que cujo acesso se realiza por computador, dispositivos móveis, e mesmo pela internete. Uns são gratuitos, outros de demonstração gratuita, outros são pagos. Numa lista pequena, pode-se mencionar:\n\nPymol\nMaestro\niMolView\nVMD\nUCSF Chimera\nVesta\nQuteMol\n\n      Alguns programas também permitem a construção de moléculas e sua representação em 3D, como por exemplo:\n\nMolView\nChemSketch\nDIY-molecules\n\n      Por sua vez, o Jmol é um programa multiplataforma (Windows, Mac OS X, Linux, Unix) elaborado em ambiente Java, e pode ser executado tanto em versão fechada (standalone), como integrado a outras aplicações em Java, ou ainda junto a buscadores de internet por auxílio de um applet. Diferente de programas comuns, ela não requer instalação, apenas execução de arquivo Java. Dessa forma, o Jmol pode rodar tanto a partir de uma pasta de diretório contendo seus arquivos, como a partir de um disco rígido ou mídia removível (pendrive). Além disso é um programa de código-fonte e distribuição livres para representação de modelos moleculares tridimensionais, permite uma diversidade de visualizações e cores, movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, e animações, dentre outros. Existe um número muito grande de portais na internet que utilizam o Jmol, a começar pela lista disponível na página da comunidade Wiki.\n      Complementarmente, o acesso ao Jmol pode ser realizado pela internete, sem a necessidade de arquivos no computador. Dentre os diversos sites que possuem o applet JSmol que permite esse acesso, sugerimos clicar na imagem abaixo, que direcionará ao applet do website da St. Olaf College, ilustrando uma molécula de água:",
+    "text": "Existem dois ambientes alternativos para se utilizar o R (programa) e o Rstudio (interface do usário): instalando no computador, ou pelas nuvens. Há poucas diferenças entre ambas as maneiras de se trabalhar com os programas, mas a fundamental é que a instalação pode ser utilizada offline, sem necessidade de internet, enquanto que pelas nuvens, bom, já sabe.",
     "crumbs": [
       "Contato",
-      "Treinamento",
-      "Um pouco sobre as ferramentas"
+      "Gráficos Interativos",
+      "1 - Como usar o R & Rstudio  - instalação e nuvem"
     ]
   },
   {
-    "objectID": "ferramentas.html#visualização-de-moléculas-em-3d-e-animações",
-    "href": "ferramentas.html#visualização-de-moléculas-em-3d-e-animações",
-    "title": "Um pouco sobre as ferramentas",
+    "objectID": "rstudioCloud.html#instalando-o-r-e-rstudio-no-computador",
+    "href": "rstudioCloud.html#instalando-o-r-e-rstudio-no-computador",
+    "title": "1 - Como usar o R & Rstudio - instalação e nuvem",
+    "section": "Instalando o R e RStudio no computador",
+    "text": "Instalando o R e RStudio no computador\n      Você precisa seguir uns poucos passos para instalar o R & RStudio no computador. Na prática, baixa-se ambos os programas e os instala como se faria com qualquer outro programa, tanto faz se para Windows, Linux, ou Mac. Seguem os passos:\n\nAcesse o site do Rstudio e faça o download do programa R. \nInstale o programa com as opções padrão.\nNo mesmo site do ´RStudio procure um pouco mais abaixo pelo instalador mais apropriado a seu sistema operacional.\n\n\n\nBaixe o arquivo e instale-o como qualquer outro programa.\nAbra o programa RStudio, e cuja interface será parecida com a que segue.\n\n\n\n\n\n\n\nFigure 1",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "1 - Como usar o R & Rstudio  - instalação e nuvem"
+    ]
+  },
+  {
+    "objectID": "rstudioCloud.html#acessando-o-r-rstudio-pelas-nuvens",
+    "href": "rstudioCloud.html#acessando-o-r-rstudio-pelas-nuvens",
+    "title": "1 - Como usar o R & Rstudio - instalação e nuvem",
+    "section": "Acessando o R & Rstudio pelas nuvens",
+    "text": "Acessando o R & Rstudio pelas nuvens\n      Essa é uma opção simples e que não requer qualquer instalação. A interface acessada é praticamente igual à da instalação em computador. Entre algumas vantagens destaca-se a velocidade normalmente superior pra rodar e instalar pacotes, posto que o servidor para esses já está no provedor em nuvem. Mas por ser acesso online, requer uma inscrição inicial, com login e senha. Seguem os passos:\n\nAcesse o site do RStudio Cloud.\n\n\n\nRealize a inscrição (sign up) ou acesse pelo Google (mais simples).\nA janela deverá parecer-se com a que segue, embora sem os projetos listados.\n\n\n\nAgora a parte interessante. Clique em New Project e selecione New Rstudio Project.\n\n\n\nA imagem final será bem parecida com a apresentada pela versão instalada, como visto na Figure 1, veja:\n\n | Pronto ! Você pode utilizar uma ou outra forma para acessar as atividades e objetos didáticos propostos neste material. A seguir serão fornecidas algumas ações e comandos rápidos para se trabalhar com a interface do Rstudio e com o R. Mas apenas para que se consiga criar, executar, e modificar alguns scripts criados para animações, simulações, interatividade, e geovisualização. Mão na massa, agora !\n      Por uma questão de simplicidade para o uso da versão em servidor, sem necessidade de instalação dos programas, bem como por maior velocidade de execução de scripts e instalação de pacotes, optamos neste trabalho por exemplificar os objetos didáticos em nuvem, ou seja, por uso do RStudio Cloud.",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos",
+      "1 - Como usar o R & Rstudio  - instalação e nuvem"
+    ]
+  },
+  {
+    "objectID": "dinamica.html",
+    "href": "dinamica.html",
+    "title": "Moléculas Voadoras",
     "section": "",
-    "text": "São vários os programas disponíveis para observação e estudo tridimensional de modelos atômicos, e que cujo acesso se realiza por computador, dispositivos móveis, e mesmo pela internete. Uns são gratuitos, outros de demonstração gratuita, outros são pagos. Numa lista pequena, pode-se mencionar:\n\nPymol\nMaestro\niMolView\nVMD\nUCSF Chimera\nVesta\nQuteMol\n\n      Alguns programas também permitem a construção de moléculas e sua representação em 3D, como por exemplo:\n\nMolView\nChemSketch\nDIY-molecules\n\n      Por sua vez, o Jmol é um programa multiplataforma (Windows, Mac OS X, Linux, Unix) elaborado em ambiente Java, e pode ser executado tanto em versão fechada (standalone), como integrado a outras aplicações em Java, ou ainda junto a buscadores de internet por auxílio de um applet. Diferente de programas comuns, ela não requer instalação, apenas execução de arquivo Java. Dessa forma, o Jmol pode rodar tanto a partir de uma pasta de diretório contendo seus arquivos, como a partir de um disco rígido ou mídia removível (pendrive). Além disso é um programa de código-fonte e distribuição livres para representação de modelos moleculares tridimensionais, permite uma diversidade de visualizações e cores, movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, e animações, dentre outros. Existe um número muito grande de portais na internet que utilizam o Jmol, a começar pela lista disponível na página da comunidade Wiki.\n      Complementarmente, o acesso ao Jmol pode ser realizado pela internete, sem a necessidade de arquivos no computador. Dentre os diversos sites que possuem o applet JSmol que permite esse acesso, sugerimos clicar na imagem abaixo, que direcionará ao applet do website da St. Olaf College, ilustrando uma molécula de água:",
-    "crumbs": [
-      "Contato",
-      "Treinamento",
-      "Um pouco sobre as ferramentas"
-    ]
+    "text": "Moléculas Voadoras é apenas um título engraçadinho pra apresentar moléculas de forma tridimensional. Para isso utilizamos um programa de visualização 3D chamado Jmol. O programa é distribuido livremente (licença GLPL, GNU Lesser General Public License), e permite uma série de visualizações coloridas, como movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, animações, dentre outros."
   },
   {
-    "objectID": "ferramentas.html#gráficos-animados-simulações-e-visualização-cartográfica",
-    "href": "ferramentas.html#gráficos-animados-simulações-e-visualização-cartográfica",
-    "title": "Um pouco sobre as ferramentas",
-    "section": "Gráficos animados, simulações, e visualização cartográfica",
-    "text": "Gráficos animados, simulações, e visualização cartográfica\n      R é um software gratuito e de código aberto, originalmente desenvolvido para computação estatística e gráficos. Roda-se o R em diversas interfaces de usuário (GUI, Graphical User Interface), dentre as quais destaca-se o RStudio, um ambiente de desenvolvimento integrado (IDE) também gratuito. O Rstudio possui também uma versão online gratuita, acessível pelo site RStudio Cloud.\n\nPode-se trabalhar com o Rstudio para coisas simples, como texto, gráficos e tabelas, mas também para um largo espectro de atividades, em função de sua expansibilidade por pacotes instaláveis. Esses pacotes são obtidos no site oficial do projeto - R CRAN, bem como desenvolvidos e disponibilizados por iniciativas individuais em sites autorais.\n      Para se ter uma ideia desses espectro, alguns pacotes (library) permitem análise e criação de textos, interface com portadores de deficência visual, animações, gráficos e tabelas de qualidade de publicação técnico-científica, manipulação e anaĺise de dados e de imagens, música, arte, Ciência de Dados, internet das coisas (IoT), linguagem profunda de máquina, e mesmo inteligência artificial.\n      Para a pesquisa científica o R possui diversos pacotes direcionados a temas específicos e bem diversos, como Ecologia, Estatística, Matemática, Física, Biologia, Química, Artes, Geografia, Geologia, e História, dentre muitos.\n\n      Entre os diversos pacotes oficiais (na verdade, mais de 20 mil!), existem alguns que permitem a elaboração de objetos didáticos nos moldes do subtítulo retro. Esses pacotes são os listados abaixo, e serão ilustrados com conteúdos do ensino médio constantes do Material de Apoio Pedagógico para Aprendizagens de Minas Gerais - Mapa, bem como livros didáticos para Matemática, Física, Química e Biologia do nível educacional.\n\nbasic - criação de gráficos básicos\nggplot2 - gráficos mais elaborados e muito bonitos\nanimation.plots - animação de gráficos\nmanipulate - simulação gráfica de equações\ngganimate - animação de gráficos do pacote ggplot2\nplotly- gráficos interativos\nleaflet - interatividade cartográfica (mapas)",
-    "crumbs": [
-      "Contato",
-      "Treinamento",
-      "Um pouco sobre as ferramentas"
-    ]
-  },
-  {
-    "objectID": "jmolPart.html",
-    "href": "jmolPart.html",
-    "title": "PARTE 1 - Jmol",
+    "objectID": "dinamica.html#introdução",
+    "href": "dinamica.html#introdução",
+    "title": "Moléculas Voadoras",
     "section": "",
-    "text": "Back to top",
-    "crumbs": [
-      "Contato",
-      "Moléculas em 3D",
-      "Jmol"
-    ]
+    "text": "Moléculas Voadoras é apenas um título engraçadinho pra apresentar moléculas de forma tridimensional. Para isso utilizamos um programa de visualização 3D chamado Jmol. O programa é distribuido livremente (licença GLPL, GNU Lesser General Public License), e permite uma série de visualizações coloridas, como movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, animações, dentre outros."
   },
   {
-    "objectID": "r_cheat.html",
-    "href": "r_cheat.html",
-    "title": "R - folha de dicas",
-    "section": "",
-    "text": "Back to top"
+    "objectID": "dinamica.html#visualização-na-web",
+    "href": "dinamica.html#visualização-na-web",
+    "title": "Moléculas Voadoras",
+    "section": "Visualização na web",
+    "text": "Visualização na web\n      Você pode baixar o programa no website acima, ou utilizá-lo diretamente num navegador de internete, como abaixo. Experimente rotacionar a molécula de água com o mouse….\n\n\n\n\n\n\n\n\n\n      Agora um passo adiante, pra você observar suas próprias moléculas em qualquer navegador. Abra uma janela em seu navegador (Edge, Firefox, Chrome, etc) e digite o seguinte caminho: vá ao link abaixo:\n\nhttps://chemapps.stolaf.edu/jmol/jmol.php?model=water&script=Console\n\n      Ou…se quiser ir direto, basta clicar na logo abaixo, e que representa o applet JSmol que é utilizado para a visualização tridimensional (também chamada de renderização, um provável anglicismo !).\n(https://chemapps.stolaf.edu/jmol/jmol.php?model=water&script=Console)\n      Arraste a janela amarela pra direita, pra você visualizar a molécula, nesse caso, uma molécula de água\n      Agora você pode “brincar” à vontade com a molécula. Primeiro, mexendo em seu mouse pra fazê-la girar. Pode usar também o botão de rolagem do meio do mouse, pra ampliar ou reduzir seu tamanho na tela.\n      E pode fazer um montão de outras coisas legais. Pra isso, há duas opções. A primeira envolve o “montão” de coisas por uso de clique de mouse, bastando você clicar com o botão esquerdo desse em qualquer lugar do campo da molécula, como aparece na figura abaixo.\n\n\n\n\n\n\nFigure 1: Tela de menus do Jmol\n\n\n\n      Mas dentro de uma lógica do Ensino Reprodutível, contudo, é bem mais chique se utilizar linhas de comando digitados como num bloco de notas. Nesse caso, o bloco de anotações é o da janelinha amarela, na parte de baixo. Para utilizá-lo experimente digitar e teclar Enter após o seguinte comando:\n\nspin 50\n\n      Show, não ?! Para fazer a molécula parar de girar, digite:\n\nspin off\n\n      Se quiser testar outros comandos rápidos com a molécula, experimente os comandos abaixo. Você pode executar um a um, ou mais de um por vez, separando-os por um “;”.\n\ncpk # representação de bola e vareta\nwireframe only # representação de arame\nbackground yellow # plano fundo\ndots on # nuvens de van der Waals\ncolor magenta # coloração\ncolor cpk # coloração padrão de modelos atômicos\n\n      Existe uma infinidade de comandos que se pode experimentar com uma molécula, e para isso eu sugiro tutorial dirigido também nos moldes de um Ensino Reprodutível no site bioQuanti, especificamente no capítulo sobre comandos do Jmol."
   },
   {
-    "objectID": "animationPlots.html",
-    "href": "animationPlots.html",
-    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
-    "section": "",
-    "text": "Daqui em diante serão apresentados alguns pacotes do R que permitem animações, interatividade e simulações gráficas e de geovisualização. Cada pacote será brevemente descrito, sucedendo-se sua ilustração com temas contidos no MAPA - Material de Apoio Pedagógico para Aprendizagens da Secretaria de Educação de Minas Gerais.\n      Será fornecida uma breve apresentação de cada pacote, o problema e seu emprego ilustrado junto ao MAPA, o trecho de código para execução/modificação no RStudio, seu resultado, e as vantagens/desvantagens aparentes de cada pacote.\n      Para facilitar o entendimento de cada pacote, optou-se por apresentar uma sequência de definição, sintaxe, exemplos gerais, ilustração do MAPA, sugestões, e referências.",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "5 - Animando um gráfico básico - o pacote `anim.plots`"
-    ]
+    "objectID": "dinamica.html#carregando-uma-molécula-armazenada-no-computador",
+    "href": "dinamica.html#carregando-uma-molécula-armazenada-no-computador",
+    "title": "Moléculas Voadoras",
+    "section": "Carregando uma molécula armazenada no computador",
+    "text": "Carregando uma molécula armazenada no computador\n      Sem entrar em muitos detalhes, você tem algumas formas para carregar uma molécula de seu interesse no Jmol online visto acima. A mais “chique” é por clique e arraste de mouse do arquivo salvo no computador. Para isso, baixe o arquivo abaixo (…quase um pleonasmo) numa pasta qualquer em seu computador.\n      ——-&gt; arquivo pra baixar: aspirina\n      Pra certificar-se que o arquivo trata de uma imagem de molécula, localize-o e abra-o no seu explorador de arquivos, como você faria com qualquer imagem.\n      Agora…a mágica !!! Volte ao explorador de arquivos. Agora clique no arquivo baixado e arraste-o para o site do Jmol online em que está a molécula de água.\n      E Voilá !!!!! A molécula de aspirina é carregada “viva” nas nuvens !!!! E pode ser trabalhada de diversas maneiras, como acima.\n      Existe uma infinidade de moléculas que podem ser baixadas da internete pra se observar e estudar, tais como fármacos, biomoléculas, cristais, e mesmo organismos simples, como vírus inteiros. Seguem alguns exemplos se você quiser experimentar:\n\nCafeína, um poderoso estimulante;\nInsulina, a proteína cuja falta está relacionada ao diabetes;\nCelulose, a principal fonte de carbono do planeta;\nUm fago (vírus), dispensa palavras (mas tenha paciência, é grandão e carrega lentamente).\n\n      Para mais moléculas, sites e truques do Jmol, consulte o link correlato, sobre o uso do programa e diversos exemplos no site bioQuanti."
   },
   {
-    "objectID": "animationPlots.html#uma-palavrinha-antes",
-    "href": "animationPlots.html#uma-palavrinha-antes",
-    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
-    "section": "",
-    "text": "Daqui em diante serão apresentados alguns pacotes do R que permitem animações, interatividade e simulações gráficas e de geovisualização. Cada pacote será brevemente descrito, sucedendo-se sua ilustração com temas contidos no MAPA - Material de Apoio Pedagógico para Aprendizagens da Secretaria de Educação de Minas Gerais.\n      Será fornecida uma breve apresentação de cada pacote, o problema e seu emprego ilustrado junto ao MAPA, o trecho de código para execução/modificação no RStudio, seu resultado, e as vantagens/desvantagens aparentes de cada pacote.\n      Para facilitar o entendimento de cada pacote, optou-se por apresentar uma sequência de definição, sintaxe, exemplos gerais, ilustração do MAPA, sugestões, e referências.",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "5 - Animando um gráfico básico - o pacote `anim.plots`"
-    ]
+    "objectID": "dinamica.html#exemplos-de-sites-recheados-de-moléculas-renderizáveis-em-3d",
+    "href": "dinamica.html#exemplos-de-sites-recheados-de-moléculas-renderizáveis-em-3d",
+    "title": "Moléculas Voadoras",
+    "section": "Exemplos de sites “recheados” de moléculas renderizáveis em 3D",
+    "text": "Exemplos de sites “recheados” de moléculas renderizáveis em 3D\n\n3dChem - moléculas orgânicas e de interesse clínico, e biomoléculas.\nChemTube3D - banco de moléculas orgânicas e animações interativas.\nProteopedia - site nos moldes do Wikipedia, embora para proteínas. 1.PubChem - site da Biblioteca Nacional de Medicina dos E.U.A., com um vasto campo de busca pra pequenas moléculas.\nVirtual Museum of Minerals and Molecules - como traduzido, um banco de dados de minerais e moléculas."
   },
   {
-    "objectID": "animationPlots.html#o-pacote-anim.plots",
-    "href": "animationPlots.html#o-pacote-anim.plots",
-    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
-    "section": "O pacote anim.plots",
-    "text": "O pacote anim.plots\n\nDefinição:\n      O pacote anim.plots é uma biblioteca para animação de gráficos elaborados pelo sistema básico desses do R (basic), tal como visto na ?@sec-basico. Ele permite a animação de gráfico de pontos, curvas, linhas, barras, contorno, e histograma, entre outros.\n\n\nSintaxe:\n\nanim.curve(expr, x = NULL, from = 0, to = 1, n = 255, times, ...)\nObs: outras atribuições do plot são iguas às do comando plot (cex, pch, type, etc)\n\nexpr: expressão com 2 argumentos, ou função de x em t;\n\nn: representa o no. de pontos que serão gerados pela função ao longo do eixo x (se type=\"l\", faz a linha, que pode ser meio ríspida se houver poucos pontos);\n\nx: valores de x em que a função será expressada;\n\nfrom=, to= : substitui o \"x\" ; \n\ntimes: vetor de valores de t no qual a função será avaliada. Cada valor cria um frame da animação.",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "5 - Animando um gráfico básico - o pacote `anim.plots`"
-    ]
-  },
-  {
-    "objectID": "animationPlots.html#exemplos-gerais",
-    "href": "animationPlots.html#exemplos-gerais",
-    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
-    "section": "Exemplos gerais:",
-    "text": "Exemplos gerais:\n      Agora sim, animação em gráficos !! Após instalar o pacote, copie o trecho que segue e reproduza-o num script do RStudio.\n\nlibrary(anim.plots)  # carrega o pacote\nanim.curve(x^t, times=1:5, n=5) # anima uma linha com função x^t, com 5 frames variando no expoente da equação de 1 a 5\n\n      O gráfico gerado na aba de Plots do RStudio deverá parecer-se com uma animação na qual uma linha do gráfico torna-se progressivamente côncava durante 5 segundos. Se não der certo de primeira, rode a linha da animação novamente (costuma funcionar!). Como não é possível demonstrar isso numa página estática, segue o resultado do código, embora também estático.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Sequência de apresentação da função “x^t” com variação em “t” (sentido horário). No RStudio essa sequência converge a uma animação.\n\n\n\n      Como mencionado, é possível aplicar vários argumentos do comando plot na animação. Experimente variar o símbolo e a cor, tal como segue:\n\nlibrary(anim.plots)  # carrega o pacote\nanim.curve(x^t, times=1:5, n=5, type=\"p\", col=\"darkgreen\", cex=2, pch=16) # t vai de 1 a 5, com 5 pontos no gráfico, mas com cor, tipo (pch) e tamanho (cex) do símbolo\n\n      Outra forma interessante de animar um gráfico pelo pacote anim.plots consiste em visualizar um ponto apenas no plot, caminhando ao longo da função. O trecho abaixo exemplifica essa situação visualizada na aba Plotsdo RStudio.\n\nlibrary(anim.plots)\nx=1:10 # sequência de 1 a 10, e com intervalo unitário\nanim.plot(x, -x^3-3*x+7, times=1:10, \n          col=\"green\", pch=19, cex=2) # cor, tipo e tamanho do símbolo\n\n      Como não é possível repassar aqui a simulação, segue uma imagem ilustrativa de seu resultado.\n\n\n\nUm gráfico estático mas representativo do trecho de código acima, representando o movimento de um único ponto ao longo de uma expressão.\n\n\n      Outra animação bem legal que ilustra o pacote envolve a formação de uma curva senoide no tempo. Veja o trecho simples abaixo, e reproduza-o no RStudio.\n\nlibrary(anim.plots)\nanim.curve(sin(x*t), times=1:30, n=100, speed=12, col=\"darkgreen\", from=-1, to=1)\n\n\n\n\nImagem estática de uma animação com senoide no tempo.",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "5 - Animando um gráfico básico - o pacote `anim.plots`"
-    ]
-  },
-  {
-    "objectID": "animationPlots.html#salvando-a-animação",
-    "href": "animationPlots.html#salvando-a-animação",
-    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
-    "section": "Salvando a animação",
-    "text": "Salvando a animação\n      O anim.plots apresenta o resultado da animação dentro do ambiente do RStudio. Isso não é muito prático para ilustrar alguma situação gráfica em animação, posto que há necessidade dos programas, abertura de arquivo, compilação, etc. Assim, é desejável que a animação seja armazenada num arquivo simples.\n      Para o anim.plots é possível salvar o arquivo como uma imagem animada em diversos formatos, como GIF (imagem) ou HTML (navegador). Dessa maneira, para ilustrar algum gráfico animado, basta abrir o arquivo em qualquer computador ou dispositivo móvel. O comando com os argumentos opcionais de formato de arquivo é:\n\nanim.save(obj, filename, gif = \"GIF\", mp4 = \"Video\", swf = \"SWF\", html = \"HTML\", tex = \"Latex\")  # os argumentos vão entre parênteses\n\nOnde:\n  obj = o nome temporário da animação\n  filename = nome do arquivo de animação a salvar\n  gif, mp4, swf, html, tex = alternativamente, o atributo do arquvio de animação",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "5 - Animando um gráfico básico - o pacote `anim.plots`"
-    ]
-  },
-  {
-    "objectID": "animationPlots.html#um-exemplo-do-mapa",
-    "href": "animationPlots.html#um-exemplo-do-mapa",
-    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
-    "section": "Um exemplo do MAPA",
-    "text": "Um exemplo do MAPA\n      Para ilustrar o salvamento de uma animação, será retomado o exemplo de movimento acelerado.\n\nSegue o código e uma imagem estática do resultado. A imagem é salva como “acelera.gif” em seu computador, e imediatamente apresentada num editor de imagens de modo animado.\n\nacelera &lt;- anim.curve(x*t, times=1:50/10, from=0, to=10, type=\"l\", col=\"pink\", lwd=5, xlab=\"tempo, s\", ylab=\"velocidade, m/s\")  # lwd é a espessura da linha\nanim.save(acelera, \"acelera.gif\")\n\n\n\n\nRepresentação estática de um quadro de animação gerado pelo anim.plots para exemplificar o efeito da aceleração no tempo, e a partir de relação gráfica constante no MAPA, 1o. Bimestre de C. Natureza e Suas Tecnologias, p.136, 2024.\n\n\n\nSalvando em HTML\n      O armazenamento do arquivo de animação em HTML possui algumas características adicionais interessantes. Primeiramente, um arquivo HTML pode ser lido em qualquer browser, não sendo necessário conexão à internet. Além disso, o formato salvo permite selecionar os quadros (frames) da animação, variar a velocidade de sua apresentação, além da visualização do código empregado para a compilação. Para o exemplo de aceleração acima, o trecho de código e um resultado estático são apresentados a seguir.\n\nacelera &lt;- anim.curve(x*t, times=1:50/10, from=0, to=10, type=\"l\", col=\"pink\", lwd=5, xlab=\"tempo, s\", ylab=\"velocidade, m/s\")  # lwd é a espessura da linha\nanim.save(acelera, \"acelera.html\")\n\n\n\n\nSimulação do movimento de aceleração com armazenamento do arquivo em HTML.\n\n\n      Se desejar outros exemplos e variações para a função anim.plots, experimente também a função anim.curve fornecida individualmente abaixo. Para salvar, contudo, será necessário adaptar o comando de salvamento anterior.\n      Outros exemplos mais complexo são visualizados abaixo. Basta copiar, colar, e rodar os trechos individualmente num script do R para observar seu efeito.\n\n## Alguns exemplos:\n\nlibrary(anim.plots)  # carrega o pacote\n\nanim.curve(x^t, times=1:5, n=5, type=\"p\", col=\"darkgreen\", cex=2, pch=15) # t vai de 1 a 5, com 5 pontos no gráfico\n\nanim.curve(x^t, times=1:5, n=10, type=\"p\") # t vai de 1 a 5, com 10 pontos no gráfico\n\nanim.curve(x^t, times=1:10, n=10, type=\"p\") # t vai de 1 a 10, formando 10 frames, e com 10 pontos no gráfico\n\nanim.curve(x^t, times=1:10, n=10, type=\"p\", speed= 5) # t vai de 1 a 10, com 10 pontos no gráfico, e velocidade 5x maior\n\nanim.curve(x^t, times=1:10/5, n=10, type=\"p\") # t vai de 1 a 10, com 10 pontos no gráfico, com o 5x a velocidade, mas com desenho diferente !\n\nanim.curve(x^t, times=1:10/1, n=10, type=\"p\") # t vai de 1 a 10, com 10 pontos no gráfico\n\nanim.curve(x^t, times=1:10/2, n=10, type=\"p\") # t vai de 1 a 10, com 10 pontos no gráfico, mas com o dobro da velocidade do anterior",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "5 - Animando um gráfico básico - o pacote `anim.plots`"
-    ]
-  },
-  {
-    "objectID": "animationPlots.html#referência-do-pacote",
-    "href": "animationPlots.html#referência-do-pacote",
-    "title": "5 - Animando um gráfico básico - o pacote anim.plots",
-    "section": "Referência do pacote:",
-    "text": "Referência do pacote:\n\nGeral\nManual:\nTutorial:",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "5 - Animando um gráfico básico - o pacote `anim.plots`"
-    ]
-  },
-  {
-    "objectID": "leaflet.html",
-    "href": "leaflet.html",
-    "title": "10 - Mapas interativos: o pacote leaflet",
-    "section": "",
-    "text": "Não só de gráficos vive o R (ou o Ensino, de modo geral). O pacote leaflet, por exemplo, permite gerar interatividade cartográfica, ou seja, uma geovisualização de dados retratados em um mapa. Isso pode ser particularmente útil quando se deseja uma rápida visualização de alguma informação diretamente num mapa cartográfico, como distribuição de renda, informações de saúde e moléstias, áreas de desmatamento, de queimadas, etc. Exemplos variados de bancos de dados desse tipo são acessíveis, por exemplo, pelos sites do IBGE, DATA SUS, Portal de Dados Abertos do Governo Brasileiro, entre vários.\n## Estabelecendo coordenadas\nlibrary(leaflet)\nleaflet() %&gt;%  # carrega-se o pacote\n  addTiles() %&gt;%  # adiciona-se as \"peças\" (tiles)\n  setView(lng= -56.0949, lat= -15.5989, zoom = 4)\nlibrary(leaflet)\nleaflet() %&gt;%  # carrega-se o pacote\n  addTiles() %&gt;%  # adiciona-se as \"peças\" (tiles)\n  setView(lng= -56.0949, lat= -15.5989, zoom = 5) %&gt;% # adiciona-se as coordenadas desejadas e o nível de ampliação\n  addMarkers(lng=-56.0949, lat=-15.5989)\nlibrary(leaflet)\nleaflet() %&gt;%  # carrega-se o pacote\n  addTiles() %&gt;%  # adiciona-se as \"peças\" (tiles)\n  setView(lng= -56.0949, lat= -15.5989, zoom = 5) %&gt;% # adiciona-se as coordenadas desejadas e o nível de ampliação\n  addMarkers(lng=-56.0949, lat=-15.5989,\n             popup=\"&lt;b&gt;650.912 habitantes&lt;/b&gt;&lt;br&gt;&lt;a href='https://www.cuiaba.mt.gov.br/'&gt;Município&lt;/a&gt;\") # adiciona-se informação e link ao marcador",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "10 - Mapas interativos: o pacote `leaflet`"
-    ]
-  },
-  {
-    "objectID": "leaflet.html#usando-o-leaflet-com-uma-planilha-contendo-várias-coordenadas",
-    "href": "leaflet.html#usando-o-leaflet-com-uma-planilha-contendo-várias-coordenadas",
-    "title": "10 - Mapas interativos: o pacote leaflet",
-    "section": "Usando o leaflet com uma planilha contendo várias coordenadas",
-    "text": "Usando o leaflet com uma planilha contendo várias coordenadas\n      Ainda que seja legal a interatividade cartográfica mencionada acima faz mais sentido quando temos um conjunto de dados associados a cada coordenada geográfica, permitindo ilustrar-se uma quantidade maior de informações num mapa.\n      Para ilustrar isso vamos utilizar um levantamento de alguns aeroportos e aeródromos pelo Brasil. Para isso, carregue os dados que seguem transcrevendo o trecho de código abaixo para um script.\n\ndados_aero &lt;-structure(list(aerodromo = c(\"Aero Agrícola Gaivota\", \"Aero Agrícola Sapezal\", \n\"Aeroagrícola Solo\", \"Aeroclube de Atibaia\", \"Aeroclube de Bento Gonçalves\", \n\"Aeroclube de Eldorado do Sul\", \"Aeroclube de Foz do Iguaçu\", \n\"Aeroclube de João Pessoa\", \"Aeroclube de Nova Iguaçu\", \"Aeroclube de Passo Fundo\", \n\"Aeroclube de Rio Negrinho\", \"Aeroclube de Rondônia\", \"Aeroclube de Santa Catarina\", \n\"Aeroclube São José do Rio Pardo\", \"Aeródomo Novo Aripuanã\", \n\"Aeródromo Aerocampo\", \"Aeródromo Aeroporto Regional da Zona da Mata\", \n\"Aeródromo Aero Rural\", \"Aeródromo Aero Z Ferrus\", \"Aeródromo Afonso Pena\", \n\"Aeródromo Agricenter\", \"Aeródromo Agrícola Rio Galhão\", \n\"Aeródromo Agropecuária Céu Aberto Ltda\", \"Aeródromo Agropecuária Nova Santana\", \n\"Aeródromo Agrosan\", \"Aeródromo Agrovale\", \"Aeródromo Aguinaldo Pereira Lima\", \n\"Aeródromo Alenquer\", \"Aeródromo Almerim\", \"Aeródromo Altamira\", \n\"Aeródromo Amambaí\", \"Aeródromo Amapá\", \"Aeródromo Anamoim\", \n\"Aeródromo André Maggi\", \"Aeródromo Ângelo Ponzoni\", \"Aeródromo Aparecida do Taboado\", \n\"Aeródromo Aparecido O. Silva\", \"Aeródromo Araguaiana\", \"Aeródromo Araguari\", \n\"Aerodromo Areia Branca\", \"Aeródromo Ariquemes\", \"Aeródromo Arraias\", \n\"Aeródromo Arroio Grande\", \"Aeródromo Associação Tocantinense de Aviação\", \n\"Aeródromo Auaris\"), lat = c(-22.9805, -13.5511, -23.4471, -23.1281, \n-29.1473, -30.0507, -25.3696, -7.09217, -22.7461, -28.2509, -26.3207, \n-8.79415, -27.6116, -21.6473, -5.11774, -13.6365, -21.5131, -9.92088, \n0.993532, -25.5293, -22.6239, -10.4239, -9.50103, -10.1417, -11.3977, \n-9.50436, -23.6746, -1.91731, -1.47771, -3.25205, -23.1439, 2.07607, \n1.78498, -9.89865, -26.9995, -20.0891, -22.0691, -15.7092, -18.6679, \n-7.98825, -9.88046, -13.0259, -32.2293, -10.1824, 4.00087), long = c(-51.5425, \n-58.8603, -48.8665, -46.5747, -51.5411, -51.4434, -54.4707, -34.8417, \n-43.4642, -52.5168, -49.5219, -63.8574, -48.6732, -46.9282, -60.3651, \n-57.9038, -43.1735, -56.0051, -51.1208, -49.1748, -55.5691, -46.0765, \n-61.2744, -60.5479, -58.1215, -40.3698, -49.8155, -54.7218, -52.5825, \n-52.2553, -55.2077, -50.8597, -67.4055, -58.5819, -51.1401, -51.1478, \n-48.7067, -51.8377, -48.1903, -61.0506, -63.0471, -46.8838, -53.0561, \n-48.5455, -64.5043), uf = c(\"PR\", \"MT\", \"SP\", \"SP\", \"RS\", \"RS\", \n\"PR\", \"PB\", \"RJ\", \"RS\", \"SC\", \"RO\", \"SC\", \"SP\", \"AM\", \"MT\", \"MG\", \n\"MT\", \"AP\", \"PR\", \"MS\", \"TO\", \"MT\", \"MT\", \"MT\", \"BA\", \"PR\", \"PA\", \n\"PA\", \"PA\", \"MS\", \"AP\", \"AM\", \"MT\", \"SC\", \"MS\", \"SP\", \"MT\", \"MG\", \n\"AM\", \"RO\", \"TO\", \"RS\", \"TO\", \"RR\")), class = \"data.frame\", row.names = c(NA, \n-45L))\n\n      Agora observe cada aeródromo e aeroclube no mapa, sem a necessidade de clique de mouse, apenas passando o mesmo sobre o mapa, com auxílio do código abaixo:\n\nlibrary(htmltools) # carrega pacote para facilitar a visualização por \"mouseover\"\nlibrary(leaflet)\nleaflet(dados_aero) %&gt;% addTiles() %&gt;%\n  addMarkers(~long, ~lat, label = ~htmlEscape(aerodromo)) # adiciona os marcadores e associa aos nomes de cada aeródromo",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "10 - Mapas interativos: o pacote `leaflet`"
-    ]
-  },
-  {
-    "objectID": "leaflet.html#referência-do-pacote",
-    "href": "leaflet.html#referência-do-pacote",
-    "title": "10 - Mapas interativos: o pacote leaflet",
-    "section": "Referência do pacote:",
-    "text": "Referência do pacote:\n\nGeral\nManual:\nTutorial",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "10 - Mapas interativos: o pacote `leaflet`"
-    ]
-  },
-  {
-    "objectID": "graphics.html",
-    "href": "graphics.html",
-    "title": "3 - Gráficos básicos e simulações",
-    "section": "",
-    "text": "Você não precisa instalar mais nada pra trabalhar com gráficos no R. Isso porque o sistema já possui um conjunto de pacotes na sua instalação, incluindo um pacote para gráficos (graphics).\n      Para fazer seu primeiro gráfico, basta copiar e colar o trecho abaixo num script aberto no Rstudio, tanto faz se instalado ou nas nuvens (RStudio Cloud), executando-o em seguida.\n\ny = c(1,2,4,8,16,32)  # vetor de números\nplot(y) # comando pra \"plotar\" o gráfico\n\n\n\n\n\n\nUm gráfico simples no R.\n\n\n\n\n      Se você obteve como resultado a imagem acima, parabéns !! Você fez o seu primeiro gráfico no R !!! Tá achando pouco ?! Você fez um gráfico numa linguagem orientada a objeto em programa de computação estatística !!!\n      Uma dica importantíssima: como se pode observar do código acima, “para se colocar valores em sequência, como numa coluna de planilha eletrônica, o R precisa”ler” um vetor iniciado por “c” (de “concatenated”), seguido dos valores entre parênteses (()) e separados por vírgula !\n      Agora, se quiser caprichar um pouco mais, pode colocar uma expressão sobre uma sequência de números igualmente espaçados. Exemplificando:\n\n\nx = 1:10 # vetor de valores de 0 a 10,  com intervalo unitário\ny = x^2 # expressão aplicada ao vetor \"x\"\nplot(x,y) # gráfico produzido\n\n\n\n\n\n\nUm gráfico de relação quadrática (x²) entre xe y.\n\n\n\n\n      Também dá pra elaborar o gráfico sem precisar criar a variável independente y, apenas inserindo sua função em x no próprio comando. Experimente:\n\nx= 1:10\nplot(x,x^2)\n\n      Ou….pode também escolher os números que deseja plotar:\n\nx = c(1,2,5,12,31)\ny= c(4,-5,12,47,-2)\nplot(x,y)\n\n\n\n\n\n\nGráfico de valores aleatórios de x e y.",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "3 - Gráficos básicos e simulações"
-    ]
-  },
-  {
-    "objectID": "graphics.html#sec-basico",
-    "href": "graphics.html#sec-basico",
-    "title": "3 - Gráficos básicos e simulações",
-    "section": "",
-    "text": "Você não precisa instalar mais nada pra trabalhar com gráficos no R. Isso porque o sistema já possui um conjunto de pacotes na sua instalação, incluindo um pacote para gráficos (graphics).\n      Para fazer seu primeiro gráfico, basta copiar e colar o trecho abaixo num script aberto no Rstudio, tanto faz se instalado ou nas nuvens (RStudio Cloud), executando-o em seguida.\n\ny = c(1,2,4,8,16,32)  # vetor de números\nplot(y) # comando pra \"plotar\" o gráfico\n\n\n\n\n\n\nUm gráfico simples no R.\n\n\n\n\n      Se você obteve como resultado a imagem acima, parabéns !! Você fez o seu primeiro gráfico no R !!! Tá achando pouco ?! Você fez um gráfico numa linguagem orientada a objeto em programa de computação estatística !!!\n      Uma dica importantíssima: como se pode observar do código acima, “para se colocar valores em sequência, como numa coluna de planilha eletrônica, o R precisa”ler” um vetor iniciado por “c” (de “concatenated”), seguido dos valores entre parênteses (()) e separados por vírgula !\n      Agora, se quiser caprichar um pouco mais, pode colocar uma expressão sobre uma sequência de números igualmente espaçados. Exemplificando:\n\n\nx = 1:10 # vetor de valores de 0 a 10,  com intervalo unitário\ny = x^2 # expressão aplicada ao vetor \"x\"\nplot(x,y) # gráfico produzido\n\n\n\n\n\n\nUm gráfico de relação quadrática (x²) entre xe y.\n\n\n\n\n      Também dá pra elaborar o gráfico sem precisar criar a variável independente y, apenas inserindo sua função em x no próprio comando. Experimente:\n\nx= 1:10\nplot(x,x^2)\n\n      Ou….pode também escolher os números que deseja plotar:\n\nx = c(1,2,5,12,31)\ny= c(4,-5,12,47,-2)\nplot(x,y)\n\n\n\n\n\n\nGráfico de valores aleatórios de x e y.",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "3 - Gráficos básicos e simulações"
-    ]
-  },
-  {
-    "objectID": "graphics.html#incrementando-um-pouquinho-os-gráficos",
-    "href": "graphics.html#incrementando-um-pouquinho-os-gráficos",
-    "title": "3 - Gráficos básicos e simulações",
-    "section": "Incrementando um pouquinho os gráficos",
-    "text": "Incrementando um pouquinho os gráficos\n      Existe uma quantidade imensa de tutoriais na web, além de uma vasta literatura sobre o uso do pacote graphicspara se construir gráficos. Mas a proposta aqui é que você aprenda apenas o fundamental pra elaborar um gráfico, pois o objetivo é animá-lo, e não complicá-lo !!\n      Mesmo assim, alguns argumentos da função plot podem ilustrar o potencial de seu uso. Como explicado anteriormente, ainda que as funções do R possuam diversos argumentos, você pode executá-la com poucos ou apenas um, somente.\n      Os argumentos da função plot são os descritos abaixo:\n\nplot(x, y = NULL, type = \"p\",  xlim = NULL, ylim = NULL,\n     log = \"\", main = NULL, sub = NULL, xlab = NULL, ylab = NULL,\n     ann = par(\"ann\"), axes = TRUE, frame.plot = axes,\n     panel.first = NULL, panel.last = NULL, asp = NA,\n     xgap.axis = NA, ygap.axis = NA,\n     ...)\n\n      Um pouco confuso, é ?! Explicando alguns dos argumentos acima, e outros que funcionam com a função plot:\n\ntype - tipo de plot: pontos \"p\", linhas \"l\", pontos+linhas com cruzamento \"o\", pontos+linhas sem cruzamento \"b\", linhas verticais \"h\", steps \"s\", sem representação \"n\";\n\ncex - tamanho do ponto (ex: 0.5, 20);\n\nlty - \"line type\", tipo da linha; pode se representado por um valor (1,2,...) ou por \"solid\", \"dotted\", \"dashed\", \"dotdash\", \"longdash\", \"twodash\";\n\nlwd - \"line width\", largura da linha (6 níveis)\n\npch - tipo de ponto (1-25)\n\nxlim, ylim - limite dos eixos; ex: ylim=c(-2,10)\n\nxlab, ylab - etiquetas (\"label\") dos gráficos\n\ncol - cor (números ou nomes); ex: \"red\", \"orange\"\n\nmain - título do gráfico\n\nsub - subtítulo do gráfico\n\nlog - eixo logaritmo\n\n      O gráfico de pontos não é o único que se pode fazer com o pacote graphics. Também dá pra fazer tudo isso abaixo, com cada função apresentando os seus próprios argumentos:\n\nplot() - pontos, linhas, pontos e linhas\nbarplot() - plot de barras\nhist() - histograma\nboxplot() - gráfico Box-Whiskers\npersp() - gráfico 3D\npie() - gráfico de torta\ndotplot() - sequência de valores (com *jitter*, espalhameto de pontos)\npairs() - painel múltiplo com todas as variáveis plotadas\nmatplot() - plota vetores de matrizes, como *dataframes*\n\n      Mas chega de enrolação !! Para sentir de perto o “poder” desse pacote básico para gráficos, veja a imagem que segue retirada do MAPA, 1o. Bimestre de Ciências da Natureza e Suas Tecnologias:\n\n\n\n\n\n\nFigure 1\n\n\n\n      Agora experimente reproduzir a imagem do MAPA copiando, colando e executando o trecho abaixo numa janela de script do RStudio:\n\nt &lt;- c(0,1,2,3,4) # introduz os dados \nv &lt;- c(0,5,10,15,20)\nplot(t,v) # faz o gráfico\n\n\n\n\n\n\nUm gráfico simples pra reprodução de figura do MAPA.\n\n\n\n\n      Agora, dá pra incrementar um pouco mais, para aproximar-se da imagem da figura de referência do MAPA. Segue o trecho pra cópia e execução:\n\nt &lt;- c(0,1,2,3,4) # introduz os dados \nv &lt;- c(0,5,10,15,20)\nplot(t,v,main=\"Movimento Uniforme: Aceleração\", # realiza o gráfico com título...\n     xlab=\"t(s)\", ylab=\"v(/s)\", # ... etiquetas nos eixos....\n     type=\"l\", col=\"red\") # ... tipo e cor da linha, e ....\ngrid() # divisão para facilitar a visualização\n\n      Dando tudo certo, segue o que se produz com o código:\n\n\n\n\n\nReprodução de gráfico com pacote graphics do R, tal como apresentado no MAPA - Ciências da Natureza, 1o. Bimestre, pg. 134 (2024).",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "3 - Gráficos básicos e simulações"
-    ]
-  },
-  {
-    "objectID": "graphics.html#simulando-curvas-com-a-função-curve",
-    "href": "graphics.html#simulando-curvas-com-a-função-curve",
-    "title": "3 - Gráficos básicos e simulações",
-    "section": "Simulando curvas com a função curve",
-    "text": "Simulando curvas com a função curve\n      Uma situação bem comum no aprendizado em Matemática e de alguns temas em Ciências da Natureza se dá quando desejamos observar como uma variável se comporta em relação a outra, fornecida uma equação para tal. Nesse caso, pode-se utilizar a função curve do R, mais simples até em seus argumentos que a funçãoplot. Para ilustrar isso, execute separadamente os exemplos abaixo num script:\n\ncurve(x^2) # função quadrática\ncurve(log10(x), xlim=c(1,1e3), col=\"blue\") # função logarítmica e coloração\ncurve(x^2-2*x+7, xlim=c(-10,10)) # função quadrática com limites no eixo X\ncurve(sin(x), from=0, to=90, \n      xlab=\"ângulo(graus)\", ylab=\"seno(ângulo)\", col=\"red\", n=1000) # com etiquetas nos eixos\n\n\n\n\n\n\nAlguns exemplos para a função curve.\n\n\n\n\n      Ilustrando-se mais objetivamente, pode-se reproduzir (como também modificar) o trecho de código que segue logo após a figura abaixo extraída do MAPA:\n\n\n\nFigura extraída de exercício do MAPA, 1o. Bimestre de Matemática e Suas Tecnologias, p.32.\n\n\n\nx =0:70\ncurve(1/10*x + 1,\n      xlab=\"profundidade\", ylab=\"pressão\")\n\n\n\n\nReprodução de figura estraída do exercício acima do MAPA.\n\n\n\n\n      Muito legal também é construir gráficos a partir de relações gráficas a partir de equações, tal como a apresentada na figura abaixo (MAPA):\n\n\n\nTabela extraída do MAPA, 1o. Bim., C. Natureza, p. 137, 2024.\n\n\n      Usando-se a função curve pode-se obter uma simulação da relação apontada na seta, a partir do trecho de código abaixo:\n\ns0 = 5 # distância inicial (m)  # parâmetros iniciais pra equação de distância\nv0= 7 # velocidade inicial (m/s)\na = 3 # aceleração (m/s^2)\ncurve(s0+v0*x+1/2*a*x^2,  # a equação de distância \n      xlim=c(0,100), # limites do eixoi de tempo\n      xlab=\"tempo (s)\", ylab=\"distância(m)\")  # etiquetas dos eixos\n\n\n\n\n\n\nEmprego da função curvedo R para simular uma equação para distância percorrida em movimento horizontal (MAPA, 1o. Bim., C. Natureza, p. 137, 2024).",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "3 - Gráficos básicos e simulações"
-    ]
-  },
-  {
-    "objectID": "pacotes.html",
-    "href": "pacotes.html",
-    "title": "4 - Instalando pacotes no RStudio",
-    "section": "",
-    "text": "Diferentemente do pacote basic para elaboração de gráficos, e que é inerente à instalação original do R, os pacotes de animação e interatividade de que trata esta material precisam ser instalados. Para isso, siga as instruções abaixo, exemplificadas para o primeiro pacote de animação que será visto, anim.plots.",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "4 - Instalando pacotes no `RStudio`"
-    ]
-  },
-  {
-    "objectID": "pacotes.html#carregando-o-pacote-instalado",
-    "href": "pacotes.html#carregando-o-pacote-instalado",
-    "title": "4 - Instalando pacotes no RStudio",
-    "section": "Carregando o pacote instalado",
-    "text": "Carregando o pacote instalado\n      O R permite que instale um número gigantesco de pacotes. Mas é claro que você não os utilizará simultaneamente. Dessa forma, o R precisa “saber” qual o pacote que se deseja no momento, o que é realizado pelo comando library, e ilustrado abaixo para o pacote anim.plots, como segue:\n\nlibrary(anim.plots)\n\n      Pronto !! Pacote instalado. **Para usar qualquer pacote instalado do R, é necessário carregá-lo",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "4 - Instalando pacotes no `RStudio`"
-    ]
-  },
-  {
-    "objectID": "jmol.html",
-    "href": "jmol.html",
-    "title": "1 - Usando o Jmol para observar moléculas em 3D",
-    "section": "",
-    "text": "Objetivos:\n  1. Acessar a versão online do Jmol\n  2. Carregar uma molécula no Jmol",
-    "crumbs": [
-      "Contato",
-      "Moléculas em 3D",
-      "1 - Usando o Jmol para observar moléculas em 3D"
-    ]
-  },
-  {
-    "objectID": "jmol.html#onde-começar",
-    "href": "jmol.html#onde-começar",
-    "title": "1 - Usando o Jmol para observar moléculas em 3D",
-    "section": "Onde começar ?",
-    "text": "Onde começar ?\n      Pode-se começar a usar o Jmol de vários modos. Se for usar em seu computador ou notebook, ou mesmo a partir de uma mídia removível (pendrive), pode acessá-lo baixando, descomprimindo e executando o arquivo Jmol.jar presente na pasta principal no site do Jmol.\n      Agora, se não quiser instalar nada, pode também acessá-lo online a partir de diversos sítios. Nesse curso vamos utilizar um bem famoso, adaptado de um dos próprios desenvolvedores do programa. Basta clicar nesse link, numa nova aba, por exemplo:\n \n\nhttps://chemapps.stolaf.edu/jmol/jmol.php?model=water\n\n      Agora, clique na molécula com o botão esquerdo do mouse ou com o touchpad, e faça movimentos. Ou então gire o botão do meio do mouse ou realize gestos de afastamento e proximidade com dois dedos no touchpad. A Figure 1 que segue ilustra o resultado.\n\n\n\n\n\n\n\nFigure 1: Tela (clicável) referente ao modelo da molécula de água renderizado em navegador pelo site do St. Olaff College.\n\n\n\n      Essa é a essência principal ao referenciarmos no título deste curso a ideia de moléculas voadoras.",
-    "crumbs": [
-      "Contato",
-      "Moléculas em 3D",
-      "1 - Usando o Jmol para observar moléculas em 3D"
-    ]
-  },
-  {
-    "objectID": "jmol.html#como-carregar-uma-molécula-online",
-    "href": "jmol.html#como-carregar-uma-molécula-online",
-    "title": "1 - Usando o Jmol para observar moléculas em 3D",
-    "section": "Como carregar uma molécula online ?",
-    "text": "Como carregar uma molécula online ?\n      Pra brincar um pouco com outra molécula, experimente mudar o modelo na própria página de internete, ao final da linha. Por exemplo, de water para tylenol:\n\nhttps://chemapps.stolaf.edu/jmol/jmol.php?model=tylenol\n\n      Você pode tentar fazer isso com outras moléculas, digitando seu nome em inglês, por tratar-se de um site estrangeiro. Mas é claro que o banco de dados dessa busca não é ilimitado, e por vezes o sistema não encontrará a molécula desejada.\n      Mas há alternativas. Uma delas é buscar o nome da molécula em um site utlizado como banco de dados, o PubChem. Exemplificando para a vitamina C (ácido ascórbico):\n\n\n\n1. Entra no site do [PubChem](https://pubchem.ncbi.nlm.nih.gov/) ;\n2. Procura por \"ascorbic acid\" ;\n3. Se existir, digite esse mesmo termo ao final da linha do *JSmol online*, ou seja:\n    https://chemapps.stolaf.edu/jmol/jmol.php?model=ascorbic acid",
-    "crumbs": [
-      "Contato",
-      "Moléculas em 3D",
-      "1 - Usando o Jmol para observar moléculas em 3D"
-    ]
-  },
-  {
-    "objectID": "jmol.html#como-carregar-uma-molécula-online-mas-em-2d",
-    "href": "jmol.html#como-carregar-uma-molécula-online-mas-em-2d",
-    "title": "1 - Usando o Jmol para observar moléculas em 3D",
-    "section": "Como carregar uma molécula online, mas em 2D",
-    "text": "Como carregar uma molécula online, mas em 2D\n      Por vezes pode ser interessante a visulização estática e bidimensional de um modelo molecular. Para isso, basta acrescentar “image2d” à linha de código, como segue:\n\nhttps://chemapps.stolaf.edu/jmol/jmol.php?model=tylenol&image2d",
-    "crumbs": [
-      "Contato",
-      "Moléculas em 3D",
-      "1 - Usando o Jmol para observar moléculas em 3D"
-    ]
-  },
-  {
-    "objectID": "contato.html",
-    "href": "contato.html",
-    "title": "Contato",
-    "section": "",
-    "text": "Prof. Dr. José Maurício Schneedorf Ferreira da Silva\n\nemail: jose.dasilva@unifal-mg.edu.br\nFone: (35) - 3291-1928\nEndereço: Depto. de Bioquímica, Instituto de Ciências Biomédicas, Universidade Federal de Alfenas, UNIFAL-MG. Prédio E, sala 209. Alfenas, MG. CEP: ‘37.130-001’, Brasil\n\n\n\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Contato"
-    ]
-  },
-  {
-    "objectID": "ggplot2.html",
-    "href": "ggplot2.html",
-    "title": "7 - Gráficos mais elaborados - pacote ggplot2",
-    "section": "",
-    "text": "O R possui diversos pacotes pra criação de gráficos, dentre os quais destaca-se o ggplot2. Esse pacote permite a elaboração de um grande número de tipos (pontos, linhas, barras, histograma, etc) e com qualidade de publicação.\n      Basicamente o ambiente funciona tal e qual um editor de imagens, como o Corel Draw ou o Canva, e que permitem a criação dessas por camadas. A única diferença é que em tais editores as camadas são depositadas ao bel prazer de seu criador. Já no ggplot2 as camadas tem propriedades fixas.\n      Mas o bacana é que, tanto para a edição de imagens naqueles programas, como para a edição de gráficos no ggplot2, a alteração feita numa camada específica só altera essa, preservando as demais que “já deram certo”.\n      À despeito dessa “aparente complicação”, segue-se um itinerário no qual cada camada é sobrepostas (com um sinal de “+”):\n\nEstabelece-se os dados que serão utilizados (data=);\nDefine-se quem é o x e quem é o y (x=, y=);\nSeleciona-se um tipo de gráfico (geom=);\nEmbeleza-se o gráfico criado (eixos, cores, símbolos, tamanhos).\n\n\n\n      Vamos elaborar um gráfico com os dados que relacionam o consumo de energia elétrica com o custo, tal como representado no MAPA para o ensino médio (Matemática, 1o. Bimestre, 1o. Ano, p. 23, 2024), e reproduzido abaixo:\n\n\n\nRelação de consumo anotado por concessionária de energia elétrica e custo, tal como extraído do MAPA.\n\n\n      Para o ggplot2, diferente do pacote basics, é necessário dispor os dados numa planilha. Há um bom número de formas de se conduzir isso no R, mas uma forma simples é dada abaixo (basta copiar e colar num script do R para execução:\n\nconsumo &lt;- read.table(header = T, text = '   \n      kWh custo\n      0 10\n      30 16\n      30 16\n      100 43\n      100 43\n      220 120\n') # comando que cria tabela de dados\n\n      Alternativamente, pode-se criar os vetores x e y primeiro, como realizado anteriormente, e criar a planilha em seguida:\n\nkWh &lt;- c(0,30,30,100,100,220)\ncusto &lt;- c(10,16,16,43,43,120)   # define os dados\n\nconsumo &lt;- data.frame(kWh,custo) # comando que cria a tabela de dados a partir dos vetores x e y\n\n\n\n\n      Agora é fazer o gráfico carregando a biblioteca. Nota óbvia: é preciso instalar antes a biblioteca, quer pelo RStudio como já demonstrado, ou por linha de comando. No último caso:\n\n# install.packages(\"ggplot\", dependencies = TRUE) \nlibrary(ggplot2)\n\n\nggplot(data=consumo)\n\n\n\n\n\n\n\n\n      Veja que surgiu um quadro (canvas), embora apenas o quadro, mesmo, sem nenhum x ou y. O que também é óbvio, pois não definimos essas variáveis ainda. Para isso:\n\nggplot(data=consumo, aes(x=kWh, y=custo))\n\n\n\n\n\n\n\n\n      Agora o gráfico apresenta-se com os eixos, embora sem os dados da tabela. No conjunto de obviedades que se assoma, é claro, também não definimos que tipo de gráfico queremos. Ou seja, se ponto, linha, barra, ou algum pra lá de dúzia que compõe o pacote ggplot2.\n      Uma observação importantíssima: veja que as variáveis estão dentro de um parêntes iniciado pela função aes. Do inglês, uma abreviação de aesthetics, ou estética, em tradução livre. Todo gráfico do ggplot2 tem que conter essa função, que além de definir as variáveis envolvidas, também permite generalizar para as camadas outras características estéticas, como cor, tamanho, e forma.\n\n\n\n      De volta ao ofício, o tipo de gráfico no pacote ggplot2 é definido pelo tipo de geom, ou geoma, em tradução livre e um pouco óbvia, também. O ggplot2 tem geoms pra tudo que é gráfico. E para inseri-lo na linha de comando de produção desse, basta acrescentar seu tipo como uma camada adicional, usando o sinal ” + “, mesmo, como segue.\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_point()\n\n\n\n\n\n\n\n\n     “Parfait” ! Agora, sim, quadro, dados, eixos gráficos, e pontos. Uma qualidade muito legal do ggplot2 e, na verdade, de qualquer programa que use linhas de comando para gerar resultados, como o próprio R, é que pra gente produzir um gráfico diferente não precisa criá-lo do zero; basta alterar o ponto específico que se deseja na linha de comando. Na prática, se ao invés de produzirmos um gráfico de pontos quisermos outros tipos, é só mudar o geom:\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_line()\n\n\n\n\n\n\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_col()\n\n\n\n\n\n\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_smooth()\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: pseudoinverse used at -1.1\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: neighborhood radius 101.1\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: reciprocal condition number 4.6461e-17\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: There are other near singularities as well. 36519\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : pseudoinverse used at\n-1.1\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : neighborhood radius\n101.1\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : reciprocal condition\nnumber 4.6461e-17\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : There are other near\nsingularities as well. 36519\n\n\n\n\n\n\n\n\n\n      Como mencionado, o ggplot2 trabalha sobrepondo camadas. Que tal então um gráfico como o de cima, mas com a linha de tendência sobreposta aos pontos ?\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_smooth()+\n  geom_point()\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: pseudoinverse used at -1.1\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: neighborhood radius 101.1\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: reciprocal condition number 4.6461e-17\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: There are other near singularities as well. 36519\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : pseudoinverse used at\n-1.1\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : neighborhood radius\n101.1\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : reciprocal condition\nnumber 4.6461e-17\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : There are other near\nsingularities as well. 36519\n\n\n\n\n\n\n\n\n\n\n\n\n      Bom, seguindo-se os ítens de construção do gráfico pelo ggplot2, agora é hora de “botar” elegância no produto ! Pra isso pode-se escolher algumas “estéticas” de cor (color), tamanho (size), translucidez (alpha), forma (shape), preenchimento do símbolo (fill) e sua espessura do tracejado do símbolo (stroke), e inseri-las como argumentos do geoma. Veja um exemplo:\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_point(color= \"blue\", \n             size=5,  # tamanho do símbolo\n             alpha = 0.5, # transparência (0 a 1)\n             shape = 21, # tipo do símbolo\n             fill = \"green\", # preenchimento (só vale pra tipos vazios, obviamente)\n             stroke = 2) # espessura do tracejado do símbolo\n\n\n\n\n\n\n\n\n      Bonito, não ? Ou doido, mesmo !\n\n\n\n\n\n\n      Agora que melhoramos (…ou pioramos) o aspecto visual do gráfico, que tal dar um jeito nas etiquetas dos eixos (labels) ? Veja que estão com as abreviações das colunas x e y dos dados. Quem sabe algo com mais empáfia, então ?\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"consumo energético (kWh)\",\n       y = \"custo operacional (R$)\")\n\n\n\n\n\n\n\n\n\n\n\n      Observe que tanto faz colocar as características dos pontos com identação, uma abaixo da outra, ou em linha, mesmo. A única diferença é que colocando uma abaixo da outra visualiza-se melhor o que se pretende fazer. Isso faz parte das “boas práticas de programação”.\n      Essa função labs permite também se colocar título, subtítulo, e uma observação (caption) no gráfico, veja:\n\nggplot(data=consumo, aes(x=kWh, y=custo, col = \"red\", size = 5, alpha = 0.5)) +\n geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"kWh\",\n       y = \"custo, R$\",\n       title = \"Relação entre o consumo energértico e os custos envolvidos\",\n       subtitle = \"Companhia Elétrica XYZ\",\n       caption = \"Obs: Linha de tendência\")\n\n\n\n\n\n\n\n\n\n\n\n      O ggplot2 apresenta como padrão esse canvas acizentado. Mas existem vários outros, bastando-se definir um tema (theme) ao gráfico:\n\nggplot(data=consumo, aes(x=kWh, y=custo, col = \"red\", size = 5, alpha = 0.5)) +\n  geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"kWh\",\n       y = \"custo\") +\n  theme_bw()\n\n\n\n\n\n\n\n\n      Teste outros temas, como segue:\n\nggplot(data=consumo, aes(x=kWh, y=custo, col = \"red\", size = 5, alpha = 0.5)) +\n  geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"kWh\",\n       y = \"custo\") +\n  theme_classic()\n\n\nggplot(data=consumo, aes(x=kWh, y=custo, col = \"red\", size = 5, alpha = 0.5)) +\n  geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"kWh\",\n       y = \"custo\") +\n  theme_linedraw()\n\n\n\n\n      Agora, pra se guardar esse gráfico, um tanto trabalhoso, convenhamos, o R permite o salvamento em diversos formatos, como JPG, BMP, TIFF, PDF, PNG, EPS, por exemplo. Dois jeitos de salvar o gráfico: um se dá pelo menu de Plots do canto inferior esquerdo do RStudio (Plots –&gt; Export). Se quisermos o armazenamento por linha de comando, por outro lado, basta utilizar a função ggsave logo após a criação do gráfico.\n\nggplot(data=consumo, aes(x=kWh, y=custo, col = \"red\", size = 5, alpha = 0.5)) +\n  geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"kWh\",\n       y = \"custo\") +\n  theme_bw(base_size = 14) +\n  geom_smooth(method = 'lm', formula = y ~ poly(x, 2), linewidth = 0.5, color = \"orange\", se = FALSE, show.legend = FALSE)\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead.\n\n\n\n\n\n\n\n\n# Salvando o gráfico...\n\nggsave(filename =  \"plot.consumo.png\", dpi = 300, width = 4, height = 5)\n\n       Se você não especificou onde salvar o gráfico, veja no diretório raiz do computador. Explicando brevemente a função, dpi representa a resolução do gráfico (dots per inch), enquanto que width e height especificam o tamanho.\n      Mas também dá pra salvar o gráfico sem qualquer especificação. Exemplificando pra um arquivo PDF:\n\nggsave(filename =  \"plot.consumo.pdf\")\n\nSaving 7 x 5 in image\n\n\n\n\n\n      Bom, ainda que o gráfico acima tenha um certo ar de sofisticação, não é sempre que se deseja isso. Na maior parte das vezes, o que se quer é plotar os dados e observar alguma tendência. E, pra isso, não é necessário todas essas camadas, funções e argumentos. Para se plotar algo “parecido” com o gráfico acima, mas sem toda essa pompa, basta fazermos:\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_point() +\n  geom_line()\n\n\n\n\n\n\n\n\n\n\n\n      O pacote ggplot2 é normalmente empregado para a criação de de gráficos a partir de um dataset (dados tal como apresentados numa planilha). Não obstante, é possível produzir também um gráfico apenas com vetores. Para isso, basta substituir o conjunto de dados com…digamos…nada (data = NULL) !! Tal como segue:\n\nx &lt;- 1:360\ny = sin(x)\nlibrary(ggplot2)\n\nggplot( data = NULL ,\n        mapping = aes( x = x , y = y ) ) +\n  geom_line() +\n  geom_point(shape = 15, col = \"red\", size = 0.5)+\n  labs(x=\"eixo x\", y=\"eixo y\") +\n  coord_cartesian(xlim=c(45,90)) \n\n\n\n\n\n\n\n\n\n\n\n      Assim como o pacote graphics, o ggplot2 possui também uma função para a produção de tendências por equações introduzidas, geom_function.\nExemplificando:\n\nrequire(ggplot2)\nggplot(data.frame(x = 1:100), aes(x)) +\n  geom_function(fun=function(x) 173*x/(6+x), colour = \"red\")",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "7 - Gráficos mais elaborados - pacote `ggplot2`"
-    ]
-  },
-  {
-    "objectID": "ggplot2.html#o-pacote-ggplot2",
-    "href": "ggplot2.html#o-pacote-ggplot2",
-    "title": "7 - Gráficos mais elaborados - pacote ggplot2",
-    "section": "",
-    "text": "O R possui diversos pacotes pra criação de gráficos, dentre os quais destaca-se o ggplot2. Esse pacote permite a elaboração de um grande número de tipos (pontos, linhas, barras, histograma, etc) e com qualidade de publicação.\n      Basicamente o ambiente funciona tal e qual um editor de imagens, como o Corel Draw ou o Canva, e que permitem a criação dessas por camadas. A única diferença é que em tais editores as camadas são depositadas ao bel prazer de seu criador. Já no ggplot2 as camadas tem propriedades fixas.\n      Mas o bacana é que, tanto para a edição de imagens naqueles programas, como para a edição de gráficos no ggplot2, a alteração feita numa camada específica só altera essa, preservando as demais que “já deram certo”.\n      À despeito dessa “aparente complicação”, segue-se um itinerário no qual cada camada é sobrepostas (com um sinal de “+”):\n\nEstabelece-se os dados que serão utilizados (data=);\nDefine-se quem é o x e quem é o y (x=, y=);\nSeleciona-se um tipo de gráfico (geom=);\nEmbeleza-se o gráfico criado (eixos, cores, símbolos, tamanhos).\n\n\n\n      Vamos elaborar um gráfico com os dados que relacionam o consumo de energia elétrica com o custo, tal como representado no MAPA para o ensino médio (Matemática, 1o. Bimestre, 1o. Ano, p. 23, 2024), e reproduzido abaixo:\n\n\n\nRelação de consumo anotado por concessionária de energia elétrica e custo, tal como extraído do MAPA.\n\n\n      Para o ggplot2, diferente do pacote basics, é necessário dispor os dados numa planilha. Há um bom número de formas de se conduzir isso no R, mas uma forma simples é dada abaixo (basta copiar e colar num script do R para execução:\n\nconsumo &lt;- read.table(header = T, text = '   \n      kWh custo\n      0 10\n      30 16\n      30 16\n      100 43\n      100 43\n      220 120\n') # comando que cria tabela de dados\n\n      Alternativamente, pode-se criar os vetores x e y primeiro, como realizado anteriormente, e criar a planilha em seguida:\n\nkWh &lt;- c(0,30,30,100,100,220)\ncusto &lt;- c(10,16,16,43,43,120)   # define os dados\n\nconsumo &lt;- data.frame(kWh,custo) # comando que cria a tabela de dados a partir dos vetores x e y\n\n\n\n\n      Agora é fazer o gráfico carregando a biblioteca. Nota óbvia: é preciso instalar antes a biblioteca, quer pelo RStudio como já demonstrado, ou por linha de comando. No último caso:\n\n# install.packages(\"ggplot\", dependencies = TRUE) \nlibrary(ggplot2)\n\n\nggplot(data=consumo)\n\n\n\n\n\n\n\n\n      Veja que surgiu um quadro (canvas), embora apenas o quadro, mesmo, sem nenhum x ou y. O que também é óbvio, pois não definimos essas variáveis ainda. Para isso:\n\nggplot(data=consumo, aes(x=kWh, y=custo))\n\n\n\n\n\n\n\n\n      Agora o gráfico apresenta-se com os eixos, embora sem os dados da tabela. No conjunto de obviedades que se assoma, é claro, também não definimos que tipo de gráfico queremos. Ou seja, se ponto, linha, barra, ou algum pra lá de dúzia que compõe o pacote ggplot2.\n      Uma observação importantíssima: veja que as variáveis estão dentro de um parêntes iniciado pela função aes. Do inglês, uma abreviação de aesthetics, ou estética, em tradução livre. Todo gráfico do ggplot2 tem que conter essa função, que além de definir as variáveis envolvidas, também permite generalizar para as camadas outras características estéticas, como cor, tamanho, e forma.\n\n\n\n      De volta ao ofício, o tipo de gráfico no pacote ggplot2 é definido pelo tipo de geom, ou geoma, em tradução livre e um pouco óbvia, também. O ggplot2 tem geoms pra tudo que é gráfico. E para inseri-lo na linha de comando de produção desse, basta acrescentar seu tipo como uma camada adicional, usando o sinal ” + “, mesmo, como segue.\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_point()\n\n\n\n\n\n\n\n\n     “Parfait” ! Agora, sim, quadro, dados, eixos gráficos, e pontos. Uma qualidade muito legal do ggplot2 e, na verdade, de qualquer programa que use linhas de comando para gerar resultados, como o próprio R, é que pra gente produzir um gráfico diferente não precisa criá-lo do zero; basta alterar o ponto específico que se deseja na linha de comando. Na prática, se ao invés de produzirmos um gráfico de pontos quisermos outros tipos, é só mudar o geom:\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_line()\n\n\n\n\n\n\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_col()\n\n\n\n\n\n\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_smooth()\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: pseudoinverse used at -1.1\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: neighborhood radius 101.1\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: reciprocal condition number 4.6461e-17\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: There are other near singularities as well. 36519\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : pseudoinverse used at\n-1.1\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : neighborhood radius\n101.1\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : reciprocal condition\nnumber 4.6461e-17\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : There are other near\nsingularities as well. 36519\n\n\n\n\n\n\n\n\n\n      Como mencionado, o ggplot2 trabalha sobrepondo camadas. Que tal então um gráfico como o de cima, mas com a linha de tendência sobreposta aos pontos ?\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_smooth()+\n  geom_point()\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: pseudoinverse used at -1.1\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: neighborhood radius 101.1\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: reciprocal condition number 4.6461e-17\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: There are other near singularities as well. 36519\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : pseudoinverse used at\n-1.1\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : neighborhood radius\n101.1\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : reciprocal condition\nnumber 4.6461e-17\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : There are other near\nsingularities as well. 36519\n\n\n\n\n\n\n\n\n\n\n\n\n      Bom, seguindo-se os ítens de construção do gráfico pelo ggplot2, agora é hora de “botar” elegância no produto ! Pra isso pode-se escolher algumas “estéticas” de cor (color), tamanho (size), translucidez (alpha), forma (shape), preenchimento do símbolo (fill) e sua espessura do tracejado do símbolo (stroke), e inseri-las como argumentos do geoma. Veja um exemplo:\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_point(color= \"blue\", \n             size=5,  # tamanho do símbolo\n             alpha = 0.5, # transparência (0 a 1)\n             shape = 21, # tipo do símbolo\n             fill = \"green\", # preenchimento (só vale pra tipos vazios, obviamente)\n             stroke = 2) # espessura do tracejado do símbolo\n\n\n\n\n\n\n\n\n      Bonito, não ? Ou doido, mesmo !\n\n\n\n\n\n\n      Agora que melhoramos (…ou pioramos) o aspecto visual do gráfico, que tal dar um jeito nas etiquetas dos eixos (labels) ? Veja que estão com as abreviações das colunas x e y dos dados. Quem sabe algo com mais empáfia, então ?\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"consumo energético (kWh)\",\n       y = \"custo operacional (R$)\")\n\n\n\n\n\n\n\n\n\n\n\n      Observe que tanto faz colocar as características dos pontos com identação, uma abaixo da outra, ou em linha, mesmo. A única diferença é que colocando uma abaixo da outra visualiza-se melhor o que se pretende fazer. Isso faz parte das “boas práticas de programação”.\n      Essa função labs permite também se colocar título, subtítulo, e uma observação (caption) no gráfico, veja:\n\nggplot(data=consumo, aes(x=kWh, y=custo, col = \"red\", size = 5, alpha = 0.5)) +\n geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"kWh\",\n       y = \"custo, R$\",\n       title = \"Relação entre o consumo energértico e os custos envolvidos\",\n       subtitle = \"Companhia Elétrica XYZ\",\n       caption = \"Obs: Linha de tendência\")\n\n\n\n\n\n\n\n\n\n\n\n      O ggplot2 apresenta como padrão esse canvas acizentado. Mas existem vários outros, bastando-se definir um tema (theme) ao gráfico:\n\nggplot(data=consumo, aes(x=kWh, y=custo, col = \"red\", size = 5, alpha = 0.5)) +\n  geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"kWh\",\n       y = \"custo\") +\n  theme_bw()\n\n\n\n\n\n\n\n\n      Teste outros temas, como segue:\n\nggplot(data=consumo, aes(x=kWh, y=custo, col = \"red\", size = 5, alpha = 0.5)) +\n  geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"kWh\",\n       y = \"custo\") +\n  theme_classic()\n\n\nggplot(data=consumo, aes(x=kWh, y=custo, col = \"red\", size = 5, alpha = 0.5)) +\n  geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"kWh\",\n       y = \"custo\") +\n  theme_linedraw()\n\n\n\n\n      Agora, pra se guardar esse gráfico, um tanto trabalhoso, convenhamos, o R permite o salvamento em diversos formatos, como JPG, BMP, TIFF, PDF, PNG, EPS, por exemplo. Dois jeitos de salvar o gráfico: um se dá pelo menu de Plots do canto inferior esquerdo do RStudio (Plots –&gt; Export). Se quisermos o armazenamento por linha de comando, por outro lado, basta utilizar a função ggsave logo após a criação do gráfico.\n\nggplot(data=consumo, aes(x=kWh, y=custo, col = \"red\", size = 5, alpha = 0.5)) +\n  geom_point(color= \"blue\", size=5, alpha = 0.5, shape = 21, fill = \"green\", stroke = 2) +\n  labs(x = \"kWh\",\n       y = \"custo\") +\n  theme_bw(base_size = 14) +\n  geom_smooth(method = 'lm', formula = y ~ poly(x, 2), linewidth = 0.5, color = \"orange\", se = FALSE, show.legend = FALSE)\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead.\n\n\n\n\n\n\n\n\n# Salvando o gráfico...\n\nggsave(filename =  \"plot.consumo.png\", dpi = 300, width = 4, height = 5)\n\n       Se você não especificou onde salvar o gráfico, veja no diretório raiz do computador. Explicando brevemente a função, dpi representa a resolução do gráfico (dots per inch), enquanto que width e height especificam o tamanho.\n      Mas também dá pra salvar o gráfico sem qualquer especificação. Exemplificando pra um arquivo PDF:\n\nggsave(filename =  \"plot.consumo.pdf\")\n\nSaving 7 x 5 in image\n\n\n\n\n\n      Bom, ainda que o gráfico acima tenha um certo ar de sofisticação, não é sempre que se deseja isso. Na maior parte das vezes, o que se quer é plotar os dados e observar alguma tendência. E, pra isso, não é necessário todas essas camadas, funções e argumentos. Para se plotar algo “parecido” com o gráfico acima, mas sem toda essa pompa, basta fazermos:\n\nggplot(data=consumo, aes(x=kWh, y=custo)) +\n  geom_point() +\n  geom_line()\n\n\n\n\n\n\n\n\n\n\n\n      O pacote ggplot2 é normalmente empregado para a criação de de gráficos a partir de um dataset (dados tal como apresentados numa planilha). Não obstante, é possível produzir também um gráfico apenas com vetores. Para isso, basta substituir o conjunto de dados com…digamos…nada (data = NULL) !! Tal como segue:\n\nx &lt;- 1:360\ny = sin(x)\nlibrary(ggplot2)\n\nggplot( data = NULL ,\n        mapping = aes( x = x , y = y ) ) +\n  geom_line() +\n  geom_point(shape = 15, col = \"red\", size = 0.5)+\n  labs(x=\"eixo x\", y=\"eixo y\") +\n  coord_cartesian(xlim=c(45,90)) \n\n\n\n\n\n\n\n\n\n\n\n      Assim como o pacote graphics, o ggplot2 possui também uma função para a produção de tendências por equações introduzidas, geom_function.\nExemplificando:\n\nrequire(ggplot2)\nggplot(data.frame(x = 1:100), aes(x)) +\n  geom_function(fun=function(x) 173*x/(6+x), colour = \"red\")",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "7 - Gráficos mais elaborados - pacote `ggplot2`"
-    ]
-  },
-  {
-    "objectID": "ggplot2.html#ggplot2-quase-sem-dor-interfaces-gráficas-na-web",
-    "href": "ggplot2.html#ggplot2-quase-sem-dor-interfaces-gráficas-na-web",
-    "title": "7 - Gráficos mais elaborados - pacote ggplot2",
-    "section": "ggplot2 (quase) sem dor: interfaces gráficas na web",
-    "text": "ggplot2 (quase) sem dor: interfaces gráficas na web\n      Se você chegou até aqui é porque teve alguma afinidade com o sistema gráfico em camadas do ggplot2, embora o enriquecimento de um gráfico também carregue consigo um conjunto mais extenso de linhas de comando.\n      Para contornar essa dificuldade, alguns desenvolvedores produziram aplicativos de acesso online para o ggplot2, e que permitem a construção das camadas gráficas sem a necessidade de digitação de comandos, e sim por uso de cliques de mouse. Outra característica interessante, é que esses aplicativos fornecem o trecho de código para a reprodução do gráfico criado por mouse clicks.\n      Assim, vale a pena dar uma olhada nos aplicativos que seguem:\n\nO aplicativo ggplotgui\n      O ggplotgui envolve um pacote que renderiza uma interface gráfica e interativa para o ggplot2.\n\n\n\n\n\nTela do aplicativo online ggplotgui para elaboração de gráficos pelo ggplot2 por cliques de mouse.\n\n\n\n\nO aplicativo ggplot2-shiny\n      Outro sistema interativo e facilitado para o ggplot2 envolve um framework extremamente interativo chamado shiny. A interface ggplot2-shiny também permite, como o ggplotgui, a construção e customização de gráficos do pacote ggplot2 sem a necessidade de digitação de comandos.\n\n\n\n\n\nInterface gráfica do ggplot2-shiny, para renderização de gráficos do pacote ggplot2 sem o uso de linhas de comando.",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "7 - Gráficos mais elaborados - pacote `ggplot2`"
-    ]
-  },
-  {
-    "objectID": "ggplot2.html#referência-do-pacote",
-    "href": "ggplot2.html#referência-do-pacote",
-    "title": "7 - Gráficos mais elaborados - pacote ggplot2",
-    "section": "Referência do pacote:",
-    "text": "Referência do pacote:\n\nGeral\nManual:\nTutorial",
-    "crumbs": [
-      "Contato",
-      "Gráficos Interativos",
-      "7 - Gráficos mais elaborados - pacote `ggplot2`"
-    ]
+    "objectID": "dinamica.html#ensino-reprodutível-e-um-script-meio-exagerado-para-observar-moléculas-pelo-jmol",
+    "href": "dinamica.html#ensino-reprodutível-e-um-script-meio-exagerado-para-observar-moléculas-pelo-jmol",
+    "title": "Moléculas Voadoras",
+    "section": "Ensino Reprodutível e um script (meio exagerado) para observar moléculas pelo Jmol",
+    "text": "Ensino Reprodutível e um script (meio exagerado) para observar moléculas pelo Jmol\n      A essência do Ensino Reproduzível é permitir que qualquer pessoa execute, altere, ou crie um trecho de código redigido em um bloco de anotações comentado (um script) para determinado alvo no ensino, compilando-o num programa gratuito.\n      Dessa forma, é possível imaginar que uma combinação de comandos (códigos) do Jmol igualmente produza uma imagem de molécula em 3D em que se deseja, por exemplo, focar em deteminado tema de sua estrutura. Para ilustrar esse potencial execute o trecho de código a seguir diretamente na janela do Console do Jmol (aquela de aba amarelinha).\n      Não se preocupe com a quantidade de comandos; estão aí apenas para ilustrar seu potencial de aplicação. Mas, caso deseje conhecer um pouco mais sobre os comandos do Jmol, faça uma visitinha à página de Comandos do site Bioquanti.\n\nbackground black # cor preta do plano de fundo\nload $cholesterol # carrega a molécula de colesterol\ndelay 1 # aguarda 1 segundo\nbackground white # altera a cor do plano de fundo\nspin 80 # gira a molécula\ndelay 3 # ...por 3 segundos\nspin off # interrompe a rotação\ncpk # renderiza como modelo de preenchimento\ncolor cpk # coloriza no padrão de modelos moleculares\nisosurface molecular # renderiza a superfície\nspin 30 # gira mais um poquinho\ndelay 6 # ...também por 3 segundos\nspin off # interrompe novamente a rotação\nzoomTo 0.5 *3  # amplia 300% na tela durante 1 segundo\nisosurface off # retira a superfície molecular\nwireframe only # retorna à representação de varetas\nwireframe 50 # espessura das varetas\nzoomTo 5 *0.01 # ... e vai sumindo aos poucos\n\n      Se gostou, tente repetir o trecho acima, alterando num primeiro momento alguns dos valores do trecho. Num segundo momento, carregue outra molécula que esteja nas nuvens substituindo a 1a. linha do código (load $outra.molécula)."
   },
   {
     "objectID": "manipulate.html",
@@ -930,10 +882,10 @@
     "href": "index.html#saudações",
     "title": "Vivificando Conteúdos ao Ensino Médio",
     "section": "Saudações !",
-    "text": "Saudações !\n\n      Olá ! Seja muito bem-vindo a este Curso de Capacitação em ferramentas digitais para o Ensino Médio. A ideia central desta etapa do Curso é lhe oferecer ferramentas que possibilitem agregar valor à imagens de moléculas, gráficos e mapas observados durante o ensino médio, mas com animação e interatividade.\n      Essa interatividade permitirá que você recrie e altere figuras que se apresentam estáticas em livros-texto do ensino médio para um objeto didático mais vivo. Daí a escolha do termo vivificando, que etiqueta o próprio website.",
+    "text": "Saudações !\n\n      Oláaslkdfçasldkfj ! Seja muito bem-vindo a este Curso de Capacitação em ferramentas digitais para o Ensino Médio. A ideia central desta etapa do Curso é lhe oferecer ferramentas que possibilitem agregar valor à imagens de moléculas, gráficos e mapas observados durante o ensino médio, mas com animação e interatividade.\n      Essa interatividade permitirá que você recrie e altere figuras que se apresentam estáticas em livros-texto do ensino médio para um objeto didático mais vivo. Daí a escolha do termo vivificando, que etiqueta o próprio website.",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Saudações"
     ]
   },
@@ -945,7 +897,7 @@
     "text": "Por quê “vivificando” ?\n      Por sua vez, tal vivificação para moléculas, gráficos e mapas deverá permitir uma visualização 3D e animações para modelos atômicos, bem como diversos graus de interatividade por cliques de mouse à gráficos e mapas - animações, seleção de pontos, zoom, simulações, mouse over (informações sobre o ponto gráfico por simples passagem do mouse), deslizadores, menus, e outros tantos.\n      O material contido aqui pretende ser autoinstrucional e com curva suave de aprendizado. Nossa proposta é focar no potencial que as ferramentas podem oferecer ao ensino e aprendizagem como uma metodologia ativa, ilustrando seu emprego diretamente nos conteúdos do ensino médio. Dessa forma, não pretendemos explorar “a fundo” as capacidades das ferramentas propostas, pois isso exigiria um tempo e esforços mais significativos. Assim, você pode pensar nesse Curso metaforicamente, como um mapa panorâmico de pontos turísticos a visitar, sem a pretensão de conhecer em detalhes cada um.",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Saudações"
     ]
   },
@@ -957,7 +909,7 @@
     "text": "As ferramentas\n      Resumindo rapidamente, a caixa de ferramentas para este Curso possui somente dois utensílios: um programa para visualização tridimensional de moléculas, e um programa para criação de gráficos e mapas interativos. Ambos os programas são de distribuição livre (gratuitos) e permitem rodar em navegador de internet, sem necessidade de instalação em computador.",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Saudações"
     ]
   },
@@ -969,7 +921,7 @@
     "text": "Políticas públicas\n     Este Curso pretende também atender a atuais iniciativas do Governo Federal junto ao Plano Nacional de Educação (PNE) para o decênio 2024-2034 defendido na Conferência Nacional de Educação - CONAE 2024, tangentes à capacitação digital de professores e alunos (literacia digital).\n      Nesse sentido, vale a pena mencionar alguns projetos embasados no desenvolvimento de competências previstas na BNCC Computação de 2022, da Base Nacional Comum Curricular (BNCC), tais como Escola em Tempo Integral do MEC, a Estratégia Nacional de Escolas Conectadas (Enec), o Programa Mais Ciência Na Escola, e à Chamada para a Apresentação de Propostas de Disseminação de Produtos de Inovação Tecnológica voltados a todos os níveis de educação da CAPES, esse último do qual se originou este projeto.",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Saudações"
     ]
   },
@@ -981,7 +933,7 @@
     "text": "Bom, como diz o título, de vivificar imagens e relações numéricas encontrados em livros-texto. Em palavras mais abstratas…da tentativa de se oferecer algumas ferramentas para compor objetos didáticos para o Ensino Médio, principalmente para temas de Física, Química e Biologia contidos em Ciências da Natureza e Suas Tecnologias, Matemática e Suas Tecnologias, como também Ciências Humanas e Suas Tecnologias, com as ferramentas baseadas em premissas de Ensino Reprodutível.\n      Agora, de modo mais claro, de instrumentalizar professores ao uso de dois programas básicos de computador, um para visualização de moléculas em 3D, e outro para vivificar algumas relações estáticas encontradas em livros-texto por animações, interatividade, e simulações.",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Algumas questões prévias"
     ]
   },
@@ -993,7 +945,7 @@
     "text": "Bom, como diz o título, de vivificar imagens e relações numéricas encontrados em livros-texto. Em palavras mais abstratas…da tentativa de se oferecer algumas ferramentas para compor objetos didáticos para o Ensino Médio, principalmente para temas de Física, Química e Biologia contidos em Ciências da Natureza e Suas Tecnologias, Matemática e Suas Tecnologias, como também Ciências Humanas e Suas Tecnologias, com as ferramentas baseadas em premissas de Ensino Reprodutível.\n      Agora, de modo mais claro, de instrumentalizar professores ao uso de dois programas básicos de computador, um para visualização de moléculas em 3D, e outro para vivificar algumas relações estáticas encontradas em livros-texto por animações, interatividade, e simulações.",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Algumas questões prévias"
     ]
   },
@@ -1005,7 +957,7 @@
     "text": "Qual a vantagem em se familiarizar com esses programas ?\n      Também em módicos termos, para oferecer aos alunos uma visão mais paupável e amigável de conteúdos trazidos de livros-texto do nível educacional da proposta.",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Algumas questões prévias"
     ]
   },
@@ -1017,7 +969,7 @@
     "text": "Como alunos do ensino médio podem beneficiar-se da oferta das ferramentas que serão tratadas aqui ?\n      Isto tem muito a ver com o conceito de letramento visual (visual literacy) e também com letramento científico. Em síntese, os livros-texto oferecem formas distintas de apresentação de conteúdos, e que exigem do estudante diferentes níveis de abstração, como o simbólico (fórmula estrutural, equação), esquemático (fluxogramas, geovisualização), gráfico (relação entre variáveis), realístico (resultado experimental), e de cartoon (estrutura molecular).\n      Assim, pretende-se oferecer uma ferramenta para auxiliar na abstração de cartoon, e outra para o simbólico, esquemático, gráfico, e de análise de dados presente na abstração realística. Essa segunda ferramenta permitirá acessar o conteúdo de livros-texto por animações e simulações.\n      Na prática imediata e de curto prazo, essas ferramentas poderão possibilitar um menor nível de abstração para alguns conteúdos encontrados em livros-texto do Ensino Médio, por exemplo:\n\npermitindo a visualização de uma molécula em 3D, sua rotação, tamanho, estudo estrutural e químico, funções orgânicas, relações de estrutura e função, e animações.\npermitindo a elaboração de gráficos animados a partir de equações, visualização interativa de gráficos, e simulações.",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Algumas questões prévias"
     ]
   },
@@ -1029,7 +981,7 @@
     "text": "E quais são essas ferramentas ?\n      Para a visualização de moléculas em 3D será empregado o Jmol, e para os demais mencionados o programa R com sua interface gráfica RStudio. São programas gratuitos para instalação em computador de mesa ou notebook, embora também acessáveis por navegador de internete, e nesse caso, sem necessidade de instalação.",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Algumas questões prévias"
     ]
   },
@@ -1041,7 +993,7 @@
     "text": "Se este material envolve o uso de livros-texto, qual bibliografia será utilizada ?\n      Será utilizado algum conteúdo geral presente no Material de Apoio Pedagógico para Aprendizagens - MAPA para habilidades previstas no Currículo Referência de Minas Gerais, e pertinente principalmente à Ciências da Natureza, Matemática, e Suas Tecnologias.",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Algumas questões prévias"
     ]
   },
@@ -1053,7 +1005,7 @@
     "text": "Além dos conteúdos específicos com algum potencial para melhorar o aprendizado do estudante, há outra vantagem no aprendizado dos programas ?\n      Diversas. De início, a familiarização com conceitos de programação computacional. O Jmol é mais fechado, já que trabalha somente com a renderização de modelos moleculares. O que já é muito bom para se visualizar a imensidade de moléculas presentes em livros-texto. Já o R é outra história.\n      O R permite uma infinidade de ações, quer voltadas à pesquisa ou ao ensino. É utilizado por diversas Universidades ao redor do mundo, bem por diversas Universidades e empresas (ex: Google, Facebook, LinkedIn, Twitter, Bank of America, Lenovo, Bing). Embora tenha sido originalmente desenvolvido para análise de dados, possui hoje mais de 20 mil pacotes adicionais.\n      Essa expansibilidade permite, por exemplo, recursos de matemática, estatística, gráficos e tabelas avançados, animações e simulações, análise de imagem e de texto, criação musical e artística, ciência de dados, inteligência artificial, comunicação com placas microcontroladores (ex: Arduino), internete das coias (IoT), criação de blogs, de websites, e de livros (tal como usado para produzir este material).",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Algumas questões prévias"
     ]
   },
@@ -1065,7 +1017,7 @@
     "text": "E o tal Ensino Reprodutível, de que se trata ?\n      Ensino Reprodutível (ER) uma metodologia ativa em ensino-aprendizagem ainda em formação, e que mistura trechos de algoritmos com conteúdos temáticos, ambos editáveis num simples bloco de notas. Na prática, o ER envolve aplicar códigos escritos em um programa específico para a produção de um objeto didático, incluindo aí um modelo molecular, um gráfico, uma tabela, uma mídia, um texto formatado com saída em DOCX, PDF ou EPUB, uma animação, e/ou uma simulação, dentre vários.\n      Dessa forma é possível imaginar que um aprendiz agregue valor a seu aprendizado ao 1) repetir a execução do código num programa específico, 2) alterar algum trecho do código para observar um resultado diferente, ou mesmo 3) criar um novo código buscando outro produto final. Nesse caso, a reprodutibiidade está centrada na criação/modificação do objeto didático, e que pode ser realizada por qualquer pessoa que tenha o programa e o código.",
     "crumbs": [
       "Contato",
-      "Treinamento",
+      "O Curso",
       "Algumas questões prévias"
     ]
   },
