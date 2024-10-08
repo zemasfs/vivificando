@@ -1,0 +1,86 @@
+---
+title: "Mais interatividade aos gráficos"
+---
+
+```{r, eval=FALSE}
+Objetivos:
+  1. Observar a capacidade extensiva de interação com o pacote "plotly"
+  2. Elaborar um gráfico com controle deslizante
+  3. Elaborar um gráfico com menu suspenso 
+```
+
+
+|       Até o momento só *"arranhamos"* o potencial de interatividade gráfica do pacote `plotly`. Como já mencionado, essa biblioteca permite um grande conjunto de ações de usuário, como deslizadores (*sliders*), menu de escolha, e botões, entre muitos.
+\
+
+# Adicionando um controle deslizante por intervalo
+
+|       Um *slider* dessa natureza permite que se escolha uma janela de dados para um estudo mais detalhista naquela região. Nesse caso é possível agregar a um gráfico simples um *controle deslizante de intervalo* (*rangeslider*), tal como representado abaixo. Basta copiar, colar, e executar o trecho num *script*.
+
+```{r}
+x = 1:10 # dados
+y = x^2
+
+library(magrittr)  # bibliotecas necessárias
+library(plotly)
+
+plot_ly(x = ~x, y = ~y, type="scatter") %>%
+  add_lines() %>%
+  rangeslider()
+```
+
+
+|       Experimente posicionar o *mouse* num dos dois marcadores laterais do gráfico inferior, arrastando-o em seguida, e observe o resultado.
+
+
+### Adicionando um menu suspenso
+
+|       Menus suspensos (*dropdown menu*) permitem observar um gráfico diferente a cada opção selecionada. Para exemplificar esse recurso interativos, vamos primeiramente elaborar um conjunto de dados (*dataframe*) que possua a resposta linear, quadrática, e cúbica a uma variável independente, tal como segue:
+
+```{r}
+x = 1:10 # vetor da variável independente "x"
+yLin = x
+yQuad = x^2 # criação da variável dependente quadrática 
+yCub = x^3 # criação da variável dependente cúbica 
+
+datLQC <-data.frame(x,yLin,yQuad,yCub) # criação da planilha de dados
+```
+
+
+|       Agora podemos inserir o *menu suspenso* para opção das tendências matemáticas:
+
+```{r}
+plot_ly(datLQC, x = ~x, y = ~yLin, type = "scatter", mode = "line", name = "Linear") %>%
+  add_trace(x = ~x, y = ~yQuad, mode = "line", name = "Quadrático") %>%
+  add_trace(x = ~x, y = ~yCub, mode = "line", name = "Cúbico") %>%
+  layout(
+    title = "Gráficos de potência",
+    xaxis = list(title = "x"),
+    yaxis = list(title = "x^n"),
+    updatemenus = list(
+      list(
+        buttons = list(
+          list(label = "yLin", method = "update", args = list(list(visible = c(TRUE, FALSE, FALSE)))),
+          list(label = "yQuad", method = "update", args = list(list(visible = c(FALSE, TRUE, FALSE)))),
+          list(label = "yCub", method = "update", args = list(list(visible = c(FALSE, FALSE, TRUE))))
+        )
+      )
+    )
+  )
+
+```
+
+
+|       Ainda que você possa achar meio complicado o trecho de código acima, apenas copie-o, cole-o num *script*, e execute-o. Isso exemplifica a *essência inerente ao Ensino Reprodutível, desde a simples reprodução do código, até sua alteração e mesmo a criação de novos*. Sentindo curiosidade, você pode alterar alguns termos do código acima, como as etiquetas (*label*, substitua um nome, por ex) que surgem no menu suspenso, o tipo de gráfico pretendido (substitua *scatter* por *bar*, por exemplo), ou o título do gráfico (*title*).
+\
+
+|       Em relação à interatividade produzida, adiciona-se às que já estavam presentes pelo comando `plot_ly`, a seleção do tipo de potência a representar pelo menu suspenso.
+\
+
+
+|       Assim como para vários pacotes do `R`, existe um número significativo de comandos e *widgets interativos* com o `plotly`, e que, nesse caso específico, daria "pano pra manga" pra uma obra literária isolada. Mas você pode consultar inúmeros *sites* sobre o `plotly` para um aprendizado mais abrangente, os *links* abaixo, e mesmo um [livro online](https://plotly-r.com/) gratuito, com códigos e gráficos correlatos. Para observar a imensa riqueza de gráficos interativos, dê uma olhada no [website do `plotly`](https://plotly.com/r/) para o `R`.
+\
+
+*   [Geral](https://cran.r-project.org/web/packages/plotly/index.html)
+*   [Manual](https://cran.r-project.org/web/packages/plotly/plotly.pdf)
+*   [Tutorial](https://plotly.com/r/)

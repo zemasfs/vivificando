@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.555">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Vivificando Conteúdos ao Ensino Médio - 4 - Instalando pacotes no RStudio</title>
+<title>ERЯƎ - Ensino Reprodutível nas Escolas - 4 - Instalando pacotes no RStudio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./animationPlots.html" rel="next">
-<link href="./graphics.html" rel="prev">
+<link href="./plotly_interat.html" rel="next">
+<link href="./basicaoR.html" rel="prev">
 <link href="./avatar.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -92,17 +92,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
@@ -127,45 +127,45 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./avatar.png" alt="" class="navbar-logo">
+    <img src="./logo-unifal.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Vivificando Conteúdos ao Ensino Médio</span>
+    <span class="navbar-title">ERЯƎ - Ensino Reprodutível nas Escolas</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-folhas-de-dicas-(cheatsheets" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Folhas de Dicas (<em>cheatsheets</em>)</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-folhas-de-dicas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Folhas de Dicas</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-folhas-de-dicas-(cheatsheets">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-folhas-de-dicas">    
         <li>
-    <a class="dropdown-item" href="./jmol_cheat.html">
- <span class="dropdown-text">Jmol - folha de dicas</span></a>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/jmol_cheat.en.pt.pdf" target="_blank">
+ <span class="dropdown-text">Jmol</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./r_cheat.html">
- <span class="dropdown-text">R - folha de dicas</span></a>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/plotly.pdf" target="_blank">
+ <span class="dropdown-text">Plotly</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rstudio_cheat.html">
- <span class="dropdown-text">Rstudio - folha de dicas</span></a>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/r_cheat.en.pt.pdf" target="_blank">
+ <span class="dropdown-text">R</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outros-recursos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Outros Recursos</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outros" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Outros</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-outros-recursos">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-outros">    
         <li>
-    <a class="dropdown-item" href="https://bioquanti.netlify.app/">
- <span class="dropdown-text">bioQuanti - Bioquímica Quantitativa</span></a>
+    <a class="dropdown-item" href="https://bioquanti.netlify.app/" target="_blank">
+ <span class="dropdown-text">Bioquanti</span></a>
   </li>  
     </ul>
   </li>
@@ -191,8 +191,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           </li>
       </ul>
     </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo escuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -202,11 +202,11 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./RPart.html">Gráficos Interativos</a></li><li class="breadcrumb-item"><a href="./pacotes.html">4 - Instalando pacotes no <code>RStudio</code></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./pacotes.html">3 - Pacotes do R</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -220,8 +220,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">O Curso</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Vivificando Conteúdos do Ensino Médio</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -229,19 +229,25 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ERRE</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./saudacoes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Saudações</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./questoes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Algumas questões prévias</span></a>
+ <span class="menu-text">Algumas questões</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ferramentas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Um pouco sobre as ferramentas</span></a>
+ <span class="menu-text">Caixa de Ferramentas</span></a>
   </div>
 </li>
       </ul>
@@ -249,34 +255,34 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Moléculas em 3D</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Moléculas em 3D com Jmol</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./jmolPart.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Jmol</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./jmol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1 - Usando o Jmol para observar moléculas em 3D</span></a>
+ <span class="menu-text">1 - Jmol</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./textoXmouse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2 - Cliques de mouse <em>versus</em> linhas de comando</span></a>
+ <span class="menu-text">2 - Mouse <em>versus</em> Comandos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./comandosJmol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3 - Alguns comandos pra se aventurar nas moléculas voadoras</span></a>
+ <span class="menu-text">3 - Alguns comandos do Jmol</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./anima_Jmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 - Algumas animações com Jmol</span></a>
   </div>
 </li>
       </ul>
@@ -284,73 +290,52 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Gráficos Interativos</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Gráficos Interativos com R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./RPart.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R &amp; RStudio</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./rstudioCloud.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1 - Como usar o R &amp; Rstudio  - instalação e nuvem</span></a>
+ <span class="menu-text">1 - R &amp; RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./basicaoR.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2 - Comandos básicos &amp; Scripts no R</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./graphics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3 - Gráficos básicos e simulações</span></a>
+ <span class="menu-text">2 - Um pouco sobre uso do <code>R</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pacotes.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">4 - Instalando pacotes no <code>RStudio</code></span></a>
+ <span class="menu-text">3 - Pacotes do R</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./animationPlots.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5 - Animando um gráfico básico - o pacote <code>anim.plots</code></span></a>
+  <a href="./plotly_interat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 - Gráficos interativos com <code>plotly</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./manipulate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6 - Simulando equações de forma animada - o pacote <code>manipulate</code></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
- <span class="menu-text">ggplot2.qmd</span>
-  </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./gganimate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">8 - Animando gráficos do ggplot2 - o pacote <code>gganimate</code></span></a>
+  <a href="./plotly_maisInterat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 - Mais interatividade aos gráficos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./plotly.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">9 - Gráficos interativos - o pacote <code>plotly</code></span></a>
+  <a href="./plotly_anima.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6- Animação em gráficos interativos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./leaflet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">10 - Mapas interativos: o pacote <code>leaflet</code></span></a>
+  <a href="./plotly_maps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 - Mapas interativos</span></a>
   </div>
 </li>
       </ul>
@@ -368,17 +353,19 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#carregando-o-pacote-instalado" id="toc-carregando-o-pacote-instalado" class="nav-link active" data-scroll-target="#carregando-o-pacote-instalado">Carregando o pacote instalado</a></li>
+  <li><a href="#pra-quê-instalar-pacotes-bibliotecas" id="toc-pra-quê-instalar-pacotes-bibliotecas" class="nav-link active" data-scroll-target="#pra-quê-instalar-pacotes-bibliotecas"><span class="header-section-number">1</span> Pra quê instalar pacotes (bibliotecas) ?</a></li>
+  <li><a href="#instalando-o-pacote-plotly-no-r" id="toc-instalando-o-pacote-plotly-no-r" class="nav-link" data-scroll-target="#instalando-o-pacote-plotly-no-r"><span class="header-section-number">2</span> Instalando o pacote <code>plotly</code> no <code>R</code></a></li>
+  <li><a href="#carregando-o-pacote-instalado" id="toc-carregando-o-pacote-instalado" class="nav-link" data-scroll-target="#carregando-o-pacote-instalado"><span class="header-section-number">3</span> Carregando o pacote instalado</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./RPart.html">Gráficos Interativos</a></li><li class="breadcrumb-item"><a href="./pacotes.html">4 - Instalando pacotes no <code>RStudio</code></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./pacotes.html">3 - Pacotes do R</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">4 - Instalando pacotes no <code>RStudio</code></h1>
 </div>
@@ -397,29 +384,42 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diferentemente do pacote <code>basic</code> para elaboração de gráficos, e que é inerente à instalação original do <code>R</code>, os pacotes de animação e interatividade de que trata esta material precisam ser instalados. Para isso, siga as instruções abaixo, exemplificadas para o primeiro pacote de animação que será visto, <code>anim.plots</code>.</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Objetivos<span class="sc">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fl">1.</span> Entender o que são e para que servem os pacotes do R</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fl">2.</span> Saber instalar e carregar um pacote do R, exemplificado para <span class="st">`</span><span class="at">plotly</span><span class="st">`</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="pra-quê-instalar-pacotes-bibliotecas" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="pra-quê-instalar-pacotes-bibliotecas"><span class="header-section-number">1</span> Pra quê instalar pacotes (bibliotecas) ?</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numa resposta simples, porque cada um dos mais de 21 mil pacotes do <code>R</code> possui uma extensão de recursos que o próprio <code>R</code> não possui em sua instalação original. Ou seja, amplia-se a ferramenta para algum propósito específico. <em>Neste </em>Curso<em>, nosso objetivo com o <code>R</code> é o de reproduzir e mesmo modificar trechos de códigos que resultem em objetos didáticos interativos para o ensino médio</em>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E para isso, vamos utilizar dois pacotes, apenas, <code>plotly</code>, e <code>leaflet</code>. Dessa forma, os pacotes de interatividade precisam de instalação prévia à execução dos códigos. Mas fique tranquilo. Essa é umas das partes mais tranquilas quando se lida com o <code>R</code>.</div>
+</section>
+<section id="instalando-o-pacote-plotly-no-r" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="instalando-o-pacote-plotly-no-r"><span class="header-section-number">2</span> Instalando o pacote <code>plotly</code> no <code>R</code></h2>
 <ol type="1">
 <li>Acesse a aba <em>Packages</em> do <em>RStudio</em>.</li>
 </ol>
 <p><img src="pacotes.rstudio.png" class="img-fluid"></p>
 <ol start="2" type="1">
-<li>Digite o nome do pacote no campo (<code>anim.plots</code>), e clique em <em>Install</em>.</li>
+<li>Digite o nome do pacote no campo (<code>plotly</code>), e clique em <em>Install</em>.</li>
 </ol>
-<p><img src="pacotes.animplots.png" class="img-fluid"></p>
+<p><img src="pacotes.plotly.png" class="img-fluid"></p>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pronto ! O pacote será instalado a partir do servidor de nuvem do <em>RStudio</em> (tanto faz se no seu computador ou em nuvem), com algumas mensagens intermediárias em vermelho, como abaixo.</div>
 <p><img src="pacotes.msg.png" class="img-fluid"></p>
-<section id="carregando-o-pacote-instalado" class="level2">
-<h2 class="anchored" data-anchor-id="carregando-o-pacote-instalado">Carregando o pacote instalado</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <code>R</code> permite que instale um número gigantesco de pacotes. Mas é claro que você não os utilizará simultaneamente. Dessa forma, o <code>R</code> precisa “saber” qual o pacote que se deseja no momento, o que é realizado pelo comando <code>library</code>, e ilustrado abaixo para o pacote <code>anim.plots</code>, como segue:</div>
+</section>
+<section id="carregando-o-pacote-instalado" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="carregando-o-pacote-instalado"><span class="header-section-number">3</span> Carregando o pacote instalado</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <code>R</code> permite que instale um número gigantesco de pacotes. Mas é claro que você não os utilizará simultaneamente. Dessa forma, o <code>R</code> precisa <em>“saber”</em> qual o pacote que se deseja no momento, o que é realizado pelo comando <code>library</code>, e ilustrado abaixo para o pacote <code>plot_ly</code>, como segue:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(anim.plots)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pronto !! Pacote instalado. **Para usar qualquer pacote instalado do <code>R</code>, é necessário carregá-lo</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pronto !! Pacote instalado e carregado !!<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora é executar alguns trechos de códigos para objetos didáticos.</div>
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -618,12 +618,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiada");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiada");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -975,13 +975,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./graphics.html" class="pagination-link" aria-label="3 - Gráficos básicos e simulações">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3 - Gráficos básicos e simulações</span>
+      <a href="./basicaoR.html" class="pagination-link" aria-label="2 - Um pouco sobre uso do `R`">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">2 - Um pouco sobre uso do <code>R</code></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./animationPlots.html" class="pagination-link" aria-label="5 - Animando um gráfico básico - o pacote `anim.plots`">
-        <span class="nav-page-text">5 - Animando um gráfico básico - o pacote <code>anim.plots</code></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./plotly_interat.html" class="pagination-link" aria-label="4 - Gráficos interativos com `plotly`">
+        <span class="nav-page-text">4 - Gráficos interativos com <code>plotly</code></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -992,10 +992,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Curso de Formação em Educação Digital</p>
 </div>   
     <div class="nav-footer-center">
-<p>UNIFAL-MG</p>
+<p>ERЯƎ</p>
 </div>
     <div class="nav-footer-right">
-<p>ERRE - Ensino Reprodutível</p>
+<p>Universidade Federal de Alfenas</p>
 </div>
   </div>
 </footer>

@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ERЯƎ - Ensino Reprodutível nas Escolas - Construindo gráficos interativos com plotly</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./plotly_maisInterat.html" rel="next">
+<link href="./pacotes.html" rel="prev">
+<link href="./avatar.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
+</script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./logo-unifal.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">ERЯƎ - Ensino Reprodutível nas Escolas</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-folhas-de-dicas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Folhas de Dicas</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-folhas-de-dicas">    
+        <li>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/jmol_cheat.en.pt.pdf" target="_blank">
+ <span class="dropdown-text">Jmol</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/plotly.pdf" target="_blank">
+ <span class="dropdown-text">Plotly</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/r_cheat.en.pt.pdf" target="_blank">
+ <span class="dropdown-text">R</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outros" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Outros</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-outros">    
+        <li>
+    <a class="dropdown-item" href="https://bioquanti.netlify.app/" target="_blank">
+ <span class="dropdown-text">Bioquanti</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="./contato.html" aria-current="page"> 
+<span class="menu-text">Contato</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools tools-wide">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-bank"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.unifal-mg.edu.br/portal/index/">
+            UNIFAL-MG
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.unifal-mg.edu.br/dbq/">
+            Depto. Bioquímica
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo escuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./plotly_interat.html">4 - Gráficos interativos com <code>plotly</code></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Vivificando Conteúdos do Ensino Médio</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ERRE</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./saudacoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Saudações</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./questoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Algumas questões</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ferramentas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Caixa de Ferramentas</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Moléculas em 3D com Jmol</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./jmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 - Jmol</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./textoXmouse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 - Mouse <em>versus</em> Comandos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./comandosJmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 - Alguns comandos do Jmol</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./anima_Jmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 - Algumas animações com Jmol</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Gráficos Interativos com R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rstudioCloud.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 - R &amp; RStudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basicaoR.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 - Um pouco sobre uso do <code>R</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pacotes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 - Pacotes do R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plotly_interat.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">4 - Gráficos interativos com <code>plotly</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plotly_maisInterat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 - Mais interatividade aos gráficos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plotly_anima.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6- Animação em gráficos interativos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plotly_maps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 - Mapas interativos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contato.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contato</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#criando-um-gráfico-interativo" id="toc-criando-um-gráfico-interativo" class="nav-link active" data-scroll-target="#criando-um-gráfico-interativo"><span class="header-section-number">1</span> Criando um gráfico interativo</a></li>
+  <li><a href="#salvando-o-gráfico" id="toc-salvando-o-gráfico" class="nav-link" data-scroll-target="#salvando-o-gráfico"><span class="header-section-number">2</span> Salvando o gráfico</a></li>
+  <li><a href="#trabalhando-com-relações-matemáticas-nas-variáveis" id="toc-trabalhando-com-relações-matemáticas-nas-variáveis" class="nav-link" data-scroll-target="#trabalhando-com-relações-matemáticas-nas-variáveis"><span class="header-section-number">3</span> Trabalhando com relações matemáticas nas variáveis</a></li>
+  <li><a href="#outros-tipos-de-gráficos" id="toc-outros-tipos-de-gráficos" class="nav-link" data-scroll-target="#outros-tipos-de-gráficos"><span class="header-section-number">4</span> Outros tipos de gráficos</a></li>
+  <li><a href="#gráficos-3d" id="toc-gráficos-3d" class="nav-link" data-scroll-target="#gráficos-3d"><span class="header-section-number">5</span> Gráficos 3D</a></li>
+  <li><a href="#referência-do-pacote" id="toc-referência-do-pacote" class="nav-link" data-scroll-target="#referência-do-pacote"><span class="header-section-number">6</span> Referência do pacote:</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./plotly_interat.html">4 - Gráficos interativos com <code>plotly</code></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Construindo gráficos interativos com <code>plotly</code></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Objetivos<span class="sc">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fl">1.</span> Compreender para que serve o <span class="st">"plotly"</span> e seu potencial interativo para ensino e aprendizagem</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fl">2.</span> Utilizar o <span class="st">"plotly"</span> por scripts para a construção de gráficos interativos</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fl">3.</span> Verificar a interatividade dos gráficos criados</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A biblioteca <code>plotly</code> é uma das mais ricas do <code>R</code> para gráficos interativos. Permite, entre outros, efeitos de <em>zoom</em> no gráfico, bem como de <em>mouse over</em>, em que a simples passagem do mouse sobre um elemento do gráfico abre as informações daquele ponto. Além disso, permite animações controladas pelo usário, a inseração de seletores, de controles deslizantes, menus e botões.</div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complementarmente, por possibilitar uma integração a uma linguagem desses tempos chamada <em>JavaScript</em>, a biblioteca também é utilizada em alguns paineis de dados, como no <a href="https://www.microsoft.com/pt-br/power-platform/products/power-bi">Power Bi</a> da <em>Microsoft</em>, uma coleção de aplicativos conectados para a visualização de dados. De fato, é a própria biblioteca <code>plotlyjs</code> escrita em <em>JavaScript</em>, externa ao <code>R</code> e <em>RStudio</em>, que é incorporada ao <code>R</code>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A elaboração de gráficos pelo <code>plotly</code> requer alguns comandos simples. E a boa notícia é que o gráfico produzido já <em>“sai”</em> apresentando interatividade, como ampliação/redução, deslocamento dos dados em eixos, e efeitos de informação por passagem do <em>mouse</em>, salvamento como imagem <em>PNG</em>, entre outros. Para construir um gráfico qualquer precisa-se de <em>dados</em>. Basicamente há 3 formas para se obter os dados:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Criando<span class="sc">-</span>se os dados ;</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Criando<span class="sc">-</span>se uma equação que vai gerar os dados ;</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Importando<span class="sc">-</span>se os <span class="fu">dados</span> (de uma planilha, por ex)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+<section id="criando-um-gráfico-interativo" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="criando-um-gráfico-interativo"><span class="header-section-number">1</span> Criando um gráfico interativo</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vamos começar criando os dados a partir de uma equação aplicada a um <em>vetor.</em> Para isso, precisamos…do vetor ! Visualize um vetor como se fosse uma coluna (ou linha) do Excel. No <code>R</code> os vetores são criados por <em>concatenação</em> de valores separados por <em>vírgula</em>, tal como segue:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>) <span class="co"># um vetor; o "c" indica "concatenação"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> <span class="co"># atribui valores de 1 a 5 à variável "x"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternativamente,</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span> <span class="co"># também atribui valores de 1 a 5 à variável "x"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora definimos uma equação, por exemplo, uma <em>função quadrática</em>, e a aplicamos ao vetor <em>x</em>:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> x<span class="sc">^</span><span class="dv">2</span> <span class="co"># atribui à variável "y" o quadrado do valor da variável "x"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora faremos um gráfico interativo a partir desses dados. Mas antes, claro, é necessário instalar o pacote <code>plotly</code> no <code>R</code>. Você pode instalá-lo pela aba <em>Packages</em> do <em>RStudio</em>, se já não fez, e como explicado na seção anterior sobre <a href="./pacotes.html">Pacotes</a>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Etapa final… construir um <em>gráfico de dispersão de pontos</em> da função quadrática.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para fazer isso, basta copiar o trecho abaixo e colá-lo num novo <em>script</em> <code>R</code>. E executá-lo de qualquer das formas mencionadas em seção anterior (<a href="./basicaoR.html">Um pouco sobre o uso do R</a>).</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>  <span class="co"># introduz-se os dados</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> x<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>y)  <span class="co"># elabora-se o gráfico de função quadrática</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -&gt; https://plotly.com/r/reference/#scatter</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>No scatter mode specifed:
+  Setting the mode to markers
+  Read more about this attribute -&gt; https://plotly.com/r/reference/#scatter-mode</code></pre>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-b5783e6b8b9a82f620c2" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-b5783e6b8b9a82f620c2">{"x":{"visdat":{"3b9f5eb5e980":["function () ","plotlyVisDat"]},"cur_data":"3b9f5eb5e980","attrs":{"3b9f5eb5e980":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Observação:</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Sintaxe do plotly: ~variável, para atribuir uma variável (x ou y)</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#                    type: para atribuir um tipo de gráfico</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <code>R</code> costuma apresentar algumas mensagens (<em>Warnings</em>) após rodar os comandos. Não são erros, mas informações adicionais, tais como na reprodução do gráfico anterior. Nesse caso, a informação é que está faltando caracterizar o tipo de gráfico, um espalhamento de pontos (<em>scatter</em>) :</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>y, <span class="at">type =</span> <span class="st">"scatter"</span>) </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora observe quanta interatividade surgiu com o simples comando acima, passando o <em>mouse</em> pelos pontos do gráfico, ou clicando-se nos ícones que apareceram acima do gráfico. Teste essa interatividade:</div>
+<ul>
+<li>Passando o <em>mouse</em> sobre os pontos do gráfico (<em>hover</em>) você obterá as coordenadas de cada ponto;<br>
+</li>
+<li>Usando o botão de rolagem do <em>mouse</em> você amplia ou reduz o gráfico</li>
+<li>Clicando com o botão esquerdo do <em>mouse</em> em qualquer parte do gráfico e desenhando um retângulo você obterá uma ampliação da área;</li>
+<li>Se der dois cliques após a ampliação você retornará ao gráfico original;</li>
+<li>Posicionando o ponteiro do <em>mouse</em> entre os valores de um eixo, e arrastando o <em>mouse</em>, você verá um deslocamento do eixo selecionado;</li>
+<li>Selecionando um ícone no canto superior direito do gráfico, você poderá, na sequência a partir da esquerda, baixar o <em>plot</em> como imagem, realizar uma ampliação, deslocar os eixos, selecionar os pontos dentro de uma caixa, ou dentro de um laço, ampliar, reduzir, escalonar ao tamanho original, realinhar os eixos aos do plot original, observar as coordenadas (x e y), observar somente a coordenada <em>y</em>, e retornar ao início.</li>
+</ul>
+</section>
+<section id="salvando-o-gráfico" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="salvando-o-gráfico"><span class="header-section-number">2</span> Salvando o gráfico</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora uma <span style="color:orange;"><strong>característica bem interessante do <code>plotly</code>: você pode salvar o gráfico mantendo toda a sua interatividade num arquivo</strong> <em>HTML</em>. Dessa forma qualquer pessoa será capaz de abrir seu gráfico em um <em>browser</em> de internet (<em>Firefox, Chrome, Edge</em>, por ex), o que lhe permitirá observar os detalhes e a ação interativa em qualquer computador, notebook, <em>tablet</em> ou <em>smartphone</em> !!!</span></div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E pra salvar <strong>seu 1o. gráfico interativo</strong> é muito simples:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Após feito o gráfico, clique em <span class="st">"Export"</span>, logo acima do gráfico na aba <span class="st">`</span><span class="at">Plots</span><span class="st">`</span>;</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Clique em <span class="st">"Save As Web Page"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Escolher um nome pro gráfico e salvá<span class="sc">-</span>lo</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora basta localizar o arquivo em seu computador, abrir o arquivo automaticamente em um <em>browser</em>, e verificar que sua interatividade foi mantida. <strong>E para compartilhá-lo, se desejar, basta enviar o arquivo do gráfico interativo para alguém ou exibi-lo num projetor multimídia</strong>.</div>
+</section>
+<section id="trabalhando-com-relações-matemáticas-nas-variáveis" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="trabalhando-com-relações-matemáticas-nas-variáveis"><span class="header-section-number">3</span> Trabalhando com relações matemáticas nas variáveis</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Às vezes é interessante na construção de um gráfico que se permita executar um cálculo em uma variável, sem que com isso tenha que se elaborar um novo vetor. Exemplificando, se você está trabalhando num planilha eletrônica (ex: <em>Excel</em>) e deseja construir um gráfico de, digamos <em>x</em> <em>versus</em> <em>x/2</em>, terá que montar uma coluna com essa operação. No <code>plotly</code>, assim como no <code>R</code> como um todo, não precisa. Veja.</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>x<span class="sc">/</span><span class="dv">2</span>, <span class="at">type =</span> <span class="st">"scatter"</span>) </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>No scatter mode specifed:
+  Setting the mode to markers
+  Read more about this attribute -&gt; https://plotly.com/r/reference/#scatter-mode</code></pre>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-94895b6c1286e75b7b04" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-94895b6c1286e75b7b04">{"x":{"visdat":{"3b9f11660572":["function () ","plotlyVisDat"]},"cur_data":"3b9f11660572","attrs":{"3b9f11660572":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"x/2"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[0.5,1,1.5,2,2.5,3,3.5,4,4.5,5],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="reminder-markdown">
+<p><strong>Agora é com voce:</strong></p>
+<p>Abra um novo script e construa um gráfico que apresente uma relação qualquer entre variáveis, tal como sugerido abaixo:</p>
+<ol type="1">
+<li>Crie os valores da variável independente (ex: x = 1:10);<br>
+</li>
+<li>Carregue a biblioteca <code>plotly</code> - <code>library(plotly)</code> ;<br>
+</li>
+<li>Digite uma linha geral de comando pro gráfico:<br>
+<code>plot_ly(x = ~x, y = x, type = "scatter")</code><br>
+</li>
+<li>Selecione essas linhas, dê um Ctrl+Enter, e observe a saída (ou seja, o gráfico, na aba <code>plots</code> ;<br>
+</li>
+<li>Modifique a variável “y”, substituindo o valor de “x” por alguma outra relação, tal como: <code>~exp(x)</code> - exponencial, <code>~sin(10*x)</code> - seno, ~sqrt(x)` - raiz quadrada;<br>
+</li>
+</ol>
+</div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se tiver dado tudo certo, um exemplo poderia ser o fornecido abaixo:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span><span class="dv">1</span><span class="sc">/</span>x, <span class="at">type =</span> <span class="st">"scatter"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>No scatter mode specifed:
+  Setting the mode to markers
+  Read more about this attribute -&gt; https://plotly.com/r/reference/#scatter-mode</code></pre>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-0289778c139b13103620" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-0289778c139b13103620">{"x":{"visdat":{"27f428d57fbd":["function () ","plotlyVisDat"]},"cur_data":"27f428d57fbd","attrs":{"27f428d57fbd":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"1/x"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,0.5,0.33333333333333331,0.25,0.20000000000000001,0.16666666666666666,0.14285714285714285,0.125,0.1111111111111111,0.10000000000000001],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p>Gráfico de uma função inversa, y = 1/(x).</p>
+</div>
+</div>
+<p><br>
+</p>
+</section>
+<section id="outros-tipos-de-gráficos" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="outros-tipos-de-gráficos"><span class="header-section-number">4</span> Outros tipos de gráficos</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Também é possível elaborar outros gráficos, como de <em>linhas, barras, histograma, ou box-plot</em> (“caixa de bigodes”). Experimente:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Linhas</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>y, <span class="at">type =</span> <span class="st">'scatter'</span>, <span class="at">mode =</span> <span class="st">'lines'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-f0094b37ad3394de293e" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-f0094b37ad3394de293e">{"x":{"visdat":{"27f4dc6cd71":["function () ","plotlyVisDat"]},"cur_data":"27f4dc6cd71","attrs":{"27f4dc6cd71":{"x":{},"y":{},"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"mode":"lines","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Barras</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>classes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>) <span class="co"># dados para o gráfico de barras</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>percentuais <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">25</span>, <span class="dv">35</span>, <span class="dv">20</span>, <span class="dv">20</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>classes, <span class="at">y =</span> <span class="sc">~</span>percentuais, <span class="at">type =</span> <span class="st">'bar'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-e5d3e42d2d4976df2a67" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-e5d3e42d2d4976df2a67">{"x":{"visdat":{"27f49c2f426":["function () ","plotlyVisDat"]},"cur_data":"27f49c2f426","attrs":{"27f49c2f426":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"classes","type":"category","categoryorder":"array","categoryarray":["A","B","C","D"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"percentuais"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["A","B","C","D"],"y":[25,35,20,20],"type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>classes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>) <span class="co"># dados para o gráfico de barras</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>percentuais <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">25</span>, <span class="dv">35</span>, <span class="dv">20</span>, <span class="dv">20</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Gráfico de torta</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">labels =</span> classes, <span class="at">values =</span> percentuais, <span class="at">type =</span> <span class="st">'pie'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-d9c04daa2dae016b5a10" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-d9c04daa2dae016b5a10">{"x":{"visdat":{"27f46dc818fc":["function () ","plotlyVisDat"]},"cur_data":"27f46dc818fc","attrs":{"27f46dc818fc":{"labels":["A","B","C","D"],"values":[25,35,20,20],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"labels":["A","B","C","D"],"values":[25,35,20,20],"type":"pie","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Histograma</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>) <span class="co"># comando pra gerar dados aleatórios no `R`</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">type =</span> <span class="st">"histogram"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-8743fd8226f1f7e7a365" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-8743fd8226f1f7e7a365">{"x":{"visdat":{"27f430f1a820":["function () ","plotlyVisDat"]},"cur_data":"27f430f1a820","attrs":{"27f430f1a820":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"histogram"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[0.16787557688167384,0.17181834432684945,-0.60935018817164077,-1.1266039555304188,-0.24720366196310214,0.036150248782258448,1.8583006882676345,0.30317027624460202,0.012327019278696442,1.1645071542209764,0.56832093996477318,0.71040612713358775,0.30038230198293769,-1.6411800097691105,0.62321976946143232,0.88932946294111836,-0.58458040561995905,0.23857466104096073,0.033944142247210353,0.11573306572057916,-0.34567572414461728,-2.1866247630571469,0.52641886597290277,0.21173044885825842,-0.99652280820774797,-1.0620538765002734,0.73104292561970896,0.91895774867318836,0.47063988601386247,-0.14315688222731052,1.0084543618512418,0.1828802759334659,0.20719623305158305,0.50788746905089877,0.74532950357865058,-0.15627461330671086,-1.2892126509881694,0.043257229139740346,-0.042839019407430116,-0.66545089395673607,-0.74781159900772054,0.82599168205689133,1.0273045138002164,-0.57722080189709191,0.37822172803704995,-0.25031789567383417,0.56772654711690895,0.047725153699173857,0.1267347413149208,-0.88914515611598877,-0.053088483560019377,-0.87725367235296947,-0.78862851368736386,0.23466844240677187,-1.1897377566894507,0.40268236017335884,0.25803889053131723,0.057691680773677909,-0.57297927898633128,0.38980411250212693,-0.72398106260944672,0.91863886069723844,0.25653093943564975,0.73636531487634771,-1.0784777342311216,0.85057185438438188,1.6561606037991563,-1.3679663535613504,0.82788244622630769,-0.11950391871901461,0.18714480798148447,-1.2408501551239812,1.2946438432701535,-0.25950110145041655,-1.4914081043890437,-0.90804056329356353,0.20972225879025524,-0.27512347381673041,0.084149134435890782,1.6167186835295047,-0.72093777580975271,2.7493065969404284,0.47036823347688705,-0.099964131301112466,-0.86105122189063565,0.85525384801142657,0.97794556028570723,0.43656960131017902,0.027678833632815154,0.10783718183696263,-0.4494364203145601,0.99931156964139278,-2.4202151955285798,-0.69955565326582847,0.61231202793751738,-0.98311874178513503,-0.34170042450772437,-0.79295340911563106,-0.31155466240936691,-0.35834253970702395,0.29317405036318361,0.63454243873276484,-0.37668299776907743,-0.076406985547754436,0.47120049680812964,1.78465012496222,-0.048605928871990868,-0.32501079949876344,-1.7724232616205378,-1.4889154168591372,-0.16498819561281411,-1.2294247589853737,0.23161265538609896,0.62400923865529323,-0.19661397419360466,0.77494404117555937,-0.95675278691424737,-1.22484298275338,-0.1435255508382392,-1.3863868406877689,0.35051924265472362,-0.79244149777147643,-0.030033599647547211,-0.1912998978702595,1.5438814106380627,0.30652864375539773,0.0038277659707943454,0.65645951182082452,0.19468215427067576,0.19009735315983789,0.55779046281869216,1.4556866355510514,0.76485123830133295,0.31898279654868456,1.2154263193143064,0.0054622451504952648,1.7806847157588146,0.7496378474150196,0.43898485485537542,0.73575961661939659,-1.1256263107473072,-1.3324473518361737,0.45335129966881266,-0.84305632161505772,-0.53920016274470139,0.58830010098721752,0.57751077163414033,-0.62712228548677695,1.9050619794431787,-0.64329246894729242,0.15596163112687209,-1.2845510604637977,-1.6026719688976492,2.249257719797408,0.31886243914263956,0.16474328056330351,1.3508728993739914,1.6608122891886115,1.6111269089175966,-0.25559722186845896,-0.066722972256397825,0.99152530794405092,0.46753682177133582,-0.30977666656360686,-1.8380533790866238,0.17385466573439506,-0.65109012750450668,2.3100840450224349,0.7013849661180418,0.24534351601152865,-0.26253284031264451,1.3663425991617244,-0.10328571324586039,-0.56943984686062477,0.5867942952304378,1.1694184930590874,0.2962448178542974,0.8008890987980648,1.120445173804423,0.25688115669848671,-1.432048778859264,0.05233463020199268,0.78815668421624141,-1.5780755450686326,-0.38690869105898129,-0.60047630001154861,1.2497934795590686,0.097799982741461677,-1.4592921843376905,1.078762180743821,-0.31400410449129912,0.11281485034597621,0.3703261586691986,-0.00062513566072054151,-0.10166092406322159,-0.82242982802838982,-2.2480076074341797,1.1145662252280768,-1.7291668509606914,0.66803663628488708,-1.4323555518566657,-0.27326417680450488,-0.32635880317463073,-0.76631659322816348,0.81533836281653826,-2.2556329409312057,0.10729813924502024,0.8644018305536354,0.27490462345206979,0.45314969299718039,-1.3944699814518799,-2.0099621744280078,-0.68532973831688793,-0.19377741502643181,0.95780512280510932,0.31722789284219072,0.011017731072222446,-1.1083452635118414,-1.2953850298426224,0.10693686963491728,-0.080680383510388337,1.1474125723748163,1.2806785498520912,-1.4943305022065749,-0.6929202861024113,-1.1154394067923132,-0.73054610092577454,0.97148431864532092,0.60405305367916429,0.42502112526848823,-1.2774918598167031,-0.90719254392894855,1.1122021737974845,0.63688869835070949,0.84014391059766502,1.6238799793913801,-0.09069235514104948,-0.33831210146453083,-0.83547234723087738,1.2147529275529234,-0.21387591779482437,0.72189695889158978,0.49789857440138818,0.38626809416378916,-1.8660273272223447,-0.084913394078099044,0.09182012758683504,-0.98613384739234444,1.0924871579068824,-1.5319152166716963,0.7234570206382861,-1.169828235047484,-1.3517251944104407,0.67643502864360772,1.5078560393391505,1.8007923830345034,-1.4772999278878407,2.3738127361202812,0.81674613265498075,1.6630672624218328,0.15471685340317445,0.62024491524116176,0.88463132412693446,-0.17857625587764139,0.18403215769896419,0.50200986625651423,0.46590068903900422,1.3459158355398286,0.69029838148123801,-0.52010358143085822,-2.270635096198387,0.27554165906445521,0.86302512938993148,0.10239895203725909,-0.97630584956233346,-0.19927998960576554,-1.2370028692951271,0.79842439984023483,-1.465497064751671,0.20786111285496536,1.6201298101695611,-2.0413212645505738,0.59223580759980743,0.57256729784724159,-1.3461457462458819,-0.048589646624285984,-0.52782137275475904,0.86223312276029607,0.70638586639128953,-0.39874421542106914,0.84650415485503261,-0.16932135325483244,1.1357400784552099,-0.17033710767643556,0.65453976067799258,1.2911234096310034,-0.070009853962740079,-0.21552331904134581,-1.2607332310446264,0.90222371051943762,1.0619052668482512,0.41657198453697208,0.0030609034846244641,-0.89202060081115453,0.22234985630499743,-0.20987116463696467,0.72107099216102033,0.71551967959513729,0.26521352257130665,1.5955052323634309,-0.55453024716923704,0.42573605795897024,-0.78234474643878893,-2.217073346679669,0.25777927034283143,1.3916624211579962,0.11103126194276425,0.82970518954266459,0.87139739816342621,1.0498845324639132,1.6049591625082082,0.20062209222223257,0.80250073509374997,0.38385581191155715,-0.46700346304796059,-2.7593760980232664,-1.3063161637438576,1.0068193993725087,-0.89633634840717558,-2.2441612149419989,-0.1489040498321926,1.0010206537079307,0.15314395507575093,1.2714717653961252,-0.68908913030274832,1.0041520341573105,0.30851584735847531,0.9013501194854654,0.096387847755704234,-0.65283546855480978,-1.1180317992883273,-0.047054158784844043,-1.660912113911982,-1.1025941459066206,0.74966257356142796,2.5563067038959986,0.033874063113267606,-0.89003629235587767,0.037264936502091416,-1.3060431101162058,2.0338129034135095,-0.15010034934400329,0.34362090517700838,0.50993652282195556,0.81674817140245093,-0.9371129813441319,0.21066798550651689,1.1132354834249911,-0.81754527506984775,0.15010070284925284,-0.42763192632857094,0.47892572153952506,-0.98310377484506284,0.10254364705941296,-1.6973370563469039,1.5946543544086833,-0.9738637014265501,0.81194518760630341,0.4075687248549173,0.44025778115771314,0.74789339173620539,-0.14563189517320665,0.42300863311062376,0.46517909709330629,-1.5134136316487359,0.47743682341963745,0.25802241798765385,-0.42228131666260638,-0.19972191384323831,-1.2938004529929013,1.7392162448295909,-0.83717297902159393,0.35889701456809708,1.2104462124460658,0.35162327812990396,1.56546903762672,-1.132528079872521,-0.11785235259452823,-1.0069640623972234,-0.41549443686018045,-0.68497178093697964,-0.079189518006236442,1.238139853674683,-0.99722618647158845,0.4176457506722559,1.4614158350888542,-1.2041436740055163,1.4506523296904328,-0.18804671022031197,0.33991518588178887,1.4656720334287028,-0.69902446122545037,-0.62255813054924003,-0.086998101314440093,-0.065656071057698218,1.0223448744116239,0.42466871225597397,0.08620016627639987,-0.035539531621768775,0.83634106318923196,0.88677520022145473,0.8685023112990834,0.50338105351063922,-0.81551351238654257,0.35387749144026703,0.89447126031341551,-0.29997659008055316,-0.014900465410599157,2.2778145570017432,-0.50748389217574374,-0.34146343873500301,0.80126963956398123,0.04696281241387041,-0.55199420291260626,-1.3454939467150013,1.3234679007277619,-0.39700714116089608,0.28422456926162792,1.0287828026186627,1.775647357988321,-0.1140425873262894,-0.35441185731864849,2.4233000909941276,0.3314436153197553,-1.7437210266835232,1.1832465519665465,0.60547957471177394,-0.79786349607965812,-0.44672273503559989,-0.043082098218480545,-1.2191094354375005,0.9595757263000072,1.7634897470039881,1.2990921133800901,-0.10722461726183032,-0.044795548369057692,0.083467574940359501,-0.18759510363727411,-0.8959683771789404,0.12831051685755709,-0.87413213516023991,-3.1372743354080019,-0.16983482140528061,-1.0803323800943774,-0.46015159075736145,2.2147052563687937,0.27173020956188615,0.32017098591003224,-0.16376424064193137,-1.0831473908753273,0.76626098786911356,0.86600547378476034,0.59700169157435823,0.044560335107103888,0.079223669147054226,1.9486678608539323,-0.19628340501598462,-0.74726178456340508,0.48760844834236611,0.81191407850665842,0.07833774603976465,-0.90401555666423339,0.51022559591693306,0.81133046121819363,-0.35784999656432886,0.5931926617014085,0.21671440122190952,-0.92849492663158428,1.1683795831322683,-0.75435352330698258,1.4507886111720132,-1.1698734051780004,0.22819290330014158,1.2262766714148856,-1.6956085709786795,0.041365170642339924,0.064820568366645973,-1.5481073806270735,-0.24054357316393513,-0.52871587908748974,0.86333637432128341,-0.43998127303154588,0.55146193188565074,-1.63047454243749,0.79944832163142354,-0.090262683599635782,-0.12949647210876508,-1.4166152098875398,-2.0267906932596453,1.2611577795584454,-0.018656141487146553,0.40505670936156046,1.5594517754662895,-0.15447757405530607,-0.28972130353571063,-0.1060980322995346,-2.5770359511199268,1.0748367567850055,-0.61284500529921182,-0.4888989938954838,0.13797572954451665,0.93061213903972706,-1.1524373205912612,-1.2104395083180177,-2.060881926635989,0.6207055289516743,0.93727739112149744,-1.2496119201099825,-0.2428695569178802,-1.1452660049625851,0.18075034445882671,0.1709826954509272,-0.25969101982452431,0.43168833423130049,0.38722095675399232,-0.49698714257315918,-0.79150991182366703,-1.516967111742682,-2.2591137048511962,-0.43045565769381983,-1.3880953933687303,-0.6267873175529789,-0.69429293749874321,0.77527488148676038,1.1258610672820228,-1.892196786138066,1.5013216083554022,1.5770450481772353,-1.0590505059317208,-1.5136578026643326,-1.2285364050575558,0.11418580874430044,0.19049914718532085,-0.047505108449200667,-0.054594543981749767,2.1307764383420573,-0.23465264138851577,0.0057419901792428842,0.78258257640223494,0.44551769576157974,-0.52825743522788637,-1.1943757595416824,0.093881070470277106,-2.4034697876301343,-0.66271834888336445,-0.053938993628689473,-0.20960311006471924,-0.6134811081133138,-0.644633751942426,0.54111863747111166,1.0578847908412712,0.88786426873160873,1.2135206549172863,-0.014128161046736252,-0.99291976784399705,-2.2242943273816573,0.49454851938443167,1.1554507303013222,1.1938672086475406,1.1494728678010495,-1.9296166333608744,0.67208794304816599,0.79110455059837004,-0.54185846630137169,1.4621923554456919,-0.072562374623208609,0.11388740717996119,-1.7018709151992233,-0.073221901841627413,0.095247664634335955,-0.04224508101624895,-0.4141520679034697,-0.84035637885690373,0.38042258524340816,0.64168652055471032,-1.24703397963919,1.1678837364645129,-1.046268975907829,0.19023893932385441,0.23309373255953278,1.4604494549897404,1.4175773984006446,1.1639922214230454,-0.13055987933387575,0.239381182281587,0.73182462935285142,-0.99318118245903886,-0.59388625211275092,-0.99793573320687512,-0.41523911952341508,-1.3046966056370133,-2.5142952474805633,-1.9291564252300188,-1.8370044054330779,0.17472988188063673,0.3846159025508305,-1.036942082060087,0.57749003735705762,0.97619540133974458,-1.8182282587114857,-0.35732065848789846,0.61705550440325707,-1.038071855290974,0.10209695008132144,-0.30418785361972345,1.4513247243109415,1.2077843520096794,-0.15201763599699705,-0.85511375562034497,-1.1465945309087195,0.97034193089683307,-0.51057753375324821,1.9031662722843186,-0.69915409525736449,0.55908394858049582,1.6738069364706527,1.2527968021205163,0.62670589233421559,-0.87687652527318483,-1.1574465952419448,-0.061781530700250005,0.55021272177748071,0.57063995066907214,-1.0929911586809162,-0.0092946634159627381,-0.29936558356358223,-1.1542366299078508,-0.28815669157370255,0.5888137106246687,0.96734212028955879,0.062151696847563075,-0.94912432274037373,1.2601713338382992,-1.8915371461579302,1.5029522484248257,1.2974720288087591,0.6074436299034367,-2.0902814507917027,0.28719352835035972,0.70930846861940933,-1.217033434175163,1.3837552313064998,-0.10571358516810825,0.87932861995650702,-0.98495831713735404,-1.4127268492386815,-0.47787735022690947,1.9841196380860042,-0.4706720077293014,0.54739484924863302,-0.2215801152747402,0.18635585097021493,0.4156100226101026,0.79957888547085698,-1.0026278973960452,0.52893470076322879,-0.96236706698425423,0.11641422810440753,-1.929074361665913,0.58992405284630101,0.10733702515292846,-0.50905975353881316,0.46888176290567812,-0.25209353077419,-0.8433776121111406,0.50541706317294011,-2.2065520667080691,1.6583244993690269,0.50161988961329196,-1.9036204535576322,-1.2428989583324945,-0.078694348773019743,0.72758491243786905,-1.4904531561991399,0.17598979545106189,0.15326893648178921,-0.52374305820814238,-0.21879234376508402,1.6032602124365991,0.0063288688637168737,0.072746393842844925,-0.32287389582349535,1.0080283789727329,2.0301830811613986,2.2800292893787453,0.36984441805429041,-1.2537010975075822,-0.87534447345325894,-0.34820438921369062,-1.0084533357814596,-0.89409045874466841,0.1872431682345288,0.24240326316936947,-0.28126533450624147,0.17428538328155815,0.43790448386611153,-1.5357870241774252,-0.58110189487506714,0.16628130792872162,-0.30088503919173465,-0.66681909707791676,-1.0650945369890576,0.4068083569889871,1.303320025873355,-0.047861504309547172,-0.020192970373337896,0.68583777228110554,0.45330829477093748,1.4381124152706968,0.92706428829838738,1.2542852574797247,-0.035294340940984735,0.80981937139917259,0.36975560918870498,-1.2210540217975341,-0.27402058042940208,-0.28365196300118334,1.4595018627843872,-0.73453854369516924,-0.43454418023953728,0.12738312866631077,-0.62532236486638637,-0.2859763038096278,0.14650928850309899,-0.91360562567706816,-0.90724018623151426,-1.2696765449792493,-1.3312938618631314,1.6615861692026541,-0.30181232301568744,0.45429781015737009,-0.33527033057769562,1.097722004297023,-0.12941913359790491,0.30851106011309948,1.394591501274973,0.16186683950455621,-0.25804581091008622,-0.69973092630656508,0.15724446406821826,-0.43821441274948558,-0.66891213134909422,-0.24658683748376539,-0.060612686288671044,0.92513761510971271,-1.9747841236866752,0.69688028931298385,1.7772154696729108,-0.79381768215740089,1.5641602928702658,-0.22017997945567611,-0.017803693115358326,-1.3219637825821433,1.3726181527748744,-0.77037317694240659,-0.53270015249316349,0.43312871883442022,0.56378723838625688,2.2435984802403044,-0.96472558950785814,1.1989414802332377,1.1604156830950234,-0.80720392714951805,1.1294689893123897,0.0094887567150753853,0.93036516875675179,-2.149017518360139,0.30221490049491018,-0.33446717430682615,-0.17797062800056565,1.0790702131942065,-1.0140326603877903,0.76110651907462856,0.89754337461842904,-0.74531027690767804,0.84026671185085355,-1.9150336922872973,-0.14099414968110366,-0.10908212791532124,-0.31738997823102044,-0.95296158699579192,-0.5884433579248578,-0.56002419614114696,0.041621355272040965,-0.62811820959776987,1.4937583784657755,0.25955965205019554,-0.039486084948335082,-0.52692297253951093,-1.3347101749088406,1.366580724689318,0.69619355831854135,-2.8823582149130069,-0.00053579605010741632,-0.46782397135613557,-1.3885309661783307,-0.11978681872466033,0.9027835478986137,1.5301136158581405,0.22303182820750284,0.64662664497256961,-0.38209637744841118,-0.33105847081085632,-0.52205617125077097,-1.4999191909332039,-0.78854739699255227,-1.0465576817121973,-0.2101842727839412,0.91468898098676976,0.86084041189941951,-0.29225139653455084,-0.49318513970475153,-0.51674344347202272,-1.8290157557584328,-0.94733893789308787,-1.1968488508547621,-0.18336583829657799,0.25227667071519605,0.6076682882104244,0.71547327096609548,1.8359361528276485,1.2000029662459923,0.19645010446826161,0.91581208612324072,0.051030944036012119,0.38203824156954841,0.53846917361481583,0.13046946836449916,-1.5668141392394841,-1.0447746922843455,-0.79903298289073854,1.1176080657877812,1.6426704246671027,-0.098286636458330107,0.33457794267983076,-0.64366227899436101,-0.44276556438943332,-0.52891730575487639,-0.96865820287817961,-1.0459780426031173,0.060660277395244898,-1.0982574034539825,1.6880778570552861,0.26051093325017594,-1.7697928480271456,-0.12205907935760973,0.045906653338590897,-0.26471405055924058,-0.16762851852208474,-1.4736733516249012,-1.4247188168303671,1.135803411552182,0.57006386548808885,-0.3488142475346992,-0.9101818033227117,0.42554018572057467,-0.8826222562639402,-0.2476531529729567,2.3222733473671902,-2.0136984952302459,-1.5254063102583382,-0.27371592689003743,0.16197024801040366,1.3121827633730334,-0.20131892232500601,0.68169503276899002,0.92044189813345068,-0.57936304392401772,-0.16966122417078963,1.3364468577550408,2.4237156337538308,-0.26631480306893457,0.98435112492258148,-1.3447473930785152,0.56131507540055459,-1.1352987969096699,0.43539692373259581,-1.1316578972853732,1.5816965822702147,-0.97097229523926332,1.4215519311910363,2.0930864602226382,0.32315212210311761,1.0323320111991765,0.43969264106914502,1.2308676899327293,0.7462270991777088,-1.8843027848114222,-0.4500503414033511,-0.41134151136465391,1.4590338175841191,-2.3391353829927861,-0.47356196346123597,-0.80668052411695168,-0.89273732202557254,-0.69704469628942578,-0.56172047261896829,-0.68946370150777658,-0.99424244349252511,0.36141834289051483,0.21380688937994702,-0.19094616300337167,1.4129168123873257,-0.63462178873345476,-1.0058456684749726,0.33101932574751031,-0.40255198476468768,0.38710650031655747,-0.57953967777297521,0.31989622264303208,0.12572404073952625,-1.4411369989168403,0.75887561715813479,0.64667813427888543,1.4721874789454308,0.76300428474234905,-0.22310487957682201,-0.60398407038007973,0.14911389848702336,-1.3611888280418583,0.25678461855180018,0.59258855541340738,0.37783147857249721,1.1576819279821773,0.36448868150557245,1.7952373929042713,-0.84677254536965174,0.75564600392610448,0.4422721103494241,0.69286991156983013,-0.13189802687377994,-0.69467617862798015,0.41385152224273841,1.7214233753739638,-1.0099655881995364,1.2545347163489704,-0.040651378263799824,-2.3119973710716355,-1.9068105876499013,0.66943592164033883,-1.6882506554671108,-0.29625035834903535,-0.85738881580665427,0.46001669606395962,0.35321412229184079,1.3100155980721069,0.15576074393896297,-0.17067467032941991,-0.41880478603550708,0.88312193467280109,-0.69909896460521315,0.83050980046191536,-0.010598638373999516,-1.1426621698541253,0.76932838721839758,-1.6427314981475212,-0.69698747860818544,0.01525704245269113,0.34873149539679682,1.3310806849208805,0.19626256337568826,0.99374626815796341,-1.2196637449054237,-1.0380592795114649,1.3005648238844707,-0.37429307712215792,0.36892930975914201,-0.21337686460753505,-2.0139000689312341,0.72596051087617086,1.2073118368920321,1.3206154139780664,1.5466747280769506,1.3436294284501316,0.2530192422967843,-0.53356682937923949,0.48450631053196502,0.19966086860346674,-0.87944889541415705,-2.0737169188458711,0.25117183778063734,0.21192759489483298,-0.60726776690127515,-0.50937722358629445,1.9565096333083112,1.0415578715223002,0.82212730278779889,-0.32636002640689621,0.84975877588875248,-0.99316128651619329],"type":"histogram","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Boxplot</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">50</span>) <span class="co"># gera dados aleatórios</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">50</span>, <span class="at">mean =</span> <span class="dv">1</span>) <span class="co"># gera a variação estatística nos dados</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">y =</span> <span class="sc">~</span>x, <span class="at">type =</span> <span class="st">"box"</span>, <span class="at">name =</span> <span class="st">'Grupo 1'</span>) <span class="sc">%&gt;%</span>  <span class="co"># adiciona os dois box para os dados</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_trace</span>(<span class="at">y =</span> <span class="sc">~</span>y, <span class="at">type =</span> <span class="st">"box"</span>, <span class="at">name =</span> <span class="st">'Grupo 2'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-49cc0cea722562083c7d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-49cc0cea722562083c7d">{"x":{"visdat":{"27f435584179":["function () ","plotlyVisDat"]},"cur_data":"27f435584179","attrs":{"27f435584179":{"y":{},"name":"Grupo 1","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"box"},"27f435584179.1":{"y":{},"name":"Grupo 2","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"box","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"yaxis":{"domain":[0,1],"automargin":true,"title":"x"},"xaxis":{"domain":[0,1],"automargin":true},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"fillcolor":"rgba(31,119,180,0.5)","y":[-0.83286277847526702,0.66182953195295002,0.98020088171759467,1.2396675841253704,-1.9118514925091894,0.62512961956184498,-1.1314953159361749,-0.00095259707106609996,1.1278220882758032,1.1264717328349141,0.84355300790367749,-0.51704009893246816,0.53650617511343235,0.21085623276439716,0.94972168266912182,-0.3666109077196108,0.69212635387800892,-0.99148101437273983,-0.52219401601120741,-0.53740582064837361,0.74553415227423614,-0.98991179169586985,0.81557062350885967,0.20168200923207377,0.26630376628389213,1.80463816593021,-0.38720519277647736,-1.6017567716113443,0.61063445359677337,0.37676757037579972,-0.14572952682323018,-1.9814599106340096,1.8913203096960138,-1.4008380849295414,0.52162511481111506,0.95178909601069295,0.20588872503695313,-0.15632120465938332,-0.27533532872855215,-1.1061233955235952,0.93798172965391535,0.6228800270567143,-0.96148551604479815,0.43368203892979401,0.10372925903515913,-0.99318552987895303,1.1202135266097168,1.0631150033628454,1.5654563342113541,0.67382662533343674],"name":"Grupo 1","type":"box","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(255,127,14,0.5)","y":[-0.065244361837074605,1.6886665177906095,0.94052405868095557,2.8831825438192569,1.6226931572558549,0.53435374743977371,1.3465092791410891,-0.43024880050406211,1.1845409004383243,0.3969767714034792,1.1975607829514885,0.46107985350496772,0.96066040983185641,2.0109269198963693,1.1281162938672027,2.3641558218033767,-0.36140194843265028,2.0269425755774373,0.88665121106331723,1.1760366413914993,-0.055272353845017275,1.290859687365727,0.69840385945115102,0.35951993657950954,1.4037974005551266,-1.2120610351082637,0.20394694814338732,0.27398980405758677,1.5705418378209566,0.85308725210730951,0.039548797165959937,-0.6183264806640334,-0.38063597925368997,-1.2606067226737467,-0.28112639543247497,-1.18598953729163,1.2553060667340747,0.611162661500259,-0.14346351847656535,2.2251539354926746,2.29219392816518,0.93243792949390569,1.0267426711555718,0.1400582169526724,2.6144693168787896,-0.86702690097221224,0.84822722260835204,0.13327613564585039,3.0982170060144907,-0.43487700864909273],"name":"Grupo 2","type":"box","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Também é possível combinar alguns tipos, como um gráfico de <em>pontos e linhas</em>:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pontos e linhas</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>x<span class="sc">^</span><span class="dv">2</span>, <span class="at">type =</span> <span class="st">'scatter'</span>, <span class="at">mode =</span> <span class="st">'markers, lines'</span>) <span class="co"># também dá se 'markers+lines'</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-3ff4531bb5c18116d30a" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-3ff4531bb5c18116d30a">{"x":{"visdat":{"27f4117db663":["function () ","plotlyVisDat"]},"cur_data":"27f4117db663","attrs":{"27f4117db663":{"x":{},"y":{},"mode":"markers, lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"x^2"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"mode":"markers, lines","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><br>
+</p>
+</section>
+<section id="gráficos-3d" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="gráficos-3d"><span class="header-section-number">5</span> Gráficos 3D</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para encerrar essa parte, <em>gráficos tridimensionais</em> ! A versão básica de um gráfico 3D é bem simples de se executar no <code>plotly</code>, mas seu efeito visual e interatividade são significativos ! Experimente usar o <em>mouse</em> no gráfico produzido pelo exemplo que segue:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>x<span class="sc">^</span><span class="dv">2</span>, <span class="at">z=</span><span class="sc">~</span>x<span class="sc">^</span><span class="dv">3</span>, <span class="at">mode=</span><span class="st">'markers'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>No trace type specified:
+  Based on info supplied, a 'scatter3d' trace seems appropriate.
+  Read more about this trace type -&gt; https://plotly.com/r/reference/#scatter3d</code></pre>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-01859cd446a35fdd3783" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-01859cd446a35fdd3783">{"x":{"visdat":{"27f47552d1e":["function () ","plotlyVisDat"]},"cur_data":"27f47552d1e","attrs":{"27f47552d1e":{"x":{},"y":{},"z":{},"mode":"markers","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"x"},"yaxis":{"title":"x^2"},"zaxis":{"title":"x^3"}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"z":[1,8,27,64,125,216,343,512,729,1000],"mode":"markers","type":"scatter3d","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem outros tipos de gráficos para o <code>plotly</code>, pelo que vale uma visitinha ao <a href="https://plotly.com/r/">website</a> para mais informações.</div>
+</section>
+<section id="referência-do-pacote" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="referência-do-pacote"><span class="header-section-number">6</span> Referência do pacote:</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/plotly/index.html">Geral</a></li>
+<li><a href="https://cran.r-project.org/web/packages/plotly/plotly.pdf">Manual</a></li>
+<li><a href="https://plotly.com/r/">Tutorial</a></li>
+</ul>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiada");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiada");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./pacotes.html" class="pagination-link" aria-label="3 - Pacotes do R">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3 - Pacotes do R</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./plotly_maisInterat.html" class="pagination-link" aria-label="5 - Mais interatividade aos gráficos">
+        <span class="nav-page-text">5 - Mais interatividade aos gráficos</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Curso de Formação em Educação Digital</p>
+</div>   
+    <div class="nav-footer-center">
+<p>ERЯƎ</p>
+</div>
+    <div class="nav-footer-right">
+<p>Universidade Federal de Alfenas</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

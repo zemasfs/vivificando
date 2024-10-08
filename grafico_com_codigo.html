@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+
+</head>
+<body>
+<textarea id="codigoR" rows="6" cols="80">
+library(plotly)
+x &lt;- 1:10
+y &lt;- x^2
+plot_ly(x = ~x, y = ~y)
+</textarea>
+<button onclick="copyToClipboard()">Copiar Código</button>
+
+<script>
+function copyToClipboard() {
+  var copyText = document.getElementById('codigoR');
+  copyText.select();
+  document.execCommand('copy');
+  alert('Código copiado para área de transferência!');
+}
+</script>
+
+</body>
+</html>
+
+<textarea id="codigoR" rows="6" cols="80">
+library(plotly)
+x <- 1:10
+y <- x^2
+plot_ly(x = ~x, y = ~y, type = "scatter", mode = "lines+markers")
+</textarea>
+<br>
+<button onclick="copiarCodigo()">Copiar Código</button>
+
+<script>
+function copiarCodigo() {
+  var copyText = document.getElementById("codigoR");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Código copiado!");
+}
+</script>

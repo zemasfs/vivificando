@@ -1,5 +1,0 @@
----
-title: "PARTE 2 - R & RStudio"
----
-
-![](RPart.png){width="200%"}

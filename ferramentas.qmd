@@ -2,29 +2,23 @@
 title: "Um pouco sobre as ferramentas"
 ---
 
-## Visualização de moléculas em 3D e animações
+## Visualização de moléculas em 3D e animações - *Jmol*
 
-|       São vários os programas disponíveis para observação e estudo tridimensional de modelos atômicos, e que cujo acesso se realiza por computador, dispositivos móveis, e mesmo pela internete. Uns são gratuitos, outros de demonstração gratuita, outros são pagos. Numa lista pequena, pode-se mencionar:
+|       São vários os programas disponíveis para observação e estudo tridimensional de modelos atômicos, e que cujo acesso se realiza por computador, dispositivos móveis, e mesmo pela internete. Uns são gratuitos, outros de demonstração gratuita, outros são pagos [^1]. 
+\
 
--   [Pymol](https://pymol.org/2/)
--   [Maestro](https://www.schrodinger.com/products/maestro)
--   [iMolView](https://www.molsoft.com/iMolview.html)
--   [VMD](https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD)
--   [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/)
--   [Vesta](https://jp-minerals.org/vesta/en/)
--   [QuteMol](https://qutemol.sourceforge.net/)
+[^1]: Numa lista pequena, pode-se mencionar [Pymol](https://pymol.org/2/), [Maestro](https://www.schrodinger.com/products/maestro), [iMolView](https://www.molsoft.com/iMolview.html), [VMD](https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD), [MolView](https://molview.org/),   [ChemSketch](https://www.acdlabs.com/resources/free-chemistry-software-apps/chemsketch-freeware/).
 
-|       Alguns programas também permitem a construção de moléculas e sua representação em 3D, como por exemplo:
+|       Por sua vez, o [Jmol](http://jmol.sourceforge.net/) é um programa multiplataforma (Windows, Mac OS X, Linux, Unix) elaborado em *Java*, e que pode ser executado tanto em versão no computador (*standalone*), ou em *browser* (navegador). Diferente de programas comuns, a versão no computador não requer instalação, apenas execução de arquivo *Java*. 
+\
 
--   [MolView](https://molview.org/)
--   [ChemSketch](https://www.acdlabs.com/resources/free-chemistry-software-apps/chemsketch-freeware/)
--   [DIY-molecules](https://biomodel.uah.es/en/DIY/JSME/draw.en.htm)
 
-|       Por sua vez, o [Jmol](http://jmol.sourceforge.net/) é um programa multiplataforma (Windows, Mac OS X, Linux, Unix) elaborado em ambiente *Java*, e pode ser executado tanto em versão fechada (*standalone*), como integrado a outras aplicações em *Java*, ou ainda junto a buscadores de internet por auxílio de um *applet*. Diferente de programas comuns, ela não requer instalação, apenas execução de arquivo *Java*. Dessa forma, o *Jmol* pode rodar tanto a partir de uma pasta de diretório contendo seus arquivos, como a partir de um disco rígido ou mídia removível (*pendrive*). Além disso é um programa de código-fonte e distribuição livres para representação de modelos moleculares tridimensionais, permite uma diversidade de visualizações e cores, movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, e animações, dentre outros. Existe um número muito grande de portais na internet que utilizam o *Jmol*, a começar pela [lista](http://wiki.jmol.org/index.php/Websites_Using_Jmol:_A-L) disponível na [página da comunidade Wiki](http://wiki.jmol.org/index.php/Main_Page).
+|       Dessa forma, o *Jmol* pode rodar tanto a partir de uma pasta de diretório contendo seus arquivos, como a partir de um disco rígido ou mídia removível (*pendrive*). Além disso é um programa de código-fonte e distribuição livres para representação de modelos moleculares tridimensionais, permite uma diversidade de visualizações e cores, movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, e animações, dentre outros. Existe um número muito grande de portais na internet que utilizam o *Jmol*, a começar pela [lista](http://wiki.jmol.org/index.php/Websites_Using_Jmol:_A-L) disponível na [página da comunidade Wiki](http://wiki.jmol.org/index.php/Main_Page).
 
 |       Complementarmente, o acesso ao *Jmol* pode ser realizado pela internete, sem a necessidade de arquivos no computador. Dentre os diversos *sites* que possuem o *applet JSmol* que permite esse acesso, sugerimos clicar na imagem abaixo, que direcionará ao *applet* do *website* da [St. Olaf College](https://chemapps.stolaf.edu/jmol/jmol.php?), ilustrando uma *molécula de água*:
 
 [![](jsmol.png){width="30%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=water) <!-- &script=Console -->
+
 
 ## Gráficos animados, simulações, e visualização cartográfica
 
@@ -32,20 +26,15 @@ title: "Um pouco sobre as ferramentas"
 
 [![](rLogo.jpeg){width="20%"}](https://cran.r-project.org/)
 
-Pode-se trabalhar com o *Rstudio* para coisas simples, como texto, gráficos e tabelas, mas também para um largo espectro de atividades, em função de sua expansibilidade por *pacotes instaláveis*. Esses pacotes são obtidos no [site oficial do projeto - R CRAN](https://cran.r-project.org), bem como desenvolvidos e disponibilizados por iniciativas individuais em sites autorais.
+Pode-se trabalhar com o *Rstudio* para coisas simples, como calculadora, editor de texto, gráficos e tabelas, mas também para um largo espectro de atividades, em função de sua expansibilidade por *pacotes instaláveis*. Esses pacotes são obtidos no [site oficial do projeto - R CRAN](https://cran.r-project.org), bem como desenvolvidos e disponibilizados por iniciativas individuais em sites autorais.
 
-|       Para se ter uma ideia desses espectro, alguns pacotes (*library*) permitem análise e criação de textos, interface com portadores de deficência visual, animações, gráficos e tabelas de qualidade de publicação técnico-científica, manipulação e anaĺise de dados e de imagens, música, arte, Ciência de Dados, internet das coisas (*IoT*), linguagem profunda de máquina, e mesmo inteligência artificial.
+|       Para se ter uma ideia desse espectro, alguns pacotes (*library*) permitem análise e criação de textos, interface para auxílio a portadores de deficência visual, animações, gráficos e tabelas de qualidade de publicação técnico-científica, manipulação e anaĺise de dados e de imagens, música, arte, Ciência de Dados, internet das coisas (*IoT*), linguagem profunda de máquina, e mesmo inteligência artificial.
 
 |       Para a pesquisa científica o `R` possui diversos *pacotes* direcionados a temas específicos e bem diversos, como Ecologia, Estatística, Matemática, Física, Biologia, Química, Artes, Geografia, Geologia, e História, dentre muitos.
 
 [![](RStudioLogo.png){width="20%"}](https://rstudio.cloud/)
 
-|       Entre os [diversos pacotes oficiais](https://cran.r-project.org/web/packages/available_packages_by_name.html) (na verdade, mais de 20 mil!), existem alguns que permitem a elaboração de objetos didáticos nos moldes do subtítulo retro. Esses pacotes são os listados abaixo, e serão ilustrados com conteúdos do ensino médio constantes do [Material de Apoio Pedagógico para Aprendizagens de Minas Gerais - Mapa](https://seliga.educacao.mg.gov.br/cardenos-mapa), bem como livros didáticos para Matemática, Física, Química e Biologia do nível educacional.
+|       Entre os [diversos pacotes oficiais](https://cran.r-project.org/web/packages/available_packages_by_name.html) (na verdade, mais de 20 mil!), existem alguns que permitem a elaboração de objetos didáticos nos moldes do subtítulo retro. 
 
--   `basic` - criação de gráficos básicos
--   `ggplot2` - gráficos mais elaborados e muito bonitos
--   `animation.plots` - animação de gráficos
--   `manipulate` - simulação gráfica de equações
--   `gganimate` - animação de gráficos do pacote `ggplot2`
--   `plotly`- gráficos interativos
--   `leaflet` - interatividade cartográfica (mapas)
+
+|       Para este *Curso* será essencialmente utilizado apenas **um pacote**: 'plot_ly',  para a produção de gráficos interativos e de mapas interativos. 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.555">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Vivificando Conteúdos ao Ensino Médio - 1 - Como usar o R &amp; Rstudio - instalação e nuvem</title>
+<title>ERЯƎ - Ensino Reprodutível nas Escolas - 1 - Como usar o R &amp; Rstudio - instalação e nuvem</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -31,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./basicaoR.html" rel="next">
-<link href="./RPart.html" rel="prev">
+<link href="./anima_Jmol.html" rel="prev">
 <link href="./avatar.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -58,17 +92,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
@@ -93,45 +127,45 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./avatar.png" alt="" class="navbar-logo">
+    <img src="./logo-unifal.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Vivificando Conteúdos ao Ensino Médio</span>
+    <span class="navbar-title">ERЯƎ - Ensino Reprodutível nas Escolas</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-folhas-de-dicas-(cheatsheets" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Folhas de Dicas (<em>cheatsheets</em>)</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-folhas-de-dicas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Folhas de Dicas</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-folhas-de-dicas-(cheatsheets">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-folhas-de-dicas">    
         <li>
-    <a class="dropdown-item" href="./jmol_cheat.html">
- <span class="dropdown-text">Jmol - folha de dicas</span></a>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/jmol_cheat.en.pt.pdf" target="_blank">
+ <span class="dropdown-text">Jmol</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./r_cheat.html">
- <span class="dropdown-text">R - folha de dicas</span></a>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/plotly.pdf" target="_blank">
+ <span class="dropdown-text">Plotly</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rstudio_cheat.html">
- <span class="dropdown-text">Rstudio - folha de dicas</span></a>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/r_cheat.en.pt.pdf" target="_blank">
+ <span class="dropdown-text">R</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outros-recursos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Outros Recursos</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outros" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Outros</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-outros-recursos">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-outros">    
         <li>
-    <a class="dropdown-item" href="https://bioquanti.netlify.app/">
- <span class="dropdown-text">bioQuanti - Bioquímica Quantitativa</span></a>
+    <a class="dropdown-item" href="https://bioquanti.netlify.app/" target="_blank">
+ <span class="dropdown-text">Bioquanti</span></a>
   </li>  
     </ul>
   </li>
@@ -157,8 +191,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           </li>
       </ul>
     </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo escuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -168,11 +202,11 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./RPart.html">Gráficos Interativos</a></li><li class="breadcrumb-item"><a href="./rstudioCloud.html">1 - Como usar o R &amp; Rstudio  - instalação e nuvem</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./rstudioCloud.html">1 - R &amp; RStudio</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -186,8 +220,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">O Curso</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Vivificando Conteúdos do Ensino Médio</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -195,19 +229,25 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ERRE</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./saudacoes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Saudações</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./questoes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Algumas questões prévias</span></a>
+ <span class="menu-text">Algumas questões</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ferramentas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Um pouco sobre as ferramentas</span></a>
+ <span class="menu-text">Caixa de Ferramentas</span></a>
   </div>
 </li>
       </ul>
@@ -215,34 +255,34 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Moléculas em 3D</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Moléculas em 3D com Jmol</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./jmolPart.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Jmol</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./jmol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1 - Usando o Jmol para observar moléculas em 3D</span></a>
+ <span class="menu-text">1 - Jmol</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./textoXmouse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2 - Cliques de mouse <em>versus</em> linhas de comando</span></a>
+ <span class="menu-text">2 - Mouse <em>versus</em> Comandos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./comandosJmol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3 - Alguns comandos pra se aventurar nas moléculas voadoras</span></a>
+ <span class="menu-text">3 - Alguns comandos do Jmol</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./anima_Jmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 - Algumas animações com Jmol</span></a>
   </div>
 </li>
       </ul>
@@ -250,73 +290,52 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Gráficos Interativos</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Gráficos Interativos com R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./RPart.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R &amp; RStudio</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./rstudioCloud.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">1 - Como usar o R &amp; Rstudio  - instalação e nuvem</span></a>
+ <span class="menu-text">1 - R &amp; RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./basicaoR.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2 - Comandos básicos &amp; Scripts no R</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./graphics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3 - Gráficos básicos e simulações</span></a>
+ <span class="menu-text">2 - Um pouco sobre uso do <code>R</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pacotes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4 - Instalando pacotes no <code>RStudio</code></span></a>
+ <span class="menu-text">3 - Pacotes do R</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./animationPlots.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5 - Animando um gráfico básico - o pacote <code>anim.plots</code></span></a>
+  <a href="./plotly_interat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 - Gráficos interativos com <code>plotly</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./manipulate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6 - Simulando equações de forma animada - o pacote <code>manipulate</code></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
- <span class="menu-text">ggplot2.qmd</span>
-  </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./gganimate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">8 - Animando gráficos do ggplot2 - o pacote <code>gganimate</code></span></a>
+  <a href="./plotly_maisInterat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 - Mais interatividade aos gráficos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./plotly.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">9 - Gráficos interativos - o pacote <code>plotly</code></span></a>
+  <a href="./plotly_anima.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6- Animação em gráficos interativos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./leaflet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">10 - Mapas interativos: o pacote <code>leaflet</code></span></a>
+  <a href="./plotly_maps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 - Mapas interativos</span></a>
   </div>
 </li>
       </ul>
@@ -334,18 +353,18 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#instalando-o-r-e-rstudio-no-computador" id="toc-instalando-o-r-e-rstudio-no-computador" class="nav-link active" data-scroll-target="#instalando-o-r-e-rstudio-no-computador">Instalando o R e RStudio no computador</a></li>
-  <li><a href="#acessando-o-r-rstudio-pelas-nuvens" id="toc-acessando-o-r-rstudio-pelas-nuvens" class="nav-link" data-scroll-target="#acessando-o-r-rstudio-pelas-nuvens">Acessando o <code>R &amp; Rstudio</code> pelas nuvens</a></li>
+  <li><a href="#instalando-o-r-e-rstudio-no-computador" id="toc-instalando-o-r-e-rstudio-no-computador" class="nav-link active" data-scroll-target="#instalando-o-r-e-rstudio-no-computador"><span class="header-section-number">1</span> Instalando o R e RStudio no computador</a></li>
+  <li><a href="#acessando-o-r-rstudio-pelas-nuvens" id="toc-acessando-o-r-rstudio-pelas-nuvens" class="nav-link" data-scroll-target="#acessando-o-r-rstudio-pelas-nuvens"><span class="header-section-number">2</span> Acessando o <code>R &amp; Rstudio</code> pelas nuvens</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./RPart.html">Gráficos Interativos</a></li><li class="breadcrumb-item"><a href="./rstudioCloud.html">1 - Como usar o R &amp; Rstudio  - instalação e nuvem</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./rstudioCloud.html">1 - R &amp; RStudio</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">1 - Como usar o R &amp; Rstudio - instalação e nuvem</h1>
 </div>
@@ -364,34 +383,40 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem dois ambientes alternativos para se utilizar o <em>R</em> (programa) e o <em>Rstudio</em> (interface do usário): instalando no computador, ou pelas nuvens. Há poucas diferenças entre ambas as maneiras de se trabalhar com os programas, mas a fundamental é que a <em>instalação</em> pode ser utilizada <em>offline</em>, sem necessidade de internet, enquanto que pelas nuvens, bom, já sabe.</div>
-<section id="instalando-o-r-e-rstudio-no-computador" class="level2">
-<h2 class="anchored" data-anchor-id="instalando-o-r-e-rstudio-no-computador">Instalando o R e RStudio no computador</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Objetivos<span class="sc">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fl">1.</span> Conhecer o R e o RStudio</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fl">2.</span> Compreender os passos para instalação em computador</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fl">2.</span> Acessar o RStudio pelas nuvens</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem dois ambientes alternativos para se utilizar o <em>R</em> (programa) e o <em>Rstudio</em> (interface do usário): instalando no computador, ou pelas nuvens. Há poucas diferenças entre ambas as maneiras de se trabalhar, mas a fundamental é que a <em>instalação</em> permite a utilização dos programas <em>offline</em>, sem necessidade de internet, enquanto que pelas nuvens, bom, já sabe. Por outro lado, na versão de nuvem não é necessário instalar nem o <em>R</em> e nem o <em>RStudio</em>, enquanto que na versão instalada existem alguns passos pra isso, descritos abaixo.</div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contudo, <span style="color:orange;">você poderá utilizar a versão em nuvem durante todo o <em>Curso</em>, não sendo necessário preocupar-se com as instalações do <code>R</code> ou do <em>RStudio</em>.</span></div>
+<p><br>
+</p>
+<section id="instalando-o-r-e-rstudio-no-computador" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="instalando-o-r-e-rstudio-no-computador"><span class="header-section-number">1</span> Instalando o R e RStudio no computador</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Você precisa seguir uns poucos passos para instalar o <em>R &amp; RStudio</em> no computador. Na prática, baixa-se ambos os programas e os instala como se faria com qualquer outro programa, tanto faz se para <em>Windows</em>, <em>Linux</em>, ou <em>Mac</em>. Seguem os passos:</div>
 <ol type="1">
 <li><p>Acesse o site do <a href="https://posit.co/download/rstudio-desktop/">Rstudio</a> e faça o <em>download</em> do programa <code>R</code>. <img src="rstudioSite.png" class="img-fluid"></p></li>
 <li><p>Instale o programa com as opções padrão.</p></li>
 <li><p>No mesmo site do ´<a href="https://posit.co/download/rstudio-desktop/">RStudio</a> procure um pouco mais abaixo pelo instalador mais apropriado a seu sistema operacional.</p></li>
 </ol>
-<p><img src="rstudioInstala.png" class="img-fluid"></p>
+<p><img src="rstudioInstala.png" class="img-fluid"><br>
+</p>
 <ol start="3" type="1">
 <li><p>Baixe o arquivo e instale-o como qualquer outro programa.</p></li>
 <li><p>Abra o programa <em>RStudio</em>, e cuja interface será parecida com a que segue.</p></li>
 </ol>
-<div id="fig-rstudioJanela" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-rstudioJanela-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="rstudioJanela.png" id="fig-rstudioJanela" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-rstudioJanela-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1
-</figcaption>
-</figure>
-</div>
+<p><img src="rstudioJanela.png" id="fig-rstudioJanela" class="img-fluid"><br>
+</p>
 </section>
-<section id="acessando-o-r-rstudio-pelas-nuvens" class="level2">
-<h2 class="anchored" data-anchor-id="acessando-o-r-rstudio-pelas-nuvens">Acessando o <code>R &amp; Rstudio</code> pelas nuvens</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essa é uma opção simples e que não requer qualquer instalação. A interface acessada é praticamente igual à da instalação em computador. Entre algumas vantagens destaca-se a velocidade normalmente superior pra rodar e instalar pacotes, posto que o servidor para esses já está no provedor em nuvem. Mas por ser acesso <em>online</em>, requer uma inscrição inicial, com <em>login e senha</em>. Seguem os passos:</div>
+<section id="acessando-o-r-rstudio-pelas-nuvens" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="acessando-o-r-rstudio-pelas-nuvens"><span class="header-section-number">2</span> Acessando o <code>R &amp; Rstudio</code> pelas nuvens</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essa é uma opção simples e que não requer qualquer instalação. A interface acessada é praticamente igual à da instalação em computador. Entre algumas vantagens destaca-se a velocidade normalmente superior pra rodar e instalar pacotes, posto que o servidor já se encontra em nuvem. Mas por ser acesso <em>online</em>, requer uma inscrição inicial, com <em>login e senha</em>. Seguem os passos:</div>
+<p><br>
+</p>
 <ol type="1">
 <li>Acesse o site do <a href="https://login.posit.cloud/login?redirect=%2Foauth%2Fauthorize%3Fredirect_uri%3Dhttps%253A%252F%252Fposit.cloud%252Flogin%26client_id%3Dposit-cloud%26response_type%3Dcode%26show_auth%3D0">RStudio Cloud</a>.</li>
 </ol>
@@ -406,15 +431,19 @@ Figure&nbsp;1
 </ol>
 <p><img src="rstudioCloudNewProj.png" class="img-fluid"></p>
 <ol start="5" type="1">
-<li>A imagem final será bem parecida com a apresentada pela versão instalada, como visto na <a href="#fig-rstudioJanela" class="quarto-xref">Figure&nbsp;1</a>, veja:</li>
+<li>A imagem final será bem parecida com a apresentada pela versão instalada, veja:</li>
 </ol>
-<p><img src="rstudioCloudFinal.png" class="img-fluid"> | Pronto ! Você pode utilizar uma ou outra forma para acessar as atividades e objetos didáticos propostos neste material. A seguir serão fornecidas algumas ações e comandos rápidos para se trabalhar com a interface do <code>Rstudio</code> e com o <code>R</code>. Mas apenas para que se consiga criar, executar, e modificar alguns <em>scripts</em> criados para animações, simulações, interatividade, e geovisualização. Mão na massa, agora !</p>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por uma questão de simplicidade para o uso da versão em servidor, sem necessidade de instalação dos programas, bem como por maior velocidade de execução de <em>scripts</em> e instalação de pacotes, optamos neste trabalho por exemplificar os <em>objetos didáticos</em> em nuvem, ou seja, por uso do <a href="https://posit.cloud/">RStudio Cloud</a>.</div>
+<p><img src="rstudioCloudFinal.png" class="img-fluid"><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pronto ! Você pode utilizar uma ou outra forma para acessar as atividades propostas. A seguir serão fornecidas algumas ações e comandos rápidos para se trabalhar com a interface do <code>Rstudio</code> e com o <code>R</code>. Mas apenas para que se consiga criar, executar, e modificar alguns <em>scripts</em> criados para <em>interatividade por animação, simulação, e visualização cartográfica</em>.</div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mãos à obras, agora !!</div>
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -613,12 +642,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiada");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiada");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -970,13 +999,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./RPart.html" class="pagination-link" aria-label="R &amp; RStudio">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">R &amp; RStudio</span>
+      <a href="./anima_Jmol.html" class="pagination-link" aria-label="4 - Algumas animações com Jmol">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4 - Algumas animações com Jmol</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./basicaoR.html" class="pagination-link" aria-label="2 - Comandos básicos &amp; Scripts no R">
-        <span class="nav-page-text">2 - Comandos básicos &amp; Scripts no R</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./basicaoR.html" class="pagination-link" aria-label="2 - Um pouco sobre uso do `R`">
+        <span class="nav-page-text">2 - Um pouco sobre uso do <code>R</code></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -987,10 +1016,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Curso de Formação em Educação Digital</p>
 </div>   
     <div class="nav-footer-center">
-<p>UNIFAL-MG</p>
+<p>ERЯƎ</p>
 </div>
     <div class="nav-footer-right">
-<p>ERRE - Ensino Reprodutível</p>
+<p>Universidade Federal de Alfenas</p>
 </div>
   </div>
 </footer>

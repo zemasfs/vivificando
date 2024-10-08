@@ -1,7 +1,0 @@
----
-title: "R - folha de dicas"
----
-
-<!-- [Baixar a folha de dicas](cheatsheets/r_cheat.pdf) -->
-
-<iframe src="cheatsheets/r_cheat.en.pt.pdf" width="600" height="500"></iframe>

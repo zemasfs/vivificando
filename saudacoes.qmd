@@ -1,0 +1,47 @@
+---
+title: ""
+---
+
+## Saudações !
+
+
+|       Olá ! Seja muito bem-vindo a este *Curso de Capacitação* com ferramentas digitais para o *Ensino Médio*. A ideia central *desta etapa* do *Curso* é lhe oferecer ferramentas que possibilitem agregar valor à imagens de moléculas, gráficos e mapas observados durante o ensino médio, mas com *interatividade e animação*.
+
+|       Essa *interatividade* permitirá que você recrie e altere figuras que se apresentam estáticas em livros-texto do ensino médio para um **objeto didático mais vivo**. Daí a escolha do termo *vivificando*, que etiqueta o próprio *website do Curso*.
+\
+
+## Por quê "vivificando" ?
+
+|       Por sua vez, tal *vivificação* para moléculas, gráficos e mapas deverá permitir uma visualização 3D e animações para modelos atômicos, bem como diversos graus de interatividade por cliques de mouse à gráficos e mapas - animações, seleção de pontos, *zoom*, simulações, *mouse over* (informações sobre o ponto gráfico por simples passagem do *mouse*), deslizadores, menus, e outros tantos.
+
+|       O material contido aqui pretende ser *autoinstrucional* e com curva suave de aprendizado. Nossa proposta é focar no potencial que as ferramentas podem oferecer ao ensino e aprendizagem como uma *metodologia ativa*, ilustrando seu emprego diretamente nos conteúdos do ensino médio. Dessa forma, não pretendemos explorar *"a fundo"* as capacidades das ferramentas propostas, pois isso exigiria um tempo e esforços mais significativos. Assim, você pode pensar nesse *Curso* metaforicamente, como um mapa panorâmico de pontos turísticos a visitar, sem a pretensão de conhecer em detalhes cada um.
+
+\
+
+```{r, echo=FALSE}
+library(leaflet)
+leaflet() %>%  # carrega-se o pacote
+  addTiles() %>%  # adiciona-se as "peças" (tiles)
+  setView(lng= -56.0949, lat= -15.5989, zoom = 4)
+```
+
+<!-- ![](mapaLeaflet.png){width="40%"} -->
+
+## As ferramentas
+
+|       Resumindo rapidamente, a *caixa de ferramentas* para este *Curso* possui somente *dois utensílios: um programa para visualização tridimensional de moléculas, e um programa para criação de gráficos e mapas interativos*. Ambos os programas são de distribuição livre (*gratuitos*) e rodam em navegador de internet (*browser*), sem necessidade de instalação em computador. 
+\
+
+|       E como todo computador, notebook, tablet e smartphone possui um navegador, pode-se utilizar os objetos didáticos em qualquer um desses dispositivos. 
+
+::: {layout-ncol="2"}
+![](fenol.eletro.png)
+
+![](transition_states.colunas.gganimate3.gif)
+:::
+
+## Políticas públicas
+
+|      Este *Curso* pretende ressoar junto a atuais iniciativas do *Governo Federal* junto ao Plano Nacional de Educação (PNE) para o decênio 2024-2034 defendido na [Conferência Nacional de Educação - CONAE 2024](https://media.campanha.org.br/acervo/documentos/Documento_Base_Conae2024_FNE.pdf), tangentes à capacitação digital de professores e alunos (*literacia digital*). 
+
+|       Nesse sentido, vale a pena mencionar alguns projetos embasados no desenvolvimento de competências previstas na [BNCC Computação](http://portal.mec.gov.br/docman/fevereiro-2022-pdf/236791-anexo-ao-parecer-cneceb-n-2-2022-bncc-computacao/file) de 2022, da *Base Nacional Comum Curricular (BNCC)*, tais como [Escola em Tempo Integral](https://www.gov.br/mec/pt-br/escola-em-tempo-integral) do *MEC*, a [Estratégia Nacional de Escolas Conectadas (Enec)](https://www.gov.br/mcom/pt-br/acesso-a-informacao/acoes-e-programas/programas-projetos-acoes-obras-e-atividades/estrategia-nacional-de-escolas-conectadas-enec), o [Programa Mais Ciência Na Escola](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D12049.htm), e à [Chamada para a Apresentação de Propostas de Disseminação de Produtos de Inovação Tecnológica voltados a todos os níveis de educação](https://www.gov.br/capes/pt-br/acesso-a-informacao/acoes-e-programas/educacao-a-distancia/editais-uab/edital-no-15-2023-chamada-para-a-apresentacao-de-propostas-de-disseminacao-de-produtos-de-inovacao-tecnologica-voltados-a-todos-os-niveis-de-educacao) da [CAPES](https://www.gov.br/capes/pt-br), esse último do qual se originou este projeto.

@@ -1,60 +1,69 @@
 project:
   type: website
   output-dir: _site
- 
-  
+
 website:
   page-navigation: true # não funciona
   back-to-top-navigation: true
-  image: RStudioLogo.png # não funciona
+  image: unifal-logo.png # não funciona
   reader-mode: true # funciona
   google-analytics: "G-S1L73VGCG5"
-  title: "Vivificando Conteúdos ao Ensino Médio" # omite-se o título pra não duplicar nome na aba
+  title: "ERЯƎ - Ensino Reprodutível nas Escolas" # omite-se o título pra não duplicar nome na aba
   favicon: avatar.png # ícone da aba da página
   page-footer: 
         left: |
           Curso de Formação em Educação Digital
         center: |
-            UNIFAL-MG
+            ERЯƎ
         right: |
-           ERRE - Ensino Reprodutível
+           Universidade Federal de Alfenas
   
   sidebar:
-    - contents:
-      - section: "O Curso"
+  # collapse: true # não funcionou- menu lateral minimizado
+    contents:
+      - section: "Vivificando Conteúdos do Ensino Médio"
         contents:
-          - text: "Saudações"
+          - text: "ERRE"  
             href: index.qmd
-          - questoes.qmd
-          - ferramentas.qmd
-      - section: "Moléculas em 3D"
+          - text: "Saudações"
+            href: saudacoes.qmd
+          - text: "Algumas questões"
+            href: questoes.qmd
+          - text: "Caixa de Ferramentas"
+            href: ferramentas.qmd
+      - section: "Moléculas em 3D com Jmol"
         contents:
-          - text: "Jmol"
-            href: jmolPart.qmd
-          - jmol.qmd
-          - textoXmouse.qmd
-          - comandosJmol.qmd
+          - text: "1 - Jmol"
+            href: jmol.qmd
+          - text: "2 - Mouse *versus* Comandos"
+            href: textoXmouse.qmd
+          - text: "3 - Alguns comandos do Jmol"
+            href: comandosJmol.qmd
+          - text: "4 - Algumas animações com Jmol"
+            href: anima_Jmol.qmd
           
-      - section: "Gráficos Interativos"
+      - section: "Gráficos Interativos com R"
         contents:
-          - text: "R & RStudio"
-            href: RPart.qmd          
-          - rstudioCloud.qmd
-          - basicaoR.qmd
-          - graphics.qmd
-          - pacotes.qmd
-          - animationPlots.qmd
-          - manipulate.qmd
-          - ggplot2.qmd
-          - gganimate.qmd
-          - plotly.qmd
-          - leaflet.qmd
+          - text: "1 - R & RStudio"
+            href: rstudioCloud.qmd
+          - text: "2 - Um pouco sobre uso do `R`"
+            href: basicaoR.qmd
+          - text: "3 - Pacotes do R"
+            href: pacotes.qmd
+          - text: "4 - Gráficos interativos com `plotly`"
+            href: plotly_interat.qmd
+          - text: "5 - Mais interatividade aos gráficos"
+            href: plotly_maisInterat.qmd
+          - text: "6- Animação em gráficos interativos"
+            href: plotly_anima.qmd
+          - text: "7 - Mapas interativos"
+            href: plotly_maps.qmd
+          
       - contato.qmd
-            
             
   navbar:
     search: true
-    logo: avatar.png # logo ao lado esquerdo da Home
+    logo: logo-unifal.png # logo ao lado esquerdo da Home
     background: primary # cor de fundo
     tools:  # ícones específico
       # - icon: twitter
@@ -67,21 +76,49 @@ website:
             href:  https://www.unifal-mg.edu.br/dbq/
   
     left:
-      - text: "Folhas de Dicas (*cheatsheets*)"
+      - text: "Folhas de Dicas"
         menu:
-          - jmol_cheat.qmd
-          - r_cheat.qmd
-          - rstudio_cheat.qmd
-       
-      - text: "Outros Recursos"   
-        menu:
-         # - text: "ERRE - Ensino Reprodutível"
-         #   href: https://errre.netlify.app/
-          - text: "bioQuanti - Bioquímica Quantitativa"
+          - text: "Jmol"
+            href: Portfolio/Cheatsheet/jmol_cheat.en.pt.pdf
+            target: "_blank"
+          - text: "Plotly"
+            href: Portfolio/Cheatsheet/plotly.pdf
+            target: "_blank"
+          - text: "R"
+            href: Portfolio/Cheatsheet/r_cheat.en.pt.pdf
+            target: "_blank"
+
+      - text: "Outros" 
+        menu: 
+          - text: "Bioquanti"
             href: https://bioquanti.netlify.app/
-         
+            target: "_blank"
+        
       - contato.qmd
       
+files:
+  exclude:
+    - cor.qmd  
+    - acessar.qmd
+    - baixar.qmd
+    - carregaOnline.qmd
+    - carregaPC.qmd
+    - cheatsheets.qmd
+    - distancia.qmd
+    - fundo.qmd
+    - jmolPart.qmd
+    - plotInterat.qmd
+    - plotly_embeleza.qmd
+    - representa.qmd
+    - RPart.qmd
+    - r_cheat.qmd
+    - selecao.qmd
+    - zoom.qmd
+    
+      
+execute:
+  cache: true  # habilita cache globalmente
+  
 format:
   html:
     theme: 
@@ -89,6 +126,10 @@ format:
       dark: darkly
     css: styles.css
     toc: true
+    code-overflow: wrap
+    lang: pt
+    number-sections: true
+    
+  # include-after-body: collapse-sidebar.js
 
 editor: source
-

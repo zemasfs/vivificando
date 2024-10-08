@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.555">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Vivificando Conteúdos ao Ensino Médio - 2 - Comandos básicos &amp; Scripts no R</title>
+<title>ERЯƎ - Ensino Reprodutível nas Escolas - Comandos básicos &amp; Scripts no R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./graphics.html" rel="next">
+<link href="./pacotes.html" rel="next">
 <link href="./rstudioCloud.html" rel="prev">
 <link href="./avatar.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -92,17 +92,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
@@ -127,45 +127,45 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./avatar.png" alt="" class="navbar-logo">
+    <img src="./logo-unifal.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Vivificando Conteúdos ao Ensino Médio</span>
+    <span class="navbar-title">ERЯƎ - Ensino Reprodutível nas Escolas</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-folhas-de-dicas-(cheatsheets" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Folhas de Dicas (<em>cheatsheets</em>)</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-folhas-de-dicas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Folhas de Dicas</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-folhas-de-dicas-(cheatsheets">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-folhas-de-dicas">    
         <li>
-    <a class="dropdown-item" href="./jmol_cheat.html">
- <span class="dropdown-text">Jmol - folha de dicas</span></a>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/jmol_cheat.en.pt.pdf" target="_blank">
+ <span class="dropdown-text">Jmol</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./r_cheat.html">
- <span class="dropdown-text">R - folha de dicas</span></a>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/plotly.pdf" target="_blank">
+ <span class="dropdown-text">Plotly</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rstudio_cheat.html">
- <span class="dropdown-text">Rstudio - folha de dicas</span></a>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/r_cheat.en.pt.pdf" target="_blank">
+ <span class="dropdown-text">R</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outros-recursos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Outros Recursos</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outros" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Outros</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-outros-recursos">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-outros">    
         <li>
-    <a class="dropdown-item" href="https://bioquanti.netlify.app/">
- <span class="dropdown-text">bioQuanti - Bioquímica Quantitativa</span></a>
+    <a class="dropdown-item" href="https://bioquanti.netlify.app/" target="_blank">
+ <span class="dropdown-text">Bioquanti</span></a>
   </li>  
     </ul>
   </li>
@@ -191,8 +191,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           </li>
       </ul>
     </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo escuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -202,11 +202,11 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./RPart.html">Gráficos Interativos</a></li><li class="breadcrumb-item"><a href="./basicaoR.html">2 - Comandos básicos &amp; Scripts no R</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./basicaoR.html">2 - Um pouco sobre uso do <code>R</code></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -220,8 +220,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">O Curso</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Vivificando Conteúdos do Ensino Médio</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -229,19 +229,25 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ERRE</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./saudacoes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Saudações</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./questoes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Algumas questões prévias</span></a>
+ <span class="menu-text">Algumas questões</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ferramentas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Um pouco sobre as ferramentas</span></a>
+ <span class="menu-text">Caixa de Ferramentas</span></a>
   </div>
 </li>
       </ul>
@@ -249,34 +255,34 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Moléculas em 3D</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Moléculas em 3D com Jmol</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./jmolPart.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Jmol</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./jmol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1 - Usando o Jmol para observar moléculas em 3D</span></a>
+ <span class="menu-text">1 - Jmol</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./textoXmouse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2 - Cliques de mouse <em>versus</em> linhas de comando</span></a>
+ <span class="menu-text">2 - Mouse <em>versus</em> Comandos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./comandosJmol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3 - Alguns comandos pra se aventurar nas moléculas voadoras</span></a>
+ <span class="menu-text">3 - Alguns comandos do Jmol</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./anima_Jmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 - Algumas animações com Jmol</span></a>
   </div>
 </li>
       </ul>
@@ -284,73 +290,52 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Gráficos Interativos</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Gráficos Interativos com R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./RPart.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R &amp; RStudio</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./rstudioCloud.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1 - Como usar o R &amp; Rstudio  - instalação e nuvem</span></a>
+ <span class="menu-text">1 - R &amp; RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./basicaoR.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">2 - Comandos básicos &amp; Scripts no R</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./graphics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3 - Gráficos básicos e simulações</span></a>
+ <span class="menu-text">2 - Um pouco sobre uso do <code>R</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pacotes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4 - Instalando pacotes no <code>RStudio</code></span></a>
+ <span class="menu-text">3 - Pacotes do R</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./animationPlots.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5 - Animando um gráfico básico - o pacote <code>anim.plots</code></span></a>
+  <a href="./plotly_interat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 - Gráficos interativos com <code>plotly</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./manipulate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6 - Simulando equações de forma animada - o pacote <code>manipulate</code></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
- <span class="menu-text">ggplot2.qmd</span>
-  </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./gganimate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">8 - Animando gráficos do ggplot2 - o pacote <code>gganimate</code></span></a>
+  <a href="./plotly_maisInterat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 - Mais interatividade aos gráficos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./plotly.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">9 - Gráficos interativos - o pacote <code>plotly</code></span></a>
+  <a href="./plotly_anima.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6- Animação em gráficos interativos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./leaflet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">10 - Mapas interativos: o pacote <code>leaflet</code></span></a>
+  <a href="./plotly_maps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 - Mapas interativos</span></a>
   </div>
 </li>
       </ul>
@@ -368,22 +353,23 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#uma-visão-da-interface-rstudio" id="toc-uma-visão-da-interface-rstudio" class="nav-link active" data-scroll-target="#uma-visão-da-interface-rstudio">Uma visão da interface <em>RStudio</em></a></li>
-  <li><a href="#como-funcionam-os-comando-no-r" id="toc-como-funcionam-os-comando-no-r" class="nav-link" data-scroll-target="#como-funcionam-os-comando-no-r">Como funcionam os comando no <code>R</code></a></li>
-  <li><a href="#elaborando-e-executando-um-script-no-r" id="toc-elaborando-e-executando-um-script-no-r" class="nav-link" data-scroll-target="#elaborando-e-executando-um-script-no-r">Elaborando e executando um <em>script</em> no R</a></li>
-  <li><a href="#algumas-recomendações-sobre-a-digitação-num-script-do-r" id="toc-algumas-recomendações-sobre-a-digitação-num-script-do-r" class="nav-link" data-scroll-target="#algumas-recomendações-sobre-a-digitação-num-script-do-r">Algumas recomendações sobre a digitação num <em>script</em> do <code>R</code>:</a></li>
+  <li><a href="#uma-visão-da-interface-rstudio" id="toc-uma-visão-da-interface-rstudio" class="nav-link active" data-scroll-target="#uma-visão-da-interface-rstudio"><span class="header-section-number">1</span> Uma visão da interface <em>RStudio</em></a></li>
+  <li><a href="#como-funcionam-os-comando-no-r" id="toc-como-funcionam-os-comando-no-r" class="nav-link" data-scroll-target="#como-funcionam-os-comando-no-r"><span class="header-section-number">2</span> Como funcionam os comando no <code>R</code></a></li>
+  <li><a href="#elaborando-um-script-no-r" id="toc-elaborando-um-script-no-r" class="nav-link" data-scroll-target="#elaborando-um-script-no-r"><span class="header-section-number">3</span> Elaborando um <em>script</em> no <code>R</code></a></li>
+  <li><a href="#executando-um-script-no-r" id="toc-executando-um-script-no-r" class="nav-link" data-scroll-target="#executando-um-script-no-r"><span class="header-section-number">4</span> Executando um <em>script</em> no <code>R</code></a></li>
+  <li><a href="#algumas-recomendações-sobre-a-digitação-num-script-do-r" id="toc-algumas-recomendações-sobre-a-digitação-num-script-do-r" class="nav-link" data-scroll-target="#algumas-recomendações-sobre-a-digitação-num-script-do-r"><span class="header-section-number">5</span> Algumas recomendações sobre a digitação num <em>script</em> do <code>R</code>:</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./RPart.html">Gráficos Interativos</a></li><li class="breadcrumb-item"><a href="./basicaoR.html">2 - Comandos básicos &amp; Scripts no R</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./basicaoR.html">2 - Um pouco sobre uso do <code>R</code></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">2 - Comandos básicos &amp; Scripts no R</h1>
+<h1 class="title">Comandos básicos &amp; Scripts no R</h1>
 </div>
 
 
@@ -400,15 +386,22 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <code>R</code> é um programa que opera por linha de comando. Isso é um pouco chato, como já visto, porque qualquer erro na digitação de um comando resulta na interrupção do código. Mas, por outro lado, e também como já visto, <em>linhas de comando encadeadas e comentadas permitem a reprodução e modificação de trechos de códigos convergentes a um produto</em> qualquer, no caso, objetos didáticos ao ensino médio.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diferente do <em>Jmol</em>, contudo, não é possível mesclar fonte maiúsculas ou minúsculas, bem como singular ou plural. Para que o código funcione, é necessário sua correta digitação. Mas <em>pode-se tranquilamente aumentar ou reduzir o espaço entre comandos</em>, o que não faz diferença pro compilador do <code>R</code>.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Algumas operações são realizadas alternativamente por <em>mouse</em>, <em>linha de comando</em>, ou ambos, dependendo da ação. A seguir serão apresentadas algumas funcionalidades básicas para a reprodução de códigos para objetos didáticos, sem descrições detalhadas da operação própria do <em>R &amp; RSTudio</em>, para simplificar e tornar mais objetivo este trabalho. Se você desejar saber mais a respeito de ambos os programas, versão instalada ou em nuvem, sugerimos os inúmeros sites e tutoriais disponíveis na internet, bem como centenas de livros já escritos no assunto, e cursos <em>on-line</em> em várias plataformas de ensino.</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Objetivos<span class="sc">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fl">1.</span> Entender para que servem as janelas e abas do RStudio</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fl">2.</span> Compreender a lógica de comandos e atributos do R</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fl">3.</span> Utilizar comandos por script </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <code>R</code> é um programa que opera por linha de comando. Isso é um pouco chato, como já visto, porque qualquer erro na digitação de um comando resulta na interrupção da leitura do código. Mas, por outro lado, e também como já visto, <em>linhas de comando encadeadas e comentadas permitem a reprodução e modificação de trechos de códigos convergentes a um produto</em> qualquer, no caso, objetos didáticos ao ensino médio, e <em>sem a necessidade de se memorizar cliques de mouse e operações técnicas</em>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diferente do <em>Jmol</em>, contudo, o <code>R</code> é bem chatinho na sintaxe, não sendo possível mesclar fonte maiúsculas ou minúsculas, bem como singular ou plural. Para que o código funcione, é necessário sua correta digitação. Mas <em>pode-se tranquilamente aumentar ou reduzir o espaço entre comandos</em>, o que não faz diferença pro compilador do <code>R</code>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Algumas operações são realizadas alternativamente por <em>mouse</em>, <em>linha de comando</em>, ou ambos, dependendo da ação. A seguir serão apresentadas algumas funcionalidades básicas para a reprodução de códigos para objetos didáticos, sem descrições detalhadas da operação própria do <em>R &amp; RStudio</em>, para simplificar e tornar mais objetivo este trabalho.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se você desejar saber mais a respeito de ambos os programas, versão instalada ou em nuvem, sugerimos os inúmeros sites e tutoriais disponíveis na internet, bem como centenas de livros já escritos no assunto, e cursos <em>on-line</em> em várias plataformas de ensino.</div>
 <p><br>
 </p>
-<section id="uma-visão-da-interface-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="uma-visão-da-interface-rstudio">Uma visão da interface <em>RStudio</em></h2>
+<section id="uma-visão-da-interface-rstudio" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="uma-visão-da-interface-rstudio"><span class="header-section-number">1</span> Uma visão da interface <em>RStudio</em></h2>
 <p><br>
-| O <em>Rstudio</em> nada mais faz do que permitir uma <em>interace gráfica para o usuário</em> do <code>R</code> (ou <em>GUI</em>, do inglês) , esse um programa estritamente rodado por uso de códigos. Diversas operações podem então realizar-se sem comandos ou códigos, como abrir e salvar um arquivo, ou visualizar um gráfico, por exemplo. Vejamos a divisão da janela principal do <em>Rstudio</em>.</p>
+| O <em>Rstudio</em> nada mais faz do que permitir uma <em>interace gráfica para o usuário</em> do <code>R</code> (ou <em>GUI</em>, do inglês, <em>Graphic User Interface</em>), esse um programa executado por linguagem própria de códigos, assim como o <em>Jmol</em>. Diversas operações também são realizadas alternativamente sem comandos ou códigos, como abrir e salvar um arquivo, ou visualizar e salvar um gráfico, por exemplo. Vejamos a divisão da janela principal do <em>Rstudio</em>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="rstudioWindows2.png" class="img-fluid figure-img"></p>
@@ -417,62 +410,85 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para nosso trabalho, contudo, será interessante uma área adicional, a <em>área de scripts</em>, a qual se acessa como segue:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>File <span class="sc">-</span><span class="ot">-&gt;</span> New File <span class="sc">-</span><span class="ot">-&gt;</span> RScript</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>... ou por atalho<span class="sc">:</span>Ctrl <span class="sc">+</span> Shift <span class="sc">+</span> N</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><img src="rstudioScript.png" class="img-fluid"></p>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veja que agora a janela principal se divide em quatro partes, incluindo a aba nova para <em>scripts</em>.</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="rstudioScriptAberta.png" class="img-fluid figure-img"></p>
-<figcaption>Janela principal do <em>RStudio</em> contendo a aba para elaboração e execução de <em>scripts</em>.</figcaption>
-</figure>
-</div>
-</section>
-<section id="como-funcionam-os-comando-no-r" class="level2">
-<h2 class="anchored" data-anchor-id="como-funcionam-os-comando-no-r">Como funcionam os comando no <code>R</code></h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todos os comandos do <code>R</code> são compostos por um <em>nome</em> seguido de <em>argumentos</em> entre parênteses. <strong>Não é necessário a especificação de todos os argumentos</strong>; normalmente bastam de 1 a 3. Seguem exemplos</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">comando</span>(argumento <span class="dv">1</span>, argumento <span class="dv">2</span>, argumento <span class="dv">3</span>, ...)</span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>File <span class="sc">-</span><span class="ot">-&gt;</span> New File <span class="sc">-</span><span class="ot">-&gt;</span> RScript</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Exemplos<span class="sc">:</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(x,y)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mean</span>(z)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"meus.dados.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>... ou por atalho<span class="sc">:</span>Ctrl <span class="sc">+</span> Shift <span class="sc">+</span> N</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para se conhecer os argumentos de um comando, basta você começar a digitá-lo, tanto na <em>área de prompt</em> (canto inferior esquerdo) como na <em>área de script</em>, que o sistema apresenta temporariamente as opções. Se desejar visualizar essas opções por linha de comando, contudo, digite função <code>args</code> seguido do comando desejado, como segue:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">args</span>(plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p><br>
+</p>
+<p><img src="rstudioScript.png" class="img-fluid"><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veja que agora a janela principal se dividiu em mais uma parte, a que incluiu a aba nova para <em>scripts</em>.</div>
+<p><br>
+</p>
+<p><img src="rstudioScriptAberta.png" class="img-fluid" alt="Janela principal do RStudio contendo a aba para elaboração e execução de scripts."><br>
+</p>
 </section>
-<section id="elaborando-e-executando-um-script-no-r" class="level2">
-<h2 class="anchored" data-anchor-id="elaborando-e-executando-um-script-no-r">Elaborando e executando um <em>script</em> no R</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para se produzir um <em>script</em> no <code>R</code>, basta redigir as linhas de comando de modo similar ao que foi realizado com o visualizador molecular 3D <em>Jmol</em>, ou seja, <em>separando os comandos por ponto e vírgula</em>, ou por linhas individuais, usado a tecla <em>Enter</em> :</div>
+<section id="como-funcionam-os-comando-no-r" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="como-funcionam-os-comando-no-r"><span class="header-section-number">2</span> Como funcionam os comando no <code>R</code></h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todos os comandos do <code>R</code> são compostos por um <em>nome</em> seguido de <em>argumentos</em>, esses entre parênteses. Seguem exemplos</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">comando</span>(argumento <span class="dv">1</span>, argumento <span class="dv">2</span>, argumento <span class="dv">3</span>, ...)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Exemplos<span class="sc">:</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(x,y)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mean</span>(z)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"meus.dados.csv"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section>
+<section id="elaborando-um-script-no-r" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="elaborando-um-script-no-r"><span class="header-section-number">3</span> Elaborando um <em>script</em> no <code>R</code></h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para se produzir um <em>script</em> no <code>R</code>, a melhor forma é redigir as linhas de comando de modo similar ao que foi realizado com o visualizador molecular 3D <em>Jmol</em> em seu <em>Console</em>, separando-os por linhas individuais. Veja um exemplo de cálculo simples:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">5</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>x<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span><span class="dv">7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>x<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span><span class="dv">7</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 32</code></pre>
 </div>
+</div>
+<p><br>
+</p>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E para executar o <em>script</em> acima, basta copiá-lo e colá-lo na área de <em>script</em> aberta. E aí vai uma <strong>dica de ouro</strong>. Veja que no canto superior direito do <em>script</em> existe um <em>ícone de colagem</em> do texto do <em>script</em>. Basta clicar nesse ícone que o texto estará copiado.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora é só colar na aba do <em>script</em> aberto (em nuvem, por exemplo) e executá-lo seguindo-se <em>alternativamente</em> as seguintes ações:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora é só colar na aba do <em>script</em> aberto (em nuvem, por exemplo) e executá-lo como segue.</div>
+<p><br>
+</p>
+</section>
+<section id="executando-um-script-no-r" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="executando-um-script-no-r"><span class="header-section-number">4</span> Executando um <em>script</em> no <code>R</code></h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem algumas formas de se executar um <em>script</em>, como no exemplo acima, no <code>R</code>. Seguem as mais comuns:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Se deseja executar algumas linhas de um <span class="sc">*</span>script<span class="sc">*</span>, pode<span class="sc">-</span>se selecionar as linhas e clicar Ctrl <span class="sc">+</span> Enter ;</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Se desejar executar todo o <span class="sc">*</span>script<span class="sc">*</span>, seleciona<span class="sc">-</span>se todo o <span class="fu">texto</span> (Ctrl <span class="sc">+</span> A) seguido da ação acima, Ctrl <span class="sc">+</span> Enter ;</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>   Opcionalmente, pode<span class="sc">-</span>se clicar no ícone <span class="st">"--&gt;Source"</span> ;</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>   </span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Se desejar executar apenas uma linha, basta clicar na linha seguido de Ctrl <span class="sc">+</span> Enter ;</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>   Opcionalmente, pode<span class="sc">-</span>se clicar no ícone <span class="st">"--&gt;Run"</span> ;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Se deseja executar algumas linhas de um <span class="sc">*</span>script<span class="sc">*</span>, pode<span class="sc">-</span>se selecionar as linhas e clicar Ctrl <span class="sc">+</span> Enter ;</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Se desejar executar todo o <span class="sc">*</span>script<span class="sc">*</span>, seleciona<span class="sc">-</span>se todo o <span class="fu">texto</span> (Ctrl <span class="sc">+</span> A) seguido da ação acima, Ctrl <span class="sc">+</span> Enter ;</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>   Opcionalmente, pode<span class="sc">-</span>se clicar no ícone <span class="st">"--&gt;Source"</span> ;</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Se desejar executar apenas uma linha, basta clicar na linha seguido de Ctrl <span class="sc">+</span> Enter ;</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>   Opcionalmente, pode<span class="sc">-</span>se clicar no ícone <span class="st">"--&gt;Run"</span> ;</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+<div class="reminder-markdown">
+<p><strong>Agora é com você:</strong></p>
+<p>A partir do script rodado, e transcrito abaixo:<br>
+x = 5<br>
+x^2 +7<br>
+</p>
+<p>Modifique a segunda linha de comando para o cálculo em “x” utilizando outras operações. Sugetões:<br>
+sqrt(x) ; raiz quadrada<br>
+log10(x) ; logaritmo de base 10<br>
+sin(x) ; seno</p>
 </div>
 </section>
-<section id="algumas-recomendações-sobre-a-digitação-num-script-do-r" class="level2">
-<h2 class="anchored" data-anchor-id="algumas-recomendações-sobre-a-digitação-num-script-do-r">Algumas recomendações sobre a digitação num <em>script</em> do <code>R</code>:</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem algumas condições básicas pra que um <em>script</em> do <code>R</code> seja lido de forma clara por seu elaborador, bem como compilado corretamente pelo programa:</div>
+<section id="algumas-recomendações-sobre-a-digitação-num-script-do-r" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="algumas-recomendações-sobre-a-digitação-num-script-do-r"><span class="header-section-number">5</span> Algumas recomendações sobre a digitação num <em>script</em> do <code>R</code>:</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem algumas premissas básicas pra que um <em>script</em> do <code>R</code> seja lido de forma clara por seu elaborador, bem como compilado corretamente pelo programa:</div>
 <ol type="1">
-<li><em>Digitação</em>: sempre que tem um erro no <em>script</em> no <em>Rstudio</em>, surge um sinal em vermelho ao lado esquerdo da linha de comando; contornado o erro, o sinal desaparece;</li>
-<li><em>Comentários</em>: para que o <em>script</em> seja lido também por <em>“um ser humano”</em>, é aconselhável tecer comentários nas linhas de comando (iniciados por <em>#</em> );</li>
-<li><em>Identação</em>: permita “identação” quando a linha estiver um pouco longa, clicando na tecla <em>Enter</em> após uma separação de argumentos por “vírgula”. Dessa forma, a linha continua logo abaixo, mas com um pequeno deslocamento à direita. Isso facilita a legibilidade do código.</li>
-<li><em>Nomes</em>: os comandos do <code>R</code> são em língua inglesa. Dessa forma, deve-se evitar o uso de variáveis e nomes de arquivos com acentuação ou sinais gráficos do Português (ex: <em>ç</em>). Além disso, o <code>R</code>é um compilador de códigos. Se você definir um nome composto para um arquivo ou variável, ou seja, com espaço entre os termos (como é normal no cotidiano), o <code>R</code> tentará executar os termos separadamente, o que levará em erro. Assim, para nomes de variáveis e arquivos, dê preferência a um dos 3 tipos de <em>convenções comuns usadas em programação</em>, a saber:</li>
+<li><em>Digitação</em>: sempre que houver um erro no <em>script</em> no <em>Rstudio</em>, surgirá uma cruz vermelha ao lado esquerdo da linha de comando; contornado o erro, o sinal desaparece;</li>
+<li><em>Comentários</em>: para que o <em>script</em> seja lido também por <em>“um ser humano”</em>, é aconselhável tecer comentários nas linhas de comando (iniciados por <em>#</em> ) - umas das bases do <em>Ensino Reprodutível</em>;</li>
+<li><em>Identação</em>: permita “identação” quando a linha estiver um pouco longa, clicando na tecla <em>Enter</em> após uma separação de argumentos por <em>“vírgula”</em>. Dessa forma, a linha continua logo abaixo, mas com um pequeno deslocamento à direita. Isso facilita a legibilidade do código.</li>
+<li><em>Nomes</em>: os comandos do <code>R</code> são em língua inglesa. Dessa forma, deve-se evitar o uso de variáveis e nomes de arquivos com acentuação ou sinais gráficos em Português (ex: <em>ç</em>, <em>~</em>). Além disso, o <code>R</code>é um compilador de códigos. Se você definir um nome composto para um arquivo ou variável, ou seja, com espaço entre os termos (como é normal no cotidiano. ex: meu arquivo), o <code>R</code> tentará executar os termos separadamente (ex: “meu”, e depois, “arquivo”), o que incorrerá na interrupção de leitura e numa mensagem de erro. Assim, para nomes de variáveis e arquivos, dê preferência a um dos 3 tipos de <strong>convenções comuns usadas em programação</strong>, a saber:</li>
 </ol>
 <ul>
 <li>separação por <em>underline, ” _ “</em> ou hífen; ex: minha_variável, minha-variável</li>
@@ -483,7 +499,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -682,12 +698,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiada");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiada");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -1039,13 +1055,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./rstudioCloud.html" class="pagination-link" aria-label="1 - Como usar o R &amp; Rstudio  - instalação e nuvem">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1 - Como usar o R &amp; Rstudio - instalação e nuvem</span>
+      <a href="./rstudioCloud.html" class="pagination-link" aria-label="1 - R &amp; RStudio">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1 - R &amp; RStudio</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./graphics.html" class="pagination-link" aria-label="3 - Gráficos básicos e simulações">
-        <span class="nav-page-text">3 - Gráficos básicos e simulações</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./pacotes.html" class="pagination-link" aria-label="3 - Pacotes do R">
+        <span class="nav-page-text">3 - Pacotes do R</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1056,10 +1072,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Curso de Formação em Educação Digital</p>
 </div>   
     <div class="nav-footer-center">
-<p>UNIFAL-MG</p>
+<p>ERЯƎ</p>
 </div>
     <div class="nav-footer-right">
-<p>ERRE - Ensino Reprodutível</p>
+<p>Universidade Federal de Alfenas</p>
 </div>
   </div>
 </footer>

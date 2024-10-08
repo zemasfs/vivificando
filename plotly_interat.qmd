@@ -1,0 +1,225 @@
+---
+title: "Construindo gráficos interativos com `plotly`"
+---
+
+```{r, eval=FALSE}
+Objetivos:
+  1. Compreender para que serve o "plotly" e seu potencial interativo para ensino e aprendizagem
+  2. Utilizar o "plotly" por scripts para a construção de gráficos interativos
+  3. Verificar a interatividade dos gráficos criados
+```
+
+
+|       A biblioteca `plotly` é uma das mais ricas do `R` para gráficos interativos. Permite, entre outros, efeitos de *zoom* no gráfico, bem como de *mouse over*, em que a simples passagem do mouse sobre um elemento do gráfico abre as informações daquele ponto. Além disso, permite animações controladas pelo usário, a inseração de seletores, de controles deslizantes, menus e botões.
+\
+
+|       Complementarmente, por possibilitar uma integração a uma linguagem desses tempos chamada *JavaScript*, a biblioteca também é utilizada em alguns paineis de dados, como no [Power Bi](https://www.microsoft.com/pt-br/power-platform/products/power-bi) da *Microsoft*, uma coleção de aplicativos conectados para a visualização de dados. De fato, é a própria biblioteca `plotlyjs` escrita em *JavaScript*, externa ao `R` e *RStudio*, que é incorporada ao `R`.
+
+
+|       A elaboração de gráficos pelo `plotly` requer alguns comandos simples. E a boa notícia é que o gráfico produzido já *"sai"* apresentando interatividade, como ampliação/redução, deslocamento dos dados em eixos, e efeitos de informação por passagem do *mouse*, salvamento como imagem *PNG*, entre outros. Para construir um gráfico qualquer precisa-se de *dados*. Basicamente há 3 formas para se obter os dados:
+
+```{r, eval=FALSE}
+* Criando-se os dados ;
+* Criando-se uma equação que vai gerar os dados ;
+* Importando-se os dados (de uma planilha, por ex)
+```
+
+\
+
+
+## Criando um gráfico interativo
+
+|       Vamos começar criando os dados a partir de uma equação aplicada a um *vetor.* Para isso, precisamos...do vetor !  Visualize um vetor como se fosse uma coluna (ou linha) do Excel. No `R` os vetores são criados por *concatenação* de valores separados por *vírgula*, tal como segue:
+
+```{r}
+x = c(1,2,3,4,5) # um vetor; o "c" indica "concatenação"
+ # atribui valores de 1 a 5 à variável "x"
+
+# Alternativamente,
+
+x = 1:5 # também atribui valores de 1 a 5 à variável "x"
+```
+
+|       Agora definimos uma equação, por exemplo, uma *função quadrática*, e a aplicamos ao vetor *x*:
+
+```{r}
+y = x^2 # atribui à variável "y" o quadrado do valor da variável "x"
+```
+
+
+|        Agora faremos um gráfico interativo a partir desses dados. Mas antes, claro, é necessário instalar o pacote `plotly` no  `R`. Você pode instalá-lo pela aba *Packages* do *RStudio*, se já não fez, e como explicado na seção anterior sobre [Pacotes](pacotes.qmd).
+
+|       Etapa final... construir um *gráfico de dispersão de pontos* da função quadrática. 
+
+
+|       Para fazer isso, basta copiar o trecho abaixo e colá-lo num novo *script* `R`. E executá-lo de qualquer das formas mencionadas em seção anterior ([Um pouco sobre o uso do R](basicaoR.qmd)).
+
+
+```{r}
+library(plotly)
+x = 1:10  # introduz-se os dados
+y = x^2
+
+plot_ly(x = ~x, y = ~y)  # elabora-se o gráfico de função quadrática
+
+# Observação:
+# Sintaxe do plotly: ~variável, para atribuir uma variável (x ou y)
+#                    type: para atribuir um tipo de gráfico
+```
+
+
+|       O `R` costuma apresentar algumas mensagens (*Warnings*) após rodar os comandos. Não são erros, mas informações adicionais, tais como na reprodução do gráfico anterior. Nesse caso, a informação é que está faltando caracterizar o tipo de gráfico, um espalhamento de pontos (*scatter*) :
+
+
+```{r, eval=FALSE}
+plot_ly(x = ~x, y = ~y, type = "scatter") 
+```
+
+
+
+
+|       Agora observe quanta interatividade surgiu com o simples comando acima, passando o *mouse* pelos pontos do gráfico, ou clicando-se nos ícones que apareceram acima do gráfico. Teste essa interatividade:
+
+*   Passando o *mouse* sobre os pontos do gráfico (*hover*) você obterá as coordenadas de cada ponto;    
+*   Usando o botão de rolagem do *mouse* você amplia ou reduz o gráfico
+*   Clicando com o botão esquerdo do *mouse* em qualquer parte do gráfico e desenhando um retângulo você obterá uma ampliação da área;
+*   Se der dois cliques após a ampliação você retornará ao gráfico original;
+*   Posicionando o ponteiro do *mouse* entre os valores de um eixo, e arrastando o *mouse*, você verá um deslocamento do eixo selecionado;
+*   Selecionando um ícone no canto superior direito do gráfico, você poderá, na sequência a partir da esquerda, baixar o *plot* como imagem, realizar uma ampliação, deslocar os eixos, selecionar os pontos dentro de uma caixa, ou dentro de um laço, ampliar, reduzir, escalonar ao tamanho original, realinhar os eixos aos do plot original, observar as coordenadas (x e y), observar somente a coordenada *y*, e retornar ao início.
+
+
+## Salvando o gráfico
+
+|       Agora uma <span style="color:orange;">**característica bem interessante do `plotly`: você pode salvar o gráfico mantendo toda a sua interatividade num arquivo** *HTML*. Dessa forma qualquer pessoa será capaz de abrir seu gráfico em um *browser* de internet (*Firefox, Chrome, Edge*, por ex), o que lhe permitirá observar os detalhes e a ação interativa em qualquer computador, notebook, *tablet* ou *smartphone* !!!</span>
+
+
+|       E pra salvar **seu 1o. gráfico interativo** é muito simples: 
+
+```{r, eval=FALSE}
+
+1. Após feito o gráfico, clique em "Export", logo acima do gráfico na aba `Plots`;
+2. Clique em "Save As Web Page"
+3. Escolher um nome pro gráfico e salvá-lo
+```
+
+
+|       Agora basta localizar o arquivo em seu computador, abrir o arquivo automaticamente em um *browser*, e verificar que sua interatividade foi mantida. **E para compartilhá-lo, se desejar, basta enviar o arquivo do gráfico interativo para alguém ou exibi-lo num projetor multimídia**. 
+
+
+## Trabalhando com relações matemáticas nas variáveis
+
+|       Às vezes é interessante na construção de um gráfico que se permita executar um cálculo em uma variável, sem que com isso tenha que se elaborar um novo vetor. Exemplificando, se você está trabalhando num planilha eletrônica (ex: *Excel*) e deseja construir um gráfico de, digamos *x* *versus* *x/2*, terá que montar uma coluna com essa operação. No `plotly`, assim como no `R` como um todo, não precisa. Veja.
+
+```{r}
+library(plotly)
+plot_ly(x = ~x, y = ~x/2, type = "scatter") 
+```
+
+
+<div class="reminder-markdown">
+
+**Agora é com voce:**
+
+Abra um novo script e construa um gráfico que apresente uma relação qualquer entre variáveis, tal como sugerido abaixo:
+
+1. Crie os valores da variável independente (ex: x = 1:10); \
+2. Carregue a biblioteca `plotly` - `library(plotly)` ; \
+3. Digite uma linha geral de comando pro gráfico: \
+   `plot_ly(x = ~x, y = x, type = "scatter") ` \
+4. Selecione essas linhas, dê um Ctrl+Enter, e observe a saída (ou seja, o gráfico, na aba `plots` ; \
+5. Modifique a variável "y", substituindo o valor de "x" por alguma outra relação, tal como: `~exp(x)` - exponencial, `~sin(10*x)` - seno, ~sqrt(x)` - raiz quadrada; \
+
+</div>
+\
+
+|       Se tiver dado tudo certo, um exemplo poderia ser o fornecido abaixo:
+
+```{r, fig.cap="Gráfico de uma função inversa, y = 1/(x)."}
+library(plotly)
+x = 1:10
+plot_ly(x = ~x, y = ~1/x, type = "scatter")
+```
+
+\
+
+## Outros tipos de gráficos
+
+|       Também é possível elaborar outros gráficos, como de *linhas, barras, histograma, ou box-plot* ("caixa de bigodes"). Experimente:
+
+```{r} 
+# Linhas
+library(plotly)
+plot_ly(x = ~x, y = ~y, type = 'scatter', mode = 'lines')
+```
+ 
+```{r}
+# Barras
+library(plotly)
+
+classes <- c("A", "B", "C", "D") # dados para o gráfico de barras
+percentuais <- c(25, 35, 20, 20)
+
+plot_ly(x = ~classes, y = ~percentuais, type = 'bar')
+```
+
+
+```{r}
+library(plotly)
+classes <- c("A", "B", "C", "D") # dados para o gráfico de barras
+percentuais <- c(25, 35, 20, 20)
+
+# Gráfico de torta
+plot_ly(labels = classes, values = percentuais, type = 'pie')
+```
+
+
+```{r}
+# Histograma
+library(plotly)
+
+x <- rnorm(1000) # comando pra gerar dados aleatórios no `R`
+plot_ly(x = ~x, type = "histogram")
+```
+
+
+```{r}
+# Boxplot
+
+library(plotly)
+x <- rnorm(50) # gera dados aleatórios
+y <- rnorm(50, mean = 1) # gera a variação estatística nos dados
+
+
+plot_ly(y = ~x, type = "box", name = 'Grupo 1') %>%  # adiciona os dois box para os dados
+  add_trace(y = ~y, type = "box", name = 'Grupo 2')
+```
+
+|       Também é possível combinar alguns tipos, como um gráfico de *pontos e linhas*:
+
+```{r}
+# Pontos e linhas
+library(plotly)
+x <- 1:10
+plot_ly(x = ~x, y = ~x^2, type = 'scatter', mode = 'markers, lines') # também dá se 'markers+lines'
+```
+\
+
+## Gráficos 3D
+
+|       Para encerrar essa parte, *gráficos tridimensionais* ! A versão básica de um gráfico 3D é bem simples de se executar no `plotly`, mas seu efeito visual e interatividade são significativos ! Experimente usar o *mouse*  no gráfico produzido  pelo exemplo que segue:
+
+```{r}
+library(plotly)
+x = 1:10
+plot_ly(x = ~x, y = ~x^2, z=~x^3, mode='markers')
+
+```
+
+
+|       Existem outros tipos de gráficos para o `plotly`, pelo que vale uma visitinha ao [website](https://plotly.com/r/) para mais informações.
+
+## Referência do pacote:
+
+*   [Geral](https://cran.r-project.org/web/packages/plotly/index.html)
+*   [Manual](https://cran.r-project.org/web/packages/plotly/plotly.pdf)
+*   [Tutorial](https://plotly.com/r/)

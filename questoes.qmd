@@ -4,9 +4,9 @@ title: "Algumas questões prévias"
 
 ## De que se trata esse material ?
 
-|       Bom, como diz o título, de *vivificar* imagens e relações numéricas encontrados em livros-texto. Em palavras mais abstratas...da tentativa de se oferecer algumas ferramentas para compor objetos didáticos para o *Ensino Médio*, principalmente para temas de *Física, Química e Biologia* contidos em *Ciências da Natureza e Suas Tecnologias*, *Matemática e Suas Tecnologias*, como também *Ciências Humanas e Suas Tecnologias*, com as ferramentas baseadas em premissas de *Ensino Reprodutível*.
+|       Bom, como diz o título, de *vivificar* imagens e relações numéricas encontrados em livros-texto. Em palavras mais abstratas...da tentativa de se oferecer algumas ferramentas para compor objetos didáticos para *qualquer área do Ensino Médio*.
 
-|       Agora, de modo mais claro, de instrumentalizar professores ao uso de dois programas básicos de computador, um para *visualização de moléculas em 3D*, e outro para *vivificar* algumas relações estáticas encontradas em livros-texto por *animações, interatividade, e simulações*.
+|       Agora, de modo mais específico, de instrumentalizar professores ao uso de dois programas básicos de computador, um para *visualização de moléculas em 3D*, e outro para *vivificar* algumas relações estáticas encontradas em livros-texto por *animações, interatividade, e simulações*.
 
 ## Qual a vantagem em se familiarizar com esses programas ?
 
@@ -25,21 +25,21 @@ title: "Algumas questões prévias"
 
 ## E quais são essas ferramentas ?
 
-|       Para a *visualização de moléculas em 3D* será empregado o **Jmol**, e para os demais mencionados o programa **R** com sua interface gráfica **RStudio**. São programas gratuitos para instalação em computador de mesa ou notebook, embora também acessáveis por navegador de internete, e nesse caso, sem necessidade de instalação.
+|       Para a *visualização de moléculas em 3D* será empregado o programa **Jmol**, e para os demais mencionados o programa **R** com sua interface gráfica **RStudio**. São programas gratuitos para instalação em computador de mesa ou notebook, embora também acessáveis por navegador de internete, e nesse caso, sem necessidade de instalação. Essa versão em nuvem foi a escolhida para este *Curso* aos dois programas.
 
-## Se este material envolve o uso de livros-texto, qual bibliografia será utilizada ?
+<!-- ## Se este material envolve o uso de livros-texto, qual bibliografia será utilizada ? -->
 
-|       Será utilizado algum conteúdo geral presente no [Material de Apoio Pedagógico para Aprendizagens - MAPA](https://seliga.educacao.mg.gov.br/cardenos-mapa/ensino-m%C3%A9dio-2024) para habilidades previstas no *Currículo Referência de Minas Gerais*, e pertinente principalmente à *Ciências da Natureza, Matemática, e Suas Tecnologias*.
+<!-- |       Será utilizado algum conteúdo geral presente no [Material de Apoio Pedagógico para Aprendizagens - MAPA](https://seliga.educacao.mg.gov.br/cardenos-mapa/ensino-m%C3%A9dio-2024) para habilidades previstas no *Currículo Referência de Minas Gerais*, e pertinente principalmente à *Ciências da Natureza, Matemática, e Suas Tecnologias*. Também será utilizado alguns bancos de dados digitais de interesse técnico-científico. -->
 
-## Além dos conteúdos específicos com algum potencial para melhorar o aprendizado do estudante, há outra vantagem no aprendizado dos programas ?
+## Além dos conteúdos específicos com algum potencial para melhorar o aprendizado do estudante, há outra vantagem ao usuário no aprendizado dos programas ?
 
-|       Diversas. De início, a familiarização com conceitos de programação computacional. O *Jmol* é mais fechado, já que trabalha somente com a renderização de modelos moleculares. O que já é muito bom para se visualizar a imensidade de moléculas presentes em livros-texto. Já o *R* é outra história.
-
-
-|       O *R* permite uma infinidade de ações, quer voltadas à pesquisa ou ao ensino. É utilizado por diversas Universidades ao redor do mundo, bem por diversas Universidades e empresas (ex: Google, Facebook, LinkedIn, Twitter, Bank of America, Lenovo, Bing). Embora tenha sido originalmente desenvolvido para análise de dados, possui hoje mais de 20 mil pacotes adicionais.
+|       Diversas. De início, a familiarização com **linguagens de programação**. O *Jmol* é mais fechado, e trabalha somente com a compilação de códigos para modelos atômicos. O que já é muito bom para se visualizar a imensidade de moléculas presentes em livros-texto. Já o *R* é outra história.
 
 
-|       Essa expansibilidade permite, por exemplo, recursos de matemática, estatística, gráficos e tabelas avançados, animações e simulações, análise de imagem e de texto, criação musical e artística, ciência de dados, inteligência artificial, comunicação com placas microcontroladores (ex: *Arduino*), internete das coias (*IoT*), criação de *blogs*, de *websites*, e de livros (tal como usado para produzir este material).
+|       O *R* permite uma infinidade de ações, quer voltadas à pesquisa ou ao ensino. É utilizado por diversas Universidades ao redor do mundo, bem como por diversas empresas de porte (ex: Google, Facebook, LinkedIn, Twitter, Bank of America, Lenovo, Bing). Embora tenha sido originalmente desenvolvido para análise de dados, possui hoje mais de 20 mil pacotes adicionais.
+
+
+|       Essa expansibilidade permite, por exemplo, recursos de matemática, estatística, gráficos e tabelas avançados, animações e simulações, análise de imagem e de texto, criação musical e artística, ciência de dados, inteligência artificial, comunicação com placas microcontroladores (ex: *Arduino*), internete das coias (*IoT*), criação de *blogs*, de livros e mesmo de  *websites*, tal como este, usado para produzir produzir o material do *Curso*.
 
 
 ## E o tal *Ensino Reprodutível*, de que se trata ?
