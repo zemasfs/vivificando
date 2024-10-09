@@ -93,6 +93,8 @@ website:
           - text: "Bioquanti"
             href: https://bioquanti.netlify.app/
             target: "_blank"
+          - text: "Figuras animadas"
+            href: Portfolio/Anim.figs/Anim.figs.qmd
         
       - contato.qmd
       

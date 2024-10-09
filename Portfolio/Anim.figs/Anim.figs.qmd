@@ -1,0 +1,5 @@
+---
+title: "Figuras Animadas"
+---
+
+![Expectativa de vida *versu* PIB](expectativa2.png)
