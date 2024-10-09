@@ -10,6 +10,9 @@ title: ""
 |       Essa *interatividade* permitirá que você recrie e altere figuras que se apresentam estáticas em livros-texto do ensino médio para um **objeto didático mais vivo**. Daí a escolha do termo *vivificando*, que etiqueta o próprio *website do Curso*.
 \
 
+
+<!-- ![](expectativa2.png) -->
+
  ![](acelera.gif){width=45% fig-align="right"}
  
  
