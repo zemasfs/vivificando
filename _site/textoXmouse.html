@@ -393,11 +393,12 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Objetivos<span class="sc">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fl">1.</span> Observar que há <span class="dv">2</span> formas de conduzir ações em alguns programas<span class="sc">:</span> por <span class="sc">*</span>mouse<span class="sc">*</span> ou por comandos em texto</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fl">2.</span> Observar as características do uso de cada</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fl">3.</span> Conhecer alguns princípios para um <span class="st">"Ensino Reprodutível"</span> e as vantagens do uso de linhas de comando ao invés de movimentos de mouse</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="reminder-objetivos">
+Objetivos:<br>
+1. Observar que há 2 formas de conduzir ações em alguns programas: por <em>mouse</em> ou por comandos em texto<br>
+2. Observar as características do uso de cada<br>
+3. Conhecer alguns princípios para um “Ensino Reprodutível” e as vantagens do uso de linhas de comando ao invés de movimentos de mouse<br>
+
 </div>
 <section id="cliques-de-mouse" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="cliques-de-mouse"><span class="header-section-number">1</span> Cliques de mouse</h2>
@@ -448,23 +449,29 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Colocado da forma acima, quando se tem um conjunto qualquer de linhas de comando sequenciais, permitindo atuar sobre um objeto tal como um modelo molecular, e para uma infinidade de coisas, tem-se então um <em>script</em>. Tecnicamente falando, um <em>script</em> constitui um bloco de instruções sequenciais em texto para compilação em um programa.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Scripts</em> podem ser elaborados no <em>Jmol</em> em <em>browser</em> por duas maneiras:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Separando os comandos por <span class="st">";"</span> <span class="sc">-</span> ex<span class="sc">:</span> <span class="st">"cpk only; color blue"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Separando os comandos por linhas <span class="sc">-</span> ex<span class="sc">:</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                                   <span class="st">"cpk only</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="st">                                    color blue"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Separando os comandos por <span class="st">";"</span> <span class="sc">-</span> ex<span class="sc">:</span> <span class="st">"cpk only; color blue"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Separando os comandos por linhas <span class="sc">-</span> ex<span class="sc">:</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                                   <span class="st">"cpk only</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">                                    color blue"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se você deseja que o modelo realize uns poucos comandos, a melhor opção é separá-los por ponto e vírgula (“;”). Mas se desejar algo mais “sofisticado”, sugere-se separá-los por linhas. E mais…linhas comentadas e escritas em um bloco de notas ou em qualquer editor de texto !</div>
 <section id="vantagens-do-uso-de-bloco-de-notas-ou-editor-de-texto-para-comandos-em-série" class="level3" data-number="5.1">
 <h3 data-number="5.1" class="anchored" data-anchor-id="vantagens-do-uso-de-bloco-de-notas-ou-editor-de-texto-para-comandos-em-série"><span class="header-section-number">5.1</span> Vantagens do uso de bloco de notas ou editor de texto para comandos em série</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Imaginando-se uma tranformação mais significativa à molécula original carregada, como efeitos de ampliação, coloração, e representação e movimento, é fácil perceber que um conjunto de linhas comentadas dispostas em sequência facilita tanto a observação do que se pretende com o modelo, como a identificação de erros e ajustes.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Isto também é herdado dos conceitos de <em>Ensino Reprodutível</em>, uma vez que facilita a visualização do código (<em>human readable format</em>) e sua depuração (<em>code debug</em>). Veja o exemplo que segue, reflita sobre sua interpretação, copie para um <em>bloco de notas</em>, e teste-o no <em>Console</em> do <em>Jmol</em>.</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="nicotina_mapa.png" class="img-fluid figure-img"></p>
+<figcaption>Estrutura da nicotina. Fonte: MAPA: ensino médio - 2º Bim. 3º Ano, p.61. Ciências da natureza e suas tecnologias.</figcaption>
+</figure>
+</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>butene</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>background black <span class="co"># cor preta do plano de fundo</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>spin <span class="dv">80</span> <span class="co"># gira a molécula</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>delay <span class="dv">3</span> <span class="co"># aguarda 1 segundo</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>spin off <span class="co"># interrompe a rotação</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>cpk <span class="co"># renderiza como modelo de preenchimento</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>nicotine</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>background black <span class="co"># cor preta do plano de fundo</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>spin <span class="dv">80</span> <span class="co"># gira a molécula</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>delay <span class="dv">3</span> <span class="co"># aguarda 1 segundo</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>spin off <span class="co"># interrompe a rotação</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>cpk <span class="co"># renderiza como modelo de preenchimento</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="reminder-markdown">
 <p><strong>Agora é com você</strong>:</p>

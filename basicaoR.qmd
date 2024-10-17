@@ -2,12 +2,14 @@
 title: "Comandos básicos & Scripts no R"
 ---
 
-```{r, eval=FALSE}
-Objetivos:
-  1. Entender para que servem as janelas e abas do RStudio
-  2. Compreender a lógica de comandos e atributos do R
-  3. Utilizar comandos por script 
-```
+<div class = "reminder-objetivos">
+Objetivos:\
+  1. Entender para que servem as janelas e abas do RStudio\
+  2. Compreender a lógica de comandos e atributos do R\
+  3. Utilizar comandos por script
+  
+</div>
+
 
 
 |       O `R` é um programa que opera por linha de comando. Isso é um pouco chato, como já visto, porque qualquer erro na digitação de um comando resulta na interrupção da leitura do código. Mas, por outro lado, e também como já visto, *linhas de comando encadeadas e comentadas permitem a reprodução e modificação de trechos de códigos convergentes a um produto* qualquer, no caso, objetos didáticos ao ensino médio, e *sem a necessidade de se memorizar cliques de mouse e operações técnicas*.

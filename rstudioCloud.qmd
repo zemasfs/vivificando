@@ -2,12 +2,16 @@
 title: "1 - Como usar o R & Rstudio  - instalação e nuvem"
 ---
 
-```{r, eval=FALSE}
-Objetivos:
-  1. Conhecer o R e o RStudio
-  2. Compreender os passos para instalação em computador
-  2. Acessar o RStudio pelas nuvens
-```
+
+<div class = "reminder-objetivos">
+
+Objetivos:\
+  1. Conhecer o R e o RStudio\
+  2. Compreender os passos para instalação em computador\
+  2. Acessar o RStudio pelas nuvens\
+
+</div>
+
 
 
 |       Existem dois ambientes alternativos para se utilizar o *R* (programa) e o *Rstudio* (interface do usário): instalando no computador, ou pelas nuvens. Há poucas diferenças entre ambas as maneiras de se trabalhar, mas a fundamental é que a *instalação* permite a utilização dos programas  *offline*, sem necessidade de internet, enquanto que pelas nuvens, bom, já sabe. Por outro lado, na versão de nuvem não é necessário instalar nem o *R* e nem o *RStudio*, enquanto que na versão instalada existem alguns passos pra isso, descritos abaixo. 

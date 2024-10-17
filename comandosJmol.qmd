@@ -2,11 +2,13 @@
 title: "3 - Alguns comandos pra se aventurar nas moléculas voadoras"
 ---
 
-```{r, eval=FALSE}
-Objetivos:
-  1. Carregar uma molécula no Jmol de formas alternativas
-  2. Utilizar o Console para alguns comandos
-```
+<div class="reminder-objetivos">
+
+Objetivos:\
+  1. Carregar uma molécula no Jmol de formas alternativas\
+  2. Utilizar o Console para alguns comandos\
+
+</div>
 
 ## Como carregar uma molécula no JSmol
 
@@ -120,7 +122,7 @@ color chain #  coloração por "cadeias" da proteína
 ```
 
 
-![Representação da proteína *spike* do vírus de Sars-Cov-2 (coloração por número de cadeias.](spike.png)
+![Representação da proteína *spike* do vírus de Sars-Cov-2 (coloração por número de cadeias).](spike.png)
 
 
 |       Proteínas, enzimas, ácidos nucleicos, e associações macromoleculares são mais pertinentes ao estudo da *Bioquímica* estrutural. Nesse sentido lhe convido a visitar uma parte do *website* autoral que possui descrições e representações detalhadas de estruturas bioquímicas com auxílio do *Jmol*, o site [Bioquanti](https://bioquanti.netlify.app/)
@@ -203,25 +205,26 @@ rotação no eixo - Shift+botão direito
 |       As representações referem-se ao aspecto visual do modelo (renderização), ou seu *estilo*, Assim, o *Jmol* pode renderizar o modelo como *vareta, arame, espaço preenchido, bola e vareta, traço, e desenho* (tudo em inglês, claro - *cpk, wireframe, trace, cartoon*). 
 
 
-|       Experimente esses estilos, incluindo a opção `only`. Essa opção permite que a ação não seja sobreposta às anteriores (no caso, a sobreposição das representações). Para isso, copie, cole, e execute *cada linha separad* para o trecho de código que segue no *Console* do *Jmol*:
+|       Experimente esses estilos, incluindo a opção `only`. Essa opção permite que a ação não seja sobreposta às anteriores (no caso, a sobreposição das representações). Para isso, copie, cole, e execute **em cada linha separada** o trecho de código que segue no *Console* do *Jmol*, e cuja renderização ilustra a molécula de fluoxetina.
+\
+
+
+![Estrutura da fluoxetina. Fonte: MAPA: ensino médio - 3º Bim. 2º Ano, p.79. Ciências da natureza e suas tecnologias.](fluoxetina_mapa.png)
+\
+
 
 ```{r, eval = FALSE}
 
-load $ascorbate  # carrega a molécula
-
+load $fluoxetine  # carrega a molécula
 wireframe only # estilo em arame
-
 cpk only # espaço preenchido
-
 cpk 20 only, bond 1 # bolas e varetas
+cartoon only # representação de cartoon, mas que não ocorre com moléculas pequenas, apenas com biomacromoléculas (proteínas, ácidos nucleicos, por ex)
 
-trace only # traço
-
-cartoon only # desenho
 ```
 
 
-|       Observe também que a representação em `cartoon` não resulta numa renderização para o modelo da vitamina C. Isso decorre porque *a representação em `cartoon` é restrita para biopolímeros somente, ou seja, proteínas e ácidos nucleicos, e algumas associações supramoleculares.*
+|       Observe também que a representação em `cartoon` não resulta numa renderização para o modelo da fluoxetina. Isso decorre porque *a representação em `cartoon` é restrita para biopolímeros somente, ou seja, proteínas e ácidos nucleicos, e algumas associações supramoleculares.*
 
 |       Contudo, se quiser experimentar o `cartoon`, será necessário conhecer o código alfanumérico de uma proteína ou ácido nucleico. Exemplificando para a mioglobina, proteína transportadora de oxigênio em mamíferos (código: *1mcy*)
 
@@ -315,15 +318,21 @@ measure off
 
 ### Cargas
 
-|       Há dois tipos de cargas oferecidas pelo *Jmol*, *carga efetiva (`formaCharge`) e carga parcial (`partialcharge`)*. Exemplificando, digite no *Console* os comandos abaixo:
+|       Por vezes pode ser interessante apresentar a polaridade das moléculas em função de sua distribuição de cargas. No *Jmol* há dois tipos de cargas, *carga efetiva (`formaCharge`) e carga parcial (`partialcharge`)*. Podemos ilustrar a distribuição de cargas em uma molécula de tensoativo, como o hexadecanoato.
+
+![Exemplo de tensoativo de 16 carbonos, o ácido hexadecaenoico. Fonte: MAPA: ensino médio - 3º Bim. 3º Ano, p.63. Ciências da natureza e suas tecnologias.](hexadecanoate_mapa.png)
+
+
+|       Para isso, digite no *Console* os comandos abaixo:
 
 ```{r, eval=FALSE}
-calculate partialCharges # cálculo de cargas parciais do modelo
+load $hexadecanoate
+calculate partialCharge # cálculo de cargas parciais do modelo
 label %P # apresentação das cargas (etiquetagem)
 ```
 
 
-|       Uma característica do *Jmol* que o torna mais eficiente a execução de suas ações é a disposição sequencial de comandos. Dessa forma, não é necessário clicar em *Enter* para cada comando, bastando separar os comando por ponto e vírgula (*;*) como ilustrado abaixo:
+|       Uma característica do *Jmol* que o torna mais eficiente a execução de suas ações é a disposição sequencial de comandos. Dessa forma, não é necessário clicar em *Enter* para cada comando, bastando separar os comando por ponto e vírgula (*;*) como ilustrado abaixo, para o cálculo de cargas parciais da molécula de glutamato:
 
 ![Aprentação de cargas parciais no modelo de glutamato, um componente do molho Shoyo, também ilustrando uma sequência de ações no Jmol.](glu.png)
 
@@ -379,7 +388,14 @@ minimize # comando para minimização de energia da estrutura
 
 ## Características moleculares
 
-|       Além de previsão estrutural para *carga parcial e carga formal* (embora essa última dependa na prática de informação adicional, o valor de pH do meio), o *Jmol* também permite evidenciar *forças fracas* no modelo, tais como *nuvem de van der Waals* e *ligações de hidrogênio*, como segue.
+
+|       Por vezes também é interessante apresentar à turma o conceito de *forças fracas* que permeia as interações moleculares, tal como ilustrado abaixo.
+
+
+![[Algumas forças fracas em interação molecular. Fonte: MAPA: ensino médio - 2º Bim. 1º Ano, p.75. Ciências da natureza e suas tecnologias.](interacao_mapa.png)
+
+
+|       Além de previsão estrutural para *carga parcial e carga formal*, o *Jmol* também permite evidenciar *forças fracas* no modelo, tais como *nuvem de van der Waals* e *ligações de hidrogênio*, como segue.
 
 
 ### Nuvem de van der Waals
@@ -399,12 +415,18 @@ dots ionic # nuvem iônica sobre o modelo
 
 ![Exemplificando a sobreposição de nuvens de van der Waals nos átomos da molécula de água.](vanderwaals.png)
 
-![Ilustrando a representação de nuvem iônica para o modelo da água.](ionic.png) \### Ligações de hidrogênio
+![Ilustrando a representação de nuvem iônica para o modelo da água.](ionic.png) 
+\
+
+### Ligações de hidrogênio
+\
 
 ```{r, eval=FALSE}
 load=1djf # carrega um modelo de peptídio
 calculate hbonds # apresenta as ligações de H presentes na estrutura
 ```
+
+\
 
 ![Exemplificando ligações de hidrogênio num modelo de peptídio.](ligacoesH.png)
 

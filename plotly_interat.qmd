@@ -2,12 +2,13 @@
 title: "Construindo gráficos interativos com `plotly`"
 ---
 
-```{r, eval=FALSE}
-Objetivos:
-  1. Compreender para que serve o "plotly" e seu potencial interativo para ensino e aprendizagem
-  2. Utilizar o "plotly" por scripts para a construção de gráficos interativos
-  3. Verificar a interatividade dos gráficos criados
-```
+<div class = "reminder-objetivos">
+Objetivos:\
+  1. Compreender para que serve o "plotly" e seu potencial interativo para ensino e aprendizagem\
+  2. Utilizar o "plotly" por scripts para a construção de gráficos interativos\
+  3. Verificar a interatividade dos gráficos criados\
+</div>
+
 
 
 |       A biblioteca `plotly` é uma das mais ricas do `R` para gráficos interativos. Permite, entre outros, efeitos de *zoom* no gráfico, bem como de *mouse over*, em que a simples passagem do mouse sobre um elemento do gráfico abre as informações daquele ponto. Além disso, permite animações controladas pelo usário, a inseração de seletores, de controles deslizantes, menus e botões.
@@ -40,27 +41,37 @@ x = c(1,2,3,4,5) # um vetor; o "c" indica "concatenação"
 x = 1:5 # também atribui valores de 1 a 5 à variável "x"
 ```
 
-|       Agora definimos uma equação, por exemplo, uma *função quadrática*, e a aplicamos ao vetor *x*:
+|       Para elaborar o gráfico interativo, ilustremos a equação de *lançamento vertical* abaixo.
 
-```{r}
-y = x^2 # atribui à variável "y" o quadrado do valor da variável "x"
-```
+
+![Equações de lançamento vertical, para ascensão e queda de um projétil, e exercício correlato. Fonte: MAPA: ensino médio - 2º Bim. 1º Ano. Matemática e suas tecnologias, p.27.](lancamentoVert_mapa.png)
+\
+
 
 
 |        Agora faremos um gráfico interativo a partir desses dados. Mas antes, claro, é necessário instalar o pacote `plotly` no  `R`. Você pode instalá-lo pela aba *Packages* do *RStudio*, se já não fez, e como explicado na seção anterior sobre [Pacotes](pacotes.qmd).
+\
 
-|       Etapa final... construir um *gráfico de dispersão de pontos* da função quadrática. 
+
+|       Etapa final... construir um *gráfico de dispersão de pontos* da função de ascensão vertical. 
 
 
 |       Para fazer isso, basta copiar o trecho abaixo e colá-lo num novo *script* `R`. E executá-lo de qualquer das formas mencionadas em seção anterior ([Um pouco sobre o uso do R](basicaoR.qmd)).
-
+\
 
 ```{r}
-library(plotly)
-x = 1:10  # introduz-se os dados
-y = x^2
+# Dados:
+t = 1:20 # define o vetor de tempo
+Vo = 100 # velocidade inicial, 100 m/s
+g = 9.8 # aceleração da gravidade, m/s^2
 
-plot_ly(x = ~x, y = ~y)  # elabora-se o gráfico de função quadrática
+# Equação (ascensão vertical):
+
+H = Vo*t-1/2*g*t^2
+
+# Gráfico interativo:
+library(plotly)
+plot_ly(x = ~t, y = ~H)
 
 # Observação:
 # Sintaxe do plotly: ~variável, para atribuir uma variável (x ou y)
@@ -72,9 +83,8 @@ plot_ly(x = ~x, y = ~y)  # elabora-se o gráfico de função quadrática
 
 
 ```{r, eval=FALSE}
-plot_ly(x = ~x, y = ~y, type = "scatter") 
+plot_ly(x = t, y = H, type = 'scatter')
 ```
-
 
 
 
@@ -108,12 +118,47 @@ plot_ly(x = ~x, y = ~y, type = "scatter")
 
 ## Trabalhando com relações matemáticas nas variáveis
 
-|       Às vezes é interessante na construção de um gráfico que se permita executar um cálculo em uma variável, sem que com isso tenha que se elaborar um novo vetor. Exemplificando, se você está trabalhando num planilha eletrônica (ex: *Excel*) e deseja construir um gráfico de, digamos *x* *versus* *x/2*, terá que montar uma coluna com essa operação. No `plotly`, assim como no `R` como um todo, não precisa. Veja.
+|       Às vezes é interessante na construção de um gráfico que se permita executar um cálculo em uma variável, sem que com isso tenha que se elaborar um novo vetor. Vamos exemplificar isso para uma *transformação isotérmica do estudo de gases (lei de Boyle-Mariotte)*, como segue:
+
+
+![Relação de pressão e volume numa transformação isotérmica. Fonte: MAPA: ensino médio - Ciências da natureza e suas tecnologias. 2º Bim. 3º Ano, p.28.](gases_mapa.png)
+
+
+|       Exemplificando, se você está trabalhando num planilha eletrônica (ex: *Excel*) e deseja construir um gráfico da relação acima, digamos *V* *versus* *p*, terá que montar uma coluna com essa operação. No `plotly`, assim como no `R` como um todo, não precisa, já que *p* pode ser considerado como *1/V constante*. De fato, essa *constante* é representada pela *constante geral dos gases ideais, R*, de valor conhecido.
+
+
+|       Resolvendo para a situação acima:
 
 ```{r}
+# Dados:
+R = 8.314 # J/(mol*K), constante geral dos gases ideias
+V = seq(0,22.4, length.out=50)  # vetor de "Volume" (em litros), com 50 pontos
+T = 298 # K, temperatura absoluta
+
+
+# Equação
+# pV = RT; p = RT/V
+p = R*T/V
+
+# Gráfico:
 library(plotly)
-plot_ly(x = ~x, y = ~x/2, type = "scatter") 
+plot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines')
 ```
+
+
+|       Agora, se quiser nomear as *etiquetas dos eixos* e fornecer um *título* ao gráfico para apresentar melhor o significado físico das quantidades envolvidas, basta acrescentar o comando `layout`, como segue:
+
+```{r, eval=TRUE}
+library(plotly)
+library(magrittr) # biblioteca para o operador pipe "%>%"
+plot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines') %>%
+layout(
+    title = "Transformação Isotérmica de um Gás",
+    xaxis = list(title = "Volume V, L"),
+    yaxis = list(title = "Pressão p, bar")
+)
+```
+
 
 
 <div class="reminder-markdown">
@@ -125,31 +170,29 @@ Abra um novo script e construa um gráfico que apresente uma relação qualquer 
 1. Crie os valores da variável independente (ex: x = 1:10); \
 2. Carregue a biblioteca `plotly` - `library(plotly)` ; \
 3. Digite uma linha geral de comando pro gráfico: \
-   `plot_ly(x = ~x, y = x, type = "scatter") ` \
+   `plot_ly(x = ~x, y = ~sqrt(x), type = "scatter") ` \
 4. Selecione essas linhas, dê um Ctrl+Enter, e observe a saída (ou seja, o gráfico, na aba `plots` ; \
 5. Modifique a variável "y", substituindo o valor de "x" por alguma outra relação, tal como: `~exp(x)` - exponencial, `~sin(10*x)` - seno, ~sqrt(x)` - raiz quadrada; \
 
 </div>
 \
 
-|       Se tiver dado tudo certo, um exemplo poderia ser o fornecido abaixo:
-
-```{r, fig.cap="Gráfico de uma função inversa, y = 1/(x)."}
-library(plotly)
-x = 1:10
-plot_ly(x = ~x, y = ~1/x, type = "scatter")
-```
-
-\
 
 ## Outros tipos de gráficos
 
-|       Também é possível elaborar outros gráficos, como de *linhas, barras, histograma, ou box-plot* ("caixa de bigodes"). Experimente:
+|       Também é possível elaborar outros gráficos, como de *linhas, barras, histograma, ou box-plot* ("caixa de bigodes"). Algumas dessas possibilidades são ilustradas abaixo.
+
+
+
+![Alguns tipos de gráficos apresentadados no Manual de Apoio. Fonte: MAPA: ensino médio - Matemática e suas tecnologias. 2º Bim. 3º Ano, p.9, 10, 22, e 23.](tiposGraficos_mapa.png)
+
+
+|       No `plotly` há uma gama de gráficos possíveis. Experimente alguns tipos:
 
 ```{r} 
 # Linhas
 library(plotly)
-plot_ly(x = ~x, y = ~y, type = 'scatter', mode = 'lines')
+plot_ly(x = ~x, y = ~x, type = 'scatter', mode = 'lines')
 ```
  
 ```{r}
@@ -206,15 +249,37 @@ plot_ly(x = ~x, y = ~x^2, type = 'scatter', mode = 'markers, lines') # também d
 
 ## Gráficos 3D
 
-|       Para encerrar essa parte, *gráficos tridimensionais* ! A versão básica de um gráfico 3D é bem simples de se executar no `plotly`, mas seu efeito visual e interatividade são significativos ! Experimente usar o *mouse*  no gráfico produzido  pelo exemplo que segue:
+|       Para encerrar essa parte, *gráficos tridimensionais* ! A versão básica de um gráfico 3D é bem simples de se executar no `plotly`, e seu efeito visual e de interatividade são bem expressivos !
+
+|       Um exemplo de gráfico 3D pode ser obtido das relações de *raio, área superficial, e volume* de uma esfera, tal como segue.
+
+
+
+![Relações matemáticas de área superficial e de volume de uma esfera em função de seu raio. Fonte: MAPA: ensino médio - Matemática e suas tecnologias. 1º Bim. 3º Ano, p.15.](esfera3D_mapa.png)
+
+|       Agora vamos elaborar o gráfico 3D interativo no `plotly`. O mais simples seria com as etiquetas com os nomes padrão, *x, y e z*. Mas é melhor acrescentar o comando *layout* para dar significado físico e melhorar a interpretação do gráfico.
 
 ```{r}
 library(plotly)
-x = 1:10
-plot_ly(x = ~x, y = ~x^2, z=~x^3, mode='markers')
+
+# Dados:
+r = seq(0,100, length.out = 50)
+AreaSup = 4*pi*r^2 # cálculo de área superficial da esfera
+Volume = 4/3*pi*r^3 # cálculo do volume da esfera
+
+# Gráfico:
+library(plotly)
+plot_ly(x = r, y = AreaSup, z = Volume, 
+        mode= 'markers+lines')%>%
+  layout(scene = list(
+         xaxis=list(title="raio"),
+         yaxis=list(title="área superficial"),
+         zaxis=list(title="volume")))
 
 ```
+\
 
+|       Observe que o gráfico é interativo também sobre outros aspectos, como sua *rotação em qualquer dos 3 eixos*. Sob o ponto de vista de conteúdo, esse gráfico ilustra como que os valores de área superficial, e mais ainda de volume, são enormemente variados em função do raio de uma esfera. Isso também justifica em parte o grande sucesso do uso de *nanopartículas* em Ciência e Tecnologia nos dias atuais (alta área de superfície em tamanho reduzido).
 
 |       Existem outros tipos de gráficos para o `plotly`, pelo que vale uma visitinha ao [website](https://plotly.com/r/) para mais informações.
 

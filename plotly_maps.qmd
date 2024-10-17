@@ -2,12 +2,12 @@
 title: "Mapas interativos com `plotly`"
 ---
 
-```{r, eval=FALSE}
-Objetivos:
-  1. Conhecer o potencial do "plotly" para criação de mapas interativos
-  2. Elaborar um mapa interativo com dados inseridos
-  3. Elaborar um mapa interativo com dados importados 
-```
+<div class = "reminder-objetivos">
+Objetivos:\
+  1. Conhecer o potencial do "plotly" para criação de mapas interativos\
+  2. Elaborar um mapa interativo com dados inseridos\
+  3. Elaborar um mapa interativo com dados importados \
+</div>
 
 
 |       Por fim, deixamos esta última parte de nosso curso para lhe apresentar outro potencial *"pra lá de bacana"* do `plotly` para ensino e aprendizagem: a construção de mapas interativos. 
@@ -63,33 +63,46 @@ Dica: se você selecionou uma cidade fora da América do Sul, colocar um *"#"* a
 </div>
 
 
-### Consumo de álcool pelo mundo
+### Produção mundial de óleos
 
 
-|       Agora imagine que você possa, ao invés de colocar os dados um a um, *importar os dados de algum repositório da internet*, como fora conduzido na etapa anterior. Para ilustrar isso vamos importar uma planilha referente ao consumo de álcool pelo mundo em 2010, tal como encontrada no banco de [datasets do plotly](https://github.com/plotly/datasets). 
+|       Agora imagine que você possa, ao invés de colocar os dados um a um, *importar os dados de algum repositório da internet* para a construção do mapa, como fora conduzido na etapa anterior. Para ilustrar isso vamos importar uma planilha referente à produção de óleo no planeta. Essa categoria inclui petróleo bruto, óleo de xisto, areias betuminosas, condensados, e líquidos de gás natural (etano, GLP e nafta separados da produção de gás natural).
+
+|       Ao mesmo tempo, vamos filtrar os dados importados para o ano de 2014, tal como encontrado no banco de dados do [Our World In Data](https://github.com/owid/owid-datasets/tree/master/datasets). 
+
+
+![Produção mundial de petróleo. Fonte: MAPA: ensino médio - Ciências humanas e suas tecnologias. 3º Bim. 2º Ano, p.81.](petroleo_mapa.png)
 
 
 ```{r}
 library(plotly)
 
 # Exemplo de dataframe com valores fictícios
-df <- read.csv("https://raw.githubusercontent.com/plotly/datasets/refs/heads/master/2010_alcohol_consumption_by_country.csv")
+df <- read.csv("https://raw.githubusercontent.com/owid/owid-datasets/refs/heads/master/datasets/Oil%20production%20-%20Etemad%20%26%20Luciana/Oil%20production%20-%20Etemad%20%26%20Luciana.csv")
+
+# Renomeando as colunas para facilitar interpretação e plotagem
+
+names(df) <- c("País", "Ano", "Produção.TeraWatt")
+
+# Filtrando os dados para o último ano (2014)
+df <- subset(df, Ano == "2014")
 
 head(df)
 
-library(plotly)
+
 # Criando o mapa choropleth com a escala de cores ajustada
+library(plotly)
 plot_ly(
   data = df,
-  locations = ~location,
+  locations = ~País,
   locationmode = "country names",
-  z = ~alcohol, # Variável que determina as cores
+  z = ~Produção.TeraWatt, # Variável que determina as cores
   type = "choropleth",
-  colorscale = "Viridis") # outras escalas: # outras escalas: RdBu, Inferno, Blues, Cividis, Greens, ...
+  colorscale = "RdBu") # outras escalas: # outras escalas: Viridis, Inferno, Blues, Cividis, Greens, ...
 ```
 
 
-|       Seguindo a mesma lógica do mapa anterior, se você passar o *mouse* sobre os países verá o consumo identificado em cada um. Observe que há uma barrinha lateral apresentando a legenda sobre o quantitativo de consumo. Observe também que o "*type"* do gráfico agora é `choroplet` (e não `scattergeo`). Na sua versão mais simples, ele só precisa dos nomes padronizados dos países. Mas também pode ser realizado com um banco de dados que possua apenas as coordenadas geográficas de latitude e longitude.
+|       Seguindo a mesma lógica do mapa anterior, se você passar o *mouse* sobre os países verá o consumo identificado em cada um. Observe que há uma barrinha lateral apresentando a legenda sobre o quantitativo de produção, em  Observe também que o "*type"* do gráfico agora é `choroplet` (e não `scattergeo`). Na sua versão mais simples, ele só precisa dos nomes padronizados dos países. Mas também pode ser realizado com um banco de dados que possua apenas as coordenadas geográficas de latitude e longitude.
 
 |       Para auxiliar nessa direção, seguem dois *links* práticos para arquivos de coordenadas geográficas, e acessíveis pelo `R`:
 
@@ -97,4 +110,8 @@ plot_ly(
 * [Coordenadas de capitais mundiais](https://raw.githubusercontent.com/bahar/WorldCityLocations/refs/heads/master/World_Cities_Location_table.csv)
 
 |       E nesse caso, qualquer banco de dados nesse quesito será bem-vindo. O que significa na prática poder exemplificar qualquer informação de conteúdo didático de forma interativa em um mapa (ex: produção/exportação de insumos, observações clínicas, marcos históricos, etc).
+
+## Uma palavra final
+
+|       Chegamos ao final desta etapa do Curso em ferramentas digitais voltadas ao ensino e aprendizagem. Esperamos que você tenha gostado do material, e que possa aproveitá-lo de algum modo em sua disciplina. Se tiver qualquer comentário, crítica ou sugestão, por gentileza nos permita saber pela aba de  *Contato* deste *website*.
 

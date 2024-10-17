@@ -11,7 +11,7 @@ editor: source
 ::: {#second-column}
 |     O *Ensino Reprodutível (ER)* define uma metodologia ativa em ensino e aprendizagem que combina linguagem de programação com conteúdos descritivos. 
 
-|      Em uma frase: **códigos para ideias.** 
+|      Em uma frase: **códigos para conteúdos.** 
 
 
 |       Na prática, o ER envolve aplicar códigos escritos em bloco de notas para que um programa gere algum *produto de interesse ao Ensino*, como um gráfico, uma tabela, uma mídia, um texto formatado (pdf, docx, epub), estáticos ou interativos, uma simulação, uma animação, dentre vários. Dessa forma é possível imaginar que um educando possa repetir a execução do código num programa específico, alterar algum trecho do código para observar um resultado diferente, ou mesmo criar um novo código buscando outro resultado final.

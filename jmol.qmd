@@ -2,11 +2,14 @@
 title: "1 - Usando o Jmol para observar moléculas em 3D"
 ---
 
-```{r, eval=FALSE}
-Objetivos:
-  1. Acessar a versão online do Jmol
-  2. Carregar uma molécula no Jmol
-```
+
+<div class="reminder-objetivos">
+
+Objetivos:\
+  1. Acessar a versão online do Jmol\
+  2. Carregar uma molécula no Jmol\
+
+</div>
 \
 
 ## Onde começar ?
@@ -39,10 +42,17 @@ https://chemapps.stolaf.edu/jmol/jmol.php?model=water
 
 ## Como carregar uma molécula *online* ?
 
-|       Pra *brincar* um pouco com outra molécula, experimente mudar o modelo na própria página de internete, ao final da linha. Por exemplo, de *water* para *tylenol*:
+|       Pra *brincar* um pouco com outra molécula, experimente mudar o modelo na própria página de internete, ao final da linha. E agora seguindo o *MAPA (Material de apoio pedagógico para aprendizagens)*.
+
+
+![Algumas representações de moléculas. Fonte: MAPA: ensino médio - 1º Bim. 3º Ano, p.51. Ciências da natureza e suas tecnologias.](vitC_mapa.png)
+\
+
+|       Vamos ilustrar isso com a estrutura da *vitamina C (ácido ascórbico)*.
+
 
 ```{r, eval=FALSE}
-https://chemapps.stolaf.edu/jmol/jmol.php?model=tylenol
+https://chemapps.stolaf.edu/jmol/jmol.php?model=ascorbic acid
 ```
 
 |       Você pode tentar fazer isso com outras moléculas, digitando seu nome *em inglês*, por tratar-se de um *site* estrangeiro. Mas é claro que o banco de dados dessa busca não é ilimitado, e por vezes o sistema não encontrará a molécula desejada.
@@ -56,11 +66,11 @@ https://chemapps.stolaf.edu/jmol/jmol.php?model=tylenol
 
 **Agora é com você**:
 
-1. Entra no site do [PubChem](https://pubchem.ncbi.nlm.nih.gov/) ;
-2. Procura por `ascorbic acid` ;
+1. Entre no site do [PubChem](https://pubchem.ncbi.nlm.nih.gov/) ;
+2. Procure por `tylenol` ;
 3. Se existir, digite esse mesmo termo ao final da linha do *JSmol online*, como segue, e veja se deu certo:
 \
-    `https://chemapps.stolaf.edu/jmol/jmol.php?model=ascorbic acid`
+    `https://chemapps.stolaf.edu/jmol/jmol.php?model=tylenol`
 
   </p>
 </div>

@@ -2,11 +2,11 @@
 title: "Animação em gráficos interativos"
 ---
 
-```{r, eval=FALSE}
-Objetivos:
-  1. Conhecer o potencial do "plotly" para criar animações interativas
-  2. Elaborar gráficos animados por importação de banco de dados 
-```
+<div class = "reminder-objetivos">
+Objetivos:\
+  1. Conhecer o potencial do "plotly" para criar animações interativas\
+  2. Elaborar gráficos animados por importação de banco de dados
+</div>
 
 
 |       Além do aspecto puramente interativo de gráficos elaborados com o `plotly`, o que já perfaz um grande diferencial ao preparo de materiais ilustrativos de conteúdos didáticos, a biblioteca ainda é capaz de rodar animações com os gráficos!
@@ -15,34 +15,40 @@ Objetivos:
 |       A animação se dá por meio de transições de uma imagem a outra de um gráfico quando se deseja observar o que ocorre com esse quando se altera uma variável (numérica ou categórica). O comando chave pra isso é `frame` (quadro). A animação no `plotly` também serve para os 3 tipos de entrada de dados, ou seja: *equações, vetores, datasets importados*. 
 \
 
-## Emissão de CO$_{2}$ e o efeito estufa
+## Elevação da temperatura média da Terra
 
 
-|       As emissões de CO$_{2}$ e outros gases pela queima de combustíveis fósseis tem grande responsabilidade sobre o efeito de estufa, incidindo diretamente sobre as alterações climáticas. Para reduzir essas emissões é necessário transformar a matriz energética atual, indústria e sistemas alimentares.  
+|       Desnecessário mencionar os impactos recentes das mudanças climáticas no planeta em função da ação humana, incluindo uma elevação média da temperatura superficial do globo terrestre em decorrência de  fatores como o efeito estufa. 
 \
 
-|       Para compreender a emissão de CO$_{2}$ observada no Brasil no período de 1890 a 2022, execute o trecho de código que segue em um *script* do `R (ou seja, copie, cole, e execute), a partir da fonte [Our World in Data](https://github.com/owid). 
+![Mudanças climáticas do planeta em função da emissão de gases e da elevação média de temperatura. Fonte: MAPA: ensino médio - Ciências humanas e suas tecnologias. 1º Bim. 2º Ano, p.99.](temp_mapa.png)
 \
 
 ```{r}
+
+library(plotly)
+library(magrittr)  # bibliotecas necessárias
+
 # 1) Obtendo os dados da internet
-url <- "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv" # define o link para os dados
+
+url <- "https://raw.githubusercontent.com/datasets/global-temp/refs/heads/main/data/annual.csv" # define o link para os dados
 dados <- read.csv(url)  # lê o arquivo dos dados
 
-# 2) Filtrando os dados para o Brasil - função subset()
-dadosBra <- subset(dados, country == "Brazil") 
+# 2) Construindo o gráfico com animação 
 
-# 3) Construindo o gráfico com animação 
-
-plot_ly(dadosBra, x = ~year, y = ~co2,
+plot_ly(dados, x = ~Year, y = ~Mean,
         type = "bar", 
         marker = list(line = list(width = 10)),
-        frame = ~year) %>%
+        frame = ~Year) %>%
   animation_opts(
     frame = 150,           # Velocidade da animação
     transition = 0,
     redraw = TRUE
-  )
+  ) %>%
+  layout(
+    title = "Flutuação da temperatura global",
+    xaxis = list(title = "Anos"),
+    yaxis = list(title = "Diferença de temperatura, C"))
 ```
 \
 
@@ -52,10 +58,13 @@ plot_ly(dadosBra, x = ~year, y = ~co2,
 ## Expectativa de vida & Produto Interno Bruto
 
 
-|       Um emprego bem interessante sobre o uso do `plot_ly` em animação gráfica dá-se quando necessitamos apresentar vários dados sobre determinado tema. A isso dá-se no nome de *dados multivariados*. Ilustrando esse situação, digamos que se deseje oferecer informações variadas em um gráfico que envolva a relação entre o produto interno bruto de um país e a expectativa de vida de seus habitantes ao longo do tempo. 
+|       Um emprego bem interessante para o uso do `plot_ly` em animação gráfica dá-se quando necessitamos apresentar vários dados sobre determinado tema. A isso dá-se no nome de *dados multivariados*. Ilustrando esse situação, digamos que se deseje oferecer informações variadas em um gráfico que envolva a relação entre o produto interno bruto de um país e a expectativa de vida de seus habitantes ao longo do tempo. 
 \
 
-|       Usando o `R` podemos importar esses dados da internet e criar um gráfico sobre essa relação, veja:
+
+![Alguns índices econômicos associados à expectativa de vida em 2001. Fonte: MAPA: ensino médio - Ciências humanas e suas tecnologias. 1º Bim. 2º Ano, p.101.](expectativa_mapa.png)
+
+|       Para ilustrar a riqueza interativa que se pode obter pelo `plotly` sobre a influência do *produto interno bruto - PIB* sobre a expectativa de vida, podemos importar um conjunto de dados da internet e criar um gráfico sobre essa relação, veja:
 \
 
 ```{r}
@@ -126,9 +135,8 @@ plot_ly(
 ```
 \
 
-|       Demais, não ?!?
 |       Para ir ao "*playground*" agora, tecle em *PLAY* e observe a transição temporal de expectativa de vida em função do PIB dos países. E veja que todos os demais dados estão lá, separados por tamanho dos pontos (população), cor (país), continente (*hover*, passagem do *mouse*), e ano (quadro de animação ou *frame*) ! 
 \
 
-|       E ainda tem mais ! Se você observar a legenda, veja que ela também é *deslizante*, identificando cada país por uma cor. Quer saber onde encontra-se o Brasil nessa relação de PIB e expectativa de vida do gráfico doidão ? Fácil. Ache o Brasil na legenda, dê dois cliques, e observe que agora somente esse ponto é destacado.
+|       Mais um detalhe ! Se você observar a legenda, veja que ela também é *deslizante*, identificando cada país por uma cor. Quer saber onde encontra-se o Brasil nessa relação de PIB e expectativa de vida do gráfico doidão ? Fácil. Ache o Brasil na legenda, dê dois cliques, e observe que agora somente esse ponto é destacado.
 

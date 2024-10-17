@@ -122,8 +122,36 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 <link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
 <script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
-<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -371,7 +399,10 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
   <ul>
   <li><a href="#adicionando-um-controle-deslizante-por-intervalo" id="toc-adicionando-um-controle-deslizante-por-intervalo" class="nav-link active" data-scroll-target="#adicionando-um-controle-deslizante-por-intervalo"><span class="header-section-number">1</span> Adicionando um controle deslizante por intervalo</a>
   <ul class="collapse">
-  <li><a href="#adicionando-um-menu-suspenso" id="toc-adicionando-um-menu-suspenso" class="nav-link" data-scroll-target="#adicionando-um-menu-suspenso"><span class="header-section-number">1.0.1</span> Adicionando um menu suspenso</a></li>
+  <li><a href="#emissão-de-co_2-e-o-efeito-estufa" id="toc-emissão-de-co_2-e-o-efeito-estufa" class="nav-link" data-scroll-target="#emissão-de-co_2-e-o-efeito-estufa"><span class="header-section-number">1.1</span> Emissão de CO<span class="math inline">\(_{2}\)</span> e o efeito estufa</a>
+  <ul class="collapse">
+  <li><a href="#adicionando-um-menu-suspenso" id="toc-adicionando-um-menu-suspenso" class="nav-link" data-scroll-target="#adicionando-um-menu-suspenso"><span class="header-section-number">1.1.1</span> Adicionando um menu suspenso</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -398,72 +429,93 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Objetivos<span class="sc">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fl">1.</span> Observar a capacidade extensiva de interação com o pacote <span class="st">"plotly"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fl">2.</span> Elaborar um gráfico com controle deslizante</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fl">3.</span> Elaborar um gráfico com menu suspenso </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="reminder-objetivos">
+<p>Objetivos:<br>
+1. Observar a capacidade extensiva de interação com o pacote “plotly”<br>
+2. Elaborar um gráfico com controle deslizante<br>
+3. Elaborar um gráfico com menu suspenso</p>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Até o momento só <em>“arranhamos”</em> o potencial de interatividade gráfica do pacote <code>plotly</code>. Como já mencionado, essa biblioteca permite um grande conjunto de ações de usuário, como deslizadores (<em>sliders</em>), menu de escolha, e botões, entre muitos.</div>
 <p><br>
 </p>
 <section id="adicionando-um-controle-deslizante-por-intervalo" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Adicionando um controle deslizante por intervalo</h1>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um <em>slider</em> dessa natureza permite que se escolha uma janela de dados para um estudo mais detalhista naquela região. Nesse caso é possível agregar a um gráfico simples um <em>controle deslizante de intervalo</em> (<em>rangeslider</em>), tal como representado abaixo. Basta copiar, colar, e executar o trecho num <em>script</em>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um <em>slider</em> dessa natureza permite que se escolha uma janela de dados para um estudo mais detalhista naquela região. Nesse caso é possível agregar a um gráfico simples um <em>controle deslizante de intervalo</em> (<em>rangeslider</em>).</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Podemos ilustrar seu emprego pela observação de gases de efeito estufa, e em especial, da <em>emissão de dióxido de carbono no Brasil</em> a partir de uma base de dados da internet. Para isso, você aprenderá a <em>obter um arquivo a partir de base de dados da internet, filtrar para um subconjunto desejado, e elaborar o gráfico resultante, com um controle deslizante adicional</em>.</div>
+<section id="emissão-de-co_2-e-o-efeito-estufa" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="emissão-de-co_2-e-o-efeito-estufa"><span class="header-section-number">1.1</span> Emissão de CO<span class="math inline">\(_{2}\)</span> e o efeito estufa</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As emissões de CO<span class="math inline">\(_{2}\)</span> e outros gases pela queima de combustíveis fósseis tem grande responsabilidade sobre o efeito de estufa, incidindo diretamente sobre as alterações climáticas. Para reduzir essas emissões é necessário transformar a matriz energética atual, indústria e sistemas alimentares.</div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para compreender a emissão de CO<span class="math inline">\(_{2}\)</span> observada no Brasil no período de 1890 a 2022, execute o trecho de código que segue em um <em>script</em> do `R (ou seja, copie, cole, e execute), a partir da fonte <a href="https://github.com/owid">Our World in Data</a>.</div>
+<p><br>
+</p>
+<p><img src="co2_mapa.png" class="img-fluid" alt="Referência do MAPA para gases de efeito estufa. Fonte: MAPA: ensino médio - Ciências humanas e suas tecnologias. 1º Bim. 2º Ano, p.19."><br>
+</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="co"># dados</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> x<span class="sc">^</span><span class="dv">2</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)  <span class="co"># bibliotecas necessárias</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>y, <span class="at">type=</span><span class="st">"scatter"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_lines</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rangeslider</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>No scatter mode specifed:
-  Setting the mode to markers
-  Read more about this attribute -&gt; https://plotly.com/r/reference/#scatter-mode</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr) <span class="co"># biblioteca de importação de dados</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr) <span class="co"># biblioteca para uso do operador pipe "%&gt;%"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Carregamento dos dados da internet</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>co2_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(url)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtragem dos dados para o Brasil usando subset()</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>co2_brasil <span class="ot">&lt;-</span> <span class="fu">subset</span>(co2_data, country <span class="sc">==</span> <span class="st">"Brazil"</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Criação do gráfico interativo com plot_ly</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>co2_plot <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(<span class="at">data =</span> co2_brasil, <span class="at">x =</span> <span class="sc">~</span>year, <span class="at">y =</span> <span class="sc">~</span>co2, <span class="at">type =</span> <span class="st">'scatter'</span>, <span class="at">mode =</span> <span class="st">'lines+markers'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">"Emissões de CO2 no Brasil ao longo dos anos"</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>         <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Ano"</span>),</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>         <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Emissão de CO2 (milhões de toneladas)"</span>))</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora, a cereja do bolo. A inserção de um controle deslizante, para a seleção de faixas para um estudo mais focado.</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>co2_plot <span class="sc">%&gt;%</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rangeslider</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-2b69d87f8b7f513d5655" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-2b69d87f8b7f513d5655">{"x":{"visdat":{"3f02696e76ba":["function () ","plotlyVisDat"]},"cur_data":"3f02696e76ba","attrs":{"3f02696e76ba":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"3f02696e76ba.1":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","mode":"lines","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"rangeslider":{"visible":true},"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"type":"scatter","mode":"lines","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-88b3fd65f5d4025a62df" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-88b3fd65f5d4025a62df">{"x":{"visdat":{"24c621a9151d":["function () ","plotlyVisDat"]},"cur_data":"24c621a9151d","attrs":{"24c621a9151d":{"x":{},"y":{},"mode":"lines+markers","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"rangeslider":{"visible":true},"title":"Ano"},"title":"Emissões de CO2 no Brasil ao longo dos anos","yaxis":{"domain":[0,1],"automargin":true,"title":"Emissão de CO2 (milhões de toneladas)"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1901,1902,1903,1904,1905,1906,1907,1908,1909,1910,1911,1912,1913,1914,1915,1916,1917,1918,1919,1920,1921,1922,1923,1924,1925,1926,1927,1928,1929,1930,1931,1932,1933,1934,1935,1936,1937,1938,1939,1940,1941,1942,1943,1944,1945,1946,1947,1948,1949,1950,1951,1952,1953,1954,1955,1956,1957,1958,1959,1960,1961,1962,1963,1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975,1976,1977,1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[2.1030000000000002,2.5059999999999998,2.4399999999999999,2.6200000000000001,2.7989999999999999,3.206,3.4510000000000001,3.5939999999999999,3.609,4.1989999999999998,4.6059999999999999,5.5910000000000002,6.0350000000000001,4.1070000000000002,3.1440000000000001,2.8799999999999999,2.4990000000000001,2.323,3.0699999999999998,3.6459999999999999,2.891,3.7810000000000001,4.617,5.1040000000000001,5.375,5.4779999999999998,6.0750000000000002,5.9279999999999999,6.3460000000000001,5.5140000000000002,4.1689999999999996,4.1689999999999996,4.7220000000000004,4.6230000000000002,5.5090000000000003,5.1459999999999999,6.0869999999999997,6.0940000000000003,5.9480000000000004,6.4859999999999998,6.2809999999999997,5.867,6.4749999999999996,5.8959999999999999,6.8230000000000004,7.46,8.9469999999999992,7.8470000000000004,7.367,19.658999999999999,21.658999999999999,24.934000000000001,25.218,29.675999999999998,34.024000000000001,36.607999999999997,35.973999999999997,39.054000000000002,39.017000000000003,46.851999999999997,49.136000000000003,53.613,55.523000000000003,56.625999999999998,56.279000000000003,64.162000000000006,66.033000000000001,77.224000000000004,84.087999999999994,93.488,102.337,114.01900000000001,132.06100000000001,143.01599999999999,150.327,154.607,162.363,177.11699999999999,187.78700000000001,186.191,171.32400000000001,171.5,165.90000000000001,167.56700000000001,180.11099999999999,197.238,205.96799999999999,207.69499999999999,212.071,218.65799999999999,229.39400000000001,233.601,244.30600000000001,254.00200000000001,268.678,289.31099999999998,306.94900000000001,317.35899999999998,327.25599999999997,340.18299999999999,346.166,347.76499999999999,344.64499999999998,361.43400000000003,364.37099999999998,368.87099999999998,390.57299999999998,412.63799999999998,389.77499999999998,440.26900000000001,462.57999999999998,498.30900000000003,532.41800000000001,557.90099999999995,529.35299999999995,492.74799999999999,497.12099999999998,477.99900000000002,473.464,444.50400000000002,497.20600000000002,483.47699999999998],"mode":"lines+markers","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente posicionar o <em>mouse</em> num dos dois marcadores laterais do gráfico inferior, arrastando-o em seguida, e observe o resultado.</div>
-<section id="adicionando-um-menu-suspenso" class="level3" data-number="1.0.1">
-<h3 data-number="1.0.1" class="anchored" data-anchor-id="adicionando-um-menu-suspenso"><span class="header-section-number">1.0.1</span> Adicionando um menu suspenso</h3>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Você pode copiar e colar os <em>scripts</em> na sequência para sua execução, ou apenas adicionar o comando <code>rangeslider()</code> com o operador <em>pipe</em> %&gt;% ao final.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente agora posicionar o <em>mouse</em> num dos dois marcadores laterais do gráfico inferior, arrastando-o em seguida, e observe o resultado. O controle deslizante pode ser útil quando se deseja focar em determinada região do gráfico. Por exemplo, ajustar a emissão de CO<span class="math inline">\(_{2}\)</span> para os últimos anos.</div>
+<section id="adicionando-um-menu-suspenso" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="adicionando-um-menu-suspenso"><span class="header-section-number">1.1.1</span> Adicionando um menu suspenso</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menus suspensos (<em>dropdown menu</em>) permitem observar um gráfico diferente a cada opção selecionada. Para exemplificar esse recurso interativos, vamos primeiramente elaborar um conjunto de dados (<em>dataframe</em>) que possua a resposta linear, quadrática, e cúbica a uma variável independente, tal como segue:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="co"># vetor da variável independente "x"</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>yLin <span class="ot">=</span> x</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>yQuad <span class="ot">=</span> x<span class="sc">^</span><span class="dv">2</span> <span class="co"># criação da variável dependente quadrática </span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>yCub <span class="ot">=</span> x<span class="sc">^</span><span class="dv">3</span> <span class="co"># criação da variável dependente cúbica </span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>datLQC <span class="ot">&lt;-</span><span class="fu">data.frame</span>(x,yLin,yQuad,yCub) <span class="co"># criação da planilha de dados</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="co"># vetor da variável independente "x"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>yLin <span class="ot">=</span> x</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>yQuad <span class="ot">=</span> x<span class="sc">^</span><span class="dv">2</span> <span class="co"># criação da variável dependente quadrática </span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>yCub <span class="ot">=</span> x<span class="sc">^</span><span class="dv">3</span> <span class="co"># criação da variável dependente cúbica </span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>datLQC <span class="ot">&lt;-</span><span class="fu">data.frame</span>(x,yLin,yQuad,yCub) <span class="co"># criação da planilha de dados</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora podemos inserir o <em>menu suspenso</em> para opção das tendências matemáticas:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(datLQC, <span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yLin, <span class="at">type =</span> <span class="st">"scatter"</span>, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Linear"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_trace</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yQuad, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Quadrático"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_trace</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yCub, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Cúbico"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Gráficos de potência"</span>,</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"x"</span>),</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"x^n"</span>),</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">updatemenus =</span> <span class="fu">list</span>(</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">list</span>(</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">buttons =</span> <span class="fu">list</span>(</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yLin"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>)))),</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yQuad"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>)))),</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yCub"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>))))</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(datLQC, <span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yLin, <span class="at">type =</span> <span class="st">"scatter"</span>, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Linear"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_trace</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yQuad, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Quadrático"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_trace</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yCub, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Cúbico"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Gráficos de potência"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"x"</span>),</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"x^n"</span>),</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">updatemenus =</span> <span class="fu">list</span>(</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">list</span>(</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">buttons =</span> <span class="fu">list</span>(</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yLin"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>)))),</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yQuad"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>)))),</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yCub"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>))))</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-eedab9840626f65fc8ce" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-eedab9840626f65fc8ce">{"x":{"visdat":{"9b3e79570113":["function () ","plotlyVisDat"]},"cur_data":"9b3e79570113","attrs":{"9b3e79570113":{"x":{},"y":{},"mode":"line","name":"Linear","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"9b3e79570113.1":{"x":{},"y":{},"mode":"line","name":"Quadrático","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"9b3e79570113.2":{"x":{},"y":{},"mode":"line","name":"Cúbico","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Gráficos de potência","xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"x^n"},"updatemenus":[{"buttons":[{"label":"yLin","method":"update","args":[{"visible":[true,false,false]}]},{"label":"yQuad","method":"update","args":[{"visible":[false,true,false]}]},{"label":"yCub","method":"update","args":[{"visible":[false,false,true]}]}]}],"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,2,3,4,5,6,7,8,9,10],"mode":"line","name":"Linear","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"mode":"line","name":"Quadrático","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,8,27,64,125,216,343,512,729,1000],"mode":"line","name":"Cúbico","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-480bcc1e6e84741b2b4d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-480bcc1e6e84741b2b4d">{"x":{"visdat":{"23c522e2c823":["function () ","plotlyVisDat"]},"cur_data":"23c522e2c823","attrs":{"23c522e2c823":{"x":{},"y":{},"mode":"line","name":"Linear","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"23c522e2c823.1":{"x":{},"y":{},"mode":"line","name":"Quadrático","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"23c522e2c823.2":{"x":{},"y":{},"mode":"line","name":"Cúbico","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Gráficos de potência","xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"x^n"},"updatemenus":[{"buttons":[{"label":"yLin","method":"update","args":[{"visible":[true,false,false]}]},{"label":"yQuad","method":"update","args":[{"visible":[false,true,false]}]},{"label":"yCub","method":"update","args":[{"visible":[false,false,true]}]}]}],"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,2,3,4,5,6,7,8,9,10],"mode":"line","name":"Linear","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"mode":"line","name":"Quadrático","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,8,27,64,125,216,343,512,729,1000],"mode":"line","name":"Cúbico","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ainda que você possa achar meio complicado o trecho de código acima, apenas copie-o, cole-o num <em>script</em>, e execute-o. Isso exemplifica a <em>essência inerente ao Ensino Reprodutível, desde a simples reprodução do código, até sua alteração e mesmo a criação de novos</em>. Sentindo curiosidade, você pode alterar alguns termos do código acima, como as etiquetas (<em>label</em>, substitua um nome, por ex) que surgem no menu suspenso, o tipo de gráfico pretendido (substitua <em>scatter</em> por <em>bar</em>, por exemplo), ou o título do gráfico (<em>title</em>).</div>
@@ -482,6 +534,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </ul>
 
 
+</section>
 </section>
 </section>
 

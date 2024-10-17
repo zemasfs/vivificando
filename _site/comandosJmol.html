@@ -414,6 +414,7 @@ window.Quarto = {
   <li><a href="#características-moleculares-1" id="toc-características-moleculares-1" class="nav-link" data-scroll-target="#características-moleculares-1"><span class="header-section-number">9</span> Características moleculares</a>
   <ul class="collapse">
   <li><a href="#nuvem-de-van-der-waals" id="toc-nuvem-de-van-der-waals" class="nav-link" data-scroll-target="#nuvem-de-van-der-waals"><span class="header-section-number">9.1</span> Nuvem de van der Waals</a></li>
+  <li><a href="#ligações-de-hidrogênio" id="toc-ligações-de-hidrogênio" class="nav-link" data-scroll-target="#ligações-de-hidrogênio"><span class="header-section-number">9.2</span> Ligações de hidrogênio</a></li>
   </ul></li>
   <li><a href="#superfícies" id="toc-superfícies" class="nav-link" data-scroll-target="#superfícies"><span class="header-section-number">10</span> Superfícies</a></li>
   </ul>
@@ -441,10 +442,11 @@ window.Quarto = {
 </header>
 
 
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Objetivos<span class="sc">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fl">1.</span> Carregar uma molécula no Jmol de formas alternativas</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fl">2.</span> Utilizar o Console para alguns comandos</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="reminder-objetivos">
+<p>Objetivos:<br>
+1. Carregar uma molécula no Jmol de formas alternativas<br>
+2. Utilizar o Console para alguns comandos<br>
+</p>
 </div>
 <section id="como-carregar-uma-molécula-no-jsmol" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="como-carregar-uma-molécula-no-jsmol"><span class="header-section-number">1</span> Como carregar uma molécula no JSmol</h2>
@@ -459,11 +461,11 @@ window.Quarto = {
 <h3 data-number="1.1" class="anchored" data-anchor-id="carregando-a-molécula-com-o-mouse"><span class="header-section-number">1.1</span> Carregando a molécula com o <em>mouse</em></h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para isto basta clicar com o botão direito do <em>mouse</em> no ecrã, como anteriormente, e selecionar <em>File–&gt;Load</em>. As opções que se apresentam são:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Open local file <span class="co"># abre janela para buscar o arquivo do modelo no computador;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Open URL <span class="co"># abre janela para buscar o endereço de internete que possui o arquivo</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Get PDB file <span class="co"># abre janela para inserir um código de macromolécula do site homônimo (proteínas, ácidos nucleicos, principalmente)</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Get MOL file <span class="co"># abre janela para buscar um arquivo *.mol</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Open script <span class="co"># abre janela para buscar um trecho de código no computador</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Open local file <span class="co"># abre janela para buscar o arquivo do modelo no computador;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Open URL <span class="co"># abre janela para buscar o endereço de internete que possui o arquivo</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Get PDB file <span class="co"># abre janela para inserir um código de macromolécula do site homônimo (proteínas, ácidos nucleicos, principalmente)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Get MOL file <span class="co"># abre janela para buscar um arquivo *.mol</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Open script <span class="co"># abre janela para buscar um trecho de código no computador</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A primeira opção é autoexplicativa (<code>Open local file</code>), a segunda opção (<code>Open URL</code>) depende do endereço correto para um determinado modelo molecular, a terceira (<code>Get PDB file</code>) refere-se ao banco de dados <a href="https://www.rcsb.org">Protein Data Brookhaven</a> para biopolímeros, a quarta (<code>Get MOL file</code>) envolve a busca <em>online</em> em banco de dados específico para pequenas moléculas, e a última (<code>Open script</code>), a busca de um arquivo que contenha linhas de código do <em>Jmol</em> para um conjunto de ações.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como os livros didáticos permeiam estruturas moleculares pequenas, normalmente associadas aos grupos funcionais da <em>Química Inorgânica e Orgânica</em>, bem como exemplos específicos em áreas como <em>Saúde, Biotecnologia e Indústria</em>, incluindo também <em>alguns modelos de macromoléculas</em>, pode-se concluir que é mais provável que você utilize a busca remota de pequenas moléculas (<em>Get MOL file</em>), moléculas contidas em seu computador (<em>Open local file</em>), e/ou biomacromoléculas (<em>Get PDB file</em>).</div>
@@ -475,8 +477,8 @@ window.Quarto = {
 <li>Carrega-se na página do <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=water">JSmol</a> por dois meios alternativos:</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Por clique de mouse<span class="sc">:</span> File <span class="sc">-</span><span class="ot">-&gt;</span> Load <span class="sc">-</span><span class="ot">-&gt;</span> Open local file ;</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Por arraste do arquivo da pasta onde se encontre para a aba do JSmol no navegador.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Por clique de mouse<span class="sc">:</span> File <span class="sc">-</span><span class="ot">-&gt;</span> Load <span class="sc">-</span><span class="ot">-&gt;</span> Open local file ;</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Por arraste do arquivo da pasta onde se encontre para a aba do JSmol no navegador.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <!---colocar alguns links pra baixar moléculas...tem vários--->
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;Exemplificando, digamos que você queira visualizar a estrutura da <em>aspirina</em> baixada em seu computador.</div>
@@ -501,7 +503,7 @@ window.Quarto = {
 ### Carregando a molécula por linha de comando</p>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O carregamento de um modelo em particular por linha de comando restringe-se à sua busca pela internet, em banco de dados ou páginas da <em>web</em>. Para isso, abre-se o <em>Console</em> como já explicado. A parte de cima serve para apresentação dos resultados dos comandos, e a parte de baixo, para sua digitação. Nesse caso, clique no quadro inferior do <em>Console</em> e digite o comando de carregamento, aqui exemplificado para um <em>alcano</em>:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>alkane</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>alkane</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <em>Console</em> do <em>Jmol</em>, ainda que constitua uma linguagem própria de programação de comandos, possui uma vantagem interessante sobre demais linguagens de programação: <em>é possível efetuar o comando pelo Console tanto com letras maiúsculas como minúculas, e tanto no singular como no plural.</em></div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Você pode tentar com outras moléculas, como <em>aspirin</em>, <em>cholesterol</em>, <em>phenol</em> etc (nomes em inglês, por conta do banco de dados). Para recuperar uma linha de comando que foi escrita antes, basta <em>navegar entre os comandos que foram utilizados com as setas para cima e para baixo do teclado (histórico de comandos)</em>.</div>
@@ -511,26 +513,26 @@ window.Quarto = {
 <h3 data-number="1.2" class="anchored" data-anchor-id="carregando-biopolímeros-proteínas-enzimas-ácidos-nucleicos-por-linha-de-comando"><span class="header-section-number">1.2</span> Carregando biopolímeros (proteínas, enzimas, ácidos nucleicos) por linha de comando</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como mecionado acima, o carregamento de macromoléculas biológicas dá-se por identificação de um código alfanumérico da mesma frente ao banco de dados <a href="https://www.rcsb.org/">PDB-Protein Data Bank</a>. Após obter esse código, o comando de carregamento é:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>load<span class="ot">=</span>XXXX <span class="co"># onde XXXX é o código da macromolécula110</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: Perceba que o sinal de "$" é trocado por "=" para o PDB</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>load<span class="ot">=</span>XXXX <span class="co"># onde XXXX é o código da macromolécula110</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: Perceba que o sinal de "$" é trocado por "=" para o PDB</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Isso pode ser ilustrado por carregamento remoto da proteína espícula (<em>spike</em>) do vírus Sars-Cov-2, tal como segue:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Entre no site do PDB<span class="sc">-</span>Protein Data Bank <span class="sc">-</span> https<span class="sc">:</span><span class="er">//</span>www.rcsb.org<span class="sc">/</span> ; </span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> No campo de busca, digite <span class="st">"spike sars-cov-2"</span> ;</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Selecione a <span class="dv">1</span>a opção (o site vai direcionar para várias estruturas da proteína espícula) ;</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Memorize o código da <span class="dv">1</span>a. opção (embora qualquer uma também sirva), ou seja, <span class="st">"7FCD"</span> ;</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fl">5.</span> Digite a linha para carregar a proteína<span class="sc">:</span> <span class="st">"load=7FCD"</span> (tanto faz se maiúsculas ou minúsculas)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Entre no site do PDB<span class="sc">-</span>Protein Data Bank <span class="sc">-</span> https<span class="sc">:</span><span class="er">//</span>www.rcsb.org<span class="sc">/</span> ; </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> No campo de busca, digite <span class="st">"spike sars-cov-2"</span> ;</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Selecione a <span class="dv">1</span>a opção (o site vai direcionar para várias estruturas da proteína espícula) ;</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Memorize o código da <span class="dv">1</span>a. opção (embora qualquer uma também sirva), ou seja, <span class="st">"7FCD"</span> ;</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fl">5.</span> Digite a linha para carregar a proteína<span class="sc">:</span> <span class="st">"load=7FCD"</span> (tanto faz se maiúsculas ou minúsculas)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A representação padrão para proteínas no <em>Jmol</em> é a de arame (“<em>wireframe</em>”). Para visualizar a proteína do vírus de modo mais “amigável” e semelhante ao que aparece em textos ou na internet, digite os comandos abaixo, sua <strong>primeira sequência em linguagem de programação</strong>.</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cartoon only  <span class="co"># representação exclusiva de desenho da estrutura de biopolímeros</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>color chain <span class="co">#  coloração por "cadeias" da proteína</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>cartoon only  <span class="co"># representação exclusiva de desenho da estrutura de biopolímeros</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>color chain <span class="co">#  coloração por "cadeias" da proteína</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="spike.png" class="img-fluid figure-img"></p>
-<figcaption>Representação da proteína <em>spike</em> do vírus de Sars-Cov-2 (coloração por número de cadeias.</figcaption>
+<figcaption>Representação da proteína <em>spike</em> do vírus de Sars-Cov-2 (coloração por número de cadeias).</figcaption>
 </figure>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proteínas, enzimas, ácidos nucleicos, e associações macromoleculares são mais pertinentes ao estudo da <em>Bioquímica</em> estrutural. Nesse sentido lhe convido a visitar uma parte do <em>website</em> autoral que possui descrições e representações detalhadas de estruturas bioquímicas com auxílio do <em>Jmol</em>, o site <a href="https://bioquanti.netlify.app/">Bioquanti</a></div>
@@ -561,9 +563,9 @@ window.Quarto = {
 <h2 data-number="3" class="anchored" data-anchor-id="salvamento-do-modelo-no-computador-ou-dispositivo-móvel"><span class="header-section-number">3</span> Salvamento do modelo no computador ou dispositivo móvel</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todas as ações realizadas com a molécula produzem um novo modelo que pode ser baixado para o computador. E isso é bem legal porque a molécula modificada (com alteração de cores, representações, animações, por ex) pode ser carregada no <em>Jmol</em> ou na <em>JSmol</em> (internet) como já mencionado. Para tanto, pode-se usar cliques de mouse ou linhas de comando, como segue:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Botão direito no ecrã <span class="ot">-&gt;</span> File <span class="ot">-&gt;</span> Save <span class="ot">-&gt;</span> Save as PNG<span class="sc">/</span>JMOL <span class="co"># por mouse</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>ou...</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> write nome_da_molecula.pngj <span class="co"># por linha de comando no Console</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Botão direito no ecrã <span class="ot">-&gt;</span> File <span class="ot">-&gt;</span> Save <span class="ot">-&gt;</span> Save as PNG<span class="sc">/</span>JMOL <span class="co"># por mouse</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ou...</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> write nome_da_molecula.pngj <span class="co"># por linha de comando no Console</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Uma das características impressionantes com o Jmol é que salvando a molécula como PNG/JMOL, você poderá abrir o arquivo como uma imagem estática com um duplo clique, para apenas mostrar a molécula, ou arrastar o arquivo até a janela do Jmol mesmo no navegador, no que será carregada a estrutura tridimensional e interativa do modelo !!! </strong></div>
 <p><br>
@@ -585,7 +587,7 @@ window.Quarto = {
 <h3 data-number="3.1" class="anchored" data-anchor-id="alguns-movimentos-no-jmol"><span class="header-section-number">3.1</span> Alguns movimentos no Jmol</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para exemplificar algumas ações, usaremos inicialmente o modelo da <em>vitamina C</em>, carregando-o com o comando abaixo no <em>Console</em>.</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>ascorbate</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>ascorbate</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
@@ -593,42 +595,40 @@ window.Quarto = {
 <h2 data-number="4" class="anchored" data-anchor-id="movimentos-com-mouse"><span class="header-section-number">4</span> Movimentos com mouse</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para <em>rotação e translação do modelo, bem como ampliação</em>:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>zoom <span class="sc">-</span> botão do meio do mouse; se não houver o botão, Shift<span class="sc">+</span>botão esquerdo; </span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>rotação <span class="sc">-</span> botão esquerdo do mouse</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>translação <span class="sc">-</span> Ctrl<span class="sc">+</span>botão direito</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>rotação no eixo <span class="sc">-</span> Shift<span class="sc">+</span>botão direito</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>zoom <span class="sc">-</span> botão do meio do mouse; se não houver o botão, Shift<span class="sc">+</span>botão esquerdo; </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>rotação <span class="sc">-</span> botão esquerdo do mouse</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>translação <span class="sc">-</span> Ctrl<span class="sc">+</span>botão direito</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>rotação no eixo <span class="sc">-</span> Shift<span class="sc">+</span>botão direito</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="representações-do-modelo" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="representações-do-modelo"><span class="header-section-number">5</span> Representações do modelo</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As representações referem-se ao aspecto visual do modelo (renderização), ou seu <em>estilo</em>, Assim, o <em>Jmol</em> pode renderizar o modelo como <em>vareta, arame, espaço preenchido, bola e vareta, traço, e desenho</em> (tudo em inglês, claro - <em>cpk, wireframe, trace, cartoon</em>).</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente esses estilos, incluindo a opção <code>only</code>. Essa opção permite que a ação não seja sobreposta às anteriores (no caso, a sobreposição das representações). Para isso, copie, cole, e execute <em>cada linha separad</em> para o trecho de código que segue no <em>Console</em> do <em>Jmol</em>:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente esses estilos, incluindo a opção <code>only</code>. Essa opção permite que a ação não seja sobreposta às anteriores (no caso, a sobreposição das representações). Para isso, copie, cole, e execute <strong>em cada linha separada</strong> o trecho de código que segue no <em>Console</em> do <em>Jmol</em>, e cuja renderização ilustra a molécula de fluoxetina.</div>
+<p><br>
+</p>
+<p><img src="fluoxetina_mapa.png" class="img-fluid" alt="Estrutura da fluoxetina. Fonte: MAPA: ensino médio - 3º Bim. 2º Ano, p.79. Ciências da natureza e suas tecnologias."><br>
+</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>ascorbate  <span class="co"># carrega a molécula</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>wireframe only <span class="co"># estilo em arame</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>cpk only <span class="co"># espaço preenchido</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>cpk <span class="dv">20</span> only, bond <span class="dv">1</span> <span class="co"># bolas e varetas</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>trace only <span class="co"># traço</span></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>cartoon only <span class="co"># desenho</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>fluoxetine  <span class="co"># carrega a molécula</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>wireframe only <span class="co"># estilo em arame</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>cpk only <span class="co"># espaço preenchido</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>cpk <span class="dv">20</span> only, bond <span class="dv">1</span> <span class="co"># bolas e varetas</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>cartoon only <span class="co"># representação de cartoon, mas que não ocorre com moléculas pequenas, apenas com biomacromoléculas (proteínas, ácidos nucleicos, por ex)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe também que a representação em <code>cartoon</code> não resulta numa renderização para o modelo da vitamina C. Isso decorre porque <em>a representação em <code>cartoon</code> é restrita para biopolímeros somente, ou seja, proteínas e ácidos nucleicos, e algumas associações supramoleculares.</em></div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe também que a representação em <code>cartoon</code> não resulta numa renderização para o modelo da fluoxetina. Isso decorre porque <em>a representação em <code>cartoon</code> é restrita para biopolímeros somente, ou seja, proteínas e ácidos nucleicos, e algumas associações supramoleculares.</em></div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contudo, se quiser experimentar o <code>cartoon</code>, será necessário conhecer o código alfanumérico de uma proteína ou ácido nucleico. Exemplificando para a mioglobina, proteína transportadora de oxigênio em mamíferos (código: <em>1mcy</em>)</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>load<span class="ot">=</span><span class="dv">1</span>mcy <span class="co"># carregando a mioglobina</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: veja que a linha de comando pra biopolímeros é ligeiramente diferente da usada pra moléculas pequenas</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>load<span class="ot">=</span><span class="dv">1</span>mcy <span class="co"># carregando a mioglobina</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: veja que a linha de comando pra biopolímeros é ligeiramente diferente da usada pra moléculas pequenas</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe que a renderização padrão para grandes moléculas é a de <em>bolas e varetas</em>, pouco didática para o aprendiz. Nesse caso, pode-se representá-la como desenho exclusivo, digitando-se:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>cartoon only <span class="co"># renderizando em desenho</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>cartoon only <span class="co"># renderizando em desenho</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para se conseguir esse e outros códigos de proteínas e ácidos nucleicos, deve-se entrar no banco de dados do <a href="https://www.rcsb.org/">PDB - Protein Data Bank, RCSB</a>, e digitar o nome no campo de busca (no caso, <code>myoglobin</code>). O sistema retorna diversos modelos estruturais e seus códigos, bastando transcrever um desses códigos ao <em>Console</em> do <em>JSmol</em>.</div>
 </section>
@@ -636,15 +636,15 @@ window.Quarto = {
 <h2 data-number="6" class="anchored" data-anchor-id="cores"><span class="header-section-number">6</span> Cores</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existe grande flexibilidade de <a href="https://jmol.sourceforge.net/jscolors/">cores</a> para o <em>Jmol</em> (e, por consequência, para o <em>JSmol</em>), tanto para os modelos inteiros, partes do modelo (átomos específicos ou um conjunto), e plano de fundo. A visualização padrão de cores segue a convenção <a href="https://en.wikipedia.org/wiki/CPK_coloring">CPK (Corey–Pauling–Koltun)</a>. Exemplificando para o modelo anterior de vitamina C (<code>load $ascorbate</code>), experimente a variação que segue, separadamente:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>color pink</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>color blue</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>color ligthgreen</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>background yellow <span class="co"># cor do plano de fundo</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>color pink</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>color blue</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>color ligthgreen</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>background yellow <span class="co"># cor do plano de fundo</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O último comando da lista acima permite variar a coloração do plano de fundo.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adicionalmente, também é possível a coloração de ligações entre os átomos, como segue:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>color bonds LightSeaGreen</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>color bonds LightSeaGreen</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para um grande espectro de cores, você pode consultar a referência do <a href="https://jmol.sourceforge.net/jscolors/">Jmol Colors</a>, ou um <em>link</em> mais “mastigado”, de nossa autoria junto ao aprendizado do programa no ensino superior, o portal <a href="https://bioquanti.netlify.app/">Bioquanti</a> e, mais especificamente, o <a href="https://bioquanti.netlify.app/uploads/jmolbook/jmolquarto/comandos#cores-espec%C3%ADficas">tópico de cores para o Jmol</a>.</div>
 </section>
@@ -655,9 +655,9 @@ window.Quarto = {
 <h3 data-number="7.1" class="anchored" data-anchor-id="para-distâncias"><span class="header-section-number">7.1</span> Para distâncias</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No exemplo da molécula de água, para se determinar a distância de uma ligação O-H, por exemplo execute:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Duplo<span class="sc">-</span>clique do mouse no <span class="dv">1</span>o. átomo;</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Arraste do mouse ao <span class="dv">2</span>o. átomo;</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Clique do mouse no <span class="dv">2</span>o. átomo</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Duplo<span class="sc">-</span>clique do mouse no <span class="dv">1</span>o. átomo;</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Arraste do mouse ao <span class="dv">2</span>o. átomo;</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Clique do mouse no <span class="dv">2</span>o. átomo</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimentando para a distância da ligação O-H, o programa retorna o valor de 0,097 nm, ou 0,97 Angstroms, o valor convencial para esse tipo de ligação covalente.</div>
 <div class="quarto-figure quarto-figure-center">
@@ -671,11 +671,11 @@ window.Quarto = {
 <h3 data-number="7.2" class="anchored" data-anchor-id="para-ângulos"><span class="header-section-number">7.2</span> Para ângulos</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para a mesma molécula de água, experimente determinar o ângulo de ligação:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Duplo clique no <span class="dv">1</span>o. á<span class="fu">tomo</span> (ex<span class="sc">:</span> H);</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Arrasta ao <span class="dv">2</span>o. á<span class="fu">tomo</span> (ex<span class="sc">:</span> O);</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Clique no <span class="dv">2</span>o. átomo;</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Arraste ao <span class="dv">3</span>o. á<span class="fu">tomo</span> (ex<span class="sc">:</span> o outro H);</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fl">5.</span> Clique no <span class="dv">3</span>o. átomo</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Duplo clique no <span class="dv">1</span>o. á<span class="fu">tomo</span> (ex<span class="sc">:</span> H);</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Arrasta ao <span class="dv">2</span>o. á<span class="fu">tomo</span> (ex<span class="sc">:</span> O);</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Clique no <span class="dv">2</span>o. átomo;</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Arraste ao <span class="dv">3</span>o. á<span class="fu">tomo</span> (ex<span class="sc">:</span> o outro H);</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fl">5.</span> Clique no <span class="dv">3</span>o. átomo</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perceba que o sistema retorna o valor de 114<span class="math inline">\(^{o}\)</span>, um valor próximo do previsto para a molécula (109.5<span class="math inline">\(^{o}\)</span>), ou medido (104.5<span class="math inline">\(^{o}\)</span>). Essa aproximação é decorrente da construção do modelo de água.</div>
 <div class="quarto-figure quarto-figure-center">
@@ -686,7 +686,7 @@ window.Quarto = {
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para limpar as medidas, use o comando:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>measure off</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>measure off</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
@@ -695,12 +695,20 @@ window.Quarto = {
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;São diveras as informações tangíveis a um modelo molecular no <em>Jmol</em>. Exemplificando as mais básicas para a molécula de um componente do molho <em>shoyo</em>, o glutamato:</div>
 <section id="cargas" class="level3" data-number="8.1">
 <h3 data-number="8.1" class="anchored" data-anchor-id="cargas"><span class="header-section-number">8.1</span> Cargas</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Há dois tipos de cargas oferecidas pelo <em>Jmol</em>, <em>carga efetiva (<code>formaCharge</code>) e carga parcial (<code>partialcharge</code>)</em>. Exemplificando, digite no <em>Console</em> os comandos abaixo:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>calculate partialCharges <span class="co"># cálculo de cargas parciais do modelo</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>label %P <span class="co"># apresentação das cargas (etiquetagem)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por vezes pode ser interessante apresentar a polaridade das moléculas em função de sua distribuição de cargas. No <em>Jmol</em> há dois tipos de cargas, <em>carga efetiva (<code>formaCharge</code>) e carga parcial (<code>partialcharge</code>)</em>. Podemos ilustrar a distribuição de cargas em uma molécula de tensoativo, como o hexadecanoato.</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="hexadecanoate_mapa.png" class="img-fluid figure-img"></p>
+<figcaption>Exemplo de tensoativo de 16 carbonos, o ácido hexadecaenoico. Fonte: MAPA: ensino médio - 3º Bim. 3º Ano, p.63. Ciências da natureza e suas tecnologias.</figcaption>
+</figure>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma característica do <em>Jmol</em> que o torna mais eficiente a execução de suas ações é a disposição sequencial de comandos. Dessa forma, não é necessário clicar em <em>Enter</em> para cada comando, bastando separar os comando por ponto e vírgula (<em>;</em>) como ilustrado abaixo:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para isso, digite no <em>Console</em> os comandos abaixo:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>hexadecanoate</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>calculate partialCharge <span class="co"># cálculo de cargas parciais do modelo</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>label %P <span class="co"># apresentação das cargas (etiquetagem)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma característica do <em>Jmol</em> que o torna mais eficiente a execução de suas ações é a disposição sequencial de comandos. Dessa forma, não é necessário clicar em <em>Enter</em> para cada comando, bastando separar os comando por ponto e vírgula (<em>;</em>) como ilustrado abaixo, para o cálculo de cargas parciais da molécula de glutamato:</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="glu.png" class="img-fluid figure-img"></p>
@@ -709,8 +717,8 @@ window.Quarto = {
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Da mesma forma pode-se ilutrar a obtenção de <em>cargas formais</em> no modelo. Nessa, adicionou-se a coloração transparente, para melhor visualização da carga unitária negativa do ácido carboxílico:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>calculate formalcharges <span class="co"># cálculo de cargas parciais do modelo</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>label %C <span class="co"># apresentação das cargas (etiquetagem)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>calculate formalcharges <span class="co"># cálculo de cargas parciais do modelo</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>label %C <span class="co"># apresentação das cargas (etiquetagem)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -726,41 +734,43 @@ window.Quarto = {
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essas características de um <em>comando por linha com comentários explicativos</em> conferem ao <em>Jmol</em> seu aspecto para <em>programação</em> de ações sequenciais, e enraiza por consequência uma das premissas básicas para um <em>Ensino Reprodutível</em>: a redação de trechos de códigos em comandos unitários por linha, escritos como num bloco de notas, e com comentários sobre as ações do programa em cada linha.</div>
 <p>Exemplificando para um <em>script</em> envolvendo as ações para o glutamato acima, apenas copie o trecho abaixo e cole-o no <em>Console</em> do <em>JSmol</em>, executando-o.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>glu <span class="co"># carregamento de micromolécula </span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>wireframe only <span class="co"># renderização exclusiva de varetas</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>calculate partialCharge <span class="co"># carga parcial</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>label %P </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>glu <span class="co"># carregamento de micromolécula </span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>wireframe only <span class="co"># renderização exclusiva de varetas</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>calculate partialCharge <span class="co"># carga parcial</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>label %P </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outro aspecto inerente à iniciativa de <em>Ensino Reprodutível</em> reside na <em>possibilidade de se avaliar o código com alguma alteração</em>, objetivando um produto final ligeiramente modificado. Tente repetir o trecho acima, mas para cargas efetivas, ou seja:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>glu <span class="co"># carregamento de micromolécula </span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>cpk only <span class="co"># renderização exclusiva por espaço preenchido</span></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>calculate formalCharge <span class="co"># carga efetiva </span></span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>label %C </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>glu <span class="co"># carregamento de micromolécula </span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>cpk only <span class="co"># renderização exclusiva por espaço preenchido</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>calculate formalCharge <span class="co"># carga efetiva </span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>label %C </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complementarmente, pode-se atuar alterando mais comandos do código, de modo a criar um resultado completamente diferente do original. Isso define outra característica do <em>Ensino Reprodutível</em>, qual seja, a de <em>criação de trecho de código</em>. Ilustrando, segue um trecho baseado no anterior, mas para minimização de energia e reestruturação dos orbitais da molécula.</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>glu <span class="co"># carregamento de micromolécula </span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>cpk only <span class="co"># renderização exclusiva por espaço preenchido</span></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>minimize <span class="co"># comando para minimização de energia da estrutura </span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>glu <span class="co"># carregamento de micromolécula </span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>cpk only <span class="co"># renderização exclusiva por espaço preenchido</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>minimize <span class="co"># comando para minimização de energia da estrutura </span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
 </section>
 <section id="características-moleculares-1" class="level2" data-number="9">
 <h2 data-number="9" class="anchored" data-anchor-id="características-moleculares-1"><span class="header-section-number">9</span> Características moleculares</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além de previsão estrutural para <em>carga parcial e carga formal</em> (embora essa última dependa na prática de informação adicional, o valor de pH do meio), o <em>Jmol</em> também permite evidenciar <em>forças fracas</em> no modelo, tais como <em>nuvem de van der Waals</em> e <em>ligações de hidrogênio</em>, como segue.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por vezes também é interessante apresentar à turma o conceito de <em>forças fracas</em> que permeia as interações moleculares, tal como ilustrado abaixo.</div>
+<p>![<a href="interacao_mapa.png">Algumas forças fracas em interação molecular. Fonte: MAPA: ensino médio - 2º Bim. 1º Ano, p.75. Ciências da natureza e suas tecnologias.</a></p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além de previsão estrutural para <em>carga parcial e carga formal</em>, o <em>Jmol</em> também permite evidenciar <em>forças fracas</em> no modelo, tais como <em>nuvem de van der Waals</em> e <em>ligações de hidrogênio</em>, como segue.</div>
 <section id="nuvem-de-van-der-waals" class="level3" data-number="9.1">
 <h3 data-number="9.1" class="anchored" data-anchor-id="nuvem-de-van-der-waals"><span class="header-section-number">9.1</span> Nuvem de van der Waals</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>dots on <span class="co"># nuvem de van der Waals nos átomos do modelo (retira-se com "dots off")</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>calculate hbonds <span class="co"># identifica ligações de hidrogênio no modelo</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>dots on <span class="co"># nuvem de van der Waals nos átomos do modelo (retira-se com "dots off")</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>calculate hbonds <span class="co"># identifica ligações de hidrogênio no modelo</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ilustrando, copie e cole o trecho que segue no <em>Console</em>:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>water</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>dots on <span class="co"># nuvem de van der Waals na estrutura da água</span></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>dots ionic <span class="co"># nuvem iônica sobre o modelo</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>water</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>dots on <span class="co"># nuvem de van der Waals na estrutura da água</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>dots ionic <span class="co"># nuvem iônica sobre o modelo</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -768,11 +778,19 @@ window.Quarto = {
 <figcaption>Exemplificando a sobreposição de nuvens de van der Waals nos átomos da molécula de água.</figcaption>
 </figure>
 </div>
-<p><img src="ionic.png" class="img-fluid" alt="Ilustrando a representação de nuvem iônica para o modelo da água."> ### Ligações de hidrogênio</p>
+<p><img src="ionic.png" class="img-fluid" alt="Ilustrando a representação de nuvem iônica para o modelo da água."><br>
+</p>
+</section>
+<section id="ligações-de-hidrogênio" class="level3" data-number="9.2">
+<h3 data-number="9.2" class="anchored" data-anchor-id="ligações-de-hidrogênio"><span class="header-section-number">9.2</span> Ligações de hidrogênio</h3>
+<p><br>
+</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>load<span class="ot">=</span><span class="dv">1</span>djf <span class="co"># carrega um modelo de peptídio</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>calculate hbonds <span class="co"># apresenta as ligações de H presentes na estrutura</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>load<span class="ot">=</span><span class="dv">1</span>djf <span class="co"># carrega um modelo de peptídio</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>calculate hbonds <span class="co"># apresenta as ligações de H presentes na estrutura</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><br>
+</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="ligacoesH.png" class="img-fluid figure-img"></p>
@@ -785,7 +803,7 @@ window.Quarto = {
 <h2 data-number="10" class="anchored" data-anchor-id="superfícies"><span class="header-section-number">10</span> Superfícies</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além da superfície de van der Walls (<em>dots on</em>) vista acima, o <em>Jmol</em> é capaz de representar algumas superfícies para modelos moleculares. Quanto maior a molécula, maior o cálculo interno para gerar a superfície, o que pode dificultar sua visualização. Assim, ilustrando um comando simples para superfície da molécula de água:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>isosurface molecular <span class="co"># superfície molecular que inclui o solvente</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>isosurface molecular <span class="co"># superfície molecular que inclui o solvente</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

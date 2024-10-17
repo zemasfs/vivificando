@@ -1,9 +1,20 @@
 
+/* Quadro de atividades*/
 
 .reminder-markdown {
     background-color: #ffeb99; /* Fundo amarelo claro */
     padding: 15px;             /* Espaçamento interno */
     border-left: 5px solid #f0ad4e; /* Barra lateral laranja */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+}
+
+/*Quadro de objetivos*/
+
+.reminder-objetivos {
+    background-color: #b4e7ae; /* Fundo amarelo claro */
+    padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #b4e7ae  /* Barra lateral laranja */
     border-radius: 5px;        /* Bordas arredondadas */
     margin-bottom: 20px;       /* Espaçamento inferior */
 }

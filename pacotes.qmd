@@ -2,11 +2,12 @@
 title: "4 - Instalando pacotes no `RStudio`"
 ---
 
-```{r, eval=FALSE}
-Objetivos:
-  1. Entender o que são e para que servem os pacotes do R
+<div class = "reminder-objetivos">
+Objetivos:\
+  1. Entender o que são e para que servem os pacotes do R\
   2. Saber instalar e carregar um pacote do R, exemplificado para `plotly`
-```
+</div>
+
 
 
 
