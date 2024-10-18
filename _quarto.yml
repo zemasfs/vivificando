@@ -157,7 +157,7 @@ website:
 
       - text: "Outros" 
         menu: 
-          - text: "Bioquanti"
+          - text: "Bioquímica Quantitativa"
             href: https://bioquanti.netlify.app/
             target: "_blank"
           - text: "Figuras animadas"
