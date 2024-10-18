@@ -1,0 +1,27 @@
+---
+title: "Moléculas antiinflamatórias"
+---
+
+[![Ibuprofeno é um inibidor da COX (ciclo-oxigenase), amplamente usado para dor e inflamação.](ibuprofeno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)CC1=CC=C(C=C1)C(C)C(=O)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Ibuprofeno)
+</p>
+
+[![Diclofenaco é um antiinflamatório não esteroidal(AINE)que inibe a COX-1 e COX-2.](dicoflenaco.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC=C(C(=C1)CC(=O)O)NC2=C(C=CC=C2Cl)Cl)
+
+<p style="text-align:right;">
+[Wikipedia]( https://pt.wikipedia.org/wiki/Diclofenaco)
+</p>
+
+[![Prednisona é um corticosteroide usado em inflamações mais graves.](prednisona.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%20C%5BC@%5D12CC(=O)%5BC@H%5D3%5BC@H%5D(%5BC@@H%5D1CC%5BC@@%5D2(C(=O)CO)O)CCC4=CC(=O)C=C%5BC@%5D34C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Prednisona)
+</p>
+
+[![Piroxicam AINE com longa meia-vida é um medicamento utilizado para inflamações crônicas.](peroxicam.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%20CN1C(=C(C2=CC=CC=C2S1(=O)=O)O)C(=O)NC3=CC=CC=N3)
+
+<p style="text-align:right;">
+[Wikipedia]( https://pt.wikipedia.org/wiki/Meloxicam)
+</p>

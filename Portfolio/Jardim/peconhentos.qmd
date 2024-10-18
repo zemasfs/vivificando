@@ -1,0 +1,27 @@
+---
+title: "Moléculas de animais peçonhentos"
+---
+
+[![Alfa-bungarotoxina,as bungarotoxinas são um grupo de proteínas neurotóxicas intimamente relacionadas , pertencentes principalmente à superfamília das toxinas de três dedos , que são encontradas no veneno de cobras do gênero Bungarus , como Bungarus fasciatus e Bungarus multicinctus.](alfabungarotoxina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C[C@@H]1C[C@H]2[C@@H](C[C@]3([C@H](O2)C[C@H]4[C@H](O3)C(=CC(=O)O4)C)C)O[C@@H]5[C@@H]1O[C@H]6C[C@@H]7[C@](C[C@@H]8[C@@](O7)(C/C=C\[C@@H]9[C@@H](O8)C[C@@H]1[C@@H](O9)C[C@@H]2[C@@](O1)([C@H](C[C@@H](O2)CC(=C)C=O)O)C)C)(O[C@@]6(CC5)C)C)
+
+<p style="text-align:right;">
+[Wikipedia](https://gl.wikipedia.org/wiki/Bungarotoxina)
+</p>
+
+[![Hialuronidase é um enzima que facilita a disseminação do veneno em tecidos, presente em venenos de cobras e aranhas.](hialuronidase.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model= CC1(C(=C)N(C2=CC=CC=C21)CCCCCC(=O)O)C.Br)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Hialuronidase)
+</p>
+
+[![Conotoxinas,conotoxinas são um grupo de péptidos neurotóxicos, isolados a partir do veneno de caracóis marinhos do gênero Conus.](conotoxina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C[C@H]1C(=O)N[C@H](C(=O)N[C@H]2CSSC[C@H]3C(=O)N[C@H](C(=O)NCC(=O)N4CCC[C@H]4C(=O)N[C@H](C(=O)NCC(=O)N[C@@H](CSSC[C@H](NC2=O)C(=O)N)C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@@H](CSSC[C@@H](C(=O)N3)NC(=O)CNC(=O)[C@@H]5CCC(=O)N5)C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N1)CC6=CN=CN6)CC(=O)O)CCCNC(=N)N)CC7=CC8=CC=CC=C87)CCCCN)CO)CO)CCCCN)CC(=O)N)CCCNC(=N)N)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Conotoxina)
+</p> 
+
+[![Fosfolipase A2, é uma enzima presente em venenos de serpentes, destrói membranas celulares.](fosfolipase.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC[C@H](C)[C@@H](C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H]([C@@H](C)O)C(=O)N1CCC[C@H]1C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)O)NC(=O)[C@@H]2CCCN2C(=O)[C@@H]3CCCN3C(=O)[C@H](CCC(=O)O)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C(C)C)NC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@H]([C@@H](C)CC)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H]4CCCN4C(=O)[C@H](CO)NC(=O)[C@H](CCC(=O)O)N)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Fosfolipase_A2)
+</p>

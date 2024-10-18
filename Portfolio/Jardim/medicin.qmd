@@ -1,0 +1,27 @@
+---
+title: "Moléculas de interesse medicinal"
+---
+
+[![Penicilina é um antibiótico descoberto por Alexander Fleming.](Penicilina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC1(%5BC@@H%5D(N2%5BC@H%5D(S1)%5BC@@H%5D(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Penicilina)
+</p>
+
+[![Morfina é um analgésico opioide derivado da planta papoula.](morfina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CN1CC%5BC@%5D23%5BC@@H%5D4%5BC@H%5D1CC5=C2C(=C(C=C5)O)O%5BC@H%5D3%5BC@H%5D(C=C4)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Morfina)
+</p>
+
+[![Warfarina atua como anticoagulante.](Warfarina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=:%20CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Warfarina)
+</p>
+
+[![Atorvastatina é utlizada para redução de colesterol.](Atorvastatina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)C1=C(C(=C(N1CC%5BC@H%5D(C%5BC@H%5D(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Atorvastatina)
+</p>

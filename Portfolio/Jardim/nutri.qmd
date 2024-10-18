@@ -1,0 +1,27 @@
+---
+title: "Moléculas de interesse nutricional"
+---
+
+[![Curcumina é um corante amarelo derivado da cúrcuma](curcumina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=COC1=C(C=CC(=C1)/C=C/C(=O)CC(=O)/C=C/C2=CC(=C(C=C2)O)OC)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Curcumina)
+</p>
+
+[![Betacaroteno é um corante laranja derivado da cenoura](betacaroteno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C2=C(CCCC2(C)C)C)\C)\C)/C)/C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Betacaroteno)
+</p>
+
+[![Licopeno é um corante vermelho presente no tomate](licopeno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=CCC/C(=C/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C=C(/CCC=C(C)C)\C)\C)\C)/C)/C)/C)C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Licopeno)
+</p>
+
+[![Clorofila é um corante verde presente nas folha](clorofila.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCC1=C(C2=NC1=CC3=C(C4=C(C(C(=C4%5BN-%5D3)C5=NC(=CC6=NC(=C2)C(=C6C)C=C)C(C5CCC(=O)OCC=C(C)CCCC(C)CCCC(C)CCCC(C)C)C)C(=O)OC)%5BO-%5D)C)C.%5BMg+2%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Clorofila)
+</p>

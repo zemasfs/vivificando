@@ -1,0 +1,29 @@
+---
+title: "Moléculas de plantas tóxicas" 
+format: html
+editor: source
+---
+
+[![Atropina é um alcaloide presente em plantas como a beladona (Atropabelladonna.](atropina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CN1%5BC@@H%5D2CC%5BC@H%5D1CC(C2)OC(=O)C(CO)C3=CC=CC=C3)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Atropina)
+</p>
+
+[![Tetrodotoxina está presente em certas plantas marinhas, como algas tóxica.](tetrodotoxina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(%5BC@@%5D1(%5BC@H%5D2%5BC@@H%5D3%5BC@H%5D(N=C(N%5BC@@%5D34%5BC@@H%5D(%5BC@@H%5D1O%5BC@%5D(%5BC@H%5D4O)(O2)O)O)N)O)O)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Tetrodotoxina)
+</p>
+
+[![Oleandrina é uma toxina presente no oleandro (Nerium oleander), extremamente perigosa.](oleandrina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C%5BC@H%5D1%5BC@@H%5D(%5BC@H%5D(C%5BC@@H%5D(O1)O%5BC@H%5D2CC%5BC@%5D3(%5BC@@H%5D(C2)CC%5BC@@H%5D4%5BC@@H%5D3CC%5BC@%5D5(%5BC@@%5D4(C%5BC@@H%5D(%5BC@@H%5D5C6=CC(=O)OC6)OC(=O)C)O)C)C)OC)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Oleandro)
+</p>
+
+[![Aconitina está presente em plantas do gênero Aconitum, extremamente tóxica.](aconitina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%20CCN1C%5BC@@%5D2(%5BC@@H%5D(C%5BC@@H%5D(%5BC@@%5D34%5BC@@H%5D2%5BC@H%5D(%5BC@@H%5D(C31)%5BC@@%5D5(%5BC@@H%5D6%5BC@H%5D4C%5BC@@%5D(%5BC@@H%5D6OC(=O)C7=CC=CC=C7)(%5BC@H%5D(%5BC@@H%5D5O)OC)O)OC(=O)C)OC)OC)O)COC)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Aconitina)
+</p>

@@ -1,0 +1,13 @@
+# Iniciativa {.unnumbered}
+
+|       Esta parte do *website* em elaboração pretende oferecer um conjunto de *gráficos e mapas interativos e de animação* a alguns tópicos encontrados em disciplinas do *ensino médio*,  mais especificamente para conteúdos de *Física, Química, e Biologia* e com *aplicações da Matemática*. 
+
+|       Os *objetos didáticos* estão em construção junto a pacotes interativos do *R*, principalmente o `plotly`. Pretende-se, tanto quanto possível, elencar aspectos didático-pedagógicos do uso dos materiais.
+
+
+### Equipe:
+
+|       Bárbara Silveira Rodrigues (graduanda, Curso de Ciências da Computação, UNIFAL-MG)
+|       Prof. Dr. Gabriel Gerber Hornink
+|       Prof. Dr. Luiz Eduardo Silva
+|       Prof. Dr. José Maurício Schneedorf Ferreira da Silva

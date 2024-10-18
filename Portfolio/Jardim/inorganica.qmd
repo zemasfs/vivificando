@@ -1,0 +1,59 @@
+---
+title: "Moléculas Inorgânicas"
+---
+
+   ## Ácidos
+
+[![Acido sulfúrico os usos principais incluem produção de fertilizantes (e outros processamentos minerais), refinamento de petróleo, tratamento de águas residuais e síntese química. Possui um vasto uso de aplicações finais, como em eletrólitos de baterias de chumbo-ácido e em vários agentes de limpeza.](acido%20sulfurico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=OS(=O)(=O)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/acido sulfúrico)
+</p>
+
+[![Acido cloridrico é frequentemente usado em análises químicas para preparar amostras "digeridas" para análise. O ácido clorídrico concentrado dissolve muitos metais e forma cloretos metálicos oxidados e gás hidrogênio.](acido%20cloridrico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=Cl)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/%C3%81cido_clor%C3%ADdrico)
+</p>
+
+    ## Bases
+
+[![Hidróxido de sódio é usado na indústria, principalmente como base química, no fabrico de papel, tecidos, detergentes, alimentos e biodiesel. Trata-se de uma base forte.](hidroxido%20de%20sodio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BOH-%5D.%5BNa+%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Hidr%C3%B3xido_de_s%C3%B3dio)
+</p>
+
+[![Hidróxido de amonio é uma base solúvel, só existe em solução aquosa quando faz-se o borbulhamento de amônia (NH3) em água. Hidróxido de Amônio não é considerado](hidróxido%20de%20amonio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%20%5BNH4+%5D.%5BOH-%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Hidr%C3%B3xido_de_am%C3%B4nio)
+</p>
+
+      ## Sais
+
+[![Cloreto de sódio é utilizado em larga escala na produção de hidróxido de sódio, cloro, hidrogênio e indiretamente ácido clorídrico por eletrólise de sua solução aquosa (processo cloro-álcali). O sal também é utilizado para a produção de gás cloro e de sódio metálico, através da eletrólise ígnea.](cloreto%20de%20sodio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%20%5BNa+%5D.%5BCl-%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/cloreto de sódio)
+</p>
+
+[![Hipoclorito de sódio é usado na desinfecção de água potável na concentração de 1 L de lixívia doméstica para cada 4000 L de água. A quantidade exata necessária depende da química da água, da temperatura, do tempo de contato e da presença ou ausência de sedimentos.](Hipoclorito%20de%20sodio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BO-%5DCl.%5BNa+%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/hipoclorito de sódio)
+</p>
+
+      ## òxidos
+
+[![Dióxido de carbono é um material industrial versátil, utilizado, por exemplo, como gás inerte em soldagem e extintores de incêndio, como gás pressurizador em pistolas de ar e recuperação de óleo e como solvente fluido supercrítico na descafeinação de café e secagem supercrítica.](dióxido%20de%20carbono.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(=O)=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/dióxido de carbono)
+</p>
+
+[![Óxido de cálcio é utilizado na construção civil para elaboração de argamassas e preparação dos processos de pintura. Também tem emprego nas indústrias farmacêutica, cerâmica e metalúrgica. Na agricultura, o óxido de cálcio é usado para produzir hidróxido de cálcio, que tem por finalidade o controle da acidez do solo.](óxido%20de%20calcio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/óxido de cálcio)
+</p>

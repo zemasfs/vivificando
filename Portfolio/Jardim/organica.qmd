@@ -1,0 +1,233 @@
+---
+title: "Moléculas orgânicas"
+format: html
+editor: source
+---
+
+# Hidrocarboneto
+
+## Alcano
+
+ 
+[![Metano é utilizado na fabricação de resinas acrílicas e fibras de poliéster e na indústria farmacêutica.](metano.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/metano)
+</p>
+
+[![Etano é usado como biocombustível, fonte de energia elétrica ou como matéria-prima para gerar subprodutos. Fabricação de bebidas (vodca, gin, licores), vinagre, vacinas, antibióticos e antisséptico.](etano.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/etano)
+</p>
+
+[![Propano é presente em alguns combustíveis utilizados nos automóveis, como a gasolina e o álcool.](propano.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCC) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/propano)
+</p>
+
+[![Butano é utilizado como combustível de isqueiros, como matéria-prima na produção de borracha sintética, para o aquecimento das piscinas e saunas e como solvente nos aerossóis.](butano.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCC) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/butano)
+</p>
+
+[![Hexadecano é um  composto de alta pureza amplamente utilizado em diversas aplicações laboratoriais e industriais.](hexadecano.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCCCCCCCCCCCCCC)
+
+<p style="text-align:right;">
+[Wikipedia](: https://pt.wikipedia.org/wiki/Alcano)
+</p>
+
+
+
+## Alceno
+
+
+[![Etileno é produzido durante o amadurecimento das frutas. Por isso que ao embrulhar alguma fruta em jornal, o seu amadurecimento é acelerado.](etileno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=C) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/etileno)
+</p>
+
+[![Propileno é utilizado como fixador de perfumes, veículo de alguns ingredientes em medicamentos tópicos e também hidratante umectante em cosméticos diversos.](propileno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC=C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/propileno)
+</p>
+
+
+[![Penteno é uma molécula utilizada como solvente, aditivo de combustíveis, e na produção de polímeros.](penteno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCC=C) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikibooks.org/wiki/Introdu%C3%A7%C3%A3o_%C3%A0_Qu%C3%ADmica/Hidrocarbonetos)
+</p>
+
+[![Benzeno é empregado na produção de lubrificantes, borrachas, corantes, solventes e pesticidas.](benzeno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC=CC=C1)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/benzeno)
+</p>
+
+
+[![Hexeno é muito comum verificar seu uso na indústria química, petroquímica e postos de gasolina, bem como na geração de energia, extração de óleo vegetal e polimerização da borracha.](hexeno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCCC=C) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/hexeno)
+</p>
+|       Links:
+1. [Alcanos e alcenos](https://www.echalk.co.uk/3Dmolecules/alkanes_alkenes/alkanes.htm)
+
+## Alcino 
+
+[![Acetileno é utilizado na fabricação de explosivos, solventes e plásticos. Além disso, ele é utilizado em processos de corte de metais, de síntese orgânica e em equipamentos de absorção atômica.](acetileno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C#C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Acetileno)
+</p> 
+
+[![Propino é utilizado em soldadura.](propino.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC#C) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/propino)
+</p>
+
+[![2-butino,o principal uso é a síntese do butadieno para a borracha artificial. Além disso é produto de partida na síntese do 2-butanol por adição de água em presença de ácido.](2-butino.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC#CC) 
+
+<p style="text-align:right;">
+[Wikipedia]( https://pt.wikipedia.org/wiki/Etilacetileno)
+</p>
+
+
+
+
+# Areno
+
+# Álcool
+
+[![Etanol é usado como biocombustível, fonte de energia elétrica ou como matéria-prima para gerar subprodutos.](etanol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCO) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/etanol)
+</p> 
+
+
+[![Etilenoglicol é um composto químico amplamente utilizado na composição de anticongelantes, usados em localidades que atingem temperaturas abaixo de 0 °C, pois diminui o ponto de congelamento da água.](etilenoglicol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CO)O) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/etilenoglicol)
+</p> 
+
+# Fenol 
+
+[![Fenol apresenta aplicações como; precursor ou reagente na produção de resinas, plásticos, medicamentos, herbicidas e desinfetantes.](fenol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC=C(C=C1)O) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/fenol)
+</p> 
+
+[![Resveratrol é utilizado para reduzir os níveis de LDL.](resveratrol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC(=CC=C1/C=C/C2=CC(=CC(=C2)O)O)O) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/resveratrol)
+</p> 
+
+# Éter 
+
+[![Eter etilico é utilizado como solvente de resinas e óleos, como também no preparo de pólvora e seda artificial.](eter etilico.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCOCC)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/%C3%89ter_et%C3%ADlico)
+</p> 
+
+
+
+# Aldeído 
+
+[![Acetaldeído é intermediário na fabricação de outras substâncias, como ácido acético.](acetaldeido.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/acetaldeído)
+</p> 
+
+[![Formaldeído é utilizado na indústria, ele pode ser utilizado para a fabrica de desinfetantes, embalagens, cola, fertilizantes, materiais de construção, resina, vernizes, tintas, revestimentos, dentre outros.](formaldeido.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Metanal)
+</p> 
+
+# Cetona 
+
+
+[![Acetona é usada como solvente e intermediária na fabricação de outras substâncias química.](acetona.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=O)C) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/acetona)
+</p> 
+
+[![Ciclopentanona é um composto orgânico líquido incolor com um cheiro similar ao cheiro de menta.](ciclopentanona.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model= C1CCC(=O)C1) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/ciclopentanona)
+</p> 
+
+
+# Ácido carboxílico 
+
+
+[![Acido acetilsalicílico é utilizado como medicamento para tratar a dor (analgésico), a febre (antipirético) e a inflamação (anti-inflamatório), devido ao seu efeito inibidor, não selectivo, da ciclo-oxigenase.](ac.acetilsalicilico.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model= CC(=O)OC1=CC=CC=C1C(=O)O) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/%C3%81cido_acetilsalic%C3%ADlico)
+</p>  
+
+[![Acido ascórbico aumenta a absorção gastrointestinal de ferro; e atua como acidificante de urina.](acido ascorbico.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C([C@@H]([C@@H]1C(=C(C(=O)O1)O)O)O)O) 
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/%C3%81cido_asc%C3%B3rbico)
+</p>  
+
+# Éster
+
+# Amina
+
+# Amida
+
+# Nitrila 
+
+# Haletos de ácido
+
+## Haletos orgânicos
+
+# Polímeros
+
+
+Moléculas inorgânicas:  classes - ácidos, bases, sais, óxidos
+Biomoléculas: 4 grandes grupos - carboidratos (simples e complexos), proteínas (aminoácidos e enzimas), lipídios e membranas, ác. nucleicos
+Importância medicinal - fármacos (paracetamol, dipirona, antihipertensivo, hipoglicemiante, etc), 
+Importância toxicológicas - agrotóxicos, fitotoxinas (plantas tóxicas), toxinas peçonhentas (vela do mar)
+Importância nutricional - vitaminas, aditivos alimentares
+Complexos supramoleculares - vesícula, membrana, vírus
+
+
+
+|       Uma primeira molécula como exemplo do jardim. 
+
+[Serotonina](https://chemapps.stolaf.edu/jmol/jmol.php?model=aspirin&caption=serotonin%20model)
+
+[Aćido acético](https://chemapps.stolaf.edu/jmol/jmol.php?model=acetate)
+
+[Etano](https://chemapps.stolaf.edu/jmol/jmol.php?model=ethane)
+
+<!-- ```{=html} -->
+<!-- <script type="text/javascript"  -->
+<!-- src="http://chemapps.stolaf.edu/jmol/jmol.php?model=serotonin&inline&width=300" -->
+<!-- </script> -->
+<!-- ``` -->
+
+[![Serotonina, um mediador de relaxamento muscular](serotonin2.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=serotonin)
+
+[![Serotonina, um mediador de relaxamento muscular](serotonin2.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCC=C )
+
+
+

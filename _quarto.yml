@@ -76,6 +76,67 @@ website:
             href:  https://www.unifal-mg.edu.br/dbq/
   
     left:
+      - text: "Jardim de Moléculas"
+        menu:
+          - text: "Introdução"
+            href: Portfolio/Jardim/iniciativa_Jmol.qmd
+          - text: "Classificação"
+            href: Portfolio/Jardim/classifica.qmd
+          - text: "Orgânicas"
+            href: Portfolio/Jardim/organica.qmd
+          - text: "Inorgânicas"
+            href: Portfolio/Jardim/inorganica.qmd
+          - text: "Biomoléculas"
+            href: Portfolio/Jardim/biomol.qmd
+          - text: "Farmacológicas"
+            href: Portfolio/Jardim/farmac.qmd
+          - text: "Medicinais"
+            href: Portfolio/Jardim/medicin.qmd
+          - text: "Toxicológicas"
+            href: Portfolio/Jardim/toxicol.qmd
+          - text: "Nutricionais"
+            href: Portfolio/Jardim/nutri.qmd
+          - text: "Sabores"
+            href: Portfolio/Jardim/sabores.qmd
+          - text: "Ambientais"
+            href: Portfolio/Jardim/ambiental.qmd
+          - text: "Peçonhas"
+            href: Portfolio/Jardim/peconhentos.qmd
+          - text: "Aromas"
+            href: Portfolio/Jardim/aromas.qmd
+          - text: "Industriais"
+            href: Portfolio/Jardim/industrial.qmd
+          - text: "Plantas Tóxicas"
+            href: Portfolio/Jardim/plantasToxicas.qmd
+          - text: "Supramoleculares"
+            href: Portfolio/Jardim/supramol.qmd
+    # right:
+    #   - icon: false  # Evitar ícones padrão
+    #     href: "https://www.unifal-mg.edu.br/portal/index/"  
+    #     html: |
+    #      <img src="logo-unifal.png" alt="Universidade Federal de Alfenas" style="height: 30px;"/>  # Ajuste o tamanho da imagem conforme necessário
+
+          
+         
+            
+            # o truque é colocar a pasta dos
+            # livros com tudo dentro de alguma
+            # pasta do website
+      - text: "Gráficos Interativos"
+        menu:
+          - text: "Introdução"
+            href: Portfolio/ODR/iniciativa_ODR.qmd
+          - text: "Física"
+            href: Portfolio/ODR/ODR.qmd
+            target: "_blank"
+          - text: "Química"
+            href: Portfolio/ODR/ODR.qmd
+            target: "_blank"    
+          - text: "Biologia"
+            href: Portfolio/ODR/ODR.qmd
+            target: "_blank"
+            
+            
       - text: "Folhas de Dicas"
         menu:
           - text: "Jmol"

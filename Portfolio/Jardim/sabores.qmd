@@ -1,0 +1,28 @@
+---
+title: "Moléculas de interesse para sabores"
+---
+
+[![Glutamato monossódico é utilizado para realça o sabor umami.](glutamato%20monossodico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CC(=O)O)%5BC@@H%5D(C(=O)%5BO-%5D)N.%5BNa+%5D)
+
+<p style="text-align:right;">
+[Wikipedia]( https://pt.wikipedia.org/wiki/%C3%81cido_glut%C3%A2mico)
+</p> 
+
+
+[![Cafeína é presente em café e dá sabor amargo.](cafeína.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CN1C=NC2=C1C(=O)N(C(=O)N2C)C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Cafeína)
+</p>
+
+[![Capsaicina é responsável pelo sabor picante em pimentas.](caps.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)/C=C/CCCCC(=O)NCC1=CC(=C(C=C1)O)OC)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Capsaicina)
+</p>
+
+[![Ácido cítrico é o sabor ácido presente nos cítricos.](ácido%20citrico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(C(=O)O)C(CC(=O)O)(C(=O)O)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Ácido%20cítrico)
+</p>

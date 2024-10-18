@@ -1,0 +1,27 @@
+---
+title: "Moléculas de interesse toxicológico"
+---
+
+[![Cianeto são sais derivados do Cianeto de hidrogênio, (HCN) também chamado ácido cianídrico ou ácido prússico,tanto os sais como o ácido são conhecidos por serem altamente letais.](cianeto.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BC-%5D#N)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Cianeto)
+</p>
+
+[![Mercúrio é um metal tóxico com efeito cumulativo.](Mercúrio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BHg%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Merc%C3%BArio_(elemento_qu%C3%ADmico))
+</p>
+
+[![Chumbo é um dos mais perigosos metais tóxicos pela quantidade e severidade dos seus efeitos.](chumbo.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BPb%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Chumbo)
+</p>
+
+[![Dioxina é um dos mais potentes carcinogênicos.](dioxina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=C2C(=CC(=C1Cl)Cl)OC3=CC(=C(C=C3O2)Cl)Cl)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Dioxina)
+</p>

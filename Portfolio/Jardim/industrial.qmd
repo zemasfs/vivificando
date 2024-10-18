@@ -1,0 +1,29 @@
+---
+title: "Moleculas de interesse industrial"
+---
+
+##Moléculas de Interesse Industrial
+
+[![Amoníaco é utilizado na produção de fertilizantes.](amoníaco.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=N)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Amoníaco)
+</p>
+
+[![Metanol é utilizado como solvente e na produção de formaldeído.](Metanol.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CO)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Metanol)
+</p>
+
+[![Polietileno é o plástico mais comum do mundo.](polietileno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%20C=C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Polietileno)
+</p>
+
+[![Cloreto de Vinila é utilizado na produção de PVC.](cloreto de vinila.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=CCl)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Cloreto_de_vinila)
+</p>

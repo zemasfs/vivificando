@@ -1,0 +1,27 @@
+---
+title: " Moléculas de interesse ambiental"
+---
+
+[![Dióxido de carbono,é um gás de efeito estufa, sendo o principal responsável pelo aquecimento global.](dioxido de carbono.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(=O)=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Di%C3%B3xido_de_carbono)
+</p>
+
+[![Dióxido de enxofre,é um gás que contrbui para chuva ácida.](dióxido de enxofre.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=O=S=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Di%C3%B3xido_de_enxofre)
+</p>
+
+[![Ácido nítrico,é um gás que contrbui para chuva ácida e é gerado pela queima de combustíveis fósseis.](ácido nítrico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=[N+](=O)(O)[O-])
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/%C3%81cido_n%C3%ADtrico)
+</p> 
+
+[![Ozônio, é um gás presente na estratosfera, protege contra radiação UV, mas é poluente na troposfera.](ozonio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=[O-][O+]=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Oz%C3%B4nio)
+</p>

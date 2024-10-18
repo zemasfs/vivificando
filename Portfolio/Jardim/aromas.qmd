@@ -1,0 +1,27 @@
+---
+title: "Moléculas de interesse para aromas"
+---
+
+[![Limoneno está presente nos aromas citrícos nas cascas de laranja.](limoneno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC1=CCC(CC1)C(=C)C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Limoneno)
+</p>
+
+[![Vanilina está presente no aroma de baunilha.](vanilina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=COC1=C(C=CC(=C1)C=O)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Vanilina)
+</p>
+
+[![Geraniol está presente no aroma de rosas.](geraniol.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=CCC/C(=C/CO)/C)C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Geraniol)
+</p>
+
+[![Eugenol está presente no aroma de cravos.](eugenol.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=COC1=C(C=CC(=C1)CC=C)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Eugenol)
+</p>
