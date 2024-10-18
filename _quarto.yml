@@ -21,7 +21,7 @@ website:
   sidebar:
   # collapse: true # não funcionou- menu lateral minimizado
     contents:
-      - section: "Vivificando Conteúdos do Ensino Médio"
+      - section: "ERЯƎ - Vivificando Conteúdos do Ensino Médio"
         contents:
           - text: "ERRE"  
             href: index.qmd
