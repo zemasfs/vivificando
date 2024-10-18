@@ -1,6 +1,6 @@
 # Iniciativa {.unnumbered}
 
-|       Esta parte do *website* em elaboração pretende oferecer um conjunto de *gráficos e mapas interativos e de animação* a alguns tópicos encontrados em disciplinas do *ensino médio*,  mais especificamente para conteúdos de *Física, Química, e Biologia* e com *aplicações da Matemática*. 
+|       Esta parte do *website* em elaboração pretende oferecer um conjunto de *gráficos e mapas interativos e de animação* a alguns tópicos encontrados em disciplinas do *ensino médio*. 
 
 |       Os *objetos didáticos* estão em construção junto a pacotes interativos do *R*, principalmente o `plotly`. Pretende-se, tanto quanto possível, elencar aspectos didático-pedagógicos do uso dos materiais.
 
