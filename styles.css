@@ -18,3 +18,29 @@
     border-radius: 5px;        /* Bordas arredondadas */
     margin-bottom: 20px;       /* Espaçamento inferior */
 }
+
+/* Plano de Fundo 
+body {
+  background: linear-gradient(-45deg, #a1c4fd, #c2e9fb, #d4fc79, #96e6a1);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+*/
+
+/* Plano de Fundo pro Sidebar */
+.sidebar-item {
+  background-color:  #e6f8ed ;
+  color: white;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+
+
+

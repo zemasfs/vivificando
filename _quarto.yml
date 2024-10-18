@@ -31,7 +31,7 @@ website:
             href: questoes.qmd
           - text: "Caixa de Ferramentas"
             href: ferramentas.qmd
-      - section: "Moléculas em 3D com Jmol"
+      - section: "Moléculas em 3D com `Jmol`"
         contents:
           - text: "1 - Jmol"
             href: jmol.qmd
@@ -42,7 +42,7 @@ website:
           - text: "4 - Algumas animações com Jmol"
             href: anima_Jmol.qmd
           
-      - section: "Gráficos Interativos com R"
+      - section: "Gráficos & Mapas interativos com `R`"
         contents:
           - text: "1 - R & RStudio"
             href: rstudioCloud.qmd
@@ -120,7 +120,7 @@ website:
             # o truque é colocar a pasta dos
             # livros com tudo dentro de alguma
             # pasta do website
-      - text: "Gráficos Interativos"
+      - text: "Gráficos & Mapas"
         menu:
           - text: "Introdução"
             href: Portfolio/ODR/iniciativa_ODR.qmd
