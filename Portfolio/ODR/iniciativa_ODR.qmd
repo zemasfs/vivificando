@@ -1,8 +1,6 @@
 ## Iniciativa {.unnumbered}
 
-|       Esta parte do *website* em elaboração pretende oferecer um conjunto de *gráficos e mapas interativos e de animação* a alguns tópicos encontrados em disciplinas do *ensino médio*. 
-
-|       Os *objetos didáticos* estão em construção junto a pacotes interativos do *R*, principalmente o `plotly`. Pretende-se, tanto quanto possível, elencar aspectos didático-pedagógicos do uso dos materiais.
+|       Este materia em elaboração pretende oferecer um conjunto de *gráficos e mapas, interativos e de animação*, para alguns tópicos encontrados em disciplinas do *ensino médio*. Os *objetos didáticos* utilizam pacotes interativos do *R*, principalmente o `plotly`. 
 
 
 ### Equipe {.unnumbered}
