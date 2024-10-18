@@ -1,6 +1,6 @@
 ## Iniciativa {.unnumbered}
 
-|       Este materia em elaboração pretende oferecer um conjunto de *gráficos e mapas, interativos e de animação*, para alguns tópicos encontrados em disciplinas do *ensino médio*. Os *objetos didáticos* utilizam pacotes interativos do *R*, principalmente o `plotly`. 
+|       Este material em elaboração pretende oferecer um conjunto de *gráficos e mapas, interativos e de animação*, para alguns tópicos encontrados em disciplinas do *ensino médio*. Os *objetos didáticos* utilizam pacotes interativos do *R*, principalmente o `plotly`. 
 
 
 ### Equipe {.unnumbered}
