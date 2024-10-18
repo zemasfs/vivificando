@@ -8,7 +8,7 @@ website:
   image: unifal-logo.png # não funciona
   reader-mode: true # funciona
   google-analytics: "G-S1L73VGCG5"
-  title: "ERЯƎ - Ensino Reprodutível nas Escolas" # omite-se o título pra não duplicar nome na aba
+  title: "Ensino Reprodutível nas Escolas" # omite-se o título pra não duplicar nome na aba
   favicon: avatar.png # ícone da aba da página
   page-footer: 
         left: |
@@ -133,6 +133,12 @@ website:
             href: Portfolio/ODR/ODR.qmd
             target: "_blank"    
           - text: "Biologia"
+            href: Portfolio/ODR/ODR.qmd
+            target: "_blank"
+          - text: "Humanas"
+            href: Portfolio/ODR/ODR.qmd
+            target: "_blank"
+          - text: "Linguagens"
             href: Portfolio/ODR/ODR.qmd
             target: "_blank"
             
