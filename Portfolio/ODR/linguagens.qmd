@@ -1,0 +1,5 @@
+---
+title: ""
+---
+
+![Expectativa de vida *versus* PIB](expectativa2.png)
