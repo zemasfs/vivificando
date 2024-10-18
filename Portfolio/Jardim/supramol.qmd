@@ -4,9 +4,10 @@ title: "Complexos supramoleculares e vírus"
 
 <!-- [![Glutamato monossódico é utilizado para realça o sabor umami.](glutamato%20monossodico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CC(=O)O)%5BC@@H%5D(C(=O)%5BO-%5D)N.%5BNa+%5D) -->
 
+![Exemplo de vírus]()
 O link abaixo permite rodar no JSMol um modelo armazenado online !!!!
 
-https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://bioquanti.netlify.app/uploads/jmolbook/figbook/gaba.png
+https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://errre.netlify.app/portfolio/jardim/virus.png
 
 <p style="text-align:right;">
 [Wikipedia]( https://pt.wikipedia.org/wiki/V%C3%ADrus)
