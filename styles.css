@@ -12,9 +12,19 @@
 /*Quadro de objetivos*/
 
 .reminder-objetivos {
-    background-color: #b4e7ae; /* Fundo amarelo claro */
+    background-color: #b4e7ae; /* Fundo  */
     padding: 15px;             /* Espaçamento interno */
-    border-left: 5px solid #b4e7ae  /* Barra lateral laranja */
+    border-left: 5px solid #b4e7ae  /* Barra lateral */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+}
+
+/* Quadro para ODR - tópico e código BNCC*/
+
+.reminder-bncc {
+    background-color: #D0F5A9; /* Fundo*/
+    padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #00FF7F; /* Barra lateral  */
     border-radius: 5px;        /* Bordas arredondadas */
     margin-bottom: 20px;       /* Espaçamento inferior */
 }

@@ -12,7 +12,7 @@ website:
   favicon: avatar.png # ícone da aba da página
   page-footer: 
         left: |
-          Curso de Formação em Educação Digital
+          Ensino Reprodutível nas Escolas
         center: |
             ERЯƎ
         right: |
@@ -78,8 +78,8 @@ website:
     left:
       - text: "Jardim de Moléculas"
         menu:
-          - text: "Introdução"
-            href: Portfolio/Jardim/iniciativa_Jmol.qmd
+          # - text: "Introdução"
+          #   href: Portfolio/Jardim/iniciativa_Jmol.qmd
           - text: "Orgânicas"
             href: Portfolio/Jardim/organica.qmd
           - text: "Inorgânicas"
@@ -124,21 +124,24 @@ website:
         menu:
           - text: "Introdução"
             href: Portfolio/ODR/iniciativa_ODR.qmd
-          - text: "Física"
-            href: Portfolio/ODR/ODR.qmd
-            target: "_blank"
-          - text: "Química"
-            href: Portfolio/ODR/ODR.qmd
-            target: "_blank"    
-          - text: "Biologia"
-            href: Portfolio/ODR/ODR.qmd
-            target: "_blank"
-          - text: "Humanas"
-            href: Portfolio/ODR/ODR.qmd
-            target: "_blank"
-          - text: "Linguagens"
-            href: Portfolio/ODR/linguagens.qmd
-            target: "_blank"
+          # - text: "Matemática"
+          #   href: Portfolio/ODR/matematica.qmd
+          #   target: "_blank"
+          # - text: "Física"
+          #   href: Portfolio/ODR/fisica.qmd
+          #   target: "_blank"
+          # - text: "Química"
+          #   href: Portfolio/ODR/quimica.qmd
+          #   target: "_blank"    
+          # - text: "Biologia"
+          #   href: Portfolio/ODR/biologia.qmd
+          #   target: "_blank"
+          # - text: "Humanas"
+          #   href: Portfolio/ODR/humanas.qmd
+          #   target: "_blank"
+          # - text: "Linguagens"
+          #   href: Portfolio/ODR/linguagens.qmd
+          #   target: "_blank"
             
             
       - text: "Folhas de Dicas"
@@ -181,9 +184,6 @@ files:
     - zoom.qmd
     
       
-execute:
-  cache: true  # habilita cache globalmente
-  
 format:
   html:
     theme: 
@@ -198,3 +198,9 @@ format:
   # include-after-body: collapse-sidebar.js
 
 editor: source
+
+execute:
+  cache: true  # habilita cache globalmente
+  message: false
+  warning: false
+
