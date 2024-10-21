@@ -1,6 +1,14 @@
 ---
-title: "Complexos supramoleculares e vírus"
+title: "Polímeros, complexos supramoleculares, e vírus"
 ---
+
+
+[![Nylon 66, uma estrutura formada por poliaminas, semelhantes às proteínas (poliamidas).](nylon66.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://errre.netlify.app/Portfolio/Jardim/nylon66.png)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/N%C3%A1ilon)
+</p> 
+
 
 [![Um exemplo de vírus.](virus.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://errre.netlify.app/Portfolio/Jardim/virus.png)
 
