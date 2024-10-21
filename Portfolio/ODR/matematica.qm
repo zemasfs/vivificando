@@ -2,5 +2,64 @@
 title: "Matemática"
 ---
 
+<div class="mat-fundo">
+
+**Lei dos Gases Ideais (EM13CNT101)**
+
+::: {.grid}
+
+::: {.g-col-6}
+
+```{r, echo=FALSE}
+# Dados:
+R = 8.314 # J/(mol*K), constante geral dos gases ideias
+V = seq(0,22.4, length.out=50)  # vetor de "Volume" (em litros), com 50 pontos
+T = 298 # K, temperatura absoluta
+
+
+# Equação
+# pV = RT; p = RT/V
+p = R*T/V
+
+library(plotly)
+library(magrittr) # biblioteca para o operador pipe "%>%"
+plot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines') %>%
+layout(
+    title = "Transformação Isotérmica de um Gás",
+    xaxis = list(title = "Volume V, L", range=c(-1,24)),
+    yaxis = list(title = "Pressão p, Pascal")
+)
+```
+:::
+
+::: {.g-col-6}
+
+```{r, eval=FALSE, message=FALSE, warning=FALSE}
+# Dados:
+R = 8.314 # J/(mol*K), constante geral dos gases ideias
+V = seq(0,22.4, length.out=50)  # vetor de "Volume" (em litros), com 50 pontos
+T = 298 # K, temperatura absoluta
+
+
+# Equação
+# pV = RT; p = RT/V
+p = R*T/V
+
+library(plotly)
+library(magrittr) # biblioteca para o operador pipe "%>%"
+plot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines') %>%
+layout(
+    title = "Transformação Isotérmica de um Gás",
+    xaxis = list(title = "Volume V, L", range=c(-1,24)),
+    yaxis = list(title = "Pressão p, Pascal")
+)
+```
+
+:::
+
+:::
+
+</div>
+
 
 

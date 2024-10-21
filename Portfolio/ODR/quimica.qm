@@ -2,7 +2,7 @@
 title: "Química"
 ---
 
-<div class="reminder-bncc">
+<div class="quim-fundo">
 
 **Lei dos Gases Ideais (EM13CNT101)**
 
@@ -26,8 +26,8 @@ library(magrittr) # biblioteca para o operador pipe "%>%"
 plot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines') %>%
 layout(
     title = "Transformação Isotérmica de um Gás",
-    xaxis = list(title = "Volume V, L"),
-    yaxis = list(title = "Pressão p, bar")
+    xaxis = list(title = "Volume V, L", range=c(-1,24)),
+    yaxis = list(title = "Pressão p, Pascal")
 )
 ```
 :::
@@ -50,8 +50,8 @@ library(magrittr) # biblioteca para o operador pipe "%>%"
 plot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines') %>%
 layout(
     title = "Transformação Isotérmica de um Gás",
-    xaxis = list(title = "Volume V, L"),
-    yaxis = list(title = "Pressão p, bar")
+    xaxis = list(title = "Volume V, L", range=c(-1,24)),
+    yaxis = list(title = "Pressão p, Pascal")
 )
 ```
 

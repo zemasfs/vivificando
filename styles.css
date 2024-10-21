@@ -19,16 +19,6 @@
     margin-bottom: 20px;       /* Espaçamento inferior */
 }
 
-/* Quadro para ODR - tópico e código BNCC*/
-
-.reminder-bncc {
-    background-color: #D0F5A9; /* Fundo*/
-    padding: 15px;             /* Espaçamento interno */
-    border-left: 5px solid #00FF7F; /* Barra lateral  */
-    border-radius: 5px;        /* Bordas arredondadas */
-    margin-bottom: 20px;       /* Espaçamento inferior */
-}
-
 /* Plano de Fundo 
 body {
   background: linear-gradient(-45deg, #a1c4fd, #c2e9fb, #d4fc79, #96e6a1);
@@ -51,6 +41,57 @@ body {
   padding: 0px;
 }
 
+
+/* Plano de fundo de áreas e ODR*/
+
+.mat-fundo {
+  background-color: #A9D0F5; /* Azul Claro Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #2f58d0 /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+}
+
+.fis-fundo {
+  background-color: #D0E1F5; /* Cinza Azulado Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #44bbae; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+}
+
+.quim-fundo {
+   background-color: #D0F5A9; /* Fundo*/
+    padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #00FF7F; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+}
+
+
+.biol-fundo {
+  background-color: #A9F5D0; /* Verde Menta Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #00ff98; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+}
+
+.hum-fundo {
+  background-color: #F5E3C8; /* Bege Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #e2d2d8; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+}
+
+.ling-fundo {
+  background-color: #E3D0F5; /* Lilás Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #bf9ca9; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+}
 
 
 
