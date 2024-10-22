@@ -60,10 +60,10 @@ plot_ly() %>%
 ```{r, echo=FALSE}
 library(plotly)
 
-dados <- function(sd_noise) {
+dados <- function(ruido_func) {
   set.seed(123)
   x <- seq(0, 5, length.out = 50)
-  desvio <- 2 * x + 5 + rnorm(50, 0, sd_noise)
+  desvio <- 2 * x + 5 + rnorm(50, 0, ruido_func)
   y_esperado <- predict(lm(desvio ~ x), data.frame(x = x))
   list(x = x, desvio = desvio, y_esperado = y_esperado)
 }
@@ -77,7 +77,7 @@ plot_ly() %>%
     sliders = list(list(
       currentvalue = list(prefix = "Desvio: "),
       steps = lapply(seq(0, 5, 1), function(sd_value) {
-        list(label = as.character(sd_value), method = "restyle",
+        list(label = as.character(sd_value),
              args = list(list(y = list(dados(sd_value)$desvio, dados(sd_value)$y_esperado))))
       })
     ))
@@ -90,10 +90,10 @@ plot_ly() %>%
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(plotly)
 
-dados <- function(sd_noise) {
+dados <- function(ruido_func) {
   set.seed(123)
   x <- seq(0, 5, length.out = 50)
-  desvio <- 2 * x + 5 + rnorm(50, 0, sd_noise)
+  desvio <- 2 * x + 5 + rnorm(50, 0, ruido_func)
   y_esperado <- predict(lm(desvio ~ x), data.frame(x = x))
   list(x = x, desvio = desvio, y_esperado = y_esperado)
 }
@@ -107,7 +107,7 @@ plot_ly() %>%
     sliders = list(list(
       currentvalue = list(prefix = "Desvio: "),
       steps = lapply(seq(0, 5, 1), function(sd_value) {
-        list(label = as.character(sd_value), method = "restyle",
+        list(label = as.character(sd_value),
              args = list(list(y = list(dados(sd_value)$desvio, dados(sd_value)$y_esperado))))
       })
     ))
