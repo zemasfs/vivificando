@@ -1,0 +1,58 @@
+---
+title: "Física"
+---
+
+<div class="fis-fundo">
+
+**Corrente Alternada - Capacitor (EM13CNT202)**
+
+::: {.grid}
+
+::: {.g-col-6}
+
+```{r, echo=FALSE}
+library(plotly)
+
+# Valores de x
+x <- seq(0, 5 * pi, length.out = 100)
+
+plot_ly() %>%
+  add_trace(x = x, y = sin(x), mode = 'lines', name = 'Potencial') %>%
+  add_trace(x = 1.4*x, y = 0.9*cos(x)-0.4, mode = 'lines', name = 'Corrente') %>%
+  layout(
+    title = 'Tensão e Corrente num Capacitor',
+    xaxis = list(title = 'Ângulo (radianos)', range=c(0,15)), 
+    yaxis = list(title = 'Valor'),
+    showlegend = TRUE
+  )
+
+```
+:::
+
+::: {.g-col-6}
+
+```{r, eval=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+
+# Valores de x
+x <- seq(0, 5 * pi, length.out = 100)
+
+plot_ly() %>%
+  add_trace(x = x, y = sin(x), mode = 'lines', name = 'Potencial') %>%
+  add_trace(x = 1.4*x, y = 0.9*cos(x)-0.4, mode = 'lines', name = 'Corrente') %>%
+  layout(
+    title = 'Tensão e Corrente num Capacitor',
+    xaxis = list(title = 'Ângulo (radianos)', range=c(0,15)), 
+    yaxis = list(title = 'Valor'),
+    showlegend = TRUE
+  )
+```
+
+:::
+
+:::
+
+</div>
+
+
+

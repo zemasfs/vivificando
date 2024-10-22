@@ -5,7 +5,7 @@ title: "3 - Alguns comandos pra se aventurar nas moléculas voadoras"
 <div class="reminder-objetivos">
 
 Objetivos:\
-  1. Carregar uma molécula no Jmol de formas alternativas\
+  1. Carregar uma molécula no Jmol de forma alternativa\
   2. Utilizar o Console para alguns comandos\
 
 </div>

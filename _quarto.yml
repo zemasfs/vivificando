@@ -124,20 +124,20 @@ website:
         menu:
           - text: "Introdução"
             href: Portfolio/ODR/iniciativa_ODR.qmd
-          # - text: "Matemática"
-          #   href: Portfolio/ODR/matematica.qmd
+          - text: "Matemática"
+            href: Portfolio/ODR/matematica.qmd
           #   target: "_blank"
-          # - text: "Física"
-          #   href: Portfolio/ODR/fisica.qmd
+          - text: "Física"
+            href: Portfolio/ODR/fisica.qmd
           #   target: "_blank"
-          # - text: "Química"
-          #   href: Portfolio/ODR/quimica.qmd
+          - text: "Química"
+            href: Portfolio/ODR/quimica.qmd
           #   target: "_blank"
-          # - text: "Biologia"
-          #   href: Portfolio/ODR/biologia.qmd
+          - text: "Biologia"
+            href: Portfolio/ODR/biologia.qmd
           #   target: "_blank"
-          # - text: "Humanas"
-          #   href: Portfolio/ODR/humanas.qmd
+          - text: "Humanas"
+            href: Portfolio/ODR/humanas.qmd
           #   target: "_blank"
           # - text: "Linguagens"
           #   href: Portfolio/ODR/linguagens.qmd

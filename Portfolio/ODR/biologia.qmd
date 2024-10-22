@@ -1,0 +1,77 @@
+---
+title: "Biologia"
+---
+
+<div class="biol-fundo">
+
+**Efeito estufa e emissão de CO$_{2}$ (EM13CN09, EM13CHS104)**
+
+::: {.grid}
+
+::: {.g-col-6}
+
+```{r, echo=FALSE}
+library(plotly)
+library(magrittr)  # bibliotecas necessárias
+
+# 1) Obtendo os dados da internet
+
+url <- "https://raw.githubusercontent.com/datasets/global-temp/refs/heads/main/data/annual.csv" # define o link para os dados
+dados <- read.csv(url)  # lê o arquivo dos dados
+
+# 2) Construindo o gráfico com animação 
+
+plot_ly(dados, x = ~Year, y = ~Mean,
+        type = "bar", 
+        marker = list(line = list(width = 10)),
+        frame = ~Year) %>%
+  animation_opts(
+    frame = 150,           # Velocidade da animação
+    transition = 0,
+    redraw = TRUE
+  ) %>%
+  layout(
+    title = "Flutuação da temperatura global",
+    xaxis = list(title = "Anos"),
+    yaxis = list(title = "Diferença de temperatura, C"))
+```
+
+
+:::
+
+::: {.g-col-6}
+
+```{r, eval=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+library(magrittr)  # bibliotecas necessárias
+
+# 1) Obtendo os dados da internet
+
+url <- "https://raw.githubusercontent.com/datasets/global-temp/refs/heads/main/data/annual.csv" # define o link para os dados
+dados <- read.csv(url)  # lê o arquivo dos dados
+
+# 2) Construindo o gráfico com animação 
+
+plot_ly(dados, x = ~Year, y = ~Mean,
+        type = "bar", 
+        marker = list(line = list(width = 10)),
+        frame = ~Year) %>%
+  animation_opts(
+    frame = 150,           # Velocidade da animação
+    transition = 0,
+    redraw = TRUE
+  ) %>%
+  layout(
+    title = "Flutuação da temperatura global",
+    xaxis = list(title = "Anos"),
+    yaxis = list(title = "Diferença de temperatura, C"))
+```
+
+:::
+
+:::
+
+</div>
+
+
+

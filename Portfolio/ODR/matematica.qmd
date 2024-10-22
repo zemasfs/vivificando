@@ -1,0 +1,123 @@
+---
+title: "Matemática"
+---
+
+<div class="mat-fundo">
+
+**Comparação: área superficial e volume de uma esfera (EM13MT05)**
+
+::: {.grid}
+
+::: {.g-col-6}
+
+```{r, echo=FALSE}
+library(plotly)
+
+plot_ly() %>%
+  add_trace(x = 1:10, y = 4 * pi * (1:10)^2, mode = 'lines+markers', name = 'Superfície') %>%
+  add_trace(x = 1:10, y = (4/3) * pi * (1:10)^3, mode = 'lines+markers', name = 'Volume') %>%
+  layout(
+    title = 'Superfície e Volume de uma Esfera',
+    xaxis = list(title = 'Raio'), 
+    yaxis = list(title = 'Valor')
+  )
+```
+:::
+
+::: {.g-col-6}
+
+```{r, eval=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+
+plot_ly() %>%
+  add_trace(x = 1:10, y = 4 * pi * (1:10)^2, mode = 'lines+markers', name = 'Superfície') %>%
+  add_trace(x = 1:10, y = (4/3) * pi * (1:10)^3, mode = 'lines+markers', name = 'Volume') %>%
+  layout(
+    title = 'Superfície e Volume de uma Esfera',
+    xaxis = list(title = 'Raio'), 
+    yaxis = list(title = 'Valor')
+  )
+```
+
+:::
+
+:::
+
+</div>
+
+
+<!-- ###############################################################-->
+
+
+<div class="mat-fundo">
+
+**Regressão linear (EM13MT10)**
+
+::: {.grid}
+
+::: {.g-col-6}
+
+```{r, echo=FALSE}
+library(plotly)
+
+generate_data <- function(sd_noise) {
+  set.seed(123)
+  x <- seq(0, 5, length.out = 50)
+  y_noise <- 2 * x + 5 + rnorm(50, 0, sd_noise)
+  y_fit <- predict(lm(y_noise ~ x), data.frame(x = x))
+  list(x = x, y_noise = y_noise, y_fit = y_fit)
+}
+
+plot_ly() %>%
+  add_trace(x = generate_data(1)$x, y = generate_data(1)$y_noise, mode = 'markers', type = "scatter", name = "Dados") %>%
+  add_trace(x = generate_data(1)$x, y = generate_data(1)$y_fit, mode = 'lines', type = "scatter", name = "Linha de Regressão") %>%
+  layout(
+    title = 'Regressão Linear',
+    xaxis = list(title = 'X'), yaxis = list(title = 'Y'),
+    sliders = list(list(
+      currentvalue = list(prefix = "Desvio: "),
+      steps = lapply(seq(0, 5, 1), function(sd_value) {
+        list(label = as.character(sd_value), method = "restyle",
+             args = list(list(y = list(generate_data(sd_value)$y_noise, generate_data(sd_value)$y_fit))))
+      })
+    ))
+  )
+```
+:::
+
+::: {.g-col-6}
+
+```{r, eval=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+
+generate_data <- function(sd_noise) {
+  set.seed(123)
+  x <- seq(0, 5, length.out = 50)
+  y_noise <- 2 * x + 5 + rnorm(50, 0, sd_noise)
+  y_fit <- predict(lm(y_noise ~ x), data.frame(x = x))
+  list(x = x, y_noise = y_noise, y_fit = y_fit)
+}
+
+plot_ly() %>%
+  add_trace(x = generate_data(1)$x, y = generate_data(1)$y_noise, mode = 'markers', type = "scatter", name = "Dados") %>%
+  add_trace(x = generate_data(1)$x, y = generate_data(1)$y_fit, mode = 'lines', type = "scatter", name = "Linha de Regressão") %>%
+  layout(
+    title = 'Regressão Linear',
+    xaxis = list(title = 'X'), yaxis = list(title = 'Y'),
+    sliders = list(list(
+      currentvalue = list(prefix = "Desvio: "),
+      steps = lapply(seq(0, 5, 1), function(sd_value) {
+        list(label = as.character(sd_value), method = "restyle",
+             args = list(list(y = list(generate_data(sd_value)$y_noise, generate_data(sd_value)$y_fit))))
+      })
+    ))
+  )
+```
+
+:::
+
+:::
+
+</div>
+
+
