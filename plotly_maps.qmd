@@ -63,7 +63,7 @@ Dica: se você selecionou uma cidade fora da América do Sul, colocar um *"#"* a
 </div>
 
 
-### Produção mundial de óleos
+## Produção mundial de óleos
 
 
 |       Agora imagine que você possa, ao invés de colocar os dados um a um, *importar os dados de algum repositório da internet* para a construção do mapa, como fora conduzido na etapa anterior. Para ilustrar isso vamos importar uma planilha referente à produção de óleo no planeta. Essa categoria inclui petróleo bruto, óleo de xisto, areias betuminosas, condensados, e líquidos de gás natural (etano, GLP e nafta separados da produção de gás natural).
@@ -111,7 +111,5 @@ plot_ly(
 
 |       E nesse caso, qualquer banco de dados nesse quesito será bem-vindo. O que significa na prática poder exemplificar qualquer informação de conteúdo didático de forma interativa em um mapa (ex: produção/exportação de insumos, observações clínicas, marcos históricos, etc).
 
-## Uma palavra final
 
-|       Chegamos ao final desta etapa do Curso em ferramentas digitais voltadas ao ensino e aprendizagem. Esperamos que você tenha gostado do material, e que possa aproveitá-lo de algum modo em sua disciplina. Se tiver qualquer comentário, crítica ou sugestão, por gentileza nos permita saber pela aba de  *Contato* deste *website*.
 

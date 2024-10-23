@@ -25,7 +25,7 @@ title: "Algumas questões prévias"
 
 ## E quais são essas ferramentas ?
 
-|       Para a *visualização de moléculas em 3D* será empregado o programa **Jmol**, e para os demais mencionados o programa **R** com sua interface gráfica **RStudio**. São programas gratuitos para instalação em computador de mesa ou notebook, embora também acessáveis por navegador de internete, e nesse caso, sem necessidade de instalação. Essa versão em nuvem foi a escolhida para este *Curso* aos dois programas.
+|       Para a *visualização de moléculas em 3D* será empregado o programa **Jmol**, e para os demais mencionados o programa **R** com sua interface gráfica **RStudio**. São programas gratuitos para instalação em computador de mesa ou notebook, embora também acessáveis por navegador de internete, e nesse caso, sem necessidade de instalação. Essa versão em nuvem foi a escolhida para este treinamento aos dois programas.
 
 <!-- ## Se este material envolve o uso de livros-texto, qual bibliografia será utilizada ? -->
 
@@ -39,7 +39,7 @@ title: "Algumas questões prévias"
 |       O *R* permite uma infinidade de ações, quer voltadas à pesquisa ou ao ensino. É utilizado por diversas Universidades ao redor do mundo, bem como por diversas empresas de porte (ex: Google, Facebook, LinkedIn, Twitter, Bank of America, Lenovo, Bing). Embora tenha sido originalmente desenvolvido para análise de dados, possui hoje mais de 20 mil pacotes adicionais.
 
 
-|       Essa expansibilidade permite, por exemplo, recursos de matemática, estatística, gráficos e tabelas avançados, animações e simulações, análise de imagem e de texto, criação musical e artística, ciência de dados, inteligência artificial, comunicação com placas microcontroladores (ex: *Arduino*), internete das coias (*IoT*), criação de *blogs*, de livros e mesmo de  *websites*, tal como este, usado para produzir produzir o material do *Curso*.
+|       Essa expansibilidade permite, por exemplo, recursos de matemática, estatística, gráficos e tabelas avançados, animações e simulações, análise de imagem e de texto, criação musical e artística, ciência de dados, inteligência artificial, comunicação com placas microcontroladores (ex: *Arduino*), internete das coias (*IoT*), criação de *blogs*, de livros e mesmo de  *websites*, tal como este, usado para produzir produzir o material do treinamento.
 
 
 ## E o tal *Ensino Reprodutível*, de que se trata ?

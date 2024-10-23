@@ -242,6 +242,8 @@ cartoon only # renderizando em desenho
 
 |       Para se conseguir esse e outros códigos de proteínas e ácidos nucleicos, deve-se entrar no banco de dados do [PDB - Protein Data Bank, RCSB](https://www.rcsb.org/), e digitar o nome no campo de busca (no caso, `myoglobin`). O sistema retorna diversos modelos estruturais e seus códigos, bastando transcrever um desses códigos ao *Console* do *JSmol*.
 
+|       Se desejar observar um pouco mais sobre biomoléculas e o uso do *Jmol*, deixo-lhe um convite para visitar nosso portal de [Bioquímica Quantitativa](https://bioquanti.netlify.app/). Lá você encontrará também outras aplicações para o *Jmol*, *R e RStudio*, bem como um programa que simula transformações de elementos presentes em esquemas (diagramas, fluxogramas, heredogramas, redes e teias) por diferenças de luminância entre o elemento e seu predecessor/sucessor ([SISMA - Sistema de Mapas Autocatalíticos](https://bioquanti.netlify.app/uploads/sismabook/)).
+
 
 ## Cores
 

@@ -1,0 +1,17 @@
+---
+title: "Uma palavrinha final"
+---
+
+|       Chegamos ao final desta etapa de treinamento em **ferramentas digitais voltadas à educação conteudista do Ensino Médio**. Esperamos que você tenha gostado do material, e que possa aproveitá-lo de algum modo em sua disciplina, pela manipulação de modelos atômicos tridimensionais, bem como de gráficos e mapas interativos. 
+\
+
+|       Uma sugestão é observar o *Jardim de Moléculas* para as primeiras, e *Gráficos & Mapas* para os demais, submenus contidos no *website*. O *Jardim de Moléculas* ilustra diversos modelos atômicos classificados em grupos por classes químicas ou interesse genérico. Por sua vez, *Gráficos & Mapas* apresenta diversos objetos didáticos prontos para uso e/ou adaptações (códigos e saída), e indexados por área do ensino médio, tema e habilidades específicas. 
+\
+
+|       Complementarmente, se desejar se aventurar um pouco mais nessa seara, reiteramos o convite para acessar o *website* [Bioquímica Quantitativa](https://bioquanti.netlify.app/), de temas correlatos. O portal possui outras aplicações e instruções para *Jmol*, *R e RStudio*, além de um programa que simula transformações dinâmicas por diferença de matizes entre elemento precursor e sucessor. Isso permite a construção e visualização dinâmicas de diversos tipos esquemáticos, bem como a simulação do que se desenharia com um lápis e uma folha de papel em branco ([SISMA - Sistema de Mapas Autocatalíticos](https://bioquanti.netlify.app/uploads/sismabook/)). Metidez à parte, o *website* foi agraciado ao 2o. lugar junto ao [Prêmio Nacional de Ensino de Bioquímica e Biologia Molecular "Bayardo Baptista Torres"](https://www2.sbbq.org.br/reuniao/reuniao-2023.html), da *Sociedade Brasileira de Bioquímica e Biologia Molecular* (2023), e seu conteúdo publicado na [Revista de Ensino de Bioquímica](https://www.bioquimica.org.br/index.php/REB/article/view/1058). 
+\
+
+|       Por fim, seríamos muito gratos se você nos contemplasse com qualquer <span style="color:orange;">comentário, crítica ou sugestão ao material construido</span> ao longo desse treinamento, contatando-nos no submenu homônimo deste mesmo *website*, [Contatos](http://localhost:7110/contato.html).
+\
+
+|       **Tenha uma ótima Vida !!**

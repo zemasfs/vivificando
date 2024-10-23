@@ -59,6 +59,10 @@ website:
           - text: "7 - Mapas interativos"
             href: plotly_maps.qmd
           
+      
+      - text: "Uma palavrinha final"
+        href: final.qmd
+            
       - contato.qmd
             
   navbar:
@@ -78,8 +82,8 @@ website:
     left:
       - text: "Jardim de Moléculas"
         menu:
-          # - text: "Introdução"
-          #   href: Portfolio/Jardim/iniciativa_Jmol.qmd
+          - text: "Introdução"
+            href: Portfolio/Jardim/iniciativa_Jmol.qmd
           - text: "Orgânicas"
             href: Portfolio/Jardim/organica.qmd
           - text: "Inorgânicas"
