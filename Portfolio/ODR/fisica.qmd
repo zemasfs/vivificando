@@ -9,9 +9,9 @@ title: "Física"
 
 ## Campo elétrico e distância
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(plotly)
@@ -51,9 +51,9 @@ plot_ly(x = ~d, y = ~calcular_campo(Q_inicial, d), type = 'scatter', mode = 'lin
     )
   )
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(plotly)
@@ -94,9 +94,9 @@ plot_ly(x = ~d, y = ~calcular_campo(Q_inicial, d), type = 'scatter', mode = 'lin
   )
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -120,9 +120,9 @@ plot_ly(x = ~d, y = ~calcular_campo(Q_inicial, d), type = 'scatter', mode = 'lin
 
 ## Movimento retilíneo uniformemente variado (MRUV)
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(ggplot2)
@@ -157,9 +157,9 @@ ggplot(dados_mruv, aes(x = Tempo, y = Posição, group = Aceleração)) +
   transition_time(Aceleração) +
   ease_aes('linear')
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
@@ -195,9 +195,9 @@ ggplot(dados_mruv, aes(x = Tempo, y = Posição, group = Aceleração)) +
   ease_aes('linear')
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -223,9 +223,9 @@ ggplot(dados_mruv, aes(x = Tempo, y = Posição, group = Aceleração)) +
 
 ## Força gravitacional e distância
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 # Função para calcular a força gravitacional
@@ -257,9 +257,9 @@ ggplot(dados_gravitacional, aes(x = Distância, y = Força, group = Massa)) +
   transition_time(Massa) +
   ease_aes('linear')
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 # Função para calcular a força gravitacional
@@ -292,9 +292,9 @@ ggplot(dados_gravitacional, aes(x = Distância, y = Força, group = Massa)) +
   ease_aes('linear')
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -319,9 +319,9 @@ ggplot(dados_gravitacional, aes(x = Distância, y = Força, group = Massa)) +
 
 ## 2a. Lei de Newton - massa e aceleração
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 # Função para calcular a força
@@ -351,9 +351,9 @@ ggplot(dados_newton, aes(x = Aceleração, y = Força, group = Massa)) +
   transition_time(Massa) +
   ease_aes('linear')
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 # Função para calcular a força
@@ -384,9 +384,9 @@ ggplot(dados_newton, aes(x = Aceleração, y = Força, group = Massa)) +
   ease_aes('linear')
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -411,9 +411,9 @@ ggplot(dados_newton, aes(x = Aceleração, y = Força, group = Massa)) +
 
 ## Lei de Ohm - resistância, potencial, e corrente
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(ggplot2)
@@ -446,9 +446,9 @@ p <- ggplot(dados, aes(x = Corrente, y = Tensão)) +
 # Exibindo o gráfico
 p
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
@@ -482,9 +482,9 @@ p <- ggplot(dados, aes(x = Corrente, y = Tensão)) +
 p
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -509,9 +509,9 @@ p
 
 ## Energia elétrica e consumo residencial
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(ggplot2)
@@ -548,9 +548,9 @@ p <- ggplot(dados_consumo, aes(x = Tempo, y = Consumo, color = Eletrodomestico, 
 # Exibindo o gráfico
 p
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
@@ -588,9 +588,9 @@ p <- ggplot(dados_consumo, aes(x = Tempo, y = Consumo, color = Eletrodomestico, 
 p
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -616,9 +616,9 @@ p
 
 ## Conversão de temperatura - Celsius, Kelvin, e Fahrenheit
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(ggplot2)
@@ -649,9 +649,9 @@ p <- ggplot(temp_data_long, aes(x = Celsius, y = value, color = variable)) +
 # Exibindo o gráfico
 p
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
@@ -683,9 +683,9 @@ p <- ggplot(temp_data_long, aes(x = Celsius, y = value, color = variable)) +
 p
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -709,9 +709,9 @@ p
 
 ## Dilatação térmica - superficial, volumétrica, e de líquidos
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(ggplot2)
@@ -753,9 +753,9 @@ grafico_liquido <- ggplot(dados_liquido, aes(x = Temperatura, y = Dilatacao)) +
 # Exibindo os gráficos lado a lado
 grafico_superficie + grafico_volumetrica + grafico_liquido
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
@@ -798,9 +798,9 @@ grafico_liquido <- ggplot(dados_liquido, aes(x = Temperatura, y = Dilatacao)) +
 grafico_superficie + grafico_volumetrica + grafico_liquido
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -822,9 +822,9 @@ grafico_superficie + grafico_volumetrica + grafico_liquido
 
 ## Corrente Alternada - Capacitor (EM13CNT202)
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(plotly)
@@ -842,9 +842,9 @@ plot_ly() %>%
     showlegend = TRUE
   )
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(plotly)
@@ -863,9 +863,9 @@ plot_ly() %>%
   )
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 

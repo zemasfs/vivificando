@@ -8,9 +8,9 @@ title: "Matemática"
 
 ## Curvas para função exponencial *versus* logaritmo
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(plotly)
@@ -29,9 +29,9 @@ log_plot <- plot_ly(x = x_values, y = y_log, type = 'scatter', mode = 'markers+l
 subplot(exp_plot, log_plot, nrows = 1) %>%
   layout(title = "Exponencial vs Logarítmica", clickmode = 'event+select')
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(plotly)
@@ -51,9 +51,9 @@ subplot(exp_plot, log_plot, nrows = 1) %>%
   layout(title = "Exponencial vs Logarítmica", clickmode = 'event+select')
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -77,9 +77,9 @@ subplot(exp_plot, log_plot, nrows = 1) %>%
 
 ## Funções de 1o, 2o., e 3o. grau
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(plotly)
@@ -104,9 +104,9 @@ plot_ly() %>%
   )
 
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(plotly)
@@ -132,9 +132,9 @@ plot_ly() %>%
 
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -158,9 +158,9 @@ plot_ly() %>%
 
 ## Seno e Cosseno
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(plotly)
@@ -178,9 +178,9 @@ plot_ly() %>%
     showlegend = TRUE
   )
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(plotly)
@@ -199,9 +199,9 @@ plot_ly() %>%
   )
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -225,9 +225,9 @@ plot_ly() %>%
 
 ## Tendência central: média e mediana
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(plotly)
@@ -249,9 +249,9 @@ plot_ly() %>%
          yaxis = list(title = 'Frequência'),
          showlegend = TRUE)
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(plotly)
@@ -274,9 +274,9 @@ plot_ly() %>%
          showlegend = TRUE)
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -301,9 +301,9 @@ plot_ly() %>%
 
 ## Comparação: área superficial e volume de uma esfera (EM13MT05)
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(plotly)
@@ -317,9 +317,9 @@ plot_ly() %>%
     yaxis = list(title = 'Valor')
   )
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(plotly)
@@ -334,9 +334,9 @@ plot_ly() %>%
   )
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
@@ -362,9 +362,9 @@ y = 1:100 # aumenta o no. de pontos em 10 vezes
 
 ## Regressão linear (EM13MT10)
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 library(plotly)
@@ -392,9 +392,9 @@ plot_ly() %>%
     ))
   )
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(plotly)
@@ -423,9 +423,9 @@ plot_ly() %>%
   )
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 

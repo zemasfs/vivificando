@@ -2,9 +2,9 @@
 
 ## Efeito estufa e emissão de CO$_{2}$ (EM13CN09, EM13CHS104)
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
  library(plotly)
@@ -31,9 +31,9 @@
       xaxis = list(title = "Anos"),
       yaxis = list(title = "Diferença de temperatura, C"))
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
  library(plotly)
@@ -61,9 +61,9 @@
       yaxis = list(title = "Diferença de temperatura, C"))
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
