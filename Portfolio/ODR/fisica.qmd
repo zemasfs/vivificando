@@ -7,7 +7,7 @@ title: "Física"
 
 <div class="fis-fundo">  <!--modifica para cada área-->
 
-## Campo elétrico e distância
+## Campo elétrico e distância (EM13MAT305, EM13CNT302)
 
 <!-- ::: {.grid} -->
 
@@ -118,7 +118,7 @@ plot_ly(x = ~d, y = ~calcular_campo(Q_inicial, d), type = 'scatter', mode = 'lin
 
 <div class="fis-fundo">  <!--modifica para cada área-->
 
-## Movimento retilíneo uniformemente variado (MRUV)
+## Movimento retilíneo uniformemente variado - MRUV (EM13CNT203, EM13CNT204)
 
 <!-- ::: {.grid} -->
 
@@ -221,7 +221,7 @@ ggplot(dados_mruv, aes(x = Tempo, y = Posição, group = Aceleração)) +
 
 <div class="fis-fundo">  <!--modifica para cada área-->
 
-## Força gravitacional e distância
+## Força gravitacional e distância (EM13CNT401, EM13CNT402)
 
 <!-- ::: {.grid} -->
 
@@ -317,7 +317,7 @@ ggplot(dados_gravitacional, aes(x = Distância, y = Força, group = Massa)) +
 
 <div class="fis-fundo">  <!--modifica para cada área-->
 
-## 2a. Lei de Newton - massa e aceleração
+## 2a. Lei de Newton - massa e aceleração (EM13CNT202, EM13CNT203)
 
 <!-- ::: {.grid} -->
 
@@ -409,7 +409,7 @@ ggplot(dados_newton, aes(x = Aceleração, y = Força, group = Massa)) +
 
 <div class="fis-fundo">  <!--modifica para cada área-->
 
-## Lei de Ohm - resistância, potencial, e corrente
+## Lei de Ohm - resistância, potencial, e corrente (EM13CNT303, EM13CNT304)
 
 <!-- ::: {.grid} -->
 
@@ -507,7 +507,7 @@ p
 
 <div class="fis-fundo">  <!--modifica para cada área-->
 
-## Energia elétrica e consumo residencial
+## Energia elétrica e consumo residencial (EM13CNT405, EM13CNT306)
 
 <!-- ::: {.grid} -->
 
@@ -614,7 +614,7 @@ p
 
 <div class="fis-fundo">  <!--modifica para cada área-->
 
-## Conversão de temperatura - Celsius, Kelvin, e Fahrenheit
+## Conversão de temperatura - Celsius, Kelvin, e Fahrenheit (EM13MAT403, EM13CNT205)
 
 <!-- ::: {.grid} -->
 
@@ -707,7 +707,7 @@ p
 
 <div class="fis-fundo">  <!--modifica para cada área-->
 
-## Dilatação térmica - superficial, volumétrica, e de líquidos
+## Dilatação térmica - superficial, volumétrica, e de líquidos (EM13CNT304, EM13CNT305)
 
 <!-- ::: {.grid} -->
 

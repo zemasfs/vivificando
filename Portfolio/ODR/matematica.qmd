@@ -6,7 +6,7 @@ title: "Matemática"
 
 <div class="mat-fundo">  
 
-## Curvas para função exponencial *versus* logaritmo
+## Curvas para função exponencial *versus* logaritmo (EM13MAT401, EM13MAT402)
 
 <!-- ::: {.grid} -->
 
@@ -75,7 +75,7 @@ subplot(exp_plot, log_plot, nrows = 1) %>%
 
 <div class="mat-fundo">  <!--modifica para cada área-->
 
-## Funções de 1o, 2o., e 3o. grau
+## Funções de 1o, 2o., e 3o. grau (EM13MAT301, EM13MAT302)
 
 <!-- ::: {.grid} -->
 
@@ -156,7 +156,7 @@ plot_ly() %>%
 
 <div class="mat-fundo">  <!--modifica para cada área-->
 
-## Seno e Cosseno
+## Seno e Cosseno (EM13MAT409, EM13CIF301)
 
 <!-- ::: {.grid} -->
 
@@ -223,7 +223,7 @@ plot_ly() %>%
 
 <div class="mat-fundo">  <!--modifica para cada área-->
 
-## Tendência central: média e mediana
+## Tendência central: média e mediana (EM13MAT306, EM13MAT305)
 
 <!-- ::: {.grid} -->
 

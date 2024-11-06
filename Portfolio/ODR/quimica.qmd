@@ -7,7 +7,7 @@ title: "Química"
 
 <div class="quim-fundo">  <!--modifica para cada área-->
 
-## Lei dos Gases Ideais (EM13CNT101)
+## Lei dos Gases Ideais (EM13CNT101, EM13CNT204, EM13CNT205, EM13CNT207, EM13CNT303)
 
 ::: {.grid}
 
