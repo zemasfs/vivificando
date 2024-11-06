@@ -1,0 +1,38 @@
+<div class="quim-fundo">  <!--modifica para cada área-->
+
+## Título
+
+::: {.grid}
+
+::: {.g-col-6}
+
+```{r, echo=FALSE}
+
+```
+:::
+
+::: {.g-col-6}
+
+```{r, eval=FALSE, message=FALSE, warning=FALSE}
+
+```
+
+:::
+
+:::
+
+</div>
+
+<div class="quim-fundo2"> <!--modifica para cada área-->
+
+**Sugestões:**
+
+|       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
+
+```{r, eval =FALSE}
+
+```
+
+</div>
+
+\

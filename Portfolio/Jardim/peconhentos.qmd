@@ -2,7 +2,7 @@
 title: "Moléculas de animais peçonhentos"
 ---
 
-[![Alfa-bungarotoxina,as bungarotoxinas são um grupo de proteínas neurotóxicas intimamente relacionadas , pertencentes principalmente à superfamília das toxinas de três dedos , que são encontradas no veneno de cobras do gênero Bungarus , como Bungarus fasciatus e Bungarus multicinctus.](alfabungarotoxina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C[C@@H]1C[C@H]2[C@@H](C[C@]3([C@H](O2)C[C@H]4[C@H](O3)C(=CC(=O)O4)C)C)O[C@@H]5[C@@H]1O[C@H]6C[C@@H]7[C@](C[C@@H]8[C@@](O7)(C/C=C\[C@@H]9[C@@H](O8)C[C@@H]1[C@@H](O9)C[C@@H]2[C@@](O1)([C@H](C[C@@H](O2)CC(=C)C=O)O)C)C)(O[C@@]6(CC5)C)C)
+[![Alfa-bungarotoxina,as bungarotoxinas são um grupo de proteínas neurotóxicas intimamente relacionadas , pertencentes principalmente à superfamília das toxinas de três dedos , que são encontradas no veneno de cobras do gênero Bungarus , como Bungarus fasciatus e Bungarus multicinctus.](alfabungarotoxina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?&pdbid=1ik8)
 
 <p style="text-align:right;">
 [Wikipedia](https://gl.wikipedia.org/wiki/Bungarotoxina)

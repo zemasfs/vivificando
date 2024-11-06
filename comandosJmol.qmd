@@ -92,12 +92,18 @@ Os modelos moleculares são carregados a partir do banco de dados [Cactus - CADD
 
 ### Carregando biopolímeros (proteínas, enzimas, ácidos nucleicos) por linha de comando
 
-|       Como mecionado acima, o carregamento de macromoléculas biológicas dá-se por identificação de um código alfanumérico da mesma frente ao banco de dados [PDB-Protein Data Bank](https://www.rcsb.org/). Após obter esse código, o comando de carregamento é:
+|       Como mecionado acima, o carregamento de macromoléculas biológicas dá-se por identificação de um código alfanumérico da mesma frente ao banco de dados [PDB-Protein Data Bank](https://www.rcsb.org/). Após obter esse código, você poderá carregar o biopolímero pelo  *link online* ou pelo *Console*. Mas saiba que são instruções diferentes (e não me pergunte por quê?!):
 
 
 ```{r, eval=FALSE}
-load=XXXX # onde XXXX é o código da macromolécula110
+Pelo Console:
+  load=XXXX # onde XXXX é o código da macromolécula
 # Obs: Perceba que o sinal de "$" é trocado por "=" para o PDB
+
+Pelo link online:
+  pdbid=XXXX
+# Obs: Como para o link é mais "truquento", segue um exemplo completo para a bungarotoxina, um veneno proteico de serpentes:
+#      https://chemapps.stolaf.edu/jmol/jmol.php?&pdbid=1ik8
 ```
 
 

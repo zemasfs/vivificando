@@ -1,11 +1,10 @@
 ## Iniciativa {.unnumbered}
 
-|       Este material em elaboração pretende oferecer um conjunto de *gráficos e mapas, interativos e de animação*, para alguns tópicos encontrados em disciplinas do *ensino médio*. Os *objetos didáticos* utilizam pacotes interativos do *R*, principalmente o `plotly`. 
+|       Este material em elaboração pretende oferecer um conjunto de *gráficos e mapas, interativos e de animação*, para alguns tópicos encontrados em disciplinas do *ensino médio*. Esses *objetos didáticos* utilizam pacotes interativos do *R*, principalmente `plotly` e `gganimate`. 
 
 
-<!-- ### Equipe {.unnumbered} -->
+### Equipe {.unnumbered} 
 
-<!-- |       Bárbara Silveira Rodrigues (graduanda, Curso de Ciências da Computação, UNIFAL-MG) -->
-<!-- |       Prof. Dr. Gabriel Gerber Hornink -->
-<!-- |       Prof. Dr. Luiz Eduardo Silva -->
-<!-- |       Prof. Dr. José Maurício Schneedorf Ferreira da Silva -->
+|       Bárbara Silveira Rodrigues (Curso de Ciências da Computação, UNIFAL-MG)
+|       Prof. Dr. Gabriel Gerber Hornink (UNIFAL-MG)
+|       Prof. Dr. José Maurício Schneedorf Ferreira da Silva (UNIFAL-MG)

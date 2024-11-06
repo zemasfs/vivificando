@@ -611,10 +611,16 @@ window.Quarto = {
 </section>
 <section id="carregando-biopolímeros-proteínas-enzimas-ácidos-nucleicos-por-linha-de-comando" class="level3" data-number="1.2">
 <h3 data-number="1.2" class="anchored" data-anchor-id="carregando-biopolímeros-proteínas-enzimas-ácidos-nucleicos-por-linha-de-comando"><span class="header-section-number">1.2</span> Carregando biopolímeros (proteínas, enzimas, ácidos nucleicos) por linha de comando</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como mecionado acima, o carregamento de macromoléculas biológicas dá-se por identificação de um código alfanumérico da mesma frente ao banco de dados <a href="https://www.rcsb.org/">PDB-Protein Data Bank</a>. Após obter esse código, o comando de carregamento é:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como mecionado acima, o carregamento de macromoléculas biológicas dá-se por identificação de um código alfanumérico da mesma frente ao banco de dados <a href="https://www.rcsb.org/">PDB-Protein Data Bank</a>. Após obter esse código, você poderá carregar o biopolímero pelo <em>link online</em> ou pelo <em>Console</em>. Mas saiba que são instruções diferentes (e não me pergunte por quê?!):</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>load<span class="ot">=</span>XXXX <span class="co"># onde XXXX é o código da macromolécula110</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: Perceba que o sinal de "$" é trocado por "=" para o PDB</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Pelo Console<span class="sc">:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  load<span class="ot">=</span>XXXX <span class="co"># onde XXXX é o código da macromolécula</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: Perceba que o sinal de "$" é trocado por "=" para o PDB</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>Pelo link online<span class="sc">:</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  pdbid<span class="ot">=</span>XXXX</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: Como para o link é mais "truquento", segue um exemplo completo para a bungarotoxina, um veneno proteico de serpentes:</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#      https://chemapps.stolaf.edu/jmol/jmol.php?&amp;pdbid=1ik8</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Isso pode ser ilustrado por carregamento remoto da proteína espícula (<em>spike</em>) do vírus Sars-Cov-2, tal como segue:</div>
 <div class="cell">

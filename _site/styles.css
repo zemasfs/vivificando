@@ -50,6 +50,7 @@ body {
     border-left: 5px solid #2f58d0 /* Barra lateral  */
     border-radius: 5px;        /* Bordas arredondadas */
     margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
 }
 
 .fis-fundo {
@@ -58,6 +59,7 @@ body {
     border-left: 5px solid #44bbae; /* Barra lateral  */
     border-radius: 5px;        /* Bordas arredondadas */
     margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
 }
 
 .quim-fundo {
@@ -66,6 +68,7 @@ body {
     border-left: 5px solid #00FF7F; /* Barra lateral  */
     border-radius: 5px;        /* Bordas arredondadas */
     margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
 }
 
 
@@ -75,6 +78,7 @@ body {
     border-left: 5px solid #00ff98; /* Barra lateral  */
     border-radius: 5px;        /* Bordas arredondadas */
     margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
 }
 
 .hum-fundo {
@@ -83,6 +87,7 @@ body {
     border-left: 5px solid #e2d2d8; /* Barra lateral  */
     border-radius: 5px;        /* Bordas arredondadas */
     margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
 }
 
 .ling-fundo {
@@ -91,7 +96,77 @@ body {
     border-left: 5px solid #bf9ca9; /* Barra lateral  */
     border-radius: 5px;        /* Bordas arredondadas */
     margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+/* Cor de fundo para os quadros de sugestões para áreas e ODR*/
+
+.mat-fundo2 {
+  background-color: #E4F0FC; /* Azul Claro Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #2f58d0 /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+.fis-fundo2 {
+  background-color: #F0F7FC; /* Cinza Azulado Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #44bbae; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+.quim-fundo2 {
+   background-color: #F1FCE4 ; /* Fundo*/
+    padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #00FF7F; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+
+.biol-fundo2 {
+  background-color: #E8FCF2; /* Verde Menta Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #00ff98; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+.hum-fundo2 {
+  background-color: #FBF5ED; /* Bege Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #e2d2d8; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+.ling-fundo2 {
+  background-color: #F7EFFE; /* Lilás Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #bf9ca9; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
 }
 
 
 
+
+/* Imagem de fundo pra Introdução do Jardim 
+
+.planta-background {
+  background-image: url('Portfolio/Jardim/plantinhas.jpg'); /* Substitua pelo caminho da imagem */
+  background-size: cover; /* Cobre toda a área */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-position: center center; /* Centraliza a imagem */
+  opacity: 0.7; /* Define a transparência para ser discreto */
+  padding: 20px; /* Adiciona espaço ao redor do conteúdo */
+  border-radius: 10px; /* Bordas arredondadas, opcional */
+} 
