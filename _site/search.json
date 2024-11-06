@@ -111,9 +111,9 @@
   {
     "objectID": "Portfolio/ODR/biologia.html",
     "href": "Portfolio/ODR/biologia.html",
-    "title": "Biologia",
+    "title": "Ensino Reprodutível nas Escolas",
     "section": "",
-    "text": "Efeito estufa e emissão de CO\\(_{2}\\) (EM13CN09, EM13CHS104)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\nlibrary(magrittr)  # bibliotecas necessárias\n\n# 1) Obtendo os dados da internet\n\nurl &lt;- \"https://raw.githubusercontent.com/datasets/global-temp/refs/heads/main/data/annual.csv\" # define o link para os dados\ndados &lt;- read.csv(url)  # lê o arquivo dos dados\n\n# 2) Construindo o gráfico com animação \n\nplot_ly(dados, x = ~Year, y = ~Mean,\n        type = \"bar\", \n        marker = list(line = list(width = 10)),\n        frame = ~Year) %&gt;%\n  animation_opts(\n    frame = 150,           # Velocidade da animação\n    transition = 0,\n    redraw = TRUE\n  ) %&gt;%\n  layout(\n    title = \"Flutuação da temperatura global\",\n    xaxis = list(title = \"Anos\"),\n    yaxis = list(title = \"Diferença de temperatura, C\"))\n\n\n\n\n\n\n\n De volta ao topo"
+    "text": "library(plotly)\n  library(magrittr)  # bibliotecas necessárias\n  \n  # 1) Obtendo os dados da internet\n  \n  url &lt;- \"https://raw.githubusercontent.com/datasets/global-temp/refs/heads/main/data/annual.csv\" # define o link para os dados\n  dados &lt;- read.csv(url)  # lê o arquivo dos dados\n  \n  # 2) Construindo o gráfico com animação \n  \n  plot_ly(dados, x = ~Year, y = ~Mean,\n          type = \"bar\", \n          marker = list(line = list(width = 10)),\n          frame = ~Year) %&gt;%\n    animation_opts(\n      frame = 150,           # Velocidade da animação\n      transition = 0,\n      redraw = TRUE\n    ) %&gt;%\n    layout(\n      title = \"Flutuação da temperatura global\",\n      xaxis = list(title = \"Anos\"),\n      yaxis = list(title = \"Diferença de temperatura, C\"))"
   },
   {
     "objectID": "Portfolio/ODR/iniciativa_ODR.html",
@@ -1145,5 +1145,12 @@
       "Gráficos & Mapas interativos com `R`",
       "5 - Mais interatividade aos gráficos"
     ]
+  },
+  {
+    "objectID": "Portfolio/ODR/biologia.html#efeito-estufa-e-emissão-de-co_2-em13cn09-em13chs104",
+    "href": "Portfolio/ODR/biologia.html#efeito-estufa-e-emissão-de-co_2-em13cn09-em13chs104",
+    "title": "Ensino Reprodutível nas Escolas",
+    "section": "",
+    "text": "library(plotly)\n  library(magrittr)  # bibliotecas necessárias\n  \n  # 1) Obtendo os dados da internet\n  \n  url &lt;- \"https://raw.githubusercontent.com/datasets/global-temp/refs/heads/main/data/annual.csv\" # define o link para os dados\n  dados &lt;- read.csv(url)  # lê o arquivo dos dados\n  \n  # 2) Construindo o gráfico com animação \n  \n  plot_ly(dados, x = ~Year, y = ~Mean,\n          type = \"bar\", \n          marker = list(line = list(width = 10)),\n          frame = ~Year) %&gt;%\n    animation_opts(\n      frame = 150,           # Velocidade da animação\n      transition = 0,\n      redraw = TRUE\n    ) %&gt;%\n    layout(\n      title = \"Flutuação da temperatura global\",\n      xaxis = list(title = \"Anos\"),\n      yaxis = list(title = \"Diferença de temperatura, C\"))"
   }
 ]
