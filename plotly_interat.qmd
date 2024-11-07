@@ -281,13 +281,25 @@ plot_ly(x = r, y = AreaSup, z = Volume,
 
 |       Observe que o gráfico é interativo também sobre outros aspectos, como sua *rotação em qualquer dos 3 eixos*. Sob o ponto de vista de conteúdo, esse gráfico ilustra como que os valores de área superficial, e mais ainda de volume, são enormemente variados em função do raio de uma esfera. Isso também justifica em parte o grande sucesso do uso de *nanopartículas* em Ciência e Tecnologia nos dias atuais (alta área de superfície em tamanho reduzido).
 
+|       Outro gráfico tridimensional interessante é o de *superfície 3D*. Como o de cima, poucas linhas são necessárias para defini-lo. A diferença é que você pode trabalhar com uma *equação*,para a superfície, veja:
+
+```{r}
+x <- seq(-5, 5, length.out = 50)
+y <- seq(-5, 5, length.out = 50)
+z <- outer(x, y, function(x, y) x^2 - y^2) # equação x^2+y^2
+
+plot_ly(x = ~x, y = ~y, z = ~z, type = 'surface') %>%
+  layout(title = "Gráfico de Superfície")
+```
+
+
 |       Existem outros tipos de gráficos para o `plotly`, pelo que vale uma visitinha ao [website](https://plotly.com/r/) para mais informações.
 
 ## `Plotly` por comandos de mouse !!
 
 |       Ainda que esse treinamento insista nas vantagens de se utilizar linhas de comando ao invés de cliques de *mouse*, não podemos nos furtar de apresentar uma solução desse tipo para quem prefere o uso do recurso. Entre alguns aplicativos online, destacamos o [Plotly Chart Studio](https://chart-studio.plotly.com/create/) abaixo, que permite a construção de gráficos interativos variados com o pacote.
 
-![*Plotly Chart Studio*, um recurso para criação de gráficos e mapas interativos com `plotly`, mas com uso de cliques de *mouse* ao invés de linhas de comando.](chart_studio.png)
+[![*Plotly Chart Studio*, um recurso para criação de gráficos e mapas interativos com `plotly`, mas com uso de cliques de *mouse* ao invés de linhas de comando.](chart_studio.png)](https://chart-studio.plotly.com/create/)
 
 ## Referência do pacote:
 
