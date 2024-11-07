@@ -9,9 +9,9 @@ title: "Química"
 
 ## Lei dos Gases Ideais (EM13CNT101, EM13CNT204, EM13CNT205, EM13CNT207, EM13CNT303)
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 # Dados:
@@ -33,9 +33,9 @@ plot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines') %>%
     yaxis = list(title = "Pressão p, Pascal")
   )
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 # Dados:
@@ -58,9 +58,9 @@ plot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines') %>%
   )
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 

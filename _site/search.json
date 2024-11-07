@@ -92,7 +92,7 @@
     "href": "Portfolio/ODR/matematica.html#tendência-central-média-e-mediana-em13mat306-em13mat305",
     "title": "Matemática",
     "section": "4 Tendência central: média e mediana (EM13MAT306, EM13MAT305)",
-    "text": "4 Tendência central: média e mediana (EM13MAT306, EM13MAT305)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\n\n# Dados de exemplo\nset.seed(123)\ndata &lt;- rnorm(100, mean = 50, sd = 10)\n\n# Estatísticas\nmean_val &lt;- mean(data)\nmedian_val &lt;- median(data)\n\nplot_ly() %&gt;%\n  add_trace(x = data, type = 'histogram', name = 'Distribuição', opacity = 0.6) %&gt;%\n  add_trace(x = c(mean_val, mean_val), y = c(0, 15), mode = 'lines', name = 'Média', line = list(color = 'red')) %&gt;%\n  add_trace(x = c(median_val, median_val), y = c(0, 15), mode = 'lines', name = 'Mediana', line = list(color = 'blue')) %&gt;%\n  layout(title = 'Tendência Central',\n         xaxis = list(title = 'Valores'),\n         yaxis = list(title = 'Frequência'),\n         showlegend = TRUE)"
+    "text": "4 Tendência central: média e mediana (EM13MAT306, EM13MAT305)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\n\n# Dados de exemplo\nset.seed(123)\ndados &lt;- rnorm(100, mean = 50, sd = 10)\n\n# Estatísticas\nmedia_val &lt;- mean(dados)\nmediana_val &lt;- median(dados)\n\nplot_ly() %&gt;%\n  add_trace(x = dados, type = 'histogram', name = 'Distribuição', opacity = 0.6) %&gt;%\n  add_trace(x = c(media_val, media_val), y = c(0, 15), mode = 'lines', name = 'Média', line = list(color = 'red')) %&gt;%\n  add_trace(x = c(mediana_val, mediana_val), y = c(0, 15), mode = 'lines', name = 'Mediana', line = list(color = 'blue')) %&gt;%\n  layout(title = 'Tendência Central',\n         xaxis = list(title = 'Valores'),\n         yaxis = list(title = 'Frequência'),\n         showlegend = TRUE)"
   },
   {
     "objectID": "Portfolio/ODR/matematica.html#comparação-área-superficial-e-volume-de-uma-esfera-em13mt05",
@@ -102,25 +102,39 @@
     "text": "5 Comparação: área superficial e volume de uma esfera (EM13MT05)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\n\nplot_ly() %&gt;%\n  add_trace(x = 1:10, y = 4 * pi * (1:10)^2, mode = 'lines+markers', name = 'Superfície') %&gt;%\n  add_trace(x = 1:10, y = (4/3) * pi * (1:10)^3, mode = 'lines+markers', name = 'Volume') %&gt;%\n  layout(\n    title = 'Superfície e Volume de uma Esfera',\n    xaxis = list(title = 'Raio'), \n    yaxis = list(title = 'Valor')\n  )"
   },
   {
+    "objectID": "Portfolio/ODR/matematica.html#função-seno-e-ajuste-de-parâmetros-em13mat403-em13mat406-em13mat408",
+    "href": "Portfolio/ODR/matematica.html#função-seno-e-ajuste-de-parâmetros-em13mat403-em13mat406-em13mat408",
+    "title": "Matemática",
+    "section": "6 Função Seno e ajuste de parâmetros (EM13MAT403, EM13MAT406, EM13MAT408)",
+    "text": "6 Função Seno e ajuste de parâmetros (EM13MAT403, EM13MAT406, EM13MAT408)\n\n\n\n\n\n\n\n\n\n\n\n# Instalar os pacotes necessários\n# install.packages(\"plotly\")\n\nlibrary(plotly)\n\n# Geração de dados\nx &lt;- seq(0, 2 * pi, length.out = 500)\n\n# Função para gerar y com base no parâmetro a\nfunc &lt;- function(a, x) {\n  return(a * sin(x))\n}\n\n# Valores do parâmetro 'a' que irão variar\na_values &lt;- seq(0.5, 3, length.out = 30)\n\n# Criando um data frame com todos os valores de a e x para plotar\ndata &lt;- data.frame(\n  x = rep(x, times = length(a_values)),\n  y = unlist(lapply(a_values, function(a) func(a, x))),\n  a = rep(a_values, each = length(x))\n)\n\n# Criando o gráfico interativo com animação\nplot_ly(data, \n        x = ~x, \n        y = ~y, \n        frame = ~a, \n        type = 'scatter', \n        mode = 'lines') %&gt;%\n  layout(\n    title = \"Variação da função y = a * sin(x) com diferentes valores de a\",\n    xaxis = list(title = \"x\"),\n    yaxis = list(title = \"y\", range = c(-3, 3))\n  )"
+  },
+  {
     "objectID": "Portfolio/ODR/matematica.html#regressão-linear-em13mt10",
     "href": "Portfolio/ODR/matematica.html#regressão-linear-em13mt10",
     "title": "Matemática",
-    "section": "6 Regressão linear (EM13MT10)",
-    "text": "6 Regressão linear (EM13MT10)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\n\ndados &lt;- function(ruido_func) {\n  set.seed(123)\n  x &lt;- seq(0, 5, length.out = 50)\n  desvio &lt;- 2 * x + 5 + rnorm(50, 0, ruido_func)\n  y_esperado &lt;- predict(lm(desvio ~ x), data.frame(x = x))\n  list(x = x, desvio = desvio, y_esperado = y_esperado)\n}\n\nplot_ly() %&gt;%\n  add_trace(x = dados(1)$x, y = dados(1)$desvio, mode = 'markers', type = \"scatter\", name = \"Dados\") %&gt;%\n  add_trace(x = dados(1)$x, y = dados(1)$y_esperado, mode = 'lines', type = \"scatter\", name = \"Linha de Regressão\") %&gt;%\n  layout(\n    title = 'Regressão Linear',\n    xaxis = list(title = 'X'), yaxis = list(title = 'Y'),\n    sliders = list(list(\n      currentvalue = list(prefix = \"Desvio: \"),\n      steps = lapply(seq(0, 5, 1), function(sd_value) {\n        list(label = as.character(sd_value),\n             args = list(list(y = list(dados(sd_value)$desvio, dados(sd_value)$y_esperado))))\n      })\n    ))\n  )"
+    "section": "7 Regressão linear (EM13MT10)",
+    "text": "7 Regressão linear (EM13MT10)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\n\ndados &lt;- function(ruido_func) {\n  set.seed(123)\n  x &lt;- seq(0, 5, length.out = 50)\n  desvio &lt;- 2 * x + 5 + rnorm(50, 0, ruido_func)\n  y_esperado &lt;- predict(lm(desvio ~ x), data.frame(x = x))\n  list(x = x, desvio = desvio, y_esperado = y_esperado)\n}\n\nplot_ly() %&gt;%\n  add_trace(x = dados(1)$x, y = dados(1)$desvio, mode = 'markers', type = \"scatter\", name = \"Dados\") %&gt;%\n  add_trace(x = dados(1)$x, y = dados(1)$y_esperado, mode = 'lines', type = \"scatter\", name = \"Linha de Regressão\") %&gt;%\n  layout(\n    title = 'Regressão Linear',\n    xaxis = list(title = 'X'), yaxis = list(title = 'Y'),\n    sliders = list(list(\n      currentvalue = list(prefix = \"Desvio: \"),\n      steps = lapply(seq(0, 5, 1), function(sd_value) {\n        list(label = as.character(sd_value),\n             args = list(list(y = list(dados(sd_value)$desvio, dados(sd_value)$y_esperado))))\n      })\n    ))\n  )"
   },
   {
     "objectID": "Portfolio/ODR/biologia.html",
     "href": "Portfolio/ODR/biologia.html",
-    "title": "Ensino Reprodutível nas Escolas",
+    "title": "Biologia",
     "section": "",
-    "text": "library(plotly)\n  library(magrittr)  # bibliotecas necessárias\n  \n  # 1) Obtendo os dados da internet\n  \n  url &lt;- \"https://raw.githubusercontent.com/datasets/global-temp/refs/heads/main/data/annual.csv\" # define o link para os dados\n  dados &lt;- read.csv(url)  # lê o arquivo dos dados\n  \n  # 2) Construindo o gráfico com animação \n  \n  plot_ly(dados, x = ~Year, y = ~Mean,\n          type = \"bar\", \n          marker = list(line = list(width = 10)),\n          frame = ~Year) %&gt;%\n    animation_opts(\n      frame = 150,           # Velocidade da animação\n      transition = 0,\n      redraw = TRUE\n    ) %&gt;%\n    layout(\n      title = \"Flutuação da temperatura global\",\n      xaxis = list(title = \"Anos\"),\n      yaxis = list(title = \"Diferença de temperatura, C\"))"
+    "text": "url &lt;- \"https://raw.githubusercontent.com/wcota/covid19br/refs/heads/master/cases-brazil-cities.csv\" # define o link para os dados\ndados &lt;- read.csv(url)  # lê o arquivo dos dados\n\n\np &lt;- plot_ly(\n  dados,\n  x = ~totalCases,\n  y = ~deaths,\n  color = ~state,\n  frame = ~state,          # Frame para a animação por ano\n  text = ~city,\n  hoverinfo = \"text\",\n  type = 'scatter',\n  mode = 'markers',\n  marker = list(sizemode = 'diameter', opacity = 0.7)\n) %&gt;%\n  layout(\n    title = \"Mortes por COVID-19 no Brasil (atualização de 2023)\",\n    xaxis = list(title = \"total de casos\", type = \"log\"),\n    yaxis = list(title = \"Mortes\", type = \"log\"),\n    showlegend = FALSE\n  ) %&gt;%\n  animation_opts(\n    frame = 500,           # Velocidade da animação\n    transition = 0,\n    redraw = FALSE\n  )\np"
   },
   {
-    "objectID": "Portfolio/ODR/biologia.html#efeito-estufa-e-emissão-de-co_2-em13cn09-em13chs104",
-    "href": "Portfolio/ODR/biologia.html#efeito-estufa-e-emissão-de-co_2-em13cn09-em13chs104",
-    "title": "Ensino Reprodutível nas Escolas",
+    "objectID": "Portfolio/ODR/biologia.html#mortes-por-covid-19-no-brasil-e-total-de-casos-por-estado---atualização-de-2023-em13mat406-em13cnt303-em13chs101",
+    "href": "Portfolio/ODR/biologia.html#mortes-por-covid-19-no-brasil-e-total-de-casos-por-estado---atualização-de-2023-em13mat406-em13cnt303-em13chs101",
+    "title": "Biologia",
     "section": "",
-    "text": "library(plotly)\n  library(magrittr)  # bibliotecas necessárias\n  \n  # 1) Obtendo os dados da internet\n  \n  url &lt;- \"https://raw.githubusercontent.com/datasets/global-temp/refs/heads/main/data/annual.csv\" # define o link para os dados\n  dados &lt;- read.csv(url)  # lê o arquivo dos dados\n  \n  # 2) Construindo o gráfico com animação \n  \n  plot_ly(dados, x = ~Year, y = ~Mean,\n          type = \"bar\", \n          marker = list(line = list(width = 10)),\n          frame = ~Year) %&gt;%\n    animation_opts(\n      frame = 150,           # Velocidade da animação\n      transition = 0,\n      redraw = TRUE\n    ) %&gt;%\n    layout(\n      title = \"Flutuação da temperatura global\",\n      xaxis = list(title = \"Anos\"),\n      yaxis = list(title = \"Diferença de temperatura, C\"))"
+    "text": "url &lt;- \"https://raw.githubusercontent.com/wcota/covid19br/refs/heads/master/cases-brazil-cities.csv\" # define o link para os dados\ndados &lt;- read.csv(url)  # lê o arquivo dos dados\n\n\np &lt;- plot_ly(\n  dados,\n  x = ~totalCases,\n  y = ~deaths,\n  color = ~state,\n  frame = ~state,          # Frame para a animação por ano\n  text = ~city,\n  hoverinfo = \"text\",\n  type = 'scatter',\n  mode = 'markers',\n  marker = list(sizemode = 'diameter', opacity = 0.7)\n) %&gt;%\n  layout(\n    title = \"Mortes por COVID-19 no Brasil (atualização de 2023)\",\n    xaxis = list(title = \"total de casos\", type = \"log\"),\n    yaxis = list(title = \"Mortes\", type = \"log\"),\n    showlegend = FALSE\n  ) %&gt;%\n  animation_opts(\n    frame = 500,           # Velocidade da animação\n    transition = 0,\n    redraw = FALSE\n  )\np"
+  },
+  {
+    "objectID": "Portfolio/ODR/biologia.html#taxa-de-fotossíntese-com-variação-da-intensidade-luminosa-em13cnt101-em13cnt102",
+    "href": "Portfolio/ODR/biologia.html#taxa-de-fotossíntese-com-variação-da-intensidade-luminosa-em13cnt101-em13cnt102",
+    "title": "Biologia",
+    "section": "2 Taxa de fotossíntese com variação da intensidade luminosa (EM13CNT101, EM13CNT102)",
+    "text": "2 Taxa de fotossíntese com variação da intensidade luminosa (EM13CNT101, EM13CNT102)\n      Esses parâmetros definem uma relação hiperbólica, e que pode ser linearizada (gráfico duplo-recíproco).\n\n\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\nlibrary(crosstalk)\n\n# Criar alguns dados de exemplo\n\nx = 1:20 # Intensidade luminosa (x) variando de 0 a 20\ny = 10*x/(0.5+x)  # taxa de fotossíntese (y) usando a função y = a * x / (b + x)\n\n# Construindo o dataset\ndados &lt;- data.frame(x,y,\n                    grupo = sample(c(\"A\", \"B\")))\n\n# Criando uma comunicação cruzada entre gráfics (crosstalk shared data frame)\nshared_data &lt;- SharedData$new(dados)\n\n# Criando o primeiro gráfico\np1 &lt;- plot_ly(shared_data, x = ~x, y = ~y, color = ~grupo, type = \"scatter\", size=5, mode = \"markers\") %&gt;%\n  layout(title = \"Gráfico 1\") %&gt;%\n  highlight()\n\n# Criando o segundo gráfico\np2 &lt;- plot_ly(shared_data, x = ~1/x, y = ~1/y, color = \"orange\", type = \"scatter\", size= 5, mode = \"markers\") %&gt;%\n  layout(title = \"Taxa de fotossíntese com intensidade luminosa - gráfico regular e duplo-recíproco\") %&gt;%\n  highlight()\n\n# Organizar os gráficos lado a lado\nsubplot(p1, p2)"
   },
   {
     "objectID": "Portfolio/ODR/iniciativa_ODR.html",
@@ -725,11 +739,23 @@
     ]
   },
   {
+    "objectID": "plotly_interat.html#plotly-por-comandos-de-mouse",
+    "href": "plotly_interat.html#plotly-por-comandos-de-mouse",
+    "title": "Construindo gráficos interativos com plotly",
+    "section": "6 Plotly por comandos de mouse !!",
+    "text": "6 Plotly por comandos de mouse !!\n      Ainda que esse treinamento insista nas vantagens de se utilizar linhas de comando ao invés de cliques de mouse, não podemos nos furtar de apresentar uma solução desse tipo para quem prefere o uso do recurso. Entre alguns aplicativos online, destacamos o Plotly Chart Studio abaixo, que permite a construção de gráficos interativos variados com o pacote.\n\n\n\nPlotly Chart Studio, um recurso para criação de gráficos e mapas interativos com plotly, mas com uso de cliques de mouse ao invés de linhas de comando.",
+    "crumbs": [
+      "Contato",
+      "Gráficos & Mapas interativos com `R`",
+      "4 - Gráficos interativos com `plotly`"
+    ]
+  },
+  {
     "objectID": "plotly_interat.html#referência-do-pacote",
     "href": "plotly_interat.html#referência-do-pacote",
     "title": "Construindo gráficos interativos com plotly",
-    "section": "6 Referência do pacote:",
-    "text": "6 Referência do pacote:\n\nGeral\nManual\nTutorial",
+    "section": "7 Referência do pacote:",
+    "text": "7 Referência do pacote:\n\nGeral\nManual\nTutorial",
     "crumbs": [
       "Contato",
       "Gráficos & Mapas interativos com `R`",
@@ -1041,9 +1067,58 @@
   {
     "objectID": "Portfolio/ODR/humanas.html",
     "href": "Portfolio/ODR/humanas.html",
-    "title": "Ensino Reprodutível nas Escolas",
+    "title": "Humanas",
     "section": "",
-    "text": "Expectativa de vida versus PIB\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo"
+    "text": "url &lt;- \"https://raw.githubusercontent.com/turicas/rows/refs/heads/develop/examples/data/brazilian-cities.csv\" # define o link para os dados\ndados &lt;- read.csv(url)  # lê o arquivo dos dados\n\nlibrary(plotly)\nplot_ly(dados, x = ~area, y = ~inhabitants,\n        type = \"scatter\", \n        mode = 'markers',\n        marker = list(line = list(width = 1)),\n        text = ~paste(\"Cidade: \", city, \"&lt;br&gt;Estado: \", state),  # Texto no hover\n        hoverinfo = 'text',           # Mostrar apenas o texto definido\n        frame = ~state)%&gt;%\n  layout(\n    title = \"Distribuição de área e população em cidades brasileiras\",\n    xaxis = list(title = \"Estados\", type = \"log\"),\n    yaxis = list(title = \"População\", type = \"log\"),\n    showlegend = FALSE\n  ) %&gt;%\n  animation_opts(\n    frame = 500,           # Velocidade da animação\n    transition = 0,\n    redraw = FALSE\n  )"
+  },
+  {
+    "objectID": "Portfolio/ODR/humanas.html#relação-de-área-e-população-em-municípios-brasileiros-em13mat405-em13mat407-em13chs101-em13chs104-em13cnt301",
+    "href": "Portfolio/ODR/humanas.html#relação-de-área-e-população-em-municípios-brasileiros-em13mat405-em13mat407-em13chs101-em13chs104-em13cnt301",
+    "title": "Humanas",
+    "section": "",
+    "text": "url &lt;- \"https://raw.githubusercontent.com/turicas/rows/refs/heads/develop/examples/data/brazilian-cities.csv\" # define o link para os dados\ndados &lt;- read.csv(url)  # lê o arquivo dos dados\n\nlibrary(plotly)\nplot_ly(dados, x = ~area, y = ~inhabitants,\n        type = \"scatter\", \n        mode = 'markers',\n        marker = list(line = list(width = 1)),\n        text = ~paste(\"Cidade: \", city, \"&lt;br&gt;Estado: \", state),  # Texto no hover\n        hoverinfo = 'text',           # Mostrar apenas o texto definido\n        frame = ~state)%&gt;%\n  layout(\n    title = \"Distribuição de área e população em cidades brasileiras\",\n    xaxis = list(title = \"Estados\", type = \"log\"),\n    yaxis = list(title = \"População\", type = \"log\"),\n    showlegend = FALSE\n  ) %&gt;%\n  animation_opts(\n    frame = 500,           # Velocidade da animação\n    transition = 0,\n    redraw = FALSE\n  )"
+  },
+  {
+    "objectID": "Portfolio/ODR/humanas.html#consumo-populacional-de-álcool-em-2010-em13chs301-em13cnt205",
+    "href": "Portfolio/ODR/humanas.html#consumo-populacional-de-álcool-em-2010-em13chs301-em13cnt205",
+    "title": "Humanas",
+    "section": "2 Consumo populacional de álcool em 2010 (EM13CHS301, EM13CNT205)",
+    "text": "2 Consumo populacional de álcool em 2010 (EM13CHS301, EM13CNT205)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\n\n# Exemplo de dataframe com valores fictícios\ndf &lt;- read.csv(\"https://raw.githubusercontent.com/plotly/datasets/refs/heads/master/2010_alcohol_consumption_by_country.csv\")\n\n# Criando o mapa choropleth com a escala de cores ajustada\nplot_ly(\n  data = df,\n  locations = ~location,\n  locationmode = \"country names\",\n  z = ~alcohol, # Variável que determina as cores\n  type = \"choropleth\",\n  colorscale = \"Viridis\") # outras escalas: # outras escalas: RdBu, Inferno, Blues, Cividis, Greens, ..."
+  },
+  {
+    "objectID": "Portfolio/ODR/humanas.html#efeito-estufa-e-emissão-de-co_2-no-brasil-em13cn09-em13chs104",
+    "href": "Portfolio/ODR/humanas.html#efeito-estufa-e-emissão-de-co_2-no-brasil-em13cn09-em13chs104",
+    "title": "Humanas",
+    "section": "3 Efeito estufa e emissão de CO\\(_{2}\\) no Brasil (EM13CN09, EM13CHS104)",
+    "text": "3 Efeito estufa e emissão de CO\\(_{2}\\) no Brasil (EM13CN09, EM13CHS104)\n\n\n\n\n\n\n\n\n\n\n\n library(plotly)\n  library(magrittr)  # bibliotecas necessárias\n  \n  # 1) Obtendo os dados da internet\n  \n  url &lt;- \"https://raw.githubusercontent.com/datasets/global-temp/refs/heads/main/data/annual.csv\" # define o link para os dados\n  dados &lt;- read.csv(url)  # lê o arquivo dos dados\n  \n  # 2) Construindo o gráfico com animação \n  \n  plot_ly(dados, x = ~Year, y = ~Mean,\n          type = \"bar\", \n          marker = list(line = list(width = 10)),\n          frame = ~Year) %&gt;%\n    animation_opts(\n      frame = 150,           # Velocidade da animação\n      transition = 0,\n      redraw = TRUE\n    ) %&gt;%\n    layout(\n      title = \"Flutuação da temperatura global\",\n      xaxis = list(title = \"Anos\"),\n      yaxis = list(title = \"Diferença de temperatura, C\"))"
+  },
+  {
+    "objectID": "Portfolio/ODR/humanas.html#produção-global-de-óleos-em-2014-em-terawatts",
+    "href": "Portfolio/ODR/humanas.html#produção-global-de-óleos-em-2014-em-terawatts",
+    "title": "Humanas",
+    "section": "4 Produção global de óleos em 2014 (em teraWatts)",
+    "text": "4 Produção global de óleos em 2014 (em teraWatts)\n      Obs: Petróleo bruto, óleo de xisto, areias betuminosas, condensados, e líquidos de gás natural- etano, GLP e nafta separados da produção de gás natural."
+  },
+  {
+    "objectID": "Portfolio/ODR/humanas.html#aquecimento-global-em13cn03-em13cn09-em13chs105-em13chs205",
+    "href": "Portfolio/ODR/humanas.html#aquecimento-global-em13cn03-em13cn09-em13chs105-em13chs205",
+    "title": "Humanas",
+    "section": "5 Aquecimento Global (EM13CN03, EM13CN09, EM13CHS105, EM13CHS205)",
+    "text": "5 Aquecimento Global (EM13CN03, EM13CN09, EM13CHS105, EM13CHS205)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\nlibrary(magrittr)  # bibliotecas necessárias\n\n# 1) Obtendo os dados da internet\n\nurl &lt;- \"https://raw.githubusercontent.com/datasets/global-temp/refs/heads/main/data/annual.csv\" # define o link para os dados\ndados &lt;- read.csv(url)  # lê o arquivo dos dados\n\n# 2) Construindo o gráfico com animação \n\nplot_ly(dados, x = ~Year, y = ~Mean,\n        type = \"bar\", \n        marker = list(line = list(width = 10)),\n        frame = ~Year) %&gt;%\n  animation_opts(\n    frame = 150,           # Velocidade da animação\n    transition = 0,\n    redraw = TRUE\n  ) %&gt;%\n  layout(\n    title = \"Flutuação da temperatura global\",\n    xaxis = list(title = \"Anos\"),\n    yaxis = list(title = \"Diferença de temperatura, C\"))"
+  },
+  {
+    "objectID": "Portfolio/ODR/humanas.html#expectativa-de-vida-e-produto-interno-bruto---pib-1956-a-2007-em13chs101-em13chs104-em13mat405-em13mat410",
+    "href": "Portfolio/ODR/humanas.html#expectativa-de-vida-e-produto-interno-bruto---pib-1956-a-2007-em13chs101-em13chs104-em13mat405-em13mat410",
+    "title": "Humanas",
+    "section": "6 Expectativa de vida e Produto Interno Bruto - PIB, 1956 a 2007 (EM13CHS101, EM13CHS104, EM13MAT405, EM13MAT410)",
+    "text": "6 Expectativa de vida e Produto Interno Bruto - PIB, 1956 a 2007 (EM13CHS101, EM13CHS104, EM13MAT405, EM13MAT410)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\n\n# Obtendo os dados na internet\nurl &lt;- read.csv(\"https://raw.githubusercontent.com/kirenz/datasets/refs/heads/master/gapminder.csv\")\n\ndadosExpVida &lt;- url  # atribuindo os dados a um objeto do `R`\n\n# Criando o gráfico interativo com animação\nplot_ly(\n  dadosExpVida, # dados convertidos da internet\n  x = ~gdpPercap, # renda per capita\n  y = ~lifeExp, # expectativa de vida\n  size = ~pop, # tamanho dos pontos em função da população\n  color = ~country, # cor dos pontos em função do país\n  frame = ~year,    # Frame para a animação por ano de coleta dos dados\n  text = ~continent,  # País como informação ao passar o mouse\n  hoverinfo = \"text\",\n  type = 'scatter', # tipo de gráfico\n  mode = 'markers',\n  marker = list(sizemode = 'diameter', opacity = 0.7)\n) %&gt;%\n  layout(  # atribuição de título e etiquetas dos eixos\n    title = \"Produto interno bruto X Expectativa de vida\",\n    xaxis = list(title = \"PIB (log), US$\", type = \"log\"),\n    yaxis = list(title = \"Expectativa de Vida, anos\"),\n    showlegend = TRUE # possibilidade ou não de aparecer a legenda\n  ) %&gt;%\n  animation_opts(\n    frame = 1000,           # Velocidade da animação\n    transition = 0,\n    redraw = TRUE\n  )"
+  },
+  {
+    "objectID": "Portfolio/ODR/humanas.html#queda-de-meteoritos-na-terra---1800-a-2013-em13chs101-em13cnt303-em13cnt301",
+    "href": "Portfolio/ODR/humanas.html#queda-de-meteoritos-na-terra---1800-a-2013-em13chs101-em13cnt303-em13cnt301",
+    "title": "Humanas",
+    "section": "7 Queda de meteoritos na Terra - 1800 a 2013 (EM13CHS101, EM13CNT303, EM13CNT301)",
+    "text": "7 Queda de meteoritos na Terra - 1800 a 2013 (EM13CHS101, EM13CNT303, EM13CNT301)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\nlibrary(plotly)\nlibrary(dplyr)\nlibrary(maps)\n\nmeteoritos &lt;- readr::read_csv(\"https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv\")\n\noptions(scipen = 999) \n\nmeteoritos_Mundo &lt;- meteoritos %&gt;%\n  filter(fall == \"Fell\") %&gt;%\n  filter(year &gt; 1800) %&gt;%\n  # drop_na() %&gt;%\n  arrange(mass)\n\n# Carregar o mapa do mundo\nworld &lt;- map_data(\"world\")\n\nmapa_animado &lt;- world %&gt;%\n  ggplot() +\n  geom_polygon(aes( x= long, y = lat, group = group),\n               fill = \"grey20\",\n               color = \"white\",\n               size = 0.01) +\n  geom_point(data= meteoritos_Mundo, \n             aes(x = long, \n                 y = lat, \n                 frame = year,\n                 size = mass),\n             color = \"orange\",\n             alpha = 0.7) +\n  labs( title = \"Queda de meteoritos -  1800 a 2013}\",\n        caption = \"The Meteoritical Society\") +\n  # theme_map() +\n  scale_size_continuous(guide = F) +\n  scale_color_discrete(name = \"Type\") +\n  theme(plot.title = element_text(size = 10, hjust = 0.5))\n\n\nfig_2 &lt;- ggplotly(mapa_animado) %&gt;% animation_slider(currentvalue = list(prefix = \"Year \", font = list(color=\"orange\"))) \n\nfig_2"
   },
   {
     "objectID": "Portfolio/ODR/fisica.html",
@@ -1116,6 +1191,13 @@
     "text": "9 Corrente Alternada - Capacitor (EM13CNT202)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\n\n# Valores de x\nx &lt;- seq(0, 5 * pi, length.out = 100)\n\nplot_ly() %&gt;%\n  add_trace(x = x, y = sin(x), mode = 'lines', name = 'Potencial') %&gt;%\n  add_trace(x = 1.4*x, y = 0.9*cos(x)-0.4, mode = 'lines', name = 'Corrente') %&gt;%\n  layout(\n    title = 'Tensão e Corrente num Capacitor',\n    xaxis = list(title = 'Ângulo (radianos)', range=c(0,15)), \n    yaxis = list(title = 'Valor'),\n    showlegend = TRUE\n  )"
   },
   {
+    "objectID": "Portfolio/ODR/fisica.html#rendimento-de-máquina-térmica-em-função-da-temperatura-em13cnt102-em13cnt103",
+    "href": "Portfolio/ODR/fisica.html#rendimento-de-máquina-térmica-em-função-da-temperatura-em13cnt102-em13cnt103",
+    "title": "Física",
+    "section": "10 Rendimento de máquina térmica em função da temperatura (EM13CNT102, EM13CNT103)",
+    "text": "10 Rendimento de máquina térmica em função da temperatura (EM13CNT102, EM13CNT103)\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\nlibrary(plotly)\n\n# Função para gerar os dados e o gráfico com base na temperatura de meia-eficiência (ou temperatura de saturação)\ngenerate_plot_data &lt;- function(b) {\n  a &lt;- 1 # rendimento máximo da máquina térmica\n  x &lt;- seq(0, 300, length.out = 100) # faixa de temperatura\n  y &lt;- a * x / (b + x) # equação que relaciona a temperatura ao rendimento (máximo = 1)\n  data.frame(x, y)\n}\n\n# Inicialize o gráfico com b = 1\ninitial_b &lt;- 1 # valor inicial de b (temperatura de meia-saturação)\nplot_data &lt;- generate_plot_data(initial_b)\n\n# Criando o gráfico inicial usando o pacote ggplot2\np &lt;- ggplot(plot_data, aes(x = x, y = y)) +\n  geom_line() +\n  labs(title = paste(\"Rendimento de uma máquina térmica em função da temperatura\"),\n       x = \"Temperatura (C)\",\n       y = \"Fração de Rendimento\") +\n  theme_minimal() +\n  ylim(0, 1)\n\n# Convertendo para um objeto plotly\nfig &lt;- ggplotly(p)\n\n# Definindo os passos para o slider\nsteps &lt;- lapply(seq(0, 100, by = 10), function(b) {\n  list(\n    label = as.character(b),\n    method = \"restyle\",\n    args = list(\n      list(\n        x = list(generate_plot_data(b)$x),\n        y = list(generate_plot_data(b)$y)\n      ),\n      list(title = paste(\"Rendimento em função do valor de meia-saturação:\", b))\n    )\n  )\n})\n\n# Adicionando o slider para o parâmetro 'b' (temperatura de meia-saturação)\nfig &lt;- fig %&gt;%\n  layout(\n    sliders = list(\n      list(\n        active = 0,\n        currentvalue = list(prefix = \"Meia-Saturação: \"),\n        steps = steps\n      )\n    )\n  )\n\n# Visualize o gráfico\nfig"
+  },
+  {
     "objectID": "Portfolio/ODR/quimica.html",
     "href": "Portfolio/ODR/quimica.html",
     "title": "Química",
@@ -1123,8 +1205,8 @@
     "text": "# Dados:\nR = 8.314 # J/(mol*K), constante geral dos gases ideias\nV = seq(0,22.4, length.out=50)  # vetor de \"Volume\" (em litros), com 50 pontos\nT = 298 # K, temperatura absoluta\n\n\n# Equação\n# pV = RT; p = RT/V\np = R*T/V\n\nlibrary(plotly)\nlibrary(magrittr) # biblioteca para o operador pipe \"%&gt;%\"\nplot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines') %&gt;%\n  layout(\n    title = \"Transformação Isotérmica de um Gás\",\n    xaxis = list(title = \"Volume V, L\", range=c(-1,24)),\n    yaxis = list(title = \"Pressão p, Pascal\")\n  )"
   },
   {
-    "objectID": "Portfolio/ODR/quimica.html#lei-dos-gases-ideais-em13cnt101",
-    "href": "Portfolio/ODR/quimica.html#lei-dos-gases-ideais-em13cnt101",
+    "objectID": "Portfolio/ODR/quimica.html#lei-dos-gases-ideais-em13cnt101-em13cnt204-em13cnt205-em13cnt207-em13cnt303",
+    "href": "Portfolio/ODR/quimica.html#lei-dos-gases-ideais-em13cnt101-em13cnt204-em13cnt205-em13cnt207-em13cnt303",
     "title": "Química",
     "section": "",
     "text": "# Dados:\nR = 8.314 # J/(mol*K), constante geral dos gases ideias\nV = seq(0,22.4, length.out=50)  # vetor de \"Volume\" (em litros), com 50 pontos\nT = 298 # K, temperatura absoluta\n\n\n# Equação\n# pV = RT; p = RT/V\np = R*T/V\n\nlibrary(plotly)\nlibrary(magrittr) # biblioteca para o operador pipe \"%&gt;%\"\nplot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines') %&gt;%\n  layout(\n    title = \"Transformação Isotérmica de um Gás\",\n    xaxis = list(title = \"Volume V, L\", range=c(-1,24)),\n    yaxis = list(title = \"Pressão p, Pascal\")\n  )"
@@ -1152,12 +1234,5 @@
       "Gráficos & Mapas interativos com `R`",
       "5 - Mais interatividade aos gráficos"
     ]
-  },
-  {
-    "objectID": "Portfolio/ODR/quimica.html#lei-dos-gases-ideais-em13cnt101-em13cnt204-em13cnt205-em13cnt207-em13cnt303",
-    "href": "Portfolio/ODR/quimica.html#lei-dos-gases-ideais-em13cnt101-em13cnt204-em13cnt205-em13cnt207-em13cnt303",
-    "title": "Química",
-    "section": "",
-    "text": "# Dados:\nR = 8.314 # J/(mol*K), constante geral dos gases ideias\nV = seq(0,22.4, length.out=50)  # vetor de \"Volume\" (em litros), com 50 pontos\nT = 298 # K, temperatura absoluta\n\n\n# Equação\n# pV = RT; p = RT/V\np = R*T/V\n\nlibrary(plotly)\nlibrary(magrittr) # biblioteca para o operador pipe \"%&gt;%\"\nplot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines') %&gt;%\n  layout(\n    title = \"Transformação Isotérmica de um Gás\",\n    xaxis = list(title = \"Volume V, L\", range=c(-1,24)),\n    yaxis = list(title = \"Pressão p, Pascal\")\n  )"
   }
 ]

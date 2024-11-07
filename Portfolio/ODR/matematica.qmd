@@ -234,16 +234,16 @@ library(plotly)
 
 # Dados de exemplo
 set.seed(123)
-data <- rnorm(100, mean = 50, sd = 10)
+dados <- rnorm(100, mean = 50, sd = 10)
 
 # Estatísticas
-mean_val <- mean(data)
-median_val <- median(data)
+media_val <- mean(dados)
+mediana_val <- median(dados)
 
 plot_ly() %>%
-  add_trace(x = data, type = 'histogram', name = 'Distribuição', opacity = 0.6) %>%
-  add_trace(x = c(mean_val, mean_val), y = c(0, 15), mode = 'lines', name = 'Média', line = list(color = 'red')) %>%
-  add_trace(x = c(median_val, median_val), y = c(0, 15), mode = 'lines', name = 'Mediana', line = list(color = 'blue')) %>%
+  add_trace(x = dados, type = 'histogram', name = 'Distribuição', opacity = 0.6) %>%
+  add_trace(x = c(media_val, media_val), y = c(0, 15), mode = 'lines', name = 'Média', line = list(color = 'red')) %>%
+  add_trace(x = c(mediana_val, mediana_val), y = c(0, 15), mode = 'lines', name = 'Mediana', line = list(color = 'blue')) %>%
   layout(title = 'Tendência Central',
          xaxis = list(title = 'Valores'),
          yaxis = list(title = 'Frequência'),
@@ -258,16 +258,16 @@ library(plotly)
 
 # Dados de exemplo
 set.seed(123)
-data <- rnorm(100, mean = 50, sd = 10)
+dados <- rnorm(100, mean = 50, sd = 10)
 
 # Estatísticas
-mean_val <- mean(data)
-median_val <- median(data)
+media_val <- mean(dados)
+mediana_val <- median(dados)
 
 plot_ly() %>%
-  add_trace(x = data, type = 'histogram', name = 'Distribuição', opacity = 0.6) %>%
-  add_trace(x = c(mean_val, mean_val), y = c(0, 15), mode = 'lines', name = 'Média', line = list(color = 'red')) %>%
-  add_trace(x = c(median_val, median_val), y = c(0, 15), mode = 'lines', name = 'Mediana', line = list(color = 'blue')) %>%
+  add_trace(x = dados, type = 'histogram', name = 'Distribuição', opacity = 0.6) %>%
+  add_trace(x = c(media_val, media_val), y = c(0, 15), mode = 'lines', name = 'Média', line = list(color = 'red')) %>%
+  add_trace(x = c(mediana_val, mediana_val), y = c(0, 15), mode = 'lines', name = 'Mediana', line = list(color = 'blue')) %>%
   layout(title = 'Tendência Central',
          xaxis = list(title = 'Valores'),
          yaxis = list(title = 'Frequência'),
@@ -350,6 +350,116 @@ plot_ly() %>%
 
 x = 1:100
 y = 1:100 # aumenta o no. de pontos em 10 vezes
+```
+
+</div>
+
+\
+
+<!--  ############ CURVA AJUSTÁVEL DE SENO #############-->
+
+<div class="mat-fundo">  <!--modifica para cada área-->
+
+## Função Seno e ajuste de parâmetros (EM13MAT403, EM13MAT406, EM13MAT408)
+
+<!-- ::: {.grid} -->
+
+<!-- ::: {.g-col-6} -->
+
+```{r, echo=FALSE}
+# Instalar os pacotes necessários
+# install.packages("plotly")
+
+library(plotly)
+
+# Geração de dados
+x <- seq(0, 2 * pi, length.out = 500)
+
+# Função para gerar y com base no parâmetro a
+func <- function(a, x) {
+  return(a * sin(x))
+}
+
+# Valores do parâmetro 'a' que irão variar
+a_values <- seq(0.5, 3, length.out = 30)
+
+# Criando um data frame com todos os valores de a e x para plotar
+data <- data.frame(
+  x = rep(x, times = length(a_values)),
+  y = unlist(lapply(a_values, function(a) func(a, x))),
+  a = rep(a_values, each = length(x))
+)
+
+# Criando o gráfico interativo com animação
+plot_ly(data, 
+        x = ~x, 
+        y = ~y, 
+        frame = ~a, 
+        type = 'scatter', 
+        mode = 'lines') %>%
+  layout(
+    title = "Variação da função y = a * sin(x) com diferentes valores de a",
+    xaxis = list(title = "x"),
+    yaxis = list(title = "y", range = c(-3, 3))
+  )
+```
+<!-- ::: -->
+
+<!-- ::: {.g-col-6} -->
+
+```{r, eval=FALSE, message=FALSE, warning=FALSE}
+# Instalar os pacotes necessários
+# install.packages("plotly")
+
+library(plotly)
+
+# Geração de dados
+x <- seq(0, 2 * pi, length.out = 500)
+
+# Função para gerar y com base no parâmetro a
+func <- function(a, x) {
+  return(a * sin(x))
+}
+
+# Valores do parâmetro 'a' que irão variar
+a_values <- seq(0.5, 3, length.out = 30)
+
+# Criando um data frame com todos os valores de a e x para plotar
+data <- data.frame(
+  x = rep(x, times = length(a_values)),
+  y = unlist(lapply(a_values, function(a) func(a, x))),
+  a = rep(a_values, each = length(x))
+)
+
+# Criando o gráfico interativo com animação
+plot_ly(data, 
+        x = ~x, 
+        y = ~y, 
+        frame = ~a, 
+        type = 'scatter', 
+        mode = 'lines') %>%
+  layout(
+    title = "Variação da função y = a * sin(x) com diferentes valores de a",
+    xaxis = list(title = "x"),
+    yaxis = list(title = "y", range = c(-3, 3))
+  )
+
+```
+
+<!-- ::: -->
+
+<!-- ::: -->
+
+</div>
+
+<div class="mat-fundo2"> <!--modifica para cada área-->
+
+**Sugestões:**
+
+|       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
+
+```{r, eval =FALSE}
+
 ```
 
 </div>

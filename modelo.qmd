@@ -1,29 +1,29 @@
-<div class="quim-fundo">  <!--modifica para cada área-->
+<div class="hum-fundo">  <!--modifica para cada área-->
 
 ## Título
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, echo=FALSE}
 
 ```
-:::
+<!-- ::: -->
 
-::: {.g-col-6}
+<!-- ::: {.g-col-6} -->
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 
 ```
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 </div>
 
-<div class="quim-fundo2"> <!--modifica para cada área-->
+<div class="hum-fundo2"> <!--modifica para cada área-->
 
 **Sugestões:**
 

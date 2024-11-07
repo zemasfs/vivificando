@@ -882,3 +882,156 @@ plot_ly() %>%
 </div>
 
 \
+
+<!-- ### EFICIÊNCIA DE MÁQUINA TÉRMICA E TEMPERATURA -->
+
+<div class="fis-fundo">  <!--modifica para cada área-->
+
+## Rendimento de máquina térmica em função da temperatura (EM13CNT102, EM13CNT103)
+
+<!-- ::: {.grid} -->
+
+<!-- ::: {.g-col-6} -->
+
+```{r, echo=FALSE}
+library(ggplot2)
+library(plotly)
+
+# Função para gerar os dados e o gráfico com base na temperatura de meia-eficiência (ou temperatura de saturação)
+generate_plot_data <- function(b) {
+  a <- 1 # rendimento máximo da máquina térmica
+  x <- seq(0, 300, length.out = 100) # faixa de temperatura
+  y <- a * x / (b + x) # equação que relaciona a temperatura ao rendimento (máximo = 1)
+  data.frame(x, y)
+}
+
+# Inicialize o gráfico com b = 1
+initial_b <- 1 # valor inicial de b (temperatura de meia-saturação)
+plot_data <- generate_plot_data(initial_b)
+
+# Criando o gráfico inicial usando o pacote ggplot2
+p <- ggplot(plot_data, aes(x = x, y = y)) +
+  geom_line() +
+  labs(title = paste("Rendimento de uma máquina térmica em função da temperatura"),
+       x = "Temperatura (C)",
+       y = "Fração de Rendimento") +
+  theme_minimal() +
+  ylim(0, 1)
+
+# Convertendo para um objeto plotly
+fig <- ggplotly(p)
+
+# Definindo os passos para o slider
+steps <- lapply(seq(0, 100, by = 10), function(b) {
+  list(
+    label = as.character(b),
+    method = "restyle",
+    args = list(
+      list(
+        x = list(generate_plot_data(b)$x),
+        y = list(generate_plot_data(b)$y)
+      ),
+      list(title = paste("Rendimento em função do valor de meia-saturação:", b))
+    )
+  )
+})
+
+# Adicionando o slider para o parâmetro 'b' (temperatura de meia-saturação)
+fig <- fig %>%
+  layout(
+    sliders = list(
+      list(
+        active = 0,
+        currentvalue = list(prefix = "Meia-Saturação: "),
+        steps = steps
+      )
+    )
+  )
+
+# Visualize o gráfico
+fig
+
+```
+<!-- ::: -->
+
+<!-- ::: {.g-col-6} -->
+
+```{r, eval=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(plotly)
+
+# Função para gerar os dados e o gráfico com base na temperatura de meia-eficiência (ou temperatura de saturação)
+generate_plot_data <- function(b) {
+  a <- 1 # rendimento máximo da máquina térmica
+  x <- seq(0, 300, length.out = 100) # faixa de temperatura
+  y <- a * x / (b + x) # equação que relaciona a temperatura ao rendimento (máximo = 1)
+  data.frame(x, y)
+}
+
+# Inicialize o gráfico com b = 1
+initial_b <- 1 # valor inicial de b (temperatura de meia-saturação)
+plot_data <- generate_plot_data(initial_b)
+
+# Criando o gráfico inicial usando o pacote ggplot2
+p <- ggplot(plot_data, aes(x = x, y = y)) +
+  geom_line() +
+  labs(title = paste("Rendimento de uma máquina térmica em função da temperatura"),
+       x = "Temperatura (C)",
+       y = "Fração de Rendimento") +
+  theme_minimal() +
+  ylim(0, 1)
+
+# Convertendo para um objeto plotly
+fig <- ggplotly(p)
+
+# Definindo os passos para o slider
+steps <- lapply(seq(0, 100, by = 10), function(b) {
+  list(
+    label = as.character(b),
+    method = "restyle",
+    args = list(
+      list(
+        x = list(generate_plot_data(b)$x),
+        y = list(generate_plot_data(b)$y)
+      ),
+      list(title = paste("Rendimento em função do valor de meia-saturação:", b))
+    )
+  )
+})
+
+# Adicionando o slider para o parâmetro 'b' (temperatura de meia-saturação)
+fig <- fig %>%
+  layout(
+    sliders = list(
+      list(
+        active = 0,
+        currentvalue = list(prefix = "Meia-Saturação: "),
+        steps = steps
+      )
+    )
+  )
+
+# Visualize o gráfico
+fig
+
+```
+
+<!-- ::: -->
+
+<!-- ::: -->
+
+</div>
+
+<div class="fis-fundo2"> <!--modifica para cada área-->
+
+**Sugestões:**
+
+|       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
+
+```{r, eval =FALSE}
+
+```
+
+</div>
+
+\

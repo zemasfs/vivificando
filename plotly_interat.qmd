@@ -283,6 +283,12 @@ plot_ly(x = r, y = AreaSup, z = Volume,
 
 |       Existem outros tipos de gráficos para o `plotly`, pelo que vale uma visitinha ao [website](https://plotly.com/r/) para mais informações.
 
+## `Plotly` por comandos de mouse !!
+
+|       Ainda que esse treinamento insista nas vantagens de se utilizar linhas de comando ao invés de cliques de *mouse*, não podemos nos furtar de apresentar uma solução desse tipo para quem prefere o uso do recurso. Entre alguns aplicativos online, destacamos o [Plotly Chart Studio](https://chart-studio.plotly.com/create/) abaixo, que permite a construção de gráficos interativos variados com o pacote.
+
+![*Plotly Chart Studio*, um recurso para criação de gráficos e mapas interativos com `plotly`, mas com uso de cliques de *mouse* ao invés de linhas de comando.](chart_studio.png)
+
 ## Referência do pacote:
 
 *   [Geral](https://cran.r-project.org/web/packages/plotly/index.html)
