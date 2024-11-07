@@ -341,7 +341,7 @@ dados <- read.csv(url)  # lê o arquivo dos dados
 # 2) Construindo o gráfico com animação 
 
 plot_ly(dados, x = ~Year, y = ~Mean,
-        type = "bar", 
+        type = "scatter", 
         marker = list(line = list(width = 10)),
         frame = ~Year) %>%
   animation_opts(
