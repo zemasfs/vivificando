@@ -716,6 +716,7 @@ p
 ```{r, echo=FALSE}
 library(ggplot2)
 library(patchwork)
+library(plotly)
 
 # Valores iniciais
 area_inicial <- 100  # Área inicial (cm^2)
@@ -751,7 +752,7 @@ grafico_liquido <- ggplot(dados_liquido, aes(x = Temperatura, y = Dilatacao)) +
   labs(title = "Dilatação de Líquidos", x = "Temperatura (°C)", y = "ΔV (cm^3)")
 
 # Exibindo os gráficos lado a lado
-grafico_superficie + grafico_volumetrica + grafico_liquido
+ggplotly(grafico_superficie + grafico_volumetrica + grafico_liquido)
 ```
 <!-- ::: -->
 

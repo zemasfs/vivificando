@@ -142,6 +142,10 @@ website:
           #   target: "_blank"
           - text: "Humanas"
             href: Portfolio/ODR/humanas.qmd
+          - text: "História"
+            href: Portfolio/ODR/historia.qmd
+          - text: "Geografia"
+            href: Portfolio/ODR/geografia
           #   target: "_blank"
           # - text: "Linguagens"
           #   href: Portfolio/ODR/linguagens.qmd

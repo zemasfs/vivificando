@@ -5,6 +5,6 @@
 
 ### Equipe {.unnumbered} 
 
-|       Bárbara Silveira Rodrigues (Curso de Ciências da Computação, UNIFAL-MG)
-|       Prof. Dr. Gabriel Gerber Hornink (UNIFAL-MG)
-|       Prof. Dr. José Maurício Schneedorf Ferreira da Silva (UNIFAL-MG)
+|       Bárbara Silveira Rodrigues (Bacharelado em Ciências da Computação, UNIFAL-MG)
+|       Prof. Dr. Gabriel Gerber Hornink (Depto. Bioquímica, ICB, UNIFAL-MG)
+|       Prof. Dr. José Maurício Schneedorf Ferreira da Silva (Depto. Bioquímica, ICB, UNIFAL-MG)

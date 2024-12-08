@@ -99,6 +99,27 @@ body {
     width: 100%;
 }
 
+
+.hist-fundo {
+  background-color: #DAA520; /* Lilás Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #DAA560; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 0px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+.geo-fundo {
+  background-color: #4682F4; /* Lilás Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #4682B4; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 0px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+
+
 /* Cor de fundo para os quadros de sugestões para áreas e ODR*/
 
 .mat-fundo2 {
@@ -153,6 +174,24 @@ body {
     border-left: 5px solid #bf9ca9; /* Barra lateral  */
     border-radius: 5px;        /* Bordas arredondadas */
     margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+.hist-fundo2 {
+  background-color: #DAA560; /* Azul Claro Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #DAA520 /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 20px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+.geo-fundo2 {
+  background-color: #4682B4; /* Lilás Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #4682F4; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 0px;       /* Espaçamento inferior */
     width: 100%;
 }
 

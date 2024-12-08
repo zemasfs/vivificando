@@ -14,8 +14,14 @@ editor: source
 |      Em uma frase: **códigos para conteúdos.** 
 
 
-|       Na prática, o ER envolve aplicar códigos escritos em bloco de notas para que um programa gere algum *produto de interesse ao Ensino*, como um gráfico, uma tabela, uma mídia, um texto formatado (pdf, docx, epub), estáticos ou interativos, uma simulação, uma animação, dentre vários. Dessa forma é possível imaginar que um educando possa repetir a execução do código num programa específico, alterar algum trecho do código para observar um resultado diferente, ou mesmo criar um novo código buscando outro resultado final.
+|       Na prática, o ER envolve aplicar códigos escritos em texto para que um programa gere algum *produto de interesse ao Ensino*, como um gráfico, uma tabela, uma mídia, um texto formatado (pdf, docx, epub), estáticos ou interativos, uma simulação, uma animação, dentre vários. Dessa forma é possível imaginar que um educando possa repetir a execução do código num programa específico, alterar algum trecho do código para observar um resultado diferente, ou mesmo criar um novo código buscando outro resultado final.
 
-|     O *Ensino Reprodutível* deve ser praticado com Recursos Educacionais Abertos, envolver programas ou aplicativos de distribuição livre e, preferencialmente, com acesso por simples navegador de internete, para possibilitar seu uso pelo maior número de usuários, sem restrições de configuração de máquinas, e permitindo acesso tanto por computador de mesa e notebooks como por dispositivos móveis, como *tablets* e *smartphones*.
+|     O *Ensino Reprodutível* deve ser praticado de forma aberta, envolver programas ou aplicativos de distribuição livre e, preferencialmente, por uso de um simples navegador de internete, para possibilitar seu uso pelo maior número de pessoas, sem restrições de configuração de máquinas, e permitindo acesso tanto por computador de mesa e notebooks como por dispositivos móveis, como *tablets* e *smartphones*.
+
+### *ERRE* e o site *errre*... {.unnumbered}
+
+|     O acrônimo ERЯƎ sugere as iniciais para *Ensino Reprodutível*, com disposição das fontes em palíndromo, e com a clara intenção de sugerir o exercício do *erro libertário*.
+
+|     Já o nome *errre* estampado para o website trata-se de um arranjo lúdico à analogia dos princípios de desenvolvimento responsável e sustentável dos *3 Rs*. Aqui, por tratar-se de códigos para conteúdos em *ER*, com o significado de *reutilizar (cópia), reduzir (alterar), e recriar (novos códigos)*.
 :::
 :::
