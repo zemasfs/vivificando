@@ -18,7 +18,7 @@ editor: source
 
 |     O *Ensino Reprodutível* deve ser praticado de forma aberta, envolver programas ou aplicativos de distribuição livre e, preferencialmente, por uso de um simples navegador de internete, para possibilitar seu uso pelo maior número de pessoas, sem restrições de configuração de máquinas, e permitindo acesso tanto por computador de mesa e notebooks como por dispositivos móveis, como *tablets* e *smartphones*.
 
-### *ERRE* e o site *errre*... {.unnumbered}
+### *ERЯƎ* e o site *errre*... {.unnumbered}
 
 |     O acrônimo ERЯƎ sugere as iniciais para *Ensino Reprodutível*, com disposição das fontes em palíndromo, e com a clara intenção de sugerir o exercício do *erro libertário*.
 
