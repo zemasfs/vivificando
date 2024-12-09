@@ -468,11 +468,11 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#animar-as-moléculas." id="toc-animar-as-moléculas." class="nav-link active" data-scroll-target="#animar-as-moléculas."><span class="header-section-number">1</span> Animar as moléculas.</a>
+  <li><a href="#animar-as-moléculas." id="toc-animar-as-moléculas." class="nav-link active" data-scroll-target="#animar-as-moléculas.">Animar as moléculas.</a>
   <ul class="collapse">
-  <li><a href="#spin" id="toc-spin" class="nav-link" data-scroll-target="#spin"><span class="header-section-number">1.1</span> Spin</a></li>
-  <li><a href="#zoomto-redimensionamento-do-tamanho" id="toc-zoomto-redimensionamento-do-tamanho" class="nav-link" data-scroll-target="#zoomto-redimensionamento-do-tamanho"><span class="header-section-number">1.2</span> ZoomTo (redimensionamento do tamanho)</a></li>
-  <li><a href="#delay" id="toc-delay" class="nav-link" data-scroll-target="#delay"><span class="header-section-number">1.3</span> Delay</a></li>
+  <li><a href="#spin" id="toc-spin" class="nav-link" data-scroll-target="#spin">Spin</a></li>
+  <li><a href="#zoomto-redimensionamento-do-tamanho" id="toc-zoomto-redimensionamento-do-tamanho" class="nav-link" data-scroll-target="#zoomto-redimensionamento-do-tamanho">ZoomTo (redimensionamento do tamanho)</a></li>
+  <li><a href="#delay" id="toc-delay" class="nav-link" data-scroll-target="#delay">Delay</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -505,20 +505,20 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 2. Utilizar o Console animação de moléculas<br>
 </p>
 </div>
-<section id="animar-as-moléculas." class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="animar-as-moléculas."><span class="header-section-number">1</span> Animar as moléculas.</h2>
+<section id="animar-as-moléculas." class="level2">
+<h2 class="anchored" data-anchor-id="animar-as-moléculas.">Animar as moléculas.</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E chegamos a esta última parte do <em>Curso</em> com o <em>Jmol</em>, para apresentar um efeito didático-pedagógico bem interessante do programa: <em>animação de moléculas</em>.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pode ser que você queira mostrar uma molécula com estilos distinto durante um determinado período, ou fazer uma transição lenta entre cores em átomos específicos, ou ainda efeitos de ampliação, redução, ou rotação controlados. E outros tantos que a imaginação e o rigor técnico permitirem ao estudo.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nesses casos é interessante conhecer e aplicar alguns poucos comandos para animação explicados a seguir. Os exemplos foram selecionados de modo a simplificar cada comando. Mas não se iluda sobre a capacidade do <em>Jmol</em>, porque para cada comando sempre há várias opções complementares. E se você quiser saber algo sobre qualquer comando do <em>Jmol</em>, faça uma visita ao <a href="https://chemapps.stolaf.edu/jmol/docs/"><em>site</em> de referência</a>.</div>
-<section id="spin" class="level3" data-number="1.1">
-<h3 data-number="1.1" class="anchored" data-anchor-id="spin"><span class="header-section-number">1.1</span> Spin</h3>
+<section id="spin" class="level3">
+<h3 class="anchored" data-anchor-id="spin">Spin</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comando simples de rotação da molécula.</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>glucose; spin <span class="dv">30</span> <span class="co"># o valor refere-se à velocidade de rotação</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="zoomto-redimensionamento-do-tamanho" class="level3" data-number="1.2">
-<h3 data-number="1.2" class="anchored" data-anchor-id="zoomto-redimensionamento-do-tamanho"><span class="header-section-number">1.2</span> ZoomTo (redimensionamento do tamanho)</h3>
+<section id="zoomto-redimensionamento-do-tamanho" class="level3">
+<h3 class="anchored" data-anchor-id="zoomto-redimensionamento-do-tamanho">ZoomTo (redimensionamento do tamanho)</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esse comando impressiona, pois permite uma ampliação ou redução controlada no tempo. Sua sintaxe é:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span>zoomTo<span class="sc">*</span> <span class="er">:</span> <span class="fu">tempo</span> (expressão opcional) tamanho</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -534,8 +534,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>Focar num ligante de biopolímero com ampliação de <span class="dv">4</span>x, a meio segundo por vez<span class="sc">:</span> zoomto <span class="fl">0.5</span>(ligand)<span class="sc">*</span> <span class="dv">4</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="delay" class="level3" data-number="1.3">
-<h3 data-number="1.3" class="anchored" data-anchor-id="delay"><span class="header-section-number">1.3</span> Delay</h3>
+<section id="delay" class="level3">
+<h3 class="anchored" data-anchor-id="delay">Delay</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esse é um <strong>comando-chave</strong> para qualquer animação, pois permite que a imagem da molécula no <em>Jmol</em> realize uma pausa (em segundos), antes da próxima ação. É utilizado normalmente na sequência de comandos pelo <em>Console</em>, ao longo de um <em>script</em>.</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>delay <span class="dv">3</span> <span class="co"># aguarda 3 segundos antes da próxima ação</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>

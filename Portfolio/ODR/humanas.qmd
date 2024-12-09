@@ -1,5 +1,6 @@
 ---
 title: "Humanas"
+number-sections: true
 ---
 
 <!-- ############# ÁREA E POPULAÇÃO BRASILEIRA ################ --->

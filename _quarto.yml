@@ -201,7 +201,7 @@ format:
     toc: true
     code-overflow: wrap
     lang: pt
-    number-sections: true
+   # number-sections: true
     
   # include-after-body: collapse-sidebar.js
 

@@ -468,11 +468,11 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#uma-visão-da-interface-rstudio" id="toc-uma-visão-da-interface-rstudio" class="nav-link active" data-scroll-target="#uma-visão-da-interface-rstudio"><span class="header-section-number">1</span> Uma visão da interface <em>RStudio</em></a></li>
-  <li><a href="#como-funcionam-os-comando-no-r" id="toc-como-funcionam-os-comando-no-r" class="nav-link" data-scroll-target="#como-funcionam-os-comando-no-r"><span class="header-section-number">2</span> Como funcionam os comando no <code>R</code></a></li>
-  <li><a href="#elaborando-um-script-no-r" id="toc-elaborando-um-script-no-r" class="nav-link" data-scroll-target="#elaborando-um-script-no-r"><span class="header-section-number">3</span> Elaborando um <em>script</em> no <code>R</code></a></li>
-  <li><a href="#executando-um-script-no-r" id="toc-executando-um-script-no-r" class="nav-link" data-scroll-target="#executando-um-script-no-r"><span class="header-section-number">4</span> Executando um <em>script</em> no <code>R</code></a></li>
-  <li><a href="#algumas-recomendações-sobre-a-digitação-num-script-do-r" id="toc-algumas-recomendações-sobre-a-digitação-num-script-do-r" class="nav-link" data-scroll-target="#algumas-recomendações-sobre-a-digitação-num-script-do-r"><span class="header-section-number">5</span> Algumas recomendações sobre a digitação num <em>script</em> do <code>R</code>:</a></li>
+  <li><a href="#uma-visão-da-interface-rstudio" id="toc-uma-visão-da-interface-rstudio" class="nav-link active" data-scroll-target="#uma-visão-da-interface-rstudio">Uma visão da interface <em>RStudio</em></a></li>
+  <li><a href="#como-funcionam-os-comando-no-r" id="toc-como-funcionam-os-comando-no-r" class="nav-link" data-scroll-target="#como-funcionam-os-comando-no-r">Como funcionam os comando no <code>R</code></a></li>
+  <li><a href="#elaborando-um-script-no-r" id="toc-elaborando-um-script-no-r" class="nav-link" data-scroll-target="#elaborando-um-script-no-r">Elaborando um <em>script</em> no <code>R</code></a></li>
+  <li><a href="#executando-um-script-no-r" id="toc-executando-um-script-no-r" class="nav-link" data-scroll-target="#executando-um-script-no-r">Executando um <em>script</em> no <code>R</code></a></li>
+  <li><a href="#algumas-recomendações-sobre-a-digitação-num-script-do-r" id="toc-algumas-recomendações-sobre-a-digitação-num-script-do-r" class="nav-link" data-scroll-target="#algumas-recomendações-sobre-a-digitação-num-script-do-r">Algumas recomendações sobre a digitação num <em>script</em> do <code>R</code>:</a></li>
   </ul>
 </nav>
     </div>
@@ -510,8 +510,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se você desejar saber mais a respeito de ambos os programas, versão instalada ou em nuvem, sugerimos os inúmeros sites e tutoriais disponíveis na internet, bem como centenas de livros já escritos no assunto, e cursos <em>on-line</em> em várias plataformas de ensino.</div>
 <p><br>
 </p>
-<section id="uma-visão-da-interface-rstudio" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="uma-visão-da-interface-rstudio"><span class="header-section-number">1</span> Uma visão da interface <em>RStudio</em></h2>
+<section id="uma-visão-da-interface-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="uma-visão-da-interface-rstudio">Uma visão da interface <em>RStudio</em></h2>
 <p><br>
 | O <em>Rstudio</em> nada mais faz do que permitir uma <em>interace gráfica para o usuário</em> do <code>R</code> (ou <em>GUI</em>, do inglês, <em>Graphic User Interface</em>), esse um programa executado por linguagem própria de códigos, assim como o <em>Jmol</em>. Diversas operações também são realizadas alternativamente sem comandos ou códigos, como abrir e salvar um arquivo, ou visualizar e salvar um gráfico, por exemplo. Vejamos a divisão da janela principal do <em>Rstudio</em>.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -536,8 +536,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <p><img src="rstudioScriptAberta.png" class="img-fluid" alt="Janela principal do RStudio contendo a aba para elaboração e execução de scripts."><br>
 </p>
 </section>
-<section id="como-funcionam-os-comando-no-r" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="como-funcionam-os-comando-no-r"><span class="header-section-number">2</span> Como funcionam os comando no <code>R</code></h2>
+<section id="como-funcionam-os-comando-no-r" class="level2">
+<h2 class="anchored" data-anchor-id="como-funcionam-os-comando-no-r">Como funcionam os comando no <code>R</code></h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todos os comandos do <code>R</code> são compostos por um <em>nome</em> seguido de <em>argumentos</em>, esses entre parênteses. Seguem exemplos</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">comando</span>(argumento <span class="dv">1</span>, argumento <span class="dv">2</span>, argumento <span class="dv">3</span>, ...)</span>
@@ -550,8 +550,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <p><br>
 </p>
 </section>
-<section id="elaborando-um-script-no-r" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="elaborando-um-script-no-r"><span class="header-section-number">3</span> Elaborando um <em>script</em> no <code>R</code></h2>
+<section id="elaborando-um-script-no-r" class="level2">
+<h2 class="anchored" data-anchor-id="elaborando-um-script-no-r">Elaborando um <em>script</em> no <code>R</code></h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para se produzir um <em>script</em> no <code>R</code>, a melhor forma é redigir as linhas de comando de modo similar ao que foi realizado com o visualizador molecular 3D <em>Jmol</em> em seu <em>Console</em>, separando-os por linhas individuais. Veja um exemplo de cálculo simples:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">5</span></span>
@@ -567,8 +567,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <p><br>
 </p>
 </section>
-<section id="executando-um-script-no-r" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="executando-um-script-no-r"><span class="header-section-number">4</span> Executando um <em>script</em> no <code>R</code></h2>
+<section id="executando-um-script-no-r" class="level2">
+<h2 class="anchored" data-anchor-id="executando-um-script-no-r">Executando um <em>script</em> no <code>R</code></h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem algumas formas de se executar um <em>script</em>, como no exemplo acima, no <code>R</code>. Seguem as mais comuns:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Se deseja executar algumas linhas de um <span class="sc">*</span>script<span class="sc">*</span>, pode<span class="sc">-</span>se selecionar as linhas e clicar Ctrl <span class="sc">+</span> Enter ;</span>
@@ -593,8 +593,8 @@ log10(x) ; logaritmo de base 10<br>
 sin(x) ; seno</p>
 </div>
 </section>
-<section id="algumas-recomendações-sobre-a-digitação-num-script-do-r" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="algumas-recomendações-sobre-a-digitação-num-script-do-r"><span class="header-section-number">5</span> Algumas recomendações sobre a digitação num <em>script</em> do <code>R</code>:</h2>
+<section id="algumas-recomendações-sobre-a-digitação-num-script-do-r" class="level2">
+<h2 class="anchored" data-anchor-id="algumas-recomendações-sobre-a-digitação-num-script-do-r">Algumas recomendações sobre a digitação num <em>script</em> do <code>R</code>:</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem algumas premissas básicas pra que um <em>script</em> do <code>R</code> seja lido de forma clara por seu elaborador, bem como compilado corretamente pelo programa:</div>
 <ol type="1">
 <li><em>Digitação</em>: sempre que houver um erro no <em>script</em> no <em>Rstudio</em>, surgirá uma cruz vermelha ao lado esquerdo da linha de comando; contornado o erro, o sinal desaparece;</li>

@@ -468,9 +468,9 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#pra-quê-instalar-pacotes-bibliotecas" id="toc-pra-quê-instalar-pacotes-bibliotecas" class="nav-link active" data-scroll-target="#pra-quê-instalar-pacotes-bibliotecas"><span class="header-section-number">1</span> Pra quê instalar pacotes (bibliotecas) ?</a></li>
-  <li><a href="#instalando-o-pacote-plotly-no-r" id="toc-instalando-o-pacote-plotly-no-r" class="nav-link" data-scroll-target="#instalando-o-pacote-plotly-no-r"><span class="header-section-number">2</span> Instalando o pacote <code>plotly</code> no <code>R</code></a></li>
-  <li><a href="#carregando-o-pacote-instalado" id="toc-carregando-o-pacote-instalado" class="nav-link" data-scroll-target="#carregando-o-pacote-instalado"><span class="header-section-number">3</span> Carregando o pacote instalado</a></li>
+  <li><a href="#pra-quê-instalar-pacotes-bibliotecas" id="toc-pra-quê-instalar-pacotes-bibliotecas" class="nav-link active" data-scroll-target="#pra-quê-instalar-pacotes-bibliotecas">Pra quê instalar pacotes (bibliotecas) ?</a></li>
+  <li><a href="#instalando-o-pacote-plotly-no-r" id="toc-instalando-o-pacote-plotly-no-r" class="nav-link" data-scroll-target="#instalando-o-pacote-plotly-no-r">Instalando o pacote <code>plotly</code> no <code>R</code></a></li>
+  <li><a href="#carregando-o-pacote-instalado" id="toc-carregando-o-pacote-instalado" class="nav-link" data-scroll-target="#carregando-o-pacote-instalado">Carregando o pacote instalado</a></li>
   </ul>
 </nav>
     </div>
@@ -501,13 +501,13 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 1. Entender o que são e para que servem os pacotes do R<br>
 2. Saber instalar e carregar um pacote do R, exemplificado para <code>plotly</code></p>
 </div>
-<section id="pra-quê-instalar-pacotes-bibliotecas" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="pra-quê-instalar-pacotes-bibliotecas"><span class="header-section-number">1</span> Pra quê instalar pacotes (bibliotecas) ?</h2>
+<section id="pra-quê-instalar-pacotes-bibliotecas" class="level2">
+<h2 class="anchored" data-anchor-id="pra-quê-instalar-pacotes-bibliotecas">Pra quê instalar pacotes (bibliotecas) ?</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numa resposta simples, porque cada um dos mais de 21 mil pacotes do <code>R</code> possui uma extensão de recursos que o próprio <code>R</code> não possui em sua instalação original. Ou seja, amplia-se a ferramenta para algum propósito específico. <em>Neste </em>Curso<em>, nosso objetivo com o <code>R</code> é o de reproduzir e mesmo modificar trechos de códigos que resultem em objetos didáticos interativos para o ensino médio</em>.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E para isso, vamos utilizar dois pacotes, apenas, <code>plotly</code>, e <code>leaflet</code>. Dessa forma, os pacotes de interatividade precisam de instalação prévia à execução dos códigos. Mas fique tranquilo. Essa é umas das partes mais tranquilas quando se lida com o <code>R</code>.</div>
 </section>
-<section id="instalando-o-pacote-plotly-no-r" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="instalando-o-pacote-plotly-no-r"><span class="header-section-number">2</span> Instalando o pacote <code>plotly</code> no <code>R</code></h2>
+<section id="instalando-o-pacote-plotly-no-r" class="level2">
+<h2 class="anchored" data-anchor-id="instalando-o-pacote-plotly-no-r">Instalando o pacote <code>plotly</code> no <code>R</code></h2>
 <ol type="1">
 <li>Acesse a aba <em>Packages</em> do <em>RStudio</em>.</li>
 </ol>
@@ -519,8 +519,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pronto ! O pacote será instalado a partir do servidor de nuvem do <em>RStudio</em> (tanto faz se no seu computador ou em nuvem), com algumas mensagens intermediárias em vermelho, como abaixo.</div>
 <p><img src="pacotes.msg.png" class="img-fluid"></p>
 </section>
-<section id="carregando-o-pacote-instalado" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="carregando-o-pacote-instalado"><span class="header-section-number">3</span> Carregando o pacote instalado</h2>
+<section id="carregando-o-pacote-instalado" class="level2">
+<h2 class="anchored" data-anchor-id="carregando-o-pacote-instalado">Carregando o pacote instalado</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <code>R</code> permite que instale um número gigantesco de pacotes. Mas é claro que você não os utilizará simultaneamente. Dessa forma, o <code>R</code> precisa <em>“saber”</em> qual o pacote que se deseja no momento, o que é realizado pelo comando <code>library</code>, e ilustrado abaixo para o pacote <code>plot_ly</code>, como segue:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>

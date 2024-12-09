@@ -506,11 +506,11 @@ window.Quarto = {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#adicionando-um-controle-deslizante-por-intervalo" id="toc-adicionando-um-controle-deslizante-por-intervalo" class="nav-link active" data-scroll-target="#adicionando-um-controle-deslizante-por-intervalo"><span class="header-section-number">1</span> Adicionando um controle deslizante por intervalo</a>
+  <li><a href="#adicionando-um-controle-deslizante-por-intervalo" id="toc-adicionando-um-controle-deslizante-por-intervalo" class="nav-link active" data-scroll-target="#adicionando-um-controle-deslizante-por-intervalo">Adicionando um controle deslizante por intervalo</a>
   <ul class="collapse">
-  <li><a href="#emissão-de-co_2-e-o-efeito-estufa" id="toc-emissão-de-co_2-e-o-efeito-estufa" class="nav-link" data-scroll-target="#emissão-de-co_2-e-o-efeito-estufa"><span class="header-section-number">1.1</span> Emissão de CO<span class="math inline">\(_{2}\)</span> e o efeito estufa</a>
+  <li><a href="#emissão-de-co_2-e-o-efeito-estufa" id="toc-emissão-de-co_2-e-o-efeito-estufa" class="nav-link" data-scroll-target="#emissão-de-co_2-e-o-efeito-estufa">Emissão de CO<span class="math inline">\(_{2}\)</span> e o efeito estufa</a>
   <ul class="collapse">
-  <li><a href="#adicionando-um-menu-suspenso" id="toc-adicionando-um-menu-suspenso" class="nav-link" data-scroll-target="#adicionando-um-menu-suspenso"><span class="header-section-number">1.1.1</span> Adicionando um menu suspenso</a></li>
+  <li><a href="#adicionando-um-menu-suspenso" id="toc-adicionando-um-menu-suspenso" class="nav-link" data-scroll-target="#adicionando-um-menu-suspenso">Adicionando um menu suspenso</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -547,12 +547,12 @@ window.Quarto = {
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Até o momento só <em>“arranhamos”</em> o potencial de interatividade gráfica do pacote <code>plotly</code>. Como já mencionado, essa biblioteca permite um grande conjunto de ações de usuário, como deslizadores (<em>sliders</em>), menu de escolha, e botões, entre muitos.</div>
 <p><br>
 </p>
-<section id="adicionando-um-controle-deslizante-por-intervalo" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Adicionando um controle deslizante por intervalo</h1>
+<section id="adicionando-um-controle-deslizante-por-intervalo" class="level1">
+<h1>Adicionando um controle deslizante por intervalo</h1>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um <em>slider</em> dessa natureza permite que se escolha uma janela de dados para um estudo mais detalhista naquela região. Nesse caso é possível agregar a um gráfico simples um <em>controle deslizante de intervalo</em> (<em>rangeslider</em>).</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Podemos ilustrar seu emprego pela observação de gases de efeito estufa, e em especial, da <em>emissão de dióxido de carbono no Brasil</em> a partir de uma base de dados da internet. Para isso, você aprenderá a <em>obter um arquivo a partir de base de dados da internet, filtrar para um subconjunto desejado, e elaborar o gráfico resultante, com um controle deslizante adicional</em>.</div>
-<section id="emissão-de-co_2-e-o-efeito-estufa" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="emissão-de-co_2-e-o-efeito-estufa"><span class="header-section-number">1.1</span> Emissão de CO<span class="math inline">\(_{2}\)</span> e o efeito estufa</h2>
+<section id="emissão-de-co_2-e-o-efeito-estufa" class="level2">
+<h2 class="anchored" data-anchor-id="emissão-de-co_2-e-o-efeito-estufa">Emissão de CO<span class="math inline">\(_{2}\)</span> e o efeito estufa</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As emissões de CO<span class="math inline">\(_{2}\)</span> e outros gases pela queima de combustíveis fósseis tem grande responsabilidade sobre o efeito de estufa, incidindo diretamente sobre as alterações climáticas. Para reduzir essas emissões é necessário transformar a matriz energética atual, indústria e sistemas alimentares.</div>
 <p><br>
 </p>
@@ -592,8 +592,8 @@ window.Quarto = {
 </p>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Você pode copiar e colar os <em>scripts</em> na sequência para sua execução, ou apenas adicionar o comando <code>rangeslider()</code> com o operador <em>pipe</em> %&gt;% ao final.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente agora posicionar o <em>mouse</em> num dos dois marcadores laterais do gráfico inferior, arrastando-o em seguida, e observe o resultado. O controle deslizante pode ser útil quando se deseja focar em determinada região do gráfico. Por exemplo, ajustar a emissão de CO<span class="math inline">\(_{2}\)</span> para os últimos anos.</div>
-<section id="adicionando-um-menu-suspenso" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="adicionando-um-menu-suspenso"><span class="header-section-number">1.1.1</span> Adicionando um menu suspenso</h3>
+<section id="adicionando-um-menu-suspenso" class="level3">
+<h3 class="anchored" data-anchor-id="adicionando-um-menu-suspenso">Adicionando um menu suspenso</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menus suspensos (<em>dropdown menu</em>) permitem observar um gráfico diferente a cada opção selecionada. Para exemplificar esse recurso interativos, vamos primeiramente elaborar um conjunto de dados (<em>dataframe</em>) que possua a resposta linear, quadrática, e cúbica a uma variável independente, tal como segue:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="co"># vetor da variável independente "x"</span></span>

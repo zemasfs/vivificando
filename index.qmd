@@ -22,6 +22,6 @@ editor: source
 
 |     O acrônimo ERЯƎ sugere as iniciais para *Ensino Reprodutível*, com disposição das fontes em palíndromo, e com a clara intenção de sugerir o exercício do *erro libertário*.
 
-|     Já o nome *errre* estampado para o website trata-se de um arranjo lúdico à analogia dos princípios de desenvolvimento responsável e sustentável dos *3 Rs*. Aqui, por tratar-se de códigos para conteúdos em *ER*, com o significado de *reutilizar (cópia), reduzir (alterar), e recriar (novos códigos)*.
+|     Já o nome *errre* estampado para o website trata-se de um arranjo lúdico à analogia dos princípios de desenvolvimento responsável e sustentável dos *3 Rs*. Aqui, por tratar-se de códigos para conteúdos em *ER*, com o significado de *reutilizar (cópia), reciclar (alterar), e reinventar (novos códigos)*.
 :::
 :::

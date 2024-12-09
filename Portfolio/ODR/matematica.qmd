@@ -1,5 +1,6 @@
 ---
 title: "Matemática"
+number-sections: true
 ---
 
 <!-- #########  EXPONENCIAL versus LOGARITMO ########## -->
@@ -305,7 +306,7 @@ plot_ly() %>%
 
 <!-- ::: {.g-col-6} -->
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, eval=TRUE}
 library(plotly)
 
 plot_ly() %>%
