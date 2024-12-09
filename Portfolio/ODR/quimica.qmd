@@ -1,5 +1,6 @@
 ---
 title: "Química"
+number-sections: true
 ---
 
 <!-- ###########   LEI DOS GASES IDEIAS   ################# -->
@@ -506,7 +507,7 @@ dados <- expand.grid(H2 = H2_mol, O2 = O2_mol)
 dados$H2O <- mapply(formar_H2O, dados$H2, dados$O2)
 
 # Gráfico interativo com sliders para H2 e O2
-fig <- plot_ly(dados, x = ~H2, y = ~O2, z = ~H2O, type = 'scatter3d', mode = 'markers') %>%
+fig <- plot_ly(dados, x = ~H2, y = ~O2, z = ~H2O, type = 'mesh3d', mode = 'markers') %>%
   layout(
     title = "Estequiometria de Reação (Lei de Proust)",
     scene = list(
@@ -540,7 +541,7 @@ dados <- expand.grid(H2 = H2_mol, O2 = O2_mol)
 dados$H2O <- mapply(formar_H2O, dados$H2, dados$O2)
 
 # Gráfico interativo com sliders para H2 e O2
-fig <- plot_ly(dados, x = ~H2, y = ~O2, z = ~H2O, type = 'scatter3d', mode = 'markers') %>%
+fig <- plot_ly(dados, x = ~H2, y = ~O2, z = ~H2O, type = 'mesh3d', mode = 'markers') %>%
   layout(
     title = "Estequiometria de Reação (Lei de Proust)",
     scene = list(
