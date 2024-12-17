@@ -147,8 +147,8 @@ website:
           - text: "Geografia"
             href: Portfolio/ODR/geografia
           #   target: "_blank"
-          # - text: "Linguagens"
-          #   href: Portfolio/ODR/linguagens.qmd
+          - text: "Linguagens"
+            href: Portfolio/ODR/linguagens.qmd
           #   target: "_blank"
 
             
@@ -198,7 +198,7 @@ format:
       light: flatly
       dark: darkly
     css: styles.css
-    toc: true
+    #toc: false
     code-overflow: wrap
     lang: pt
    # number-sections: true
@@ -211,4 +211,3 @@ execute:
   cache: true  # habilita cache globalmente
   message: false
   warning: false
-

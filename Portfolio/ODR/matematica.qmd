@@ -1,7 +1,8 @@
 ---
-title: "Matemática"
-number-sections: true
+toc: true
 ---
+
+# Matemática {.unnumbered}
 
 <!-- #########  EXPONENCIAL versus LOGARITMO ########## -->
 
@@ -300,7 +301,7 @@ plot_ly() %>%
 
 <div class="mat-fundo">
 
-## Comparação: área superficial e volume de uma esfera (EM13MT05)
+## Comparação de área superficial e volume de uma esfera (EM13MT05)
 
 <!-- ::: {.grid} -->
 

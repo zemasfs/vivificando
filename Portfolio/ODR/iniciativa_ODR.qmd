@@ -1,3 +1,7 @@
+---
+number-sections: false
+---
+
 ## Iniciativa {.unnumbered}
 
 |       Este material em elaboração pretende oferecer um conjunto de *gráficos e mapas, interativos e de animação*, para alguns tópicos encontrados em disciplinas do *ensino médio*. Esses *objetos didáticos* utilizam pacotes interativos do *R*, principalmente `plotly` e `gganimate`. 

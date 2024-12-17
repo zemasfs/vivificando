@@ -1,6 +1,6 @@
 ---
-title: "Humanas"
-number-sections: true
+title: "Ciências Humanas"
+toc: true
 ---
 
 <!-- ############# ÁREA E POPULAÇÃO BRASILEIRA ################ --->
