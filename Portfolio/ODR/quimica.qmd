@@ -3,7 +3,7 @@ title: "Química"
 number-sections: true
 ---
 
-<!-- ###########   LEI DOS GASES IDEIAS   ################# -->
+<!-- ###########   LEI DOS GASES IDEAIS   ################# -->
 
 
 <div class="quim-fundo">  <!--modifica para cada área-->
@@ -72,7 +72,7 @@ plot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines') %>%
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
-
+plot_ly(x = V, y = ~R*T/V, type = 'scatter', mode='lines', line = list(color = "red", width = 3)) %>%  # Alteração da cor e largura da linha
 ```
 
 </div>
@@ -160,6 +160,7 @@ animate(p, renderer = gifski_renderer())
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+ scale_color_manual(values = c("Reagente" = "green", "Produto" = "purple")) +  # Mudança nas cores
 
 ```
 
@@ -286,6 +287,10 @@ plot_ly(dados_acidez) %>%
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+add_lines(x = ~pH, y = ~conc_H, name = "Concentração H+", line = list(color = "blue", width = 2)) %>%  # Aumento da espessura da linha
+  add_lines(x = ~pH, y = ~conc_OH, name = "Concentração OH-", line = list(color = "red", width = 2)) %>%   # Aumento da espessura da linha
+  add_lines(x = ~pH, y = ~conc_HA, name = "Concentração HA (ácido)", line = list(color = "purple", width = 2)) %>%   # Aumento da espessura da linha
+  add_lines(x = ~pH, y = ~conc_A, name = "Concentração A- (base conjugada)", line = list(color = "green", width = 2)) %>%   # Aumento da espessura da linha
 
 ```
 
@@ -384,6 +389,7 @@ fig
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+args = list(list(y = list(decaimento_radioativo(tempo, meia_vida))), list(line = list(color = 'green'))))
 
 ```
 
@@ -472,7 +478,7 @@ fig
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
-
+list(label = k, method = "update", args = list(list(y = list(decomposicao(tempo, k))), list(line = list(color = 'red'))))
 ```
 
 </div>
@@ -568,6 +574,8 @@ fig
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+fig <- plot_ly(dados, x = ~H2, y = ~O2, z = ~H2O, type = 'mesh3d', mode = 'markers',
+               marker = list(color = ~H2O, colorscale = 'Viridis', size = 10)) %>%
 
 ```
 
@@ -678,6 +686,7 @@ p
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+scale_fill_manual(values = c("A" = "blue", "B" = "green", "C" = "red", "D" = "purple"))  # Definida uma paleta de cores personalizada
 
 ```
 

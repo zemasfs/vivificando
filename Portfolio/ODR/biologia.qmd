@@ -88,6 +88,8 @@ p
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+xaxis = list(title = "Total de Casos", type = "log", range = c(0, 7)),  # Alteração na escala do eixo X
+    yaxis = list(title = "Mortes", type = "log", range = c(0, 6)),  # Alteração na escala do eixo Y
 
 ```
 

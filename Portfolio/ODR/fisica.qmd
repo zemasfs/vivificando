@@ -107,6 +107,8 @@ plot_ly(x = ~d, y = ~calcular_campo(Q_inicial, d), type = 'scatter', mode = 'lin
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+xaxis = list(title = 'Distância (m)', range = c(0, 10)),  # Definido o intervalo para o eixo X
+    yaxis = list(title = 'Campo Elétrico (N/C)', type = 'log', range = c(1e3, 1e12)),  # Ajuste na escala do eixo Y
 
 ```
 
@@ -208,6 +210,8 @@ ggplot(dados_mruv, aes(x = Tempo, y = Posição, group = Aceleração)) +
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Dentro da função de ggplot()
+scale_color_manual(values = c("0" = "blue", "1" = "red", "2" = "green", "3" = "purple", "4" = "orange", "5" = "brown")) +  # Definidas cores específicas para cada aceleração
 
 ```
 
@@ -305,6 +309,8 @@ ggplot(dados_gravitacional, aes(x = Distância, y = Força, group = Massa)) +
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Dentro da função de ggplot()
+theme_minimal() +  # Tema simples
 
 ```
 
@@ -397,7 +403,7 @@ ggplot(dados_newton, aes(x = Aceleração, y = Força, group = Massa)) +
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
-
+geom_line(aes(color = as.factor(Massa)), size = 1) +  # Linhas com espessura padrão
 ```
 
 </div>
@@ -495,6 +501,7 @@ p
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+geom_point(aes(size = Potência), alpha = 0.6) +  # Pontos com tamanho de acordo com a potência
 
 ```
 
@@ -601,6 +608,7 @@ p
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+geom_line(size = 1.4) +  # Linhas com espessura um pouco maior para melhor visibilidade
 
 ```
 
@@ -696,6 +704,7 @@ p
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+ease_aes('cubic-in-out') +  # Mudança na animação para transição mais suave
 
 ```
 
@@ -812,6 +821,8 @@ grafico_superficie + grafico_volumetrica + grafico_liquido
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Abaixo de geom_line()
+geom_point(color = "blue", size = 2) +  # Adicionando pontos
 
 ```
 
@@ -877,6 +888,8 @@ plot_ly() %>%
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+add_trace(x = x, y = sin(x), mode = 'lines', name = 'Potencial', 
+            line = list(color = 'blue', width = 2, dash = 'dot')) %>%  # Linha pontilhada azul
 
 ```
 
@@ -1030,6 +1043,12 @@ fig
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Dentro de steps
+ list(
+        x = list(generate_plot_data(b)$x),
+        y = list(generate_plot_data(b)$y),
+        line = list(color = colorRampPalette(c("blue", "green"))(11)[b/10 + 1])  # Faixa de cores variando de azul a verde
+),
 
 ```
 

@@ -140,6 +140,9 @@ grafico
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Adição logo após hoverinfo, muda as cores
+
+marker = list(color = ~Frequencia, colorscale = "Blues")  # Escala de cores "Blues"
 
 ```
 

@@ -119,6 +119,11 @@ mapa_conflitos
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+ marker = list(
+    size = 15,  # Alterado de 10 para 15 para aumentar os marcadores
+    color = "red",
+    line = list(width = 1, color = "black")
+  )
 
 ```
 
@@ -252,6 +257,8 @@ mapa_populacao
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Após a linha lon = ~longitude
+ frame = ~ano,  # Adiciona a animação por ano
 
 ```
 
@@ -378,6 +385,11 @@ fig
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+marker = list(
+    size = 10,  # Tamanho dos marcadores
+    color = "blue",  # Cor uniforme para simplicidade
+    opacity = 0.7  # Transparência para destacar no mapa
+  )
 
 ```
 

@@ -129,6 +129,14 @@ fig
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Adicionar após linha com hoverinfo
+
+marker = list(
+    size = 15, 
+    color = ~IDH, 
+    colorscale = "Viridis", # Escala de cores que varia conforme o IDH
+    colorbar = list(title = "IDH"), # Adiciona uma legenda para a escala de cores
+    opacity = 0.8
 
 ```
 
@@ -212,6 +220,7 @@ plot_ly(dados, x = ~area, y = ~inhabitants,
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+color = ~state,    # Adicionado para variar a cor conforme o estado
 
 ```
 
@@ -316,6 +325,7 @@ fig
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+opacity = 0.8  # Alterada a opacidade das barras
 
 ```
 

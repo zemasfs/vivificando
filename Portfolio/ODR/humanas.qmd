@@ -79,6 +79,12 @@ plot_ly(dados, x = ~area, y = ~inhabitants,
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+layout(
+    title = "Distribuição de Área e População em Cidades Brasileiras",
+    xaxis = list(title = "Área (log)", type = "log"),  # Escala logarítmica
+    yaxis = list(title = "População (log)", type = "log"),
+    showlegend = FALSE
+  ) %>%
 
 ```
 
@@ -144,6 +150,8 @@ plot_ly(
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Alteração de cor
+colorscale = "Blues"
 
 ```
 
@@ -229,6 +237,7 @@ plot_ly(
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+frame = 100,  # Velocidade da animação ajustada
 
 ```
 
@@ -398,6 +407,10 @@ plot_ly(dados, x = ~Year, y = ~Mean,
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+plot_ly(dados, x = ~Year, y = ~Mean, type = "bar", 
+        text = ~paste("Ano:", Year, "<br>Temperatura:", Mean, "°C"),
+        hoverinfo = "text")
+
 
 ```
 
@@ -501,6 +514,8 @@ plot_ly(
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Dentro de plot_ly()
+color = ~continent
 
 ```
 
@@ -626,6 +641,7 @@ fig_2
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+fill = "grey30",  # Alterado de "grey20" para "grey30"
 
 ```
 

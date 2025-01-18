@@ -66,6 +66,9 @@ subplot(exp_plot, log_plot, nrows = 1) %>%
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Alterar as cores dos gráficos:
+
+  exp_plot <- plot_ly(x = x_values, y = y_exp, type = 'scatter', mode = 'markers+lines', name = 'Exponencial', marker = list(color = 'blue'), line = list(color = 'blue')) %>% layout(title = "Função Exponencial", xaxis = list(title = 'X'), yaxis = list(title = 'Y Exp'))
 
 ```
 
@@ -147,6 +150,9 @@ plot_ly() %>%
 |       Experimente modificar o gráfico, usando/substituindo alternativamente, os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Adicionar cores e labels para melhorar a visualização 
+
+plot_ly() %>% add_trace(x = generate_data(1)$x, y = generate_data(1)$y, mode = 'lines', name = '1º Grau', line = list(color = 'blue')) %>% add_trace(x = generate_data(2)$x, y = generate_data(2)$y, mode = 'lines', name = '2º Grau', line = list(color = 'green')) %>% add_trace(x = generate_data(3)$x, y = generate_data(3)$y, mode = 'lines', name = '3º Grau', line = list(color = 'red')) %>%
 
 ```
 
@@ -214,7 +220,9 @@ plot_ly() %>%
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Aumentar os valores das funções seno e cosseno 
 
+amplificacao <- 2 y_sin <- amplificacao * sin(x) y_cos <- amplificacao * cos(x)
 ```
 
 </div>
@@ -289,7 +297,10 @@ plot_ly() %>%
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Dados de exemplo (aumentando o número de dados)
 
+set.seed(123)
+dados <- rnorm(1000, mean = 50, sd = 10)  # Aumentado de 100 para 1000
 ```
 
 </div>
@@ -461,6 +472,9 @@ plot_ly(data,
 |       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:
 
 ```{r, eval =FALSE}
+# Geração de dados
+
+x <- seq(0, 2 * pi, length.out = 1000)  # Aumentado de 500 para 1000 para maior suavidade"
 
 ```
 

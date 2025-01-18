@@ -564,6 +564,13 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <p><!--modifica para cada área--></p>
 <p><strong>Sugestões:</strong></p>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a> marker <span class="ot">=</span> <span class="fu">list</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">15</span>,  <span class="co"># Alterado de 10 para 15 para aumentar os marcadores</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"red"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">line =</span> <span class="fu">list</span>(<span class="at">width =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"black"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 <p><br>
 </p>
@@ -583,53 +590,53 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <!-- ::: -->
 <!-- ::: {.g-col-6} -->
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Dados fictícios de população ao longo do tempo</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>dados_populacao <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">cidade =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Nova York"</span>, <span class="st">"Tóquio"</span>, <span class="st">"São Paulo"</span>, <span class="st">"Mumbai"</span>), <span class="at">each =</span> <span class="dv">5</span>),</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">latitude =</span> <span class="fu">c</span>(<span class="fl">40.7128</span>, <span class="fl">40.7128</span>, <span class="fl">40.7128</span>, <span class="fl">40.7128</span>, <span class="fl">40.7128</span>,</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>               <span class="fl">35.6895</span>, <span class="fl">35.6895</span>, <span class="fl">35.6895</span>, <span class="fl">35.6895</span>, <span class="fl">35.6895</span>,</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>               <span class="sc">-</span><span class="fl">23.5505</span>, <span class="sc">-</span><span class="fl">23.5505</span>, <span class="sc">-</span><span class="fl">23.5505</span>, <span class="sc">-</span><span class="fl">23.5505</span>, <span class="sc">-</span><span class="fl">23.5505</span>,</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>               <span class="fl">19.076</span>, <span class="fl">19.076</span>, <span class="fl">19.076</span>, <span class="fl">19.076</span>, <span class="fl">19.076</span>),</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">longitude =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">74.0060</span>, <span class="sc">-</span><span class="fl">74.0060</span>, <span class="sc">-</span><span class="fl">74.0060</span>, <span class="sc">-</span><span class="fl">74.0060</span>, <span class="sc">-</span><span class="fl">74.0060</span>,</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>                <span class="fl">139.6917</span>, <span class="fl">139.6917</span>, <span class="fl">139.6917</span>, <span class="fl">139.6917</span>, <span class="fl">139.6917</span>,</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>                <span class="sc">-</span><span class="fl">46.6333</span>, <span class="sc">-</span><span class="fl">46.6333</span>, <span class="sc">-</span><span class="fl">46.6333</span>, <span class="sc">-</span><span class="fl">46.6333</span>, <span class="sc">-</span><span class="fl">46.6333</span>,</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>                <span class="fl">72.8777</span>, <span class="fl">72.8777</span>, <span class="fl">72.8777</span>, <span class="fl">72.8777</span>, <span class="fl">72.8777</span>),</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">ano =</span> <span class="fu">rep</span>(<span class="fu">seq</span>(<span class="dv">1960</span>, <span class="dv">2020</span>, <span class="at">by =</span> <span class="dv">15</span>), <span class="dv">4</span>),</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">populacao =</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">16</span>, <span class="dv">20</span>, <span class="dv">25</span>,    <span class="co"># Nova York</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>                <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">30</span>,   <span class="co"># Tóquio</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>                <span class="dv">7</span>, <span class="dv">12</span>, <span class="dv">18</span>, <span class="dv">24</span>, <span class="dv">30</span>,    <span class="co"># São Paulo</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>                <span class="dv">6</span>, <span class="dv">10</span>, <span class="dv">16</span>, <span class="dv">22</span>, <span class="dv">28</span>)    <span class="co"># Mumbai (em milhões)</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Criando o mapa interativo com slider no tempo</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>mapa_populacao <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dados_populacao,</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">'scattergeo'</span>,</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">'markers'</span>,</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">lat =</span> <span class="sc">~</span>latitude,</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">lon =</span> <span class="sc">~</span>longitude,</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">frame =</span> <span class="sc">~</span>ano,  <span class="co"># Adiciona a animação por ano</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> <span class="sc">~</span><span class="fu">paste</span>(cidade, <span class="st">"&lt;br&gt;População:"</span>, populacao, <span class="st">"milhões"</span>),</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">hoverinfo =</span> <span class="st">"text"</span>,</span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">marker =</span> <span class="fu">list</span>(</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="sc">~</span>populacao <span class="sc">*</span> <span class="fl">0.5</span>,  <span class="co"># Ajusta o tamanho com base na população</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"blue"</span>,</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">opacity =</span> <span class="fl">0.7</span></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Evolução Populacional por Cidade (1960-2020)"</span>,</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">geo =</span> <span class="fu">list</span>(</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>      <span class="at">showframe =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>      <span class="at">showcoastlines =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>      <span class="at">projection =</span> <span class="fu">list</span>(<span class="at">type =</span> <span class="st">"natural earth"</span>)</span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="co"># Exibir o mapa</span></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>mapa_populacao</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Dados fictícios de população ao longo do tempo</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>dados_populacao <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">cidade =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Nova York"</span>, <span class="st">"Tóquio"</span>, <span class="st">"São Paulo"</span>, <span class="st">"Mumbai"</span>), <span class="at">each =</span> <span class="dv">5</span>),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">latitude =</span> <span class="fu">c</span>(<span class="fl">40.7128</span>, <span class="fl">40.7128</span>, <span class="fl">40.7128</span>, <span class="fl">40.7128</span>, <span class="fl">40.7128</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>               <span class="fl">35.6895</span>, <span class="fl">35.6895</span>, <span class="fl">35.6895</span>, <span class="fl">35.6895</span>, <span class="fl">35.6895</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>               <span class="sc">-</span><span class="fl">23.5505</span>, <span class="sc">-</span><span class="fl">23.5505</span>, <span class="sc">-</span><span class="fl">23.5505</span>, <span class="sc">-</span><span class="fl">23.5505</span>, <span class="sc">-</span><span class="fl">23.5505</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>               <span class="fl">19.076</span>, <span class="fl">19.076</span>, <span class="fl">19.076</span>, <span class="fl">19.076</span>, <span class="fl">19.076</span>),</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">longitude =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">74.0060</span>, <span class="sc">-</span><span class="fl">74.0060</span>, <span class="sc">-</span><span class="fl">74.0060</span>, <span class="sc">-</span><span class="fl">74.0060</span>, <span class="sc">-</span><span class="fl">74.0060</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>                <span class="fl">139.6917</span>, <span class="fl">139.6917</span>, <span class="fl">139.6917</span>, <span class="fl">139.6917</span>, <span class="fl">139.6917</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                <span class="sc">-</span><span class="fl">46.6333</span>, <span class="sc">-</span><span class="fl">46.6333</span>, <span class="sc">-</span><span class="fl">46.6333</span>, <span class="sc">-</span><span class="fl">46.6333</span>, <span class="sc">-</span><span class="fl">46.6333</span>,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                <span class="fl">72.8777</span>, <span class="fl">72.8777</span>, <span class="fl">72.8777</span>, <span class="fl">72.8777</span>, <span class="fl">72.8777</span>),</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">ano =</span> <span class="fu">rep</span>(<span class="fu">seq</span>(<span class="dv">1960</span>, <span class="dv">2020</span>, <span class="at">by =</span> <span class="dv">15</span>), <span class="dv">4</span>),</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">populacao =</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">16</span>, <span class="dv">20</span>, <span class="dv">25</span>,    <span class="co"># Nova York</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>                <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">30</span>,   <span class="co"># Tóquio</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>                <span class="dv">7</span>, <span class="dv">12</span>, <span class="dv">18</span>, <span class="dv">24</span>, <span class="dv">30</span>,    <span class="co"># São Paulo</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>                <span class="dv">6</span>, <span class="dv">10</span>, <span class="dv">16</span>, <span class="dv">22</span>, <span class="dv">28</span>)    <span class="co"># Mumbai (em milhões)</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Criando o mapa interativo com slider no tempo</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>mapa_populacao <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dados_populacao,</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">'scattergeo'</span>,</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">'markers'</span>,</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">lat =</span> <span class="sc">~</span>latitude,</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">lon =</span> <span class="sc">~</span>longitude,</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">frame =</span> <span class="sc">~</span>ano,  <span class="co"># Adiciona a animação por ano</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> <span class="sc">~</span><span class="fu">paste</span>(cidade, <span class="st">"&lt;br&gt;População:"</span>, populacao, <span class="st">"milhões"</span>),</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">hoverinfo =</span> <span class="st">"text"</span>,</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">marker =</span> <span class="fu">list</span>(</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="sc">~</span>populacao <span class="sc">*</span> <span class="fl">0.5</span>,  <span class="co"># Ajusta o tamanho com base na população</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"blue"</span>,</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">opacity =</span> <span class="fl">0.7</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Evolução Populacional por Cidade (1960-2020)"</span>,</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">geo =</span> <span class="fu">list</span>(</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>      <span class="at">showframe =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>      <span class="at">showcoastlines =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>      <span class="at">projection =</span> <span class="fu">list</span>(<span class="at">type =</span> <span class="st">"natural earth"</span>)</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a><span class="co"># Exibir o mapa</span></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>mapa_populacao</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <!-- ::: -->
 <!-- ::: -->
@@ -639,6 +646,10 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <p><!--modifica para cada área--></p>
 <p><strong>Sugestões:</strong></p>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Após a linha lon = ~longitude</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a> frame <span class="ot">=</span> <span class="er">~</span>ano,  <span class="co"># Adiciona a animação por ano</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 <p><br>
 </p>
@@ -658,50 +669,50 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <!-- ::: -->
 <!-- ::: {.g-col-6} -->
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dados sobre as eras geológicas e seus períodos</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>dados_geologicos <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Regiao =</span> <span class="fu">c</span>(<span class="st">"América do Norte"</span>, <span class="st">"América do Sul"</span>, <span class="st">"Europa"</span>, <span class="st">"África"</span>, <span class="st">"Ásia"</span>, <span class="st">"Oceania"</span>),</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Era =</span> <span class="fu">c</span>(<span class="st">"Paleozoica"</span>, <span class="st">"Mesozoica"</span>, <span class="st">"Cenozoica"</span>, <span class="st">"Pré-Cambriana"</span>, <span class="st">"Mesozoica"</span>, <span class="st">"Cenozoica"</span>),</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Periodo =</span> <span class="fu">c</span>(<span class="st">"Devoniano (416-359 mi anos)"</span>, </span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Jurássico (199-145 mi anos)"</span>, </span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Quaternário (2,58 mi anos até presente)"</span>, </span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Proterozoico (2,5 bi a 541 mi anos)"</span>, </span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Triássico (251-199 mi anos)"</span>, </span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Holoceno (11,7 mil anos até presente)"</span>),</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">Latitude =</span> <span class="fu">c</span>(<span class="dv">45</span>, <span class="sc">-</span><span class="dv">15</span>, <span class="dv">50</span>, <span class="dv">0</span>, <span class="dv">30</span>, <span class="sc">-</span><span class="dv">25</span>),</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">Longitude =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">100</span>, <span class="sc">-</span><span class="dv">60</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">100</span>, <span class="dv">135</span>)</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar o mapa interativo</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dados_geologicos,</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"scattergeo"</span>,</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">"markers"</span>,</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">lat =</span> <span class="sc">~</span>Latitude,</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">lon =</span> <span class="sc">~</span>Longitude,</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> <span class="sc">~</span><span class="fu">paste</span>(</span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&lt;b&gt;Região:&lt;/b&gt;"</span>, Regiao, <span class="st">"&lt;br&gt;"</span>,</span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&lt;b&gt;Era:&lt;/b&gt;"</span>, Era, <span class="st">"&lt;br&gt;"</span>,</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&lt;b&gt;Período:&lt;/b&gt;"</span>, Periodo</span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">marker =</span> <span class="fu">list</span>(<span class="at">size =</span> <span class="dv">15</span>, <span class="at">color =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"green"</span>, <span class="st">"red"</span>, <span class="st">"purple"</span>, <span class="st">"orange"</span>, <span class="st">"brown"</span>))</span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Layout do mapa com títulos</span></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> fig <span class="sc">%&gt;%</span></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Eras e Períodos Geológicos - Distribuição Mundial"</span>,</span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">geo =</span> <span class="fu">list</span>(</span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>      <span class="at">showland =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>      <span class="at">landcolor =</span> <span class="st">"rgb(240, 240, 240)"</span>,</span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>      <span class="at">showcountries =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>      <span class="at">countrycolor =</span> <span class="st">"rgb(200, 200, 200)"</span>,</span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>      <span class="at">projection =</span> <span class="fu">list</span>(<span class="at">type =</span> <span class="st">"natural earth"</span>)</span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Exibir o mapa</span></span>
-<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>fig</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dados sobre as eras geológicas e seus períodos</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>dados_geologicos <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Regiao =</span> <span class="fu">c</span>(<span class="st">"América do Norte"</span>, <span class="st">"América do Sul"</span>, <span class="st">"Europa"</span>, <span class="st">"África"</span>, <span class="st">"Ásia"</span>, <span class="st">"Oceania"</span>),</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Era =</span> <span class="fu">c</span>(<span class="st">"Paleozoica"</span>, <span class="st">"Mesozoica"</span>, <span class="st">"Cenozoica"</span>, <span class="st">"Pré-Cambriana"</span>, <span class="st">"Mesozoica"</span>, <span class="st">"Cenozoica"</span>),</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Periodo =</span> <span class="fu">c</span>(<span class="st">"Devoniano (416-359 mi anos)"</span>, </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Jurássico (199-145 mi anos)"</span>, </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Quaternário (2,58 mi anos até presente)"</span>, </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Proterozoico (2,5 bi a 541 mi anos)"</span>, </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Triássico (251-199 mi anos)"</span>, </span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Holoceno (11,7 mil anos até presente)"</span>),</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">Latitude =</span> <span class="fu">c</span>(<span class="dv">45</span>, <span class="sc">-</span><span class="dv">15</span>, <span class="dv">50</span>, <span class="dv">0</span>, <span class="dv">30</span>, <span class="sc">-</span><span class="dv">25</span>),</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">Longitude =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">100</span>, <span class="sc">-</span><span class="dv">60</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">100</span>, <span class="dv">135</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar o mapa interativo</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dados_geologicos,</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"scattergeo"</span>,</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">"markers"</span>,</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">lat =</span> <span class="sc">~</span>Latitude,</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">lon =</span> <span class="sc">~</span>Longitude,</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> <span class="sc">~</span><span class="fu">paste</span>(</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&lt;b&gt;Região:&lt;/b&gt;"</span>, Regiao, <span class="st">"&lt;br&gt;"</span>,</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&lt;b&gt;Era:&lt;/b&gt;"</span>, Era, <span class="st">"&lt;br&gt;"</span>,</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&lt;b&gt;Período:&lt;/b&gt;"</span>, Periodo</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">marker =</span> <span class="fu">list</span>(<span class="at">size =</span> <span class="dv">15</span>, <span class="at">color =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"green"</span>, <span class="st">"red"</span>, <span class="st">"purple"</span>, <span class="st">"orange"</span>, <span class="st">"brown"</span>))</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Layout do mapa com títulos</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> fig <span class="sc">%&gt;%</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Eras e Períodos Geológicos - Distribuição Mundial"</span>,</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">geo =</span> <span class="fu">list</span>(</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>      <span class="at">showland =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>      <span class="at">landcolor =</span> <span class="st">"rgb(240, 240, 240)"</span>,</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>      <span class="at">showcountries =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>      <span class="at">countrycolor =</span> <span class="st">"rgb(200, 200, 200)"</span>,</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>      <span class="at">projection =</span> <span class="fu">list</span>(<span class="at">type =</span> <span class="st">"natural earth"</span>)</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Exibir o mapa</span></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>fig</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <!-- ::: -->
 </section>
@@ -710,6 +721,13 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <p><!--modifica para cada área--></p>
 <p><strong>Sugestões:</strong></p>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>marker <span class="ot">=</span> <span class="fu">list</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">10</span>,  <span class="co"># Tamanho dos marcadores</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"blue"</span>,  <span class="co"># Cor uniforme para simplicidade</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">opacity =</span> <span class="fl">0.7</span>  <span class="co"># Transparência para destacar no mapa</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 <p><br>
 </p>
